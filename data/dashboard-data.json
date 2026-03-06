@@ -1,31 +1,32 @@
 {
-  "lastUpdated": "2026-03-06T19:05:00.000Z",
+  "lastUpdated": "2026-03-06T19:30:21.000Z",
   "actionRequired": [
     {
       "title": "Diário da Família - Enviador: 4 erros seguidos (último: ⚠️ ✉️ Message failed)",
       "url": null,
       "priority": "high"
-    },
-    {
-      "title": "Deadline Reminder Checker: entrega falhou (cron announce delivery failed)",
-      "url": null,
-      "priority": "medium"
     }
   ],
-  "activeNow": [],
+  "activeNow": [
+    {
+      "task": "Cron: Mission Control - Update (GitHub Pages)",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-06T19:30:21.000Z"
+    }
+  ],
   "products": [
     {
-      "name": "OpenClaw (gateway)",
+      "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-06T19:05:00.000Z"
+      "lastChecked": "2026-03-06T19:30:21.000Z"
     }
   ],
   "crons": [
     {
       "name": "Diário da Família - Enviador",
       "schedule": "07:35 daily (America/Sao_Paulo)",
-      "lastRun": "2026-03-06T10:00:57.227-03:00",
+      "lastRun": "2026-03-06T16:30:21.000-03:00",
       "status": "error",
       "errors": 4,
       "lastError": "⚠️ ✉️ Message failed"
@@ -33,8 +34,8 @@
   ],
   "recentActivity": [
     {
-      "time": "2026-03-06T19:05:00.000Z",
-      "event": "🔄 dashboard-data.json atualizado com dados reais (parcial)"
+      "time": "2026-03-06T19:30:21.000Z",
+      "event": "🔄 dashboard-data.json atualizado a partir do estado real de crons e sessões"
     }
   ]
 }
