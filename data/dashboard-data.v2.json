@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-06T22:30:27.106172+00:00"
+    "generatedAt": "2026-03-06T22:30:44.763487+00:00"
   },
   "overview": {
     "healthScore": 0,
@@ -54,6 +54,13 @@
   ],
   "activeNow": [
     {
+      "task": "agent:main:main",
+      "model": "gpt-5.2",
+      "startedAt": "2026-03-06T22:30:46.052000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-06T22:30:20.912000+00:00",
@@ -64,13 +71,6 @@
       "task": "agent:main:cron:cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-06T22:30:00.007000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:main",
-      "model": "gpt-5.2",
-      "startedAt": "2026-03-06T22:25:36.706000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -1009,8 +1009,8 @@
       "source": "/home/pedro/.openclaw/workspace/memory/events",
       "trend7d": {
         "metric": "eventsToday",
-        "delta": 1,
-        "direction": "up"
+        "delta": 0,
+        "direction": "flat"
       }
     }
   ],
@@ -1342,7 +1342,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-06T22:30:27.106172+00:00"
+      "lastChecked": "2026-03-06T22:30:44.763487+00:00"
     }
   ],
   "crons": [
@@ -1753,5 +1753,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-06T22:30:27.106172+00:00"
+  "lastUpdated": "2026-03-06T22:30:44.763487+00:00"
 }
