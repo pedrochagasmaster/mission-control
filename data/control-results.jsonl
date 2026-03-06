@@ -1,0 +1,1 @@
+{"commandId": "c4c2bd28-4668-4eff-b7b4-6916839d859b", "executedAt": "2026-03-06T19:57:44.102373+00:00", "executor": "mission-control/scripts/control_queue.py", "action": "task.mark_done", "payload": {"source": "daily", "taskKey": "rotina_manha"}, "result": "ok", "message": "daily task rotina_manha marked DONE"}
