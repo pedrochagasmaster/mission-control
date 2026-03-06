@@ -1,13 +1,14 @@
 {
   "meta": {
-    "schemaVersion": "2.0.0",
-    "generatorVersion": "2026-03-06.1",
-    "generatedAt": "2026-03-06T21:30:34.446072+00:00"
+    "schemaVersion": "2.1.0",
+    "generatorVersion": "2026-03-06.3",
+    "generatedAt": "2026-03-06T22:01:12.926974+00:00"
   },
   "overview": {
-    "healthScore": 17,
-    "criticalAlerts": 1,
-    "pendingControls": 0
+    "healthScore": 0,
+    "criticalAlerts": 3,
+    "pendingControls": 0,
+    "dataFreshnessSec": 0
   },
   "actionRequired": [
     {
@@ -19,6 +20,20 @@
         "cron.retry",
         "cron.pause"
       ]
+    },
+    {
+      "type": "security",
+      "targetId": "security",
+      "title": "4 alerta(s) crítico(s) no security audit",
+      "priority": "high",
+      "actions": []
+    },
+    {
+      "type": "security",
+      "targetId": "security",
+      "title": "credentials com permissão 775 (esperado 700)",
+      "priority": "high",
+      "actions": []
     },
     {
       "type": "cron-tz-missing",
@@ -64,34 +79,41 @@
       "actions": [
         "cron.set_timezone"
       ]
+    },
+    {
+      "type": "security",
+      "targetId": "security",
+      "title": "diretório therapy com permissão 775",
+      "priority": "medium",
+      "actions": []
     }
   ],
   "activeNow": [
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-06T21:30:27.231000+00:00",
+      "startedAt": "2026-03-06T22:01:01.700000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-06T21:30:00.009000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-06T21:25:00.007000+00:00",
+      "startedAt": "2026-03-06T22:00:00.008000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:main",
       "model": "gpt-5.2",
-      "startedAt": "2026-03-06T21:03:53.606000+00:00",
+      "startedAt": "2026-03-06T21:57:12.006000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-06T21:55:00.011000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -172,19 +194,33 @@
           "note": ""
         }
       ],
+      "alerts": [
+        {
+          "level": "warning",
+          "text": "6 tarefa(s) pendente(s) já no horário"
+        }
+      ],
+      "actions": [
+        "task.mark_done",
+        "task.mark_skipped"
+      ],
       "source": "/home/pedro/.openclaw/workspace/memory/daily_tasks.json",
-      "controls": [
-        "task.mark_done"
-      ]
+      "trend7d": {
+        "metric": "pending",
+        "delta": 0,
+        "direction": "flat"
+      }
     },
     {
       "id": "todo",
       "name": "To-Do Geral",
       "status": "warning",
       "kpis": {
-        "pending": 12,
+        "pending": 15,
+        "done": 17,
         "overdue": 4,
-        "total": 29
+        "risk72h": 1,
+        "total": 32
       },
       "items": [
         {
@@ -272,12 +308,38 @@
           "deadline": null,
           "status": "PENDING",
           "createdAt": "2026-03-06"
+        },
+        {
+          "id": 28,
+          "task": "Comprar chocolate",
+          "deadline": null,
+          "status": "PENDING",
+          "createdAt": "2026-03-06"
+        },
+        {
+          "id": 29,
+          "task": "Comprar estante",
+          "deadline": null,
+          "status": "PENDING",
+          "createdAt": "2026-03-06"
         }
       ],
+      "alerts": [
+        {
+          "level": "warning",
+          "text": "4 item(ns) vencido(s)"
+        }
+      ],
+      "actions": [
+        "task.mark_done",
+        "todo.set_deadline"
+      ],
       "source": "/home/pedro/.openclaw/workspace/memory/todo_list.json",
-      "controls": [
-        "task.mark_done"
-      ]
+      "trend7d": {
+        "metric": "pending",
+        "delta": 3,
+        "direction": "up"
+      }
     },
     {
       "id": "digest",
@@ -286,9 +348,10 @@
       "kpis": {
         "sentToday": true,
         "draftReady": true,
-        "errorJobs": 1
+        "errorJobs": 1,
+        "pipelineStages": 5
       },
-      "jobs": [
+      "pipeline": [
         {
           "id": "06b5aaae-b25a-4005-a78c-badad02f216b",
           "name": "Diário da Família - Gerador",
@@ -364,11 +427,22 @@
         "date": "2026-03-06",
         "tema": "Sinais de sono + janelas flexíveis"
       },
-      "controls": [
+      "alerts": [
+        {
+          "level": "high",
+          "text": "1 job(s) com erro no pipeline"
+        }
+      ],
+      "actions": [
         "digest.retry_send",
         "cron.retry"
       ],
-      "source": "/home/pedro/.openclaw/workspace/memory/daily_digest_draft.json"
+      "source": "/home/pedro/.openclaw/workspace/memory/daily_digest_draft.json",
+      "trend7d": {
+        "metric": "sentToday",
+        "delta": 0,
+        "direction": "flat"
+      }
     },
     {
       "id": "crons",
@@ -388,8 +462,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-06T21:00:51.088000+00:00",
-          "nextRun": "2026-03-06T21:30:00+00:00",
+          "lastRun": "2026-03-06T21:30:27.228000+00:00",
+          "nextRun": "2026-03-06T22:00:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -402,8 +476,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-06T21:00:28.439000+00:00",
-          "nextRun": "2026-03-06T21:30:00+00:00",
+          "lastRun": "2026-03-06T21:30:00.007000+00:00",
+          "nextRun": "2026-03-06T22:00:00+00:00",
           "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -416,8 +490,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-06T21:25:00.006000+00:00",
-          "nextRun": "2026-03-06T21:30:00+00:00",
+          "lastRun": "2026-03-06T21:55:00.009000+00:00",
+          "nextRun": "2026-03-06T22:00:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -788,12 +862,28 @@
           "channel": "telegram"
         }
       ],
-      "controls": [
+      "alerts": [
+        {
+          "level": "high",
+          "text": "1 cron(s) em erro"
+        },
+        {
+          "level": "warning",
+          "text": "5 cron(s) sem timezone"
+        }
+      ],
+      "actions": [
         "cron.retry",
         "cron.pause",
-        "cron.resume"
+        "cron.resume",
+        "cron.set_timezone"
       ],
-      "source": "/home/pedro/.openclaw/cron/jobs.json"
+      "source": "/home/pedro/.openclaw/cron/jobs.json",
+      "trend7d": {
+        "metric": "total",
+        "delta": 0,
+        "direction": "flat"
+      }
     },
     {
       "id": "knowledge",
@@ -801,7 +891,8 @@
       "status": "ok",
       "kpis": {
         "files": 24,
-        "ingestHealthy": true
+        "ingestHealthy": true,
+        "watcherHealthy": true
       },
       "lastFile": "ivana__jauregui_20260306.md",
       "job": {
@@ -818,57 +909,113 @@
         "model": "github-copilot/gpt-5-mini",
         "channel": "last"
       },
-      "controls": [
+      "actions": [
         "cron.retry"
       ],
-      "source": "/home/pedro/.openclaw/workspace/knowledge"
+      "source": "/home/pedro/.openclaw/workspace/knowledge",
+      "trend7d": {
+        "metric": "files",
+        "delta": 0,
+        "direction": "flat"
+      }
     },
     {
       "id": "finance",
-      "name": "Finanças (Agregado)",
-      "status": "ok",
+      "name": "Finanças (Saúde + Volume)",
+      "status": "warning",
       "kpis": {
-        "pluggyHealthy": true,
-        "detailLevel": "aggregate"
+        "pluggyTrackedItems": 0,
+        "openbankingConfigs": 0,
+        "bankNotifLog": false
       },
-      "job": {
-        "id": "ec2938b2-9783-47f9-8945-ffd6388a0e82",
-        "name": "Pluggy Sync - Tracking Despesas",
-        "status": "ok",
-        "enabled": true,
-        "errors": 0,
-        "lastError": null,
-        "lastRun": "2026-03-06T01:19:35.751000+00:00",
-        "nextRun": "2026-03-07T01:00:00+00:00",
-        "schedule": "0 22 * * *",
-        "tzMissing": true,
-        "model": "openai-codex/gpt-5-mini",
-        "channel": "whatsapp"
+      "integrations": {
+        "pluggy": {
+          "status": "ok",
+          "trackedItems": 0,
+          "lastLogAt": "2026-03-05T01:02:04.209641+00:00",
+          "job": {
+            "id": "ec2938b2-9783-47f9-8945-ffd6388a0e82",
+            "name": "Pluggy Sync - Tracking Despesas",
+            "status": "ok",
+            "enabled": true,
+            "errors": 0,
+            "lastError": null,
+            "lastRun": "2026-03-06T01:19:35.751000+00:00",
+            "nextRun": "2026-03-07T01:00:00+00:00",
+            "schedule": "0 22 * * *",
+            "tzMissing": true,
+            "model": "openai-codex/gpt-5-mini",
+            "channel": "whatsapp"
+          }
+        },
+        "openbanking": {
+          "status": "warning",
+          "configFiles": 0,
+          "tokenFiles": 0,
+          "lastSyncAt": null,
+          "job": null
+        },
+        "bank_notifications": {
+          "status": "warning",
+          "logEnabled": false,
+          "lastEventAt": null
+        }
       },
-      "controls": [
+      "actions": [
         "cron.retry"
       ],
-      "source": "/home/pedro/.openclaw/workspace/pluggy"
+      "source": "/home/pedro/.openclaw/workspace/pluggy",
+      "trend7d": {
+        "metric": "pluggyTrackedItems",
+        "delta": 0,
+        "direction": "flat"
+      }
     },
     {
       "id": "therapy",
       "name": "Terapia (Privado)",
-      "status": "ok",
+      "status": "warning",
       "kpis": {
-        "entriesFiles": 3,
-        "latestFile": "INDEX.md",
-        "contentExposed": false
+        "entriesFiles": 2,
+        "latestFile": "2026-03.md",
+        "contentExposed": false,
+        "insecurePerms": 2
       },
-      "controls": [],
-      "source": "/home/pedro/.openclaw/workspace/memory/therapy"
+      "alerts": [
+        {
+          "level": "warning",
+          "text": "2 arquivo(s) com permissão insegura"
+        }
+      ],
+      "details": {
+        "permissions": [
+          {
+            "file": "2026-02.md",
+            "mode": "664"
+          },
+          {
+            "file": "2026-03.md",
+            "mode": "664"
+          }
+        ]
+      },
+      "actions": [],
+      "source": "/home/pedro/.openclaw/workspace/memory/therapy",
+      "trend7d": {
+        "metric": "entriesFiles",
+        "delta": 0,
+        "direction": "flat"
+      }
     },
     {
       "id": "ops",
       "name": "Monitoramento e Auditoria",
-      "status": "ok",
+      "status": "warning",
       "kpis": {
-        "eventsToday": 32,
-        "queuePending": 0
+        "eventsToday": 33,
+        "queuePending": 0,
+        "heartbeatBackup": false,
+        "heartbeatConfigured": true
       },
       "job": {
         "id": "ebbd066d-2269-48d5-8f80-f89ce7633b81",
@@ -884,15 +1031,22 @@
         "model": null,
         "channel": "last"
       },
-      "controls": [],
-      "source": "/home/pedro/.openclaw/workspace/memory/events"
+      "heartbeat": {
+        "backupProcessFound": false
+      },
+      "actions": [],
+      "source": "/home/pedro/.openclaw/workspace/memory/events",
+      "trend7d": {
+        "metric": "eventsToday",
+        "delta": 1,
+        "direction": "up"
+      }
     }
   ],
   "controls": [
     {
       "action": "cron.retry",
       "title": "Retry Cron",
-      "description": "Executa um cron imediatamente.",
       "payloadSchema": {
         "jobId": "string"
       }
@@ -900,7 +1054,6 @@
     {
       "action": "cron.pause",
       "title": "Pause Cron",
-      "description": "Desabilita um cron ativo.",
       "payloadSchema": {
         "jobId": "string"
       }
@@ -908,24 +1061,45 @@
     {
       "action": "cron.resume",
       "title": "Resume Cron",
-      "description": "Habilita um cron pausado.",
       "payloadSchema": {
         "jobId": "string"
       }
     },
     {
+      "action": "cron.set_timezone",
+      "title": "Set Cron Timezone",
+      "payloadSchema": {
+        "jobId": "string",
+        "tz": "string (default America/Sao_Paulo)"
+      }
+    },
+    {
       "action": "task.mark_done",
-      "title": "Marcar tarefa como DONE",
-      "description": "Atualiza tarefa em daily_tasks.json ou todo_list.json.",
+      "title": "Marcar tarefa DONE",
       "payloadSchema": {
         "source": "daily|todo",
         "taskKey": "string"
       }
     },
     {
+      "action": "task.mark_skipped",
+      "title": "Marcar tarefa SKIPPED",
+      "payloadSchema": {
+        "source": "daily|todo",
+        "taskKey": "string"
+      }
+    },
+    {
+      "action": "todo.set_deadline",
+      "title": "Definir deadline do To-Do",
+      "payloadSchema": {
+        "taskKey": "string|id",
+        "deadline": "YYYY-MM-DD"
+      }
+    },
+    {
       "action": "digest.retry_send",
       "title": "Retry Digest Send",
-      "description": "Roda o job do enviador do Diário da Família.",
       "payloadSchema": {
         "jobId": "string (optional)"
       }
@@ -945,129 +1119,186 @@
         },
         "result": "ok",
         "message": "daily task rotina_manha marked DONE"
+      },
+      {
+        "commandId": "d05b0308-57b1-484c-9f11-2e7543a3e779",
+        "executedAt": "2026-03-06T21:50:34.191308+00:00",
+        "executor": "mission-control/scripts/control_queue.py",
+        "action": "todo.set_deadline",
+        "payload": {
+          "taskKey": "__none__",
+          "deadline": "2026-03-10"
+        },
+        "result": "error",
+        "message": "todo item '__none__' not found"
       }
     ]
   },
   "recentActivity": [
     {
+      "time": "2026-03-06T07:00:04-03:00",
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-06T07:30:03-03:00",
+      "event": "Cron disparou: Lixo (Colocar Fora) (ec212b07-8387-45d0-9606-351509850608)",
+      "channel": "cron"
+    },
+    {
       "time": "2026-03-06T07:30:14-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T08:00:09-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T08:30:07-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T09:00:20-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T09:30:11-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T10:00:12-03:00",
-      "event": "Cron disparou: Lixo (Sacos Novos) + Ralos (8e6d54f6-5278-4975-94dc-578d36397408)"
+      "event": "Cron disparou: Lixo (Sacos Novos) + Ralos (8e6d54f6-5278-4975-94dc-578d36397408)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T10:00:24-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T10:30:11-03:00",
-      "event": "Cron disparou: Rotina da Manhã (Completa) (93c7796d-f82d-4381-a925-f1a0a22bf25b)"
+      "event": "Cron disparou: Rotina da Manhã (Completa) (93c7796d-f82d-4381-a925-f1a0a22bf25b)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T10:30:18-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T11:00:04-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T11:30:04-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T12:00:24-03:00",
-      "event": "Cron disparou: Ração Almoço (42be764c-f915-4669-8f94-878e23362bf8)"
+      "event": "Cron disparou: Ração Almoço (42be764c-f915-4669-8f94-878e23362bf8)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T12:00:40-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T12:30:04-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T13:00:21-03:00",
-      "event": "Cron disparou: Passeio Almoço (96074f1f-0124-4b4c-a944-e71349f91678)"
+      "event": "Cron disparou: Passeio Almoço (96074f1f-0124-4b4c-a944-e71349f91678)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T13:00:33-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T13:30:13-03:00",
-      "event": "Cron disparou: Pós-Almoço: Zero Pia (515506a0-6921-4f7d-8368-06fc4e93ee87)"
+      "event": "Cron disparou: Pós-Almoço: Zero Pia (515506a0-6921-4f7d-8368-06fc4e93ee87)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T13:30:31-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T14:00:04-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T14:30:11-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T15:00:18-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T15:30:06-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T16:00:09-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T16:30:07-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T17:00:17-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T17:30:13-03:00",
-      "event": "Cron disparou: Blitz da Ordem (17:30) (a2a10215-b00a-45e4-8ed4-28cb60e442a6)"
+      "event": "Cron disparou: Blitz da Ordem (17:30) (a2a10215-b00a-45e4-8ed4-28cb60e442a6)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T17:30:23-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T18:00:23-03:00",
-      "event": "Cron disparou: Rotina da Tarde (e3ac374c-a524-4465-a872-f682f01a979d)"
+      "event": "Cron disparou: Rotina da Tarde (e3ac374c-a524-4465-a872-f682f01a979d)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T18:00:36-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     },
     {
       "time": "2026-03-06T18:30:13-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)"
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-06T19:00:10-03:00",
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     }
   ],
   "products": [
@@ -1075,7 +1306,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-06T21:30:34.446072+00:00"
+      "lastChecked": "2026-03-06T22:01:12.926974+00:00"
     }
   ],
   "crons": [
@@ -1086,8 +1317,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-06T21:00:51.088000+00:00",
-      "nextRun": "2026-03-06T21:30:00+00:00",
+      "lastRun": "2026-03-06T21:30:27.228000+00:00",
+      "nextRun": "2026-03-06T22:00:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1100,8 +1331,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-06T21:00:28.439000+00:00",
-      "nextRun": "2026-03-06T21:30:00+00:00",
+      "lastRun": "2026-03-06T21:30:00.007000+00:00",
+      "nextRun": "2026-03-06T22:00:00+00:00",
       "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1114,8 +1345,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-06T21:25:00.006000+00:00",
-      "nextRun": "2026-03-06T21:30:00+00:00",
+      "lastRun": "2026-03-06T21:55:00.009000+00:00",
+      "nextRun": "2026-03-06T22:00:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1486,5 +1717,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-06T21:30:34.446072+00:00"
+  "lastUpdated": "2026-03-06T22:01:12.926974+00:00"
 }
