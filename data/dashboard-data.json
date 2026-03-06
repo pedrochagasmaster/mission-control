@@ -1,98 +1,40 @@
 {
-  "lastUpdated": "2024-01-15T12:00:00Z",
+  "lastUpdated": "2026-03-06T19:05:00.000Z",
   "actionRequired": [
     {
-      "title": "Review pending PR",
-      "url": "https://github.com/your-org/your-repo/pull/42",
+      "title": "Diário da Família - Enviador: 4 erros seguidos (último: ⚠️ ✉️ Message failed)",
+      "url": null,
       "priority": "high"
     },
     {
-      "title": "Update API documentation",
+      "title": "Deadline Reminder Checker: entrega falhou (cron announce delivery failed)",
       "url": null,
       "priority": "medium"
     }
   ],
-  "activeNow": [
-    {
-      "task": "Running automated tests",
-      "model": "opus",
-      "startedAt": "2024-01-15T11:45:00Z"
-    }
-  ],
+  "activeNow": [],
   "products": [
     {
-      "name": "Main App",
-      "url": "https://your-app.example.com",
+      "name": "OpenClaw (gateway)",
+      "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2024-01-15T12:00:00Z"
-    },
-    {
-      "name": "API Server",
-      "url": "https://api.your-app.example.com",
-      "status": "live",
-      "lastChecked": "2024-01-15T12:00:00Z"
-    },
-    {
-      "name": "Staging",
-      "url": "https://staging.your-app.example.com",
-      "status": "testing",
-      "lastChecked": "2024-01-15T11:30:00Z"
+      "lastChecked": "2026-03-06T19:05:00.000Z"
     }
   ],
   "crons": [
     {
-      "name": "Daily Report",
-      "schedule": "9:00 AM daily",
-      "lastRun": "2024-01-15T09:00:00Z",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Hourly Sync",
-      "schedule": "Every hour",
-      "lastRun": "2024-01-15T12:00:00Z",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Weekly Backup",
-      "schedule": "Sundays 2:00 AM",
-      "lastRun": "2024-01-14T02:00:00Z",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Data Cleanup",
-      "schedule": "Daily 3:00 AM",
-      "lastRun": null,
-      "status": "paused",
-      "errors": 0,
-      "lastError": null
+      "name": "Diário da Família - Enviador",
+      "schedule": "07:35 daily (America/Sao_Paulo)",
+      "lastRun": "2026-03-06T10:00:57.227-03:00",
+      "status": "error",
+      "errors": 4,
+      "lastError": "⚠️ ✉️ Message failed"
     }
   ],
   "recentActivity": [
     {
-      "time": "2024-01-15T11:30:00Z",
-      "event": "✅ Deployed v2.1.0 to production"
-    },
-    {
-      "time": "2024-01-15T10:45:00Z",
-      "event": "🔄 Merged feature branch #feature-42"
-    },
-    {
-      "time": "2024-01-15T10:00:00Z",
-      "event": "📊 Generated weekly analytics report"
-    },
-    {
-      "time": "2024-01-15T09:00:00Z",
-      "event": "📧 Sent daily digest to team"
-    },
-    {
-      "time": "2024-01-14T18:00:00Z",
-      "event": "🛠️ Fixed auth bug in login flow"
+      "time": "2026-03-06T19:05:00.000Z",
+      "event": "🔄 dashboard-data.json atualizado com dados reais (parcial)"
     }
   ]
 }
