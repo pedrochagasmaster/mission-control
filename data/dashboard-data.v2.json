@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-07T00:30:28.494749+00:00"
+    "generatedAt": "2026-03-07T01:12:31.783802+00:00"
   },
   "overview": {
     "healthScore": 0,
@@ -56,49 +56,56 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T00:30:22.149000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T00:30:00.007000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T00:25:00.007000+00:00",
+      "startedAt": "2026-03-07T01:12:26.231000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:main",
       "model": "gpt-5.2",
-      "startedAt": "2026-03-07T00:01:07.767000+00:00",
+      "startedAt": "2026-03-07T01:10:31.309000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
-      "task": "agent:main:whatsapp:group:120363422516892829@g.us",
-      "model": "k2p5",
-      "startedAt": "2026-03-06T22:06:21.047000+00:00",
+      "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
+      "model": "gpt-5.1-codex-mini",
+      "startedAt": "2026-03-07T01:00:52.385000+00:00",
       "agentId": "main",
-      "kind": "group"
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-07T01:00:29.879000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-07T01:00:00.011000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-07T00:55:00.012000+00:00",
+      "agentId": "main",
+      "kind": "direct"
     }
   ],
   "domains": [
     {
       "id": "routines",
       "name": "Rotinas da Casa",
-      "status": "ok",
+      "status": "warning",
       "kpis": {
-        "pending": 0,
-        "done": 7,
+        "pending": 1,
+        "done": 6,
         "skipped": 0,
-        "overdue": 0
+        "overdue": 1
       },
       "tasks": [
         {
@@ -146,12 +153,17 @@
         {
           "key": "rotina_noite",
           "label": "🌙 Rotina Noite",
-          "status": "DONE",
+          "status": "PENDING",
           "time": "22:00",
           "note": ""
         }
       ],
-      "alerts": [],
+      "alerts": [
+        {
+          "level": "warning",
+          "text": "1 tarefa(s) pendente(s) já no horário"
+        }
+      ],
       "actions": [
         "task.mark_done",
         "task.mark_skipped"
@@ -159,8 +171,8 @@
       "source": "/home/pedro/.openclaw/workspace/memory/daily_tasks.json",
       "trend7d": {
         "metric": "pending",
-        "delta": 0,
-        "direction": "flat"
+        "delta": 1,
+        "direction": "up"
       }
     },
     {
@@ -408,14 +420,28 @@
       },
       "jobs": [
         {
+          "id": "7804497e-ac8d-49c9-bead-08ed6bab21d1",
+          "name": "Rotina da Noite (Completa)",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-06T01:00:00.005000+00:00",
+          "nextRun": "2026-03-07T01:00:00+00:00",
+          "schedule": "0 22 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
+        },
+        {
           "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
           "name": "Mission Control - Build+Publish",
           "status": "ok",
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-07T00:00:29.513000+00:00",
-          "nextRun": "2026-03-07T00:30:00+00:00",
+          "lastRun": "2026-03-07T00:30:22.147000+00:00",
+          "nextRun": "2026-03-07T01:00:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -428,37 +454,9 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-07T00:00:00.012000+00:00",
-          "nextRun": "2026-03-07T00:30:00+00:00",
-          "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
-        },
-        {
-          "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-          "name": "Mission Control - Control Runner",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-07T00:25:00.005000+00:00",
-          "nextRun": "2026-03-07T00:30:00+00:00",
-          "schedule": "*/5 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "last"
-        },
-        {
-          "id": "7804497e-ac8d-49c9-bead-08ed6bab21d1",
-          "name": "Rotina da Noite (Completa)",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-06T01:00:00.005000+00:00",
+          "lastRun": "2026-03-07T00:30:00.006000+00:00",
           "nextRun": "2026-03-07T01:00:00+00:00",
-          "schedule": "0 22 * * * (America/Sao_Paulo)",
+          "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "telegram"
@@ -476,6 +474,20 @@
           "tzMissing": false,
           "model": "openai-codex/gpt-5-mini",
           "channel": "whatsapp"
+        },
+        {
+          "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+          "name": "Mission Control - Control Runner",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-07T00:55:00.010000+00:00",
+          "nextRun": "2026-03-07T01:00:00+00:00",
+          "schedule": "*/5 * * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "last"
         },
         {
           "id": "ebbd066d-2269-48d5-8f80-f89ce7633b81",
@@ -884,7 +896,7 @@
         "pluggy": {
           "status": "ok",
           "trackedItems": 0,
-          "lastLogAt": "2026-03-05T01:02:04.209641+00:00",
+          "lastLogAt": "2026-03-07T01:11:13.503959+00:00",
           "job": {
             "id": "ec2938b2-9783-47f9-8945-ffd6388a0e82",
             "name": "Pluggy Sync - Tracking Despesas",
@@ -964,7 +976,7 @@
       "name": "Monitoramento e Auditoria",
       "status": "warning",
       "kpis": {
-        "eventsToday": 38,
+        "eventsToday": 40,
         "queuePending": 0,
         "heartbeatBackup": false,
         "heartbeatConfigured": true
@@ -990,7 +1002,7 @@
       "source": "/home/pedro/.openclaw/workspace/memory/events",
       "trend7d": {
         "metric": "eventsToday",
-        "delta": 1,
+        "delta": 2,
         "direction": "up"
       }
     }
@@ -1336,6 +1348,16 @@
       "time": "2026-03-06T21:30:11-03:00",
       "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
       "channel": "cron"
+    },
+    {
+      "time": "2026-03-06T22:00:24-03:00",
+      "event": "Cron disparou: Rotina da Noite (Completa) (7804497e-ac8d-49c9-bead-08ed6bab21d1)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-06T22:00:38-03:00",
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     }
   ],
   "products": [
@@ -1343,10 +1365,24 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-07T00:30:28.494749+00:00"
+      "lastChecked": "2026-03-07T01:12:31.783802+00:00"
     }
   ],
   "crons": [
+    {
+      "id": "7804497e-ac8d-49c9-bead-08ed6bab21d1",
+      "name": "Rotina da Noite (Completa)",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-06T01:00:00.005000+00:00",
+      "nextRun": "2026-03-07T01:00:00+00:00",
+      "schedule": "0 22 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
+    },
     {
       "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "name": "Mission Control - Build+Publish",
@@ -1354,8 +1390,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-07T00:00:29.513000+00:00",
-      "nextRun": "2026-03-07T00:30:00+00:00",
+      "lastRun": "2026-03-07T00:30:22.147000+00:00",
+      "nextRun": "2026-03-07T01:00:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1368,37 +1404,9 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-07T00:00:00.012000+00:00",
-      "nextRun": "2026-03-07T00:30:00+00:00",
-      "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
-    },
-    {
-      "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "name": "Mission Control - Control Runner",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-07T00:25:00.005000+00:00",
-      "nextRun": "2026-03-07T00:30:00+00:00",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "last"
-    },
-    {
-      "id": "7804497e-ac8d-49c9-bead-08ed6bab21d1",
-      "name": "Rotina da Noite (Completa)",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-06T01:00:00.005000+00:00",
+      "lastRun": "2026-03-07T00:30:00.006000+00:00",
       "nextRun": "2026-03-07T01:00:00+00:00",
-      "schedule": "0 22 * * * (America/Sao_Paulo)",
+      "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "telegram"
@@ -1416,6 +1424,20 @@
       "tzMissing": false,
       "model": "openai-codex/gpt-5-mini",
       "channel": "whatsapp"
+    },
+    {
+      "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "name": "Mission Control - Control Runner",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-07T00:55:00.010000+00:00",
+      "nextRun": "2026-03-07T01:00:00+00:00",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "last"
     },
     {
       "id": "ebbd066d-2269-48d5-8f80-f89ce7633b81",
@@ -1754,5 +1776,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-07T00:30:28.494749+00:00"
+  "lastUpdated": "2026-03-07T01:12:31.783802+00:00"
 }
