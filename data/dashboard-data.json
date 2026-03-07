@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-07T15:30:35.461472+00:00",
+  "lastUpdated": "2026-03-07T16:01:04.339119+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -11,22 +11,27 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T15:30:27.247000+00:00"
+      "startedAt": "2026-03-07T16:00:57.009000+00:00"
     },
     {
       "task": "agent:main:cron:cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T15:30:00.014000+00:00"
+      "startedAt": "2026-03-07T16:00:22.426000+00:00"
     },
     {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "task": "agent:main:cron:96074f1f-0124-4b4c-a944-e71349f91678",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T15:25:00.015000+00:00"
+      "startedAt": "2026-03-07T16:00:00.015000+00:00"
     },
     {
       "task": "agent:main:main",
       "model": "k2p5",
-      "startedAt": "2026-03-07T15:01:22.884000+00:00"
+      "startedAt": "2026-03-07T15:55:26.011000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-07T15:55:00.012000+00:00"
     },
     {
       "task": "agent:main:cron:42be764c-f915-4669-8f94-878e23362bf8",
@@ -37,11 +42,6 @@
       "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-07T13:30:00.010000+00:00"
-    },
-    {
-      "task": "agent:main:cron:555d214e-c8ca-48ef-a091-d41efcba712d",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T13:00:00.009000+00:00"
     }
   ],
   "products": [
@@ -49,30 +49,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-07T15:30:35.461472+00:00"
+      "lastChecked": "2026-03-07T16:01:04.339119+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-07T15:01:00.602000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Cobrador de Rotina (30min)",
-      "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-07T15:00:34.121000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-07T15:25:00.012000+00:00",
+      "lastRun": "2026-03-07T15:30:27.241000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -81,6 +65,22 @@
       "name": "Passeio Almoço",
       "schedule": "0 13 * * * (America/Sao_Paulo)",
       "lastRun": "2026-03-06T16:00:00.013000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Cobrador de Rotina (30min)",
+      "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-07T15:30:00.011000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-07T15:55:00.010000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -359,6 +359,16 @@
     },
     {
       "time": "2026-03-07T12:30:14-03:00",
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-07T13:00:17-03:00",
+      "event": "Cron disparou: Passeio Almoço (96074f1f-0124-4b4c-a944-e71349f91678)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-07T13:00:38-03:00",
       "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
       "channel": "cron"
     }
