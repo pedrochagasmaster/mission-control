@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-07T10:30:35.968923+00:00",
+  "lastUpdated": "2026-03-07T11:00:33.052749+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -11,32 +11,42 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T10:30:29.830000+00:00"
+      "startedAt": "2026-03-07T11:00:23.497000+00:00"
     },
     {
       "task": "agent:main:cron:cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T10:30:00.010000+00:00"
+      "startedAt": "2026-03-07T11:00:00.013000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T10:25:00.007000+00:00"
+      "startedAt": "2026-03-07T10:55:00.011000+00:00"
+    },
+    {
+      "task": "agent:main:cron:44299965-a647-45cd-b9c2-e504bea42398",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-07T10:50:01.624000+00:00"
+    },
+    {
+      "task": "agent:main:cron:d2c96354-081c-493d-891f-3c11c63cb9a1",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-07T10:45:01.278000+00:00"
+    },
+    {
+      "task": "agent:main:main",
+      "model": "k2p5",
+      "startedAt": "2026-03-07T10:37:17.868000+00:00"
+    },
+    {
+      "task": "agent:main:cron:4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-07T10:35:00.010000+00:00"
     },
     {
       "task": "agent:main:cron:06b5aaae-b25a-4005-a78c-badad02f216b",
       "model": "gpt-5.1-codex-mini",
       "startedAt": "2026-03-07T10:20:00.010000+00:00"
-    },
-    {
-      "task": "agent:main:main",
-      "model": "k2p5",
-      "startedAt": "2026-03-07T10:07:19.308000+00:00"
-    },
-    {
-      "task": "agent:main:cron:75b87bc7-016d-49a2-9995-4a0b715a7f23",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T08:00:00.787000+00:00"
     }
   ],
   "products": [
@@ -44,14 +54,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-07T10:30:35.968923+00:00"
+      "lastChecked": "2026-03-07T11:00:33.052749+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-07T10:00:23.547000+00:00",
+      "lastRun": "2026-03-07T10:30:29.828000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -59,7 +69,7 @@
     {
       "name": "Cobrador de Rotina (30min)",
       "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-07T10:00:00.009000+00:00",
+      "lastRun": "2026-03-07T10:30:00.008000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -67,31 +77,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-07T10:25:00.005000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Diário da Família - Enviador",
-      "schedule": "35 7 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-07T05:24:20.408000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Diário da Família - Watchdog (fallback)",
-      "schedule": "45 7 * * * (America/Sao_Paulo)",
-      "lastRun": null,
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Diário da Família - Alert (07:50 se não enviado)",
-      "schedule": "50 7 * * * (America/Sao_Paulo)",
-      "lastRun": null,
+      "lastRun": "2026-03-07T10:55:00.009000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -217,6 +203,30 @@
       "lastError": null
     },
     {
+      "name": "Diário da Família - Enviador",
+      "schedule": "35 7 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-07T10:35:00.008000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Diário da Família - Watchdog (fallback)",
+      "schedule": "45 7 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-07T10:45:00.009000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Diário da Família - Alert (07:50 se não enviado)",
+      "schedule": "50 7 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-07T10:50:00.011000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Lixo Véspera (22h)",
       "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
       "lastRun": "2026-03-06T01:00:23.388000+00:00",
@@ -289,6 +299,11 @@
     },
     {
       "time": "2026-03-07T07:30:15-03:00",
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-07T08:00:10-03:00",
       "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
       "channel": "cron"
     }
