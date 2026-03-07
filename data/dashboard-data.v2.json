@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-07T01:12:31.783802+00:00"
+    "generatedAt": "2026-03-07T01:30:34.672221+00:00"
   },
   "overview": {
     "healthScore": 0,
@@ -56,14 +56,28 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T01:12:26.231000+00:00",
+      "startedAt": "2026-03-07T01:30:24.910000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-07T01:30:00.013000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-07T01:25:00.011000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:main",
       "model": "gpt-5.2",
-      "startedAt": "2026-03-07T01:10:31.309000+00:00",
+      "startedAt": "2026-03-07T01:23:02.374000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -75,23 +89,9 @@
       "kind": "direct"
     },
     {
-      "task": "agent:main:cron:cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T01:00:29.879000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
       "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-07T01:00:00.011000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T00:55:00.012000+00:00",
       "agentId": "main",
       "kind": "direct"
     }
@@ -171,8 +171,8 @@
       "source": "/home/pedro/.openclaw/workspace/memory/daily_tasks.json",
       "trend7d": {
         "metric": "pending",
-        "delta": 1,
-        "direction": "up"
+        "delta": 0,
+        "direction": "flat"
       }
     },
     {
@@ -420,28 +420,14 @@
       },
       "jobs": [
         {
-          "id": "7804497e-ac8d-49c9-bead-08ed6bab21d1",
-          "name": "Rotina da Noite (Completa)",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-06T01:00:00.005000+00:00",
-          "nextRun": "2026-03-07T01:00:00+00:00",
-          "schedule": "0 22 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
-        },
-        {
           "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
           "name": "Mission Control - Build+Publish",
           "status": "ok",
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-07T00:30:22.147000+00:00",
-          "nextRun": "2026-03-07T01:00:00+00:00",
+          "lastRun": "2026-03-07T01:12:26.224000+00:00",
+          "nextRun": "2026-03-07T01:30:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -454,26 +440,12 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-07T00:30:00.006000+00:00",
-          "nextRun": "2026-03-07T01:00:00+00:00",
+          "lastRun": "2026-03-07T01:00:29.876000+00:00",
+          "nextRun": "2026-03-07T01:30:00+00:00",
           "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "telegram"
-        },
-        {
-          "id": "ec2938b2-9783-47f9-8945-ffd6388a0e82",
-          "name": "Pluggy Sync - Tracking Despesas",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-06T01:19:35.751000+00:00",
-          "nextRun": "2026-03-07T01:00:00+00:00",
-          "schedule": "0 22 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "openai-codex/gpt-5-mini",
-          "channel": "whatsapp"
         },
         {
           "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -482,8 +454,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-07T00:55:00.010000+00:00",
-          "nextRun": "2026-03-07T01:00:00+00:00",
+          "lastRun": "2026-03-07T01:25:00.009000+00:00",
+          "nextRun": "2026-03-07T01:30:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -714,6 +686,34 @@
           "channel": "telegram"
         },
         {
+          "id": "7804497e-ac8d-49c9-bead-08ed6bab21d1",
+          "name": "Rotina da Noite (Completa)",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-07T01:00:00.009000+00:00",
+          "nextRun": "2026-03-08T01:00:00+00:00",
+          "schedule": "0 22 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
+        },
+        {
+          "id": "ec2938b2-9783-47f9-8945-ffd6388a0e82",
+          "name": "Pluggy Sync - Tracking Despesas",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": "cron announce delivery failed",
+          "lastRun": "2026-03-07T01:00:52.379000+00:00",
+          "nextRun": "2026-03-08T01:00:00+00:00",
+          "schedule": "0 22 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "openai-codex/gpt-5-mini",
+          "channel": "whatsapp"
+        },
+        {
           "id": "eb796b6f-bb0b-4b92-963c-18696cf45e0d",
           "name": "Lixo Véspera (22h)",
           "status": "ok",
@@ -903,9 +903,9 @@
             "status": "ok",
             "enabled": true,
             "errors": 0,
-            "lastError": null,
-            "lastRun": "2026-03-06T01:19:35.751000+00:00",
-            "nextRun": "2026-03-07T01:00:00+00:00",
+            "lastError": "cron announce delivery failed",
+            "lastRun": "2026-03-07T01:00:52.379000+00:00",
+            "nextRun": "2026-03-08T01:00:00+00:00",
             "schedule": "0 22 * * * (America/Sao_Paulo)",
             "tzMissing": false,
             "model": "openai-codex/gpt-5-mini",
@@ -976,7 +976,7 @@
       "name": "Monitoramento e Auditoria",
       "status": "warning",
       "kpis": {
-        "eventsToday": 40,
+        "eventsToday": 41,
         "queuePending": 0,
         "heartbeatBackup": false,
         "heartbeatConfigured": true
@@ -1002,7 +1002,7 @@
       "source": "/home/pedro/.openclaw/workspace/memory/events",
       "trend7d": {
         "metric": "eventsToday",
-        "delta": 2,
+        "delta": 1,
         "direction": "up"
       }
     }
@@ -1159,11 +1159,6 @@
     ]
   },
   "recentActivity": [
-    {
-      "time": "2026-03-06T07:00:04-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
     {
       "time": "2026-03-06T07:30:03-03:00",
       "event": "Cron disparou: Lixo (Colocar Fora) (ec212b07-8387-45d0-9606-351509850608)",
@@ -1358,6 +1353,11 @@
       "time": "2026-03-06T22:00:38-03:00",
       "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
       "channel": "cron"
+    },
+    {
+      "time": "2026-03-06T22:30:11-03:00",
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     }
   ],
   "products": [
@@ -1365,24 +1365,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-07T01:12:31.783802+00:00"
+      "lastChecked": "2026-03-07T01:30:34.672221+00:00"
     }
   ],
   "crons": [
-    {
-      "id": "7804497e-ac8d-49c9-bead-08ed6bab21d1",
-      "name": "Rotina da Noite (Completa)",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-06T01:00:00.005000+00:00",
-      "nextRun": "2026-03-07T01:00:00+00:00",
-      "schedule": "0 22 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
-    },
     {
       "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "name": "Mission Control - Build+Publish",
@@ -1390,8 +1376,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-07T00:30:22.147000+00:00",
-      "nextRun": "2026-03-07T01:00:00+00:00",
+      "lastRun": "2026-03-07T01:12:26.224000+00:00",
+      "nextRun": "2026-03-07T01:30:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1404,26 +1390,12 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-07T00:30:00.006000+00:00",
-      "nextRun": "2026-03-07T01:00:00+00:00",
+      "lastRun": "2026-03-07T01:00:29.876000+00:00",
+      "nextRun": "2026-03-07T01:30:00+00:00",
       "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "telegram"
-    },
-    {
-      "id": "ec2938b2-9783-47f9-8945-ffd6388a0e82",
-      "name": "Pluggy Sync - Tracking Despesas",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-06T01:19:35.751000+00:00",
-      "nextRun": "2026-03-07T01:00:00+00:00",
-      "schedule": "0 22 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "openai-codex/gpt-5-mini",
-      "channel": "whatsapp"
     },
     {
       "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -1432,8 +1404,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-07T00:55:00.010000+00:00",
-      "nextRun": "2026-03-07T01:00:00+00:00",
+      "lastRun": "2026-03-07T01:25:00.009000+00:00",
+      "nextRun": "2026-03-07T01:30:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1664,6 +1636,34 @@
       "channel": "telegram"
     },
     {
+      "id": "7804497e-ac8d-49c9-bead-08ed6bab21d1",
+      "name": "Rotina da Noite (Completa)",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-07T01:00:00.009000+00:00",
+      "nextRun": "2026-03-08T01:00:00+00:00",
+      "schedule": "0 22 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
+    },
+    {
+      "id": "ec2938b2-9783-47f9-8945-ffd6388a0e82",
+      "name": "Pluggy Sync - Tracking Despesas",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": "cron announce delivery failed",
+      "lastRun": "2026-03-07T01:00:52.379000+00:00",
+      "nextRun": "2026-03-08T01:00:00+00:00",
+      "schedule": "0 22 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "openai-codex/gpt-5-mini",
+      "channel": "whatsapp"
+    },
+    {
       "id": "eb796b6f-bb0b-4b92-963c-18696cf45e0d",
       "name": "Lixo Véspera (22h)",
       "status": "ok",
@@ -1776,5 +1776,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-07T01:12:31.783802+00:00"
+  "lastUpdated": "2026-03-07T01:30:34.672221+00:00"
 }

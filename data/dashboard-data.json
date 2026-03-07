@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-07T01:12:31.783802+00:00",
+  "lastUpdated": "2026-03-07T01:30:34.672221+00:00",
   "actionRequired": [
     {
       "title": "Diário da Família - Enviador (4 erros) - ⚠️ ✉️ Message failed",
@@ -31,12 +31,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T01:12:26.231000+00:00"
+      "startedAt": "2026-03-07T01:30:24.910000+00:00"
+    },
+    {
+      "task": "agent:main:cron:cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-07T01:30:00.013000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-07T01:25:00.011000+00:00"
     },
     {
       "task": "agent:main:main",
       "model": "gpt-5.2",
-      "startedAt": "2026-03-07T01:10:31.309000+00:00"
+      "startedAt": "2026-03-07T01:23:02.374000+00:00"
     },
     {
       "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
@@ -44,19 +54,9 @@
       "startedAt": "2026-03-07T01:00:52.385000+00:00"
     },
     {
-      "task": "agent:main:cron:cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T01:00:29.879000+00:00"
-    },
-    {
       "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-07T01:00:00.011000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T00:55:00.012000+00:00"
     }
   ],
   "products": [
@@ -64,22 +64,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-07T01:12:31.783802+00:00"
+      "lastChecked": "2026-03-07T01:30:34.672221+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Rotina da Noite (Completa)",
-      "schedule": "0 22 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-06T01:00:00.005000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-07T00:30:22.147000+00:00",
+      "lastRun": "2026-03-07T01:12:26.224000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -87,15 +79,7 @@
     {
       "name": "Cobrador de Rotina (30min)",
       "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-07T00:30:00.006000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Pluggy Sync - Tracking Despesas",
-      "schedule": "0 22 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-06T01:19:35.751000+00:00",
+      "lastRun": "2026-03-07T01:00:29.876000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -103,7 +87,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-07T00:55:00.010000+00:00",
+      "lastRun": "2026-03-07T01:25:00.009000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -237,6 +221,22 @@
       "lastError": null
     },
     {
+      "name": "Rotina da Noite (Completa)",
+      "schedule": "0 22 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-07T01:00:00.009000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Pluggy Sync - Tracking Despesas",
+      "schedule": "0 22 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-07T01:00:52.379000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": "cron announce delivery failed"
+    },
+    {
       "name": "Lixo Véspera (22h)",
       "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
       "lastRun": "2026-03-06T01:00:23.388000+00:00",
@@ -302,11 +302,6 @@
     }
   ],
   "recentActivity": [
-    {
-      "time": "2026-03-06T07:00:04-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
     {
       "time": "2026-03-06T07:30:03-03:00",
       "event": "Cron disparou: Lixo (Colocar Fora) (ec212b07-8387-45d0-9606-351509850608)",
@@ -499,6 +494,11 @@
     },
     {
       "time": "2026-03-06T22:00:38-03:00",
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-06T22:30:11-03:00",
       "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
       "channel": "cron"
     }
