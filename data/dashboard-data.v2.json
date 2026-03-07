@@ -2,53 +2,20 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-07T03:30:08.243628+00:00"
+    "generatedAt": "2026-03-07T04:00:07.733009+00:00"
   },
   "overview": {
-    "healthScore": 0,
-    "criticalAlerts": 3,
+    "healthScore": 63,
+    "criticalAlerts": 1,
     "pendingControls": 0,
     "dataFreshnessSec": 0
   },
   "actionRequired": [
     {
-      "type": "cron-error",
-      "targetId": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
-      "title": "Diário da Família - Enviador (4 erros) - ⚠️ ✉️ Message failed",
-      "priority": "high",
-      "actions": [
-        "cron.retry",
-        "cron.pause"
-      ]
-    },
-    {
       "type": "security",
       "targetId": "security",
-      "title": "4 alerta(s) crítico(s) no security audit",
+      "title": "3 alerta(s) crítico(s) no security audit",
       "priority": "high",
-      "actions": []
-    },
-    {
-      "type": "security",
-      "targetId": "security",
-      "title": "credentials com permissão 775 (esperado 700)",
-      "priority": "high",
-      "actions": []
-    },
-    {
-      "type": "cron-tz-missing",
-      "targetId": "515506a0-6921-4f7d-8368-06fc4e93ee87",
-      "title": "Pós-Almoço: Zero Pia: schedule sem timezone configurado",
-      "priority": "medium",
-      "actions": [
-        "cron.set_timezone"
-      ]
-    },
-    {
-      "type": "security",
-      "targetId": "security",
-      "title": "diretório therapy com permissão 775",
-      "priority": "medium",
       "actions": []
     }
   ],
@@ -56,14 +23,28 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T03:30:00.012000+00:00",
+      "startedAt": "2026-03-07T04:00:00.008000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T03:25:00.007000+00:00",
+      "startedAt": "2026-03-07T03:55:00.011000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-07T03:46:58.206000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:main",
+      "model": "gpt-5.2",
+      "startedAt": "2026-03-07T03:45:12.163000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -82,23 +63,9 @@
       "kind": "direct"
     },
     {
-      "task": "agent:main:main",
-      "model": "gpt-5.2",
-      "startedAt": "2026-03-07T02:25:26.285000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
       "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
       "model": "gpt-5.1-codex-mini",
       "startedAt": "2026-03-07T01:00:52.385000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T01:00:00.011000+00:00",
       "agentId": "main",
       "kind": "direct"
     }
@@ -310,11 +277,11 @@
     {
       "id": "digest",
       "name": "Diário da Família",
-      "status": "error",
+      "status": "ok",
       "kpis": {
-        "sentToday": false,
+        "sentToday": true,
         "draftReady": false,
-        "errorJobs": 1,
+        "errorJobs": 0,
         "pipelineStages": 5
       },
       "pipeline": [
@@ -335,16 +302,16 @@
         {
           "id": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
           "name": "Diário da Família - Enviador",
-          "status": "error",
+          "status": "ok",
           "enabled": true,
-          "errors": 4,
-          "lastError": "⚠️ ✉️ Message failed",
-          "lastRun": "2026-03-06T13:14:17.227000+00:00",
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-07T03:46:58.202000+00:00",
           "nextRun": "2026-03-07T10:35:00+00:00",
           "schedule": "35 7 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
-          "channel": "last"
+          "channel": "whatsapp"
         },
         {
           "id": "d2c96354-081c-493d-891f-3c11c63cb9a1",
@@ -393,12 +360,7 @@
         "date": "2026-03-06",
         "tema": "Sinais de sono + janelas flexíveis"
       },
-      "alerts": [
-        {
-          "level": "high",
-          "text": "1 job(s) com erro no pipeline"
-        }
-      ],
+      "alerts": [],
       "actions": [
         "digest.retry_send",
         "cron.retry"
@@ -406,19 +368,19 @@
       "source": "/home/pedro/.openclaw/workspace/memory/daily_digest_draft.json",
       "trend7d": {
         "metric": "sentToday",
-        "delta": -1,
-        "direction": "down"
+        "delta": 0,
+        "direction": "flat"
       }
     },
     {
       "id": "crons",
       "name": "Cron Jobs",
-      "status": "error",
+      "status": "ok",
       "kpis": {
         "total": 29,
-        "errors": 1,
+        "errors": 0,
         "paused": 0,
-        "tzMissing": 1
+        "tzMissing": 0
       },
       "jobs": [
         {
@@ -428,8 +390,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-07T03:00:00.005000+00:00",
-          "nextRun": "2026-03-07T03:30:00+00:00",
+          "lastRun": "2026-03-07T03:30:00.010000+00:00",
+          "nextRun": "2026-03-07T04:00:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -442,8 +404,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-07T03:25:00.005000+00:00",
-          "nextRun": "2026-03-07T03:30:00+00:00",
+          "lastRun": "2026-03-07T03:55:00.008000+00:00",
+          "nextRun": "2026-03-07T04:00:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -494,16 +456,16 @@
         {
           "id": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
           "name": "Diário da Família - Enviador",
-          "status": "error",
+          "status": "ok",
           "enabled": true,
-          "errors": 4,
-          "lastError": "⚠️ ✉️ Message failed",
-          "lastRun": "2026-03-06T13:14:17.227000+00:00",
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-07T03:46:58.202000+00:00",
           "nextRun": "2026-03-07T10:35:00+00:00",
           "schedule": "35 7 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
-          "channel": "last"
+          "channel": "whatsapp"
         },
         {
           "id": "d2c96354-081c-493d-891f-3c11c63cb9a1",
@@ -640,8 +602,8 @@
           "lastError": null,
           "lastRun": "2026-03-06T16:30:00.016000+00:00",
           "nextRun": "2026-03-07T16:30:00+00:00",
-          "schedule": "30 13 * * 2-7",
-          "tzMissing": true,
+          "schedule": "30 13 * * 2-7 (America/Sao_Paulo)",
+          "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "telegram"
         },
@@ -828,16 +790,7 @@
           "channel": "telegram"
         }
       ],
-      "alerts": [
-        {
-          "level": "high",
-          "text": "1 cron(s) em erro"
-        },
-        {
-          "level": "warning",
-          "text": "1 cron(s) sem timezone"
-        }
-      ],
+      "alerts": [],
       "actions": [
         "cron.retry",
         "cron.pause",
@@ -940,30 +893,16 @@
     {
       "id": "therapy",
       "name": "Terapia (Privado)",
-      "status": "warning",
+      "status": "ok",
       "kpis": {
         "entriesFiles": 2,
         "latestFile": "2026-03.md",
         "contentExposed": false,
-        "insecurePerms": 2
+        "insecurePerms": 0
       },
-      "alerts": [
-        {
-          "level": "warning",
-          "text": "2 arquivo(s) com permissão insegura"
-        }
-      ],
+      "alerts": [],
       "details": {
-        "permissions": [
-          {
-            "file": "2026-02.md",
-            "mode": "664"
-          },
-          {
-            "file": "2026-03.md",
-            "mode": "664"
-          }
-        ]
+        "permissions": []
       },
       "actions": [],
       "source": "/home/pedro/.openclaw/workspace/memory/therapy",
@@ -1166,7 +1105,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-07T03:30:08.243628+00:00"
+      "lastChecked": "2026-03-07T04:00:07.733009+00:00"
     }
   ],
   "crons": [
@@ -1177,8 +1116,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-07T03:00:00.005000+00:00",
-      "nextRun": "2026-03-07T03:30:00+00:00",
+      "lastRun": "2026-03-07T03:30:00.010000+00:00",
+      "nextRun": "2026-03-07T04:00:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1191,8 +1130,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-07T03:25:00.005000+00:00",
-      "nextRun": "2026-03-07T03:30:00+00:00",
+      "lastRun": "2026-03-07T03:55:00.008000+00:00",
+      "nextRun": "2026-03-07T04:00:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1243,16 +1182,16 @@
     {
       "id": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
       "name": "Diário da Família - Enviador",
-      "status": "error",
+      "status": "ok",
       "enabled": true,
-      "errors": 4,
-      "lastError": "⚠️ ✉️ Message failed",
-      "lastRun": "2026-03-06T13:14:17.227000+00:00",
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-07T03:46:58.202000+00:00",
       "nextRun": "2026-03-07T10:35:00+00:00",
       "schedule": "35 7 * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
-      "channel": "last"
+      "channel": "whatsapp"
     },
     {
       "id": "d2c96354-081c-493d-891f-3c11c63cb9a1",
@@ -1389,8 +1328,8 @@
       "lastError": null,
       "lastRun": "2026-03-06T16:30:00.016000+00:00",
       "nextRun": "2026-03-07T16:30:00+00:00",
-      "schedule": "30 13 * * 2-7",
-      "tzMissing": true,
+      "schedule": "30 13 * * 2-7 (America/Sao_Paulo)",
+      "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "telegram"
     },
@@ -1577,5 +1516,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-07T03:30:08.243628+00:00"
+  "lastUpdated": "2026-03-07T04:00:07.733009+00:00"
 }

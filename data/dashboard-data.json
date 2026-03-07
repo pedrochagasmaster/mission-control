@@ -1,42 +1,32 @@
 {
-  "lastUpdated": "2026-03-07T03:30:08.243628+00:00",
+  "lastUpdated": "2026-03-07T04:00:07.733009+00:00",
   "actionRequired": [
     {
-      "title": "Diário da Família - Enviador (4 erros) - ⚠️ ✉️ Message failed",
+      "title": "3 alerta(s) crítico(s) no security audit",
       "url": null,
       "priority": "high"
-    },
-    {
-      "title": "4 alerta(s) crítico(s) no security audit",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "credentials com permissão 775 (esperado 700)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Pós-Almoço: Zero Pia: schedule sem timezone configurado",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "diretório therapy com permissão 775",
-      "url": null,
-      "priority": "medium"
     }
   ],
   "activeNow": [
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T03:30:00.012000+00:00"
+      "startedAt": "2026-03-07T04:00:00.008000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T03:25:00.007000+00:00"
+      "startedAt": "2026-03-07T03:55:00.011000+00:00"
+    },
+    {
+      "task": "agent:main:cron:4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-07T03:46:58.206000+00:00"
+    },
+    {
+      "task": "agent:main:main",
+      "model": "gpt-5.2",
+      "startedAt": "2026-03-07T03:45:12.163000+00:00"
     },
     {
       "task": "agent:main:cron:ebbd066d-2269-48d5-8f80-f89ce7633b81",
@@ -49,19 +39,9 @@
       "startedAt": "2026-03-07T02:30:00.012000+00:00"
     },
     {
-      "task": "agent:main:main",
-      "model": "gpt-5.2",
-      "startedAt": "2026-03-07T02:25:26.285000+00:00"
-    },
-    {
       "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
       "model": "gpt-5.1-codex-mini",
       "startedAt": "2026-03-07T01:00:52.385000+00:00"
-    },
-    {
-      "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-07T01:00:00.011000+00:00"
     }
   ],
   "products": [
@@ -69,14 +49,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-07T03:30:08.243628+00:00"
+      "lastChecked": "2026-03-07T04:00:07.733009+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-07T03:00:00.005000+00:00",
+      "lastRun": "2026-03-07T03:30:00.010000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -84,7 +64,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-07T03:25:00.005000+00:00",
+      "lastRun": "2026-03-07T03:55:00.008000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -116,10 +96,10 @@
     {
       "name": "Diário da Família - Enviador",
       "schedule": "35 7 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-06T13:14:17.227000+00:00",
-      "status": "error",
-      "errors": 4,
-      "lastError": "⚠️ ✉️ Message failed"
+      "lastRun": "2026-03-07T03:46:58.202000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Diário da Família - Watchdog (fallback)",
@@ -195,7 +175,7 @@
     },
     {
       "name": "Pós-Almoço: Zero Pia",
-      "schedule": "30 13 * * 2-7",
+      "schedule": "30 13 * * 2-7 (America/Sao_Paulo)",
       "lastRun": "2026-03-06T16:30:00.016000+00:00",
       "status": "ok",
       "errors": 0,
