@@ -2,10 +2,10 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-08T02:30:26.980563+00:00"
+    "generatedAt": "2026-03-08T03:00:10.386776+00:00"
   },
   "overview": {
-    "healthScore": 59,
+    "healthScore": 63,
     "criticalAlerts": 1,
     "pendingControls": 0,
     "dataFreshnessSec": 0
@@ -23,7 +23,21 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-08T02:30:21.099000+00:00",
+      "startedAt": "2026-03-08T03:00:03.209000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ebbd066d-2269-48d5-8f80-f89ce7633b81",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-08T02:59:00.009000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-08T02:55:00.007000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -31,13 +45,6 @@
       "task": "agent:main:cron:cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-08T02:30:00.009000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-08T02:25:00.008000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -67,12 +74,12 @@
     {
       "id": "routines",
       "name": "Rotinas da Casa",
-      "status": "warning",
+      "status": "ok",
       "kpis": {
         "pending": 3,
         "done": 4,
         "skipped": 0,
-        "overdue": 3
+        "overdue": 0
       },
       "tasks": [
         {
@@ -125,12 +132,7 @@
           "note": ""
         }
       ],
-      "alerts": [
-        {
-          "level": "warning",
-          "text": "3 tarefa(s) pendente(s) já no horário"
-        }
-      ],
+      "alerts": [],
       "actions": [
         "task.mark_done",
         "task.mark_skipped"
@@ -280,8 +282,8 @@
       "name": "Diário da Família",
       "status": "ok",
       "kpis": {
-        "sentToday": true,
-        "draftReady": true,
+        "sentToday": false,
+        "draftReady": false,
         "errorJobs": 0,
         "pipelineStages": 5
       },
@@ -369,8 +371,8 @@
       "source": "/home/pedro/.openclaw/workspace/memory/daily_digest_draft.json",
       "trend7d": {
         "metric": "sentToday",
-        "delta": 0,
-        "direction": "flat"
+        "delta": -1,
+        "direction": "down"
       }
     },
     {
@@ -391,26 +393,12 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-08T02:00:21.147000+00:00",
-          "nextRun": "2026-03-08T02:30:00+00:00",
+          "lastRun": "2026-03-08T02:30:21.094000+00:00",
+          "nextRun": "2026-03-08T03:00:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": null
-        },
-        {
-          "id": "cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
-          "name": "Cobrador de Rotina (30min)",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-08T02:00:00.006000+00:00",
-          "nextRun": "2026-03-08T02:30:00+00:00",
-          "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
         },
         {
           "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -419,26 +407,12 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-08T02:25:00.006000+00:00",
-          "nextRun": "2026-03-08T02:30:00+00:00",
+          "lastRun": "2026-03-08T02:55:00.005000+00:00",
+          "nextRun": "2026-03-08T03:00:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "last"
-        },
-        {
-          "id": "ebbd066d-2269-48d5-8f80-f89ce7633b81",
-          "name": "daily-git-commit",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-07T05:31:08.468000+00:00",
-          "nextRun": "2026-03-08T02:59:00+00:00",
-          "schedule": "59 23 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "whatsapp"
         },
         {
           "id": "75b87bc7-016d-49a2-9995-4a0b715a7f23",
@@ -453,6 +427,20 @@
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "last"
+        },
+        {
+          "id": "cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
+          "name": "Cobrador de Rotina (30min)",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-08T02:30:00.007000+00:00",
+          "nextRun": "2026-03-08T10:00:00+00:00",
+          "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
         },
         {
           "id": "06b5aaae-b25a-4005-a78c-badad02f216b",
@@ -676,6 +664,20 @@
           "schedule": "0 22 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "openai-codex/gpt-5-mini",
+          "channel": "whatsapp"
+        },
+        {
+          "id": "ebbd066d-2269-48d5-8f80-f89ce7633b81",
+          "name": "daily-git-commit",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-08T02:59:00.007000+00:00",
+          "nextRun": "2026-03-09T02:59:00+00:00",
+          "schedule": "59 23 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
           "channel": "whatsapp"
         },
         {
@@ -918,7 +920,7 @@
       "name": "Monitoramento e Auditoria",
       "status": "warning",
       "kpis": {
-        "eventsToday": 42,
+        "eventsToday": 0,
         "queuePending": 0,
         "heartbeatBackup": false,
         "heartbeatConfigured": true
@@ -930,8 +932,8 @@
         "enabled": true,
         "errors": 0,
         "lastError": null,
-        "lastRun": "2026-03-07T05:31:08.468000+00:00",
-        "nextRun": "2026-03-08T02:59:00+00:00",
+        "lastRun": "2026-03-08T02:59:00.007000+00:00",
+        "nextRun": "2026-03-09T02:59:00+00:00",
         "schedule": "59 23 * * * (America/Sao_Paulo)",
         "tzMissing": false,
         "model": "github-copilot/gpt-5-mini",
@@ -944,7 +946,7 @@
       "source": "/home/pedro/.openclaw/workspace/memory/events",
       "trend7d": {
         "metric": "eventsToday",
-        "delta": -1,
+        "delta": -43,
         "direction": "down"
       }
     }
@@ -1100,214 +1102,13 @@
       }
     ]
   },
-  "recentActivity": [
-    {
-      "time": "2026-03-07T08:00:10-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T08:30:14-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T09:00:36-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T09:30:11-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T10:00:07-03:00",
-      "event": "Cron disparou: Aspirar Cozinha (555d214e-c8ca-48ef-a091-d41efcba712d)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T10:00:20-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T10:30:11-03:00",
-      "event": "Cron disparou: Rotina da Manhã (Completa) (93c7796d-f82d-4381-a925-f1a0a22bf25b)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T10:30:56-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T11:00:11-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T11:30:14-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T12:00:22-03:00",
-      "event": "Cron disparou: Ração Almoço (42be764c-f915-4669-8f94-878e23362bf8)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T12:00:45-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T12:30:14-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T13:00:17-03:00",
-      "event": "Cron disparou: Passeio Almoço (96074f1f-0124-4b4c-a944-e71349f91678)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T13:00:38-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T13:30:15-03:00",
-      "event": "Cron disparou: Pós-Almoço: Zero Pia (515506a0-6921-4f7d-8368-06fc4e93ee87)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T13:30:52-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T14:00:09-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T14:30:12-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T15:00:10-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T15:30:12-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T16:00:13-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T16:30:25-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T17:00:09-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T17:30:25-03:00",
-      "event": "Cron disparou: Blitz da Ordem (17:30) (a2a10215-b00a-45e4-8ed4-28cb60e442a6)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T17:30:40-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T18:00:26-03:00",
-      "event": "Cron disparou: Rotina da Tarde (e3ac374c-a524-4465-a872-f682f01a979d)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T18:00:41-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T18:30:10-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T19:00:10-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T19:30:07-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T20:00:17-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T20:30:11-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T21:00:15-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T21:30:07-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T22:00:22-03:00",
-      "event": "Cron disparou: Rotina da Noite (Completa) (7804497e-ac8d-49c9-bead-08ed-08ed6bab21d1)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T22:00:39-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T22:30:09-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T23:00:13-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-07T23:30:07-03:00",
-      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
-      "channel": "cron"
-    }
-  ],
+  "recentActivity": [],
   "products": [
     {
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-08T02:30:26.980563+00:00"
+      "lastChecked": "2026-03-08T03:00:10.386776+00:00"
     }
   ],
   "crons": [
@@ -1318,26 +1119,12 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-08T02:00:21.147000+00:00",
-      "nextRun": "2026-03-08T02:30:00+00:00",
+      "lastRun": "2026-03-08T02:30:21.094000+00:00",
+      "nextRun": "2026-03-08T03:00:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": null
-    },
-    {
-      "id": "cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
-      "name": "Cobrador de Rotina (30min)",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-08T02:00:00.006000+00:00",
-      "nextRun": "2026-03-08T02:30:00+00:00",
-      "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
     },
     {
       "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -1346,26 +1133,12 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-08T02:25:00.006000+00:00",
-      "nextRun": "2026-03-08T02:30:00+00:00",
+      "lastRun": "2026-03-08T02:55:00.005000+00:00",
+      "nextRun": "2026-03-08T03:00:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "last"
-    },
-    {
-      "id": "ebbd066d-2269-48d5-8f80-f89ce7633b81",
-      "name": "daily-git-commit",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-07T05:31:08.468000+00:00",
-      "nextRun": "2026-03-08T02:59:00+00:00",
-      "schedule": "59 23 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "whatsapp"
     },
     {
       "id": "75b87bc7-016d-49a2-9995-4a0b715a7f23",
@@ -1380,6 +1153,20 @@
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "last"
+    },
+    {
+      "id": "cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
+      "name": "Cobrador de Rotina (30min)",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-08T02:30:00.007000+00:00",
+      "nextRun": "2026-03-08T10:00:00+00:00",
+      "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
     },
     {
       "id": "06b5aaae-b25a-4005-a78c-badad02f216b",
@@ -1606,6 +1393,20 @@
       "channel": "whatsapp"
     },
     {
+      "id": "ebbd066d-2269-48d5-8f80-f89ce7633b81",
+      "name": "daily-git-commit",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-08T02:59:00.007000+00:00",
+      "nextRun": "2026-03-09T02:59:00+00:00",
+      "schedule": "59 23 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "whatsapp"
+    },
+    {
       "id": "ec212b07-8387-45d0-9606-351509850608",
       "name": "Lixo (Colocar Fora)",
       "status": "ok",
@@ -1718,5 +1519,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-08T02:30:26.980563+00:00"
+  "lastUpdated": "2026-03-08T03:00:10.386776+00:00"
 }
