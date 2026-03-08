@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-08T17:30:19.470402+00:00"
+    "generatedAt": "2026-03-08T18:00:20.133067+00:00"
   },
   "overview": {
     "healthScore": 63,
@@ -23,28 +23,28 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-08T17:30:15.637000+00:00",
+      "startedAt": "2026-03-08T18:00:16.113000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-08T17:30:00.009000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:main",
-      "model": "k2p5",
-      "startedAt": "2026-03-08T17:25:19.478000+00:00",
+      "startedAt": "2026-03-08T18:00:00.012000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-08T17:25:00.010000+00:00",
+      "startedAt": "2026-03-08T17:55:00.012000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:main",
+      "model": "k2p5",
+      "startedAt": "2026-03-08T17:45:22.124000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -59,13 +59,6 @@
       "task": "agent:main:cron:96074f1f-0124-4b4c-a944-e71349f91678",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-08T16:00:00.009000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:42be764c-f915-4669-8f94-878e23362bf8",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-08T15:00:00.011000+00:00",
       "agentId": "main",
       "kind": "direct"
     }
@@ -399,8 +392,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-08T17:00:17.411000+00:00",
-          "nextRun": "2026-03-08T17:30:00+00:00",
+          "lastRun": "2026-03-08T17:30:15.633000+00:00",
+          "nextRun": "2026-03-08T18:00:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -413,8 +406,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-08T17:00:00.007000+00:00",
-          "nextRun": "2026-03-08T17:30:00+00:00",
+          "lastRun": "2026-03-08T17:30:00.006000+00:00",
+          "nextRun": "2026-03-08T18:00:00+00:00",
           "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -427,8 +420,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-08T17:25:00.007000+00:00",
-          "nextRun": "2026-03-08T17:30:00+00:00",
+          "lastRun": "2026-03-08T17:55:00.009000+00:00",
+          "nextRun": "2026-03-08T18:00:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -940,7 +933,7 @@
       "name": "Monitoramento e Auditoria",
       "status": "ok",
       "kpis": {
-        "eventsToday": 20,
+        "eventsToday": 21,
         "queuePending": 0,
         "heartbeatBackup": true,
         "heartbeatConfigured": true
@@ -966,7 +959,7 @@
       "source": "/home/pedro/.openclaw/workspace/memory/events",
       "trend7d": {
         "metric": "eventsToday",
-        "delta": -23,
+        "delta": -22,
         "direction": "down"
       }
     }
@@ -1222,6 +1215,11 @@
       "time": "2026-03-08T14:30:06-03:00",
       "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
       "channel": "cron"
+    },
+    {
+      "time": "2026-03-08T15:00:07-03:00",
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     }
   ],
   "products": [
@@ -1229,7 +1227,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-08T17:30:19.470402+00:00"
+      "lastChecked": "2026-03-08T18:00:20.133067+00:00"
     }
   ],
   "crons": [
@@ -1240,8 +1238,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-08T17:00:17.411000+00:00",
-      "nextRun": "2026-03-08T17:30:00+00:00",
+      "lastRun": "2026-03-08T17:30:15.633000+00:00",
+      "nextRun": "2026-03-08T18:00:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1254,8 +1252,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-08T17:00:00.007000+00:00",
-      "nextRun": "2026-03-08T17:30:00+00:00",
+      "lastRun": "2026-03-08T17:30:00.006000+00:00",
+      "nextRun": "2026-03-08T18:00:00+00:00",
       "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1268,8 +1266,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-08T17:25:00.007000+00:00",
-      "nextRun": "2026-03-08T17:30:00+00:00",
+      "lastRun": "2026-03-08T17:55:00.009000+00:00",
+      "nextRun": "2026-03-08T18:00:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1654,5 +1652,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-08T17:30:19.470402+00:00"
+  "lastUpdated": "2026-03-08T18:00:20.133067+00:00"
 }
