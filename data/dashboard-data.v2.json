@@ -2,10 +2,10 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-08T16:30:28.910815+00:00"
+    "generatedAt": "2026-03-08T17:00:21.611136+00:00"
   },
   "overview": {
-    "healthScore": 59,
+    "healthScore": 63,
     "criticalAlerts": 1,
     "pendingControls": 0,
     "dataFreshnessSec": 0
@@ -23,14 +23,28 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-08T16:30:25.282000+00:00",
+      "startedAt": "2026-03-08T17:00:17.418000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-08T16:30:11.606000+00:00",
+      "startedAt": "2026-03-08T17:00:00.011000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-08T16:55:00.010000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:main",
+      "model": "k2p5",
+      "startedAt": "2026-03-08T16:45:19.856000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -38,20 +52,6 @@
       "task": "agent:main:cron:515506a0-6921-4f7d-8368-06fc4e93ee87",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-08T16:30:00.009000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:main",
-      "model": "k2p5",
-      "startedAt": "2026-03-08T16:25:19.775000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-08T16:25:00.009000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -393,28 +393,14 @@
       },
       "jobs": [
         {
-          "id": "515506a0-6921-4f7d-8368-06fc4e93ee87",
-          "name": "Pós-Almoço: Zero Pia",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-07T16:30:00.012000+00:00",
-          "nextRun": "2026-03-08T16:30:00+00:00",
-          "schedule": "30 13 * * 2-7 (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
-        },
-        {
           "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
           "name": "Mission Control - Build+Publish",
           "status": "ok",
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-08T16:00:30.307000+00:00",
-          "nextRun": "2026-03-08T16:30:00+00:00",
+          "lastRun": "2026-03-08T16:30:25.279000+00:00",
+          "nextRun": "2026-03-08T17:00:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -427,8 +413,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-08T16:00:18.580000+00:00",
-          "nextRun": "2026-03-08T16:30:00+00:00",
+          "lastRun": "2026-03-08T16:30:11.598000+00:00",
+          "nextRun": "2026-03-08T17:00:00+00:00",
           "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -441,8 +427,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-08T16:25:00.006000+00:00",
-          "nextRun": "2026-03-08T16:30:00+00:00",
+          "lastRun": "2026-03-08T16:55:00.006000+00:00",
+          "nextRun": "2026-03-08T17:00:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -771,6 +757,20 @@
           "channel": "telegram"
         },
         {
+          "id": "515506a0-6921-4f7d-8368-06fc4e93ee87",
+          "name": "Pós-Almoço: Zero Pia",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-08T16:30:00.007000+00:00",
+          "nextRun": "2026-03-10T16:30:00+00:00",
+          "schedule": "30 13 * * 2-7 (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
+        },
+        {
           "id": "777c622d-db73-4c08-be71-28c968ef21f4",
           "name": "Pagamento Banho",
           "status": "ok",
@@ -938,11 +938,11 @@
     {
       "id": "ops",
       "name": "Monitoramento e Auditoria",
-      "status": "warning",
+      "status": "ok",
       "kpis": {
-        "eventsToday": 18,
+        "eventsToday": 19,
         "queuePending": 0,
-        "heartbeatBackup": false,
+        "heartbeatBackup": true,
         "heartbeatConfigured": true
       },
       "job": {
@@ -960,13 +960,13 @@
         "channel": "whatsapp"
       },
       "heartbeat": {
-        "backupProcessFound": false
+        "backupProcessFound": true
       },
       "actions": [],
       "source": "/home/pedro/.openclaw/workspace/memory/events",
       "trend7d": {
         "metric": "eventsToday",
-        "delta": -25,
+        "delta": -24,
         "direction": "down"
       }
     }
@@ -1212,6 +1212,11 @@
       "time": "2026-03-08T13:30:16-03:00",
       "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
       "channel": "cron"
+    },
+    {
+      "time": "2026-03-08T14:00:06-03:00",
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     }
   ],
   "products": [
@@ -1219,24 +1224,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-08T16:30:28.910815+00:00"
+      "lastChecked": "2026-03-08T17:00:21.611136+00:00"
     }
   ],
   "crons": [
-    {
-      "id": "515506a0-6921-4f7d-8368-06fc4e93ee87",
-      "name": "Pós-Almoço: Zero Pia",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-07T16:30:00.012000+00:00",
-      "nextRun": "2026-03-08T16:30:00+00:00",
-      "schedule": "30 13 * * 2-7 (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
-    },
     {
       "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "name": "Mission Control - Build+Publish",
@@ -1244,8 +1235,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-08T16:00:30.307000+00:00",
-      "nextRun": "2026-03-08T16:30:00+00:00",
+      "lastRun": "2026-03-08T16:30:25.279000+00:00",
+      "nextRun": "2026-03-08T17:00:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1258,8 +1249,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-08T16:00:18.580000+00:00",
-      "nextRun": "2026-03-08T16:30:00+00:00",
+      "lastRun": "2026-03-08T16:30:11.598000+00:00",
+      "nextRun": "2026-03-08T17:00:00+00:00",
       "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1272,8 +1263,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-08T16:25:00.006000+00:00",
-      "nextRun": "2026-03-08T16:30:00+00:00",
+      "lastRun": "2026-03-08T16:55:00.006000+00:00",
+      "nextRun": "2026-03-08T17:00:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1602,6 +1593,20 @@
       "channel": "telegram"
     },
     {
+      "id": "515506a0-6921-4f7d-8368-06fc4e93ee87",
+      "name": "Pós-Almoço: Zero Pia",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-08T16:30:00.007000+00:00",
+      "nextRun": "2026-03-10T16:30:00+00:00",
+      "schedule": "30 13 * * 2-7 (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
+    },
+    {
       "id": "777c622d-db73-4c08-be71-28c968ef21f4",
       "name": "Pagamento Banho",
       "status": "ok",
@@ -1644,5 +1649,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-08T16:30:28.910815+00:00"
+  "lastUpdated": "2026-03-08T17:00:21.611136+00:00"
 }
