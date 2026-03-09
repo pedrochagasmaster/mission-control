@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-09T11:30:51.079783+00:00"
+    "generatedAt": "2026-03-09T12:01:36.120705+00:00"
   },
   "overview": {
     "healthScore": 63,
@@ -23,28 +23,49 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-09T11:30:40.672000+00:00",
+      "startedAt": "2026-03-09T12:01:26.472000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-09T12:00:53.150000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-09T11:30:00.013000+00:00",
+      "startedAt": "2026-03-09T12:00:30.977000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ae7b9fb6-d807-4c23-846c-87f880d130be",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-09T12:00:16.917000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:3d633d74-840a-4996-82df-9e9f8d474d46",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-09T12:00:00.010000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-09T11:25:00.010000+00:00",
+      "startedAt": "2026-03-09T11:55:00.013000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:main",
       "model": "k2p5",
-      "startedAt": "2026-03-09T11:15:36.002000+00:00",
+      "startedAt": "2026-03-09T11:40:23.996000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -52,27 +73,6 @@
       "task": "agent:main:cron:0ba1cb64-5259-46bf-beb5-e58c02ec4215",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-09T11:15:00.010000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:44299965-a647-45cd-b9c2-e504bea42398",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-09T10:50:00.012000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:d2c96354-081c-493d-891f-3c11c63cb9a1",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-09T10:45:00.010000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-09T10:35:00.010000+00:00",
       "agentId": "main",
       "kind": "direct"
     }
@@ -400,48 +400,6 @@
       },
       "jobs": [
         {
-          "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-          "name": "Mission Control - Build+Publish",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-09T11:00:21.218000+00:00",
-          "nextRun": "2026-03-09T11:30:00+00:00",
-          "schedule": "*/30 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": null
-        },
-        {
-          "id": "cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
-          "name": "Cobrador de Rotina (30min)",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-09T11:00:00.009000+00:00",
-          "nextRun": "2026-03-09T11:30:00+00:00",
-          "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
-        },
-        {
-          "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-          "name": "Mission Control - Control Runner",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-09T11:25:00.008000+00:00",
-          "nextRun": "2026-03-09T11:30:00+00:00",
-          "schedule": "*/5 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "last"
-        },
-        {
           "id": "02182f0c-4413-4374-a3fb-1a3f5651b6e7",
           "name": "Deadline Reminder Checker",
           "status": "ok",
@@ -470,6 +428,20 @@
           "channel": "telegram"
         },
         {
+          "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+          "name": "Mission Control - Build+Publish",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-09T11:30:40.666000+00:00",
+          "nextRun": "2026-03-09T12:00:00+00:00",
+          "schedule": "*/30 * * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": null
+        },
+        {
           "id": "ae7b9fb6-d807-4c23-846c-87f880d130be",
           "name": "Resumo Diário da To-Do List",
           "status": "ok",
@@ -482,6 +454,34 @@
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "telegram"
+        },
+        {
+          "id": "cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
+          "name": "Cobrador de Rotina (30min)",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-09T11:30:00.011000+00:00",
+          "nextRun": "2026-03-09T12:00:00+00:00",
+          "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
+        },
+        {
+          "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+          "name": "Mission Control - Control Runner",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-09T11:55:00.009000+00:00",
+          "nextRun": "2026-03-09T12:00:00+00:00",
+          "schedule": "*/5 * * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "last"
         },
         {
           "id": "555d214e-c8ca-48ef-a091-d41efcba712d",
@@ -947,7 +947,7 @@
       "name": "Monitoramento e Auditoria",
       "status": "ok",
       "kpis": {
-        "eventsToday": 5,
+        "eventsToday": 7,
         "queuePending": 0,
         "heartbeatBackup": true,
         "heartbeatConfigured": true
@@ -973,7 +973,7 @@
       "source": "/home/pedro/.openclaw/workspace/memory/events",
       "trend7d": {
         "metric": "eventsToday",
-        "delta": -38,
+        "delta": -36,
         "direction": "down"
       }
     }
@@ -1154,6 +1154,16 @@
       "time": "2026-03-09T08:30:19-03:00",
       "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
       "channel": "cron"
+    },
+    {
+      "time": "2026-03-09T09:00:10-03:00",
+      "event": "Cron disparou: Pagamento Wal (3d633d74-840a-4996-82df-9e9f8d474d46)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-09T09:00:37-03:00",
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     }
   ],
   "products": [
@@ -1161,52 +1171,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-09T11:30:51.079783+00:00"
+      "lastChecked": "2026-03-09T12:01:36.120705+00:00"
     }
   ],
   "crons": [
-    {
-      "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "name": "Mission Control - Build+Publish",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-09T11:00:21.218000+00:00",
-      "nextRun": "2026-03-09T11:30:00+00:00",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": null
-    },
-    {
-      "id": "cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
-      "name": "Cobrador de Rotina (30min)",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-09T11:00:00.009000+00:00",
-      "nextRun": "2026-03-09T11:30:00+00:00",
-      "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
-    },
-    {
-      "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "name": "Mission Control - Control Runner",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-09T11:25:00.008000+00:00",
-      "nextRun": "2026-03-09T11:30:00+00:00",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "last"
-    },
     {
       "id": "02182f0c-4413-4374-a3fb-1a3f5651b6e7",
       "name": "Deadline Reminder Checker",
@@ -1236,6 +1204,20 @@
       "channel": "telegram"
     },
     {
+      "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "name": "Mission Control - Build+Publish",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-09T11:30:40.666000+00:00",
+      "nextRun": "2026-03-09T12:00:00+00:00",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": null
+    },
+    {
       "id": "ae7b9fb6-d807-4c23-846c-87f880d130be",
       "name": "Resumo Diário da To-Do List",
       "status": "ok",
@@ -1248,6 +1230,34 @@
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "telegram"
+    },
+    {
+      "id": "cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
+      "name": "Cobrador de Rotina (30min)",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-09T11:30:00.011000+00:00",
+      "nextRun": "2026-03-09T12:00:00+00:00",
+      "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
+    },
+    {
+      "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "name": "Mission Control - Control Runner",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-09T11:55:00.009000+00:00",
+      "nextRun": "2026-03-09T12:00:00+00:00",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "last"
     },
     {
       "id": "555d214e-c8ca-48ef-a091-d41efcba712d",
@@ -1586,5 +1596,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-09T11:30:51.079783+00:00"
+  "lastUpdated": "2026-03-09T12:01:36.120705+00:00"
 }
