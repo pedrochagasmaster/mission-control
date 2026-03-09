@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-09T04:00:20.101977+00:00"
+    "generatedAt": "2026-03-09T04:30:04.176598+00:00"
   },
   "overview": {
     "healthScore": 67,
@@ -23,14 +23,14 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-09T04:00:00.011000+00:00",
+      "startedAt": "2026-03-09T04:30:00.011000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-09T03:55:00.010000+00:00",
+      "startedAt": "2026-03-09T04:25:00.011000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -52,13 +52,6 @@
       "task": "agent:main:main",
       "model": "k2p5",
       "startedAt": "2026-03-09T02:25:23.439000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-09T01:00:35.356000+00:00",
       "agentId": "main",
       "kind": "direct"
     }
@@ -387,8 +380,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-09T03:30:00.007000+00:00",
-          "nextRun": "2026-03-09T04:00:00+00:00",
+          "lastRun": "2026-03-09T04:00:00.007000+00:00",
+          "nextRun": "2026-03-09T04:30:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -401,8 +394,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-09T03:55:00.007000+00:00",
-          "nextRun": "2026-03-09T04:00:00+00:00",
+          "lastRun": "2026-03-09T04:25:00.008000+00:00",
+          "nextRun": "2026-03-09T04:30:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -1116,7 +1109,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-09T04:00:20.101977+00:00"
+      "lastChecked": "2026-03-09T04:30:04.176598+00:00"
     }
   ],
   "crons": [
@@ -1127,8 +1120,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-09T03:30:00.007000+00:00",
-      "nextRun": "2026-03-09T04:00:00+00:00",
+      "lastRun": "2026-03-09T04:00:00.007000+00:00",
+      "nextRun": "2026-03-09T04:30:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1141,8 +1134,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-09T03:55:00.007000+00:00",
-      "nextRun": "2026-03-09T04:00:00+00:00",
+      "lastRun": "2026-03-09T04:25:00.008000+00:00",
+      "nextRun": "2026-03-09T04:30:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1541,5 +1534,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-09T04:00:20.101977+00:00"
+  "lastUpdated": "2026-03-09T04:30:04.176598+00:00"
 }
