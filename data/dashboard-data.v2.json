@@ -2,10 +2,10 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-10T21:30:08.852548+00:00"
+    "generatedAt": "2026-03-10T22:00:12.894314+00:00"
   },
   "overview": {
-    "healthScore": 63,
+    "healthScore": 67,
     "criticalAlerts": 1,
     "pendingControls": 0,
     "dataFreshnessSec": 0
@@ -23,21 +23,21 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-10T21:30:00.007000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-10T21:25:00.010000+00:00",
+      "startedAt": "2026-03-10T22:00:00.009000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:main",
       "model": "k2p5",
-      "startedAt": "2026-03-10T21:02:43.890000+00:00",
+      "startedAt": "2026-03-10T21:56:11.951000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-10T21:55:00.009000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -60,53 +60,53 @@
     {
       "id": "routines",
       "name": "Rotinas da Casa",
-      "status": "warning",
+      "status": "ok",
       "kpis": {
-        "pending": 7,
-        "done": 0,
+        "pending": 1,
+        "done": 6,
         "skipped": 0,
-        "overdue": 6
+        "overdue": 0
       },
       "tasks": [
         {
           "key": "rotina_manha",
           "label": "🌅 Rotina da Manhã",
-          "status": "PENDING",
+          "status": "DONE",
           "time": "06:00",
           "note": ""
         },
         {
           "key": "racao_almoco",
           "label": "🍲 Ração Almoço",
-          "status": "PENDING",
+          "status": "DONE",
           "time": "12:00",
           "note": ""
         },
         {
           "key": "passeio_almoco",
           "label": "🐕 Passeio 2/4",
-          "status": "PENDING",
+          "status": "DONE",
           "time": "13:00",
           "note": ""
         },
         {
           "key": "missao_pos_almoco",
           "label": "🍽️ Zero Pia",
-          "status": "PENDING",
+          "status": "DONE",
           "time": "13:30",
           "note": ""
         },
         {
           "key": "blitz_ordem",
           "label": "🌪️ Blitz da Ordem",
-          "status": "PENDING",
+          "status": "DONE",
           "time": "17:30",
           "note": ""
         },
         {
           "key": "rotina_tarde",
           "label": "🌆 Rotina Tarde",
-          "status": "PENDING",
+          "status": "DONE",
           "time": "18:00",
           "note": ""
         },
@@ -118,12 +118,7 @@
           "note": ""
         }
       ],
-      "alerts": [
-        {
-          "level": "warning",
-          "text": "6 tarefa(s) pendente(s) já no horário"
-        }
-      ],
+      "alerts": [],
       "actions": [
         "task.mark_done",
         "task.mark_skipped"
@@ -131,8 +126,8 @@
       "source": "/home/pedro/.openclaw/workspace/memory/daily_tasks.json",
       "trend7d": {
         "metric": "pending",
-        "delta": 6,
-        "direction": "up"
+        "delta": 0,
+        "direction": "flat"
       }
     },
     {
@@ -385,8 +380,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-10T21:00:18.702000+00:00",
-          "nextRun": "2026-03-10T21:30:00+00:00",
+          "lastRun": "2026-03-10T21:30:00.006000+00:00",
+          "nextRun": "2026-03-10T22:00:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -399,8 +394,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-10T21:25:00.008000+00:00",
-          "nextRun": "2026-03-10T21:30:00+00:00",
+          "lastRun": "2026-03-10T21:55:00.007000+00:00",
+          "nextRun": "2026-03-10T22:00:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -1232,7 +1227,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-10T21:30:08.852548+00:00"
+      "lastChecked": "2026-03-10T22:00:12.894314+00:00"
     }
   ],
   "crons": [
@@ -1243,8 +1238,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-10T21:00:18.702000+00:00",
-      "nextRun": "2026-03-10T21:30:00+00:00",
+      "lastRun": "2026-03-10T21:30:00.006000+00:00",
+      "nextRun": "2026-03-10T22:00:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1257,8 +1252,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-10T21:25:00.008000+00:00",
-      "nextRun": "2026-03-10T21:30:00+00:00",
+      "lastRun": "2026-03-10T21:55:00.007000+00:00",
+      "nextRun": "2026-03-10T22:00:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1699,5 +1694,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-10T21:30:08.852548+00:00"
+  "lastUpdated": "2026-03-10T22:00:12.894314+00:00"
 }
