@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-10T09:00:10.023336+00:00"
+    "generatedAt": "2026-03-10T09:30:08.003850+00:00"
   },
   "overview": {
     "healthScore": 63,
@@ -23,14 +23,21 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-10T09:00:00.011000+00:00",
+      "startedAt": "2026-03-10T09:30:00.012000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-10T08:55:00.010000+00:00",
+      "startedAt": "2026-03-10T09:25:00.013000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-10T09:00:41.116000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -378,8 +385,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-10T08:30:00.010000+00:00",
-          "nextRun": "2026-03-10T09:00:00+00:00",
+          "lastRun": "2026-03-10T09:00:00.009000+00:00",
+          "nextRun": "2026-03-10T09:30:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -392,23 +399,9 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-10T08:55:00.008000+00:00",
-          "nextRun": "2026-03-10T09:00:00+00:00",
+          "lastRun": "2026-03-10T09:25:00.011000+00:00",
+          "nextRun": "2026-03-10T09:30:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "last"
-        },
-        {
-          "id": "f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
-          "name": "Atualização do Índice de Sistema",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-09T09:00:37.436000+00:00",
-          "nextRun": "2026-03-10T09:00:00+00:00",
-          "schedule": "0 6 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "last"
@@ -689,6 +682,20 @@
           "lastRun": "2026-03-10T08:00:00.009000+00:00",
           "nextRun": "2026-03-11T08:00:00+00:00",
           "schedule": "0 5 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "last"
+        },
+        {
+          "id": "f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
+          "name": "Atualização do Índice de Sistema",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-10T09:00:41.114000+00:00",
+          "nextRun": "2026-03-11T09:00:00+00:00",
+          "schedule": "0 6 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "last"
@@ -1107,7 +1114,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-10T09:00:10.023336+00:00"
+      "lastChecked": "2026-03-10T09:30:08.003850+00:00"
     }
   ],
   "crons": [
@@ -1118,8 +1125,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-10T08:30:00.010000+00:00",
-      "nextRun": "2026-03-10T09:00:00+00:00",
+      "lastRun": "2026-03-10T09:00:00.009000+00:00",
+      "nextRun": "2026-03-10T09:30:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1132,23 +1139,9 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-10T08:55:00.008000+00:00",
-      "nextRun": "2026-03-10T09:00:00+00:00",
+      "lastRun": "2026-03-10T09:25:00.011000+00:00",
+      "nextRun": "2026-03-10T09:30:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "last"
-    },
-    {
-      "id": "f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
-      "name": "Atualização do Índice de Sistema",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-09T09:00:37.436000+00:00",
-      "nextRun": "2026-03-10T09:00:00+00:00",
-      "schedule": "0 6 * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "last"
@@ -1434,6 +1427,20 @@
       "channel": "last"
     },
     {
+      "id": "f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
+      "name": "Atualização do Índice de Sistema",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-10T09:00:41.114000+00:00",
+      "nextRun": "2026-03-11T09:00:00+00:00",
+      "schedule": "0 6 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "last"
+    },
+    {
       "id": "ec212b07-8387-45d0-9606-351509850608",
       "name": "Lixo (Colocar Fora)",
       "status": "ok",
@@ -1532,5 +1539,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-10T09:00:10.023336+00:00"
+  "lastUpdated": "2026-03-10T09:30:08.003850+00:00"
 }
