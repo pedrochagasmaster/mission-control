@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-10T13:31:25.276992+00:00",
+  "lastUpdated": "2026-03-10T14:00:09.205142+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -11,7 +11,17 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-10T13:31:15.434000+00:00"
+      "startedAt": "2026-03-10T14:00:00.011000+00:00"
+    },
+    {
+      "task": "agent:main:main",
+      "model": "k2p5",
+      "startedAt": "2026-03-10T13:59:14.753000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-10T13:55:00.012000+00:00"
     },
     {
       "task": "agent:main:cron:cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
@@ -22,16 +32,6 @@
       "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-10T13:30:00.009000+00:00"
-    },
-    {
-      "task": "agent:main:main",
-      "model": "k2p5",
-      "startedAt": "2026-03-10T13:29:03.123000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-10T13:25:00.012000+00:00"
     },
     {
       "task": "agent:main:cron:46646426-11ee-4f2e-90fd-832133ff1e83",
@@ -54,30 +54,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-10T13:31:25.276992+00:00"
+      "lastChecked": "2026-03-10T14:00:09.205142+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-10T13:00:44.415000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Rotina da Manhã (Completa)",
-      "schedule": "30 10 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-09T13:30:00.008000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Cobrador de Rotina (30min)",
-      "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-10T13:00:18.607000+00:00",
+      "lastRun": "2026-03-10T13:31:15.432000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -85,7 +69,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-10T13:25:00.010000+00:00",
+      "lastRun": "2026-03-10T13:55:00.010000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -126,6 +110,14 @@
       "name": "Rotina da Tarde",
       "schedule": "0 18 * * * (America/Sao_Paulo)",
       "lastRun": "2026-03-09T21:00:00.007000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Lembrete de Captura de Memórias",
+      "schedule": "30 21 * * * (America/Sao_Paulo)",
+      "lastRun": null,
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -235,6 +227,14 @@
       "lastError": null
     },
     {
+      "name": "Análise de Conversas - Manhã",
+      "schedule": "30 8 * * * (America/Sao_Paulo)",
+      "lastRun": null,
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Deadline Reminder Checker",
       "schedule": "0 9 * * * (America/Sao_Paulo)",
       "lastRun": "2026-03-10T12:00:48.832000+00:00",
@@ -270,6 +270,22 @@
       "name": "Lixo (Sacos Novos) + Ralos",
       "schedule": "0 10 * * 1,3,5 (America/Sao_Paulo)",
       "lastRun": "2026-03-09T13:00:12.159000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Rotina da Manhã (Completa)",
+      "schedule": "30 10 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-10T13:30:00.007000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Resumo Semanal de Memórias",
+      "schedule": "0 20 * * 0 (America/Sao_Paulo)",
+      "lastRun": null,
       "status": "ok",
       "errors": 0,
       "lastError": null

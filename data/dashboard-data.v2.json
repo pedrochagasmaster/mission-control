@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-10T13:31:25.276992+00:00"
+    "generatedAt": "2026-03-10T14:00:09.205142+00:00"
   },
   "overview": {
     "healthScore": 63,
@@ -23,7 +23,21 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-10T13:31:15.434000+00:00",
+      "startedAt": "2026-03-10T14:00:00.011000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:main",
+      "model": "k2p5",
+      "startedAt": "2026-03-10T13:59:14.753000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-10T13:55:00.012000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -38,20 +52,6 @@
       "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-10T13:30:00.009000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:main",
-      "model": "k2p5",
-      "startedAt": "2026-03-10T13:29:03.123000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-10T13:25:00.012000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -393,7 +393,7 @@
       "name": "Cron Jobs",
       "status": "ok",
       "kpis": {
-        "total": 31,
+        "total": 33,
         "errors": 0,
         "paused": 0,
         "tzMissing": 0
@@ -406,40 +406,12 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-10T13:00:44.415000+00:00",
-          "nextRun": "2026-03-10T13:30:00+00:00",
+          "lastRun": "2026-03-10T13:31:15.432000+00:00",
+          "nextRun": "2026-03-10T14:00:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": null
-        },
-        {
-          "id": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
-          "name": "Rotina da Manhã (Completa)",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-09T13:30:00.008000+00:00",
-          "nextRun": "2026-03-10T13:30:00+00:00",
-          "schedule": "30 10 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
-        },
-        {
-          "id": "cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
-          "name": "Cobrador de Rotina (30min)",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-10T13:00:18.607000+00:00",
-          "nextRun": "2026-03-10T13:30:00+00:00",
-          "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
         },
         {
           "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -448,8 +420,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-10T13:25:00.010000+00:00",
-          "nextRun": "2026-03-10T13:30:00+00:00",
+          "lastRun": "2026-03-10T13:55:00.010000+00:00",
+          "nextRun": "2026-03-10T14:00:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -524,6 +496,20 @@
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "telegram"
+        },
+        {
+          "id": "22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
+          "name": "Lembrete de Captura de Memórias",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": null,
+          "nextRun": "2026-03-11T00:30:00+00:00",
+          "schedule": "30 21 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "whatsapp"
         },
         {
           "id": "ec2938b2-9783-47f9-8945-ffd6388a0e82",
@@ -708,6 +694,20 @@
           "channel": "last"
         },
         {
+          "id": "f1830563-b029-4bb2-80fc-9ffe54108a08",
+          "name": "Análise de Conversas - Manhã",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": null,
+          "nextRun": "2026-03-11T11:30:00+00:00",
+          "schedule": "30 8 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "whatsapp"
+        },
+        {
           "id": "02182f0c-4413-4374-a3fb-1a3f5651b6e7",
           "name": "Deadline Reminder Checker",
           "status": "ok",
@@ -778,6 +778,34 @@
           "channel": "telegram"
         },
         {
+          "id": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
+          "name": "Rotina da Manhã (Completa)",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-10T13:30:00.007000+00:00",
+          "nextRun": "2026-03-11T13:30:00+00:00",
+          "schedule": "30 10 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
+        },
+        {
+          "id": "df3cabfe-4969-4e49-8af0-4a3aaf7d03b1",
+          "name": "Resumo Semanal de Memórias",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": null,
+          "nextRun": "2026-03-15T23:00:00+00:00",
+          "schedule": "0 20 * * 0 (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "whatsapp"
+        },
+        {
           "id": "3d633d74-840a-4996-82df-9e9f8d474d46",
           "name": "Pagamento Wal",
           "status": "ok",
@@ -844,7 +872,7 @@
       "source": "/home/pedro/.openclaw/cron/jobs.json",
       "trend7d": {
         "metric": "total",
-        "delta": 2,
+        "delta": 4,
         "direction": "up"
       }
     },
@@ -1200,7 +1228,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-10T13:31:25.276992+00:00"
+      "lastChecked": "2026-03-10T14:00:09.205142+00:00"
     }
   ],
   "crons": [
@@ -1211,40 +1239,12 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-10T13:00:44.415000+00:00",
-      "nextRun": "2026-03-10T13:30:00+00:00",
+      "lastRun": "2026-03-10T13:31:15.432000+00:00",
+      "nextRun": "2026-03-10T14:00:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": null
-    },
-    {
-      "id": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
-      "name": "Rotina da Manhã (Completa)",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-09T13:30:00.008000+00:00",
-      "nextRun": "2026-03-10T13:30:00+00:00",
-      "schedule": "30 10 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
-    },
-    {
-      "id": "cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
-      "name": "Cobrador de Rotina (30min)",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-10T13:00:18.607000+00:00",
-      "nextRun": "2026-03-10T13:30:00+00:00",
-      "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
     },
     {
       "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -1253,8 +1253,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-10T13:25:00.010000+00:00",
-      "nextRun": "2026-03-10T13:30:00+00:00",
+      "lastRun": "2026-03-10T13:55:00.010000+00:00",
+      "nextRun": "2026-03-10T14:00:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1329,6 +1329,20 @@
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "telegram"
+    },
+    {
+      "id": "22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
+      "name": "Lembrete de Captura de Memórias",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": null,
+      "nextRun": "2026-03-11T00:30:00+00:00",
+      "schedule": "30 21 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "whatsapp"
     },
     {
       "id": "ec2938b2-9783-47f9-8945-ffd6388a0e82",
@@ -1513,6 +1527,20 @@
       "channel": "last"
     },
     {
+      "id": "f1830563-b029-4bb2-80fc-9ffe54108a08",
+      "name": "Análise de Conversas - Manhã",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": null,
+      "nextRun": "2026-03-11T11:30:00+00:00",
+      "schedule": "30 8 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "whatsapp"
+    },
+    {
       "id": "02182f0c-4413-4374-a3fb-1a3f5651b6e7",
       "name": "Deadline Reminder Checker",
       "status": "ok",
@@ -1583,6 +1611,34 @@
       "channel": "telegram"
     },
     {
+      "id": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
+      "name": "Rotina da Manhã (Completa)",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-10T13:30:00.007000+00:00",
+      "nextRun": "2026-03-11T13:30:00+00:00",
+      "schedule": "30 10 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
+    },
+    {
+      "id": "df3cabfe-4969-4e49-8af0-4a3aaf7d03b1",
+      "name": "Resumo Semanal de Memórias",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": null,
+      "nextRun": "2026-03-15T23:00:00+00:00",
+      "schedule": "0 20 * * 0 (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "whatsapp"
+    },
+    {
       "id": "3d633d74-840a-4996-82df-9e9f8d474d46",
       "name": "Pagamento Wal",
       "status": "ok",
@@ -1639,5 +1695,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-10T13:31:25.276992+00:00"
+  "lastUpdated": "2026-03-10T14:00:09.205142+00:00"
 }
