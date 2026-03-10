@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-10T12:30:37.220257+00:00",
+  "lastUpdated": "2026-03-10T13:00:53.394688+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -11,22 +11,27 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-10T12:30:28.661000+00:00"
+      "startedAt": "2026-03-10T13:00:44.416000+00:00"
     },
     {
       "task": "agent:main:cron:cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-10T12:30:00.010000+00:00"
+      "startedAt": "2026-03-10T13:00:18.609000+00:00"
+    },
+    {
+      "task": "agent:main:cron:46646426-11ee-4f2e-90fd-832133ff1e83",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-10T13:00:00.012000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-10T12:25:00.015000+00:00"
+      "startedAt": "2026-03-10T12:55:00.010000+00:00"
     },
     {
       "task": "agent:main:main",
       "model": "k2p5",
-      "startedAt": "2026-03-10T12:05:03.443000+00:00"
+      "startedAt": "2026-03-10T12:35:03.875000+00:00"
     },
     {
       "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
@@ -42,11 +47,6 @@
       "task": "agent:main:cron:0ba1cb64-5259-46bf-beb5-e58c02ec4215",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-10T11:15:00.010000+00:00"
-    },
-    {
-      "task": "agent:main:cron:44299965-a647-45cd-b9c2-e504bea42398",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-10T10:50:00.012000+00:00"
     }
   ],
   "products": [
@@ -54,14 +54,22 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-10T12:30:37.220257+00:00"
+      "lastChecked": "2026-03-10T13:00:53.394688+00:00"
     }
   ],
   "crons": [
     {
+      "name": "Dobrar Roupas",
+      "schedule": "0 10 * * 2 (America/Sao_Paulo)",
+      "lastRun": "2026-03-03T13:00:00.007000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-10T12:01:16.164000+00:00",
+      "lastRun": "2026-03-10T12:30:28.660000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -69,7 +77,7 @@
     {
       "name": "Cobrador de Rotina (30min)",
       "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-10T12:00:28.795000+00:00",
+      "lastRun": "2026-03-10T12:30:00.008000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -77,15 +85,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-10T12:25:00.013000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Dobrar Roupas",
-      "schedule": "0 10 * * 2 (America/Sao_Paulo)",
-      "lastRun": "2026-03-03T13:00:00.007000+00:00",
+      "lastRun": "2026-03-10T12:55:00.009000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -327,6 +327,16 @@
     },
     {
       "time": "2026-03-10T09:30:17-03:00",
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-10T10:00:12-03:00",
+      "event": "Cron disparou: Dobrar Roupas (46646426-11ee-4f2e-90fd-832133ff1e83)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-10T10:00:29-03:00",
       "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
       "channel": "cron"
     }
