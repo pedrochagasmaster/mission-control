@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-10T13:00:53.394688+00:00"
+    "generatedAt": "2026-03-10T13:31:25.276992+00:00"
   },
   "overview": {
     "healthScore": 63,
@@ -23,14 +23,35 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-10T13:00:44.416000+00:00",
+      "startedAt": "2026-03-10T13:31:15.434000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-10T13:00:18.609000+00:00",
+      "startedAt": "2026-03-10T13:30:38.540000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-10T13:30:00.009000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:main",
+      "model": "k2p5",
+      "startedAt": "2026-03-10T13:29:03.123000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-10T13:25:00.012000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -38,20 +59,6 @@
       "task": "agent:main:cron:46646426-11ee-4f2e-90fd-832133ff1e83",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-10T13:00:00.012000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-10T12:55:00.010000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:main",
-      "model": "k2p5",
-      "startedAt": "2026-03-10T12:35:03.875000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -68,13 +75,6 @@
       "startedAt": "2026-03-10T12:00:00.010000+00:00",
       "agentId": "main",
       "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:0ba1cb64-5259-46bf-beb5-e58c02ec4215",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-10T11:15:00.010000+00:00",
-      "agentId": "main",
-      "kind": "direct"
     }
   ],
   "domains": [
@@ -83,9 +83,9 @@
       "name": "Rotinas da Casa",
       "status": "warning",
       "kpis": {
-        "pending": 6,
+        "pending": 7,
         "done": 0,
-        "skipped": 1,
+        "skipped": 0,
         "overdue": 1
       },
       "tasks": [
@@ -113,9 +113,9 @@
         {
           "key": "missao_pos_almoco",
           "label": "🍽️ Zero Pia",
-          "status": "SKIPPED",
+          "status": "PENDING",
           "time": "13:30",
-          "note": "Segunda: faxineira vem"
+          "note": ""
         },
         {
           "key": "blitz_ordem",
@@ -152,7 +152,7 @@
       "source": "/home/pedro/.openclaw/workspace/memory/daily_tasks.json",
       "trend7d": {
         "metric": "pending",
-        "delta": 5,
+        "delta": 6,
         "direction": "up"
       }
     },
@@ -393,26 +393,12 @@
       "name": "Cron Jobs",
       "status": "ok",
       "kpis": {
-        "total": 30,
+        "total": 31,
         "errors": 0,
         "paused": 0,
         "tzMissing": 0
       },
       "jobs": [
-        {
-          "id": "46646426-11ee-4f2e-90fd-832133ff1e83",
-          "name": "Dobrar Roupas",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-03T13:00:00.007000+00:00",
-          "nextRun": "2026-03-10T13:00:00+00:00",
-          "schedule": "0 10 * * 2 (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
-        },
         {
           "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
           "name": "Mission Control - Build+Publish",
@@ -420,40 +406,12 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-10T12:30:28.660000+00:00",
-          "nextRun": "2026-03-10T13:00:00+00:00",
+          "lastRun": "2026-03-10T13:00:44.415000+00:00",
+          "nextRun": "2026-03-10T13:30:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": null
-        },
-        {
-          "id": "cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
-          "name": "Cobrador de Rotina (30min)",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-10T12:30:00.008000+00:00",
-          "nextRun": "2026-03-10T13:00:00+00:00",
-          "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
-        },
-        {
-          "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-          "name": "Mission Control - Control Runner",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-10T12:55:00.009000+00:00",
-          "nextRun": "2026-03-10T13:00:00+00:00",
-          "schedule": "*/5 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "last"
         },
         {
           "id": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
@@ -468,6 +426,34 @@
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "telegram"
+        },
+        {
+          "id": "cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
+          "name": "Cobrador de Rotina (30min)",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-10T13:00:18.607000+00:00",
+          "nextRun": "2026-03-10T13:30:00+00:00",
+          "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
+        },
+        {
+          "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+          "name": "Mission Control - Control Runner",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-10T13:25:00.010000+00:00",
+          "nextRun": "2026-03-10T13:30:00+00:00",
+          "schedule": "*/5 * * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "last"
         },
         {
           "id": "42be764c-f915-4669-8f94-878e23362bf8",
@@ -591,6 +577,20 @@
           "lastRun": "2026-03-10T02:59:00.009000+00:00",
           "nextRun": "2026-03-11T02:59:00+00:00",
           "schedule": "59 23 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "whatsapp"
+        },
+        {
+          "id": "218f26ef-423f-4f74-aa31-d28879facc28",
+          "name": "Consolidação Automática de Learnings",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": null,
+          "nextRun": "2026-03-11T07:00:00+00:00",
+          "schedule": "0 4 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "whatsapp"
@@ -792,6 +792,20 @@
           "channel": "telegram"
         },
         {
+          "id": "46646426-11ee-4f2e-90fd-832133ff1e83",
+          "name": "Dobrar Roupas",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-10T13:00:00.010000+00:00",
+          "nextRun": "2026-03-17T13:00:00+00:00",
+          "schedule": "0 10 * * 2 (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
+        },
+        {
           "id": "d325f081-b2dc-4843-a4d2-078237ba97ba",
           "name": "Check Estoque Simparic (Mensal)",
           "status": "ok",
@@ -830,7 +844,7 @@
       "source": "/home/pedro/.openclaw/cron/jobs.json",
       "trend7d": {
         "metric": "total",
-        "delta": 1,
+        "delta": 2,
         "direction": "up"
       }
     },
@@ -947,7 +961,7 @@
       "name": "Monitoramento e Auditoria",
       "status": "ok",
       "kpis": {
-        "eventsToday": 8,
+        "eventsToday": 10,
         "queuePending": 0,
         "heartbeatBackup": true,
         "heartbeatConfigured": true
@@ -973,7 +987,7 @@
       "source": "/home/pedro/.openclaw/workspace/memory/events",
       "trend7d": {
         "metric": "eventsToday",
-        "delta": -35,
+        "delta": -33,
         "direction": "down"
       }
     }
@@ -1169,6 +1183,16 @@
       "time": "2026-03-10T10:00:29-03:00",
       "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
       "channel": "cron"
+    },
+    {
+      "time": "2026-03-10T10:30:16-03:00",
+      "event": "Cron disparou: Rotina da Manhã (Completa) (93c7796d-f82d-4381-a925-f1a0a22bf25b)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-10T10:31:06-03:00",
+      "event": "Cron disparou: Cobrador de Rotina (30min) (cea8104a-834a-4b50-94c9-ec7e47ceaaa9)",
+      "channel": "cron"
     }
   ],
   "products": [
@@ -1176,24 +1200,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-10T13:00:53.394688+00:00"
+      "lastChecked": "2026-03-10T13:31:25.276992+00:00"
     }
   ],
   "crons": [
-    {
-      "id": "46646426-11ee-4f2e-90fd-832133ff1e83",
-      "name": "Dobrar Roupas",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-03T13:00:00.007000+00:00",
-      "nextRun": "2026-03-10T13:00:00+00:00",
-      "schedule": "0 10 * * 2 (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
-    },
     {
       "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "name": "Mission Control - Build+Publish",
@@ -1201,40 +1211,12 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-10T12:30:28.660000+00:00",
-      "nextRun": "2026-03-10T13:00:00+00:00",
+      "lastRun": "2026-03-10T13:00:44.415000+00:00",
+      "nextRun": "2026-03-10T13:30:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": null
-    },
-    {
-      "id": "cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
-      "name": "Cobrador de Rotina (30min)",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-10T12:30:00.008000+00:00",
-      "nextRun": "2026-03-10T13:00:00+00:00",
-      "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
-    },
-    {
-      "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "name": "Mission Control - Control Runner",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-10T12:55:00.009000+00:00",
-      "nextRun": "2026-03-10T13:00:00+00:00",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "last"
     },
     {
       "id": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
@@ -1249,6 +1231,34 @@
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "telegram"
+    },
+    {
+      "id": "cea8104a-834a-4b50-94c9-ec7e47ceaaa9",
+      "name": "Cobrador de Rotina (30min)",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-10T13:00:18.607000+00:00",
+      "nextRun": "2026-03-10T13:30:00+00:00",
+      "schedule": "0,30 7-23 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
+    },
+    {
+      "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "name": "Mission Control - Control Runner",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-10T13:25:00.010000+00:00",
+      "nextRun": "2026-03-10T13:30:00+00:00",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "last"
     },
     {
       "id": "42be764c-f915-4669-8f94-878e23362bf8",
@@ -1372,6 +1382,20 @@
       "lastRun": "2026-03-10T02:59:00.009000+00:00",
       "nextRun": "2026-03-11T02:59:00+00:00",
       "schedule": "59 23 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "whatsapp"
+    },
+    {
+      "id": "218f26ef-423f-4f74-aa31-d28879facc28",
+      "name": "Consolidação Automática de Learnings",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": null,
+      "nextRun": "2026-03-11T07:00:00+00:00",
+      "schedule": "0 4 * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "whatsapp"
@@ -1573,6 +1597,20 @@
       "channel": "telegram"
     },
     {
+      "id": "46646426-11ee-4f2e-90fd-832133ff1e83",
+      "name": "Dobrar Roupas",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-10T13:00:00.010000+00:00",
+      "nextRun": "2026-03-17T13:00:00+00:00",
+      "schedule": "0 10 * * 2 (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
+    },
+    {
       "id": "d325f081-b2dc-4843-a4d2-078237ba97ba",
       "name": "Check Estoque Simparic (Mensal)",
       "status": "ok",
@@ -1601,5 +1639,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-10T13:00:53.394688+00:00"
+  "lastUpdated": "2026-03-10T13:31:25.276992+00:00"
 }
