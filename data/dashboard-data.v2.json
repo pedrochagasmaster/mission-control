@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-11T15:00:24.911392+00:00"
+    "generatedAt": "2026-03-11T15:30:09.119330+00:00"
   },
   "overview": {
     "healthScore": 59,
@@ -21,16 +21,23 @@
   ],
   "activeNow": [
     {
-      "task": "agent:main:main",
-      "model": "k2p5",
-      "startedAt": "2026-03-11T15:00:23.263000+00:00",
+      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-11T15:30:00.015000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
-      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-11T15:00:20.331000+00:00",
+      "startedAt": "2026-03-11T15:25:00.010000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:main",
+      "model": "k2p5",
+      "startedAt": "2026-03-11T15:15:10.695000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -38,13 +45,6 @@
       "task": "agent:main:cron:42be764c-f915-4669-8f94-878e23362bf8",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-11T15:00:00.012000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-11T14:55:00.009000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -393,28 +393,14 @@
       },
       "jobs": [
         {
-          "id": "42be764c-f915-4669-8f94-878e23362bf8",
-          "name": "Ração Almoço",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-10T15:00:00.007000+00:00",
-          "nextRun": "2026-03-11T15:00:00+00:00",
-          "schedule": "0 12 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
-        },
-        {
           "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
           "name": "Mission Control - Build+Publish",
           "status": "ok",
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-11T14:30:00.007000+00:00",
-          "nextRun": "2026-03-11T15:00:00+00:00",
+          "lastRun": "2026-03-11T15:00:20.294000+00:00",
+          "nextRun": "2026-03-11T15:30:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -427,8 +413,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-11T14:55:00.007000+00:00",
-          "nextRun": "2026-03-11T15:00:00+00:00",
+          "lastRun": "2026-03-11T15:25:00.008000+00:00",
+          "nextRun": "2026-03-11T15:30:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -710,6 +696,20 @@
           "lastRun": "2026-03-11T13:30:00.007000+00:00",
           "nextRun": "2026-03-12T13:30:00+00:00",
           "schedule": "30 10 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
+        },
+        {
+          "id": "42be764c-f915-4669-8f94-878e23362bf8",
+          "name": "Ração Almoço",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-11T15:00:00.007000+00:00",
+          "nextRun": "2026-03-12T15:00:00+00:00",
+          "schedule": "0 12 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "telegram"
@@ -1201,24 +1201,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-11T15:00:24.911392+00:00"
+      "lastChecked": "2026-03-11T15:30:09.119330+00:00"
     }
   ],
   "crons": [
-    {
-      "id": "42be764c-f915-4669-8f94-878e23362bf8",
-      "name": "Ração Almoço",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-10T15:00:00.007000+00:00",
-      "nextRun": "2026-03-11T15:00:00+00:00",
-      "schedule": "0 12 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
-    },
     {
       "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "name": "Mission Control - Build+Publish",
@@ -1226,8 +1212,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-11T14:30:00.007000+00:00",
-      "nextRun": "2026-03-11T15:00:00+00:00",
+      "lastRun": "2026-03-11T15:00:20.294000+00:00",
+      "nextRun": "2026-03-11T15:30:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1240,8 +1226,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-11T14:55:00.007000+00:00",
-      "nextRun": "2026-03-11T15:00:00+00:00",
+      "lastRun": "2026-03-11T15:25:00.008000+00:00",
+      "nextRun": "2026-03-11T15:30:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1528,6 +1514,20 @@
       "channel": "telegram"
     },
     {
+      "id": "42be764c-f915-4669-8f94-878e23362bf8",
+      "name": "Ração Almoço",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-11T15:00:00.007000+00:00",
+      "nextRun": "2026-03-12T15:00:00+00:00",
+      "schedule": "0 12 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
+    },
+    {
       "id": "eb796b6f-bb0b-4b92-963c-18696cf45e0d",
       "name": "Lixo Véspera (22h)",
       "status": "ok",
@@ -1668,5 +1668,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-11T15:00:24.911392+00:00"
+  "lastUpdated": "2026-03-11T15:30:09.119330+00:00"
 }
