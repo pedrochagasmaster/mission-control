@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-11T18:00:05.340612+00:00",
+  "lastUpdated": "2026-03-11T18:30:05.599202+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -11,17 +11,17 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-11T18:00:00.010000+00:00"
+      "startedAt": "2026-03-11T18:30:00.010000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-11T17:55:00.009000+00:00"
+      "startedAt": "2026-03-11T18:25:00.014000+00:00"
     },
     {
       "task": "agent:main:main",
       "model": "k2p5",
-      "startedAt": "2026-03-11T17:54:25.379000+00:00"
+      "startedAt": "2026-03-11T18:01:38.606000+00:00"
     },
     {
       "task": "agent:main:cron:515506a0-6921-4f7d-8368-06fc4e93ee87",
@@ -39,14 +39,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-11T18:00:05.340612+00:00"
+      "lastChecked": "2026-03-11T18:30:05.599202+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-11T17:30:00.007000+00:00",
+      "lastRun": "2026-03-11T18:00:00.008000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -54,7 +54,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-11T17:55:00.007000+00:00",
+      "lastRun": "2026-03-11T18:25:00.009000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
