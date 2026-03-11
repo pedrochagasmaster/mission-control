@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-11T20:30:19.571489+00:00"
+    "generatedAt": "2026-03-11T21:00:19.173623+00:00"
   },
   "overview": {
     "healthScore": 63,
@@ -23,7 +23,28 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-11T20:30:13.265000+00:00",
+      "startedAt": "2026-03-11T21:00:14.035000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:e3ac374c-a524-4465-a872-f682f01a979d",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-11T21:00:00.009000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-11T20:55:00.008000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:main",
+      "model": "k2p5",
+      "startedAt": "2026-03-11T20:30:33.971000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -31,20 +52,6 @@
       "task": "agent:main:cron:a2a10215-b00a-45e4-8ed4-28cb60e442a6",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-11T20:30:00.010000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-11T20:25:00.010000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:main",
-      "model": "k2p5",
-      "startedAt": "2026-03-11T20:10:07.393000+00:00",
       "agentId": "main",
       "kind": "direct"
     }
@@ -58,7 +65,7 @@
         "pending": 7,
         "done": 0,
         "skipped": 0,
-        "overdue": 5
+        "overdue": 6
       },
       "tasks": [
         {
@@ -114,7 +121,7 @@
       "alerts": [
         {
           "level": "warning",
-          "text": "5 tarefa(s) pendente(s) já no horário"
+          "text": "6 tarefa(s) pendente(s) já no horário"
         }
       ],
       "actions": [
@@ -378,40 +385,12 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-11T20:00:00.007000+00:00",
-          "nextRun": "2026-03-11T20:30:00+00:00",
+          "lastRun": "2026-03-11T20:30:13.259000+00:00",
+          "nextRun": "2026-03-11T21:00:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": null
-        },
-        {
-          "id": "a2a10215-b00a-45e4-8ed4-28cb60e442a6",
-          "name": "Blitz da Ordem (17:30)",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-10T20:30:00.010000+00:00",
-          "nextRun": "2026-03-11T20:30:00+00:00",
-          "schedule": "30 17 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
-        },
-        {
-          "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-          "name": "Mission Control - Control Runner",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-11T20:25:00.008000+00:00",
-          "nextRun": "2026-03-11T20:30:00+00:00",
-          "schedule": "*/5 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "last"
         },
         {
           "id": "e3ac374c-a524-4465-a872-f682f01a979d",
@@ -426,6 +405,20 @@
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "telegram"
+        },
+        {
+          "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+          "name": "Mission Control - Control Runner",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-11T20:55:00.006000+00:00",
+          "nextRun": "2026-03-11T21:00:00+00:00",
+          "schedule": "*/5 * * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "last"
         },
         {
           "id": "22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
@@ -689,6 +682,20 @@
           "lastRun": "2026-03-11T16:30:00.006000+00:00",
           "nextRun": "2026-03-12T16:30:00+00:00",
           "schedule": "30 13 * * 2-7 (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
+        },
+        {
+          "id": "a2a10215-b00a-45e4-8ed4-28cb60e442a6",
+          "name": "Blitz da Ordem (17:30)",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-11T20:30:00.008000+00:00",
+          "nextRun": "2026-03-12T20:30:00+00:00",
+          "schedule": "30 17 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "telegram"
@@ -961,7 +968,7 @@
       "name": "Monitoramento e Auditoria",
       "status": "ok",
       "kpis": {
-        "eventsToday": 9,
+        "eventsToday": 10,
         "queuePending": 0,
         "heartbeatBackup": true,
         "heartbeatConfigured": true
@@ -987,7 +994,7 @@
       "source": "/home/pedro/.openclaw/workspace/memory/events",
       "trend7d": {
         "metric": "eventsToday",
-        "delta": -34,
+        "delta": -33,
         "direction": "down"
       }
     }
@@ -1188,6 +1195,11 @@
       "time": "2026-03-11T17:30:08-03:00",
       "event": "Cron disparou: Blitz da Ordem (17:30) (a2a10215-b00a-45e4-8ed4-28cb60e442a6)",
       "channel": "cron"
+    },
+    {
+      "time": "2026-03-11T18:00:08-03:00",
+      "event": "Cron disparou: Rotina da Tarde (e3ac374c-a524-4465-a872-f682f01a979d)",
+      "channel": "cron"
     }
   ],
   "products": [
@@ -1195,7 +1207,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-11T20:30:19.571489+00:00"
+      "lastChecked": "2026-03-11T21:00:19.173623+00:00"
     }
   ],
   "crons": [
@@ -1206,40 +1218,12 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-11T20:00:00.007000+00:00",
-      "nextRun": "2026-03-11T20:30:00+00:00",
+      "lastRun": "2026-03-11T20:30:13.259000+00:00",
+      "nextRun": "2026-03-11T21:00:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": null
-    },
-    {
-      "id": "a2a10215-b00a-45e4-8ed4-28cb60e442a6",
-      "name": "Blitz da Ordem (17:30)",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-10T20:30:00.010000+00:00",
-      "nextRun": "2026-03-11T20:30:00+00:00",
-      "schedule": "30 17 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
-    },
-    {
-      "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "name": "Mission Control - Control Runner",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-11T20:25:00.008000+00:00",
-      "nextRun": "2026-03-11T20:30:00+00:00",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "last"
     },
     {
       "id": "e3ac374c-a524-4465-a872-f682f01a979d",
@@ -1254,6 +1238,20 @@
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "telegram"
+    },
+    {
+      "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "name": "Mission Control - Control Runner",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-11T20:55:00.006000+00:00",
+      "nextRun": "2026-03-11T21:00:00+00:00",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "last"
     },
     {
       "id": "22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
@@ -1522,6 +1520,20 @@
       "channel": "telegram"
     },
     {
+      "id": "a2a10215-b00a-45e4-8ed4-28cb60e442a6",
+      "name": "Blitz da Ordem (17:30)",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-11T20:30:00.008000+00:00",
+      "nextRun": "2026-03-12T20:30:00+00:00",
+      "schedule": "30 17 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
+    },
+    {
       "id": "eb796b6f-bb0b-4b92-963c-18696cf45e0d",
       "name": "Lixo Véspera (22h)",
       "status": "ok",
@@ -1662,5 +1674,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-11T20:30:19.571489+00:00"
+  "lastUpdated": "2026-03-11T21:00:19.173623+00:00"
 }
