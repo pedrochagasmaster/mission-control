@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-11T11:30:06.310086+00:00",
+  "lastUpdated": "2026-03-11T12:00:48.148058+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -11,42 +11,42 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-11T11:30:00.011000+00:00"
+      "startedAt": "2026-03-11T12:00:42.489000+00:00"
+    },
+    {
+      "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-11T12:00:23.182000+00:00"
+    },
+    {
+      "task": "agent:main:main",
+      "model": "k2p5",
+      "startedAt": "2026-03-11T12:00:22.722000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ae7b9fb6-d807-4c23-846c-87f880d130be",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-11T12:00:10.847000+00:00"
+    },
+    {
+      "task": "agent:main:cron:777c622d-db73-4c08-be71-28c968ef21f4",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-11T12:00:00.010000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-11T11:25:00.012000+00:00"
+      "startedAt": "2026-03-11T11:55:00.010000+00:00"
+    },
+    {
+      "task": "agent:main:cron:f1830563-b029-4bb2-80fc-9ffe54108a08",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-11T11:30:35.087000+00:00"
     },
     {
       "task": "agent:main:cron:0ba1cb64-5259-46bf-beb5-e58c02ec4215",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-11T11:15:00.009000+00:00"
-    },
-    {
-      "task": "agent:main:main",
-      "model": "k2p5",
-      "startedAt": "2026-03-11T11:00:23.787000+00:00"
-    },
-    {
-      "task": "agent:main:cron:44299965-a647-45cd-b9c2-e504bea42398",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-11T10:50:00.010000+00:00"
-    },
-    {
-      "task": "agent:main:cron:d2c96354-081c-493d-891f-3c11c63cb9a1",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-11T10:45:00.010000+00:00"
-    },
-    {
-      "task": "agent:main:cron:4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
-      "model": "k2p5",
-      "startedAt": "2026-03-11T10:35:01.334000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ec212b07-8387-45d0-9606-351509850608",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-11T10:30:00.010000+00:00"
     }
   ],
   "products": [
@@ -54,34 +54,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-11T11:30:06.310086+00:00"
+      "lastChecked": "2026-03-11T12:00:48.148058+00:00"
     }
   ],
   "crons": [
-    {
-      "name": "Mission Control - Build+Publish",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-11T11:00:00.011000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-11T11:25:00.010000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Análise de Conversas - Manhã",
-      "schedule": "30 8 * * * (America/Sao_Paulo)",
-      "lastRun": null,
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
     {
       "name": "Deadline Reminder Checker",
       "schedule": "0 9 * * * (America/Sao_Paulo)",
@@ -99,9 +75,25 @@
       "lastError": null
     },
     {
+      "name": "Mission Control - Build+Publish",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-11T11:30:00.008000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Resumo Diário da To-Do List",
       "schedule": "0 9 * * * (America/Sao_Paulo)",
       "lastRun": "2026-03-10T12:00:00.007000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-11T11:55:00.008000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -267,6 +259,14 @@
       "lastError": null
     },
     {
+      "name": "Análise de Conversas - Manhã",
+      "schedule": "30 8 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-11T11:30:33.643000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Lixo Véspera (22h)",
       "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
       "lastRun": "2026-03-11T01:00:31.374000+00:00",
@@ -327,6 +327,11 @@
     {
       "time": "2026-03-11T07:30:10-03:00",
       "event": "Cron disparou: Lixo (Colocar Fora) (ec212b07-8387-45d0-9606-351509850608)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-11T09:00:05-03:00",
+      "event": "Cron disparou: Pagamento Banho (777c622d-db73-4c08-be71-28c968ef21f4)",
       "channel": "cron"
     }
   ]
