@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-11T12:00:48.148058+00:00"
+    "generatedAt": "2026-03-11T12:30:05.183705+00:00"
   },
   "overview": {
     "healthScore": 67,
@@ -23,7 +23,14 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-11T12:00:42.489000+00:00",
+      "startedAt": "2026-03-11T12:30:00.010000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-11T12:25:00.008000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -52,13 +59,6 @@
       "task": "agent:main:cron:777c622d-db73-4c08-be71-28c968ef21f4",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-11T12:00:00.010000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-11T11:55:00.010000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -395,60 +395,18 @@
       },
       "jobs": [
         {
-          "id": "02182f0c-4413-4374-a3fb-1a3f5651b6e7",
-          "name": "Deadline Reminder Checker",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-10T12:00:48.832000+00:00",
-          "nextRun": "2026-03-11T12:00:00+00:00",
-          "schedule": "0 9 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "whatsapp"
-        },
-        {
-          "id": "777c622d-db73-4c08-be71-28c968ef21f4",
-          "name": "Pagamento Banho",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-04T12:00:00.009000+00:00",
-          "nextRun": "2026-03-11T12:00:00+00:00",
-          "schedule": "0 9 * * 3 (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
-        },
-        {
           "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
           "name": "Mission Control - Build+Publish",
           "status": "ok",
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-11T11:30:00.008000+00:00",
-          "nextRun": "2026-03-11T12:00:00+00:00",
+          "lastRun": "2026-03-11T12:00:42.482000+00:00",
+          "nextRun": "2026-03-11T12:30:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": null
-        },
-        {
-          "id": "ae7b9fb6-d807-4c23-846c-87f880d130be",
-          "name": "Resumo Diário da To-Do List",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-10T12:00:00.007000+00:00",
-          "nextRun": "2026-03-11T12:00:00+00:00",
-          "schedule": "0 9 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
         },
         {
           "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -457,8 +415,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-11T11:55:00.008000+00:00",
-          "nextRun": "2026-03-11T12:00:00+00:00",
+          "lastRun": "2026-03-11T12:25:00.006000+00:00",
+          "nextRun": "2026-03-11T12:30:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -759,6 +717,34 @@
           "channel": "whatsapp"
         },
         {
+          "id": "02182f0c-4413-4374-a3fb-1a3f5651b6e7",
+          "name": "Deadline Reminder Checker",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-11T12:00:23.137000+00:00",
+          "nextRun": "2026-03-12T12:00:00+00:00",
+          "schedule": "0 9 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "whatsapp"
+        },
+        {
+          "id": "ae7b9fb6-d807-4c23-846c-87f880d130be",
+          "name": "Resumo Diário da To-Do List",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-11T12:00:10.840000+00:00",
+          "nextRun": "2026-03-12T12:00:00+00:00",
+          "schedule": "0 9 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
+        },
+        {
           "id": "eb796b6f-bb0b-4b92-963c-18696cf45e0d",
           "name": "Lixo Véspera (22h)",
           "status": "ok",
@@ -824,6 +810,20 @@
           "lastRun": "2026-03-10T13:00:00.010000+00:00",
           "nextRun": "2026-03-17T13:00:00+00:00",
           "schedule": "0 10 * * 2 (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
+        },
+        {
+          "id": "777c622d-db73-4c08-be71-28c968ef21f4",
+          "name": "Pagamento Banho",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-11T12:00:00.008000+00:00",
+          "nextRun": "2026-03-18T12:00:00+00:00",
+          "schedule": "0 9 * * 3 (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "telegram"
@@ -1183,38 +1183,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-11T12:00:48.148058+00:00"
+      "lastChecked": "2026-03-11T12:30:05.183705+00:00"
     }
   ],
   "crons": [
-    {
-      "id": "02182f0c-4413-4374-a3fb-1a3f5651b6e7",
-      "name": "Deadline Reminder Checker",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-10T12:00:48.832000+00:00",
-      "nextRun": "2026-03-11T12:00:00+00:00",
-      "schedule": "0 9 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "whatsapp"
-    },
-    {
-      "id": "777c622d-db73-4c08-be71-28c968ef21f4",
-      "name": "Pagamento Banho",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-04T12:00:00.009000+00:00",
-      "nextRun": "2026-03-11T12:00:00+00:00",
-      "schedule": "0 9 * * 3 (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
-    },
     {
       "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "name": "Mission Control - Build+Publish",
@@ -1222,26 +1194,12 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-11T11:30:00.008000+00:00",
-      "nextRun": "2026-03-11T12:00:00+00:00",
+      "lastRun": "2026-03-11T12:00:42.482000+00:00",
+      "nextRun": "2026-03-11T12:30:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": null
-    },
-    {
-      "id": "ae7b9fb6-d807-4c23-846c-87f880d130be",
-      "name": "Resumo Diário da To-Do List",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-10T12:00:00.007000+00:00",
-      "nextRun": "2026-03-11T12:00:00+00:00",
-      "schedule": "0 9 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
     },
     {
       "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -1250,8 +1208,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-11T11:55:00.008000+00:00",
-      "nextRun": "2026-03-11T12:00:00+00:00",
+      "lastRun": "2026-03-11T12:25:00.006000+00:00",
+      "nextRun": "2026-03-11T12:30:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1552,6 +1510,34 @@
       "channel": "whatsapp"
     },
     {
+      "id": "02182f0c-4413-4374-a3fb-1a3f5651b6e7",
+      "name": "Deadline Reminder Checker",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-11T12:00:23.137000+00:00",
+      "nextRun": "2026-03-12T12:00:00+00:00",
+      "schedule": "0 9 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "whatsapp"
+    },
+    {
+      "id": "ae7b9fb6-d807-4c23-846c-87f880d130be",
+      "name": "Resumo Diário da To-Do List",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-11T12:00:10.840000+00:00",
+      "nextRun": "2026-03-12T12:00:00+00:00",
+      "schedule": "0 9 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
+    },
+    {
       "id": "eb796b6f-bb0b-4b92-963c-18696cf45e0d",
       "name": "Lixo Véspera (22h)",
       "status": "ok",
@@ -1622,6 +1608,20 @@
       "channel": "telegram"
     },
     {
+      "id": "777c622d-db73-4c08-be71-28c968ef21f4",
+      "name": "Pagamento Banho",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-11T12:00:00.008000+00:00",
+      "nextRun": "2026-03-18T12:00:00+00:00",
+      "schedule": "0 9 * * 3 (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
+    },
+    {
       "id": "d325f081-b2dc-4843-a4d2-078237ba97ba",
       "name": "Check Estoque Simparic (Mensal)",
       "status": "ok",
@@ -1650,5 +1650,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-11T12:00:48.148058+00:00"
+  "lastUpdated": "2026-03-11T12:30:05.183705+00:00"
 }
