@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-11T21:00:19.173623+00:00"
+    "generatedAt": "2026-03-11T21:30:04.291019+00:00"
   },
   "overview": {
     "healthScore": 63,
@@ -23,7 +23,21 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-11T21:00:14.035000+00:00",
+      "startedAt": "2026-03-11T21:30:00.012000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-11T21:25:00.019000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:main",
+      "model": "k2p5",
+      "startedAt": "2026-03-11T21:00:35.822000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -31,20 +45,6 @@
       "task": "agent:main:cron:e3ac374c-a524-4465-a872-f682f01a979d",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-11T21:00:00.009000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-11T20:55:00.008000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:main",
-      "model": "k2p5",
-      "startedAt": "2026-03-11T20:30:33.971000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -385,26 +385,12 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-11T20:30:13.259000+00:00",
-          "nextRun": "2026-03-11T21:00:00+00:00",
+          "lastRun": "2026-03-11T21:00:14.032000+00:00",
+          "nextRun": "2026-03-11T21:30:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": null
-        },
-        {
-          "id": "e3ac374c-a524-4465-a872-f682f01a979d",
-          "name": "Rotina da Tarde",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-10T21:00:00.007000+00:00",
-          "nextRun": "2026-03-11T21:00:00+00:00",
-          "schedule": "0 18 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
         },
         {
           "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -413,8 +399,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-11T20:55:00.006000+00:00",
-          "nextRun": "2026-03-11T21:00:00+00:00",
+          "lastRun": "2026-03-11T21:25:00.015000+00:00",
+          "nextRun": "2026-03-11T21:30:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -696,6 +682,20 @@
           "lastRun": "2026-03-11T20:30:00.008000+00:00",
           "nextRun": "2026-03-12T20:30:00+00:00",
           "schedule": "30 17 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
+        },
+        {
+          "id": "e3ac374c-a524-4465-a872-f682f01a979d",
+          "name": "Rotina da Tarde",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-11T21:00:00.007000+00:00",
+          "nextRun": "2026-03-12T21:00:00+00:00",
+          "schedule": "0 18 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "telegram"
@@ -1207,7 +1207,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-11T21:00:19.173623+00:00"
+      "lastChecked": "2026-03-11T21:30:04.291019+00:00"
     }
   ],
   "crons": [
@@ -1218,26 +1218,12 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-11T20:30:13.259000+00:00",
-      "nextRun": "2026-03-11T21:00:00+00:00",
+      "lastRun": "2026-03-11T21:00:14.032000+00:00",
+      "nextRun": "2026-03-11T21:30:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": null
-    },
-    {
-      "id": "e3ac374c-a524-4465-a872-f682f01a979d",
-      "name": "Rotina da Tarde",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-10T21:00:00.007000+00:00",
-      "nextRun": "2026-03-11T21:00:00+00:00",
-      "schedule": "0 18 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
     },
     {
       "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -1246,8 +1232,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-11T20:55:00.006000+00:00",
-      "nextRun": "2026-03-11T21:00:00+00:00",
+      "lastRun": "2026-03-11T21:25:00.015000+00:00",
+      "nextRun": "2026-03-11T21:30:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1534,6 +1520,20 @@
       "channel": "telegram"
     },
     {
+      "id": "e3ac374c-a524-4465-a872-f682f01a979d",
+      "name": "Rotina da Tarde",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-11T21:00:00.007000+00:00",
+      "nextRun": "2026-03-12T21:00:00+00:00",
+      "schedule": "0 18 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
+    },
+    {
       "id": "eb796b6f-bb0b-4b92-963c-18696cf45e0d",
       "name": "Lixo Véspera (22h)",
       "status": "ok",
@@ -1674,5 +1674,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-11T21:00:19.173623+00:00"
+  "lastUpdated": "2026-03-11T21:30:04.291019+00:00"
 }
