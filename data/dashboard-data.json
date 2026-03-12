@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-12T10:30:06.500300+00:00",
+  "lastUpdated": "2026-03-12T11:00:04.701917+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -11,32 +11,42 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-12T10:30:00.010000+00:00"
+      "startedAt": "2026-03-12T11:00:00.009000+00:00"
     },
     {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-12T10:25:00.010000+00:00"
-    },
-    {
-      "task": "agent:main:cron:06b5aaae-b25a-4005-a78c-badad02f216b",
+      "task": "agent:main:whatsapp:group:120363422516892829@g.us",
       "model": "k2p5",
-      "startedAt": "2026-03-12T10:20:00.009000+00:00"
+      "startedAt": "2026-03-12T10:59:16.811000+00:00"
     },
     {
       "task": "agent:main:main",
       "model": "k2p5",
-      "startedAt": "2026-03-12T10:05:13.085000+00:00"
+      "startedAt": "2026-03-12T10:56:00.210000+00:00"
     },
     {
-      "task": "agent:main:cron:f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-12T09:00:39.421000+00:00"
+      "task": "telegram:slash:1899641264",
+      "model": "gpt-5.4",
+      "startedAt": "2026-03-12T10:55:45.384000+00:00"
     },
     {
-      "task": "agent:main:cron:75b87bc7-016d-49a2-9995-4a0b715a7f23",
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-12T08:00:00.009000+00:00"
+      "startedAt": "2026-03-12T10:55:00.010000+00:00"
+    },
+    {
+      "task": "agent:main:cron:44299965-a647-45cd-b9c2-e504bea42398",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-12T10:50:00.009000+00:00"
+    },
+    {
+      "task": "agent:main:cron:d2c96354-081c-493d-891f-3c11c63cb9a1",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-12T10:45:00.008000+00:00"
+    },
+    {
+      "task": "agent:main:cron:4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
+      "model": "k2p5",
+      "startedAt": "2026-03-12T10:35:00.009000+00:00"
     }
   ],
   "products": [
@@ -44,14 +54,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-12T10:30:06.500300+00:00"
+      "lastChecked": "2026-03-12T11:00:04.701917+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-12T10:00:00.008000+00:00",
+      "lastRun": "2026-03-12T10:30:00.008000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -59,31 +69,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-12T10:25:00.008000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Diário da Família - Enviador",
-      "schedule": "35 7 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-11T10:35:00.006000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Diário da Família - Watchdog (fallback)",
-      "schedule": "45 7 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-11T10:45:00.008000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Diário da Família - Alert (07:50 se não enviado)",
-      "schedule": "50 7 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-11T10:50:00.007000+00:00",
+      "lastRun": "2026-03-12T10:55:00.008000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -244,6 +230,30 @@
       "name": "Lixo (Colocar Fora)",
       "schedule": "30 7 * * 1,3,5 (America/Sao_Paulo)",
       "lastRun": "2026-03-11T10:30:00.008000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Diário da Família - Enviador",
+      "schedule": "35 7 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-12T10:35:00.007000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Diário da Família - Watchdog (fallback)",
+      "schedule": "45 7 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-12T10:45:00.006000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Diário da Família - Alert (07:50 se não enviado)",
+      "schedule": "50 7 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-12T10:50:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
