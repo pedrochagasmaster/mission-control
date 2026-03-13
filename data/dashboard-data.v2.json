@@ -2,10 +2,10 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-12T17:30:04.820056+00:00"
+    "generatedAt": "2026-03-13T12:55:09.069766+00:00"
   },
   "overview": {
-    "healthScore": 63,
+    "healthScore": 59,
     "criticalAlerts": 1,
     "pendingControls": 0,
     "dataFreshnessSec": 0
@@ -23,56 +23,56 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-12T17:30:00.010000+00:00",
+      "startedAt": "2026-03-13T12:55:05.347000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
-      "task": "agent:main:main",
+      "task": "agent:main:cron:44299965-a647-45cd-b9c2-e504bea42398",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-13T12:54:56.888000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:0ba1cb64-5259-46bf-beb5-e58c02ec4215",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-13T12:54:44.643000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:d2c96354-081c-493d-891f-3c11c63cb9a1",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-13T12:54:34.208000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:06b5aaae-b25a-4005-a78c-badad02f216b",
       "model": "k2p5",
-      "startedAt": "2026-03-12T17:28:35.733000+00:00",
+      "startedAt": "2026-03-13T12:53:30.161000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
-      "task": "agent:main:cron:f1830563-b029-4bb2-80fc-9ffe54108a08",
+      "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-12T17:25:46.106000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-12T17:25:31.941000+00:00",
+      "startedAt": "2026-03-13T12:53:01.400000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-12T17:25:01.614000+00:00",
+      "startedAt": "2026-03-13T12:52:49.961000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
-      "task": "agent:main:cron:ae7b9fb6-d807-4c23-846c-87f880d130be",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-12T17:24:49.216000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:515506a0-6921-4f7d-8368-06fc4e93ee87",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-12T17:24:30.704000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:96074f1f-0124-4b4c-a944-e71349f91678",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-12T17:24:20.466000+00:00",
+      "task": "agent:main:main",
+      "model": "k2p5",
+      "startedAt": "2026-03-13T12:52:43.455000+00:00",
       "agentId": "main",
       "kind": "direct"
     }
@@ -86,7 +86,7 @@
         "pending": 7,
         "done": 0,
         "skipped": 0,
-        "overdue": 4
+        "overdue": 1
       },
       "tasks": [
         {
@@ -142,7 +142,7 @@
       "alerts": [
         {
           "level": "warning",
-          "text": "4 tarefa(s) pendente(s) já no horário"
+          "text": "1 tarefa(s) pendente(s) já no horário"
         }
       ],
       "actions": [
@@ -152,7 +152,7 @@
       "source": "/home/pedro/.openclaw/workspace/memory/daily_tasks.json",
       "trend7d": {
         "metric": "pending",
-        "delta": 6,
+        "delta": 4,
         "direction": "up"
       }
     },
@@ -296,7 +296,7 @@
       "status": "ok",
       "kpis": {
         "sentToday": true,
-        "draftReady": true,
+        "draftReady": false,
         "errorJobs": 0,
         "pipelineStages": 5
       },
@@ -312,7 +312,7 @@
           "nextRun": "2026-03-13T10:20:00+00:00",
           "schedule": "20 7 * * * (America/Sao_Paulo)",
           "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
+          "model": "openai-codex/gpt-5.4",
           "channel": "last"
         },
         {
@@ -326,7 +326,7 @@
           "nextRun": "2026-03-13T10:35:00+00:00",
           "schedule": "35 7 * * * (America/Sao_Paulo)",
           "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
+          "model": "openai-codex/gpt-5.4",
           "channel": "whatsapp"
         },
         {
@@ -373,8 +373,8 @@
         }
       ],
       "draft": {
-        "date": "2026-03-12",
-        "tema": "Amamentação: sinais de pega e oferta segura"
+        "date": null,
+        "tema": null
       },
       "alerts": [],
       "actions": [
@@ -400,32 +400,32 @@
       },
       "jobs": [
         {
-          "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-          "name": "Mission Control - Build+Publish",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-12T17:25:16.124000+00:00",
-          "nextRun": "2026-03-12T17:30:00+00:00",
-          "schedule": "*/30 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": null
-        },
-        {
           "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
           "name": "Mission Control - Control Runner",
           "status": "ok",
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-12T17:25:31.939000+00:00",
-          "nextRun": "2026-03-12T17:30:00+00:00",
+          "lastRun": "2026-03-12T18:05:03.208000+00:00",
+          "nextRun": "2026-03-12T18:10:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "last"
+        },
+        {
+          "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+          "name": "Mission Control - Build+Publish",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-12T17:30:00.008000+00:00",
+          "nextRun": "2026-03-12T18:30:00+00:00",
+          "schedule": "*/30 * * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": null
         },
         {
           "id": "a2a10215-b00a-45e4-8ed4-28cb60e442a6",
@@ -578,7 +578,7 @@
           "nextRun": "2026-03-13T10:20:00+00:00",
           "schedule": "20 7 * * * (America/Sao_Paulo)",
           "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
+          "model": "openai-codex/gpt-5.4",
           "channel": "last"
         },
         {
@@ -606,7 +606,7 @@
           "nextRun": "2026-03-13T10:35:00+00:00",
           "schedule": "35 7 * * * (America/Sao_Paulo)",
           "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
+          "model": "openai-codex/gpt-5.4",
           "channel": "whatsapp"
         },
         {
@@ -881,11 +881,11 @@
       "name": "Knowledge Parental",
       "status": "ok",
       "kpis": {
-        "files": 35,
+        "files": 37,
         "ingestHealthy": true,
         "watcherHealthy": true
       },
-      "lastFile": "ivana__jauregui_20260312.md",
+      "lastFile": "ivana__jauregui_20260313.md",
       "job": {
         "id": "75b87bc7-016d-49a2-9995-4a0b715a7f23",
         "name": "Instagram Knowledge Ingest",
@@ -923,7 +923,7 @@
         "pluggy": {
           "status": "ok",
           "trackedItems": 0,
-          "lastLogAt": "2026-03-12T00:57:57.862934+00:00",
+          "lastLogAt": "2026-03-13T12:53:07.288051+00:00",
           "job": {
             "id": "ec2938b2-9783-47f9-8945-ffd6388a0e82",
             "name": "Pluggy Sync - Tracking Despesas",
@@ -987,11 +987,11 @@
     {
       "id": "ops",
       "name": "Monitoramento e Auditoria",
-      "status": "ok",
+      "status": "warning",
       "kpis": {
         "eventsToday": 4,
         "queuePending": 0,
-        "heartbeatBackup": true,
+        "heartbeatBackup": false,
         "heartbeatConfigured": true
       },
       "job": {
@@ -1009,13 +1009,13 @@
         "channel": "whatsapp"
       },
       "heartbeat": {
-        "backupProcessFound": true
+        "backupProcessFound": false
       },
       "actions": [],
       "source": "/home/pedro/.openclaw/workspace/memory/events",
       "trend7d": {
         "metric": "eventsToday",
-        "delta": -39,
+        "delta": -38,
         "direction": "down"
       }
     }
@@ -1173,23 +1173,23 @@
   },
   "recentActivity": [
     {
-      "time": "2026-03-12T14:23:42-03:00",
-      "event": "Cron disparou: Rotina da Manhã (Completa) (93c7796d-f82d-4381-a925-f1a0a22bf25b)",
+      "time": "2026-03-13T09:44:21-03:00",
+      "event": "Cron disparou: Rotina da Tarde (e3ac374c-a524-4465-a872-f682f01a979d)",
       "channel": "cron"
     },
     {
-      "time": "2026-03-12T14:24:17-03:00",
-      "event": "Cron disparou: Ração Almoço (42be764c-f915-4669-8f94-878e23362bf8)",
+      "time": "2026-03-13T09:44:40-03:00",
+      "event": "Cron disparou: Rotina da Noite (Completa) (7804497e-ac8d-49c9-bead-08ed6bab21d1)",
       "channel": "cron"
     },
     {
-      "time": "2026-03-12T14:24:26-03:00",
-      "event": "Cron disparou: Passeio Almoço (96074f1f-0124-4b4c-a944-e71349f91678)",
+      "time": "2026-03-13T09:44:50-03:00",
+      "event": "Cron disparou: Blitz da Ordem (17:30) (a2a10215-b00a-45e4-8ed4-28cb60e442a6)",
       "channel": "cron"
     },
     {
-      "time": "2026-03-12T14:24:44-03:00",
-      "event": "Cron disparou: Pós-Almoço: Zero Pia (515506a0-6921-4f7d-8368-06fc4e93ee87)",
+      "time": "2026-03-13T09:45:05-03:00",
+      "event": "Cron disparou: Lixo (Colocar Fora) (ec212b07-8387-45d0-9606-351509850608)",
       "channel": "cron"
     }
   ],
@@ -1198,24 +1198,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-12T17:30:04.820056+00:00"
+      "lastChecked": "2026-03-13T12:55:09.069766+00:00"
     }
   ],
   "crons": [
-    {
-      "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "name": "Mission Control - Build+Publish",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-12T17:25:16.124000+00:00",
-      "nextRun": "2026-03-12T17:30:00+00:00",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": null
-    },
     {
       "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "name": "Mission Control - Control Runner",
@@ -1223,12 +1209,26 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-12T17:25:31.939000+00:00",
-      "nextRun": "2026-03-12T17:30:00+00:00",
+      "lastRun": "2026-03-12T18:05:03.208000+00:00",
+      "nextRun": "2026-03-12T18:10:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "last"
+    },
+    {
+      "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "name": "Mission Control - Build+Publish",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-12T17:30:00.008000+00:00",
+      "nextRun": "2026-03-12T18:30:00+00:00",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": null
     },
     {
       "id": "a2a10215-b00a-45e4-8ed4-28cb60e442a6",
@@ -1381,7 +1381,7 @@
       "nextRun": "2026-03-13T10:20:00+00:00",
       "schedule": "20 7 * * * (America/Sao_Paulo)",
       "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
+      "model": "openai-codex/gpt-5.4",
       "channel": "last"
     },
     {
@@ -1409,7 +1409,7 @@
       "nextRun": "2026-03-13T10:35:00+00:00",
       "schedule": "35 7 * * * (America/Sao_Paulo)",
       "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
+      "model": "openai-codex/gpt-5.4",
       "channel": "whatsapp"
     },
     {
@@ -1665,5 +1665,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-12T17:30:04.820056+00:00"
+  "lastUpdated": "2026-03-13T12:55:09.069766+00:00"
 }
