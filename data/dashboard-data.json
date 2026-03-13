@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-13T14:30:09.223818+00:00",
+  "lastUpdated": "2026-03-13T15:00:25.867645+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -11,17 +11,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-13T14:30:00.010000+00:00"
+      "startedAt": "2026-03-13T15:00:18.267000+00:00"
     },
     {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "task": "agent:main:cron:42be764c-f915-4669-8f94-878e23362bf8",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-13T14:25:00.011000+00:00"
+      "startedAt": "2026-03-13T15:00:00.009000+00:00"
     },
     {
       "task": "agent:main:main",
       "model": "k2p5",
-      "startedAt": "2026-03-13T14:18:53.802000+00:00"
+      "startedAt": "2026-03-13T14:55:00.317000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-13T14:55:00.010000+00:00"
     },
     {
       "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
@@ -42,11 +47,6 @@
       "task": "agent:main:cron:22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-13T12:55:45.156000+00:00"
-    },
-    {
-      "task": "agent:main:cron:218f26ef-423f-4f74-aa31-d28879facc28",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-13T12:55:36.899000+00:00"
     }
   ],
   "products": [
@@ -54,14 +54,22 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-13T14:30:09.223818+00:00"
+      "lastChecked": "2026-03-13T15:00:25.867645+00:00"
     }
   ],
   "crons": [
     {
+      "name": "Ração Almoço",
+      "schedule": "0 12 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-12T17:23:47.527000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-13T14:00:00.008000+00:00",
+      "lastRun": "2026-03-13T14:30:00.009000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -69,15 +77,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-13T14:25:00.009000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Ração Almoço",
-      "schedule": "0 12 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-12T17:23:47.527000+00:00",
+      "lastRun": "2026-03-13T14:55:00.008000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -352,6 +352,11 @@
     {
       "time": "2026-03-13T10:30:13-03:00",
       "event": "Cron disparou: Rotina da Manhã (Completa) (93c7796d-f82d-4381-a925-f1a0a22bf25b)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-13T12:00:14-03:00",
+      "event": "Cron disparou: Ração Almoço (42be764c-f915-4669-8f94-878e23362bf8)",
       "channel": "cron"
     }
   ]

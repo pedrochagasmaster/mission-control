@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-13T14:30:09.223818+00:00"
+    "generatedAt": "2026-03-13T15:00:25.867645+00:00"
   },
   "overview": {
     "healthScore": 59,
@@ -23,21 +23,28 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-13T14:30:00.010000+00:00",
+      "startedAt": "2026-03-13T15:00:18.267000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "task": "agent:main:cron:42be764c-f915-4669-8f94-878e23362bf8",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-13T14:25:00.011000+00:00",
+      "startedAt": "2026-03-13T15:00:00.009000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:main",
       "model": "k2p5",
-      "startedAt": "2026-03-13T14:18:53.802000+00:00",
+      "startedAt": "2026-03-13T14:55:00.317000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-13T14:55:00.010000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -68,13 +75,6 @@
       "startedAt": "2026-03-13T12:55:45.156000+00:00",
       "agentId": "main",
       "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:218f26ef-423f-4f74-aa31-d28879facc28",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-13T12:55:36.899000+00:00",
-      "agentId": "main",
-      "kind": "direct"
     }
   ],
   "domains": [
@@ -86,7 +86,7 @@
         "pending": 7,
         "done": 0,
         "skipped": 0,
-        "overdue": 1
+        "overdue": 2
       },
       "tasks": [
         {
@@ -142,7 +142,7 @@
       "alerts": [
         {
           "level": "warning",
-          "text": "1 tarefa(s) pendente(s) já no horário"
+          "text": "2 tarefa(s) pendente(s) já no horário"
         }
       ],
       "actions": [
@@ -400,34 +400,6 @@
       },
       "jobs": [
         {
-          "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-          "name": "Mission Control - Build+Publish",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-13T14:00:00.008000+00:00",
-          "nextRun": "2026-03-13T14:30:00+00:00",
-          "schedule": "*/30 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": null
-        },
-        {
-          "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-          "name": "Mission Control - Control Runner",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-13T14:25:00.009000+00:00",
-          "nextRun": "2026-03-13T14:30:00+00:00",
-          "schedule": "*/5 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "last"
-        },
-        {
           "id": "42be764c-f915-4669-8f94-878e23362bf8",
           "name": "Ração Almoço",
           "status": "ok",
@@ -440,6 +412,34 @@
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "telegram"
+        },
+        {
+          "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+          "name": "Mission Control - Build+Publish",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-13T14:30:00.009000+00:00",
+          "nextRun": "2026-03-13T15:00:00+00:00",
+          "schedule": "*/30 * * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": null
+        },
+        {
+          "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+          "name": "Mission Control - Control Runner",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-13T14:55:00.008000+00:00",
+          "nextRun": "2026-03-13T15:00:00+00:00",
+          "schedule": "*/5 * * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "last"
         },
         {
           "id": "96074f1f-0124-4b4c-a944-e71349f91678",
@@ -989,7 +989,7 @@
       "name": "Monitoramento e Auditoria",
       "status": "warning",
       "kpis": {
-        "eventsToday": 6,
+        "eventsToday": 7,
         "queuePending": 0,
         "heartbeatBackup": false,
         "heartbeatConfigured": true
@@ -1015,7 +1015,7 @@
       "source": "/home/pedro/.openclaw/workspace/memory/events",
       "trend7d": {
         "metric": "eventsToday",
-        "delta": -36,
+        "delta": -35,
         "direction": "down"
       }
     }
@@ -1201,6 +1201,11 @@
       "time": "2026-03-13T10:30:13-03:00",
       "event": "Cron disparou: Rotina da Manhã (Completa) (93c7796d-f82d-4381-a925-f1a0a22bf25b)",
       "channel": "cron"
+    },
+    {
+      "time": "2026-03-13T12:00:14-03:00",
+      "event": "Cron disparou: Ração Almoço (42be764c-f915-4669-8f94-878e23362bf8)",
+      "channel": "cron"
     }
   ],
   "products": [
@@ -1208,38 +1213,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-13T14:30:09.223818+00:00"
+      "lastChecked": "2026-03-13T15:00:25.867645+00:00"
     }
   ],
   "crons": [
-    {
-      "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "name": "Mission Control - Build+Publish",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-13T14:00:00.008000+00:00",
-      "nextRun": "2026-03-13T14:30:00+00:00",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": null
-    },
-    {
-      "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "name": "Mission Control - Control Runner",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-13T14:25:00.009000+00:00",
-      "nextRun": "2026-03-13T14:30:00+00:00",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "last"
-    },
     {
       "id": "42be764c-f915-4669-8f94-878e23362bf8",
       "name": "Ração Almoço",
@@ -1253,6 +1230,34 @@
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "telegram"
+    },
+    {
+      "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "name": "Mission Control - Build+Publish",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-13T14:30:00.009000+00:00",
+      "nextRun": "2026-03-13T15:00:00+00:00",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": null
+    },
+    {
+      "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "name": "Mission Control - Control Runner",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-13T14:55:00.008000+00:00",
+      "nextRun": "2026-03-13T15:00:00+00:00",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "last"
     },
     {
       "id": "96074f1f-0124-4b4c-a944-e71349f91678",
@@ -1675,5 +1680,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-13T14:30:09.223818+00:00"
+  "lastUpdated": "2026-03-13T15:00:25.867645+00:00"
 }
