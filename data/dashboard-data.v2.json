@@ -2,10 +2,10 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-14T02:30:11.061105+00:00"
+    "generatedAt": "2026-03-14T03:00:11.428841+00:00"
   },
   "overview": {
-    "healthScore": 63,
+    "healthScore": 67,
     "criticalAlerts": 1,
     "pendingControls": 0,
     "dataFreshnessSec": 0
@@ -23,14 +23,21 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-14T02:30:00.012000+00:00",
+      "startedAt": "2026-03-14T03:00:00.013000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ebbd066d-2269-48d5-8f80-f89ce7633b81",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-14T02:59:00.010000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-14T02:25:00.010000+00:00",
+      "startedAt": "2026-03-14T02:55:00.010000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -74,12 +81,12 @@
     {
       "id": "routines",
       "name": "Rotinas da Casa",
-      "status": "warning",
+      "status": "ok",
       "kpis": {
         "pending": 7,
         "done": 0,
         "skipped": 0,
-        "overdue": 7
+        "overdue": 0
       },
       "tasks": [
         {
@@ -132,12 +139,7 @@
           "note": ""
         }
       ],
-      "alerts": [
-        {
-          "level": "warning",
-          "text": "7 tarefa(s) pendente(s) já no horário"
-        }
-      ],
+      "alerts": [],
       "actions": [
         "task.mark_done",
         "task.mark_skipped"
@@ -145,8 +147,8 @@
       "source": "/home/pedro/.openclaw/workspace/memory/daily_tasks.json",
       "trend7d": {
         "metric": "pending",
-        "delta": 4,
-        "direction": "up"
+        "delta": 0,
+        "direction": "flat"
       }
     },
     {
@@ -288,7 +290,7 @@
       "name": "Diário da Família",
       "status": "ok",
       "kpis": {
-        "sentToday": true,
+        "sentToday": false,
         "draftReady": false,
         "errorJobs": 0,
         "pipelineStages": 5
@@ -377,8 +379,8 @@
       "source": "/home/pedro/.openclaw/workspace/memory/daily_digest_draft.json",
       "trend7d": {
         "metric": "sentToday",
-        "delta": 0,
-        "direction": "flat"
+        "delta": -1,
+        "direction": "down"
       }
     },
     {
@@ -399,8 +401,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-14T02:00:00.009000+00:00",
-          "nextRun": "2026-03-14T02:30:00+00:00",
+          "lastRun": "2026-03-14T02:30:00.010000+00:00",
+          "nextRun": "2026-03-14T03:00:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -413,26 +415,12 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-14T02:25:00.008000+00:00",
-          "nextRun": "2026-03-14T02:30:00+00:00",
+          "lastRun": "2026-03-14T02:55:00.008000+00:00",
+          "nextRun": "2026-03-14T03:00:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "last"
-        },
-        {
-          "id": "ebbd066d-2269-48d5-8f80-f89ce7633b81",
-          "name": "daily-git-commit",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-13T12:45:58.779000+00:00",
-          "nextRun": "2026-03-14T02:59:00+00:00",
-          "schedule": "59 23 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "whatsapp"
         },
         {
           "id": "218f26ef-423f-4f74-aa31-d28879facc28",
@@ -729,6 +717,20 @@
           "channel": "telegram"
         },
         {
+          "id": "ebbd066d-2269-48d5-8f80-f89ce7633b81",
+          "name": "daily-git-commit",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-14T02:59:00.008000+00:00",
+          "nextRun": "2026-03-15T02:59:00+00:00",
+          "schedule": "59 23 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "whatsapp"
+        },
+        {
           "id": "df3cabfe-4969-4e49-8af0-4a3aaf7d03b1",
           "name": "Resumo Semanal de Memórias",
           "status": "ok",
@@ -865,7 +867,7 @@
       "source": "/home/pedro/.openclaw/cron/jobs.json",
       "trend7d": {
         "metric": "total",
-        "delta": 4,
+        "delta": 3,
         "direction": "up"
       }
     },
@@ -899,7 +901,7 @@
       "source": "/home/pedro/.openclaw/workspace/knowledge",
       "trend7d": {
         "metric": "files",
-        "delta": 11,
+        "delta": 9,
         "direction": "up"
       }
     },
@@ -982,7 +984,7 @@
       "name": "Monitoramento e Auditoria",
       "status": "ok",
       "kpis": {
-        "eventsToday": 12,
+        "eventsToday": 0,
         "queuePending": 0,
         "heartbeatBackup": true,
         "heartbeatConfigured": true
@@ -994,8 +996,8 @@
         "enabled": true,
         "errors": 0,
         "lastError": null,
-        "lastRun": "2026-03-13T12:45:58.779000+00:00",
-        "nextRun": "2026-03-14T02:59:00+00:00",
+        "lastRun": "2026-03-14T02:59:00.008000+00:00",
+        "nextRun": "2026-03-15T02:59:00+00:00",
         "schedule": "59 23 * * * (America/Sao_Paulo)",
         "tzMissing": false,
         "model": "github-copilot/gpt-5-mini",
@@ -1008,7 +1010,7 @@
       "source": "/home/pedro/.openclaw/workspace/memory/events",
       "trend7d": {
         "metric": "eventsToday",
-        "delta": -30,
+        "delta": -41,
         "direction": "down"
       }
     }
@@ -1164,74 +1166,13 @@
       }
     ]
   },
-  "recentActivity": [
-    {
-      "time": "2026-03-13T09:44:21-03:00",
-      "event": "Cron disparou: Rotina da Tarde (e3ac374c-a524-4465-a872-f682f01a979d)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-13T09:44:40-03:00",
-      "event": "Cron disparou: Rotina da Noite (Completa) (7804497e-ac8d-49c9-bead-08ed6bab21d1)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-13T09:44:50-03:00",
-      "event": "Cron disparou: Blitz da Ordem (17:30) (a2a10215-b00a-45e4-8ed4-28cb60e442a6)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-13T09:45:05-03:00",
-      "event": "Cron disparou: Lixo (Colocar Fora) (ec212b07-8387-45d0-9606-351509850608)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-13T10:00:04-03:00",
-      "event": "Cron disparou: Lixo (Sacos Novos) + Ralos (8e6d54f6-5278-4975-94dc-578d36397408)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-13T10:30:13-03:00",
-      "event": "Cron disparou: Rotina da Manhã (Completa) (93c7796d-f82d-4381-a925-f1a0a22bf25b)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-13T12:00:14-03:00",
-      "event": "Cron disparou: Ração Almoço (42be764c-f915-4669-8f94-878e23362bf8)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-13T13:00:22-03:00",
-      "event": "Cron disparou: Passeio Almoço (96074f1f-0124-4b4c-a944-e71349f91678)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-13T13:30:18-03:00",
-      "event": "Cron disparou: Pós-Almoço: Zero Pia (515506a0-6921-4f7d-8368-06fc4e93ee87)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-13T17:30:14-03:00",
-      "event": "Cron disparou: Blitz da Ordem (17:30) (a2a10215-b00a-45e4-8ed4-28cb60e442a6)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-13T18:00:22-03:00",
-      "event": "Cron disparou: Rotina da Tarde (e3ac374c-a524-4465-a872-f682f01a979d)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-03-13T22:00:17-03:00",
-      "event": "Cron disparou: Rotina da Noite (Completa) (7804497e-ac8d-49c9-bead-08ed-08ed6bab21d1)",
-      "channel": "cron"
-    }
-  ],
+  "recentActivity": [],
   "products": [
     {
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-14T02:30:11.061105+00:00"
+      "lastChecked": "2026-03-14T03:00:11.428841+00:00"
     }
   ],
   "crons": [
@@ -1242,8 +1183,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-14T02:00:00.009000+00:00",
-      "nextRun": "2026-03-14T02:30:00+00:00",
+      "lastRun": "2026-03-14T02:30:00.010000+00:00",
+      "nextRun": "2026-03-14T03:00:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1256,26 +1197,12 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-14T02:25:00.008000+00:00",
-      "nextRun": "2026-03-14T02:30:00+00:00",
+      "lastRun": "2026-03-14T02:55:00.008000+00:00",
+      "nextRun": "2026-03-14T03:00:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "last"
-    },
-    {
-      "id": "ebbd066d-2269-48d5-8f80-f89ce7633b81",
-      "name": "daily-git-commit",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-13T12:45:58.779000+00:00",
-      "nextRun": "2026-03-14T02:59:00+00:00",
-      "schedule": "59 23 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "whatsapp"
     },
     {
       "id": "218f26ef-423f-4f74-aa31-d28879facc28",
@@ -1572,6 +1499,20 @@
       "channel": "telegram"
     },
     {
+      "id": "ebbd066d-2269-48d5-8f80-f89ce7633b81",
+      "name": "daily-git-commit",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-14T02:59:00.008000+00:00",
+      "nextRun": "2026-03-15T02:59:00+00:00",
+      "schedule": "59 23 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "whatsapp"
+    },
+    {
       "id": "df3cabfe-4969-4e49-8af0-4a3aaf7d03b1",
       "name": "Resumo Semanal de Memórias",
       "status": "ok",
@@ -1698,5 +1639,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-14T02:30:11.061105+00:00"
+  "lastUpdated": "2026-03-14T03:00:11.428841+00:00"
 }
