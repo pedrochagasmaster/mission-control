@@ -2,10 +2,10 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-14T10:00:16.117919+00:00"
+    "generatedAt": "2026-03-14T10:30:11.432841+00:00"
   },
   "overview": {
-    "healthScore": 63,
+    "healthScore": 35,
     "criticalAlerts": 1,
     "pendingControls": 0,
     "dataFreshnessSec": 0
@@ -17,27 +17,44 @@
       "title": "3 alerta(s) crítico(s) no security audit",
       "priority": "high",
       "actions": []
+    },
+    {
+      "type": "cron-error",
+      "targetId": "06b5aaae-b25a-4005-a78c-badad02f216b",
+      "title": "Diário da Família - Gerador (1 erros) - 400 {\"message\":\"\",\"code\":\"invalid_request_body\"}",
+      "priority": "medium",
+      "actions": [
+        "cron.retry",
+        "cron.pause"
+      ]
     }
   ],
   "activeNow": [
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-14T10:00:00.010000+00:00",
+      "startedAt": "2026-03-14T10:30:00.011000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-14T09:55:00.010000+00:00",
+      "startedAt": "2026-03-14T10:25:00.009000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:06b5aaae-b25a-4005-a78c-badad02f216b",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-14T10:20:00.010000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:main",
       "model": "k2p5",
-      "startedAt": "2026-03-14T09:04:23.059000+00:00",
+      "startedAt": "2026-03-14T10:12:51.737000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -52,13 +69,6 @@
       "task": "agent:main:cron:75b87bc7-016d-49a2-9995-4a0b715a7f23",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-14T08:00:00.013000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:218f26ef-423f-4f74-aa31-d28879facc28",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-14T07:00:44.002000+00:00",
       "agentId": "main",
       "kind": "direct"
     }
@@ -279,23 +289,23 @@
     {
       "id": "digest",
       "name": "Diário da Família",
-      "status": "ok",
+      "status": "error",
       "kpis": {
         "sentToday": false,
         "draftReady": false,
-        "errorJobs": 0,
+        "errorJobs": 1,
         "pipelineStages": 5
       },
       "pipeline": [
         {
           "id": "06b5aaae-b25a-4005-a78c-badad02f216b",
           "name": "Diário da Família - Gerador",
-          "status": "ok",
+          "status": "error",
           "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-13T12:53:29.976000+00:00",
-          "nextRun": "2026-03-14T10:20:00+00:00",
+          "errors": 1,
+          "lastError": "400 {\"message\":\"\",\"code\":\"invalid_request_body\"}",
+          "lastRun": "2026-03-14T10:20:00.006000+00:00",
+          "nextRun": "2026-03-15T10:20:00+00:00",
           "schedule": "20 7 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "openai-codex/gpt-5.4",
@@ -362,7 +372,12 @@
         "date": null,
         "tema": null
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "level": "high",
+          "text": "1 job(s) com erro no pipeline"
+        }
+      ],
       "actions": [
         "digest.retry_send",
         "cron.retry"
@@ -377,10 +392,10 @@
     {
       "id": "crons",
       "name": "Cron Jobs",
-      "status": "ok",
+      "status": "error",
       "kpis": {
         "total": 33,
-        "errors": 0,
+        "errors": 1,
         "paused": 0,
         "tzMissing": 0
       },
@@ -392,8 +407,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-14T09:30:00.007000+00:00",
-          "nextRun": "2026-03-14T10:00:00+00:00",
+          "lastRun": "2026-03-14T10:00:00.007000+00:00",
+          "nextRun": "2026-03-14T10:30:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -406,25 +421,11 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-14T09:55:00.009000+00:00",
-          "nextRun": "2026-03-14T10:00:00+00:00",
+          "lastRun": "2026-03-14T10:25:00.006000+00:00",
+          "nextRun": "2026-03-14T10:30:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
-          "channel": "last"
-        },
-        {
-          "id": "06b5aaae-b25a-4005-a78c-badad02f216b",
-          "name": "Diário da Família - Gerador",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-13T12:53:29.976000+00:00",
-          "nextRun": "2026-03-14T10:20:00+00:00",
-          "schedule": "20 7 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "openai-codex/gpt-5.4",
           "channel": "last"
         },
         {
@@ -722,6 +723,20 @@
           "channel": "last"
         },
         {
+          "id": "06b5aaae-b25a-4005-a78c-badad02f216b",
+          "name": "Diário da Família - Gerador",
+          "status": "error",
+          "enabled": true,
+          "errors": 1,
+          "lastError": "400 {\"message\":\"\",\"code\":\"invalid_request_body\"}",
+          "lastRun": "2026-03-14T10:20:00.006000+00:00",
+          "nextRun": "2026-03-15T10:20:00+00:00",
+          "schedule": "20 7 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "openai-codex/gpt-5.4",
+          "channel": "last"
+        },
+        {
           "id": "df3cabfe-4969-4e49-8af0-4a3aaf7d03b1",
           "name": "Resumo Semanal de Memórias",
           "status": "ok",
@@ -848,7 +863,12 @@
           "channel": "telegram"
         }
       ],
-      "alerts": [],
+      "alerts": [
+        {
+          "level": "high",
+          "text": "1 cron(s) em erro"
+        }
+      ],
       "actions": [
         "cron.retry",
         "cron.pause",
@@ -1163,7 +1183,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-14T10:00:16.117919+00:00"
+      "lastChecked": "2026-03-14T10:30:11.432841+00:00"
     }
   ],
   "crons": [
@@ -1174,8 +1194,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-14T09:30:00.007000+00:00",
-      "nextRun": "2026-03-14T10:00:00+00:00",
+      "lastRun": "2026-03-14T10:00:00.007000+00:00",
+      "nextRun": "2026-03-14T10:30:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1188,25 +1208,11 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-14T09:55:00.009000+00:00",
-      "nextRun": "2026-03-14T10:00:00+00:00",
+      "lastRun": "2026-03-14T10:25:00.006000+00:00",
+      "nextRun": "2026-03-14T10:30:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
-      "channel": "last"
-    },
-    {
-      "id": "06b5aaae-b25a-4005-a78c-badad02f216b",
-      "name": "Diário da Família - Gerador",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-13T12:53:29.976000+00:00",
-      "nextRun": "2026-03-14T10:20:00+00:00",
-      "schedule": "20 7 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "openai-codex/gpt-5.4",
       "channel": "last"
     },
     {
@@ -1504,6 +1510,20 @@
       "channel": "last"
     },
     {
+      "id": "06b5aaae-b25a-4005-a78c-badad02f216b",
+      "name": "Diário da Família - Gerador",
+      "status": "error",
+      "enabled": true,
+      "errors": 1,
+      "lastError": "400 {\"message\":\"\",\"code\":\"invalid_request_body\"}",
+      "lastRun": "2026-03-14T10:20:00.006000+00:00",
+      "nextRun": "2026-03-15T10:20:00+00:00",
+      "schedule": "20 7 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "openai-codex/gpt-5.4",
+      "channel": "last"
+    },
+    {
       "id": "df3cabfe-4969-4e49-8af0-4a3aaf7d03b1",
       "name": "Resumo Semanal de Memórias",
       "status": "ok",
@@ -1630,5 +1650,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-14T10:00:16.117919+00:00"
+  "lastUpdated": "2026-03-14T10:30:11.432841+00:00"
 }
