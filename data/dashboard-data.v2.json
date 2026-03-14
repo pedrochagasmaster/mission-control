@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-14T11:00:11.948938+00:00"
+    "generatedAt": "2026-03-14T11:30:09.909260+00:00"
   },
   "overview": {
     "healthScore": 35,
@@ -33,14 +33,28 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-14T11:00:00.011000+00:00",
+      "startedAt": "2026-03-14T11:30:00.011000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-14T10:55:00.010000+00:00",
+      "startedAt": "2026-03-14T11:25:00.012000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:0ba1cb64-5259-46bf-beb5-e58c02ec4215",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-14T11:15:00.012000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:main",
+      "model": "k2p5",
+      "startedAt": "2026-03-14T11:07:23.186000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -59,13 +73,6 @@
       "kind": "direct"
     },
     {
-      "task": "agent:main:main",
-      "model": "k2p5",
-      "startedAt": "2026-03-14T10:37:24.105000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
       "task": "agent:main:cron:4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-14T10:35:01.613000+00:00",
@@ -76,13 +83,6 @@
       "task": "agent:main:cron:06b5aaae-b25a-4005-a78c-badad02f216b",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-14T10:20:00.010000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-14T09:04:11.923000+00:00",
       "agentId": "main",
       "kind": "direct"
     }
@@ -360,8 +360,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-13T12:54:44.642000+00:00",
-          "nextRun": "2026-03-14T11:15:00+00:00",
+          "lastRun": "2026-03-14T11:15:00.009000+00:00",
+          "nextRun": "2026-03-15T11:15:00+00:00",
           "schedule": "15 8 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -421,8 +421,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-14T10:30:00.008000+00:00",
-          "nextRun": "2026-03-14T11:00:00+00:00",
+          "lastRun": "2026-03-14T11:00:00.009000+00:00",
+          "nextRun": "2026-03-14T11:30:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -435,23 +435,9 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-14T10:55:00.007000+00:00",
-          "nextRun": "2026-03-14T11:00:00+00:00",
+          "lastRun": "2026-03-14T11:25:00.010000+00:00",
+          "nextRun": "2026-03-14T11:30:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "last"
-        },
-        {
-          "id": "0ba1cb64-5259-46bf-beb5-e58c02ec4215",
-          "name": "Diário da Família - Watchdog (retry 08:15)",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-13T12:54:44.642000+00:00",
-          "nextRun": "2026-03-14T11:15:00+00:00",
-          "schedule": "15 8 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "last"
@@ -746,6 +732,20 @@
           "lastRun": "2026-03-14T10:50:00.008000+00:00",
           "nextRun": "2026-03-15T10:50:00+00:00",
           "schedule": "50 7 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "last"
+        },
+        {
+          "id": "0ba1cb64-5259-46bf-beb5-e58c02ec4215",
+          "name": "Diário da Família - Watchdog (retry 08:15)",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-14T11:15:00.009000+00:00",
+          "nextRun": "2026-03-15T11:15:00+00:00",
+          "schedule": "15 8 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "last"
@@ -1197,7 +1197,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-14T11:00:11.948938+00:00"
+      "lastChecked": "2026-03-14T11:30:09.909260+00:00"
     }
   ],
   "crons": [
@@ -1208,8 +1208,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-14T10:30:00.008000+00:00",
-      "nextRun": "2026-03-14T11:00:00+00:00",
+      "lastRun": "2026-03-14T11:00:00.009000+00:00",
+      "nextRun": "2026-03-14T11:30:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1222,23 +1222,9 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-14T10:55:00.007000+00:00",
-      "nextRun": "2026-03-14T11:00:00+00:00",
+      "lastRun": "2026-03-14T11:25:00.010000+00:00",
+      "nextRun": "2026-03-14T11:30:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "last"
-    },
-    {
-      "id": "0ba1cb64-5259-46bf-beb5-e58c02ec4215",
-      "name": "Diário da Família - Watchdog (retry 08:15)",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-13T12:54:44.642000+00:00",
-      "nextRun": "2026-03-14T11:15:00+00:00",
-      "schedule": "15 8 * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "last"
@@ -1538,6 +1524,20 @@
       "channel": "last"
     },
     {
+      "id": "0ba1cb64-5259-46bf-beb5-e58c02ec4215",
+      "name": "Diário da Família - Watchdog (retry 08:15)",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-14T11:15:00.009000+00:00",
+      "nextRun": "2026-03-15T11:15:00+00:00",
+      "schedule": "15 8 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "last"
+    },
+    {
       "id": "df3cabfe-4969-4e49-8af0-4a3aaf7d03b1",
       "name": "Resumo Semanal de Memórias",
       "status": "ok",
@@ -1664,5 +1664,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-14T11:00:11.948938+00:00"
+  "lastUpdated": "2026-03-14T11:30:09.909260+00:00"
 }
