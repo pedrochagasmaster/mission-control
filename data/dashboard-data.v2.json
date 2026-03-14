@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-14T01:00:31.972790+00:00"
+    "generatedAt": "2026-03-14T01:30:09.375840+00:00"
   },
   "overview": {
     "healthScore": 63,
@@ -23,7 +23,21 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-14T01:00:25.894000+00:00",
+      "startedAt": "2026-03-14T01:30:00.013000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-14T01:25:00.009000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:main",
+      "model": "k2p5",
+      "startedAt": "2026-03-14T01:15:21.018000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -35,25 +49,11 @@
       "kind": "direct"
     },
     {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-14T00:55:00.011000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
       "task": "agent:main:whatsapp:group:120363422516892829@g.us",
       "model": "k2p5",
       "startedAt": "2026-03-14T00:52:04.801000+00:00",
       "agentId": "main",
       "kind": "group"
-    },
-    {
-      "task": "agent:main:main",
-      "model": "k2p5",
-      "startedAt": "2026-03-14T00:45:20.925000+00:00",
-      "agentId": "main",
-      "kind": "direct"
     },
     {
       "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
@@ -393,28 +393,14 @@
       },
       "jobs": [
         {
-          "id": "7804497e-ac8d-49c9-bead-08ed6bab21d1",
-          "name": "Rotina da Noite (Completa)",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-13T12:44:29.105000+00:00",
-          "nextRun": "2026-03-14T01:00:00+00:00",
-          "schedule": "0 22 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
-        },
-        {
           "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
           "name": "Mission Control - Build+Publish",
           "status": "ok",
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-14T00:30:00.007000+00:00",
-          "nextRun": "2026-03-14T01:00:00+00:00",
+          "lastRun": "2026-03-14T01:00:25.885000+00:00",
+          "nextRun": "2026-03-14T01:30:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -427,8 +413,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-14T00:55:00.008000+00:00",
-          "nextRun": "2026-03-14T01:00:00+00:00",
+          "lastRun": "2026-03-14T01:25:00.007000+00:00",
+          "nextRun": "2026-03-14T01:30:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -727,6 +713,20 @@
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "whatsapp"
+        },
+        {
+          "id": "7804497e-ac8d-49c9-bead-08ed6bab21d1",
+          "name": "Rotina da Noite (Completa)",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-14T01:00:00.007000+00:00",
+          "nextRun": "2026-03-15T01:00:00+00:00",
+          "schedule": "0 22 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
         },
         {
           "id": "df3cabfe-4969-4e49-8af0-4a3aaf7d03b1",
@@ -1231,24 +1231,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-14T01:00:31.972790+00:00"
+      "lastChecked": "2026-03-14T01:30:09.375840+00:00"
     }
   ],
   "crons": [
-    {
-      "id": "7804497e-ac8d-49c9-bead-08ed6bab21d1",
-      "name": "Rotina da Noite (Completa)",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-13T12:44:29.105000+00:00",
-      "nextRun": "2026-03-14T01:00:00+00:00",
-      "schedule": "0 22 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
-    },
     {
       "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "name": "Mission Control - Build+Publish",
@@ -1256,8 +1242,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-14T00:30:00.007000+00:00",
-      "nextRun": "2026-03-14T01:00:00+00:00",
+      "lastRun": "2026-03-14T01:00:25.885000+00:00",
+      "nextRun": "2026-03-14T01:30:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1270,8 +1256,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-14T00:55:00.008000+00:00",
-      "nextRun": "2026-03-14T01:00:00+00:00",
+      "lastRun": "2026-03-14T01:25:00.007000+00:00",
+      "nextRun": "2026-03-14T01:30:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1572,6 +1558,20 @@
       "channel": "whatsapp"
     },
     {
+      "id": "7804497e-ac8d-49c9-bead-08ed6bab21d1",
+      "name": "Rotina da Noite (Completa)",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-14T01:00:00.007000+00:00",
+      "nextRun": "2026-03-15T01:00:00+00:00",
+      "schedule": "0 22 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
+    },
+    {
       "id": "df3cabfe-4969-4e49-8af0-4a3aaf7d03b1",
       "name": "Resumo Semanal de Memórias",
       "status": "ok",
@@ -1698,5 +1698,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-14T01:00:31.972790+00:00"
+  "lastUpdated": "2026-03-14T01:30:09.375840+00:00"
 }
