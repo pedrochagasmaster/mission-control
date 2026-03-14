@@ -1,37 +1,42 @@
 {
-  "lastUpdated": "2026-03-14T20:30:38.012186+00:00",
+  "lastUpdated": "2026-03-14T21:00:27.132834+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
       "url": null,
       "priority": "high"
-    },
-    {
-      "title": "Diário da Família - Gerador (1 erros) - 400 {\"message\":\"\",\"code\":\"invalid_request_body\"}",
-      "url": null,
-      "priority": "medium"
     }
   ],
   "activeNow": [
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-14T20:30:28.787000+00:00"
+      "startedAt": "2026-03-14T21:00:18.183000+00:00"
+    },
+    {
+      "task": "agent:main:cron:e3ac374c-a524-4465-a872-f682f01a979d",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-14T21:00:00.009000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-14T20:55:00.009000+00:00"
+    },
+    {
+      "task": "agent:main:main",
+      "model": "gpt-5.4",
+      "startedAt": "2026-03-14T20:37:24.083000+00:00"
+    },
+    {
+      "task": "agent:main:cron:06b5aaae-b25a-4005-a78c-badad02f216b",
+      "model": "gpt-5.4",
+      "startedAt": "2026-03-14T20:36:22.747000+00:00"
     },
     {
       "task": "agent:main:cron:a2a10215-b00a-45e4-8ed4-28cb60e442a6",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-14T20:30:00.009000+00:00"
-    },
-    {
-      "task": "agent:main:main",
-      "model": "gpt-5.4",
-      "startedAt": "2026-03-14T20:29:19.156000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-14T20:25:00.008000+00:00"
     }
   ],
   "products": [
@@ -39,30 +44,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-14T20:30:38.012186+00:00"
+      "lastChecked": "2026-03-14T21:00:27.132834+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-14T20:00:00.007000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Blitz da Ordem (17:30)",
-      "schedule": "30 17 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-13T20:30:00.009000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-14T20:25:00.006000+00:00",
+      "lastRun": "2026-03-14T20:30:28.785000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -71,6 +60,14 @@
       "name": "Rotina da Tarde",
       "schedule": "0 18 * * * (America/Sao_Paulo)",
       "lastRun": "2026-03-13T21:00:00.007000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-14T20:55:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -134,10 +131,10 @@
     {
       "name": "Diário da Família - Gerador",
       "schedule": "20 7 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-14T10:20:00.006000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "400 {\"message\":\"\",\"code\":\"invalid_request_body\"}"
+      "lastRun": "2026-03-14T20:36:22.661000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Diário da Família - Enviador",
@@ -223,6 +220,14 @@
       "name": "Pós-Almoço: Zero Pia",
       "schedule": "30 13 * * 2-7 (America/Sao_Paulo)",
       "lastRun": "2026-03-14T16:30:00.008000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Blitz da Ordem (17:30)",
+      "schedule": "30 17 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-14T20:30:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -337,6 +342,11 @@
     {
       "time": "2026-03-14T17:30:12-03:00",
       "event": "Cron disparou: Blitz da Ordem (17:30) (a2a10215-b00a-45e4-8ed4-28cb60e442a6)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-14T18:00:12-03:00",
+      "event": "Cron disparou: Rotina da Tarde (e3ac374c-a524-4465-a872-f682f01a979d)",
       "channel": "cron"
     }
   ]
