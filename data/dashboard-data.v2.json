@@ -2,10 +2,10 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-14T15:01:00.933802+00:00"
+    "generatedAt": "2026-03-14T15:37:00.683392+00:00"
   },
   "overview": {
-    "healthScore": 27,
+    "healthScore": 35,
     "criticalAlerts": 1,
     "pendingControls": 0,
     "dataFreshnessSec": 0
@@ -20,16 +20,6 @@
     },
     {
       "type": "cron-error",
-      "targetId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "title": "Mission Control - Build+Publish (1 erros)",
-      "priority": "medium",
-      "actions": [
-        "cron.retry",
-        "cron.pause"
-      ]
-    },
-    {
-      "type": "cron-error",
       "targetId": "06b5aaae-b25a-4005-a78c-badad02f216b",
       "title": "Diário da Família - Gerador (1 erros) - 400 {\"message\":\"\",\"code\":\"invalid_request_body\"}",
       "priority": "medium",
@@ -41,16 +31,23 @@
   ],
   "activeNow": [
     {
-      "task": "agent:main:main",
-      "model": "k2p5",
-      "startedAt": "2026-03-14T15:00:56.438000+00:00",
+      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-14T15:36:50.410000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
-      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "task": "agent:main:main",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-14T15:00:27.308000+00:00",
+      "startedAt": "2026-03-14T15:10:18.789000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-14T15:10:00.015000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -58,13 +55,6 @@
       "task": "agent:main:cron:42be764c-f915-4669-8f94-878e23362bf8",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-14T15:00:00.012000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-14T14:56:07.489000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -405,39 +395,11 @@
       "status": "error",
       "kpis": {
         "total": 33,
-        "errors": 2,
+        "errors": 1,
         "paused": 0,
         "tzMissing": 0
       },
       "jobs": [
-        {
-          "id": "42be764c-f915-4669-8f94-878e23362bf8",
-          "name": "Ração Almoço",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-13T15:00:00.008000+00:00",
-          "nextRun": "2026-03-14T15:00:00+00:00",
-          "schedule": "0 12 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
-        },
-        {
-          "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-          "name": "Mission Control - Build+Publish",
-          "status": "error",
-          "enabled": true,
-          "errors": 1,
-          "lastError": null,
-          "lastRun": "2026-03-14T14:32:54.784000+00:00",
-          "nextRun": "2026-03-14T15:00:00+00:00",
-          "schedule": "*/30 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": null
-        },
         {
           "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
           "name": "Mission Control - Control Runner",
@@ -445,12 +407,26 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-14T14:56:07.485000+00:00",
-          "nextRun": "2026-03-14T15:00:00+00:00",
+          "lastRun": "2026-03-14T15:05:00.861000+00:00",
+          "nextRun": "2026-03-14T15:10:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "last"
+        },
+        {
+          "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+          "name": "Mission Control - Build+Publish",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-14T15:00:27.287000+00:00",
+          "nextRun": "2026-03-14T15:30:00+00:00",
+          "schedule": "*/30 * * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": null
         },
         {
           "id": "96074f1f-0124-4b4c-a944-e71349f91678",
@@ -733,6 +709,20 @@
           "channel": "telegram"
         },
         {
+          "id": "42be764c-f915-4669-8f94-878e23362bf8",
+          "name": "Ração Almoço",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-14T15:00:00.006000+00:00",
+          "nextRun": "2026-03-15T15:00:00+00:00",
+          "schedule": "0 12 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
+        },
+        {
           "id": "df3cabfe-4969-4e49-8af0-4a3aaf7d03b1",
           "name": "Resumo Semanal de Memórias",
           "status": "ok",
@@ -876,7 +866,7 @@
       "alerts": [
         {
           "level": "high",
-          "text": "2 cron(s) em erro"
+          "text": "1 cron(s) em erro"
         }
       ],
       "actions": [
@@ -1209,38 +1199,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-14T15:01:00.933802+00:00"
+      "lastChecked": "2026-03-14T15:37:00.683392+00:00"
     }
   ],
   "crons": [
-    {
-      "id": "42be764c-f915-4669-8f94-878e23362bf8",
-      "name": "Ração Almoço",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-13T15:00:00.008000+00:00",
-      "nextRun": "2026-03-14T15:00:00+00:00",
-      "schedule": "0 12 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
-    },
-    {
-      "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "name": "Mission Control - Build+Publish",
-      "status": "error",
-      "enabled": true,
-      "errors": 1,
-      "lastError": null,
-      "lastRun": "2026-03-14T14:32:54.784000+00:00",
-      "nextRun": "2026-03-14T15:00:00+00:00",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": null
-    },
     {
       "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "name": "Mission Control - Control Runner",
@@ -1248,12 +1210,26 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-14T14:56:07.485000+00:00",
-      "nextRun": "2026-03-14T15:00:00+00:00",
+      "lastRun": "2026-03-14T15:05:00.861000+00:00",
+      "nextRun": "2026-03-14T15:10:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "last"
+    },
+    {
+      "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "name": "Mission Control - Build+Publish",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-14T15:00:27.287000+00:00",
+      "nextRun": "2026-03-14T15:30:00+00:00",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": null
     },
     {
       "id": "96074f1f-0124-4b4c-a944-e71349f91678",
@@ -1536,6 +1512,20 @@
       "channel": "telegram"
     },
     {
+      "id": "42be764c-f915-4669-8f94-878e23362bf8",
+      "name": "Ração Almoço",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-14T15:00:00.006000+00:00",
+      "nextRun": "2026-03-15T15:00:00+00:00",
+      "schedule": "0 12 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
+    },
+    {
       "id": "df3cabfe-4969-4e49-8af0-4a3aaf7d03b1",
       "name": "Resumo Semanal de Memórias",
       "status": "ok",
@@ -1676,5 +1666,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-14T15:01:00.933802+00:00"
+  "lastUpdated": "2026-03-14T15:37:00.683392+00:00"
 }
