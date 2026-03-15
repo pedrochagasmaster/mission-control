@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-15T15:04:19.927536+00:00",
+  "lastUpdated": "2026-03-15T15:30:17.932631+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -21,22 +21,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-15T15:04:05.510000+00:00"
+      "startedAt": "2026-03-15T15:30:00.010000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-15T15:25:00.021000+00:00"
     },
     {
       "task": "agent:main:main",
       "model": "gpt-5.4",
-      "startedAt": "2026-03-15T15:03:44.427000+00:00"
+      "startedAt": "2026-03-15T15:16:20.126000+00:00"
     },
     {
       "task": "agent:main:cron:42be764c-f915-4669-8f94-878e23362bf8",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-15T15:00:00.009000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-15T14:55:00.008000+00:00"
     },
     {
       "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
@@ -49,22 +49,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-15T15:04:19.927536+00:00"
+      "lastChecked": "2026-03-15T15:30:17.932631+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Ração Almoço",
-      "schedule": "0 12 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-14T15:00:00.006000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-15T14:30:00.007000+00:00",
+      "lastRun": "2026-03-15T15:04:05.507000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -72,7 +64,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-15T14:55:00.006000+00:00",
+      "lastRun": "2026-03-15T15:25:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -238,6 +230,14 @@
       "lastError": null
     },
     {
+      "name": "Pulso Proativo - Manhã",
+      "schedule": "40 8 * * * (America/Sao_Paulo)",
+      "lastRun": null,
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Deadline Reminder Checker",
       "schedule": "0 9 * * * (America/Sao_Paulo)",
       "lastRun": "2026-03-15T12:00:19.683000+00:00",
@@ -281,6 +281,22 @@
       "name": "Rotina da Manhã (Completa)",
       "schedule": "30 10 * * * (America/Sao_Paulo)",
       "lastRun": "2026-03-15T13:30:00.007000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Ração Almoço",
+      "schedule": "0 12 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-15T15:00:00.007000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Pulso Proativo - Tarde",
+      "schedule": "10 16 * * * (America/Sao_Paulo)",
+      "lastRun": null,
       "status": "ok",
       "errors": 0,
       "lastError": null
