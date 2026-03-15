@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-15T15:30:17.932631+00:00",
+  "lastUpdated": "2026-03-15T16:00:31.806000+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -21,12 +21,17 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-15T15:30:00.010000+00:00"
+      "startedAt": "2026-03-15T16:00:19.445000+00:00"
+    },
+    {
+      "task": "agent:main:cron:96074f1f-0124-4b4c-a944-e71349f91678",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-15T16:00:00.009000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-15T15:25:00.021000+00:00"
+      "startedAt": "2026-03-15T15:55:00.010000+00:00"
     },
     {
       "task": "agent:main:main",
@@ -49,22 +54,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-15T15:30:17.932631+00:00"
+      "lastChecked": "2026-03-15T16:00:31.806000+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-15T15:04:05.507000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-15T15:25:00.007000+00:00",
+      "lastRun": "2026-03-15T15:30:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -73,6 +70,14 @@
       "name": "Passeio Almoço",
       "schedule": "0 13 * * * (America/Sao_Paulo)",
       "lastRun": "2026-03-14T16:00:00.018000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-15T15:55:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -343,6 +348,11 @@
     {
       "time": "2026-03-15T12:03:58-03:00",
       "event": "Cron disparou: Ração Almoço (42be764c-f915-4669-8f94-878e23362bf8)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-15T13:00:14-03:00",
+      "event": "Cron disparou: Passeio Almoço (96074f1f-0124-4b4c-a944-e71349f91678)",
       "channel": "cron"
     }
   ]
