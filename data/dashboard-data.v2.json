@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-15T07:00:08.091674+00:00"
+    "generatedAt": "2026-03-15T07:30:07.954151+00:00"
   },
   "overview": {
     "healthScore": 43,
@@ -33,14 +33,21 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-15T07:00:00.009000+00:00",
+      "startedAt": "2026-03-15T07:30:00.009000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-15T06:55:00.010000+00:00",
+      "startedAt": "2026-03-15T07:25:00.008000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:218f26ef-423f-4f74-aa31-d28879facc28",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-15T07:00:46.602000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -370,28 +377,14 @@
       },
       "jobs": [
         {
-          "id": "218f26ef-423f-4f74-aa31-d28879facc28",
-          "name": "Consolidação Automática de Learnings",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-14T07:00:43.999000+00:00",
-          "nextRun": "2026-03-15T07:00:00+00:00",
-          "schedule": "0 4 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "whatsapp"
-        },
-        {
           "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
           "name": "Mission Control - Build+Publish",
           "status": "ok",
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-15T06:30:00.007000+00:00",
-          "nextRun": "2026-03-15T07:00:00+00:00",
+          "lastRun": "2026-03-15T07:00:00.006000+00:00",
+          "nextRun": "2026-03-15T07:30:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -404,8 +397,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-15T06:55:00.007000+00:00",
-          "nextRun": "2026-03-15T07:00:00+00:00",
+          "lastRun": "2026-03-15T07:25:00.007000+00:00",
+          "nextRun": "2026-03-15T07:30:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -715,6 +708,20 @@
           "lastRun": "2026-03-15T02:59:00.007000+00:00",
           "nextRun": "2026-03-16T02:59:00+00:00",
           "schedule": "59 23 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "whatsapp"
+        },
+        {
+          "id": "218f26ef-423f-4f74-aa31-d28879facc28",
+          "name": "Consolidação Automática de Learnings",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-15T07:00:46.600000+00:00",
+          "nextRun": "2026-03-16T07:00:00+00:00",
+          "schedule": "0 4 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "whatsapp"
@@ -1152,24 +1159,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-15T07:00:08.091674+00:00"
+      "lastChecked": "2026-03-15T07:30:07.954151+00:00"
     }
   ],
   "crons": [
-    {
-      "id": "218f26ef-423f-4f74-aa31-d28879facc28",
-      "name": "Consolidação Automática de Learnings",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-14T07:00:43.999000+00:00",
-      "nextRun": "2026-03-15T07:00:00+00:00",
-      "schedule": "0 4 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "whatsapp"
-    },
     {
       "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "name": "Mission Control - Build+Publish",
@@ -1177,8 +1170,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-15T06:30:00.007000+00:00",
-      "nextRun": "2026-03-15T07:00:00+00:00",
+      "lastRun": "2026-03-15T07:00:00.006000+00:00",
+      "nextRun": "2026-03-15T07:30:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1191,8 +1184,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-15T06:55:00.007000+00:00",
-      "nextRun": "2026-03-15T07:00:00+00:00",
+      "lastRun": "2026-03-15T07:25:00.007000+00:00",
+      "nextRun": "2026-03-15T07:30:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1507,6 +1500,20 @@
       "channel": "whatsapp"
     },
     {
+      "id": "218f26ef-423f-4f74-aa31-d28879facc28",
+      "name": "Consolidação Automática de Learnings",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-15T07:00:46.600000+00:00",
+      "nextRun": "2026-03-16T07:00:00+00:00",
+      "schedule": "0 4 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "whatsapp"
+    },
+    {
       "id": "ec212b07-8387-45d0-9606-351509850608",
       "name": "Lixo (Colocar Fora)",
       "status": "ok",
@@ -1619,5 +1626,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-15T07:00:08.091674+00:00"
+  "lastUpdated": "2026-03-15T07:30:07.954151+00:00"
 }
