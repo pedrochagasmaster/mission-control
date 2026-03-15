@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-15T19:30:13.582048+00:00"
+    "generatedAt": "2026-03-15T20:00:11.901224+00:00"
   },
   "overview": {
     "healthScore": 31,
@@ -43,14 +43,14 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-15T19:30:00.013000+00:00",
+      "startedAt": "2026-03-15T20:00:00.014000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-15T19:25:00.015000+00:00",
+      "startedAt": "2026-03-15T19:55:00.010000+00:00",
       "agentId": "main",
       "kind": "direct"
     }
@@ -371,7 +371,7 @@
       "name": "Cron Jobs",
       "status": "error",
       "kpis": {
-        "total": 35,
+        "total": 39,
         "errors": 2,
         "paused": 0,
         "tzMissing": 0
@@ -384,8 +384,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-15T19:00:00.007000+00:00",
-          "nextRun": "2026-03-15T19:30:00+00:00",
+          "lastRun": "2026-03-15T19:30:00.011000+00:00",
+          "nextRun": "2026-03-15T20:00:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -398,8 +398,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-15T19:25:00.011000+00:00",
-          "nextRun": "2026-03-15T19:30:00+00:00",
+          "lastRun": "2026-03-15T19:55:00.007000+00:00",
+          "nextRun": "2026-03-15T20:00:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -659,7 +659,7 @@
         },
         {
           "id": "a70ae26a-a41e-4304-93a5-bd39faadf75d",
-          "name": "Pulso Proativo - Manhã",
+          "name": "Pulso Proativo DM - Manhã",
           "status": "ok",
           "enabled": true,
           "errors": 0,
@@ -756,6 +756,20 @@
           "channel": "telegram"
         },
         {
+          "id": "ff7487f2-fad4-40ab-bd83-84219ecec634",
+          "name": "Pulso Familiar - Meio-dia",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": null,
+          "nextRun": "2026-03-16T14:30:00+00:00",
+          "schedule": "30 11 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "whatsapp"
+        },
+        {
           "id": "42be764c-f915-4669-8f94-878e23362bf8",
           "name": "Ração Almoço",
           "status": "ok",
@@ -768,6 +782,20 @@
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "telegram"
+        },
+        {
+          "id": "fb95993b-dfce-443e-ad3d-5a95e34219d6",
+          "name": "Pulso Proativo DM - Meio-dia",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": null,
+          "nextRun": "2026-03-16T15:30:00+00:00",
+          "schedule": "30 12 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "whatsapp"
         },
         {
           "id": "96074f1f-0124-4b4c-a944-e71349f91678",
@@ -785,7 +813,7 @@
         },
         {
           "id": "0f9465d4-cd0f-4254-acf5-75a885a48725",
-          "name": "Pulso Proativo - Tarde",
+          "name": "Pulso Proativo DM - Tarde",
           "status": "ok",
           "enabled": true,
           "errors": 0,
@@ -793,6 +821,34 @@
           "lastRun": null,
           "nextRun": "2026-03-16T19:10:00+00:00",
           "schedule": "10 16 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "whatsapp"
+        },
+        {
+          "id": "ac63f283-4de6-4a42-bd64-2aa49c34dc70",
+          "name": "Pulso Familiar - Noite",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": null,
+          "nextRun": "2026-03-16T23:30:00+00:00",
+          "schedule": "30 19 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "whatsapp"
+        },
+        {
+          "id": "344b269e-c391-40dc-92e0-016b5114f21e",
+          "name": "Pulso Proativo DM - Noite",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": null,
+          "nextRun": "2026-03-17T00:45:00+00:00",
+          "schedule": "45 20 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "whatsapp"
@@ -883,7 +939,7 @@
       "source": "/home/pedro/.openclaw/cron/jobs.json",
       "trend7d": {
         "metric": "total",
-        "delta": 5,
+        "delta": 9,
         "direction": "up"
       }
     },
@@ -1209,7 +1265,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-15T19:30:13.582048+00:00"
+      "lastChecked": "2026-03-15T20:00:11.901224+00:00"
     }
   ],
   "crons": [
@@ -1220,8 +1276,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-15T19:00:00.007000+00:00",
-      "nextRun": "2026-03-15T19:30:00+00:00",
+      "lastRun": "2026-03-15T19:30:00.011000+00:00",
+      "nextRun": "2026-03-15T20:00:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1234,8 +1290,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-15T19:25:00.011000+00:00",
-      "nextRun": "2026-03-15T19:30:00+00:00",
+      "lastRun": "2026-03-15T19:55:00.007000+00:00",
+      "nextRun": "2026-03-15T20:00:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1495,7 +1551,7 @@
     },
     {
       "id": "a70ae26a-a41e-4304-93a5-bd39faadf75d",
-      "name": "Pulso Proativo - Manhã",
+      "name": "Pulso Proativo DM - Manhã",
       "status": "ok",
       "enabled": true,
       "errors": 0,
@@ -1592,6 +1648,20 @@
       "channel": "telegram"
     },
     {
+      "id": "ff7487f2-fad4-40ab-bd83-84219ecec634",
+      "name": "Pulso Familiar - Meio-dia",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": null,
+      "nextRun": "2026-03-16T14:30:00+00:00",
+      "schedule": "30 11 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "whatsapp"
+    },
+    {
       "id": "42be764c-f915-4669-8f94-878e23362bf8",
       "name": "Ração Almoço",
       "status": "ok",
@@ -1604,6 +1674,20 @@
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "telegram"
+    },
+    {
+      "id": "fb95993b-dfce-443e-ad3d-5a95e34219d6",
+      "name": "Pulso Proativo DM - Meio-dia",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": null,
+      "nextRun": "2026-03-16T15:30:00+00:00",
+      "schedule": "30 12 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "whatsapp"
     },
     {
       "id": "96074f1f-0124-4b4c-a944-e71349f91678",
@@ -1621,7 +1705,7 @@
     },
     {
       "id": "0f9465d4-cd0f-4254-acf5-75a885a48725",
-      "name": "Pulso Proativo - Tarde",
+      "name": "Pulso Proativo DM - Tarde",
       "status": "ok",
       "enabled": true,
       "errors": 0,
@@ -1629,6 +1713,34 @@
       "lastRun": null,
       "nextRun": "2026-03-16T19:10:00+00:00",
       "schedule": "10 16 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "whatsapp"
+    },
+    {
+      "id": "ac63f283-4de6-4a42-bd64-2aa49c34dc70",
+      "name": "Pulso Familiar - Noite",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": null,
+      "nextRun": "2026-03-16T23:30:00+00:00",
+      "schedule": "30 19 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "whatsapp"
+    },
+    {
+      "id": "344b269e-c391-40dc-92e0-016b5114f21e",
+      "name": "Pulso Proativo DM - Noite",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": null,
+      "nextRun": "2026-03-17T00:45:00+00:00",
+      "schedule": "45 20 * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "whatsapp"
@@ -1704,5 +1816,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-15T19:30:13.582048+00:00"
+  "lastUpdated": "2026-03-15T20:00:11.901224+00:00"
 }

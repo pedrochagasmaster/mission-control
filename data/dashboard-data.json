@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-15T19:30:13.582048+00:00",
+  "lastUpdated": "2026-03-15T20:00:11.901224+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -21,12 +21,12 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-15T19:30:00.013000+00:00"
+      "startedAt": "2026-03-15T20:00:00.014000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-15T19:25:00.015000+00:00"
+      "startedAt": "2026-03-15T19:55:00.010000+00:00"
     }
   ],
   "products": [
@@ -34,14 +34,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-15T19:30:13.582048+00:00"
+      "lastChecked": "2026-03-15T20:00:11.901224+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-15T19:00:00.007000+00:00",
+      "lastRun": "2026-03-15T19:30:00.011000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -49,7 +49,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-15T19:25:00.011000+00:00",
+      "lastRun": "2026-03-15T19:55:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -199,7 +199,7 @@
       "lastError": null
     },
     {
-      "name": "Pulso Proativo - Manhã",
+      "name": "Pulso Proativo DM - Manhã",
       "schedule": "40 8 * * * (America/Sao_Paulo)",
       "lastRun": null,
       "status": "ok",
@@ -255,9 +255,25 @@
       "lastError": null
     },
     {
+      "name": "Pulso Familiar - Meio-dia",
+      "schedule": "30 11 * * * (America/Sao_Paulo)",
+      "lastRun": null,
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Ração Almoço",
       "schedule": "0 12 * * * (America/Sao_Paulo)",
       "lastRun": "2026-03-15T15:00:00.007000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Pulso Proativo DM - Meio-dia",
+      "schedule": "30 12 * * * (America/Sao_Paulo)",
+      "lastRun": null,
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -271,8 +287,24 @@
       "lastError": null
     },
     {
-      "name": "Pulso Proativo - Tarde",
+      "name": "Pulso Proativo DM - Tarde",
       "schedule": "10 16 * * * (America/Sao_Paulo)",
+      "lastRun": null,
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Pulso Familiar - Noite",
+      "schedule": "30 19 * * * (America/Sao_Paulo)",
+      "lastRun": null,
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Pulso Proativo DM - Noite",
+      "schedule": "45 20 * * * (America/Sao_Paulo)",
       "lastRun": null,
       "status": "ok",
       "errors": 0,
