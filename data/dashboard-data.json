@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-15T16:00:52.819421+00:00",
+  "lastUpdated": "2026-03-15T16:01:16.898830+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -21,7 +21,7 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-15T16:00:44.878000+00:00"
+      "startedAt": "2026-03-15T16:01:05.600000+00:00"
     },
     {
       "task": "agent:main:cron:96074f1f-0124-4b4c-a944-e71349f91678",
@@ -54,7 +54,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-15T16:00:52.819421+00:00"
+      "lastChecked": "2026-03-15T16:01:16.898830+00:00"
     }
   ],
   "crons": [
