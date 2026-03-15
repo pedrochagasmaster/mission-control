@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-15T23:00:07.569371+00:00",
+  "lastUpdated": "2026-03-15T23:30:10.050262+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -21,22 +21,27 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-15T23:00:00.031000+00:00"
+      "startedAt": "2026-03-15T23:30:00.009000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-15T22:55:00.009000+00:00"
+      "startedAt": "2026-03-15T23:25:00.009000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-15T23:05:38.860000+00:00"
+    },
+    {
+      "task": "agent:main:cron:df3cabfe-4969-4e49-8af0-4a3aaf7d03b1",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-15T23:01:02.498000+00:00"
     },
     {
       "task": "agent:main:cron:e3ac374c-a524-4465-a872-f682f01a979d",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-15T21:00:00.013000+00:00"
-    },
-    {
-      "task": "agent:main:cron:a2a10215-b00a-45e4-8ed4-28cb60e442a6",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-15T20:30:00.015000+00:00"
     }
   ],
   "products": [
@@ -44,22 +49,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-15T23:00:07.569371+00:00"
+      "lastChecked": "2026-03-15T23:30:10.050262+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-15T22:30:00.026000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Resumo Semanal de Memórias",
-      "schedule": "0 20 * * 0 (America/Sao_Paulo)",
-      "lastRun": null,
+      "lastRun": "2026-03-15T23:00:00.029000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -67,7 +64,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-15T22:55:00.007000+00:00",
+      "lastRun": "2026-03-15T23:25:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -283,7 +280,7 @@
     {
       "name": "Pulso Familiar - Noite",
       "schedule": "30 19 * * * (America/Sao_Paulo)",
-      "lastRun": null,
+      "lastRun": "2026-03-15T23:05:37.063000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -316,6 +313,14 @@
       "name": "Check Estoque Simparic (Mensal)",
       "schedule": "0 9 20 * * (America/Sao_Paulo)",
       "lastRun": "2026-02-20T12:00:00.025000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Resumo Semanal de Memórias",
+      "schedule": "0 20 * * 0 (America/Sao_Paulo)",
+      "lastRun": "2026-03-15T23:01:00.667000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
