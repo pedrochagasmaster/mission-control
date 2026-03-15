@@ -1,22 +1,42 @@
 {
-  "lastUpdated": "2026-03-15T00:30:09.471256+00:00",
+  "lastUpdated": "2026-03-15T01:00:28.583533+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
       "url": null,
       "priority": "high"
+    },
+    {
+      "title": "Pluggy Sync - Tracking Despesas (1 erros) - Error: No active WhatsApp Web listener (account: default). Start the gateway, then link WhatsApp with: openclaw channels login --channel whatsapp --account default.",
+      "url": null,
+      "priority": "medium"
     }
   ],
   "activeNow": [
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-15T00:30:00.008000+00:00"
+      "startedAt": "2026-03-15T01:00:20.470000+00:00"
+    },
+    {
+      "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-15T01:00:00.009000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-15T00:25:00.009000+00:00"
+      "startedAt": "2026-03-15T00:55:00.015000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-15T00:45:00.014000+00:00"
+    },
+    {
+      "task": "agent:main:cron:22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-15T00:30:48.216000+00:00"
     },
     {
       "task": "agent:main:main",
@@ -34,14 +54,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-15T00:30:09.471256+00:00"
+      "lastChecked": "2026-03-15T01:00:28.583533+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Lembrete de Captura de Memórias",
-      "schedule": "30 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-14T00:30:41.069000+00:00",
+      "name": "Rotina da Noite (Completa)",
+      "schedule": "0 22 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-14T01:00:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -49,7 +69,7 @@
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-15T00:00:00.012000+00:00",
+      "lastRun": "2026-03-15T00:30:00.005000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -57,23 +77,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-15T00:25:00.007000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Pluggy Sync - Tracking Despesas",
-      "schedule": "45 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-14T00:45:00.008000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Rotina da Noite (Completa)",
-      "schedule": "0 22 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-14T01:00:00.007000+00:00",
+      "lastRun": "2026-03-15T00:55:00.013000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -231,6 +235,22 @@
       "lastError": null
     },
     {
+      "name": "Lembrete de Captura de Memórias",
+      "schedule": "30 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-15T00:30:48.214000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Pluggy Sync - Tracking Despesas",
+      "schedule": "45 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-15T00:45:00.013000+00:00",
+      "status": "error",
+      "errors": 1,
+      "lastError": "Error: No active WhatsApp Web listener (account: default). Start the gateway, then link WhatsApp with: openclaw channels login --channel whatsapp --account default."
+    },
+    {
       "name": "Lixo Véspera (22h)",
       "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
       "lastRun": "2026-03-13T12:45:25.213000+00:00",
@@ -337,6 +357,11 @@
     {
       "time": "2026-03-14T18:00:12-03:00",
       "event": "Cron disparou: Rotina da Tarde (e3ac374c-a524-4465-a872-f682f01a979d)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-14T22:00:15-03:00",
+      "event": "Cron disparou: Rotina da Noite (Completa) (7804497e-ac8d-49c9-bead-08ed6bab21d1)",
       "channel": "cron"
     }
   ]
