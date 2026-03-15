@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-15T22:30:32.452138+00:00",
+  "lastUpdated": "2026-03-15T23:00:07.569371+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -21,12 +21,12 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-15T22:30:26.031000+00:00"
+      "startedAt": "2026-03-15T23:00:00.031000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-15T22:25:00.009000+00:00"
+      "startedAt": "2026-03-15T22:55:00.009000+00:00"
     },
     {
       "task": "agent:main:cron:e3ac374c-a524-4465-a872-f682f01a979d",
@@ -44,22 +44,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-15T22:30:32.452138+00:00"
+      "lastChecked": "2026-03-15T23:00:07.569371+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-15T22:00:00.007000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-15T22:25:00.007000+00:00",
+      "lastRun": "2026-03-15T22:30:00.026000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -68,6 +60,14 @@
       "name": "Resumo Semanal de Memórias",
       "schedule": "0 20 * * 0 (America/Sao_Paulo)",
       "lastRun": null,
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-15T22:55:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
