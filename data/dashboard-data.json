@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-15T11:30:13.425321+00:00",
+  "lastUpdated": "2026-03-15T12:01:44.953033+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -16,17 +16,32 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-15T11:30:00.012000+00:00"
+      "startedAt": "2026-03-15T12:01:33.431000+00:00"
     },
     {
       "task": "agent:main:main",
       "model": "gpt-5.4",
-      "startedAt": "2026-03-15T11:27:06.240000+00:00"
+      "startedAt": "2026-03-15T12:01:14.913000+00:00"
+    },
+    {
+      "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-15T12:00:19.686000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ae7b9fb6-d807-4c23-846c-87f880d130be",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-15T12:00:00.018000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-15T11:25:00.018000+00:00"
+      "startedAt": "2026-03-15T11:55:00.017000+00:00"
+    },
+    {
+      "task": "agent:main:cron:f1830563-b029-4bb2-80fc-9ffe54108a08",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-15T11:30:55.516000+00:00"
     },
     {
       "task": "agent:main:cron:0ba1cb64-5259-46bf-beb5-e58c02ec4215",
@@ -37,21 +52,6 @@
       "task": "agent:main:cron:4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
       "model": "gpt-5.4",
       "startedAt": "2026-03-15T11:03:33.462000+00:00"
-    },
-    {
-      "task": "agent:main:cron:06b5aaae-b25a-4005-a78c-badad02f216b",
-      "model": "gpt-5.4",
-      "startedAt": "2026-03-15T11:02:32.293000+00:00"
-    },
-    {
-      "task": "agent:main:cron:44299965-a647-45cd-b9c2-e504bea42398",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-15T10:50:00.019000+00:00"
-    },
-    {
-      "task": "agent:main:cron:d2c96354-081c-493d-891f-3c11c63cb9a1",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-15T10:45:00.038000+00:00"
     }
   ],
   "products": [
@@ -59,34 +59,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-15T11:30:13.425321+00:00"
+      "lastChecked": "2026-03-15T12:01:44.953033+00:00"
     }
   ],
   "crons": [
-    {
-      "name": "Mission Control - Build+Publish",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-15T11:00:00.007000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-15T11:25:00.016000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Análise de Conversas - Manhã",
-      "schedule": "30 8 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-14T11:30:42.908000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
     {
       "name": "Deadline Reminder Checker",
       "schedule": "0 9 * * * (America/Sao_Paulo)",
@@ -96,9 +72,25 @@
       "lastError": null
     },
     {
+      "name": "Mission Control - Build+Publish",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-15T11:30:00.010000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Resumo Diário da To-Do List",
       "schedule": "0 9 * * * (America/Sao_Paulo)",
       "lastRun": "2026-03-14T12:00:00.007000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-15T11:55:00.014000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -267,6 +259,14 @@
       "name": "Diário da Família - Watchdog (retry 08:15)",
       "schedule": "15 8 * * * (America/Sao_Paulo)",
       "lastRun": "2026-03-15T11:15:00.009000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Análise de Conversas - Manhã",
+      "schedule": "30 8 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-15T11:30:55.514000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
