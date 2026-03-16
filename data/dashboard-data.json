@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-16T17:00:08.002473+00:00",
+  "lastUpdated": "2026-03-16T17:30:13.462869+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -11,22 +11,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-16T17:00:00.019000+00:00"
+      "startedAt": "2026-03-16T17:30:00.009000+00:00"
+    },
+    {
+      "task": "agent:main:main",
+      "model": "gpt-5.1-codex-mini",
+      "startedAt": "2026-03-16T17:29:00.940000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-16T16:55:00.019000+00:00"
+      "model": "gpt-5.1-codex-mini",
+      "startedAt": "2026-03-16T17:26:59.100000+00:00"
     },
     {
       "task": "agent:main:cron:96074f1f-0124-4b4c-a944-e71349f91678",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-16T16:00:00.016000+00:00"
-    },
-    {
-      "task": "agent:main:main",
-      "model": "gpt-5.1-codex-mini",
-      "startedAt": "2026-03-16T15:14:22.208000+00:00"
     },
     {
       "task": "agent:main:cron:42be764c-f915-4669-8f94-878e23362bf8",
@@ -44,14 +44,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-16T17:00:08.002473+00:00"
+      "lastChecked": "2026-03-16T17:30:13.462869+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-16T16:30:00.015000+00:00",
+      "lastRun": "2026-03-16T17:00:00.016000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -59,7 +59,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-16T16:55:00.015000+00:00",
+      "lastRun": "2026-03-16T17:25:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
