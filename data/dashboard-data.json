@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-16T09:00:10.399031+00:00",
+  "lastUpdated": "2026-03-16T09:30:09.544308+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -16,12 +16,17 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-16T09:00:00.013000+00:00"
+      "startedAt": "2026-03-16T09:30:00.011000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-16T08:55:00.013000+00:00"
+      "startedAt": "2026-03-16T09:25:00.013000+00:00"
+    },
+    {
+      "task": "agent:main:cron:f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-16T09:01:02.572000+00:00"
     },
     {
       "task": "agent:main:cron:75b87bc7-016d-49a2-9995-4a0b715a7f23",
@@ -39,14 +44,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-16T09:00:10.399031+00:00"
+      "lastChecked": "2026-03-16T09:30:09.544308+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-16T08:30:00.013000+00:00",
+      "lastRun": "2026-03-16T09:00:00.010000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -54,15 +59,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-16T08:55:00.007000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Atualização do Índice de Sistema",
-      "schedule": "0 6 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-15T09:01:06.458000+00:00",
+      "lastRun": "2026-03-16T09:25:00.009000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -263,6 +260,14 @@
       "name": "Instagram Knowledge Ingest",
       "schedule": "0 5 * * * (America/Sao_Paulo)",
       "lastRun": "2026-03-16T08:00:00.007000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Atualização do Índice de Sistema",
+      "schedule": "0 6 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-16T09:01:02.570000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
