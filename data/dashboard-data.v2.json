@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-16T10:00:47.548779+00:00"
+    "generatedAt": "2026-03-16T10:30:15.890910+00:00"
   },
   "overview": {
     "healthScore": 45,
@@ -33,14 +33,28 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-16T10:00:41.380000+00:00",
+      "startedAt": "2026-03-16T10:30:11.044000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ec212b07-8387-45d0-9606-351509850608",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-16T10:30:00.009000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-16T09:55:00.009000+00:00",
+      "startedAt": "2026-03-16T10:25:00.011000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:06b5aaae-b25a-4005-a78c-badad02f216b",
+      "model": "gpt-5.4",
+      "startedAt": "2026-03-16T10:20:00.014000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -55,13 +69,6 @@
       "task": "agent:main:cron:75b87bc7-016d-49a2-9995-4a0b715a7f23",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-16T08:00:00.012000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:218f26ef-423f-4f74-aa31-d28879facc28",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-16T07:01:19.155000+00:00",
       "agentId": "main",
       "kind": "direct"
     }
@@ -285,7 +292,7 @@
       "status": "ok",
       "kpis": {
         "sentToday": false,
-        "draftReady": false,
+        "draftReady": true,
         "errorJobs": 0,
         "pipelineStages": 5
       },
@@ -297,8 +304,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-15T11:02:32.172000+00:00",
-          "nextRun": "2026-03-16T10:20:00+00:00",
+          "lastRun": "2026-03-16T10:20:00.011000+00:00",
+          "nextRun": "2026-03-17T10:20:00+00:00",
           "schedule": "20 7 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "openai-codex/gpt-5.4",
@@ -362,8 +369,8 @@
         }
       ],
       "draft": {
-        "date": "2026-03-15",
-        "tema": "interações calmas e descoberta dos rostos"
+        "date": "2026-03-16",
+        "tema": "janelas curtas de vigília e prevenção de sobrecarga"
       },
       "alerts": [],
       "actions": [
@@ -395,40 +402,12 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-16T09:30:00.008000+00:00",
-          "nextRun": "2026-03-16T10:00:00+00:00",
+          "lastRun": "2026-03-16T10:00:00.010000+00:00",
+          "nextRun": "2026-03-16T10:30:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": null
-        },
-        {
-          "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-          "name": "Mission Control - Control Runner",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-16T09:55:00.007000+00:00",
-          "nextRun": "2026-03-16T10:00:00+00:00",
-          "schedule": "*/5 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "last"
-        },
-        {
-          "id": "06b5aaae-b25a-4005-a78c-badad02f216b",
-          "name": "Diário da Família - Gerador",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-15T11:02:32.172000+00:00",
-          "nextRun": "2026-03-16T10:20:00+00:00",
-          "schedule": "20 7 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "openai-codex/gpt-5.4",
-          "channel": "last"
         },
         {
           "id": "ec212b07-8387-45d0-9606-351509850608",
@@ -443,6 +422,20 @@
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "telegram"
+        },
+        {
+          "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+          "name": "Mission Control - Control Runner",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-16T10:25:00.007000+00:00",
+          "nextRun": "2026-03-16T10:30:00+00:00",
+          "schedule": "*/5 * * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "last"
         },
         {
           "id": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
@@ -781,6 +774,20 @@
           "channel": "last"
         },
         {
+          "id": "06b5aaae-b25a-4005-a78c-badad02f216b",
+          "name": "Diário da Família - Gerador",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-16T10:20:00.011000+00:00",
+          "nextRun": "2026-03-17T10:20:00+00:00",
+          "schedule": "20 7 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "openai-codex/gpt-5.4",
+          "channel": "last"
+        },
+        {
           "id": "46646426-11ee-4f2e-90fd-832133ff1e83",
           "name": "Dobrar Roupas",
           "status": "ok",
@@ -1011,7 +1018,7 @@
       "name": "Monitoramento e Auditoria",
       "status": "ok",
       "kpis": {
-        "eventsToday": 0,
+        "eventsToday": 1,
         "queuePending": 0,
         "heartbeatBackup": true,
         "heartbeatConfigured": true
@@ -1037,7 +1044,7 @@
       "source": "/home/pedro/.openclaw/workspace/memory/events",
       "trend7d": {
         "metric": "eventsToday",
-        "delta": -16,
+        "delta": -15,
         "direction": "down"
       }
     }
@@ -1193,13 +1200,19 @@
       }
     ]
   },
-  "recentActivity": [],
+  "recentActivity": [
+    {
+      "time": "2026-03-16T07:30:07-03:00",
+      "event": "Cron disparou: Lixo (Colocar Fora) (ec212b07-8387-45d0-9606-351509850608)",
+      "channel": "cron"
+    }
+  ],
   "products": [
     {
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-16T10:00:47.548779+00:00"
+      "lastChecked": "2026-03-16T10:30:15.890910+00:00"
     }
   ],
   "crons": [
@@ -1210,40 +1223,12 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-16T09:30:00.008000+00:00",
-      "nextRun": "2026-03-16T10:00:00+00:00",
+      "lastRun": "2026-03-16T10:00:00.010000+00:00",
+      "nextRun": "2026-03-16T10:30:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": null
-    },
-    {
-      "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "name": "Mission Control - Control Runner",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-16T09:55:00.007000+00:00",
-      "nextRun": "2026-03-16T10:00:00+00:00",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "last"
-    },
-    {
-      "id": "06b5aaae-b25a-4005-a78c-badad02f216b",
-      "name": "Diário da Família - Gerador",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-15T11:02:32.172000+00:00",
-      "nextRun": "2026-03-16T10:20:00+00:00",
-      "schedule": "20 7 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "openai-codex/gpt-5.4",
-      "channel": "last"
     },
     {
       "id": "ec212b07-8387-45d0-9606-351509850608",
@@ -1258,6 +1243,20 @@
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "telegram"
+    },
+    {
+      "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "name": "Mission Control - Control Runner",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-16T10:25:00.007000+00:00",
+      "nextRun": "2026-03-16T10:30:00+00:00",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "last"
     },
     {
       "id": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
@@ -1596,6 +1595,20 @@
       "channel": "last"
     },
     {
+      "id": "06b5aaae-b25a-4005-a78c-badad02f216b",
+      "name": "Diário da Família - Gerador",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-16T10:20:00.011000+00:00",
+      "nextRun": "2026-03-17T10:20:00+00:00",
+      "schedule": "20 7 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "openai-codex/gpt-5.4",
+      "channel": "last"
+    },
+    {
       "id": "46646426-11ee-4f2e-90fd-832133ff1e83",
       "name": "Dobrar Roupas",
       "status": "ok",
@@ -1694,5 +1707,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-16T10:00:47.548779+00:00"
+  "lastUpdated": "2026-03-16T10:30:15.890910+00:00"
 }
