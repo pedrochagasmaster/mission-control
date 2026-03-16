@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-16T18:30:08.723678+00:00",
+  "lastUpdated": "2026-03-16T21:42:43.107666+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -7,31 +7,31 @@
       "priority": "high"
     },
     {
-      "title": "Mission Control - Control Runner (1 erros)",
+      "title": "Mission Control - Control Runner (2 erros)",
+      "url": null,
+      "priority": "medium"
+    },
+    {
+      "title": "Mission Control - Build+Publish (1 erros)",
       "url": null,
       "priority": "medium"
     }
   ],
   "activeNow": [
     {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-16T18:20:00.021000+00:00"
-    },
-    {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-16T18:00:00.019000+00:00"
+      "startedAt": "2026-03-16T21:42:38.273000+00:00"
     },
     {
-      "task": "agent:main:main",
-      "model": "gpt-5.1-codex-mini",
-      "startedAt": "2026-03-16T17:33:09.926000+00:00"
-    },
-    {
-      "task": "agent:main:cron:96074f1f-0124-4b4c-a944-e71349f91678",
+      "task": "agent:main:cron:a2a10215-b00a-45e4-8ed4-28cb60e442a6",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-16T16:00:00.016000+00:00"
+      "startedAt": "2026-03-16T21:42:24.326000+00:00"
+    },
+    {
+      "task": "agent:main:cron:e3ac374c-a524-4465-a872-f682f01a979d",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-16T21:42:10.838000+00:00"
     }
   ],
   "products": [
@@ -39,22 +39,22 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-16T18:30:08.723678+00:00"
+      "lastChecked": "2026-03-16T21:42:43.107666+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Mission Control - Build+Publish",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-16T18:00:00.014000+00:00",
-      "status": "ok",
-      "errors": 0,
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-16T18:30:26.601000+00:00",
+      "status": "error",
+      "errors": 2,
       "lastError": null
     },
     {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-16T18:25:00.008000+00:00",
+      "name": "Mission Control - Build+Publish",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-16T18:30:00.007000+00:00",
       "status": "error",
       "errors": 1,
       "lastError": null
@@ -358,6 +358,16 @@
     {
       "time": "2026-03-16T13:00:14-03:00",
       "event": "Cron disparou: Passeio Almoço (96074f1f-0124-4b4c-a944-e71349f91678)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-16T18:42:20-03:00",
+      "event": "Cron disparou: Rotina da Tarde (e3ac374c-a524-4465-a872-f682f01a979d)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-16T18:42:33-03:00",
+      "event": "Cron disparou: Blitz da Ordem (17:30) (a2a10215-b00a-45e4-8ed4-28cb60e442a6)",
       "channel": "cron"
     }
   ]
