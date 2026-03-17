@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-17T14:30:21.500118+00:00",
+  "lastUpdated": "2026-03-17T15:00:23.510221+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -11,12 +11,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T14:30:00.010000+00:00"
+      "startedAt": "2026-03-17T15:00:14.781000+00:00"
+    },
+    {
+      "task": "agent:main:cron:42be764c-f915-4669-8f94-878e23362bf8",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-17T15:00:00.061000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T14:25:00.011000+00:00"
+      "startedAt": "2026-03-17T14:55:00.011000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ff7487f2-fad4-40ab-bd83-84219ecec634",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-17T14:31:21.724000+00:00"
     },
     {
       "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
@@ -27,21 +37,6 @@
       "task": "agent:main:cron:46646426-11ee-4f2e-90fd-832133ff1e83",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-17T13:00:00.014000+00:00"
-    },
-    {
-      "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T12:00:11.369000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ae7b9fb6-d807-4c23-846c-87f880d130be",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T12:00:00.009000+00:00"
-    },
-    {
-      "task": "agent:main:cron:f1830563-b029-4bb2-80fc-9ffe54108a08",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T11:30:42.524000+00:00"
     }
   ],
   "products": [
@@ -49,14 +44,22 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-17T14:30:21.500118+00:00"
+      "lastChecked": "2026-03-17T15:00:23.510221+00:00"
     }
   ],
   "crons": [
     {
+      "name": "Ração Almoço",
+      "schedule": "0 12 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-16T15:00:00.007000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-17T14:00:00.007000+00:00",
+      "lastRun": "2026-03-17T14:30:00.008000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -64,23 +67,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-17T14:25:00.009000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Pulso Familiar - Meio-dia",
-      "schedule": "30 11 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-16T14:30:54.804000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Ração Almoço",
-      "schedule": "0 12 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-16T15:00:00.007000+00:00",
+      "lastRun": "2026-03-17T14:55:00.008000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -294,6 +281,14 @@
       "lastError": null
     },
     {
+      "name": "Pulso Familiar - Meio-dia",
+      "schedule": "30 11 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-17T14:31:21.722000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Check Estoque Simparic (Mensal)",
       "schedule": "0 9 20 * * (America/Sao_Paulo)",
       "lastRun": "2026-02-20T12:00:00.025000+00:00",
@@ -343,6 +338,11 @@
     {
       "time": "2026-03-17T10:30:18-03:00",
       "event": "Cron disparou: Rotina da Manhã (Completa) (93c7796d-f82d-4381-a925-f1a0a22bf25b)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-17T12:00:10-03:00",
+      "event": "Cron disparou: Ração Almoço (42be764c-f915-4669-8f94-878e23362bf8)",
       "channel": "cron"
     }
   ]
