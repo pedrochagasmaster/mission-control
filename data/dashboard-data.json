@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-17T13:00:12.669656+00:00",
+  "lastUpdated": "2026-03-17T13:30:26.908168+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -11,17 +11,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T13:00:08.087000+00:00"
+      "startedAt": "2026-03-17T13:30:22.583000+00:00"
+    },
+    {
+      "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-17T13:30:00.010000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-17T13:25:00.009000+00:00"
     },
     {
       "task": "agent:main:cron:46646426-11ee-4f2e-90fd-832133ff1e83",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-17T13:00:00.014000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T12:55:00.009000+00:00"
     },
     {
       "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
@@ -42,11 +47,6 @@
       "task": "agent:main:cron:0ba1cb64-5259-46bf-beb5-e58c02ec4215",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-17T11:15:00.010000+00:00"
-    },
-    {
-      "task": "agent:main:cron:44299965-a647-45cd-b9c2-e504bea42398",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T10:50:00.012000+00:00"
     }
   ],
   "products": [
@@ -54,30 +54,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-17T13:00:12.669656+00:00"
+      "lastChecked": "2026-03-17T13:30:26.908168+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Dobrar Roupas",
-      "schedule": "0 10 * * 2 (America/Sao_Paulo)",
-      "lastRun": "2026-03-10T13:00:00.010000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-17T12:30:00.007000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-17T12:55:00.007000+00:00",
+      "lastRun": "2026-03-17T13:00:08.084000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -86,6 +70,14 @@
       "name": "Rotina da Manhã (Completa)",
       "schedule": "30 10 * * * (America/Sao_Paulo)",
       "lastRun": "2026-03-16T13:30:00.011000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-17T13:25:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -331,6 +323,14 @@
       "lastError": null
     },
     {
+      "name": "Dobrar Roupas",
+      "schedule": "0 10 * * 2 (America/Sao_Paulo)",
+      "lastRun": "2026-03-17T13:00:00.007000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Check Simparic Mensal",
       "schedule": "0 10 1 * * (America/Sao_Paulo)",
       "lastRun": "2026-03-01T13:00:00.005000+00:00",
@@ -343,6 +343,11 @@
     {
       "time": "2026-03-17T10:00:04-03:00",
       "event": "Cron disparou: Dobrar Roupas (46646426-11ee-4f2e-90fd-832133ff1e83)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-17T10:30:18-03:00",
+      "event": "Cron disparou: Rotina da Manhã (Completa) (93c7796d-f82d-4381-a925-f1a0a22bf25b)",
       "channel": "cron"
     }
   ]

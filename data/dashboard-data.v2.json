@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-17T13:00:12.669656+00:00"
+    "generatedAt": "2026-03-17T13:30:26.908168+00:00"
   },
   "overview": {
     "healthScore": 63,
@@ -23,7 +23,21 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T13:00:08.087000+00:00",
+      "startedAt": "2026-03-17T13:30:22.583000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-17T13:30:00.010000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-17T13:25:00.009000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -31,13 +45,6 @@
       "task": "agent:main:cron:46646426-11ee-4f2e-90fd-832133ff1e83",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-17T13:00:00.014000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T12:55:00.009000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -68,13 +75,6 @@
       "startedAt": "2026-03-17T11:15:00.010000+00:00",
       "agentId": "main",
       "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:44299965-a647-45cd-b9c2-e504bea42398",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T10:50:00.012000+00:00",
-      "agentId": "main",
-      "kind": "direct"
     }
   ],
   "domains": [
@@ -83,9 +83,9 @@
       "name": "Rotinas da Casa",
       "status": "warning",
       "kpis": {
-        "pending": 6,
+        "pending": 7,
         "done": 0,
-        "skipped": 1,
+        "skipped": 0,
         "overdue": 1
       },
       "tasks": [
@@ -113,9 +113,9 @@
         {
           "key": "missao_pos_almoco",
           "label": "🍽️ Zero Pia",
-          "status": "SKIPPED",
+          "status": "PENDING",
           "time": "13:30",
-          "note": "Segunda: faxineira vem"
+          "note": ""
         },
         {
           "key": "blitz_ordem",
@@ -152,8 +152,8 @@
       "source": "/home/pedro/.openclaw/workspace/memory/daily_tasks.json",
       "trend7d": {
         "metric": "pending",
-        "delta": -1,
-        "direction": "down"
+        "delta": 0,
+        "direction": "flat"
       }
     },
     {
@@ -400,46 +400,18 @@
       },
       "jobs": [
         {
-          "id": "46646426-11ee-4f2e-90fd-832133ff1e83",
-          "name": "Dobrar Roupas",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-10T13:00:00.010000+00:00",
-          "nextRun": "2026-03-17T13:00:00+00:00",
-          "schedule": "0 10 * * 2 (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
-        },
-        {
           "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
           "name": "Mission Control - Build+Publish",
           "status": "ok",
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-17T12:30:00.007000+00:00",
-          "nextRun": "2026-03-17T13:00:00+00:00",
+          "lastRun": "2026-03-17T13:00:08.084000+00:00",
+          "nextRun": "2026-03-17T13:30:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": null
-        },
-        {
-          "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-          "name": "Mission Control - Control Runner",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-17T12:55:00.007000+00:00",
-          "nextRun": "2026-03-17T13:00:00+00:00",
-          "schedule": "*/5 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "last"
         },
         {
           "id": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
@@ -454,6 +426,20 @@
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "telegram"
+        },
+        {
+          "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+          "name": "Mission Control - Control Runner",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-17T13:25:00.007000+00:00",
+          "nextRun": "2026-03-17T13:30:00+00:00",
+          "schedule": "*/5 * * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "last"
         },
         {
           "id": "ff7487f2-fad4-40ab-bd83-84219ecec634",
@@ -876,6 +862,20 @@
           "channel": "telegram"
         },
         {
+          "id": "46646426-11ee-4f2e-90fd-832133ff1e83",
+          "name": "Dobrar Roupas",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-17T13:00:00.007000+00:00",
+          "nextRun": "2026-03-24T13:00:00+00:00",
+          "schedule": "0 10 * * 2 (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
+        },
+        {
           "id": "224aa9d8-f381-43fd-b074-618264d0ce82",
           "name": "Check Simparic Mensal",
           "status": "ok",
@@ -1017,7 +1017,7 @@
       "name": "Monitoramento e Auditoria",
       "status": "ok",
       "kpis": {
-        "eventsToday": 1,
+        "eventsToday": 2,
         "queuePending": 0,
         "heartbeatBackup": true,
         "heartbeatConfigured": true
@@ -1043,7 +1043,7 @@
       "source": "/home/pedro/.openclaw/workspace/memory/events",
       "trend7d": {
         "metric": "eventsToday",
-        "delta": -12,
+        "delta": -11,
         "direction": "down"
       }
     }
@@ -1204,6 +1204,11 @@
       "time": "2026-03-17T10:00:04-03:00",
       "event": "Cron disparou: Dobrar Roupas (46646426-11ee-4f2e-90fd-832133ff1e83)",
       "channel": "cron"
+    },
+    {
+      "time": "2026-03-17T10:30:18-03:00",
+      "event": "Cron disparou: Rotina da Manhã (Completa) (93c7796d-f82d-4381-a925-f1a0a22bf25b)",
+      "channel": "cron"
     }
   ],
   "products": [
@@ -1211,24 +1216,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-17T13:00:12.669656+00:00"
+      "lastChecked": "2026-03-17T13:30:26.908168+00:00"
     }
   ],
   "crons": [
-    {
-      "id": "46646426-11ee-4f2e-90fd-832133ff1e83",
-      "name": "Dobrar Roupas",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-10T13:00:00.010000+00:00",
-      "nextRun": "2026-03-17T13:00:00+00:00",
-      "schedule": "0 10 * * 2 (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
-    },
     {
       "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "name": "Mission Control - Build+Publish",
@@ -1236,26 +1227,12 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-17T12:30:00.007000+00:00",
-      "nextRun": "2026-03-17T13:00:00+00:00",
+      "lastRun": "2026-03-17T13:00:08.084000+00:00",
+      "nextRun": "2026-03-17T13:30:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": null
-    },
-    {
-      "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "name": "Mission Control - Control Runner",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-17T12:55:00.007000+00:00",
-      "nextRun": "2026-03-17T13:00:00+00:00",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "last"
     },
     {
       "id": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
@@ -1270,6 +1247,20 @@
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "telegram"
+    },
+    {
+      "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "name": "Mission Control - Control Runner",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-17T13:25:00.007000+00:00",
+      "nextRun": "2026-03-17T13:30:00+00:00",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "last"
     },
     {
       "id": "ff7487f2-fad4-40ab-bd83-84219ecec634",
@@ -1692,6 +1683,20 @@
       "channel": "telegram"
     },
     {
+      "id": "46646426-11ee-4f2e-90fd-832133ff1e83",
+      "name": "Dobrar Roupas",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-17T13:00:00.007000+00:00",
+      "nextRun": "2026-03-24T13:00:00+00:00",
+      "schedule": "0 10 * * 2 (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
+    },
+    {
       "id": "224aa9d8-f381-43fd-b074-618264d0ce82",
       "name": "Check Simparic Mensal",
       "status": "ok",
@@ -1706,5 +1711,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-17T13:00:12.669656+00:00"
+  "lastUpdated": "2026-03-17T13:30:26.908168+00:00"
 }
