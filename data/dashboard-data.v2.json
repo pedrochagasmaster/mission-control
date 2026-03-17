@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-17T22:30:07.471097+00:00"
+    "generatedAt": "2026-03-17T23:00:05.362554+00:00"
   },
   "overview": {
     "healthScore": 63,
@@ -23,14 +23,21 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T22:30:00.012000+00:00",
+      "startedAt": "2026-03-17T23:00:00.017000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T22:25:00.013000+00:00",
+      "startedAt": "2026-03-17T22:55:00.019000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-17T22:30:43.398000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -378,26 +385,12 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-17T22:00:00.007000+00:00",
-          "nextRun": "2026-03-17T22:30:00+00:00",
+          "lastRun": "2026-03-17T22:30:00.010000+00:00",
+          "nextRun": "2026-03-17T23:00:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": null
-        },
-        {
-          "id": "ac63f283-4de6-4a42-bd64-2aa49c34dc70",
-          "name": "Pulso Familiar - Noite",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-16T22:30:47.741000+00:00",
-          "nextRun": "2026-03-17T22:30:00+00:00",
-          "schedule": "30 19 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "whatsapp"
         },
         {
           "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -406,8 +399,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-17T22:25:00.010000+00:00",
-          "nextRun": "2026-03-17T22:30:00+00:00",
+          "lastRun": "2026-03-17T22:55:00.016000+00:00",
+          "nextRun": "2026-03-17T23:00:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -790,6 +783,20 @@
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "telegram"
+        },
+        {
+          "id": "ac63f283-4de6-4a42-bd64-2aa49c34dc70",
+          "name": "Pulso Familiar - Noite",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-17T22:30:43.396000+00:00",
+          "nextRun": "2026-03-18T22:30:00+00:00",
+          "schedule": "30 19 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "whatsapp"
         },
         {
           "id": "d325f081-b2dc-4843-a4d2-078237ba97ba",
@@ -1213,7 +1220,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-17T22:30:07.471097+00:00"
+      "lastChecked": "2026-03-17T23:00:05.362554+00:00"
     }
   ],
   "crons": [
@@ -1224,26 +1231,12 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-17T22:00:00.007000+00:00",
-      "nextRun": "2026-03-17T22:30:00+00:00",
+      "lastRun": "2026-03-17T22:30:00.010000+00:00",
+      "nextRun": "2026-03-17T23:00:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": null
-    },
-    {
-      "id": "ac63f283-4de6-4a42-bd64-2aa49c34dc70",
-      "name": "Pulso Familiar - Noite",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-16T22:30:47.741000+00:00",
-      "nextRun": "2026-03-17T22:30:00+00:00",
-      "schedule": "30 19 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "whatsapp"
     },
     {
       "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -1252,8 +1245,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-17T22:25:00.010000+00:00",
-      "nextRun": "2026-03-17T22:30:00+00:00",
+      "lastRun": "2026-03-17T22:55:00.016000+00:00",
+      "nextRun": "2026-03-17T23:00:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1638,6 +1631,20 @@
       "channel": "telegram"
     },
     {
+      "id": "ac63f283-4de6-4a42-bd64-2aa49c34dc70",
+      "name": "Pulso Familiar - Noite",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-17T22:30:43.396000+00:00",
+      "nextRun": "2026-03-18T22:30:00+00:00",
+      "schedule": "30 19 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "whatsapp"
+    },
+    {
       "id": "d325f081-b2dc-4843-a4d2-078237ba97ba",
       "name": "Check Estoque Simparic (Mensal)",
       "status": "ok",
@@ -1708,5 +1715,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-17T22:30:07.471097+00:00"
+  "lastUpdated": "2026-03-17T23:00:05.362554+00:00"
 }
