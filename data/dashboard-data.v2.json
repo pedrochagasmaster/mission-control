@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-17T19:00:06.193557+00:00"
+    "generatedAt": "2026-03-17T19:30:32.959676+00:00"
   },
   "overview": {
     "healthScore": 63,
@@ -23,21 +23,14 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T19:00:00.010000+00:00",
+      "startedAt": "2026-03-17T19:30:22.649000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T18:55:00.019000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:515506a0-6921-4f7d-8368-06fc4e93ee87",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T16:30:00.009000+00:00",
+      "startedAt": "2026-03-17T19:25:00.010000+00:00",
       "agentId": "main",
       "kind": "direct"
     }
@@ -371,8 +364,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-17T18:30:00.007000+00:00",
-          "nextRun": "2026-03-17T19:00:00+00:00",
+          "lastRun": "2026-03-17T19:00:00.008000+00:00",
+          "nextRun": "2026-03-17T19:30:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -385,8 +378,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-17T18:55:00.011000+00:00",
-          "nextRun": "2026-03-17T19:00:00+00:00",
+          "lastRun": "2026-03-17T19:25:00.007000+00:00",
+          "nextRun": "2026-03-17T19:30:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -1196,7 +1189,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-17T19:00:06.193557+00:00"
+      "lastChecked": "2026-03-17T19:30:32.959676+00:00"
     }
   ],
   "crons": [
@@ -1207,8 +1200,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-17T18:30:00.007000+00:00",
-      "nextRun": "2026-03-17T19:00:00+00:00",
+      "lastRun": "2026-03-17T19:00:00.008000+00:00",
+      "nextRun": "2026-03-17T19:30:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1221,8 +1214,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-17T18:55:00.011000+00:00",
-      "nextRun": "2026-03-17T19:00:00+00:00",
+      "lastRun": "2026-03-17T19:25:00.007000+00:00",
+      "nextRun": "2026-03-17T19:30:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1691,5 +1684,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-17T19:00:06.193557+00:00"
+  "lastUpdated": "2026-03-17T19:30:32.959676+00:00"
 }
