@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-17T12:30:05.645240+00:00",
+  "lastUpdated": "2026-03-17T13:00:12.669656+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -11,12 +11,17 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T12:30:00.009000+00:00"
+      "startedAt": "2026-03-17T13:00:08.087000+00:00"
+    },
+    {
+      "task": "agent:main:cron:46646426-11ee-4f2e-90fd-832133ff1e83",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-17T13:00:00.014000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T12:25:00.010000+00:00"
+      "startedAt": "2026-03-17T12:55:00.009000+00:00"
     },
     {
       "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
@@ -42,11 +47,6 @@
       "task": "agent:main:cron:44299965-a647-45cd-b9c2-e504bea42398",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-17T10:50:00.012000+00:00"
-    },
-    {
-      "task": "agent:main:cron:d2c96354-081c-493d-891f-3c11c63cb9a1",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T10:45:00.009000+00:00"
     }
   ],
   "products": [
@@ -54,14 +54,22 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-17T12:30:05.645240+00:00"
+      "lastChecked": "2026-03-17T13:00:12.669656+00:00"
     }
   ],
   "crons": [
     {
+      "name": "Dobrar Roupas",
+      "schedule": "0 10 * * 2 (America/Sao_Paulo)",
+      "lastRun": "2026-03-10T13:00:00.010000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-17T12:00:27.550000+00:00",
+      "lastRun": "2026-03-17T12:30:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -69,15 +77,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-17T12:25:00.007000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Dobrar Roupas",
-      "schedule": "0 10 * * 2 (America/Sao_Paulo)",
-      "lastRun": "2026-03-10T13:00:00.010000+00:00",
+      "lastRun": "2026-03-17T12:55:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -339,5 +339,11 @@
       "lastError": null
     }
   ],
-  "recentActivity": []
+  "recentActivity": [
+    {
+      "time": "2026-03-17T10:00:04-03:00",
+      "event": "Cron disparou: Dobrar Roupas (46646426-11ee-4f2e-90fd-832133ff1e83)",
+      "channel": "cron"
+    }
+  ]
 }
