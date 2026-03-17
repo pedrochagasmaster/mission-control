@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-17T12:00:48.676090+00:00",
+  "lastUpdated": "2026-03-17T12:30:05.645240+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -11,7 +11,12 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T12:00:45.134000+00:00"
+      "startedAt": "2026-03-17T12:30:00.009000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-17T12:25:00.010000+00:00"
     },
     {
       "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
@@ -22,11 +27,6 @@
       "task": "agent:main:cron:ae7b9fb6-d807-4c23-846c-87f880d130be",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-17T12:00:00.009000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T11:55:00.012000+00:00"
     },
     {
       "task": "agent:main:cron:f1830563-b029-4bb2-80fc-9ffe54108a08",
@@ -54,30 +54,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-17T12:00:48.676090+00:00"
+      "lastChecked": "2026-03-17T12:30:05.645240+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Deadline Reminder Checker",
-      "schedule": "0 9 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-16T12:00:33.038000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-17T11:30:00.007000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Resumo Diário da To-Do List",
-      "schedule": "0 9 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-16T12:00:09.725000+00:00",
+      "lastRun": "2026-03-17T12:00:27.550000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -85,7 +69,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-17T11:55:00.010000+00:00",
+      "lastRun": "2026-03-17T12:25:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -283,9 +267,25 @@
       "lastError": null
     },
     {
+      "name": "Deadline Reminder Checker",
+      "schedule": "0 9 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-17T12:00:11.366000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Pagamento Banho",
       "schedule": "0 9 * * 3 (America/Sao_Paulo)",
       "lastRun": "2026-03-11T12:00:00.008000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Resumo Diário da To-Do List",
+      "schedule": "0 9 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-17T12:00:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
