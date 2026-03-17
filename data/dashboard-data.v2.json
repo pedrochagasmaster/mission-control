@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-17T10:30:04.641929+00:00"
+    "generatedAt": "2026-03-17T11:00:06.233897+00:00"
   },
   "overview": {
     "healthScore": 63,
@@ -23,14 +23,35 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T10:30:00.009000+00:00",
+      "startedAt": "2026-03-17T11:00:00.009000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T10:25:00.009000+00:00",
+      "startedAt": "2026-03-17T10:55:00.009000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:44299965-a647-45cd-b9c2-e504bea42398",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-17T10:50:00.012000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:d2c96354-081c-493d-891f-3c11c63cb9a1",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-17T10:45:00.009000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-17T10:35:00.010000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -45,13 +66,6 @@
       "task": "agent:main:cron:f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-17T09:00:41.742000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:75b87bc7-016d-49a2-9995-4a0b715a7f23",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-17T08:00:00.009000+00:00",
       "agentId": "main",
       "kind": "direct"
     }
@@ -274,7 +288,7 @@
       "name": "Diário da Família",
       "status": "ok",
       "kpis": {
-        "sentToday": false,
+        "sentToday": true,
         "draftReady": true,
         "errorJobs": 0,
         "pipelineStages": 5
@@ -301,8 +315,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-16T10:35:00.015000+00:00",
-          "nextRun": "2026-03-17T10:35:00+00:00",
+          "lastRun": "2026-03-17T10:35:00.007000+00:00",
+          "nextRun": "2026-03-18T10:35:00+00:00",
           "schedule": "35 7 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -315,8 +329,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-16T10:45:00.013000+00:00",
-          "nextRun": "2026-03-17T10:45:00+00:00",
+          "lastRun": "2026-03-17T10:45:00.007000+00:00",
+          "nextRun": "2026-03-18T10:45:00+00:00",
           "schedule": "45 7 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -343,8 +357,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-16T10:50:00.013000+00:00",
-          "nextRun": "2026-03-17T10:50:00+00:00",
+          "lastRun": "2026-03-17T10:50:00.009000+00:00",
+          "nextRun": "2026-03-18T10:50:00+00:00",
           "schedule": "50 7 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -363,8 +377,8 @@
       "source": "/home/pedro/.openclaw/workspace/memory/daily_digest_draft.json",
       "trend7d": {
         "metric": "sentToday",
-        "delta": -1,
-        "direction": "down"
+        "delta": 0,
+        "direction": "flat"
       }
     },
     {
@@ -385,8 +399,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-17T10:00:00.008000+00:00",
-          "nextRun": "2026-03-17T10:30:00+00:00",
+          "lastRun": "2026-03-17T10:30:00.007000+00:00",
+          "nextRun": "2026-03-17T11:00:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -399,51 +413,9 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-17T10:25:00.007000+00:00",
-          "nextRun": "2026-03-17T10:30:00+00:00",
+          "lastRun": "2026-03-17T10:55:00.006000+00:00",
+          "nextRun": "2026-03-17T11:00:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "last"
-        },
-        {
-          "id": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
-          "name": "Diário da Família - Enviador",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-16T10:35:00.015000+00:00",
-          "nextRun": "2026-03-17T10:35:00+00:00",
-          "schedule": "35 7 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "last"
-        },
-        {
-          "id": "d2c96354-081c-493d-891f-3c11c63cb9a1",
-          "name": "Diário da Família - Watchdog (fallback)",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-16T10:45:00.013000+00:00",
-          "nextRun": "2026-03-17T10:45:00+00:00",
-          "schedule": "45 7 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "last"
-        },
-        {
-          "id": "44299965-a647-45cd-b9c2-e504bea42398",
-          "name": "Diário da Família - Alert (07:50 se não enviado)",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-16T10:50:00.013000+00:00",
-          "nextRun": "2026-03-17T10:50:00+00:00",
-          "schedule": "50 7 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "last"
@@ -769,6 +741,48 @@
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "telegram"
+        },
+        {
+          "id": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
+          "name": "Diário da Família - Enviador",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-17T10:35:00.007000+00:00",
+          "nextRun": "2026-03-18T10:35:00+00:00",
+          "schedule": "35 7 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "last"
+        },
+        {
+          "id": "d2c96354-081c-493d-891f-3c11c63cb9a1",
+          "name": "Diário da Família - Watchdog (fallback)",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-17T10:45:00.007000+00:00",
+          "nextRun": "2026-03-18T10:45:00+00:00",
+          "schedule": "45 7 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "last"
+        },
+        {
+          "id": "44299965-a647-45cd-b9c2-e504bea42398",
+          "name": "Diário da Família - Alert (07:50 se não enviado)",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-17T10:50:00.009000+00:00",
+          "nextRun": "2026-03-18T10:50:00+00:00",
+          "schedule": "50 7 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "last"
         },
         {
           "id": "777c622d-db73-4c08-be71-28c968ef21f4",
@@ -1184,7 +1198,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-17T10:30:04.641929+00:00"
+      "lastChecked": "2026-03-17T11:00:06.233897+00:00"
     }
   ],
   "crons": [
@@ -1195,8 +1209,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-17T10:00:00.008000+00:00",
-      "nextRun": "2026-03-17T10:30:00+00:00",
+      "lastRun": "2026-03-17T10:30:00.007000+00:00",
+      "nextRun": "2026-03-17T11:00:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1209,51 +1223,9 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-17T10:25:00.007000+00:00",
-      "nextRun": "2026-03-17T10:30:00+00:00",
+      "lastRun": "2026-03-17T10:55:00.006000+00:00",
+      "nextRun": "2026-03-17T11:00:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "last"
-    },
-    {
-      "id": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
-      "name": "Diário da Família - Enviador",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-16T10:35:00.015000+00:00",
-      "nextRun": "2026-03-17T10:35:00+00:00",
-      "schedule": "35 7 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "last"
-    },
-    {
-      "id": "d2c96354-081c-493d-891f-3c11c63cb9a1",
-      "name": "Diário da Família - Watchdog (fallback)",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-16T10:45:00.013000+00:00",
-      "nextRun": "2026-03-17T10:45:00+00:00",
-      "schedule": "45 7 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "last"
-    },
-    {
-      "id": "44299965-a647-45cd-b9c2-e504bea42398",
-      "name": "Diário da Família - Alert (07:50 se não enviado)",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-16T10:50:00.013000+00:00",
-      "nextRun": "2026-03-17T10:50:00+00:00",
-      "schedule": "50 7 * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "last"
@@ -1581,6 +1553,48 @@
       "channel": "telegram"
     },
     {
+      "id": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
+      "name": "Diário da Família - Enviador",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-17T10:35:00.007000+00:00",
+      "nextRun": "2026-03-18T10:35:00+00:00",
+      "schedule": "35 7 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "last"
+    },
+    {
+      "id": "d2c96354-081c-493d-891f-3c11c63cb9a1",
+      "name": "Diário da Família - Watchdog (fallback)",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-17T10:45:00.007000+00:00",
+      "nextRun": "2026-03-18T10:45:00+00:00",
+      "schedule": "45 7 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "last"
+    },
+    {
+      "id": "44299965-a647-45cd-b9c2-e504bea42398",
+      "name": "Diário da Família - Alert (07:50 se não enviado)",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-17T10:50:00.009000+00:00",
+      "nextRun": "2026-03-18T10:50:00+00:00",
+      "schedule": "50 7 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "last"
+    },
+    {
       "id": "777c622d-db73-4c08-be71-28c968ef21f4",
       "name": "Pagamento Banho",
       "status": "ok",
@@ -1679,5 +1693,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-17T10:30:04.641929+00:00"
+  "lastUpdated": "2026-03-17T11:00:06.233897+00:00"
 }
