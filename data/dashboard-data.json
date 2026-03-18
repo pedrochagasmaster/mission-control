@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-18T20:30:20.601315+00:00",
+  "lastUpdated": "2026-03-18T21:00:19.119028+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -11,17 +11,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-18T20:30:14.660000+00:00"
+      "startedAt": "2026-03-18T21:00:12.687000+00:00"
+    },
+    {
+      "task": "agent:main:cron:e3ac374c-a524-4465-a872-f682f01a979d",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-18T21:00:00.014000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-18T20:55:00.014000+00:00"
     },
     {
       "task": "agent:main:cron:a2a10215-b00a-45e4-8ed4-28cb60e442a6",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-18T20:30:00.016000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-18T20:25:00.019000+00:00"
     }
   ],
   "products": [
@@ -29,30 +34,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-18T20:30:20.601315+00:00"
+      "lastChecked": "2026-03-18T21:00:19.119028+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-18T20:00:00.008000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Blitz da Ordem (17:30)",
-      "schedule": "30 17 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-17T20:30:00.011000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-18T20:25:00.010000+00:00",
+      "lastRun": "2026-03-18T20:30:14.657000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -61,6 +50,14 @@
       "name": "Rotina da Tarde",
       "schedule": "0 18 * * * (America/Sao_Paulo)",
       "lastRun": "2026-03-17T21:00:00.011000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-18T20:55:00.012000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -234,6 +231,14 @@
       "lastError": null
     },
     {
+      "name": "Blitz da Ordem (17:30)",
+      "schedule": "30 17 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-18T20:30:00.013000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Lixo Véspera (22h)",
       "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
       "lastRun": "2026-03-18T01:00:16.454000+00:00",
@@ -358,6 +363,11 @@
     {
       "time": "2026-03-18T17:30:09-03:00",
       "event": "Cron disparou: Blitz da Ordem (17:30) (a2a10215-b00a-45e4-8ed4-28cb60e442a6)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-18T18:00:08-03:00",
+      "event": "Cron disparou: Rotina da Tarde (e3ac374c-a524-4465-a872-f682f01a979d)",
       "channel": "cron"
     }
   ]
