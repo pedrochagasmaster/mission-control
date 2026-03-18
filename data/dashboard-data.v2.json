@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-18T12:30:04.758988+00:00"
+    "generatedAt": "2026-03-18T13:00:37.279902+00:00"
   },
   "overview": {
     "healthScore": 63,
@@ -23,14 +23,28 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-18T12:30:00.010000+00:00",
+      "startedAt": "2026-03-18T13:00:23.100000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:8e6d54f6-5278-4975-94dc-578d36397408",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-18T13:00:09.552000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:555d214e-c8ca-48ef-a091-d41efcba712d",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-18T13:00:00.011000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-18T12:25:00.009000+00:00",
+      "startedAt": "2026-03-18T12:55:00.014000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -59,20 +73,6 @@
       "task": "agent:main:cron:f1830563-b029-4bb2-80fc-9ffe54108a08",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-18T11:30:43.627000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:0ba1cb64-5259-46bf-beb5-e58c02ec4215",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-18T11:15:00.021000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:44299965-a647-45cd-b9c2-e504bea42398",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-18T10:50:00.017000+00:00",
       "agentId": "main",
       "kind": "direct"
     }
@@ -400,34 +400,6 @@
       },
       "jobs": [
         {
-          "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-          "name": "Mission Control - Build+Publish",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-18T12:00:43.043000+00:00",
-          "nextRun": "2026-03-18T12:30:00+00:00",
-          "schedule": "*/30 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": null
-        },
-        {
-          "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-          "name": "Mission Control - Control Runner",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-18T12:25:00.006000+00:00",
-          "nextRun": "2026-03-18T12:30:00+00:00",
-          "schedule": "*/5 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "last"
-        },
-        {
           "id": "555d214e-c8ca-48ef-a091-d41efcba712d",
           "name": "Aspirar Cozinha",
           "status": "ok",
@@ -442,6 +414,20 @@
           "channel": "telegram"
         },
         {
+          "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+          "name": "Mission Control - Build+Publish",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-18T12:30:00.007000+00:00",
+          "nextRun": "2026-03-18T13:00:00+00:00",
+          "schedule": "*/30 * * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": null
+        },
+        {
           "id": "8e6d54f6-5278-4975-94dc-578d36397408",
           "name": "Lixo (Sacos Novos) + Ralos",
           "status": "ok",
@@ -454,6 +440,20 @@
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "telegram"
+        },
+        {
+          "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+          "name": "Mission Control - Control Runner",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-18T12:55:00.010000+00:00",
+          "nextRun": "2026-03-18T13:00:00+00:00",
+          "schedule": "*/5 * * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "last"
         },
         {
           "id": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
@@ -1017,7 +1017,7 @@
       "name": "Monitoramento e Auditoria",
       "status": "ok",
       "kpis": {
-        "eventsToday": 2,
+        "eventsToday": 4,
         "queuePending": 0,
         "heartbeatBackup": true,
         "heartbeatConfigured": true
@@ -1043,8 +1043,8 @@
       "source": "/home/pedro/.openclaw/workspace/memory/events",
       "trend7d": {
         "metric": "eventsToday",
-        "delta": -2,
-        "direction": "down"
+        "delta": 0,
+        "direction": "flat"
       }
     }
   ],
@@ -1209,6 +1209,16 @@
       "time": "2026-03-18T09:00:07-03:00",
       "event": "Cron disparou: Pagamento Banho (777c622d-db73-4c08-be71-28c968ef21f4)",
       "channel": "cron"
+    },
+    {
+      "time": "2026-03-18T10:00:05-03:00",
+      "event": "Cron disparou: Aspirar Cozinha (555d214e-c8ca-48ef-a091-d41efcba712d)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-18T10:00:18-03:00",
+      "event": "Cron disparou: Lixo (Sacos Novos) + Ralos (8e6d54f6-5278-4975-94dc-578d36397408)",
+      "channel": "cron"
     }
   ],
   "products": [
@@ -1216,38 +1226,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-18T12:30:04.758988+00:00"
+      "lastChecked": "2026-03-18T13:00:37.279902+00:00"
     }
   ],
   "crons": [
-    {
-      "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "name": "Mission Control - Build+Publish",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-18T12:00:43.043000+00:00",
-      "nextRun": "2026-03-18T12:30:00+00:00",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": null
-    },
-    {
-      "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "name": "Mission Control - Control Runner",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-18T12:25:00.006000+00:00",
-      "nextRun": "2026-03-18T12:30:00+00:00",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "last"
-    },
     {
       "id": "555d214e-c8ca-48ef-a091-d41efcba712d",
       "name": "Aspirar Cozinha",
@@ -1263,6 +1245,20 @@
       "channel": "telegram"
     },
     {
+      "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "name": "Mission Control - Build+Publish",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-18T12:30:00.007000+00:00",
+      "nextRun": "2026-03-18T13:00:00+00:00",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": null
+    },
+    {
       "id": "8e6d54f6-5278-4975-94dc-578d36397408",
       "name": "Lixo (Sacos Novos) + Ralos",
       "status": "ok",
@@ -1275,6 +1271,20 @@
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "telegram"
+    },
+    {
+      "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "name": "Mission Control - Control Runner",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-18T12:55:00.010000+00:00",
+      "nextRun": "2026-03-18T13:00:00+00:00",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "last"
     },
     {
       "id": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
@@ -1711,5 +1721,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-18T12:30:04.758988+00:00"
+  "lastUpdated": "2026-03-18T13:00:37.279902+00:00"
 }
