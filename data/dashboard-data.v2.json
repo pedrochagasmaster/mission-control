@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-19T21:00:35.800861+00:00"
+    "generatedAt": "2026-03-19T21:30:06.659790+00:00"
   },
   "overview": {
     "healthScore": 63,
@@ -23,7 +23,21 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-19T21:00:35.695000+00:00",
+      "startedAt": "2026-03-19T21:30:00.010000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-19T21:25:00.018000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-19T21:20:24.874000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -31,20 +45,6 @@
       "task": "agent:main:cron:e3ac374c-a524-4465-a872-f682f01a979d",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-19T21:00:00.015000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-19T20:55:00.014000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-19T20:50:26.908000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -385,8 +385,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-19T20:30:13.951000+00:00",
-          "nextRun": "2026-03-19T21:00:00+00:00",
+          "lastRun": "2026-03-19T21:00:13.661000+00:00",
+          "nextRun": "2026-03-19T21:30:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -399,26 +399,12 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-19T20:50:26.906000+00:00",
-          "nextRun": "2026-03-19T21:00:00+00:00",
+          "lastRun": "2026-03-19T21:20:24.871000+00:00",
+          "nextRun": "2026-03-19T21:30:00+00:00",
           "schedule": "*/10 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": null
-        },
-        {
-          "id": "e3ac374c-a524-4465-a872-f682f01a979d",
-          "name": "Rotina da Tarde",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-18T21:00:00.007000+00:00",
-          "nextRun": "2026-03-19T21:00:00+00:00",
-          "schedule": "0 18 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
         },
         {
           "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -427,8 +413,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-19T20:55:00.012000+00:00",
-          "nextRun": "2026-03-19T21:00:00+00:00",
+          "lastRun": "2026-03-19T21:25:00.008000+00:00",
+          "nextRun": "2026-03-19T21:30:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -794,6 +780,20 @@
           "lastRun": "2026-03-19T20:30:00.010000+00:00",
           "nextRun": "2026-03-20T20:30:00+00:00",
           "schedule": "30 17 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
+        },
+        {
+          "id": "e3ac374c-a524-4465-a872-f682f01a979d",
+          "name": "Rotina da Tarde",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-19T21:00:00.010000+00:00",
+          "nextRun": "2026-03-20T21:00:00+00:00",
+          "schedule": "0 18 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "telegram"
@@ -1229,7 +1229,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-19T21:00:35.800861+00:00"
+      "lastChecked": "2026-03-19T21:30:06.659790+00:00"
     }
   ],
   "crons": [
@@ -1240,8 +1240,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-19T20:30:13.951000+00:00",
-      "nextRun": "2026-03-19T21:00:00+00:00",
+      "lastRun": "2026-03-19T21:00:13.661000+00:00",
+      "nextRun": "2026-03-19T21:30:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1254,26 +1254,12 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-19T20:50:26.906000+00:00",
-      "nextRun": "2026-03-19T21:00:00+00:00",
+      "lastRun": "2026-03-19T21:20:24.871000+00:00",
+      "nextRun": "2026-03-19T21:30:00+00:00",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": null
-    },
-    {
-      "id": "e3ac374c-a524-4465-a872-f682f01a979d",
-      "name": "Rotina da Tarde",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-18T21:00:00.007000+00:00",
-      "nextRun": "2026-03-19T21:00:00+00:00",
-      "schedule": "0 18 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
     },
     {
       "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -1282,8 +1268,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-19T20:55:00.012000+00:00",
-      "nextRun": "2026-03-19T21:00:00+00:00",
+      "lastRun": "2026-03-19T21:25:00.008000+00:00",
+      "nextRun": "2026-03-19T21:30:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1654,6 +1640,20 @@
       "channel": "telegram"
     },
     {
+      "id": "e3ac374c-a524-4465-a872-f682f01a979d",
+      "name": "Rotina da Tarde",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-19T21:00:00.010000+00:00",
+      "nextRun": "2026-03-20T21:00:00+00:00",
+      "schedule": "0 18 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
+    },
+    {
       "id": "555d214e-c8ca-48ef-a091-d41efcba712d",
       "name": "Aspirar Cozinha",
       "status": "ok",
@@ -1738,5 +1738,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-19T21:00:35.800861+00:00"
+  "lastUpdated": "2026-03-19T21:30:06.659790+00:00"
 }
