@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-19T07:30:05.821009+00:00"
+    "generatedAt": "2026-03-19T08:06:35.327610+00:00"
   },
   "overview": {
     "healthScore": 67,
@@ -23,21 +23,28 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-19T07:30:00.071000+00:00",
+      "startedAt": "2026-03-19T08:06:29.085000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:75b87bc7-016d-49a2-9995-4a0b715a7f23",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-19T08:00:00.011000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-19T07:25:00.015000+00:00",
+      "startedAt": "2026-03-19T07:55:00.014000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-19T07:20:25.085000+00:00",
+      "startedAt": "2026-03-19T07:50:21.405000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -367,14 +374,28 @@
       },
       "jobs": [
         {
+          "id": "75b87bc7-016d-49a2-9995-4a0b715a7f23",
+          "name": "Instagram Knowledge Ingest",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-18T08:00:00.010000+00:00",
+          "nextRun": "2026-03-19T08:00:00+00:00",
+          "schedule": "0 5 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "last"
+        },
+        {
           "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
           "name": "Mission Control - Build+Publish",
           "status": "ok",
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-19T07:00:00.011000+00:00",
-          "nextRun": "2026-03-19T07:30:00+00:00",
+          "lastRun": "2026-03-19T07:30:00.069000+00:00",
+          "nextRun": "2026-03-19T08:00:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -387,8 +408,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-19T07:20:25.049000+00:00",
-          "nextRun": "2026-03-19T07:30:00+00:00",
+          "lastRun": "2026-03-19T07:50:21.392000+00:00",
+          "nextRun": "2026-03-19T08:00:00+00:00",
           "schedule": "*/10 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -401,23 +422,9 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-19T07:25:00.006000+00:00",
-          "nextRun": "2026-03-19T07:30:00+00:00",
-          "schedule": "*/5 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "last"
-        },
-        {
-          "id": "75b87bc7-016d-49a2-9995-4a0b715a7f23",
-          "name": "Instagram Knowledge Ingest",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-18T08:00:00.010000+00:00",
+          "lastRun": "2026-03-19T07:55:00.011000+00:00",
           "nextRun": "2026-03-19T08:00:00+00:00",
-          "schedule": "0 5 * * * (America/Sao_Paulo)",
+          "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "last"
@@ -890,11 +897,11 @@
       "name": "Knowledge Parental",
       "status": "ok",
       "kpis": {
-        "files": 47,
+        "files": 49,
         "ingestHealthy": true,
         "watcherHealthy": true
       },
-      "lastFile": "ivana__jauregui_20260318.md",
+      "lastFile": "ivana__jauregui_20260319.md",
       "job": {
         "id": "75b87bc7-016d-49a2-9995-4a0b715a7f23",
         "name": "Instagram Knowledge Ingest",
@@ -915,7 +922,7 @@
       "source": "/home/pedro/.openclaw/workspace/knowledge",
       "trend7d": {
         "metric": "files",
-        "delta": 10,
+        "delta": 12,
         "direction": "up"
       }
     },
@@ -1186,10 +1193,24 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-19T07:30:05.821009+00:00"
+      "lastChecked": "2026-03-19T08:06:35.327610+00:00"
     }
   ],
   "crons": [
+    {
+      "id": "75b87bc7-016d-49a2-9995-4a0b715a7f23",
+      "name": "Instagram Knowledge Ingest",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-18T08:00:00.010000+00:00",
+      "nextRun": "2026-03-19T08:00:00+00:00",
+      "schedule": "0 5 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "last"
+    },
     {
       "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "name": "Mission Control - Build+Publish",
@@ -1197,8 +1218,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-19T07:00:00.011000+00:00",
-      "nextRun": "2026-03-19T07:30:00+00:00",
+      "lastRun": "2026-03-19T07:30:00.069000+00:00",
+      "nextRun": "2026-03-19T08:00:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1211,8 +1232,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-19T07:20:25.049000+00:00",
-      "nextRun": "2026-03-19T07:30:00+00:00",
+      "lastRun": "2026-03-19T07:50:21.392000+00:00",
+      "nextRun": "2026-03-19T08:00:00+00:00",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1225,23 +1246,9 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-19T07:25:00.006000+00:00",
-      "nextRun": "2026-03-19T07:30:00+00:00",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "last"
-    },
-    {
-      "id": "75b87bc7-016d-49a2-9995-4a0b715a7f23",
-      "name": "Instagram Knowledge Ingest",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-18T08:00:00.010000+00:00",
+      "lastRun": "2026-03-19T07:55:00.011000+00:00",
       "nextRun": "2026-03-19T08:00:00+00:00",
-      "schedule": "0 5 * * * (America/Sao_Paulo)",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "last"
@@ -1695,5 +1702,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-19T07:30:05.821009+00:00"
+  "lastUpdated": "2026-03-19T08:06:35.327610+00:00"
 }
