@@ -2,10 +2,10 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-19T14:00:14.348232+00:00"
+    "generatedAt": "2026-03-19T14:30:09.803073+00:00"
   },
   "overview": {
-    "healthScore": 63,
+    "healthScore": 45,
     "criticalAlerts": 1,
     "pendingControls": 0,
     "dataFreshnessSec": 0
@@ -17,27 +17,37 @@
       "title": "3 alerta(s) crítico(s) no security audit",
       "priority": "high",
       "actions": []
+    },
+    {
+      "type": "cron-error",
+      "targetId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "title": "Mission Control - Control Runner (1 erros)",
+      "priority": "medium",
+      "actions": [
+        "cron.retry",
+        "cron.pause"
+      ]
     }
   ],
   "activeNow": [
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-19T14:00:00.010000+00:00",
+      "startedAt": "2026-03-19T14:30:00.010000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-19T13:55:00.010000+00:00",
+      "startedAt": "2026-03-19T14:26:51.662000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-19T13:50:34.707000+00:00",
+      "startedAt": "2026-03-19T14:20:33.899000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -66,13 +76,6 @@
       "task": "agent:main:cron:f1830563-b029-4bb2-80fc-9ffe54108a08",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-19T11:31:20.613000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:0ba1cb64-5259-46bf-beb5-e58c02ec4215",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-19T11:15:00.023000+00:00",
       "agentId": "main",
       "kind": "direct"
     }
@@ -391,10 +394,10 @@
     {
       "id": "crons",
       "name": "Cron Jobs",
-      "status": "ok",
+      "status": "error",
       "kpis": {
         "total": 36,
-        "errors": 0,
+        "errors": 1,
         "paused": 0,
         "tzMissing": 0
       },
@@ -406,8 +409,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-19T13:30:35.623000+00:00",
-          "nextRun": "2026-03-19T14:00:00+00:00",
+          "lastRun": "2026-03-19T14:00:00.008000+00:00",
+          "nextRun": "2026-03-19T14:30:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -420,8 +423,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-19T13:50:34.705000+00:00",
-          "nextRun": "2026-03-19T14:00:00+00:00",
+          "lastRun": "2026-03-19T14:20:33.896000+00:00",
+          "nextRun": "2026-03-19T14:30:00+00:00",
           "schedule": "*/10 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -430,12 +433,12 @@
         {
           "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
           "name": "Mission Control - Control Runner",
-          "status": "ok",
+          "status": "error",
           "enabled": true,
-          "errors": 0,
+          "errors": 1,
           "lastError": null,
-          "lastRun": "2026-03-19T13:55:00.008000+00:00",
-          "nextRun": "2026-03-19T14:00:00+00:00",
+          "lastRun": "2026-03-19T14:25:00.011000+00:00",
+          "nextRun": "2026-03-19T14:30:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -904,7 +907,12 @@
           "channel": "telegram"
         }
       ],
-      "alerts": [],
+      "alerts": [
+        {
+          "level": "high",
+          "text": "1 cron(s) em erro"
+        }
+      ],
       "actions": [
         "cron.retry",
         "cron.pause",
@@ -1225,7 +1233,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-19T14:00:14.348232+00:00"
+      "lastChecked": "2026-03-19T14:30:09.803073+00:00"
     }
   ],
   "crons": [
@@ -1236,8 +1244,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-19T13:30:35.623000+00:00",
-      "nextRun": "2026-03-19T14:00:00+00:00",
+      "lastRun": "2026-03-19T14:00:00.008000+00:00",
+      "nextRun": "2026-03-19T14:30:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1250,8 +1258,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-19T13:50:34.705000+00:00",
-      "nextRun": "2026-03-19T14:00:00+00:00",
+      "lastRun": "2026-03-19T14:20:33.896000+00:00",
+      "nextRun": "2026-03-19T14:30:00+00:00",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1260,12 +1268,12 @@
     {
       "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "name": "Mission Control - Control Runner",
-      "status": "ok",
+      "status": "error",
       "enabled": true,
-      "errors": 0,
+      "errors": 1,
       "lastError": null,
-      "lastRun": "2026-03-19T13:55:00.008000+00:00",
-      "nextRun": "2026-03-19T14:00:00+00:00",
+      "lastRun": "2026-03-19T14:25:00.011000+00:00",
+      "nextRun": "2026-03-19T14:30:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1734,5 +1742,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-19T14:00:14.348232+00:00"
+  "lastUpdated": "2026-03-19T14:30:09.803073+00:00"
 }
