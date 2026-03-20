@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-20.1",
-    "generatedAt": "2026-03-20T10:30:30.646472+00:00"
+    "generatedAt": "2026-03-20T11:00:10.988257+00:00"
   },
   "overview": {
     "healthScore": 57,
@@ -23,7 +23,42 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T10:30:20.333000+00:00",
+      "startedAt": "2026-03-20T11:00:00.009000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T10:55:03.011000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T10:50:45.363000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:44299965-a647-45cd-b9c2-e504bea42398",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T10:50:00.009000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:d2c96354-081c-493d-891f-3c11c63cb9a1",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T10:45:00.009000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T10:35:00.013000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -35,44 +70,9 @@
       "kind": "direct"
     },
     {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T10:25:00.013000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T10:21:26.365000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
       "task": "agent:main:cron:06b5aaae-b25a-4005-a78c-badad02f216b",
       "model": "gpt-5.4",
       "startedAt": "2026-03-20T10:20:00.013000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:main",
-      "model": "gpt-5.4",
-      "startedAt": "2026-03-20T09:13:15.299000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T09:02:29.168000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:75b87bc7-016d-49a2-9995-4a0b715a7f23",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T08:00:00.013000+00:00",
       "agentId": "main",
       "kind": "direct"
     }
@@ -290,7 +290,7 @@
       "name": "Diário da Família",
       "status": "ok",
       "kpis": {
-        "sentToday": false,
+        "sentToday": true,
         "draftReady": true,
         "errorJobs": 0,
         "pipelineStages": 5
@@ -317,8 +317,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-19T10:35:00.012000+00:00",
-          "nextRun": "2026-03-20T10:35:00+00:00",
+          "lastRun": "2026-03-20T10:35:00.011000+00:00",
+          "nextRun": "2026-03-21T10:35:00+00:00",
           "schedule": "35 7 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -331,8 +331,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-19T10:45:00.014000+00:00",
-          "nextRun": "2026-03-20T10:45:00+00:00",
+          "lastRun": "2026-03-20T10:45:00.007000+00:00",
+          "nextRun": "2026-03-21T10:45:00+00:00",
           "schedule": "45 7 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -359,8 +359,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-19T10:50:00.011000+00:00",
-          "nextRun": "2026-03-20T10:50:00+00:00",
+          "lastRun": "2026-03-20T10:50:00.007000+00:00",
+          "nextRun": "2026-03-21T10:50:00+00:00",
           "schedule": "50 7 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -379,8 +379,8 @@
       "source": "/home/pedro/.openclaw/workspace/memory/daily_digest_draft.json",
       "trend7d": {
         "metric": "sentToday",
-        "delta": -1,
-        "direction": "down"
+        "delta": 0,
+        "direction": "flat"
       }
     },
     {
@@ -405,7 +405,7 @@
           "signals": {
             "eventCount": 15,
             "attemptCount": 5,
-            "lastEvent": "2026-03-20T10:20:00.011000+00:00",
+            "lastEvent": "2026-03-20T10:50:00.007000+00:00",
             "lastAttemptStatus": "lying-risk"
           },
           "history": {
@@ -419,190 +419,19 @@
                 "date": "2026-03-19",
                 "healthy": 0,
                 "degraded": 0,
-                "lyingRisk": 4,
+                "lyingRisk": 1,
                 "broken": 0
               },
               {
                 "date": "2026-03-20",
                 "healthy": 0,
                 "degraded": 0,
-                "lyingRisk": 1,
+                "lyingRisk": 4,
                 "broken": 0
               }
             ]
           },
           "recentAttempts": [
-            {
-              "attemptId": "digest:4fe4f71e-f653-4382-95c4-bceb7f7a2e49:20260319T1035",
-              "jobId": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
-              "jobName": "Diário da Família - Enviador",
-              "status": "lying-risk",
-              "confidence": 65,
-              "startedAt": "2026-03-19T10:35:00.012000+00:00",
-              "lastEventAt": "2026-03-19T10:35:00.012000+00:00",
-              "channel": "whatsapp",
-              "eventTypes": [
-                "triggered",
-                "ran",
-                "delivery_failed"
-              ],
-              "eventCount": 3,
-              "reasons": [
-                "execução observada sem entrega válida"
-              ],
-              "events": [
-                {
-                  "workflowId": "digest",
-                  "workflowName": "Digest",
-                  "attemptId": "digest:4fe4f71e-f653-4382-95c4-bceb7f7a2e49:20260319T1035",
-                  "jobId": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
-                  "jobName": "Diário da Família - Enviador",
-                  "timestamp": "2026-03-19T10:35:00.012000+00:00",
-                  "eventType": "triggered",
-                  "source": "cron-state",
-                  "inferred": true
-                },
-                {
-                  "workflowId": "digest",
-                  "workflowName": "Digest",
-                  "attemptId": "digest:4fe4f71e-f653-4382-95c4-bceb7f7a2e49:20260319T1035",
-                  "jobId": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
-                  "jobName": "Diário da Família - Enviador",
-                  "timestamp": "2026-03-19T10:35:00.012000+00:00",
-                  "eventType": "ran",
-                  "source": "cron-state",
-                  "runStatus": "ok",
-                  "inferred": true
-                },
-                {
-                  "workflowId": "digest",
-                  "workflowName": "Digest",
-                  "attemptId": "digest:4fe4f71e-f653-4382-95c4-bceb7f7a2e49:20260319T1035",
-                  "jobId": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
-                  "jobName": "Diário da Família - Enviador",
-                  "timestamp": "2026-03-19T10:35:00.012000+00:00",
-                  "eventType": "delivery_failed",
-                  "channel": "whatsapp",
-                  "canonicalChannel": "whatsapp",
-                  "deliveryStatus": "not-delivered",
-                  "source": "cron-state"
-                }
-              ]
-            },
-            {
-              "attemptId": "digest:d2c96354-081c-493d-891f-3c11c63cb9a1:20260319T1045",
-              "jobId": "d2c96354-081c-493d-891f-3c11c63cb9a1",
-              "jobName": "Diário da Família - Watchdog (fallback)",
-              "status": "lying-risk",
-              "confidence": 65,
-              "startedAt": "2026-03-19T10:45:00.014000+00:00",
-              "lastEventAt": "2026-03-19T10:45:00.014000+00:00",
-              "channel": "whatsapp",
-              "eventTypes": [
-                "triggered",
-                "ran",
-                "delivery_failed"
-              ],
-              "eventCount": 3,
-              "reasons": [
-                "execução observada sem entrega válida"
-              ],
-              "events": [
-                {
-                  "workflowId": "digest",
-                  "workflowName": "Digest",
-                  "attemptId": "digest:d2c96354-081c-493d-891f-3c11c63cb9a1:20260319T1045",
-                  "jobId": "d2c96354-081c-493d-891f-3c11c63cb9a1",
-                  "jobName": "Diário da Família - Watchdog (fallback)",
-                  "timestamp": "2026-03-19T10:45:00.014000+00:00",
-                  "eventType": "triggered",
-                  "source": "cron-state",
-                  "inferred": true
-                },
-                {
-                  "workflowId": "digest",
-                  "workflowName": "Digest",
-                  "attemptId": "digest:d2c96354-081c-493d-891f-3c11c63cb9a1:20260319T1045",
-                  "jobId": "d2c96354-081c-493d-891f-3c11c63cb9a1",
-                  "jobName": "Diário da Família - Watchdog (fallback)",
-                  "timestamp": "2026-03-19T10:45:00.014000+00:00",
-                  "eventType": "ran",
-                  "source": "cron-state",
-                  "runStatus": "ok",
-                  "inferred": true
-                },
-                {
-                  "workflowId": "digest",
-                  "workflowName": "Digest",
-                  "attemptId": "digest:d2c96354-081c-493d-891f-3c11c63cb9a1:20260319T1045",
-                  "jobId": "d2c96354-081c-493d-891f-3c11c63cb9a1",
-                  "jobName": "Diário da Família - Watchdog (fallback)",
-                  "timestamp": "2026-03-19T10:45:00.014000+00:00",
-                  "eventType": "delivery_failed",
-                  "channel": "whatsapp",
-                  "canonicalChannel": "whatsapp",
-                  "deliveryStatus": "not-delivered",
-                  "source": "cron-state"
-                }
-              ]
-            },
-            {
-              "attemptId": "digest:44299965-a647-45cd-b9c2-e504bea42398:20260319T1050",
-              "jobId": "44299965-a647-45cd-b9c2-e504bea42398",
-              "jobName": "Diário da Família - Alert (07:50 se não enviado)",
-              "status": "lying-risk",
-              "confidence": 65,
-              "startedAt": "2026-03-19T10:50:00.011000+00:00",
-              "lastEventAt": "2026-03-19T10:50:00.011000+00:00",
-              "channel": "whatsapp",
-              "eventTypes": [
-                "triggered",
-                "ran",
-                "delivery_failed"
-              ],
-              "eventCount": 3,
-              "reasons": [
-                "execução observada sem entrega válida"
-              ],
-              "events": [
-                {
-                  "workflowId": "digest",
-                  "workflowName": "Digest",
-                  "attemptId": "digest:44299965-a647-45cd-b9c2-e504bea42398:20260319T1050",
-                  "jobId": "44299965-a647-45cd-b9c2-e504bea42398",
-                  "jobName": "Diário da Família - Alert (07:50 se não enviado)",
-                  "timestamp": "2026-03-19T10:50:00.011000+00:00",
-                  "eventType": "triggered",
-                  "source": "cron-state",
-                  "inferred": true
-                },
-                {
-                  "workflowId": "digest",
-                  "workflowName": "Digest",
-                  "attemptId": "digest:44299965-a647-45cd-b9c2-e504bea42398:20260319T1050",
-                  "jobId": "44299965-a647-45cd-b9c2-e504bea42398",
-                  "jobName": "Diário da Família - Alert (07:50 se não enviado)",
-                  "timestamp": "2026-03-19T10:50:00.011000+00:00",
-                  "eventType": "ran",
-                  "source": "cron-state",
-                  "runStatus": "ok",
-                  "inferred": true
-                },
-                {
-                  "workflowId": "digest",
-                  "workflowName": "Digest",
-                  "attemptId": "digest:44299965-a647-45cd-b9c2-e504bea42398:20260319T1050",
-                  "jobId": "44299965-a647-45cd-b9c2-e504bea42398",
-                  "jobName": "Diário da Família - Alert (07:50 se não enviado)",
-                  "timestamp": "2026-03-19T10:50:00.011000+00:00",
-                  "eventType": "delivery_failed",
-                  "channel": "whatsapp",
-                  "canonicalChannel": "whatsapp",
-                  "deliveryStatus": "not-delivered",
-                  "source": "cron-state"
-                }
-              ]
-            },
             {
               "attemptId": "digest:0ba1cb64-5259-46bf-beb5-e58c02ec4215:20260319T1115",
               "jobId": "0ba1cb64-5259-46bf-beb5-e58c02ec4215",
@@ -709,6 +538,177 @@
                   "jobId": "06b5aaae-b25a-4005-a78c-badad02f216b",
                   "jobName": "Diário da Família - Gerador",
                   "timestamp": "2026-03-20T10:20:00.011000+00:00",
+                  "eventType": "delivery_failed",
+                  "channel": "whatsapp",
+                  "canonicalChannel": "whatsapp",
+                  "deliveryStatus": "not-delivered",
+                  "source": "cron-state"
+                }
+              ]
+            },
+            {
+              "attemptId": "digest:4fe4f71e-f653-4382-95c4-bceb7f7a2e49:20260320T1035",
+              "jobId": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
+              "jobName": "Diário da Família - Enviador",
+              "status": "lying-risk",
+              "confidence": 65,
+              "startedAt": "2026-03-20T10:35:00.011000+00:00",
+              "lastEventAt": "2026-03-20T10:35:00.011000+00:00",
+              "channel": "whatsapp",
+              "eventTypes": [
+                "triggered",
+                "ran",
+                "delivery_failed"
+              ],
+              "eventCount": 3,
+              "reasons": [
+                "execução observada sem entrega válida"
+              ],
+              "events": [
+                {
+                  "workflowId": "digest",
+                  "workflowName": "Digest",
+                  "attemptId": "digest:4fe4f71e-f653-4382-95c4-bceb7f7a2e49:20260320T1035",
+                  "jobId": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
+                  "jobName": "Diário da Família - Enviador",
+                  "timestamp": "2026-03-20T10:35:00.011000+00:00",
+                  "eventType": "triggered",
+                  "source": "cron-state",
+                  "inferred": true
+                },
+                {
+                  "workflowId": "digest",
+                  "workflowName": "Digest",
+                  "attemptId": "digest:4fe4f71e-f653-4382-95c4-bceb7f7a2e49:20260320T1035",
+                  "jobId": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
+                  "jobName": "Diário da Família - Enviador",
+                  "timestamp": "2026-03-20T10:35:00.011000+00:00",
+                  "eventType": "ran",
+                  "source": "cron-state",
+                  "runStatus": "ok",
+                  "inferred": true
+                },
+                {
+                  "workflowId": "digest",
+                  "workflowName": "Digest",
+                  "attemptId": "digest:4fe4f71e-f653-4382-95c4-bceb7f7a2e49:20260320T1035",
+                  "jobId": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
+                  "jobName": "Diário da Família - Enviador",
+                  "timestamp": "2026-03-20T10:35:00.011000+00:00",
+                  "eventType": "delivery_failed",
+                  "channel": "whatsapp",
+                  "canonicalChannel": "whatsapp",
+                  "deliveryStatus": "not-delivered",
+                  "source": "cron-state"
+                }
+              ]
+            },
+            {
+              "attemptId": "digest:d2c96354-081c-493d-891f-3c11c63cb9a1:20260320T1045",
+              "jobId": "d2c96354-081c-493d-891f-3c11c63cb9a1",
+              "jobName": "Diário da Família - Watchdog (fallback)",
+              "status": "lying-risk",
+              "confidence": 65,
+              "startedAt": "2026-03-20T10:45:00.007000+00:00",
+              "lastEventAt": "2026-03-20T10:45:00.007000+00:00",
+              "channel": "whatsapp",
+              "eventTypes": [
+                "triggered",
+                "ran",
+                "delivery_failed"
+              ],
+              "eventCount": 3,
+              "reasons": [
+                "execução observada sem entrega válida"
+              ],
+              "events": [
+                {
+                  "workflowId": "digest",
+                  "workflowName": "Digest",
+                  "attemptId": "digest:d2c96354-081c-493d-891f-3c11c63cb9a1:20260320T1045",
+                  "jobId": "d2c96354-081c-493d-891f-3c11c63cb9a1",
+                  "jobName": "Diário da Família - Watchdog (fallback)",
+                  "timestamp": "2026-03-20T10:45:00.007000+00:00",
+                  "eventType": "triggered",
+                  "source": "cron-state",
+                  "inferred": true
+                },
+                {
+                  "workflowId": "digest",
+                  "workflowName": "Digest",
+                  "attemptId": "digest:d2c96354-081c-493d-891f-3c11c63cb9a1:20260320T1045",
+                  "jobId": "d2c96354-081c-493d-891f-3c11c63cb9a1",
+                  "jobName": "Diário da Família - Watchdog (fallback)",
+                  "timestamp": "2026-03-20T10:45:00.007000+00:00",
+                  "eventType": "ran",
+                  "source": "cron-state",
+                  "runStatus": "ok",
+                  "inferred": true
+                },
+                {
+                  "workflowId": "digest",
+                  "workflowName": "Digest",
+                  "attemptId": "digest:d2c96354-081c-493d-891f-3c11c63cb9a1:20260320T1045",
+                  "jobId": "d2c96354-081c-493d-891f-3c11c63cb9a1",
+                  "jobName": "Diário da Família - Watchdog (fallback)",
+                  "timestamp": "2026-03-20T10:45:00.007000+00:00",
+                  "eventType": "delivery_failed",
+                  "channel": "whatsapp",
+                  "canonicalChannel": "whatsapp",
+                  "deliveryStatus": "not-delivered",
+                  "source": "cron-state"
+                }
+              ]
+            },
+            {
+              "attemptId": "digest:44299965-a647-45cd-b9c2-e504bea42398:20260320T1050",
+              "jobId": "44299965-a647-45cd-b9c2-e504bea42398",
+              "jobName": "Diário da Família - Alert (07:50 se não enviado)",
+              "status": "lying-risk",
+              "confidence": 65,
+              "startedAt": "2026-03-20T10:50:00.007000+00:00",
+              "lastEventAt": "2026-03-20T10:50:00.007000+00:00",
+              "channel": "whatsapp",
+              "eventTypes": [
+                "triggered",
+                "ran",
+                "delivery_failed"
+              ],
+              "eventCount": 3,
+              "reasons": [
+                "execução observada sem entrega válida"
+              ],
+              "events": [
+                {
+                  "workflowId": "digest",
+                  "workflowName": "Digest",
+                  "attemptId": "digest:44299965-a647-45cd-b9c2-e504bea42398:20260320T1050",
+                  "jobId": "44299965-a647-45cd-b9c2-e504bea42398",
+                  "jobName": "Diário da Família - Alert (07:50 se não enviado)",
+                  "timestamp": "2026-03-20T10:50:00.007000+00:00",
+                  "eventType": "triggered",
+                  "source": "cron-state",
+                  "inferred": true
+                },
+                {
+                  "workflowId": "digest",
+                  "workflowName": "Digest",
+                  "attemptId": "digest:44299965-a647-45cd-b9c2-e504bea42398:20260320T1050",
+                  "jobId": "44299965-a647-45cd-b9c2-e504bea42398",
+                  "jobName": "Diário da Família - Alert (07:50 se não enviado)",
+                  "timestamp": "2026-03-20T10:50:00.007000+00:00",
+                  "eventType": "ran",
+                  "source": "cron-state",
+                  "runStatus": "ok",
+                  "inferred": true
+                },
+                {
+                  "workflowId": "digest",
+                  "workflowName": "Digest",
+                  "attemptId": "digest:44299965-a647-45cd-b9c2-e504bea42398:20260320T1050",
+                  "jobId": "44299965-a647-45cd-b9c2-e504bea42398",
+                  "jobName": "Diário da Família - Alert (07:50 se não enviado)",
+                  "timestamp": "2026-03-20T10:50:00.007000+00:00",
                   "eventType": "delivery_failed",
                   "channel": "whatsapp",
                   "canonicalChannel": "whatsapp",
@@ -1685,7 +1685,7 @@
           "signals": {
             "eventCount": 2,
             "attemptCount": 1,
-            "lastEvent": "2026-03-20T10:21:26.357000+00:00",
+            "lastEvent": "2026-03-20T10:50:45.359000+00:00",
             "lastAttemptStatus": "healthy"
           },
           "history": {
@@ -1706,13 +1706,13 @@
           },
           "recentAttempts": [
             {
-              "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260320T1021",
+              "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260320T1050",
               "jobId": "b136a878-0ea8-43b1-8b07-e242454fe571",
               "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-03-20T10:21:26.357000+00:00",
-              "lastEventAt": "2026-03-20T10:21:26.357000+00:00",
+              "startedAt": "2026-03-20T10:50:45.359000+00:00",
+              "lastEventAt": "2026-03-20T10:50:45.359000+00:00",
               "channel": null,
               "eventTypes": [
                 "triggered",
@@ -1726,10 +1726,10 @@
                 {
                   "workflowId": "tracking_watchdog",
                   "workflowName": "Tracking Watchdog",
-                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260320T1021",
+                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260320T1050",
                   "jobId": "b136a878-0ea8-43b1-8b07-e242454fe571",
                   "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
-                  "timestamp": "2026-03-20T10:21:26.357000+00:00",
+                  "timestamp": "2026-03-20T10:50:45.359000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -1737,10 +1737,10 @@
                 {
                   "workflowId": "tracking_watchdog",
                   "workflowName": "Tracking Watchdog",
-                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260320T1021",
+                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260320T1050",
                   "jobId": "b136a878-0ea8-43b1-8b07-e242454fe571",
                   "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
-                  "timestamp": "2026-03-20T10:21:26.357000+00:00",
+                  "timestamp": "2026-03-20T10:50:45.359000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "ok",
@@ -1763,7 +1763,7 @@
           "signals": {
             "eventCount": 4,
             "attemptCount": 2,
-            "lastEvent": "2026-03-20T10:25:00.011000+00:00",
+            "lastEvent": "2026-03-20T10:55:03.009000+00:00",
             "lastAttemptStatus": "healthy"
           },
           "history": {
@@ -1784,13 +1784,13 @@
           },
           "recentAttempts": [
             {
-              "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260320T1000",
+              "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260320T1030",
               "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
               "jobName": "Mission Control - Build+Publish",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-03-20T10:00:00.029000+00:00",
-              "lastEventAt": "2026-03-20T10:00:00.029000+00:00",
+              "startedAt": "2026-03-20T10:30:17.613000+00:00",
+              "lastEventAt": "2026-03-20T10:30:17.613000+00:00",
               "channel": null,
               "eventTypes": [
                 "triggered",
@@ -1804,10 +1804,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260320T1000",
+                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260320T1030",
                   "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
                   "jobName": "Mission Control - Build+Publish",
-                  "timestamp": "2026-03-20T10:00:00.029000+00:00",
+                  "timestamp": "2026-03-20T10:30:17.613000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -1815,10 +1815,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260320T1000",
+                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260320T1030",
                   "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
                   "jobName": "Mission Control - Build+Publish",
-                  "timestamp": "2026-03-20T10:00:00.029000+00:00",
+                  "timestamp": "2026-03-20T10:30:17.613000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "ok",
@@ -1827,13 +1827,13 @@
               ]
             },
             {
-              "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260320T1025",
+              "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260320T1055",
               "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
               "jobName": "Mission Control - Control Runner",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-03-20T10:25:00.011000+00:00",
-              "lastEventAt": "2026-03-20T10:25:00.011000+00:00",
+              "startedAt": "2026-03-20T10:55:03.009000+00:00",
+              "lastEventAt": "2026-03-20T10:55:03.009000+00:00",
               "channel": null,
               "eventTypes": [
                 "triggered",
@@ -1847,10 +1847,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260320T1025",
+                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260320T1055",
                   "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
                   "jobName": "Mission Control - Control Runner",
-                  "timestamp": "2026-03-20T10:25:00.011000+00:00",
+                  "timestamp": "2026-03-20T10:55:03.009000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -1858,10 +1858,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260320T1025",
+                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260320T1055",
                   "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
                   "jobName": "Mission Control - Control Runner",
-                  "timestamp": "2026-03-20T10:25:00.011000+00:00",
+                  "timestamp": "2026-03-20T10:55:03.009000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "ok",
@@ -2044,60 +2044,6 @@
           ],
           "reasons": [
             "attempt sem evento terminal de entrega"
-          ]
-        },
-        {
-          "workflowId": "digest",
-          "workflowName": "Digest",
-          "attemptId": "digest:4fe4f71e-f653-4382-95c4-bceb7f7a2e49:20260319T1035",
-          "status": "lying-risk",
-          "startedAt": "2026-03-19T10:35:00.012000+00:00",
-          "lastEventAt": "2026-03-19T10:35:00.012000+00:00",
-          "jobName": "Diário da Família - Enviador",
-          "channel": "whatsapp",
-          "eventTypes": [
-            "triggered",
-            "ran",
-            "delivery_failed"
-          ],
-          "reasons": [
-            "execução observada sem entrega válida"
-          ]
-        },
-        {
-          "workflowId": "digest",
-          "workflowName": "Digest",
-          "attemptId": "digest:d2c96354-081c-493d-891f-3c11c63cb9a1:20260319T1045",
-          "status": "lying-risk",
-          "startedAt": "2026-03-19T10:45:00.014000+00:00",
-          "lastEventAt": "2026-03-19T10:45:00.014000+00:00",
-          "jobName": "Diário da Família - Watchdog (fallback)",
-          "channel": "whatsapp",
-          "eventTypes": [
-            "triggered",
-            "ran",
-            "delivery_failed"
-          ],
-          "reasons": [
-            "execução observada sem entrega válida"
-          ]
-        },
-        {
-          "workflowId": "digest",
-          "workflowName": "Digest",
-          "attemptId": "digest:44299965-a647-45cd-b9c2-e504bea42398:20260319T1050",
-          "status": "lying-risk",
-          "startedAt": "2026-03-19T10:50:00.011000+00:00",
-          "lastEventAt": "2026-03-19T10:50:00.011000+00:00",
-          "jobName": "Diário da Família - Alert (07:50 se não enviado)",
-          "channel": "whatsapp",
-          "eventTypes": [
-            "triggered",
-            "ran",
-            "delivery_failed"
-          ],
-          "reasons": [
-            "execução observada sem entrega válida"
           ]
         },
         {
@@ -2349,23 +2295,6 @@
           ]
         },
         {
-          "workflowId": "mission_control",
-          "workflowName": "Mission Control",
-          "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260320T1000",
-          "status": "healthy",
-          "startedAt": "2026-03-20T10:00:00.029000+00:00",
-          "lastEventAt": "2026-03-20T10:00:00.029000+00:00",
-          "jobName": "Mission Control - Build+Publish",
-          "channel": null,
-          "eventTypes": [
-            "triggered",
-            "ran"
-          ],
-          "reasons": [
-            "workflow interno sem requisito de entrega"
-          ]
-        },
-        {
           "workflowId": "digest",
           "workflowName": "Digest",
           "attemptId": "digest:06b5aaae-b25a-4005-a78c-badad02f216b:20260320T1020",
@@ -2384,12 +2313,83 @@
           ]
         },
         {
+          "workflowId": "mission_control",
+          "workflowName": "Mission Control",
+          "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260320T1030",
+          "status": "healthy",
+          "startedAt": "2026-03-20T10:30:17.613000+00:00",
+          "lastEventAt": "2026-03-20T10:30:17.613000+00:00",
+          "jobName": "Mission Control - Build+Publish",
+          "channel": null,
+          "eventTypes": [
+            "triggered",
+            "ran"
+          ],
+          "reasons": [
+            "workflow interno sem requisito de entrega"
+          ]
+        },
+        {
+          "workflowId": "digest",
+          "workflowName": "Digest",
+          "attemptId": "digest:4fe4f71e-f653-4382-95c4-bceb7f7a2e49:20260320T1035",
+          "status": "lying-risk",
+          "startedAt": "2026-03-20T10:35:00.011000+00:00",
+          "lastEventAt": "2026-03-20T10:35:00.011000+00:00",
+          "jobName": "Diário da Família - Enviador",
+          "channel": "whatsapp",
+          "eventTypes": [
+            "triggered",
+            "ran",
+            "delivery_failed"
+          ],
+          "reasons": [
+            "execução observada sem entrega válida"
+          ]
+        },
+        {
+          "workflowId": "digest",
+          "workflowName": "Digest",
+          "attemptId": "digest:d2c96354-081c-493d-891f-3c11c63cb9a1:20260320T1045",
+          "status": "lying-risk",
+          "startedAt": "2026-03-20T10:45:00.007000+00:00",
+          "lastEventAt": "2026-03-20T10:45:00.007000+00:00",
+          "jobName": "Diário da Família - Watchdog (fallback)",
+          "channel": "whatsapp",
+          "eventTypes": [
+            "triggered",
+            "ran",
+            "delivery_failed"
+          ],
+          "reasons": [
+            "execução observada sem entrega válida"
+          ]
+        },
+        {
+          "workflowId": "digest",
+          "workflowName": "Digest",
+          "attemptId": "digest:44299965-a647-45cd-b9c2-e504bea42398:20260320T1050",
+          "status": "lying-risk",
+          "startedAt": "2026-03-20T10:50:00.007000+00:00",
+          "lastEventAt": "2026-03-20T10:50:00.007000+00:00",
+          "jobName": "Diário da Família - Alert (07:50 se não enviado)",
+          "channel": "whatsapp",
+          "eventTypes": [
+            "triggered",
+            "ran",
+            "delivery_failed"
+          ],
+          "reasons": [
+            "execução observada sem entrega válida"
+          ]
+        },
+        {
           "workflowId": "tracking_watchdog",
           "workflowName": "Tracking Watchdog",
-          "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260320T1021",
+          "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260320T1050",
           "status": "healthy",
-          "startedAt": "2026-03-20T10:21:26.357000+00:00",
-          "lastEventAt": "2026-03-20T10:21:26.357000+00:00",
+          "startedAt": "2026-03-20T10:50:45.359000+00:00",
+          "lastEventAt": "2026-03-20T10:50:45.359000+00:00",
           "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
           "channel": null,
           "eventTypes": [
@@ -2403,10 +2403,10 @@
         {
           "workflowId": "mission_control",
           "workflowName": "Mission Control",
-          "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260320T1025",
+          "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260320T1055",
           "status": "healthy",
-          "startedAt": "2026-03-20T10:25:00.011000+00:00",
-          "lastEventAt": "2026-03-20T10:25:00.011000+00:00",
+          "startedAt": "2026-03-20T10:55:03.009000+00:00",
+          "lastEventAt": "2026-03-20T10:55:03.009000+00:00",
           "jobName": "Mission Control - Control Runner",
           "channel": null,
           "eventTypes": [
@@ -2444,8 +2444,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-20T10:00:00.029000+00:00",
-          "nextRun": "2026-03-20T10:30:00+00:00",
+          "lastRun": "2026-03-20T10:30:17.613000+00:00",
+          "nextRun": "2026-03-20T11:00:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -2458,26 +2458,12 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-20T10:21:26.357000+00:00",
-          "nextRun": "2026-03-20T10:30:00+00:00",
+          "lastRun": "2026-03-20T10:50:45.359000+00:00",
+          "nextRun": "2026-03-20T11:00:00+00:00",
           "schedule": "*/10 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": null
-        },
-        {
-          "id": "ec212b07-8387-45d0-9606-351509850608",
-          "name": "Lixo (Colocar Fora)",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-18T10:30:00.006000+00:00",
-          "nextRun": "2026-03-20T10:30:00+00:00",
-          "schedule": "30 7 * * 1,3,5 (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
         },
         {
           "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -2486,51 +2472,9 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-20T10:25:00.011000+00:00",
-          "nextRun": "2026-03-20T10:30:00+00:00",
+          "lastRun": "2026-03-20T10:55:03.009000+00:00",
+          "nextRun": "2026-03-20T11:00:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "last"
-        },
-        {
-          "id": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
-          "name": "Diário da Família - Enviador",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-19T10:35:00.012000+00:00",
-          "nextRun": "2026-03-20T10:35:00+00:00",
-          "schedule": "35 7 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "last"
-        },
-        {
-          "id": "d2c96354-081c-493d-891f-3c11c63cb9a1",
-          "name": "Diário da Família - Watchdog (fallback)",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-19T10:45:00.014000+00:00",
-          "nextRun": "2026-03-20T10:45:00+00:00",
-          "schedule": "45 7 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "last"
-        },
-        {
-          "id": "44299965-a647-45cd-b9c2-e504bea42398",
-          "name": "Diário da Família - Alert (07:50 se não enviado)",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-19T10:50:00.011000+00:00",
-          "nextRun": "2026-03-20T10:50:00+00:00",
-          "schedule": "50 7 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "last"
@@ -2844,6 +2788,48 @@
           "channel": "last"
         },
         {
+          "id": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
+          "name": "Diário da Família - Enviador",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-20T10:35:00.011000+00:00",
+          "nextRun": "2026-03-21T10:35:00+00:00",
+          "schedule": "35 7 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "last"
+        },
+        {
+          "id": "d2c96354-081c-493d-891f-3c11c63cb9a1",
+          "name": "Diário da Família - Watchdog (fallback)",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-20T10:45:00.007000+00:00",
+          "nextRun": "2026-03-21T10:45:00+00:00",
+          "schedule": "45 7 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "last"
+        },
+        {
+          "id": "44299965-a647-45cd-b9c2-e504bea42398",
+          "name": "Diário da Família - Alert (07:50 se não enviado)",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-20T10:50:00.007000+00:00",
+          "nextRun": "2026-03-21T10:50:00+00:00",
+          "schedule": "50 7 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "last"
+        },
+        {
           "id": "555d214e-c8ca-48ef-a091-d41efcba712d",
           "name": "Aspirar Cozinha",
           "status": "ok",
@@ -2881,6 +2867,20 @@
           "lastRun": "2026-03-20T01:00:25.022000+00:00",
           "nextRun": "2026-03-23T01:00:00+00:00",
           "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
+        },
+        {
+          "id": "ec212b07-8387-45d0-9606-351509850608",
+          "name": "Lixo (Colocar Fora)",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-20T10:30:00.011000+00:00",
+          "nextRun": "2026-03-23T10:30:00+00:00",
+          "schedule": "30 7 * * 1,3,5 (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "telegram"
@@ -3263,7 +3263,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-20T10:30:30.646472+00:00"
+      "lastChecked": "2026-03-20T11:00:10.988257+00:00"
     }
   ],
   "crons": [
@@ -3274,8 +3274,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-20T10:00:00.029000+00:00",
-      "nextRun": "2026-03-20T10:30:00+00:00",
+      "lastRun": "2026-03-20T10:30:17.613000+00:00",
+      "nextRun": "2026-03-20T11:00:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -3288,26 +3288,12 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-20T10:21:26.357000+00:00",
-      "nextRun": "2026-03-20T10:30:00+00:00",
+      "lastRun": "2026-03-20T10:50:45.359000+00:00",
+      "nextRun": "2026-03-20T11:00:00+00:00",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": null
-    },
-    {
-      "id": "ec212b07-8387-45d0-9606-351509850608",
-      "name": "Lixo (Colocar Fora)",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-18T10:30:00.006000+00:00",
-      "nextRun": "2026-03-20T10:30:00+00:00",
-      "schedule": "30 7 * * 1,3,5 (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
     },
     {
       "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -3316,51 +3302,9 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-20T10:25:00.011000+00:00",
-      "nextRun": "2026-03-20T10:30:00+00:00",
+      "lastRun": "2026-03-20T10:55:03.009000+00:00",
+      "nextRun": "2026-03-20T11:00:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "last"
-    },
-    {
-      "id": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
-      "name": "Diário da Família - Enviador",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-19T10:35:00.012000+00:00",
-      "nextRun": "2026-03-20T10:35:00+00:00",
-      "schedule": "35 7 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "last"
-    },
-    {
-      "id": "d2c96354-081c-493d-891f-3c11c63cb9a1",
-      "name": "Diário da Família - Watchdog (fallback)",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-19T10:45:00.014000+00:00",
-      "nextRun": "2026-03-20T10:45:00+00:00",
-      "schedule": "45 7 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "last"
-    },
-    {
-      "id": "44299965-a647-45cd-b9c2-e504bea42398",
-      "name": "Diário da Família - Alert (07:50 se não enviado)",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-19T10:50:00.011000+00:00",
-      "nextRun": "2026-03-20T10:50:00+00:00",
-      "schedule": "50 7 * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "last"
@@ -3674,6 +3618,48 @@
       "channel": "last"
     },
     {
+      "id": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
+      "name": "Diário da Família - Enviador",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-20T10:35:00.011000+00:00",
+      "nextRun": "2026-03-21T10:35:00+00:00",
+      "schedule": "35 7 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "last"
+    },
+    {
+      "id": "d2c96354-081c-493d-891f-3c11c63cb9a1",
+      "name": "Diário da Família - Watchdog (fallback)",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-20T10:45:00.007000+00:00",
+      "nextRun": "2026-03-21T10:45:00+00:00",
+      "schedule": "45 7 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "last"
+    },
+    {
+      "id": "44299965-a647-45cd-b9c2-e504bea42398",
+      "name": "Diário da Família - Alert (07:50 se não enviado)",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-20T10:50:00.007000+00:00",
+      "nextRun": "2026-03-21T10:50:00+00:00",
+      "schedule": "50 7 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "last"
+    },
+    {
       "id": "555d214e-c8ca-48ef-a091-d41efcba712d",
       "name": "Aspirar Cozinha",
       "status": "ok",
@@ -3711,6 +3697,20 @@
       "lastRun": "2026-03-20T01:00:25.022000+00:00",
       "nextRun": "2026-03-23T01:00:00+00:00",
       "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
+    },
+    {
+      "id": "ec212b07-8387-45d0-9606-351509850608",
+      "name": "Lixo (Colocar Fora)",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-20T10:30:00.011000+00:00",
+      "nextRun": "2026-03-23T10:30:00+00:00",
+      "schedule": "30 7 * * 1,3,5 (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "telegram"
@@ -3772,5 +3772,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-20T10:30:30.646472+00:00"
+  "lastUpdated": "2026-03-20T11:00:10.988257+00:00"
 }
