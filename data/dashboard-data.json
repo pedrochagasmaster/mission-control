@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-20T22:30:10.222126+00:00",
+  "lastUpdated": "2026-03-20T23:00:10.617370+00:00",
   "actionRequired": [
     {
       "title": "Pulso Familiar - Meio-dia (1 erros) - cron: job execution timed out",
@@ -11,17 +11,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T22:30:00.016000+00:00"
+      "startedAt": "2026-03-20T23:00:02.554000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T22:25:00.015000+00:00"
+      "startedAt": "2026-03-20T22:55:00.010000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T22:20:32.933000+00:00"
+      "startedAt": "2026-03-20T22:50:31.734000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T22:31:05.134000+00:00"
     },
     {
       "task": "agent:main:whatsapp:group:120363422516892829@g.us",
@@ -44,22 +49,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-20T22:30:10.222126+00:00"
+      "lastChecked": "2026-03-20T23:00:10.617370+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T22:00:00.007000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Pulso Familiar - Noite",
-      "schedule": "30 19 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-19T22:30:49.684000+00:00",
+      "lastRun": "2026-03-20T22:30:00.014000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -67,7 +64,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T22:20:32.931000+00:00",
+      "lastRun": "2026-03-20T22:50:31.732000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -75,7 +72,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T22:25:00.013000+00:00",
+      "lastRun": "2026-03-20T22:55:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -260,6 +257,14 @@
       "name": "Rotina da Tarde",
       "schedule": "0 18 * * * (America/Sao_Paulo)",
       "lastRun": "2026-03-20T21:00:00.013000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Pulso Familiar - Noite",
+      "schedule": "30 19 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-20T22:31:05.132000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
