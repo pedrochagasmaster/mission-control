@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-20T15:00:40.025315+00:00",
+  "lastUpdated": "2026-03-20T15:30:14.747094+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -16,22 +16,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T15:00:22.901000+00:00"
+      "startedAt": "2026-03-20T15:30:00.020000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T15:25:00.033000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T15:20:31.908000+00:00"
     },
     {
       "task": "agent:main:cron:42be764c-f915-4669-8f94-878e23362bf8",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-20T15:00:00.022000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T14:55:00.016000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T14:50:31.317000+00:00"
     },
     {
       "task": "agent:main:cron:ff7487f2-fad4-40ab-bd83-84219ecec634",
@@ -59,22 +59,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-20T15:00:40.025315+00:00"
+      "lastChecked": "2026-03-20T15:30:14.747094+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Ração Almoço",
-      "schedule": "0 12 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-19T15:00:00.008000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T14:30:00.013000+00:00",
+      "lastRun": "2026-03-20T15:00:22.899000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -82,7 +74,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T14:50:31.314000+00:00",
+      "lastRun": "2026-03-20T15:20:31.905000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -90,7 +82,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T14:55:00.011000+00:00",
+      "lastRun": "2026-03-20T15:25:00.027000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -278,6 +270,14 @@
       "status": "error",
       "errors": 1,
       "lastError": "cron: job execution timed out"
+    },
+    {
+      "name": "Ração Almoço",
+      "schedule": "0 12 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-20T15:00:00.017000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Resumo Semanal de Memórias",
