@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-20T11:00:10.988257+00:00",
+  "lastUpdated": "2026-03-20T11:30:14.354791+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -11,17 +11,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T11:00:00.009000+00:00"
+      "startedAt": "2026-03-20T11:30:00.276000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T10:55:03.011000+00:00"
+      "startedAt": "2026-03-20T11:25:00.194000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T10:50:45.363000+00:00"
+      "startedAt": "2026-03-20T11:20:37.823000+00:00"
+    },
+    {
+      "task": "agent:main:cron:0ba1cb64-5259-46bf-beb5-e58c02ec4215",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T11:15:00.146000+00:00"
     },
     {
       "task": "agent:main:cron:44299965-a647-45cd-b9c2-e504bea42398",
@@ -42,11 +47,6 @@
       "task": "agent:main:cron:ec212b07-8387-45d0-9606-351509850608",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-20T10:30:00.013000+00:00"
-    },
-    {
-      "task": "agent:main:cron:06b5aaae-b25a-4005-a78c-badad02f216b",
-      "model": "gpt-5.4",
-      "startedAt": "2026-03-20T10:20:00.013000+00:00"
     }
   ],
   "products": [
@@ -54,14 +54,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-20T11:00:10.988257+00:00"
+      "lastChecked": "2026-03-20T11:30:14.354791+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T10:30:17.613000+00:00",
+      "lastRun": "2026-03-20T11:00:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -69,7 +69,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T10:50:45.359000+00:00",
+      "lastRun": "2026-03-20T11:20:37.820000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -77,15 +77,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T10:55:03.009000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Diário da Família - Watchdog (retry 08:15)",
-      "schedule": "15 8 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-19T11:15:00.015000+00:00",
+      "lastRun": "2026-03-20T11:25:00.191000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -278,6 +270,14 @@
       "name": "Diário da Família - Alert (07:50 se não enviado)",
       "schedule": "50 7 * * * (America/Sao_Paulo)",
       "lastRun": "2026-03-20T10:50:00.007000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Diário da Família - Watchdog (retry 08:15)",
+      "schedule": "15 8 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-20T11:15:00.144000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
