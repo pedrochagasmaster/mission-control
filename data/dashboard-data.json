@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-20T00:30:12.518924+00:00",
+  "lastUpdated": "2026-03-20T01:00:41.052308+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -9,29 +9,44 @@
   ],
   "activeNow": [
     {
+      "task": "agent:main:main",
+      "model": "gpt-5.4",
+      "startedAt": "2026-03-20T01:00:43.179000+00:00"
+    },
+    {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T00:30:04.343000+00:00"
+      "startedAt": "2026-03-20T01:00:36.896000+00:00"
+    },
+    {
+      "task": "agent:main:cron:eb796b6f-bb0b-4b92-963c-18696cf45e0d",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T01:00:25.025000+00:00"
+    },
+    {
+      "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T01:00:00.010000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5.4",
-      "startedAt": "2026-03-20T00:26:02.729000+00:00"
+      "startedAt": "2026-03-20T00:55:42.270000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T00:20:24.736000+00:00"
+      "startedAt": "2026-03-20T00:50:24.407000+00:00"
     },
     {
-      "task": "agent:main:main",
-      "model": "gpt-5.4",
-      "startedAt": "2026-03-20T00:09:19.232000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
+      "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-19T22:30:49.686000+00:00"
+      "startedAt": "2026-03-20T00:45:00.010000+00:00"
+    },
+    {
+      "task": "agent:main:whatsapp:group:120363422516892829@g.us",
+      "model": "gpt-5.4",
+      "startedAt": "2026-03-20T00:31:47.651000+00:00"
     }
   ],
   "products": [
@@ -39,50 +54,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-20T00:30:12.518924+00:00"
+      "lastChecked": "2026-03-20T01:00:41.052308+00:00"
     }
   ],
   "crons": [
-    {
-      "name": "Lembrete de Captura de Memórias",
-      "schedule": "30 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-19T00:30:47.597000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Build+Publish",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T00:00:00.007000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T00:20:23.857000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T00:25:00.013000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Pluggy Sync - Tracking Despesas",
-      "schedule": "45 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-19T00:45:00.008000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
     {
       "name": "Rotina da Noite (Completa)",
       "schedule": "0 22 * * * (America/Sao_Paulo)",
@@ -92,9 +67,33 @@
       "lastError": null
     },
     {
+      "name": "Mission Control - Build+Publish",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-20T00:30:00.013000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-20T00:50:23.592000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Lixo Véspera (22h)",
       "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
       "lastRun": "2026-03-18T01:00:16.454000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-20T00:55:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -284,6 +283,22 @@
       "lastError": null
     },
     {
+      "name": "Lembrete de Captura de Memórias",
+      "schedule": "30 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-20T00:30:57.751000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Pluggy Sync - Tracking Despesas",
+      "schedule": "45 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-20T00:45:00.007000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Aspirar Cozinha",
       "schedule": "0 10 * * 1,3,6 (America/Sao_Paulo)",
       "lastRun": "2026-03-18T13:00:00.009000+00:00",
@@ -361,6 +376,11 @@
     {
       "time": "2026-03-19T18:00:09-03:00",
       "event": "Cron disparou: Rotina da Tarde (e3ac374c-a524-4465-a872-f682f01a979d)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-19T22:00:12-03:00",
+      "event": "Cron disparou: Rotina da Noite (Completa) (7804497e-ac8d-49c9-bead-08ed6bab21d1)",
       "channel": "cron"
     }
   ]
