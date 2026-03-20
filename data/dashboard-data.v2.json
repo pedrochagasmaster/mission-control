@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-20T01:00:41.052308+00:00"
+    "generatedAt": "2026-03-20T01:30:06.634459+00:00"
   },
   "overview": {
     "healthScore": 63,
@@ -21,16 +21,30 @@
   ],
   "activeNow": [
     {
-      "task": "agent:main:main",
-      "model": "gpt-5.4",
-      "startedAt": "2026-03-20T01:00:43.179000+00:00",
+      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T01:30:02.783000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
-      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5.4",
+      "startedAt": "2026-03-20T01:25:44.672000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:main",
+      "model": "gpt-5.4",
+      "startedAt": "2026-03-20T01:22:54.594000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T01:00:36.896000+00:00",
+      "startedAt": "2026-03-20T01:21:01.527000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -45,20 +59,6 @@
       "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-20T01:00:00.010000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5.4",
-      "startedAt": "2026-03-20T00:55:42.270000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T00:50:24.407000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -400,28 +400,14 @@
       },
       "jobs": [
         {
-          "id": "7804497e-ac8d-49c9-bead-08ed6bab21d1",
-          "name": "Rotina da Noite (Completa)",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-19T01:00:00.008000+00:00",
-          "nextRun": "2026-03-20T01:00:00+00:00",
-          "schedule": "0 22 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
-        },
-        {
           "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
           "name": "Mission Control - Build+Publish",
           "status": "ok",
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-20T00:30:00.013000+00:00",
-          "nextRun": "2026-03-20T01:00:00+00:00",
+          "lastRun": "2026-03-20T01:00:31.580000+00:00",
+          "nextRun": "2026-03-20T01:30:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -434,26 +420,12 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-20T00:50:23.592000+00:00",
-          "nextRun": "2026-03-20T01:00:00+00:00",
+          "lastRun": "2026-03-20T01:21:01.524000+00:00",
+          "nextRun": "2026-03-20T01:30:00+00:00",
           "schedule": "*/10 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": null
-        },
-        {
-          "id": "eb796b6f-bb0b-4b92-963c-18696cf45e0d",
-          "name": "Lixo Véspera (22h)",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-18T01:00:16.454000+00:00",
-          "nextRun": "2026-03-20T01:00:00+00:00",
-          "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
         },
         {
           "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -462,8 +434,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-03-20T00:55:00.007000+00:00",
-          "nextRun": "2026-03-20T01:00:00+00:00",
+          "lastRun": "2026-03-20T01:25:00.011000+00:00",
+          "nextRun": "2026-03-20T01:30:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -820,6 +792,20 @@
           "channel": "whatsapp"
         },
         {
+          "id": "7804497e-ac8d-49c9-bead-08ed6bab21d1",
+          "name": "Rotina da Noite (Completa)",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-20T01:00:00.007000+00:00",
+          "nextRun": "2026-03-21T01:00:00+00:00",
+          "schedule": "0 22 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
+        },
+        {
           "id": "555d214e-c8ca-48ef-a091-d41efcba712d",
           "name": "Aspirar Cozinha",
           "status": "ok",
@@ -846,6 +832,20 @@
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "whatsapp"
+        },
+        {
+          "id": "eb796b6f-bb0b-4b92-963c-18696cf45e0d",
+          "name": "Lixo Véspera (22h)",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-20T01:00:25.022000+00:00",
+          "nextRun": "2026-03-23T01:00:00+00:00",
+          "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
         },
         {
           "id": "3d633d74-840a-4996-82df-9e9f8d474d46",
@@ -1255,24 +1255,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-20T01:00:41.052308+00:00"
+      "lastChecked": "2026-03-20T01:30:06.634459+00:00"
     }
   ],
   "crons": [
-    {
-      "id": "7804497e-ac8d-49c9-bead-08ed6bab21d1",
-      "name": "Rotina da Noite (Completa)",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-19T01:00:00.008000+00:00",
-      "nextRun": "2026-03-20T01:00:00+00:00",
-      "schedule": "0 22 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
-    },
     {
       "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "name": "Mission Control - Build+Publish",
@@ -1280,8 +1266,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-20T00:30:00.013000+00:00",
-      "nextRun": "2026-03-20T01:00:00+00:00",
+      "lastRun": "2026-03-20T01:00:31.580000+00:00",
+      "nextRun": "2026-03-20T01:30:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1294,26 +1280,12 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-20T00:50:23.592000+00:00",
-      "nextRun": "2026-03-20T01:00:00+00:00",
+      "lastRun": "2026-03-20T01:21:01.524000+00:00",
+      "nextRun": "2026-03-20T01:30:00+00:00",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": null
-    },
-    {
-      "id": "eb796b6f-bb0b-4b92-963c-18696cf45e0d",
-      "name": "Lixo Véspera (22h)",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-18T01:00:16.454000+00:00",
-      "nextRun": "2026-03-20T01:00:00+00:00",
-      "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
     },
     {
       "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -1322,8 +1294,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-03-20T00:55:00.007000+00:00",
-      "nextRun": "2026-03-20T01:00:00+00:00",
+      "lastRun": "2026-03-20T01:25:00.011000+00:00",
+      "nextRun": "2026-03-20T01:30:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -1680,6 +1652,20 @@
       "channel": "whatsapp"
     },
     {
+      "id": "7804497e-ac8d-49c9-bead-08ed6bab21d1",
+      "name": "Rotina da Noite (Completa)",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-20T01:00:00.007000+00:00",
+      "nextRun": "2026-03-21T01:00:00+00:00",
+      "schedule": "0 22 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
+    },
+    {
       "id": "555d214e-c8ca-48ef-a091-d41efcba712d",
       "name": "Aspirar Cozinha",
       "status": "ok",
@@ -1706,6 +1692,20 @@
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "whatsapp"
+    },
+    {
+      "id": "eb796b6f-bb0b-4b92-963c-18696cf45e0d",
+      "name": "Lixo Véspera (22h)",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-20T01:00:25.022000+00:00",
+      "nextRun": "2026-03-23T01:00:00+00:00",
+      "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
     },
     {
       "id": "3d633d74-840a-4996-82df-9e9f8d474d46",
@@ -1764,5 +1764,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-20T01:00:41.052308+00:00"
+  "lastUpdated": "2026-03-20T01:30:06.634459+00:00"
 }
