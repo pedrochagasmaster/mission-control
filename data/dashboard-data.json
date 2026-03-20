@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-20T16:30:42.828996+00:00",
+  "lastUpdated": "2026-03-20T17:00:10.856757+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -16,22 +16,27 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T16:30:26.541000+00:00"
+      "startedAt": "2026-03-20T17:00:00.021000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T16:55:00.009000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T16:50:40.485000+00:00"
+    },
+    {
+      "task": "agent:main:whatsapp:group:120363422516892829@g.us",
+      "model": "gpt-5.4",
+      "startedAt": "2026-03-20T16:44:40.243000+00:00"
     },
     {
       "task": "agent:main:cron:515506a0-6921-4f7d-8368-06fc4e93ee87",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-20T16:30:00.019000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5.4",
-      "startedAt": "2026-03-20T16:25:46.819000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T16:20:33.178000+00:00"
     },
     {
       "task": "agent:main:cron:96074f1f-0124-4b4c-a944-e71349f91678",
@@ -47,11 +52,6 @@
       "task": "agent:main:cron:ff7487f2-fad4-40ab-bd83-84219ecec634",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-20T14:32:53.074000+00:00"
-    },
-    {
-      "task": "agent:main:whatsapp:group:120363422516892829@g.us",
-      "model": "gpt-5.4",
-      "startedAt": "2026-03-20T14:07:59.214000+00:00"
     }
   ],
   "products": [
@@ -59,22 +59,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-20T16:30:42.828996+00:00"
+      "lastChecked": "2026-03-20T17:00:10.856757+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Pós-Almoço: Zero Pia",
-      "schedule": "30 13 * * 2-7 (America/Sao_Paulo)",
-      "lastRun": "2026-03-19T16:30:00.013000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T16:00:26.915000+00:00",
+      "lastRun": "2026-03-20T16:30:26.540000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -82,7 +74,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T16:20:33.175000+00:00",
+      "lastRun": "2026-03-20T16:50:40.482000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -90,7 +82,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T16:25:00.008000+00:00",
+      "lastRun": "2026-03-20T16:55:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -275,6 +267,14 @@
       "name": "Passeio Almoço",
       "schedule": "0 13 * * * (America/Sao_Paulo)",
       "lastRun": "2026-03-20T16:00:00.020000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Pós-Almoço: Zero Pia",
+      "schedule": "30 13 * * 2-7 (America/Sao_Paulo)",
+      "lastRun": "2026-03-20T16:30:00.014000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
