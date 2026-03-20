@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-20T08:02:43.939056+00:00",
+  "lastUpdated": "2026-03-20T08:30:08.373748+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -11,22 +11,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T08:02:36.638000+00:00"
+      "startedAt": "2026-03-20T08:30:00.029000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T08:25:00.010000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T08:20:24.354000+00:00"
     },
     {
       "task": "agent:main:cron:75b87bc7-016d-49a2-9995-4a0b715a7f23",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-20T08:00:00.013000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T07:55:00.012000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T07:50:20.799000+00:00"
     },
     {
       "task": "agent:main:cron:218f26ef-423f-4f74-aa31-d28879facc28",
@@ -39,22 +39,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-20T08:02:43.939056+00:00"
+      "lastChecked": "2026-03-20T08:30:08.373748+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Instagram Knowledge Ingest",
-      "schedule": "0 5 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-19T08:00:00.008000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T07:30:00.008000+00:00",
+      "lastRun": "2026-03-20T08:02:36.635000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -62,7 +54,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T07:50:20.797000+00:00",
+      "lastRun": "2026-03-20T08:20:24.352000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -70,7 +62,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T07:55:00.010000+00:00",
+      "lastRun": "2026-03-20T08:25:00.008000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -271,6 +263,14 @@
       "name": "Consolidação Automática de Learnings",
       "schedule": "0 4 * * * (America/Sao_Paulo)",
       "lastRun": "2026-03-20T07:01:49.588000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Instagram Knowledge Ingest",
+      "schedule": "0 5 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-20T08:00:00.011000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
