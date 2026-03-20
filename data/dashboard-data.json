@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-20T22:00:32.282348+00:00",
+  "lastUpdated": "2026-03-20T22:00:51.923429+00:00",
   "actionRequired": [
     {
       "title": "Pulso Familiar - Meio-dia (1 erros) - cron: job execution timed out",
@@ -11,7 +11,7 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T22:00:30.456000+00:00"
+      "startedAt": "2026-03-20T22:00:46.444000+00:00"
     },
     {
       "task": "agent:main:whatsapp:group:120363422516892829@g.us",
@@ -44,7 +44,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-20T22:00:32.282348+00:00"
+      "lastChecked": "2026-03-20T22:00:51.923429+00:00"
     }
   ],
   "crons": [
