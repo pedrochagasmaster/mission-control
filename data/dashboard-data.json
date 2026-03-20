@@ -1,27 +1,42 @@
 {
-  "lastUpdated": "2026-03-20T14:30:58.330994+00:00",
+  "lastUpdated": "2026-03-20T15:00:40.025315+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
       "url": null,
       "priority": "high"
+    },
+    {
+      "title": "Pulso Familiar - Meio-dia (1 erros) - cron: job execution timed out",
+      "url": null,
+      "priority": "medium"
     }
   ],
   "activeNow": [
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T14:30:50.626000+00:00"
+      "startedAt": "2026-03-20T15:00:22.901000+00:00"
+    },
+    {
+      "task": "agent:main:cron:42be764c-f915-4669-8f94-878e23362bf8",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T15:00:00.022000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T14:25:00.019000+00:00"
+      "startedAt": "2026-03-20T14:55:00.016000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T14:20:39.051000+00:00"
+      "startedAt": "2026-03-20T14:50:31.317000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ff7487f2-fad4-40ab-bd83-84219ecec634",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T14:32:53.074000+00:00"
     },
     {
       "task": "agent:main:whatsapp:group:120363422516892829@g.us",
@@ -37,16 +52,6 @@
       "task": "agent:main:cron:8e6d54f6-5278-4975-94dc-578d36397408",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-20T13:00:00.427000+00:00"
-    },
-    {
-      "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T12:00:36.833000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ae7b9fb6-d807-4c23-846c-87f880d130be",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T12:00:22.482000+00:00"
     }
   ],
   "products": [
@@ -54,14 +59,22 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-20T14:30:58.330994+00:00"
+      "lastChecked": "2026-03-20T15:00:40.025315+00:00"
     }
   ],
   "crons": [
     {
+      "name": "Ração Almoço",
+      "schedule": "0 12 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-19T15:00:00.008000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T14:00:00.018000+00:00",
+      "lastRun": "2026-03-20T14:30:00.013000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -69,7 +82,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T14:20:39.048000+00:00",
+      "lastRun": "2026-03-20T14:50:31.314000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -77,23 +90,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T14:25:00.015000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Pulso Familiar - Meio-dia",
-      "schedule": "30 11 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-19T14:32:18.045000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Ração Almoço",
-      "schedule": "0 12 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-19T15:00:00.008000+00:00",
+      "lastRun": "2026-03-20T14:55:00.011000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -275,6 +272,14 @@
       "lastError": null
     },
     {
+      "name": "Pulso Familiar - Meio-dia",
+      "schedule": "30 11 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-20T14:31:52.685000+00:00",
+      "status": "error",
+      "errors": 1,
+      "lastError": "cron: job execution timed out"
+    },
+    {
       "name": "Resumo Semanal de Memórias",
       "schedule": "0 20 * * 0 (America/Sao_Paulo)",
       "lastRun": "2026-03-15T23:01:00.667000+00:00",
@@ -366,6 +371,11 @@
     {
       "time": "2026-03-20T10:30:16-03:00",
       "event": "Cron disparou: Rotina da Manhã (Completa) (93c7796d-f82d-4381-a925-f1a0a22bf25b)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-20T12:00:16-03:00",
+      "event": "Cron disparou: Ração Almoço (42be764c-f915-4669-8f94-878e23362bf8)",
       "channel": "cron"
     }
   ]
