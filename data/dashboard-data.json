@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-20T11:30:33.929008+00:00",
+  "lastUpdated": "2026-03-20T12:01:12.934765+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -11,42 +11,42 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T11:30:32.432000+00:00"
+      "startedAt": "2026-03-20T12:00:55.450000+00:00"
+    },
+    {
+      "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T12:00:36.833000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ae7b9fb6-d807-4c23-846c-87f880d130be",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T12:00:22.482000+00:00"
+    },
+    {
+      "task": "agent:main:cron:d325f081-b2dc-4843-a4d2-078237ba97ba",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T12:00:02.942000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T11:25:00.194000+00:00"
+      "startedAt": "2026-03-20T11:55:00.397000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T11:20:37.823000+00:00"
+      "startedAt": "2026-03-20T11:50:33.343000+00:00"
+    },
+    {
+      "task": "agent:main:cron:f1830563-b029-4bb2-80fc-9ffe54108a08",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T11:32:11.781000+00:00"
     },
     {
       "task": "agent:main:cron:0ba1cb64-5259-46bf-beb5-e58c02ec4215",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-20T11:15:00.146000+00:00"
-    },
-    {
-      "task": "agent:main:cron:44299965-a647-45cd-b9c2-e504bea42398",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T10:50:00.009000+00:00"
-    },
-    {
-      "task": "agent:main:cron:d2c96354-081c-493d-891f-3c11c63cb9a1",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T10:45:00.009000+00:00"
-    },
-    {
-      "task": "agent:main:cron:4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T10:35:00.013000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ec212b07-8387-45d0-9606-351509850608",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T10:30:00.013000+00:00"
     }
   ],
   "products": [
@@ -54,46 +54,22 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-20T11:30:33.929008+00:00"
+      "lastChecked": "2026-03-20T12:01:12.934765+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Mission Control - Build+Publish",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T11:00:00.007000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T11:20:37.820000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T11:25:00.191000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Análise de Conversas - Manhã",
-      "schedule": "30 8 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-19T11:31:20.610000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Deadline Reminder Checker",
       "schedule": "0 9 * * * (America/Sao_Paulo)",
       "lastRun": "2026-03-19T12:00:21.939000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Build+Publish",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-20T11:30:00.273000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -107,9 +83,25 @@
       "lastError": null
     },
     {
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-20T11:50:33.340000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Check Estoque Simparic (Mensal)",
       "schedule": "0 9 20 * * (America/Sao_Paulo)",
       "lastRun": "2026-02-20T12:00:00.025000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-20T11:55:00.394000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -283,6 +275,14 @@
       "lastError": null
     },
     {
+      "name": "Análise de Conversas - Manhã",
+      "schedule": "30 8 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-20T11:32:11.779000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Aspirar Cozinha",
       "schedule": "0 10 * * 1,3,6 (America/Sao_Paulo)",
       "lastRun": "2026-03-18T13:00:00.009000+00:00",
@@ -351,6 +351,11 @@
     {
       "time": "2026-03-20T07:30:12-03:00",
       "event": "Cron disparou: Lixo (Colocar Fora) (ec212b07-8387-45d0-9606-351509850608)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-20T09:00:17-03:00",
+      "event": "Cron disparou: Check Estoque Simparic (Mensal) (d325f081-b2dc-4843-a4d2-078237ba97ba)",
       "channel": "cron"
     }
   ]
