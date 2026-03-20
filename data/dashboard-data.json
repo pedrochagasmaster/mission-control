@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-20T13:00:44.181291+00:00",
+  "lastUpdated": "2026-03-20T13:30:44.158270+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -11,22 +11,27 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T13:00:41.064000+00:00"
+      "startedAt": "2026-03-20T13:30:35.371000+00:00"
+    },
+    {
+      "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T13:30:00.458000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T13:25:00.013000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-20T13:20:33.170000+00:00"
     },
     {
       "task": "agent:main:cron:8e6d54f6-5278-4975-94dc-578d36397408",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-20T13:00:00.427000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T12:55:00.551000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T12:50:31.132000+00:00"
     },
     {
       "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
@@ -42,11 +47,6 @@
       "task": "agent:main:cron:d325f081-b2dc-4843-a4d2-078237ba97ba",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-20T12:00:02.942000+00:00"
-    },
-    {
-      "task": "agent:main:cron:f1830563-b029-4bb2-80fc-9ffe54108a08",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T11:32:11.781000+00:00"
     }
   ],
   "products": [
@@ -54,38 +54,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-20T13:00:44.181291+00:00"
+      "lastChecked": "2026-03-20T13:30:44.158270+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T12:30:00.536000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Lixo (Sacos Novos) + Ralos",
-      "schedule": "0 10 * * 1,3,5 (America/Sao_Paulo)",
-      "lastRun": "2026-03-18T13:00:09.545000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T12:50:31.129000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T12:55:00.548000+00:00",
+      "lastRun": "2026-03-20T13:00:14.816000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -94,6 +70,22 @@
       "name": "Rotina da Manhã (Completa)",
       "schedule": "30 10 * * * (America/Sao_Paulo)",
       "lastRun": "2026-03-19T13:30:00.008000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-20T13:20:33.168000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-20T13:25:00.011000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -315,6 +307,14 @@
       "lastError": null
     },
     {
+      "name": "Lixo (Sacos Novos) + Ralos",
+      "schedule": "0 10 * * 1,3,5 (America/Sao_Paulo)",
+      "lastRun": "2026-03-20T13:00:00.424000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Dobrar Roupas",
       "schedule": "0 10 * * 2 (America/Sao_Paulo)",
       "lastRun": "2026-03-17T13:00:00.007000+00:00",
@@ -361,6 +361,11 @@
     {
       "time": "2026-03-20T10:00:08-03:00",
       "event": "Cron disparou: Lixo (Sacos Novos) + Ralos (8e6d54f6-5278-4975-94dc-578d36397408)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-20T10:30:16-03:00",
+      "event": "Cron disparou: Rotina da Manhã (Completa) (93c7796d-f82d-4381-a925-f1a0a22bf25b)",
       "channel": "cron"
     }
   ]
