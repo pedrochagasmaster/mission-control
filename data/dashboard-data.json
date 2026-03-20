@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-20T00:00:09.235208+00:00",
+  "lastUpdated": "2026-03-20T00:30:12.518924+00:00",
   "actionRequired": [
     {
       "title": "3 alerta(s) crítico(s) no security audit",
@@ -9,24 +9,24 @@
   ],
   "activeNow": [
     {
-      "task": "agent:main:main",
-      "model": "gpt-5.4",
-      "startedAt": "2026-03-20T00:00:03.385000+00:00"
-    },
-    {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T00:00:00.010000+00:00"
+      "startedAt": "2026-03-20T00:30:04.343000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-19T23:55:00.013000+00:00"
+      "model": "gpt-5.4",
+      "startedAt": "2026-03-20T00:26:02.729000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-19T23:50:29.598000+00:00"
+      "startedAt": "2026-03-20T00:20:24.736000+00:00"
+    },
+    {
+      "task": "agent:main:main",
+      "model": "gpt-5.4",
+      "startedAt": "2026-03-20T00:09:19.232000+00:00"
     },
     {
       "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
@@ -39,14 +39,22 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-20T00:00:09.235208+00:00"
+      "lastChecked": "2026-03-20T00:30:12.518924+00:00"
     }
   ],
   "crons": [
     {
+      "name": "Lembrete de Captura de Memórias",
+      "schedule": "30 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-19T00:30:47.597000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-19T23:30:00.007000+00:00",
+      "lastRun": "2026-03-20T00:00:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -54,7 +62,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-19T23:50:29.595000+00:00",
+      "lastRun": "2026-03-20T00:20:23.857000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -62,15 +70,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-19T23:55:00.011000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Lembrete de Captura de Memórias",
-      "schedule": "30 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-19T00:30:47.597000+00:00",
+      "lastRun": "2026-03-20T00:25:00.013000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null

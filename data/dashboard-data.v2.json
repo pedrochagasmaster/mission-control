@@ -2,10 +2,10 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-06.3",
-    "generatedAt": "2026-03-20T00:00:09.235208+00:00"
+    "generatedAt": "2026-03-20T00:30:12.518924+00:00"
   },
   "overview": {
-    "healthScore": 63,
+    "healthScore": 67,
     "criticalAlerts": 1,
     "pendingControls": 0,
     "dataFreshnessSec": 0
@@ -21,30 +21,30 @@
   ],
   "activeNow": [
     {
-      "task": "agent:main:main",
-      "model": "gpt-5.4",
-      "startedAt": "2026-03-20T00:00:03.385000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T00:00:00.010000+00:00",
+      "startedAt": "2026-03-20T00:30:04.343000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-19T23:55:00.013000+00:00",
+      "model": "gpt-5.4",
+      "startedAt": "2026-03-20T00:26:02.729000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-19T23:50:29.598000+00:00",
+      "startedAt": "2026-03-20T00:20:24.736000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:main",
+      "model": "gpt-5.4",
+      "startedAt": "2026-03-20T00:09:19.232000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -60,70 +60,65 @@
     {
       "id": "routines",
       "name": "Rotinas da Casa",
-      "status": "warning",
+      "status": "ok",
       "kpis": {
-        "pending": 7,
-        "done": 0,
+        "pending": 0,
+        "done": 7,
         "skipped": 0,
-        "overdue": 6
+        "overdue": 0
       },
       "tasks": [
         {
           "key": "rotina_manha",
           "label": "🌅 Rotina da Manhã",
-          "status": "PENDING",
+          "status": "DONE",
           "time": "06:00",
           "note": ""
         },
         {
           "key": "racao_almoco",
           "label": "🍲 Ração Almoço",
-          "status": "PENDING",
+          "status": "DONE",
           "time": "12:00",
           "note": ""
         },
         {
           "key": "passeio_almoco",
           "label": "🐕 Passeio 2/4",
-          "status": "PENDING",
+          "status": "DONE",
           "time": "13:00",
           "note": ""
         },
         {
           "key": "missao_pos_almoco",
           "label": "🍽️ Zero Pia",
-          "status": "PENDING",
+          "status": "DONE",
           "time": "13:30",
           "note": ""
         },
         {
           "key": "blitz_ordem",
           "label": "🌪️ Blitz da Ordem",
-          "status": "PENDING",
+          "status": "DONE",
           "time": "17:30",
           "note": ""
         },
         {
           "key": "rotina_tarde",
           "label": "🌆 Rotina Tarde",
-          "status": "PENDING",
+          "status": "DONE",
           "time": "18:00",
           "note": ""
         },
         {
           "key": "rotina_noite",
           "label": "🌙 Rotina Noite",
-          "status": "PENDING",
+          "status": "DONE",
           "time": "22:00",
           "note": ""
         }
       ],
-      "alerts": [
-        {
-          "level": "warning",
-          "text": "6 tarefa(s) pendente(s) já no horário"
-        }
-      ],
+      "alerts": [],
       "actions": [
         "task.mark_done",
         "task.mark_skipped"
@@ -131,8 +126,8 @@
       "source": "/home/pedro/.openclaw/workspace/memory/daily_tasks.json",
       "trend7d": {
         "metric": "pending",
-        "delta": 0,
-        "direction": "flat"
+        "delta": -7,
+        "direction": "down"
       }
     },
     {
@@ -379,48 +374,6 @@
       },
       "jobs": [
         {
-          "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-          "name": "Mission Control - Build+Publish",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-19T23:30:00.007000+00:00",
-          "nextRun": "2026-03-20T00:00:00+00:00",
-          "schedule": "*/30 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": null
-        },
-        {
-          "id": "b136a878-0ea8-43b1-8b07-e242454fe571",
-          "name": "Watchdog - Tracking Despesas (API + Frontend)",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-19T23:50:29.595000+00:00",
-          "nextRun": "2026-03-20T00:00:00+00:00",
-          "schedule": "*/10 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": null
-        },
-        {
-          "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-          "name": "Mission Control - Control Runner",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-03-19T23:55:00.011000+00:00",
-          "nextRun": "2026-03-20T00:00:00+00:00",
-          "schedule": "*/5 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "last"
-        },
-        {
           "id": "22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
           "name": "Lembrete de Captura de Memórias",
           "status": "ok",
@@ -433,6 +386,48 @@
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "whatsapp"
+        },
+        {
+          "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+          "name": "Mission Control - Build+Publish",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-20T00:00:00.007000+00:00",
+          "nextRun": "2026-03-20T00:30:00+00:00",
+          "schedule": "*/30 * * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": null
+        },
+        {
+          "id": "b136a878-0ea8-43b1-8b07-e242454fe571",
+          "name": "Watchdog - Tracking Despesas (API + Frontend)",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-20T00:20:23.857000+00:00",
+          "nextRun": "2026-03-20T00:30:00+00:00",
+          "schedule": "*/10 * * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": null
+        },
+        {
+          "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+          "name": "Mission Control - Control Runner",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-03-20T00:25:00.013000+00:00",
+          "nextRun": "2026-03-20T00:30:00+00:00",
+          "schedule": "*/5 * * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "last"
         },
         {
           "id": "ec2938b2-9783-47f9-8945-ffd6388a0e82",
@@ -1229,52 +1224,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-20T00:00:09.235208+00:00"
+      "lastChecked": "2026-03-20T00:30:12.518924+00:00"
     }
   ],
   "crons": [
-    {
-      "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "name": "Mission Control - Build+Publish",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-19T23:30:00.007000+00:00",
-      "nextRun": "2026-03-20T00:00:00+00:00",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": null
-    },
-    {
-      "id": "b136a878-0ea8-43b1-8b07-e242454fe571",
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-19T23:50:29.595000+00:00",
-      "nextRun": "2026-03-20T00:00:00+00:00",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": null
-    },
-    {
-      "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "name": "Mission Control - Control Runner",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-03-19T23:55:00.011000+00:00",
-      "nextRun": "2026-03-20T00:00:00+00:00",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "last"
-    },
     {
       "id": "22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
       "name": "Lembrete de Captura de Memórias",
@@ -1288,6 +1241,48 @@
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "whatsapp"
+    },
+    {
+      "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "name": "Mission Control - Build+Publish",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-20T00:00:00.007000+00:00",
+      "nextRun": "2026-03-20T00:30:00+00:00",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": null
+    },
+    {
+      "id": "b136a878-0ea8-43b1-8b07-e242454fe571",
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-20T00:20:23.857000+00:00",
+      "nextRun": "2026-03-20T00:30:00+00:00",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": null
+    },
+    {
+      "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "name": "Mission Control - Control Runner",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-03-20T00:25:00.013000+00:00",
+      "nextRun": "2026-03-20T00:30:00+00:00",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "last"
     },
     {
       "id": "ec2938b2-9783-47f9-8945-ffd6388a0e82",
@@ -1738,5 +1733,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-03-20T00:00:09.235208+00:00"
+  "lastUpdated": "2026-03-20T00:30:12.518924+00:00"
 }
