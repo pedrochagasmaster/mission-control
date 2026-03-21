@@ -1,21 +1,36 @@
 {
-  "lastUpdated": "2026-03-21T20:00:13.084313+00:00",
+  "lastUpdated": "2026-03-21T21:00:30.344223+00:00",
   "actionRequired": [],
   "activeNow": [
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-21T20:00:03.140000+00:00"
+      "startedAt": "2026-03-21T21:00:21.380000+00:00"
+    },
+    {
+      "task": "agent:main:cron:e3ac374c-a524-4465-a872-f682f01a979d",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-21T21:00:00.023000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-21T19:55:03.346000+00:00"
+      "startedAt": "2026-03-21T20:55:00.010000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-21T19:50:25.941000+00:00"
+      "startedAt": "2026-03-21T20:50:29.957000+00:00"
+    },
+    {
+      "task": "agent:main:cron:a2a10215-b00a-45e4-8ed4-28cb60e442a6",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-21T20:30:00.010000+00:00"
+    },
+    {
+      "task": "agent:main:whatsapp:group:120363422516892829@g.us",
+      "model": "gpt-5.4",
+      "startedAt": "2026-03-21T20:22:50.193000+00:00"
     },
     {
       "task": "agent:main:whatsapp:direct:+5519997830810",
@@ -28,14 +43,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-21T20:00:13.084313+00:00"
+      "lastChecked": "2026-03-21T21:00:30.344223+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-21T19:30:00.019000+00:00",
+      "lastRun": "2026-03-21T20:30:19.025000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -43,23 +58,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-21T19:50:25.142000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-21T19:55:00.008000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Blitz da Ordem (17:30)",
-      "schedule": "30 17 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T20:30:00.013000+00:00",
+      "lastRun": "2026-03-21T20:50:29.955000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -68,6 +67,14 @@
       "name": "Rotina da Tarde",
       "schedule": "0 18 * * * (America/Sao_Paulo)",
       "lastRun": "2026-03-20T21:00:00.013000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-21T20:55:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -241,6 +248,14 @@
       "lastError": null
     },
     {
+      "name": "Blitz da Ordem (17:30)",
+      "schedule": "30 17 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-21T20:30:00.008000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Resumo Semanal de Memórias",
       "schedule": "0 20 * * 0 (America/Sao_Paulo)",
       "lastRun": "2026-03-15T23:01:00.667000+00:00",
@@ -345,6 +360,16 @@
     {
       "time": "2026-03-21T13:30:15-03:00",
       "event": "Cron disparou: Pós-Almoço: Zero Pia (515506a0-6921-4f7d-8368-06fc4e93ee87)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-21T17:30:13-03:00",
+      "event": "Cron disparou: Blitz da Ordem (17:30) (a2a10215-b00a-45e4-8ed4-28cb60e442a6)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-21T18:00:15-03:00",
+      "event": "Cron disparou: Rotina da Tarde (e3ac374c-a524-4465-a872-f682f01a979d)",
       "channel": "cron"
     }
   ]
