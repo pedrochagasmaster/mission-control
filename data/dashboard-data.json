@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-21T00:30:08.992313+00:00",
+  "lastUpdated": "2026-03-21T01:00:33.180243+00:00",
   "actionRequired": [
     {
       "title": "Pulso Familiar - Meio-dia (1 erros) - cron: job execution timed out",
@@ -11,32 +11,42 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-21T00:30:00.013000+00:00"
+      "startedAt": "2026-03-21T01:00:23.611000+00:00"
+    },
+    {
+      "task": "agent:main:whatsapp:group:120363422516892829@g.us",
+      "model": "gpt-5.4",
+      "startedAt": "2026-03-21T01:00:11.426000+00:00"
+    },
+    {
+      "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-21T01:00:00.013000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-21T00:25:00.010000+00:00"
+      "startedAt": "2026-03-21T00:55:00.010000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-21T00:20:26.435000+00:00"
+      "startedAt": "2026-03-21T00:50:29.612000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-21T00:45:02.813000+00:00"
+    },
+    {
+      "task": "agent:main:cron:22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-21T00:31:00.217000+00:00"
     },
     {
       "task": "agent:main:whatsapp:direct:+5519997830810",
       "model": "gpt-5.4",
       "startedAt": "2026-03-20T23:25:22.457000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-20T22:31:05.134000+00:00"
-    },
-    {
-      "task": "agent:main:whatsapp:group:120363422516892829@g.us",
-      "model": "gpt-5.4",
-      "startedAt": "2026-03-20T22:01:57.268000+00:00"
     }
   ],
   "products": [
@@ -44,14 +54,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-21T00:30:08.992313+00:00"
+      "lastChecked": "2026-03-21T01:00:33.180243+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Lembrete de Captura de Memórias",
-      "schedule": "30 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T00:30:57.751000+00:00",
+      "name": "Rotina da Noite (Completa)",
+      "schedule": "0 22 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-20T01:00:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -59,7 +69,7 @@
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-21T00:00:00.015000+00:00",
+      "lastRun": "2026-03-21T00:30:00.012000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -67,7 +77,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-21T00:20:26.433000+00:00",
+      "lastRun": "2026-03-21T00:50:29.609000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -75,23 +85,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-21T00:25:00.008000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Pluggy Sync - Tracking Despesas",
-      "schedule": "45 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T00:45:00.007000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Rotina da Noite (Completa)",
-      "schedule": "0 22 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T01:00:00.007000+00:00",
+      "lastRun": "2026-03-21T00:55:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -265,6 +259,22 @@
       "lastError": null
     },
     {
+      "name": "Lembrete de Captura de Memórias",
+      "schedule": "30 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-21T00:30:59.324000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Pluggy Sync - Tracking Despesas",
+      "schedule": "45 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-21T00:45:00.007000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Resumo Semanal de Memórias",
       "schedule": "0 20 * * 0 (America/Sao_Paulo)",
       "lastRun": "2026-03-15T23:01:00.667000+00:00",
@@ -381,6 +391,11 @@
     {
       "time": "2026-03-20T18:00:14-03:00",
       "event": "Cron disparou: Rotina da Tarde (e3ac374c-a524-4465-a872-f682f01a979d)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-03-20T22:00:13-03:00",
+      "event": "Cron disparou: Rotina da Noite (Completa) (7804497e-ac8d-49c9-bead-08ed6bab21d1)",
       "channel": "cron"
     }
   ]
