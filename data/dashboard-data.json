@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-21T01:00:33.180243+00:00",
+  "lastUpdated": "2026-03-21T01:30:09.282050+00:00",
   "actionRequired": [
     {
       "title": "Pulso Familiar - Meio-dia (1 erros) - cron: job execution timed out",
@@ -11,27 +11,27 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-21T01:00:23.611000+00:00"
+      "startedAt": "2026-03-21T01:30:00.009000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-21T01:25:00.010000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-03-21T01:20:26.683000+00:00"
     },
     {
       "task": "agent:main:whatsapp:group:120363422516892829@g.us",
       "model": "gpt-5.4",
-      "startedAt": "2026-03-21T01:00:11.426000+00:00"
+      "startedAt": "2026-03-21T01:01:36.871000+00:00"
     },
     {
       "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-21T01:00:00.013000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-21T00:55:00.010000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-03-21T00:50:29.612000+00:00"
     },
     {
       "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
@@ -54,22 +54,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-21T01:00:33.180243+00:00"
+      "lastChecked": "2026-03-21T01:30:09.282050+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Rotina da Noite (Completa)",
-      "schedule": "0 22 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-20T01:00:00.007000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-21T00:30:00.012000+00:00",
+      "lastRun": "2026-03-21T01:00:19.754000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -77,7 +69,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-21T00:50:29.609000+00:00",
+      "lastRun": "2026-03-21T01:20:26.680000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -85,7 +77,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-21T00:55:00.007000+00:00",
+      "lastRun": "2026-03-21T01:25:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -270,6 +262,14 @@
       "name": "Pluggy Sync - Tracking Despesas",
       "schedule": "45 21 * * * (America/Sao_Paulo)",
       "lastRun": "2026-03-21T00:45:00.007000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Rotina da Noite (Completa)",
+      "schedule": "0 22 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-03-21T01:00:00.010000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
