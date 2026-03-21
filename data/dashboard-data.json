@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-21T02:00:10.567774+00:00",
+  "lastUpdated": "2026-03-21T02:30:08.576515+00:00",
   "actionRequired": [
     {
       "title": "Pulso Familiar - Meio-dia (1 erros) - cron: job execution timed out",
@@ -11,17 +11,17 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-21T02:00:02.767000+00:00"
+      "startedAt": "2026-03-21T02:30:00.032000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-21T01:55:00.008000+00:00"
+      "startedAt": "2026-03-21T02:25:00.009000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-03-21T01:51:04.772000+00:00"
+      "startedAt": "2026-03-21T02:20:34.288000+00:00"
     },
     {
       "task": "agent:main:whatsapp:group:120363422516892829@g.us",
@@ -42,11 +42,6 @@
       "task": "agent:main:cron:22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
       "model": "gpt-5-mini",
       "startedAt": "2026-03-21T00:31:00.217000+00:00"
-    },
-    {
-      "task": "agent:main:whatsapp:direct:+5519997830810",
-      "model": "gpt-5.4",
-      "startedAt": "2026-03-20T23:25:22.457000+00:00"
     }
   ],
   "products": [
@@ -54,14 +49,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-03-21T02:00:10.567774+00:00"
+      "lastChecked": "2026-03-21T02:30:08.576515+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-21T01:30:00.007000+00:00",
+      "lastRun": "2026-03-21T02:00:00.013000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -69,7 +64,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-21T01:51:04.770000+00:00",
+      "lastRun": "2026-03-21T02:20:34.286000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -77,7 +72,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-03-21T01:55:00.006000+00:00",
+      "lastRun": "2026-03-21T02:25:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
