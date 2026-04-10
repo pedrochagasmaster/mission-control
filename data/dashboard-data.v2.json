@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-20.1",
-    "generatedAt": "2026-04-10T12:01:06.429539+00:00"
+    "generatedAt": "2026-04-10T12:30:11.233340+00:00"
   },
   "overview": {
     "healthScore": 27,
@@ -33,7 +33,21 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-10T12:00:55.553000+00:00",
+      "startedAt": "2026-04-10T12:30:04.706000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-10T12:25:00.022000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-10T12:20:29.541000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -48,20 +62,6 @@
       "task": "agent:main:cron:ae7b9fb6-d807-4c23-846c-87f880d130be",
       "model": "gpt-5-mini",
       "startedAt": "2026-04-10T12:00:00.028000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-10T11:55:00.028000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-10T11:50:27.763000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -739,7 +739,7 @@
           "signals": {
             "eventCount": 6,
             "attemptCount": 2,
-            "lastEvent": "2026-04-09T12:00:21.082000+00:00",
+            "lastEvent": "2026-04-10T12:00:21.694000+00:00",
             "lastAttemptStatus": "healthy"
           },
           "history": {
@@ -750,7 +750,7 @@
             "broken": 0,
             "byDay": [
               {
-                "date": "2026-04-09",
+                "date": "2026-04-10",
                 "healthy": 1,
                 "degraded": 1,
                 "lyingRisk": 0,
@@ -760,13 +760,13 @@
           },
           "recentAttempts": [
             {
-              "attemptId": "reminders:ae7b9fb6-d807-4c23-846c-87f880d130be:20260409T1200",
+              "attemptId": "reminders:ae7b9fb6-d807-4c23-846c-87f880d130be:20260410T1200",
               "jobId": "ae7b9fb6-d807-4c23-846c-87f880d130be",
               "jobName": "Resumo Diário da To-Do List",
               "status": "degraded",
               "confidence": 82,
-              "startedAt": "2026-04-09T12:00:00.009000+00:00",
-              "lastEventAt": "2026-04-09T12:00:00.009000+00:00",
+              "startedAt": "2026-04-10T12:00:00.014000+00:00",
+              "lastEventAt": "2026-04-10T12:00:00.014000+00:00",
               "channel": "telegram",
               "eventTypes": [
                 "triggered",
@@ -781,10 +781,10 @@
                 {
                   "workflowId": "reminders",
                   "workflowName": "Reminders",
-                  "attemptId": "reminders:ae7b9fb6-d807-4c23-846c-87f880d130be:20260409T1200",
+                  "attemptId": "reminders:ae7b9fb6-d807-4c23-846c-87f880d130be:20260410T1200",
                   "jobId": "ae7b9fb6-d807-4c23-846c-87f880d130be",
                   "jobName": "Resumo Diário da To-Do List",
-                  "timestamp": "2026-04-09T12:00:00.009000+00:00",
+                  "timestamp": "2026-04-10T12:00:00.014000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -792,10 +792,10 @@
                 {
                   "workflowId": "reminders",
                   "workflowName": "Reminders",
-                  "attemptId": "reminders:ae7b9fb6-d807-4c23-846c-87f880d130be:20260409T1200",
+                  "attemptId": "reminders:ae7b9fb6-d807-4c23-846c-87f880d130be:20260410T1200",
                   "jobId": "ae7b9fb6-d807-4c23-846c-87f880d130be",
                   "jobName": "Resumo Diário da To-Do List",
-                  "timestamp": "2026-04-09T12:00:00.009000+00:00",
+                  "timestamp": "2026-04-10T12:00:00.014000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "ok",
@@ -804,10 +804,10 @@
                 {
                   "workflowId": "reminders",
                   "workflowName": "Reminders",
-                  "attemptId": "reminders:ae7b9fb6-d807-4c23-846c-87f880d130be:20260409T1200",
+                  "attemptId": "reminders:ae7b9fb6-d807-4c23-846c-87f880d130be:20260410T1200",
                   "jobId": "ae7b9fb6-d807-4c23-846c-87f880d130be",
                   "jobName": "Resumo Diário da To-Do List",
-                  "timestamp": "2026-04-09T12:00:00.009000+00:00",
+                  "timestamp": "2026-04-10T12:00:00.014000+00:00",
                   "eventType": "fallback_used",
                   "channel": "telegram",
                   "canonicalChannel": "whatsapp",
@@ -817,13 +817,13 @@
               ]
             },
             {
-              "attemptId": "reminders:02182f0c-4413-4374-a3fb-1a3f5651b6e7:20260409T1200",
+              "attemptId": "reminders:02182f0c-4413-4374-a3fb-1a3f5651b6e7:20260410T1200",
               "jobId": "02182f0c-4413-4374-a3fb-1a3f5651b6e7",
               "jobName": "Deadline Reminder Checker",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-04-09T12:00:21.082000+00:00",
-              "lastEventAt": "2026-04-09T12:00:21.082000+00:00",
+              "startedAt": "2026-04-10T12:00:21.694000+00:00",
+              "lastEventAt": "2026-04-10T12:00:21.694000+00:00",
               "channel": "whatsapp",
               "eventTypes": [
                 "triggered",
@@ -838,10 +838,10 @@
                 {
                   "workflowId": "reminders",
                   "workflowName": "Reminders",
-                  "attemptId": "reminders:02182f0c-4413-4374-a3fb-1a3f5651b6e7:20260409T1200",
+                  "attemptId": "reminders:02182f0c-4413-4374-a3fb-1a3f5651b6e7:20260410T1200",
                   "jobId": "02182f0c-4413-4374-a3fb-1a3f5651b6e7",
                   "jobName": "Deadline Reminder Checker",
-                  "timestamp": "2026-04-09T12:00:21.082000+00:00",
+                  "timestamp": "2026-04-10T12:00:21.694000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -849,10 +849,10 @@
                 {
                   "workflowId": "reminders",
                   "workflowName": "Reminders",
-                  "attemptId": "reminders:02182f0c-4413-4374-a3fb-1a3f5651b6e7:20260409T1200",
+                  "attemptId": "reminders:02182f0c-4413-4374-a3fb-1a3f5651b6e7:20260410T1200",
                   "jobId": "02182f0c-4413-4374-a3fb-1a3f5651b6e7",
                   "jobName": "Deadline Reminder Checker",
-                  "timestamp": "2026-04-09T12:00:21.082000+00:00",
+                  "timestamp": "2026-04-10T12:00:21.694000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "ok",
@@ -861,10 +861,10 @@
                 {
                   "workflowId": "reminders",
                   "workflowName": "Reminders",
-                  "attemptId": "reminders:02182f0c-4413-4374-a3fb-1a3f5651b6e7:20260409T1200",
+                  "attemptId": "reminders:02182f0c-4413-4374-a3fb-1a3f5651b6e7:20260410T1200",
                   "jobId": "02182f0c-4413-4374-a3fb-1a3f5651b6e7",
                   "jobName": "Deadline Reminder Checker",
-                  "timestamp": "2026-04-09T12:00:21.082000+00:00",
+                  "timestamp": "2026-04-10T12:00:21.694000+00:00",
                   "eventType": "delivery_ok",
                   "channel": "whatsapp",
                   "canonicalChannel": "whatsapp",
@@ -1600,7 +1600,7 @@
           "signals": {
             "eventCount": 2,
             "attemptCount": 1,
-            "lastEvent": "2026-04-10T11:50:27.749000+00:00",
+            "lastEvent": "2026-04-10T12:20:29.532000+00:00",
             "lastAttemptStatus": "healthy"
           },
           "history": {
@@ -1621,13 +1621,13 @@
           },
           "recentAttempts": [
             {
-              "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260410T1150",
+              "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260410T1220",
               "jobId": "b136a878-0ea8-43b1-8b07-e242454fe571",
               "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-04-10T11:50:27.749000+00:00",
-              "lastEventAt": "2026-04-10T11:50:27.749000+00:00",
+              "startedAt": "2026-04-10T12:20:29.532000+00:00",
+              "lastEventAt": "2026-04-10T12:20:29.532000+00:00",
               "channel": null,
               "eventTypes": [
                 "triggered",
@@ -1641,10 +1641,10 @@
                 {
                   "workflowId": "tracking_watchdog",
                   "workflowName": "Tracking Watchdog",
-                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260410T1150",
+                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260410T1220",
                   "jobId": "b136a878-0ea8-43b1-8b07-e242454fe571",
                   "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
-                  "timestamp": "2026-04-10T11:50:27.749000+00:00",
+                  "timestamp": "2026-04-10T12:20:29.532000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -1652,10 +1652,10 @@
                 {
                   "workflowId": "tracking_watchdog",
                   "workflowName": "Tracking Watchdog",
-                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260410T1150",
+                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260410T1220",
                   "jobId": "b136a878-0ea8-43b1-8b07-e242454fe571",
                   "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
-                  "timestamp": "2026-04-10T11:50:27.749000+00:00",
+                  "timestamp": "2026-04-10T12:20:29.532000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "ok",
@@ -1678,7 +1678,7 @@
           "signals": {
             "eventCount": 4,
             "attemptCount": 2,
-            "lastEvent": "2026-04-10T11:55:00.015000+00:00",
+            "lastEvent": "2026-04-10T12:25:00.008000+00:00",
             "lastAttemptStatus": "healthy"
           },
           "history": {
@@ -1699,13 +1699,13 @@
           },
           "recentAttempts": [
             {
-              "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260410T1130",
+              "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260410T1200",
               "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
               "jobName": "Mission Control - Build+Publish",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-04-10T11:30:00.009000+00:00",
-              "lastEventAt": "2026-04-10T11:30:00.009000+00:00",
+              "startedAt": "2026-04-10T12:00:50.993000+00:00",
+              "lastEventAt": "2026-04-10T12:00:50.993000+00:00",
               "channel": null,
               "eventTypes": [
                 "triggered",
@@ -1719,10 +1719,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260410T1130",
+                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260410T1200",
                   "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
                   "jobName": "Mission Control - Build+Publish",
-                  "timestamp": "2026-04-10T11:30:00.009000+00:00",
+                  "timestamp": "2026-04-10T12:00:50.993000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -1730,10 +1730,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260410T1130",
+                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260410T1200",
                   "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
                   "jobName": "Mission Control - Build+Publish",
-                  "timestamp": "2026-04-10T11:30:00.009000+00:00",
+                  "timestamp": "2026-04-10T12:00:50.993000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "ok",
@@ -1742,13 +1742,13 @@
               ]
             },
             {
-              "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260410T1155",
+              "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260410T1225",
               "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
               "jobName": "Mission Control - Control Runner",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-04-10T11:55:00.015000+00:00",
-              "lastEventAt": "2026-04-10T11:55:00.015000+00:00",
+              "startedAt": "2026-04-10T12:25:00.008000+00:00",
+              "lastEventAt": "2026-04-10T12:25:00.008000+00:00",
               "channel": null,
               "eventTypes": [
                 "triggered",
@@ -1762,10 +1762,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260410T1155",
+                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260410T1225",
                   "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
                   "jobName": "Mission Control - Control Runner",
-                  "timestamp": "2026-04-10T11:55:00.015000+00:00",
+                  "timestamp": "2026-04-10T12:25:00.008000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -1773,10 +1773,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260410T1155",
+                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260410T1225",
                   "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
                   "jobName": "Mission Control - Control Runner",
-                  "timestamp": "2026-04-10T11:55:00.015000+00:00",
+                  "timestamp": "2026-04-10T12:25:00.008000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "ok",
@@ -1993,42 +1993,6 @@
           ],
           "reasons": [
             "attempt sem evento terminal de entrega"
-          ]
-        },
-        {
-          "workflowId": "reminders",
-          "workflowName": "Reminders",
-          "attemptId": "reminders:ae7b9fb6-d807-4c23-846c-87f880d130be:20260409T1200",
-          "status": "degraded",
-          "startedAt": "2026-04-09T12:00:00.009000+00:00",
-          "lastEventAt": "2026-04-09T12:00:00.009000+00:00",
-          "jobName": "Resumo Diário da To-Do List",
-          "channel": "telegram",
-          "eventTypes": [
-            "triggered",
-            "ran",
-            "fallback_used"
-          ],
-          "reasons": [
-            "fallback usado via telegram"
-          ]
-        },
-        {
-          "workflowId": "reminders",
-          "workflowName": "Reminders",
-          "attemptId": "reminders:02182f0c-4413-4374-a3fb-1a3f5651b6e7:20260409T1200",
-          "status": "healthy",
-          "startedAt": "2026-04-09T12:00:21.082000+00:00",
-          "lastEventAt": "2026-04-09T12:00:21.082000+00:00",
-          "jobName": "Deadline Reminder Checker",
-          "channel": "whatsapp",
-          "eventTypes": [
-            "triggered",
-            "ran",
-            "delivery_ok"
-          ],
-          "reasons": [
-            "delivery_ok no canal canônico"
           ]
         },
         {
@@ -2280,12 +2244,48 @@
           ]
         },
         {
+          "workflowId": "reminders",
+          "workflowName": "Reminders",
+          "attemptId": "reminders:ae7b9fb6-d807-4c23-846c-87f880d130be:20260410T1200",
+          "status": "degraded",
+          "startedAt": "2026-04-10T12:00:00.014000+00:00",
+          "lastEventAt": "2026-04-10T12:00:00.014000+00:00",
+          "jobName": "Resumo Diário da To-Do List",
+          "channel": "telegram",
+          "eventTypes": [
+            "triggered",
+            "ran",
+            "fallback_used"
+          ],
+          "reasons": [
+            "fallback usado via telegram"
+          ]
+        },
+        {
+          "workflowId": "reminders",
+          "workflowName": "Reminders",
+          "attemptId": "reminders:02182f0c-4413-4374-a3fb-1a3f5651b6e7:20260410T1200",
+          "status": "healthy",
+          "startedAt": "2026-04-10T12:00:21.694000+00:00",
+          "lastEventAt": "2026-04-10T12:00:21.694000+00:00",
+          "jobName": "Deadline Reminder Checker",
+          "channel": "whatsapp",
+          "eventTypes": [
+            "triggered",
+            "ran",
+            "delivery_ok"
+          ],
+          "reasons": [
+            "delivery_ok no canal canônico"
+          ]
+        },
+        {
           "workflowId": "mission_control",
           "workflowName": "Mission Control",
-          "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260410T1130",
+          "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260410T1200",
           "status": "healthy",
-          "startedAt": "2026-04-10T11:30:00.009000+00:00",
-          "lastEventAt": "2026-04-10T11:30:00.009000+00:00",
+          "startedAt": "2026-04-10T12:00:50.993000+00:00",
+          "lastEventAt": "2026-04-10T12:00:50.993000+00:00",
           "jobName": "Mission Control - Build+Publish",
           "channel": null,
           "eventTypes": [
@@ -2299,10 +2299,10 @@
         {
           "workflowId": "tracking_watchdog",
           "workflowName": "Tracking Watchdog",
-          "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260410T1150",
+          "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260410T1220",
           "status": "healthy",
-          "startedAt": "2026-04-10T11:50:27.749000+00:00",
-          "lastEventAt": "2026-04-10T11:50:27.749000+00:00",
+          "startedAt": "2026-04-10T12:20:29.532000+00:00",
+          "lastEventAt": "2026-04-10T12:20:29.532000+00:00",
           "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
           "channel": null,
           "eventTypes": [
@@ -2316,10 +2316,10 @@
         {
           "workflowId": "mission_control",
           "workflowName": "Mission Control",
-          "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260410T1155",
+          "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260410T1225",
           "status": "healthy",
-          "startedAt": "2026-04-10T11:55:00.015000+00:00",
-          "lastEventAt": "2026-04-10T11:55:00.015000+00:00",
+          "startedAt": "2026-04-10T12:25:00.008000+00:00",
+          "lastEventAt": "2026-04-10T12:25:00.008000+00:00",
           "jobName": "Mission Control - Control Runner",
           "channel": null,
           "eventTypes": [
@@ -2351,46 +2351,18 @@
       },
       "jobs": [
         {
-          "id": "02182f0c-4413-4374-a3fb-1a3f5651b6e7",
-          "name": "Deadline Reminder Checker",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-04-09T12:00:21.082000+00:00",
-          "nextRun": "2026-04-10T12:00:00+00:00",
-          "schedule": "0 9 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "whatsapp"
-        },
-        {
           "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
           "name": "Mission Control - Build+Publish",
           "status": "ok",
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-04-10T11:30:00.009000+00:00",
-          "nextRun": "2026-04-10T12:00:00+00:00",
+          "lastRun": "2026-04-10T12:00:50.993000+00:00",
+          "nextRun": "2026-04-10T12:30:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": null
-        },
-        {
-          "id": "ae7b9fb6-d807-4c23-846c-87f880d130be",
-          "name": "Resumo Diário da To-Do List",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-04-09T12:00:00.009000+00:00",
-          "nextRun": "2026-04-10T12:00:00+00:00",
-          "schedule": "0 9 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
         },
         {
           "id": "b136a878-0ea8-43b1-8b07-e242454fe571",
@@ -2399,8 +2371,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-04-10T11:50:27.749000+00:00",
-          "nextRun": "2026-04-10T12:00:00+00:00",
+          "lastRun": "2026-04-10T12:20:29.532000+00:00",
+          "nextRun": "2026-04-10T12:30:00+00:00",
           "schedule": "*/10 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -2413,8 +2385,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-04-10T11:55:00.015000+00:00",
-          "nextRun": "2026-04-10T12:00:00+00:00",
+          "lastRun": "2026-04-10T12:25:00.008000+00:00",
+          "nextRun": "2026-04-10T12:30:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -2685,6 +2657,34 @@
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "whatsapp"
+        },
+        {
+          "id": "02182f0c-4413-4374-a3fb-1a3f5651b6e7",
+          "name": "Deadline Reminder Checker",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-04-10T12:00:21.694000+00:00",
+          "nextRun": "2026-04-11T12:00:00+00:00",
+          "schedule": "0 9 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "whatsapp"
+        },
+        {
+          "id": "ae7b9fb6-d807-4c23-846c-87f880d130be",
+          "name": "Resumo Diário da To-Do List",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-04-10T12:00:00.014000+00:00",
+          "nextRun": "2026-04-11T12:00:00+00:00",
+          "schedule": "0 9 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
         },
         {
           "id": "555d214e-c8ca-48ef-a091-d41efcba712d",
@@ -3163,24 +3163,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-10T12:01:06.429539+00:00"
+      "lastChecked": "2026-04-10T12:30:11.233340+00:00"
     }
   ],
   "crons": [
-    {
-      "id": "02182f0c-4413-4374-a3fb-1a3f5651b6e7",
-      "name": "Deadline Reminder Checker",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-04-09T12:00:21.082000+00:00",
-      "nextRun": "2026-04-10T12:00:00+00:00",
-      "schedule": "0 9 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "whatsapp"
-    },
     {
       "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "name": "Mission Control - Build+Publish",
@@ -3188,26 +3174,12 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-04-10T11:30:00.009000+00:00",
-      "nextRun": "2026-04-10T12:00:00+00:00",
+      "lastRun": "2026-04-10T12:00:50.993000+00:00",
+      "nextRun": "2026-04-10T12:30:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": null
-    },
-    {
-      "id": "ae7b9fb6-d807-4c23-846c-87f880d130be",
-      "name": "Resumo Diário da To-Do List",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-04-09T12:00:00.009000+00:00",
-      "nextRun": "2026-04-10T12:00:00+00:00",
-      "schedule": "0 9 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
     },
     {
       "id": "b136a878-0ea8-43b1-8b07-e242454fe571",
@@ -3216,8 +3188,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-04-10T11:50:27.749000+00:00",
-      "nextRun": "2026-04-10T12:00:00+00:00",
+      "lastRun": "2026-04-10T12:20:29.532000+00:00",
+      "nextRun": "2026-04-10T12:30:00+00:00",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -3230,8 +3202,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-04-10T11:55:00.015000+00:00",
-      "nextRun": "2026-04-10T12:00:00+00:00",
+      "lastRun": "2026-04-10T12:25:00.008000+00:00",
+      "nextRun": "2026-04-10T12:30:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -3504,6 +3476,34 @@
       "channel": "whatsapp"
     },
     {
+      "id": "02182f0c-4413-4374-a3fb-1a3f5651b6e7",
+      "name": "Deadline Reminder Checker",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-04-10T12:00:21.694000+00:00",
+      "nextRun": "2026-04-11T12:00:00+00:00",
+      "schedule": "0 9 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "whatsapp"
+    },
+    {
+      "id": "ae7b9fb6-d807-4c23-846c-87f880d130be",
+      "name": "Resumo Diário da To-Do List",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-04-10T12:00:00.014000+00:00",
+      "nextRun": "2026-04-11T12:00:00+00:00",
+      "schedule": "0 9 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
+    },
+    {
       "id": "555d214e-c8ca-48ef-a091-d41efcba712d",
       "name": "Aspirar Cozinha",
       "status": "ok",
@@ -3644,5 +3644,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-04-10T12:01:06.429539+00:00"
+  "lastUpdated": "2026-04-10T12:30:11.233340+00:00"
 }
