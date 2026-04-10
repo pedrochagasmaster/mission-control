@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-10T20:30:34.102674+00:00",
+  "lastUpdated": "2026-04-10T21:00:34.684059+00:00",
   "actionRequired": [
     {
       "title": "1 alerta(s) crítico(s) no security audit",
@@ -21,27 +21,32 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-10T20:30:24.307000+00:00"
+      "startedAt": "2026-04-10T21:00:28.516000+00:00"
+    },
+    {
+      "task": "agent:main:cron:e3ac374c-a524-4465-a872-f682f01a979d",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-10T21:00:00.025000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-10T20:55:00.024000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-10T20:50:26.480000+00:00"
+    },
+    {
+      "task": "agent:main:isolated",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-10T20:32:29.933000+00:00"
     },
     {
       "task": "agent:main:cron:a2a10215-b00a-45e4-8ed4-28cb60e442a6",
       "model": "gpt-5-mini",
       "startedAt": "2026-04-10T20:30:00.029000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-10T20:25:00.035000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-10T20:20:24.807000+00:00"
-    },
-    {
-      "task": "agent:main:isolated",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-10T19:32:29.720000+00:00"
     }
   ],
   "products": [
@@ -49,22 +54,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-10T20:30:34.102674+00:00"
+      "lastChecked": "2026-04-10T21:00:34.684059+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-10T20:00:00.019000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Blitz da Ordem (17:30)",
-      "schedule": "30 17 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-09T20:30:00.009000+00:00",
+      "lastRun": "2026-04-10T20:30:17.988000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -72,15 +69,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-10T20:20:24.790000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-10T20:25:00.014000+00:00",
+      "lastRun": "2026-04-10T20:50:26.462000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -89,6 +78,14 @@
       "name": "Rotina da Tarde",
       "schedule": "0 18 * * * (America/Sao_Paulo)",
       "lastRun": "2026-04-09T21:00:00.005000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-10T20:55:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -246,6 +243,14 @@
       "lastError": null
     },
     {
+      "name": "Blitz da Ordem (17:30)",
+      "schedule": "30 17 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-10T20:30:00.014000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Instagram Knowledge Ingest",
       "schedule": "0 5 * * 0 (America/Sao_Paulo)",
       "lastRun": "2026-04-05T08:00:00.016000+00:00",
@@ -360,6 +365,11 @@
     {
       "time": "2026-04-10T17:30:10-03:00",
       "event": "Cron disparou: Blitz da Ordem (17:30) (a2a10215-b00a-45e4-8ed4-28cb60e442a6)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-04-10T18:00:16-03:00",
+      "event": "Cron disparou: Rotina da Tarde (e3ac374c-a524-4465-a872-f682f01a979d)",
       "channel": "cron"
     }
   ]
