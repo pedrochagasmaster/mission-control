@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-11T15:00:28.631116+00:00",
+  "lastUpdated": "2026-04-11T15:30:16.754852+00:00",
   "actionRequired": [
     {
       "title": "1 alerta(s) crítico(s) no security audit",
@@ -16,22 +16,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-11T15:00:23.318000+00:00"
+      "startedAt": "2026-04-11T15:30:04.131000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-11T15:25:00.012000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-11T15:20:21.586000+00:00"
     },
     {
       "task": "agent:main:cron:42be764c-f915-4669-8f94-878e23362bf8",
       "model": "gpt-5-mini",
       "startedAt": "2026-04-11T15:00:00.012000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-11T14:55:00.010000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-11T14:50:20.736000+00:00"
     },
     {
       "task": "agent:main:cron:ff7487f2-fad4-40ab-bd83-84219ecec634",
@@ -59,22 +59,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-11T15:00:28.631116+00:00"
+      "lastChecked": "2026-04-11T15:30:16.754852+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Ração Almoço",
-      "schedule": "0 12 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-10T15:00:00.013000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-11T14:30:00.007000+00:00",
+      "lastRun": "2026-04-11T15:00:19.433000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -82,7 +74,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-11T14:50:20.734000+00:00",
+      "lastRun": "2026-04-11T15:20:21.583000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -90,7 +82,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-11T14:55:00.007000+00:00",
+      "lastRun": "2026-04-11T15:25:00.008000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -251,6 +243,14 @@
       "name": "Pulso Familiar - Meio-dia",
       "schedule": "30 11 * * * (America/Sao_Paulo)",
       "lastRun": "2026-04-11T14:30:43.951000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Ração Almoço",
+      "schedule": "0 12 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-11T15:00:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
