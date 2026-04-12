@@ -1,57 +1,52 @@
 {
-  "lastUpdated": "2026-04-12T11:30:08.634684+00:00",
+  "lastUpdated": "2026-04-12T12:00:40.684143+00:00",
   "actionRequired": [
     {
       "title": "1 alerta(s) crítico(s) no security audit",
       "url": null,
       "priority": "high"
-    },
-    {
-      "title": "Análise de Conversas - Manhã (2 erros)",
-      "url": null,
-      "priority": "medium"
     }
   ],
   "activeNow": [
+    {
+      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-12T12:00:36.002000+00:00"
+    },
+    {
+      "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-12T12:00:16.440000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ae7b9fb6-d807-4c23-846c-87f880d130be",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-12T12:00:00.005000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-12T11:55:00.010000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-12T11:50:21.837000+00:00"
+    },
+    {
+      "task": "agent:main:cron:f1830563-b029-4bb2-80fc-9ffe54108a08",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-12T11:32:18.018000+00:00"
+    },
     {
       "task": "agent:main:whatsapp:direct:+5519997830810",
       "model": "gpt-5.4",
       "startedAt": "2026-04-12T11:30:08.535000+00:00"
     },
     {
-      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-12T11:30:03.719000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-12T11:25:00.008000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-12T11:20:22.039000+00:00"
-    },
-    {
       "task": "agent:main:cron:0ba1cb64-5259-46bf-beb5-e58c02ec4215",
       "model": "gpt-5-mini",
       "startedAt": "2026-04-12T11:15:00.005000+00:00"
-    },
-    {
-      "task": "agent:main:isolated",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-12T10:35:44.983000+00:00"
-    },
-    {
-      "task": "agent:main:cron:4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-12T10:35:00.013000+00:00"
-    },
-    {
-      "task": "agent:main:cron:06b5aaae-b25a-4005-a78c-badad02f216b",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-12T10:20:00.012000+00:00"
     }
   ],
   "products": [
@@ -59,42 +54,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-12T11:30:08.634684+00:00"
+      "lastChecked": "2026-04-12T12:00:40.684143+00:00"
     }
   ],
   "crons": [
-    {
-      "name": "Mission Control - Build+Publish",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-12T11:00:00.011000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-12T11:20:22.037000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-12T11:25:00.004000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Análise de Conversas - Manhã",
-      "schedule": "30 8 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-11T11:31:04.216000+00:00",
-      "status": "error",
-      "errors": 2,
-      "lastError": null
-    },
     {
       "name": "Deadline Reminder Checker",
       "schedule": "0 9 * * * (America/Sao_Paulo)",
@@ -104,9 +67,33 @@
       "lastError": null
     },
     {
+      "name": "Mission Control - Build+Publish",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-12T11:30:00.093000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Resumo Diário da To-Do List",
       "schedule": "0 9 * * * (America/Sao_Paulo)",
       "lastRun": "2026-04-11T12:00:00.007000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-12T11:50:21.836000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-12T11:55:00.008000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -267,6 +254,14 @@
       "name": "Diário da Família - Watchdog (retry 08:15)",
       "schedule": "15 8 * * * (America/Sao_Paulo)",
       "lastRun": "2026-04-12T11:15:00.003000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Análise de Conversas - Manhã",
+      "schedule": "30 8 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-12T11:30:42.939000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
