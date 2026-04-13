@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-13T14:30:26.873878+00:00",
+  "lastUpdated": "2026-04-13T15:00:34.287767+00:00",
   "actionRequired": [
     {
       "title": "1 alerta(s) crítico(s) no security audit",
@@ -11,22 +11,32 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-13T14:30:05.247000+00:00"
+      "startedAt": "2026-04-13T15:00:25.592000+00:00"
+    },
+    {
+      "task": "agent:main:cron:42be764c-f915-4669-8f94-878e23362bf8",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-13T15:00:00.019000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-13T14:25:00.018000+00:00"
+      "startedAt": "2026-04-13T14:55:00.025000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-13T14:20:24.120000+00:00"
+      "startedAt": "2026-04-13T14:50:24.036000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ff7487f2-fad4-40ab-bd83-84219ecec634",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-13T14:34:08.224000+00:00"
     },
     {
       "task": "agent:main:isolated",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-13T13:32:25.143000+00:00"
+      "startedAt": "2026-04-13T14:32:44.843000+00:00"
     },
     {
       "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
@@ -37,16 +47,6 @@
       "task": "agent:main:cron:8e6d54f6-5278-4975-94dc-578d36397408",
       "model": "gpt-5-mini",
       "startedAt": "2026-04-13T13:00:17.591000+00:00"
-    },
-    {
-      "task": "agent:main:cron:555d214e-c8ca-48ef-a091-d41efcba712d",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-13T13:00:00.025000+00:00"
-    },
-    {
-      "task": "agent:main:whatsapp:group:120363422516892829@g.us",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-13T12:39:12.951000+00:00"
     }
   ],
   "products": [
@@ -54,14 +54,22 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-13T14:30:26.873878+00:00"
+      "lastChecked": "2026-04-13T15:00:34.287767+00:00"
     }
   ],
   "crons": [
     {
+      "name": "Ração Almoço",
+      "schedule": "0 12 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-12T15:00:00.003000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-13T14:00:00.016000+00:00",
+      "lastRun": "2026-04-13T14:30:00.011000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -69,7 +77,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-13T14:20:24.109000+00:00",
+      "lastRun": "2026-04-13T14:50:24.028000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -77,23 +85,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-13T14:25:00.010000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Pulso Familiar - Meio-dia",
-      "schedule": "30 11 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-12T14:30:40.921000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Ração Almoço",
-      "schedule": "0 12 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-12T15:00:00.003000+00:00",
+      "lastRun": "2026-04-13T14:55:00.011000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -243,6 +235,14 @@
       "lastError": null
     },
     {
+      "name": "Pulso Familiar - Meio-dia",
+      "schedule": "30 11 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-13T14:31:08.846000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Pós-Almoço: Zero Pia",
       "schedule": "30 13 * * 2-7 (America/Sao_Paulo)",
       "lastRun": "2026-04-12T16:30:00.004000+00:00",
@@ -355,6 +355,11 @@
     {
       "time": "2026-04-13T10:30:33-03:00",
       "event": "Cron disparou: Rotina da Manhã (Completa) (93c7796d-f82d-4381-a925-f1a0a22bf25b)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-04-13T12:00:14-03:00",
+      "event": "Cron disparou: Ração Almoço (42be764c-f915-4669-8f94-878e23362bf8)",
       "channel": "cron"
     }
   ]
