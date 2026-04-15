@@ -2,10 +2,10 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-20.1",
-    "generatedAt": "2026-04-15T15:01:22.859255+00:00"
+    "generatedAt": "2026-04-15T15:30:23.860042+00:00"
   },
   "overview": {
-    "healthScore": 23,
+    "healthScore": 27,
     "criticalAlerts": 1,
     "pendingControls": 0,
     "dataFreshnessSec": 0
@@ -33,7 +33,28 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-15T15:01:02.939000+00:00",
+      "startedAt": "2026-04-15T15:30:03.888000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-15T15:25:00.008000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:whatsapp:direct:+5519997830810",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-15T15:22:37.411000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-15T15:20:18.948000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -41,27 +62,6 @@
       "task": "agent:main:cron:42be764c-f915-4669-8f94-878e23362bf8",
       "model": "gpt-5-mini",
       "startedAt": "2026-04-15T15:00:00.012000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-15T14:55:00.015000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-15T14:50:20.203000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:whatsapp:direct:+5519997830810",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-15T14:49:03.791000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -303,9 +303,9 @@
     {
       "id": "digest",
       "name": "Diário da Família",
-      "status": "warning",
+      "status": "ok",
       "kpis": {
-        "sentToday": false,
+        "sentToday": true,
         "draftReady": true,
         "errorJobs": 0,
         "pipelineStages": 3
@@ -356,7 +356,7 @@
       ],
       "draft": {
         "date": "2026-04-15",
-        "tema": "Sinais de fome e calma na mamada"
+        "tema": "Digest auto-finalizado"
       },
       "alerts": [],
       "actions": [
@@ -366,8 +366,8 @@
       "source": "/home/pedro/.openclaw/workspace/memory/daily_digest_draft.json",
       "trend7d": {
         "metric": "sentToday",
-        "delta": -1,
-        "direction": "down"
+        "delta": 0,
+        "direction": "flat"
       }
     },
     {
@@ -1312,18 +1312,57 @@
               "jobName": "Ração Almoço",
               "status": "degraded",
               "confidence": 82,
-              "startedAt": "2026-04-15T15:00:52Z",
+              "startedAt": "2026-04-15T15:00:00.009000+00:00",
               "lastEventAt": "2026-04-15T15:00:52Z",
-              "channel": null,
+              "channel": "telegram",
               "eventTypes": [
+                "triggered",
+                "ran",
+                "fallback_used",
                 "triggered",
                 "ran"
               ],
-              "eventCount": 2,
+              "eventCount": 5,
               "reasons": [
-                "attempt sem evento terminal de entrega"
+                "fallback usado via telegram"
               ],
               "events": [
+                {
+                  "workflowId": "routines",
+                  "workflowName": "Rotinas",
+                  "attemptId": "routines:42be764c-f915-4669-8f94-878e23362bf8:20260415T1500",
+                  "jobId": "42be764c-f915-4669-8f94-878e23362bf8",
+                  "jobName": "Ração Almoço",
+                  "timestamp": "2026-04-15T15:00:00.009000+00:00",
+                  "eventType": "triggered",
+                  "source": "cron-state",
+                  "inferred": true
+                },
+                {
+                  "workflowId": "routines",
+                  "workflowName": "Rotinas",
+                  "attemptId": "routines:42be764c-f915-4669-8f94-878e23362bf8:20260415T1500",
+                  "jobId": "42be764c-f915-4669-8f94-878e23362bf8",
+                  "jobName": "Ração Almoço",
+                  "timestamp": "2026-04-15T15:00:00.009000+00:00",
+                  "eventType": "ran",
+                  "source": "cron-state",
+                  "runStatus": "ok",
+                  "inferred": true
+                },
+                {
+                  "workflowId": "routines",
+                  "workflowName": "Rotinas",
+                  "attemptId": "routines:42be764c-f915-4669-8f94-878e23362bf8:20260415T1500",
+                  "jobId": "42be764c-f915-4669-8f94-878e23362bf8",
+                  "jobName": "Ração Almoço",
+                  "timestamp": "2026-04-15T15:00:00.009000+00:00",
+                  "eventType": "fallback_used",
+                  "channel": "telegram",
+                  "canonicalChannel": "whatsapp",
+                  "deliveryStatus": "delivered",
+                  "source": "cron-state"
+                },
                 {
                   "workflowId": "routines",
                   "workflowName": "Rotinas",
@@ -1350,7 +1389,7 @@
             }
           ],
           "reasons": [
-            "attempt sem evento terminal de entrega"
+            "fallback usado via telegram"
           ]
         },
         {
@@ -1505,7 +1544,7 @@
           "signals": {
             "eventCount": 2,
             "attemptCount": 1,
-            "lastEvent": "2026-04-15T14:50:20.202000+00:00",
+            "lastEvent": "2026-04-15T15:20:18.947000+00:00",
             "lastAttemptStatus": "healthy"
           },
           "history": {
@@ -1526,13 +1565,13 @@
           },
           "recentAttempts": [
             {
-              "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260415T1450",
+              "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260415T1520",
               "jobId": "b136a878-0ea8-43b1-8b07-e242454fe571",
               "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-04-15T14:50:20.202000+00:00",
-              "lastEventAt": "2026-04-15T14:50:20.202000+00:00",
+              "startedAt": "2026-04-15T15:20:18.947000+00:00",
+              "lastEventAt": "2026-04-15T15:20:18.947000+00:00",
               "channel": null,
               "eventTypes": [
                 "triggered",
@@ -1546,10 +1585,10 @@
                 {
                   "workflowId": "tracking_watchdog",
                   "workflowName": "Tracking Watchdog",
-                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260415T1450",
+                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260415T1520",
                   "jobId": "b136a878-0ea8-43b1-8b07-e242454fe571",
                   "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
-                  "timestamp": "2026-04-15T14:50:20.202000+00:00",
+                  "timestamp": "2026-04-15T15:20:18.947000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -1557,10 +1596,10 @@
                 {
                   "workflowId": "tracking_watchdog",
                   "workflowName": "Tracking Watchdog",
-                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260415T1450",
+                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260415T1520",
                   "jobId": "b136a878-0ea8-43b1-8b07-e242454fe571",
                   "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
-                  "timestamp": "2026-04-15T14:50:20.202000+00:00",
+                  "timestamp": "2026-04-15T15:20:18.947000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "ok",
@@ -1583,7 +1622,7 @@
           "signals": {
             "eventCount": 4,
             "attemptCount": 2,
-            "lastEvent": "2026-04-15T14:55:00.012000+00:00",
+            "lastEvent": "2026-04-15T15:25:00.006000+00:00",
             "lastAttemptStatus": "healthy"
           },
           "history": {
@@ -1604,13 +1643,13 @@
           },
           "recentAttempts": [
             {
-              "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260415T1430",
+              "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260415T1500",
               "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
               "jobName": "Mission Control - Build+Publish",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-04-15T14:30:00.006000+00:00",
-              "lastEventAt": "2026-04-15T14:30:00.006000+00:00",
+              "startedAt": "2026-04-15T15:00:59.518000+00:00",
+              "lastEventAt": "2026-04-15T15:00:59.518000+00:00",
               "channel": null,
               "eventTypes": [
                 "triggered",
@@ -1624,10 +1663,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260415T1430",
+                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260415T1500",
                   "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
                   "jobName": "Mission Control - Build+Publish",
-                  "timestamp": "2026-04-15T14:30:00.006000+00:00",
+                  "timestamp": "2026-04-15T15:00:59.518000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -1635,10 +1674,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260415T1430",
+                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260415T1500",
                   "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
                   "jobName": "Mission Control - Build+Publish",
-                  "timestamp": "2026-04-15T14:30:00.006000+00:00",
+                  "timestamp": "2026-04-15T15:00:59.518000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "ok",
@@ -1647,13 +1686,13 @@
               ]
             },
             {
-              "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260415T1455",
+              "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260415T1525",
               "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
               "jobName": "Mission Control - Control Runner",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-04-15T14:55:00.012000+00:00",
-              "lastEventAt": "2026-04-15T14:55:00.012000+00:00",
+              "startedAt": "2026-04-15T15:25:00.006000+00:00",
+              "lastEventAt": "2026-04-15T15:25:00.006000+00:00",
               "channel": null,
               "eventTypes": [
                 "triggered",
@@ -1667,10 +1706,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260415T1455",
+                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260415T1525",
                   "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
                   "jobName": "Mission Control - Control Runner",
-                  "timestamp": "2026-04-15T14:55:00.012000+00:00",
+                  "timestamp": "2026-04-15T15:25:00.006000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -1678,10 +1717,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260415T1455",
+                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260415T1525",
                   "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
                   "jobName": "Mission Control - Control Runner",
-                  "timestamp": "2026-04-15T14:55:00.012000+00:00",
+                  "timestamp": "2026-04-15T15:25:00.006000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "ok",
@@ -1888,19 +1927,16 @@
           "workflowName": "Rotinas",
           "attemptId": "routines:42be764c-f915-4669-8f94-878e23362bf8:20260414T1500",
           "status": "degraded",
-          "startedAt": "2026-04-14T15:00:00.022000+00:00",
+          "startedAt": "2026-04-14T15:00:19Z",
           "lastEventAt": "2026-04-14T15:00:19Z",
           "jobName": "Ração Almoço",
-          "channel": "telegram",
+          "channel": null,
           "eventTypes": [
-            "triggered",
-            "ran",
-            "fallback_used",
             "triggered",
             "ran"
           ],
           "reasons": [
-            "fallback usado via telegram"
+            "attempt sem evento terminal de entrega"
           ]
         },
         {
@@ -2150,23 +2186,6 @@
           ]
         },
         {
-          "workflowId": "mission_control",
-          "workflowName": "Mission Control",
-          "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260415T1430",
-          "status": "healthy",
-          "startedAt": "2026-04-15T14:30:00.006000+00:00",
-          "lastEventAt": "2026-04-15T14:30:00.006000+00:00",
-          "jobName": "Mission Control - Build+Publish",
-          "channel": null,
-          "eventTypes": [
-            "triggered",
-            "ran"
-          ],
-          "reasons": [
-            "workflow interno sem requisito de entrega"
-          ]
-        },
-        {
           "workflowId": "proactive_group",
           "workflowName": "Proactive Group",
           "attemptId": "proactive_group:ff7487f2-fad4-40ab-bd83-84219ecec634:20260415T1431",
@@ -2184,12 +2203,49 @@
           ]
         },
         {
+          "workflowId": "routines",
+          "workflowName": "Rotinas",
+          "attemptId": "routines:42be764c-f915-4669-8f94-878e23362bf8:20260415T1500",
+          "status": "degraded",
+          "startedAt": "2026-04-15T15:00:00.009000+00:00",
+          "lastEventAt": "2026-04-15T15:00:52Z",
+          "jobName": "Ração Almoço",
+          "channel": "telegram",
+          "eventTypes": [
+            "triggered",
+            "ran",
+            "fallback_used",
+            "triggered",
+            "ran"
+          ],
+          "reasons": [
+            "fallback usado via telegram"
+          ]
+        },
+        {
+          "workflowId": "mission_control",
+          "workflowName": "Mission Control",
+          "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260415T1500",
+          "status": "healthy",
+          "startedAt": "2026-04-15T15:00:59.518000+00:00",
+          "lastEventAt": "2026-04-15T15:00:59.518000+00:00",
+          "jobName": "Mission Control - Build+Publish",
+          "channel": null,
+          "eventTypes": [
+            "triggered",
+            "ran"
+          ],
+          "reasons": [
+            "workflow interno sem requisito de entrega"
+          ]
+        },
+        {
           "workflowId": "tracking_watchdog",
           "workflowName": "Tracking Watchdog",
-          "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260415T1450",
+          "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260415T1520",
           "status": "healthy",
-          "startedAt": "2026-04-15T14:50:20.202000+00:00",
-          "lastEventAt": "2026-04-15T14:50:20.202000+00:00",
+          "startedAt": "2026-04-15T15:20:18.947000+00:00",
+          "lastEventAt": "2026-04-15T15:20:18.947000+00:00",
           "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
           "channel": null,
           "eventTypes": [
@@ -2203,10 +2259,10 @@
         {
           "workflowId": "mission_control",
           "workflowName": "Mission Control",
-          "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260415T1455",
+          "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260415T1525",
           "status": "healthy",
-          "startedAt": "2026-04-15T14:55:00.012000+00:00",
-          "lastEventAt": "2026-04-15T14:55:00.012000+00:00",
+          "startedAt": "2026-04-15T15:25:00.006000+00:00",
+          "lastEventAt": "2026-04-15T15:25:00.006000+00:00",
           "jobName": "Mission Control - Control Runner",
           "channel": null,
           "eventTypes": [
@@ -2215,23 +2271,6 @@
           ],
           "reasons": [
             "workflow interno sem requisito de entrega"
-          ]
-        },
-        {
-          "workflowId": "routines",
-          "workflowName": "Rotinas",
-          "attemptId": "routines:42be764c-f915-4669-8f94-878e23362bf8:20260415T1500",
-          "status": "degraded",
-          "startedAt": "2026-04-15T15:00:52Z",
-          "lastEventAt": "2026-04-15T15:00:52Z",
-          "jobName": "Ração Almoço",
-          "channel": null,
-          "eventTypes": [
-            "triggered",
-            "ran"
-          ],
-          "reasons": [
-            "attempt sem evento terminal de entrega"
           ]
         }
       ],
@@ -2255,28 +2294,14 @@
       },
       "jobs": [
         {
-          "id": "42be764c-f915-4669-8f94-878e23362bf8",
-          "name": "Ração Almoço",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-04-14T15:00:00.022000+00:00",
-          "nextRun": "2026-04-15T15:00:00+00:00",
-          "schedule": "0 12 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
-        },
-        {
           "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
           "name": "Mission Control - Build+Publish",
           "status": "ok",
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-04-15T14:30:00.006000+00:00",
-          "nextRun": "2026-04-15T15:00:00+00:00",
+          "lastRun": "2026-04-15T15:00:59.518000+00:00",
+          "nextRun": "2026-04-15T15:30:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -2289,8 +2314,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-04-15T14:50:20.202000+00:00",
-          "nextRun": "2026-04-15T15:00:00+00:00",
+          "lastRun": "2026-04-15T15:20:18.947000+00:00",
+          "nextRun": "2026-04-15T15:30:00+00:00",
           "schedule": "*/10 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -2303,8 +2328,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-04-15T14:55:00.012000+00:00",
-          "nextRun": "2026-04-15T15:00:00+00:00",
+          "lastRun": "2026-04-15T15:25:00.006000+00:00",
+          "nextRun": "2026-04-15T15:30:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -2589,6 +2614,20 @@
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "whatsapp"
+        },
+        {
+          "id": "42be764c-f915-4669-8f94-878e23362bf8",
+          "name": "Ração Almoço",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-04-15T15:00:00.009000+00:00",
+          "nextRun": "2026-04-16T15:00:00+00:00",
+          "schedule": "0 12 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
         },
         {
           "id": "eb796b6f-bb0b-4b92-963c-18696cf45e0d",
@@ -3097,24 +3136,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-15T15:01:22.859255+00:00"
+      "lastChecked": "2026-04-15T15:30:23.860042+00:00"
     }
   ],
   "crons": [
-    {
-      "id": "42be764c-f915-4669-8f94-878e23362bf8",
-      "name": "Ração Almoço",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-04-14T15:00:00.022000+00:00",
-      "nextRun": "2026-04-15T15:00:00+00:00",
-      "schedule": "0 12 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
-    },
     {
       "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "name": "Mission Control - Build+Publish",
@@ -3122,8 +3147,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-04-15T14:30:00.006000+00:00",
-      "nextRun": "2026-04-15T15:00:00+00:00",
+      "lastRun": "2026-04-15T15:00:59.518000+00:00",
+      "nextRun": "2026-04-15T15:30:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -3136,8 +3161,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-04-15T14:50:20.202000+00:00",
-      "nextRun": "2026-04-15T15:00:00+00:00",
+      "lastRun": "2026-04-15T15:20:18.947000+00:00",
+      "nextRun": "2026-04-15T15:30:00+00:00",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -3150,8 +3175,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-04-15T14:55:00.012000+00:00",
-      "nextRun": "2026-04-15T15:00:00+00:00",
+      "lastRun": "2026-04-15T15:25:00.006000+00:00",
+      "nextRun": "2026-04-15T15:30:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -3438,6 +3463,20 @@
       "channel": "whatsapp"
     },
     {
+      "id": "42be764c-f915-4669-8f94-878e23362bf8",
+      "name": "Ração Almoço",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-04-15T15:00:00.009000+00:00",
+      "nextRun": "2026-04-16T15:00:00+00:00",
+      "schedule": "0 12 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
+    },
+    {
       "id": "eb796b6f-bb0b-4b92-963c-18696cf45e0d",
       "name": "Lixo Véspera (22h)",
       "status": "ok",
@@ -3578,5 +3617,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-04-15T15:01:22.859255+00:00"
+  "lastUpdated": "2026-04-15T15:30:23.860042+00:00"
 }
