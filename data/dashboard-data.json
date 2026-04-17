@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-17T08:30:10.506179+00:00",
+  "lastUpdated": "2026-04-17T09:00:31.112829+00:00",
   "actionRequired": [
     {
       "title": "1 alerta(s) crítico(s) no security audit",
@@ -21,17 +21,17 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-17T08:30:03.929000+00:00"
+      "startedAt": "2026-04-17T09:00:07.201000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-17T08:25:00.024000+00:00"
+      "startedAt": "2026-04-17T08:55:00.021000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-17T08:20:27.398000+00:00"
+      "startedAt": "2026-04-17T08:51:25.368000+00:00"
     },
     {
       "task": "agent:main:cron:75b87bc7-016d-49a2-9995-4a0b715a7f23",
@@ -49,14 +49,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-17T08:30:10.506179+00:00"
+      "lastChecked": "2026-04-17T09:00:31.112829+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-17T08:17:46.113000+00:00",
+      "lastRun": "2026-04-17T08:30:00.010000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -64,7 +64,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-17T08:20:27.385000+00:00",
+      "lastRun": "2026-04-17T08:51:25.364000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -72,7 +72,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-17T08:25:00.014000+00:00",
+      "lastRun": "2026-04-17T08:55:00.011000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
