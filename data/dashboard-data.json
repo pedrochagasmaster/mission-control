@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-20T13:03:31.110507+00:00",
+  "lastUpdated": "2026-04-20T13:31:46.583914+00:00",
   "actionRequired": [
     {
       "title": "1 alerta(s) crítico(s) no security audit",
@@ -11,7 +11,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-20T13:02:10.340000+00:00"
+      "startedAt": "2026-04-20T13:31:16.564000+00:00"
+    },
+    {
+      "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-20T13:30:00.013000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "free",
+      "startedAt": "2026-04-20T13:26:14.720000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-20T13:21:02.270000+00:00"
     },
     {
       "task": "agent:main:cron:8e6d54f6-5278-4975-94dc-578d36397408",
@@ -24,16 +39,6 @@
       "startedAt": "2026-04-20T13:00:00.046000+00:00"
     },
     {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "free",
-      "startedAt": "2026-04-20T12:57:22.151000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-20T12:51:16.242000+00:00"
-    },
-    {
       "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
       "model": "gpt-5-mini",
       "startedAt": "2026-04-20T12:01:26.786000+00:00"
@@ -42,11 +47,6 @@
       "task": "agent:main:cron:ae7b9fb6-d807-4c23-846c-87f880d130be",
       "model": "gpt-5-mini",
       "startedAt": "2026-04-20T12:01:13.456000+00:00"
-    },
-    {
-      "task": "agent:main:cron:d325f081-b2dc-4843-a4d2-078237ba97ba",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-20T12:00:39.706000+00:00"
     }
   ],
   "products": [
@@ -54,46 +54,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-20T13:03:31.110507+00:00"
+      "lastChecked": "2026-04-20T13:31:46.583914+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Aspirar Cozinha",
-      "schedule": "0 10 * * 1,3,6 (America/Sao_Paulo)",
-      "lastRun": "2026-04-18T13:00:00.010000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-20T12:30:00.011000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Lixo (Sacos Novos) + Ralos",
-      "schedule": "0 10 * * 1,3,5 (America/Sao_Paulo)",
-      "lastRun": "2026-04-17T13:00:00.011000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-20T12:51:15.892000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-20T12:55:00.016000+00:00",
+      "lastRun": "2026-04-20T13:02:02.885000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -102,6 +70,22 @@
       "name": "Rotina da Manhã (Completa)",
       "schedule": "30 10 * * * (America/Sao_Paulo)",
       "lastRun": "2026-04-19T13:30:00.411000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-20T13:21:01.901000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-20T13:25:00.010000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -299,6 +283,22 @@
       "lastError": null
     },
     {
+      "name": "Aspirar Cozinha",
+      "schedule": "0 10 * * 1,3,6 (America/Sao_Paulo)",
+      "lastRun": "2026-04-20T13:00:00.016000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Lixo (Sacos Novos) + Ralos",
+      "schedule": "0 10 * * 1,3,5 (America/Sao_Paulo)",
+      "lastRun": "2026-04-20T13:00:42.676000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Resumo Semanal de Memórias",
       "schedule": "0 20 * * 0 (America/Sao_Paulo)",
       "lastRun": "2026-04-20T01:48:47.559000+00:00",
@@ -355,6 +355,11 @@
     {
       "time": "2026-04-20T10:01:35-03:00",
       "event": "Cron disparou: Lixo (Sacos Novos) + Ralos (8e6d54f6-5278-4975-94dc-578d36397408)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-04-20T10:31:02-03:00",
+      "event": "Cron disparou: Rotina da Manhã (Completa) (93c7796d-f82d-4381-a925-f1a0a22bf25b)",
       "channel": "cron"
     }
   ]
