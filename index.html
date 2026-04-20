@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission Control</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --surface: #1a1a1a;
+      --surface-2: #232323;
+      --line: #313131;
+      --text: #f2f2f2;
+      --text-muted: #b0b0b0;
+      --ok: #00d4aa;
+      --warn: #ffb020;
+      --err: #ff6b6b;
+      --focus: #6a5cff;
+      --radius: 8px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "IBM Plex Sans", "Noto Sans", sans-serif;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+
+    .shell {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .topbar {
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 0 14px;
+      background: var(--surface);
+      margin-bottom: 16px;
+    }
+
+    .title-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .muted { color: var(--text-muted); }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 13px;
+      font-family: inherit;
+    }
+
+    button:focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 1px;
+    }
+
+    button:hover { background: #2b2b2b; }
+
+    .statusbar {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .stat {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 10px;
+      background: var(--surface);
+    }
+
+    .stat-value {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .stat-label {
+      margin: 3px 0 0;
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr;
+      gap: 12px;
+    }
+
+    section {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      padding: 14px;
+    }
+
+    section h2 {
+      margin: 0 0 10px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .stack { display: grid; gap: 12px; }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #151515;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    th,
+    td {
+      text-align: left;
+      border-bottom: 1px solid #272727;
+      padding: 8px;
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--text-muted);
+      font-weight: 500;
+      background: #191919;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    .line-list {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #151515;
+      max-height: 350px;
+      overflow: auto;
+    }
+
+    .line-item {
+      padding: 9px 10px;
+      border-bottom: 1px solid #272727;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .line-item:last-child { border-bottom: 0; }
+
+    .level-ok { color: var(--ok); }
+    .level-warning { color: var(--warn); }
+    .level-error { color: var(--err); }
+
+    .actions {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .mobile-cards {
+      display: none;
+      gap: 8px;
+    }
+
+    .mobile-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #151515;
+      padding: 10px;
+    }
+
+    .mobile-card h3 {
+      margin: 0 0 4px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal.open { display: flex; }
+
+    .modal-card {
+      width: min(720px, 100%);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      padding: 14px;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 130px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px;
+      background: #121212;
+      color: var(--text);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 12px;
+    }
+
+    .login {
+      position: fixed;
+      inset: 0;
+      background: #0c0c0c;
+      display: grid;
+      place-items: center;
+    }
+
+    .login-card {
+      width: min(360px, 90vw);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      padding: 16px;
+    }
+
+    input {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #141414;
+      color: var(--text);
+      padding: 10px;
+      margin-bottom: 8px;
+      font-family: inherit;
+    }
+
+    @media (max-width: 1180px) {
+      .layout,
+      .two-col { grid-template-columns: 1fr; }
+      .statusbar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 760px) {
+      .shell { padding: 10px; }
+      .topbar {
+        height: auto;
+        min-height: 56px;
+        padding: 10px;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .statusbar { grid-template-columns: 1fr 1fr; }
+      .stat-value { font-size: 18px; }
+      .table-wrap.mobile-hide { display: none; }
+      .mobile-cards { display: grid; }
+      .line-list { max-height: none; }
+      button { padding: 9px 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="login" id="login">
+    <div class="login-card">
+      <h1 style="margin-bottom:10px;">Mission Control</h1>
+      <input type="password" id="pin" maxlength="20" placeholder="PIN" aria-label="PIN">
+      <button id="login-btn" style="width:100%;">Entrar</button>
+      <p id="login-error" class="muted"></p>
+    </div>
+  </div>
+
+  <div class="shell" id="app" style="display:none;">
+    <div class="topbar">
+      <div class="title-row">
+        <h1>Mission Control v3</h1>
+        <span id="last-updated" class="muted">carregando...</span>
+      </div>
+      <div class="toolbar">
+        <button id="refresh-btn">Atualizar</button>
+        <button id="api-token-btn">Token API</button>
+      </div>
+    </div>
+
+    <div class="statusbar" id="statusbar"></div>
+
+    <div class="layout">
+      <div class="stack">
+        <section>
+          <h2>Ações Necessárias</h2>
+          <div id="alerts" class="line-list"></div>
+        </section>
+
+        <section>
+          <h2>Domínios</h2>
+          <div class="table-wrap mobile-hide">
+            <table>
+              <thead>
+                <tr>
+                  <th>Domínio</th>
+                  <th>Status</th>
+                  <th>KPIs</th>
+                  <th>Tendência 7d</th>
+                </tr>
+              </thead>
+              <tbody id="domains-table"></tbody>
+            </table>
+          </div>
+          <div id="domains-mobile" class="mobile-cards"></div>
+        </section>
+
+        <section>
+          <h2>Workflow Truth</h2>
+          <div class="table-wrap mobile-hide">
+            <table>
+              <thead>
+                <tr>
+                  <th>Workflow</th>
+                  <th>Status</th>
+                  <th>Confidence</th>
+                  <th>Histórico</th>
+                  <th>Último attempt</th>
+                  <th>Razão</th>
+                </tr>
+              </thead>
+              <tbody id="workflow-table"></tbody>
+            </table>
+          </div>
+          <div id="workflow-mobile" class="mobile-cards"></div>
+        </section>
+
+        <section>
+          <h2>Attempts Recentes</h2>
+          <div id="workflow-attempts" class="line-list"></div>
+        </section>
+
+        <section>
+          <h2>Cron Jobs</h2>
+          <div class="table-wrap mobile-hide">
+            <table>
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>Status</th>
+                  <th>Schedule</th>
+                  <th>Erros</th>
+                  <th>Ações</th>
+                </tr>
+              </thead>
+              <tbody id="crons-table"></tbody>
+            </table>
+          </div>
+          <div id="crons-mobile" class="mobile-cards"></div>
+        </section>
+
+        <section>
+          <h2>Atividade Recente</h2>
+          <div id="activity" class="line-list"></div>
+        </section>
+      </div>
+
+      <div class="stack">
+        <section>
+          <h2>SLO (7 dias)</h2>
+          <div id="slo"></div>
+        </section>
+
+        <section>
+          <h2>Integrações</h2>
+          <div id="integrations" class="line-list"></div>
+        </section>
+
+        <section>
+          <h2>Segurança</h2>
+          <div id="security" class="line-list"></div>
+        </section>
+
+        <section>
+          <h2>Queue e Auditoria</h2>
+          <div class="two-col">
+            <div>
+              <p class="muted" style="margin:0 0 6px;">Fila</p>
+              <div id="queue" class="line-list"></div>
+            </div>
+            <div>
+              <p class="muted" style="margin:0 0 6px;">Resultados</p>
+              <div id="audit" class="line-list"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="command-modal">
+    <div class="modal-card">
+      <h2 style="margin-top:0;">Comando Manual</h2>
+      <p class="muted">Não foi possível enfileirar via API local. Use este comando no terminal:</p>
+      <textarea id="command-text" readonly></textarea>
+      <div class="toolbar" style="margin-top:10px;">
+        <button id="copy-command-btn">Copiar</button>
+        <button id="close-modal-btn">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const CONFIG = {
+      PIN: "112509",
+      DATA_URLS: ["./data/dashboard-data.v3.json", "./data/dashboard-data.v2.json"],
+      API_URL: (window.location.protocol + "//" + window.location.hostname + ":18891"),
+      REFRESH_INTERVAL_MS: 30000,
+      DEFAULT_TZ: "America/Sao_Paulo"
+    };
+
+    let state = null;
+    let timer = null;
+
+    function esc(v) {
+      if (v === null || v === undefined) return "";
+      const d = document.createElement("div");
+      d.textContent = String(v);
+      return d.innerHTML;
+    }
+
+    function statusClass(status) {
+      if (status === "ok") return "level-ok";
+      if (status === "warning") return "level-warning";
+      return "level-error";
+    }
+
+    function fmtDate(value) {
+      if (!value) return "n/a";
+      const d = new Date(value);
+      if (Number.isNaN(d.getTime())) return value;
+      return d.toLocaleString("pt-BR");
+    }
+
+    function authToken() {
+      return sessionStorage.getItem("mc_api_token") || "";
+    }
+
+    function setAuthToken() {
+      const current = authToken();
+      const value = window.prompt("Token da API local (X-MC-Token):", current);
+      if (value === null) return;
+      sessionStorage.setItem("mc_api_token", value.trim());
+    }
+
+    async function fetchSnapshot() {
+      let lastErr = null;
+      for (const url of CONFIG.DATA_URLS) {
+        try {
+          const res = await fetch(`${url}?_=${Date.now()}`);
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+          const data = await res.json();
+          return data;
+        } catch (err) {
+          lastErr = err;
+        }
+      }
+      throw lastErr || new Error("falha ao carregar snapshot");
+    }
+
+    function renderStatusbar() {
+      const ov = state.overview || {};
+      const slo = state.slo || {};
+      const rows = [
+        { value: ov.healthScore ?? 0, label: "Health Score" },
+        { value: ov.criticalAlerts ?? 0, label: "Alertas Críticos" },
+        { value: ov.pendingControls ?? 0, label: "Controles Pendentes" },
+        { value: `${slo.cron_success_rate ?? 0}%`, label: "Sucesso Crons" },
+        { value: `${slo.control_action_success_rate ?? 0}%`, label: "Sucesso Controles" }
+      ];
+
+      document.getElementById("statusbar").innerHTML = rows.map((row) => `
+        <div class="stat">
+          <p class="stat-value">${esc(row.value)}</p>
+          <p class="stat-label">${esc(row.label)}</p>
+        </div>
+      `).join("");
+    }
+
+    function renderAlerts() {
+      const alerts = state.actionRequired || [];
+      const root = document.getElementById("alerts");
+
+      if (!alerts.length) {
+        root.innerHTML = `<div class="line-item muted">Sem alertas pendentes.</div>`;
+        return;
+      }
+
+      root.innerHTML = alerts.slice(0, 20).map((a) => {
+        const buttons = (a.actions || []).map((action) => {
+          let payload = {};
+          if (action.startsWith("cron.")) payload = { jobId: a.targetId };
+          if (action === "cron.set_timezone") payload = { jobId: a.targetId, tz: CONFIG.DEFAULT_TZ };
+          return `<button data-action="${esc(action)}" data-payload='${esc(JSON.stringify(payload))}' class="action-btn">${esc(action)}</button>`;
+        }).join(" ");
+
+        return `
+          <div class="line-item">
+            <div class="${statusClass(a.priority === "high" ? "error" : "warning")}" style="margin-bottom:6px;">${esc(a.priority || "medium")}</div>
+            <div>${esc(a.title)}</div>
+            <div class="actions" style="margin-top:8px;">${buttons}</div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function kpiText(kpis) {
+      const entries = Object.entries(kpis || {}).slice(0, 4);
+      if (!entries.length) return "-";
+      return entries.map(([k, v]) => `${k}: ${v}`).join(" | ");
+    }
+
+    function kpiMobileLines(kpis) {
+      const entries = Object.entries(kpis || {}).slice(0, 4);
+      if (!entries.length) return "<div>-</div>";
+      return entries.map(([k, v]) => `<div>${esc(k)}: ${esc(v)}</div>`).join("");
+    }
+
+    function renderDomains() {
+      const rows = state.domains || [];
+      const root = document.getElementById("domains-table");
+      const mobileRoot = document.getElementById("domains-mobile");
+      root.innerHTML = rows.map((d) => {
+        const trend = d.trend7d || {};
+        const trendText = trend.metric ? `${trend.metric}: ${trend.delta} (${trend.direction})` : "n/a";
+        return `
+          <tr>
+            <td>${esc(d.name)}</td>
+            <td class="${statusClass(d.status)}">${esc(d.status)}</td>
+            <td>${esc(kpiText(d.kpis))}</td>
+            <td>${esc(trendText)}</td>
+          </tr>
+        `;
+      }).join("");
+
+      mobileRoot.innerHTML = rows.map((d) => {
+        const trend = d.trend7d || {};
+        const trendText = trend.metric ? `${trend.metric}: ${trend.delta} (${trend.direction})` : "n/a";
+        return `
+          <article class="mobile-card">
+            <h3>${esc(d.name)}</h3>
+            <div class="${statusClass(d.status)}">${esc(d.status)}</div>
+            <div class="muted" style="margin-top:4px;">${kpiMobileLines(d.kpis)}</div>
+            <div class="muted" style="margin-top:4px;">7d: ${esc(trendText)}</div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function workflowCssStatus(status) {
+      if (status === "healthy") return "level-ok";
+      if (status === "degraded") return "level-warning";
+      return "level-error";
+    }
+
+    function renderWorkflowTruth() {
+      const rows = state.workflowTruth?.pipelines || [];
+      const root = document.getElementById("workflow-table");
+      const mobileRoot = document.getElementById("workflow-mobile");
+      if (!root || !mobileRoot) return;
+
+      root.innerHTML = rows.map((w) => {
+        const history = w.history || {};
+        const latest = (w.recentAttempts || []).slice(-1)[0] || {};
+        const historyText = `ok:${history.healthy || 0} | deg:${history.degraded || 0} | lie:${history.lyingRisk || 0}`;
+        const latestText = latest.startedAt ? `${fmtDate(latest.startedAt)} • ${latest.status || "n/a"}` : "n/a";
+        return `
+          <tr>
+            <td>${esc(w.name)}</td>
+            <td class="${workflowCssStatus(w.status)}">${esc(w.status)}</td>
+            <td>${esc(w.confidence ?? "n/a")}</td>
+            <td>${esc(historyText)}</td>
+            <td>${esc(latestText)}</td>
+            <td>${esc((w.reasons || []).join(" | "))}</td>
+          </tr>
+        `;
+      }).join("");
+
+      mobileRoot.innerHTML = rows.map((w) => {
+        const history = w.history || {};
+        const latest = (w.recentAttempts || []).slice(-1)[0] || {};
+        return `
+          <article class="mobile-card">
+            <h3>${esc(w.name)}</h3>
+            <div class="${workflowCssStatus(w.status)}">${esc(w.status)}</div>
+            <div class="muted" style="margin-top:4px;">confidence: ${esc(w.confidence ?? "n/a")}</div>
+            <div class="muted">histórico: ok ${esc(history.healthy || 0)} | deg ${esc(history.degraded || 0)} | lie ${esc(history.lyingRisk || 0)}</div>
+            <div class="muted">último: ${esc(latest.startedAt ? fmtDate(latest.startedAt) : "n/a")}</div>
+            <div class="muted" style="margin-top:4px;">${esc((w.reasons || []).join(" | "))}</div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function renderWorkflowAttempts() {
+      const rows = (state.workflowTruth?.history?.timeline || []).slice().reverse().slice(0, 20);
+      renderList("workflow-attempts", rows, (row) => `
+        <div class="line-item">
+          <div><strong>${esc(row.workflowName)}</strong> • <span class="${workflowCssStatus(row.status)}">${esc(row.status)}</span></div>
+          <div class="muted">${esc(fmtDate(row.startedAt))} • ${esc(row.jobName || "job n/a")} • ${esc((row.eventTypes || []).join(" → "))}</div>
+          <div>${esc((row.reasons || []).join(" | "))}</div>
+        </div>
+      `);
+    }
+
+    function renderCrons() {
+      const crons = state.crons || [];
+      const root = document.getElementById("crons-table");
+      const mobileRoot = document.getElementById("crons-mobile");
+      root.innerHTML = crons.slice(0, 40).map((c) => {
+        const actions = [];
+        actions.push(`<button data-action="cron.retry" data-payload='${esc(JSON.stringify({ jobId: c.id }))}' class="action-btn">retry</button>`);
+        if (c.enabled) {
+          actions.push(`<button data-action="cron.pause" data-payload='${esc(JSON.stringify({ jobId: c.id }))}' class="action-btn">pause</button>`);
+        } else {
+          actions.push(`<button data-action="cron.resume" data-payload='${esc(JSON.stringify({ jobId: c.id }))}' class="action-btn">resume</button>`);
+        }
+        if (c.tzMissing) {
+          actions.push(`<button data-action="cron.set_timezone" data-payload='${esc(JSON.stringify({ jobId: c.id, tz: CONFIG.DEFAULT_TZ }))}' class="action-btn">set tz</button>`);
+        }
+
+        return `
+          <tr>
+            <td>${esc(c.name)}</td>
+            <td class="${statusClass(c.status)}">${esc(c.status)}</td>
+            <td>${esc(c.schedule || "-")}</td>
+            <td>${esc(c.errors || 0)}</td>
+            <td><div class="actions">${actions.join(" ")}</div></td>
+          </tr>
+        `;
+      }).join("");
+
+      mobileRoot.innerHTML = crons.slice(0, 20).map((c) => {
+        const actions = [];
+        actions.push(`<button data-action="cron.retry" data-payload='${esc(JSON.stringify({ jobId: c.id }))}' class="action-btn">retry</button>`);
+        if (c.enabled) {
+          actions.push(`<button data-action="cron.pause" data-payload='${esc(JSON.stringify({ jobId: c.id }))}' class="action-btn">pause</button>`);
+        } else {
+          actions.push(`<button data-action="cron.resume" data-payload='${esc(JSON.stringify({ jobId: c.id }))}' class="action-btn">resume</button>`);
+        }
+        if (c.tzMissing) {
+          actions.push(`<button data-action="cron.set_timezone" data-payload='${esc(JSON.stringify({ jobId: c.id, tz: CONFIG.DEFAULT_TZ }))}' class="action-btn">set tz</button>`);
+        }
+
+        return `
+          <article class="mobile-card">
+            <h3>${esc(c.name)}</h3>
+            <div class="${statusClass(c.status)}">${esc(c.status)}</div>
+            <div class="muted" style="margin-top:4px;">${esc(c.schedule || "-")}</div>
+            <div class="muted">erros: ${esc(c.errors || 0)}</div>
+            <div class="actions" style="margin-top:8px;">${actions.join(" ")}</div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function renderList(rootId, rows, formatter) {
+      const root = document.getElementById(rootId);
+      if (!rows.length) {
+        root.innerHTML = `<div class="line-item muted">Sem dados.</div>`;
+        return;
+      }
+      root.innerHTML = rows.map(formatter).join("");
+    }
+
+    function renderSlo() {
+      const slo = state.slo || {};
+      const html = `
+        <div class="line-list">
+          <div class="line-item">digest_before_0750: ${esc(slo.digest_before_0750 ?? "n/a")}%</div>
+          <div class="line-item">cron_success_rate: ${esc(slo.cron_success_rate ?? "n/a")}%</div>
+          <div class="line-item">control_action_success_rate: ${esc(slo.control_action_success_rate ?? "n/a")}%</div>
+          <div class="line-item">janela: ${esc(slo.windowDays ?? "n/a")} dias</div>
+        </div>
+      `;
+      document.getElementById("slo").innerHTML = html;
+    }
+
+    function renderIntegrations() {
+      const i = state.integrations || {};
+      const rows = [
+        { key: "Pluggy", data: i.pluggy },
+        { key: "Open Banking", data: i.openbanking },
+        { key: "Bank Notifications", data: i.bank_notifications },
+        { key: "Knowledge Watcher", data: i.knowledge_watcher }
+      ];
+      renderList("integrations", rows, (row) => {
+        const s = row.data?.status || "warning";
+        const d = row.data || {};
+        const details = [];
+        if (d.trackedItems !== undefined) details.push(`itens: ${d.trackedItems}`);
+        if (d.configFiles !== undefined) details.push(`configs: ${d.configFiles}`);
+        if (d.tokenFiles !== undefined) details.push(`tokens: ${d.tokenFiles}`);
+        if (d.logEnabled !== undefined) details.push(`log: ${d.logEnabled ? "on" : "off"}`);
+        if (d.lastLogAt) details.push(`last: ${fmtDate(d.lastLogAt)}`);
+        if (d.lastSyncAt) details.push(`sync: ${fmtDate(d.lastSyncAt)}`);
+        if (d.lastEventAt) details.push(`event: ${fmtDate(d.lastEventAt)}`);
+        if (d.service?.active !== undefined) details.push(`service: ${d.service.active ? "running" : "down"}`);
+        return `<div class="line-item"><strong>${esc(row.key)}</strong><br><span class="${statusClass(s)}">${esc(s)}</span><div class="muted" style="margin-top:4px;">${esc(details.join(" | "))}</div></div>`;
+      });
+    }
+
+    function renderSecurity() {
+      const sec = state.security || {};
+      const alerts = sec.alerts || [];
+      const rows = [
+        `<div class="line-item">critical: ${esc(sec.kpis?.critical ?? 0)} | warnings: ${esc(sec.kpis?.warnings ?? 0)}</div>`,
+        `<div class="line-item">credentials mode: ${esc(sec.kpis?.credentialsMode ?? "n/a")}</div>`,
+        `<div class="line-item">therapy dir mode: ${esc(sec.kpis?.therapyDirMode ?? "n/a")}</div>`
+      ];
+      alerts.forEach((a) => rows.push(`<div class="line-item ${statusClass(a.level === "high" ? "error" : "warning")}">${esc(a.text)}</div>`));
+      document.getElementById("security").innerHTML = rows.join("");
+    }
+
+    function renderQueueAndAudit() {
+      renderList("queue", state.audit?.queue || [], (row) => `
+        <div class="line-item">
+          <div>${esc(row.action)}</div>
+          <div class="muted">${esc(row.commandId)} | ${esc(fmtDate(row.createdAt))}</div>
+        </div>
+      `);
+
+      const results = (state.audit?.recentResults || []).slice().reverse().slice(0, 30);
+      renderList("audit", results, (row) => `
+        <div class="line-item">
+          <div class="${statusClass(row.result === "ok" ? "ok" : "error")}">${esc(row.action)} • ${esc(row.result)}</div>
+          <div class="muted">${esc(fmtDate(row.executedAt))}</div>
+          <div>${esc(row.message || "")}</div>
+        </div>
+      `);
+    }
+
+    function renderActivity() {
+      const rows = (state.recentActivity || []).slice().reverse().slice(0, 60);
+      renderList("activity", rows, (row) => `
+        <div class="line-item">
+          <div>${esc(row.event)}</div>
+          <div class="muted">${esc(fmtDate(row.time))}</div>
+        </div>
+      `);
+    }
+
+    async function enqueueViaApi(action, payload) {
+      const token = authToken();
+      const res = await fetch(`${CONFIG.API_URL}/enqueue`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-MC-Token": token
+        },
+        body: JSON.stringify({ action, payload, requestedBy: "dashboard" })
+      });
+      if (!res.ok) {
+        const text = await res.text();
+        throw new Error(`HTTP ${res.status}: ${text}`);
+      }
+      return res.json();
+    }
+
+    function openManualCommand(action, payload) {
+      const args = Object.entries(payload || {}).map(([k, v]) => `--payload ${k}=${String(v)}`).join(" ");
+      const cmd = `cd /home/pedro/.openclaw/workspace && python3 mission-control/scripts/control_queue.py enqueue --action ${action} ${args} --requested-by dashboard`;
+      document.getElementById("command-text").value = cmd;
+      document.getElementById("command-modal").classList.add("open");
+    }
+
+    async function triggerAction(action, payload) {
+      if (action === "cron.pause") {
+        if (!window.confirm("Pausar este cron?")) return;
+      }
+      try {
+        await enqueueViaApi(action, payload);
+        window.alert("Ação enfileirada com sucesso.");
+      } catch (err) {
+        console.error(err);
+        openManualCommand(action, payload);
+      }
+    }
+
+    function attachActionHandlers() {
+      document.querySelectorAll(".action-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const action = btn.getAttribute("data-action");
+          const payloadRaw = btn.getAttribute("data-payload") || "{}";
+          let payload = {};
+          try {
+            payload = JSON.parse(payloadRaw);
+          } catch {
+            payload = {};
+          }
+          triggerAction(action, payload);
+        });
+      });
+    }
+
+    function renderAll() {
+      const generatedAt = state?.meta?.generatedAt || state?.lastUpdated;
+      document.getElementById("last-updated").textContent = `Atualizado: ${fmtDate(generatedAt)}`;
+
+      renderStatusbar();
+      renderAlerts();
+      renderDomains();
+      renderWorkflowTruth();
+      renderWorkflowAttempts();
+      renderCrons();
+      renderSlo();
+      renderIntegrations();
+      renderSecurity();
+      renderQueueAndAudit();
+      renderActivity();
+      attachActionHandlers();
+    }
+
+    async function refresh() {
+      try {
+        state = await fetchSnapshot();
+        renderAll();
+      } catch (err) {
+        console.error(err);
+        document.getElementById("last-updated").textContent = `Erro: ${err.message}`;
+      }
+    }
+
+    function enter() {
+      const pin = document.getElementById("pin").value;
+      if (pin !== CONFIG.PIN) {
+        document.getElementById("login-error").textContent = "PIN incorreto.";
+        return;
+      }
+      sessionStorage.setItem("mc_auth", "1");
+      document.getElementById("login").style.display = "none";
+      document.getElementById("app").style.display = "block";
+      refresh();
+      timer = window.setInterval(refresh, CONFIG.REFRESH_INTERVAL_MS);
+    }
+
+    document.getElementById("login-btn").addEventListener("click", enter);
+    document.getElementById("pin").addEventListener("keydown", (e) => {
+      if (e.key === "Enter") enter();
+    });
+    document.getElementById("refresh-btn").addEventListener("click", refresh);
+    document.getElementById("api-token-btn").addEventListener("click", setAuthToken);
+
+    document.getElementById("close-modal-btn").addEventListener("click", () => {
+      document.getElementById("command-modal").classList.remove("open");
+    });
+
+    document.getElementById("copy-command-btn").addEventListener("click", async () => {
+      const text = document.getElementById("command-text").value;
+      try {
+        await navigator.clipboard.writeText(text);
+        window.alert("Comando copiado.");
+      } catch {
+        window.alert("Falha ao copiar comando.");
+      }
+    });
+
+    if (sessionStorage.getItem("mc_auth") === "1") {
+      document.getElementById("login").style.display = "none";
+      document.getElementById("app").style.display = "block";
+      refresh();
+      timer = window.setInterval(refresh, CONFIG.REFRESH_INTERVAL_MS);
+    }
+  </script>
+</body>
+</html>
