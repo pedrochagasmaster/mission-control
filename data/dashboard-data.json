@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-20T12:30:20.950534+00:00",
+  "lastUpdated": "2026-04-20T13:03:31.110507+00:00",
   "actionRequired": [
     {
       "title": "1 alerta(s) crítico(s) no security audit",
@@ -11,17 +11,27 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-20T12:30:07.438000+00:00"
+      "startedAt": "2026-04-20T13:02:10.340000+00:00"
+    },
+    {
+      "task": "agent:main:cron:8e6d54f6-5278-4975-94dc-578d36397408",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-20T13:00:42.686000+00:00"
+    },
+    {
+      "task": "agent:main:cron:555d214e-c8ca-48ef-a091-d41efcba712d",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-20T13:00:00.046000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
-      "startedAt": "2026-04-20T12:26:21.531000+00:00"
+      "startedAt": "2026-04-20T12:57:22.151000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-20T12:21:28.082000+00:00"
+      "startedAt": "2026-04-20T12:51:16.242000+00:00"
     },
     {
       "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
@@ -37,16 +47,6 @@
       "task": "agent:main:cron:d325f081-b2dc-4843-a4d2-078237ba97ba",
       "model": "gpt-5-mini",
       "startedAt": "2026-04-20T12:00:39.706000+00:00"
-    },
-    {
-      "task": "agent:main:cron:3d633d74-840a-4996-82df-9e9f8d474d46",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-20T12:00:00.014000+00:00"
-    },
-    {
-      "task": "agent:main:cron:f1830563-b029-4bb2-80fc-9ffe54108a08",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-20T11:34:01.611000+00:00"
     }
   ],
   "products": [
@@ -54,34 +54,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-20T12:30:20.950534+00:00"
+      "lastChecked": "2026-04-20T13:03:31.110507+00:00"
     }
   ],
   "crons": [
-    {
-      "name": "Mission Control - Build+Publish",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-20T12:02:38.404000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-20T12:21:27.732000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-20T12:25:00.016000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
     {
       "name": "Aspirar Cozinha",
       "schedule": "0 10 * * 1,3,6 (America/Sao_Paulo)",
@@ -91,9 +67,33 @@
       "lastError": null
     },
     {
+      "name": "Mission Control - Build+Publish",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-20T12:30:00.011000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Lixo (Sacos Novos) + Ralos",
       "schedule": "0 10 * * 1,3,5 (America/Sao_Paulo)",
       "lastRun": "2026-04-17T13:00:00.011000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-20T12:51:15.892000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-20T12:55:00.016000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -345,6 +345,16 @@
     {
       "time": "2026-04-20T09:01:00-03:00",
       "event": "Cron disparou: Check Estoque Simparic (Mensal) (d325f081-b2dc-4843-a4d2-078237ba97ba)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-04-20T10:00:38-03:00",
+      "event": "Cron disparou: Aspirar Cozinha (555d214e-c8ca-48ef-a091-d41efcba712d)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-04-20T10:01:35-03:00",
+      "event": "Cron disparou: Lixo (Sacos Novos) + Ralos (8e6d54f6-5278-4975-94dc-578d36397408)",
       "channel": "cron"
     }
   ]
