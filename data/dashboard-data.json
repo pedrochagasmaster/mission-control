@@ -1,27 +1,37 @@
 {
-  "lastUpdated": "2026-04-20T09:00:24.421720+00:00",
+  "lastUpdated": "2026-04-20T09:30:50.534944+00:00",
   "actionRequired": [
     {
       "title": "1 alerta(s) crítico(s) no security audit",
       "url": null,
       "priority": "high"
+    },
+    {
+      "title": "Mission Control - Control Runner (1 erros)",
+      "url": null,
+      "priority": "medium"
     }
   ],
   "activeNow": [
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-20T09:00:07.152000+00:00"
+      "startedAt": "2026-04-20T09:30:03.592000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
-      "startedAt": "2026-04-20T08:55:00.016000+00:00"
+      "startedAt": "2026-04-20T09:27:00.536000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-20T08:51:03.562000+00:00"
+      "startedAt": "2026-04-20T09:21:00.431000+00:00"
+    },
+    {
+      "task": "agent:main:cron:f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-20T09:02:34.865000+00:00"
     },
     {
       "task": "agent:main:whatsapp:direct:+5519997830810",
@@ -44,14 +54,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-20T09:00:24.421720+00:00"
+      "lastChecked": "2026-04-20T09:30:50.534944+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-20T08:30:00.012000+00:00",
+      "lastRun": "2026-04-20T09:00:00.010000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -59,7 +69,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-20T08:51:03.557000+00:00",
+      "lastRun": "2026-04-20T09:21:00.429000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -67,17 +77,9 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-20T08:55:00.011000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Atualização do Índice de Sistema",
-      "schedule": "0 6 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-19T09:02:42.857000+00:00",
-      "status": "ok",
-      "errors": 0,
+      "lastRun": "2026-04-20T09:25:00.020000+00:00",
+      "status": "error",
+      "errors": 1,
       "lastError": null
     },
     {
@@ -268,6 +270,14 @@
       "name": "Instagram Knowledge Ingest",
       "schedule": "0 5 * * * (America/Sao_Paulo)",
       "lastRun": "2026-04-20T08:00:00.014000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Atualização do Índice de Sistema",
+      "schedule": "0 6 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-20T09:02:34.863000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
