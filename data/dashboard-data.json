@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-21T08:31:02.974898+00:00",
+  "lastUpdated": "2026-04-21T08:31:16.689402+00:00",
   "actionRequired": [
     {
       "title": "1 alerta(s) crítico(s) no security audit",
@@ -44,7 +44,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-21T08:31:02.974898+00:00"
+      "lastChecked": "2026-04-21T08:31:16.689402+00:00"
     }
   ],
   "crons": [
