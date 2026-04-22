@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-22T10:01:04.099213+00:00",
+  "lastUpdated": "2026-04-22T10:31:16.295324+00:00",
   "actionRequired": [
     {
       "title": "1 alerta(s) crítico(s) no security audit",
@@ -7,7 +7,7 @@
       "priority": "high"
     },
     {
-      "title": "Mission Control - Build+Publish (1 erros)",
+      "title": "Mission Control - Control Runner (1 erros)",
       "url": null,
       "priority": "medium"
     }
@@ -16,17 +16,27 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-22T10:00:09.785000+00:00"
+      "startedAt": "2026-04-22T10:30:39.616000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ec212b07-8387-45d0-9606-351509850608",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-22T10:30:00.033000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
-      "startedAt": "2026-04-22T09:55:00.022000+00:00"
+      "startedAt": "2026-04-22T10:27:18.824000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-22T09:51:08.398000+00:00"
+      "startedAt": "2026-04-22T10:22:47.332000+00:00"
+    },
+    {
+      "task": "agent:main:cron:06b5aaae-b25a-4005-a78c-badad02f216b",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-22T10:20:00.023000+00:00"
     },
     {
       "task": "agent:main:cron:f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
@@ -37,11 +47,6 @@
       "task": "agent:main:cron:75b87bc7-016d-49a2-9995-4a0b715a7f23",
       "model": "gpt-5-mini",
       "startedAt": "2026-04-22T08:00:00.024000+00:00"
-    },
-    {
-      "task": "agent:main:cron:218f26ef-423f-4f74-aa31-d28879facc28",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-22T07:02:27.032000+00:00"
     }
   ],
   "products": [
@@ -49,38 +54,22 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-22T10:01:04.099213+00:00"
+      "lastChecked": "2026-04-22T10:31:16.295324+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-22T09:30:00.017000+00:00",
-      "status": "error",
-      "errors": 1,
+      "lastRun": "2026-04-22T10:00:00.018000+00:00",
+      "status": "ok",
+      "errors": 0,
       "lastError": null
     },
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-22T09:51:08.394000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-22T09:55:00.014000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Diário da Família - Gerador",
-      "schedule": "20 7 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-21T10:20:00.709000+00:00",
+      "lastRun": "2026-04-22T10:22:45.881000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -91,6 +80,14 @@
       "lastRun": "2026-04-20T10:30:00.009000+00:00",
       "status": "ok",
       "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-22T10:25:00.018000+00:00",
+      "status": "error",
+      "errors": 1,
       "lastError": null
     },
     {
@@ -278,6 +275,14 @@
       "lastError": null
     },
     {
+      "name": "Diário da Família - Gerador",
+      "schedule": "20 7 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-22T10:20:00.020000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Lixo Véspera (22h)",
       "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
       "lastRun": "2026-04-22T01:00:23.943000+00:00",
@@ -326,5 +331,11 @@
       "lastError": null
     }
   ],
-  "recentActivity": []
+  "recentActivity": [
+    {
+      "time": "2026-04-22T07:30:17-03:00",
+      "event": "Cron disparou: Lixo (Colocar Fora) (ec212b07-8387-45d0-9606-351509850608)",
+      "channel": "cron"
+    }
+  ]
 }
