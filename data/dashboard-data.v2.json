@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-20.1",
-    "generatedAt": "2026-04-22T11:30:40.106246+00:00"
+    "generatedAt": "2026-04-22T11:33:47.816221+00:00"
   },
   "overview": {
     "healthScore": 49,
@@ -23,14 +23,14 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-22T11:30:10.694000+00:00",
+      "startedAt": "2026-04-22T11:33:25.827000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
-      "startedAt": "2026-04-22T11:26:35.922000+00:00",
+      "startedAt": "2026-04-22T11:32:04.935000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -3004,7 +3004,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-22T11:30:40.106246+00:00"
+      "lastChecked": "2026-04-22T11:33:47.816221+00:00"
     }
   ],
   "crons": [
@@ -3485,5 +3485,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-04-22T11:30:40.106246+00:00"
+  "lastUpdated": "2026-04-22T11:33:47.816221+00:00"
 }
