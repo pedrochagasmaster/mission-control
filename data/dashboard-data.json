@@ -1,20 +1,10 @@
 {
-  "lastUpdated": "2026-04-23T15:30:36.208923+00:00",
+  "lastUpdated": "2026-04-23T16:01:12.641460+00:00",
   "actionRequired": [
     {
       "title": "1 alerta(s) crítico(s) no security audit",
       "url": null,
       "priority": "high"
-    },
-    {
-      "title": "Mission Control - Build+Publish (1 erros)",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Mission Control - Control Runner (1 erros)",
-      "url": null,
-      "priority": "medium"
     },
     {
       "title": "Pulso Familiar - Meio-dia (2 erros) - cron: job execution timed out",
@@ -26,17 +16,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-23T15:30:09.419000+00:00"
+      "startedAt": "2026-04-23T16:00:41.598000+00:00"
+    },
+    {
+      "task": "agent:main:cron:96074f1f-0124-4b4c-a944-e71349f91678",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-23T16:00:00.025000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
-      "startedAt": "2026-04-23T15:27:15.544000+00:00"
+      "startedAt": "2026-04-23T15:56:32.086000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-23T15:21:39.066000+00:00"
+      "startedAt": "2026-04-23T15:51:26.032000+00:00"
     },
     {
       "task": "agent:main:cron:42be764c-f915-4669-8f94-878e23362bf8",
@@ -64,22 +59,30 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-23T15:30:36.208923+00:00"
+      "lastChecked": "2026-04-23T16:01:12.641460+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-23T15:01:13.485000+00:00",
-      "status": "error",
-      "errors": 1,
+      "lastRun": "2026-04-23T15:30:00.009000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Passeio Almoço",
+      "schedule": "0 13 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-22T16:00:00.012000+00:00",
+      "status": "ok",
+      "errors": 0,
       "lastError": null
     },
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-23T15:21:38.400000+00:00",
+      "lastRun": "2026-04-23T15:51:25.347000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -87,15 +90,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-23T15:25:00.010000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": null
-    },
-    {
-      "name": "Passeio Almoço",
-      "schedule": "0 13 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-22T16:00:00.012000+00:00",
+      "lastRun": "2026-04-23T15:55:00.010000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -350,6 +345,11 @@
     {
       "time": "2026-04-23T12:00:43-03:00",
       "event": "Cron disparou: Ração Almoço (42be764c-f915-4669-8f94-878e23362bf8)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-04-23T13:00:22-03:00",
+      "event": "Cron disparou: Passeio Almoço (96074f1f-0124-4b4c-a944-e71349f91678)",
       "channel": "cron"
     }
   ]
