@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-23T12:30:39.420164+00:00",
+  "lastUpdated": "2026-04-23T13:00:35.751298+00:00",
   "actionRequired": [
     {
       "title": "1 alerta(s) crítico(s) no security audit",
@@ -16,22 +16,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-23T12:30:08.151000+00:00"
+      "startedAt": "2026-04-23T13:00:07.879000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
-      "startedAt": "2026-04-23T12:27:01.631000+00:00"
+      "startedAt": "2026-04-23T12:56:16.651000+00:00"
     },
     {
       "task": "agent:main:whatsapp:direct:+5519997830810",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-23T12:22:11.736000+00:00"
+      "startedAt": "2026-04-23T12:51:31.454000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-23T12:21:42.033000+00:00"
+      "startedAt": "2026-04-23T12:51:02.477000+00:00"
     },
     {
       "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
@@ -59,14 +59,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-23T12:30:39.420164+00:00"
+      "lastChecked": "2026-04-23T13:00:35.751298+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-23T12:01:33.573000+00:00",
+      "lastRun": "2026-04-23T12:30:00.011000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -74,7 +74,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-23T12:21:42.030000+00:00",
+      "lastRun": "2026-04-23T12:51:02.475000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -82,7 +82,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-23T12:25:00.010000+00:00",
+      "lastRun": "2026-04-23T12:55:00.010000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
