@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-24T00:00:46.461136+00:00",
+  "lastUpdated": "2026-04-24T00:30:43.539770+00:00",
   "actionRequired": [
     {
       "title": "1 alerta(s) crítico(s) no security audit",
@@ -16,17 +16,17 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-24T00:00:09.179000+00:00"
+      "startedAt": "2026-04-24T00:30:08.748000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
-      "startedAt": "2026-04-23T23:56:33.121000+00:00"
+      "startedAt": "2026-04-24T00:26:26.167000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-23T23:51:05.756000+00:00"
+      "startedAt": "2026-04-24T00:21:11.421000+00:00"
     },
     {
       "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
@@ -39,14 +39,22 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-24T00:00:46.461136+00:00"
+      "lastChecked": "2026-04-24T00:30:43.539770+00:00"
     }
   ],
   "crons": [
     {
+      "name": "Lembrete de Captura de Memórias",
+      "schedule": "30 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-23T00:32:04.053000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-23T23:30:00.019000+00:00",
+      "lastRun": "2026-04-24T00:00:00.010000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -54,7 +62,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-23T23:51:05.058000+00:00",
+      "lastRun": "2026-04-24T00:21:10.305000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -62,15 +70,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-23T23:55:00.009000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Lembrete de Captura de Memórias",
-      "schedule": "30 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-23T00:32:04.053000+00:00",
+      "lastRun": "2026-04-24T00:25:00.017000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
