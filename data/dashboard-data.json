@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-25T03:55:18.553691+00:00",
+  "lastUpdated": "2026-04-25T04:30:20.334679+00:00",
   "actionRequired": [
     {
       "title": "Pulso Familiar - Meio-dia (3 erros) - cron: job execution timed out",
@@ -14,29 +14,24 @@
   ],
   "activeNow": [
     {
+      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "model": "free",
+      "startedAt": "2026-04-25T04:30:08.307000+00:00"
+    },
+    {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
-      "startedAt": "2026-04-25T03:55:08.353000+00:00"
+      "startedAt": "2026-04-25T04:25:00.028000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-25T03:51:06.132000+00:00"
-    },
-    {
-      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "model": "free",
-      "startedAt": "2026-04-25T03:30:00.016000+00:00"
+      "startedAt": "2026-04-25T04:21:09.180000+00:00"
     },
     {
       "task": "agent:main:cron:ebbd066d-2269-48d5-8f80-f89ce7633b81",
       "model": "gpt-5-mini",
       "startedAt": "2026-04-25T02:59:00.019000+00:00"
-    },
-    {
-      "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-25T01:00:00.016000+00:00"
     }
   ],
   "products": [
@@ -44,22 +39,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-25T03:55:18.553691+00:00"
+      "lastChecked": "2026-04-25T04:30:20.334679+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-25T03:50:00.011000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-25T03:30:00.010000+00:00",
+      "lastRun": "2026-04-25T04:00:00.011000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -67,7 +54,15 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-25T03:51:06.128000+00:00",
+      "lastRun": "2026-04-25T04:21:09.177000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-25T04:25:00.015000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
