@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-25T00:30:19.611716+00:00",
+  "lastUpdated": "2026-04-25T01:00:56.043354+00:00",
   "actionRequired": [
     {
       "title": "Pulso Familiar - Meio-dia (3 erros) - cron: job execution timed out",
@@ -16,17 +16,32 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-25T00:30:08.112000+00:00"
+      "startedAt": "2026-04-25T01:00:34.376000+00:00"
+    },
+    {
+      "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-25T01:00:00.016000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
-      "startedAt": "2026-04-25T00:26:41.603000+00:00"
+      "startedAt": "2026-04-25T00:56:18.282000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-25T00:21:42.202000+00:00"
+      "startedAt": "2026-04-25T00:51:04.127000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-25T00:45:00.023000+00:00"
+    },
+    {
+      "task": "agent:main:cron:22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-25T00:32:15.559000+00:00"
     },
     {
       "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
@@ -39,14 +54,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-25T00:30:19.611716+00:00"
+      "lastChecked": "2026-04-25T01:00:56.043354+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Lembrete de Captura de Memórias",
-      "schedule": "30 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-24T00:32:52.530000+00:00",
+      "name": "Rotina da Noite (Completa)",
+      "schedule": "0 22 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-24T01:00:00.017000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -54,7 +69,7 @@
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-25T00:00:00.018000+00:00",
+      "lastRun": "2026-04-25T00:30:00.010000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -62,7 +77,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-25T00:21:41.492000+00:00",
+      "lastRun": "2026-04-25T00:51:04.122000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -70,23 +85,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-25T00:25:00.010000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Pluggy Sync - Tracking Despesas",
-      "schedule": "45 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-24T00:45:00.018000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Rotina da Noite (Completa)",
-      "schedule": "0 22 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-24T01:00:00.017000+00:00",
+      "lastRun": "2026-04-25T00:55:00.018000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -244,6 +243,22 @@
       "lastError": null
     },
     {
+      "name": "Lembrete de Captura de Memórias",
+      "schedule": "30 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-25T00:32:14.856000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Pluggy Sync - Tracking Despesas",
+      "schedule": "45 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-25T00:45:00.010000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Resumo Semanal de Memórias",
       "schedule": "0 20 * * 0 (America/Sao_Paulo)",
       "lastRun": "2026-04-20T01:48:47.559000+00:00",
@@ -355,6 +370,11 @@
     {
       "time": "2026-04-24T18:00:21-03:00",
       "event": "Cron disparou: Rotina da Tarde (e3ac374c-a524-4465-a872-f682f01a979d)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-04-24T22:00:20-03:00",
+      "event": "Cron disparou: Rotina da Noite (Completa) (7804497e-ac8d-49c9-bead-08ed6bab21d1)",
       "channel": "cron"
     }
   ]
