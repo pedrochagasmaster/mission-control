@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-25T14:00:25.442307+00:00",
+  "lastUpdated": "2026-04-25T14:00:41.011719+00:00",
   "actionRequired": [
     {
       "title": "Pulso Familiar - Meio-dia (3 erros) - cron: job execution timed out",
@@ -59,7 +59,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-25T14:00:25.442307+00:00"
+      "lastChecked": "2026-04-25T14:00:41.011719+00:00"
     }
   ],
   "crons": [
