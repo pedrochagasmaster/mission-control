@@ -1,8 +1,13 @@
 {
-  "lastUpdated": "2026-04-27T16:04:12.411034+00:00",
+  "lastUpdated": "2026-04-27T16:31:52.743825+00:00",
   "actionRequired": [
     {
-      "title": "Watchdog - Tracking Despesas (API + Frontend) (5 erros) - cron: job execution timed out",
+      "title": "Mission Control - Build+Publish (3 erros)",
+      "url": null,
+      "priority": "high"
+    },
+    {
+      "title": "Watchdog - Tracking Despesas (API + Frontend) (6 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
     },
@@ -10,16 +15,6 @@
       "title": "1 alerta(s) crítico(s) no security audit",
       "url": null,
       "priority": "high"
-    },
-    {
-      "title": "Mission Control - Build+Publish (2 erros)",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Mission Control - Control Runner (1 erros) - ⚠️ Agent couldn't generate a response. Note: some tool actions may have already been executed — please verify before retrying.",
-      "url": null,
-      "priority": "medium"
     },
     {
       "title": "Atualização do Índice de Sistema (1 erros) - ⚠️ Agent couldn't generate a response. Please try again.",
@@ -36,22 +31,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-27T16:02:48.015000+00:00"
+      "startedAt": "2026-04-27T16:30:54.817000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-27T16:29:52.614000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "free",
+      "startedAt": "2026-04-27T16:25:00.041000+00:00"
     },
     {
       "task": "agent:main:cron:96074f1f-0124-4b4c-a944-e71349f91678",
       "model": "free",
       "startedAt": "2026-04-27T16:00:00.025000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "free",
-      "startedAt": "2026-04-27T15:57:20.410000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-27T15:28:56.136000+00:00"
     },
     {
       "task": "agent:main:cron:42be764c-f915-4669-8f94-878e23362bf8",
@@ -62,11 +57,6 @@
       "task": "agent:main:cron:ff7487f2-fad4-40ab-bd83-84219ecec634",
       "model": "free",
       "startedAt": "2026-04-27T14:35:38.723000+00:00"
-    },
-    {
-      "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-27T13:30:00.028000+00:00"
     }
   ],
   "products": [
@@ -74,40 +64,32 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-27T16:04:12.411034+00:00"
+      "lastChecked": "2026-04-27T16:31:52.743825+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T15:30:00.011000+00:00",
+      "lastRun": "2026-04-27T16:01:34.529000+00:00",
       "status": "error",
-      "errors": 2,
-      "lastError": null
-    },
-    {
-      "name": "Passeio Almoço",
-      "schedule": "0 13 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-26T16:00:00.018000+00:00",
-      "status": "ok",
-      "errors": 0,
+      "errors": 3,
       "lastError": null
     },
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T15:55:00.016000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "⚠️ Agent couldn't generate a response. Note: some tool actions may have already been executed — please verify before retrying."
+      "lastRun": "2026-04-27T16:25:00.033000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T15:28:06.962000+00:00",
+      "lastRun": "2026-04-27T16:28:52.536000+00:00",
       "status": "error",
-      "errors": 5,
+      "errors": 6,
       "lastError": "cron: job execution timed out"
     },
     {
@@ -266,6 +248,14 @@
       "name": "Ração Almoço",
       "schedule": "0 12 * * * (America/Sao_Paulo)",
       "lastRun": "2026-04-27T15:00:00.026000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Passeio Almoço",
+      "schedule": "0 13 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-27T16:00:00.015000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
