@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-27T19:01:38.868706+00:00",
+  "lastUpdated": "2026-04-27T19:31:45.934824+00:00",
   "actionRequired": [
     {
       "title": "Mission Control - Control Runner (6 erros) - cron: job execution timed out",
@@ -31,7 +31,7 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-27T19:00:57.124000+00:00"
+      "startedAt": "2026-04-27T19:31:00.857000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
@@ -49,14 +49,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-27T19:01:38.868706+00:00"
+      "lastChecked": "2026-04-27T19:31:45.934824+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T18:31:07.111000+00:00",
+      "lastRun": "2026-04-27T19:00:00.019000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
