@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-27T13:25:51.391569+00:00",
+  "lastUpdated": "2026-04-27T14:00:23.299785+00:00",
   "actionRequired": [
     {
       "title": "1 alerta(s) crítico(s) no security audit",
@@ -14,19 +14,24 @@
   ],
   "activeNow": [
     {
+      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "model": "free",
+      "startedAt": "2026-04-27T14:00:09.092000+00:00"
+    },
+    {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
-      "startedAt": "2026-04-27T13:25:09.200000+00:00"
+      "startedAt": "2026-04-27T13:56:58.294000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-27T13:21:20.237000+00:00"
+      "startedAt": "2026-04-27T13:51:04.366000+00:00"
     },
     {
-      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "model": "free",
-      "startedAt": "2026-04-27T13:03:02.380000+00:00"
+      "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-27T13:30:00.028000+00:00"
     },
     {
       "task": "agent:main:cron:8e6d54f6-5278-4975-94dc-578d36397408",
@@ -47,11 +52,6 @@
       "task": "agent:main:cron:ae7b9fb6-d807-4c23-846c-87f880d130be",
       "model": "free",
       "startedAt": "2026-04-27T12:00:52.170000+00:00"
-    },
-    {
-      "task": "agent:main:cron:3d633d74-840a-4996-82df-9e9f8d474d46",
-      "model": "free",
-      "startedAt": "2026-04-27T12:00:00.027000+00:00"
     }
   ],
   "products": [
@@ -59,30 +59,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-27T13:25:51.391569+00:00"
+      "lastChecked": "2026-04-27T14:00:23.299785+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T13:20:00.011000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T13:00:47.977000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Rotina da Manhã (Completa)",
-      "schedule": "30 10 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-26T13:30:00.015000+00:00",
+      "lastRun": "2026-04-27T13:31:38.937000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -90,7 +74,15 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T13:21:19.561000+00:00",
+      "lastRun": "2026-04-27T13:51:03.232000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-27T13:55:00.010000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -256,6 +248,14 @@
       "lastError": null
     },
     {
+      "name": "Rotina da Manhã (Completa)",
+      "schedule": "30 10 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-27T13:30:00.009000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Pós-Almoço: Zero Pia",
       "schedule": "30 13 * * 2-7 (America/Sao_Paulo)",
       "lastRun": "2026-04-26T16:30:00.009000+00:00",
@@ -355,6 +355,11 @@
     {
       "time": "2026-04-27T10:00:40-03:00",
       "event": "Cron disparou: Lixo (Sacos Novos) + Ralos (8e6d54f6-5278-4975-94dc-578d36397408)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-04-27T10:31:19-03:00",
+      "event": "Cron disparou: Rotina da Manhã (Completa) (93c7796d-f82d-4381-a925-f1a0a22bf25b)",
       "channel": "cron"
     }
   ]
