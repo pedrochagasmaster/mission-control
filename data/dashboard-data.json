@@ -1,20 +1,20 @@
 {
-  "lastUpdated": "2026-04-27T11:00:48.016987+00:00",
+  "lastUpdated": "2026-04-27T12:03:30.962292+00:00",
   "actionRequired": [
-    {
-      "title": "Mission Control - Build+Publish (4 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Watchdog - Tracking Despesas (API + Frontend) (3 erros)",
-      "url": null,
-      "priority": "high"
-    },
     {
       "title": "1 alerta(s) crítico(s) no security audit",
       "url": null,
       "priority": "high"
+    },
+    {
+      "title": "Mission Control - Build+Publish (1 erros) - ⚠️ Agent couldn't generate a response. Please try again.",
+      "url": null,
+      "priority": "medium"
+    },
+    {
+      "title": "Mission Control - Control Runner (1 erros) - ⚠️ 🧩 Process?<|channel|>commentary-json failed",
+      "url": null,
+      "priority": "medium"
     },
     {
       "title": "Atualização do Índice de Sistema (1 erros) - ⚠️ Agent couldn't generate a response. Please try again.",
@@ -26,37 +26,42 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-27T11:00:11.556000+00:00"
+      "startedAt": "2026-04-27T12:03:05.513000+00:00"
+    },
+    {
+      "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
+      "model": "free",
+      "startedAt": "2026-04-27T12:02:23.501000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ae7b9fb6-d807-4c23-846c-87f880d130be",
+      "model": "free",
+      "startedAt": "2026-04-27T12:00:52.170000+00:00"
+    },
+    {
+      "task": "agent:main:cron:3d633d74-840a-4996-82df-9e9f8d474d46",
+      "model": "free",
+      "startedAt": "2026-04-27T12:00:00.027000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
-      "startedAt": "2026-04-27T10:56:40.149000+00:00"
+      "startedAt": "2026-04-27T11:57:15.969000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-27T10:51:42.386000+00:00"
+      "model": "free",
+      "startedAt": "2026-04-27T11:50:28.792000+00:00"
     },
     {
-      "task": "agent:main:cron:4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
+      "task": "agent:main:cron:f1830563-b029-4bb2-80fc-9ffe54108a08",
       "model": "free",
-      "startedAt": "2026-04-27T10:36:39.619000+00:00"
+      "startedAt": "2026-04-27T11:33:51.983000+00:00"
     },
     {
-      "task": "agent:main:cron:ec212b07-8387-45d0-9606-351509850608",
+      "task": "agent:main:cron:0ba1cb64-5259-46bf-beb5-e58c02ec4215",
       "model": "free",
-      "startedAt": "2026-04-27T10:30:00.013000+00:00"
-    },
-    {
-      "task": "agent:main:cron:06b5aaae-b25a-4005-a78c-badad02f216b",
-      "model": "free",
-      "startedAt": "2026-04-27T10:20:00.020000+00:00"
-    },
-    {
-      "task": "agent:main:cron:f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
-      "model": "free",
-      "startedAt": "2026-04-27T09:05:27.072000+00:00"
+      "startedAt": "2026-04-27T11:15:00.017000+00:00"
     }
   ],
   "products": [
@@ -64,50 +69,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-27T11:00:48.016987+00:00"
+      "lastChecked": "2026-04-27T12:03:30.962292+00:00"
     }
   ],
   "crons": [
-    {
-      "name": "Mission Control - Build+Publish",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T10:30:33.165000+00:00",
-      "status": "error",
-      "errors": 4,
-      "lastError": null
-    },
-    {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T10:50:56.679000+00:00",
-      "status": "error",
-      "errors": 3,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T10:55:00.013000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Diário da Família - Watchdog (retry 08:15)",
-      "schedule": "15 8 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-26T11:15:00.009000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Análise de Conversas - Manhã",
-      "schedule": "30 8 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-26T11:32:12.308000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
     {
       "name": "Deadline Reminder Checker",
       "schedule": "0 9 * * * (America/Sao_Paulo)",
@@ -125,12 +90,36 @@
       "lastError": null
     },
     {
+      "name": "Mission Control - Build+Publish",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-27T11:30:00.017000+00:00",
+      "status": "error",
+      "errors": 1,
+      "lastError": "⚠️ Agent couldn't generate a response. Please try again."
+    },
+    {
       "name": "Resumo Diário da To-Do List",
       "schedule": "0 9 * * * (America/Sao_Paulo)",
       "lastRun": "2026-04-26T12:00:00.028000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
+    },
+    {
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-27T11:50:28.789000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-27T11:55:00.009000+00:00",
+      "status": "error",
+      "errors": 1,
+      "lastError": "⚠️ 🧩 Process?<|channel|>commentary-json failed"
     },
     {
       "name": "Aspirar Cozinha",
@@ -277,6 +266,22 @@
       "lastError": null
     },
     {
+      "name": "Diário da Família - Watchdog (retry 08:15)",
+      "schedule": "15 8 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-27T11:15:00.013000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Análise de Conversas - Manhã",
+      "schedule": "30 8 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-27T11:31:58.964000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Dobrar Roupas",
       "schedule": "0 10 * * 2 (America/Sao_Paulo)",
       "lastRun": "2026-04-21T13:00:00.040000+00:00",
@@ -345,6 +350,11 @@
     {
       "time": "2026-04-27T07:30:23-03:00",
       "event": "Cron disparou: Lixo (Colocar Fora) (ec212b07-8387-45d0-9606-351509850608)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-04-27T09:00:44-03:00",
+      "event": "Cron disparou: Pagamento Wal (3d633d74-840a-4996-82df-9e9f8d474d46)",
       "channel": "cron"
     }
   ]
