@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-04-27T23:31:21.785431+00:00",
+  "lastUpdated": "2026-04-28T03:02:59.917311+00:00",
   "actionRequired": [
     {
-      "title": "Watchdog - Tracking Despesas (API + Frontend) (12 erros) - cron: job execution timed out",
+      "title": "Mission Control - Control Runner (10 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
     },
     {
-      "title": "Mission Control - Control Runner (7 erros) - cron: job execution timed out",
+      "title": "Watchdog - Tracking Despesas (API + Frontend) (16 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
     },
@@ -35,33 +35,53 @@
       "title": "Pulso Familiar - Noite (1 erros) - cron: job execution timed out",
       "url": null,
       "priority": "medium"
+    },
+    {
+      "title": "Lembrete de Captura de Memórias (1 erros) - cron: job execution timed out",
+      "url": null,
+      "priority": "medium"
     }
   ],
   "activeNow": [
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-27T23:30:57.574000+00:00"
+      "startedAt": "2026-04-28T03:02:04.278000+00:00"
     },
     {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "task": "agent:main:cron:ebbd066d-2269-48d5-8f80-f89ce7633b81",
       "model": "free",
-      "startedAt": "2026-04-27T23:20:04.009000+00:00"
+      "startedAt": "2026-04-28T02:59:00.034000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-27T22:38:19.466000+00:00"
+      "startedAt": "2026-04-28T02:41:22.025000+00:00"
     },
     {
-      "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
-      "startedAt": "2026-04-27T22:34:31.588000+00:00"
+      "startedAt": "2026-04-28T02:26:02.287000+00:00"
     },
     {
-      "task": "agent:main:cron:e3ac374c-a524-4465-a872-f682f01a979d",
+      "task": "agent:main:isolated",
       "model": "free",
-      "startedAt": "2026-04-27T21:00:00.040000+00:00"
+      "startedAt": "2026-04-28T02:06:12.884000+00:00"
+    },
+    {
+      "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
+      "model": "free",
+      "startedAt": "2026-04-28T01:00:00.038000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
+      "model": "free",
+      "startedAt": "2026-04-28T00:45:00.037000+00:00"
+    },
+    {
+      "task": "agent:main:cron:22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-28T00:32:52.732000+00:00"
     }
   ],
   "products": [
@@ -69,65 +89,33 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-27T23:31:21.785431+00:00"
+      "lastChecked": "2026-04-28T03:02:59.917311+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T23:00:00.022000+00:00",
+      "lastRun": "2026-04-28T02:30:00.025000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
-    },
-    {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T22:37:32.244000+00:00",
-      "status": "error",
-      "errors": 12,
-      "lastError": "cron: job execution timed out"
     },
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T23:18:00.274000+00:00",
+      "lastRun": "2026-04-28T02:24:00.796000+00:00",
       "status": "error",
-      "errors": 7,
+      "errors": 10,
       "lastError": "cron: job execution timed out"
     },
     {
-      "name": "Lembrete de Captura de Memórias",
-      "schedule": "30 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T00:32:03.275000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Pluggy Sync - Tracking Despesas",
-      "schedule": "45 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T00:45:00.011000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Rotina da Noite (Completa)",
-      "schedule": "0 22 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T01:00:00.020000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "daily-git-commit",
-      "schedule": "59 23 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T02:59:00.021000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-28T02:40:32.952000+00:00",
+      "status": "error",
+      "errors": 16,
+      "lastError": "cron: job execution timed out"
     },
     {
       "name": "Consolidação Automática de Learnings",
@@ -274,9 +262,41 @@
       "lastError": "cron: job execution timed out"
     },
     {
+      "name": "Lembrete de Captura de Memórias",
+      "schedule": "30 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-28T00:31:51.491000+00:00",
+      "status": "error",
+      "errors": 1,
+      "lastError": "cron: job execution timed out"
+    },
+    {
+      "name": "Pluggy Sync - Tracking Despesas",
+      "schedule": "45 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-28T00:45:00.027000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Rotina da Noite (Completa)",
+      "schedule": "0 22 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-28T01:00:00.027000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Lixo Véspera (22h)",
       "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
       "lastRun": "2026-04-27T01:00:22.872000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "daily-git-commit",
+      "schedule": "59 23 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-28T02:59:00.024000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -346,51 +366,5 @@
       "lastError": null
     }
   ],
-  "recentActivity": [
-    {
-      "time": "2026-04-27T07:30:23-03:00",
-      "event": "Cron disparou: Lixo (Colocar Fora) (ec212b07-8387-45d0-9606-351509850608)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-04-27T09:00:44-03:00",
-      "event": "Cron disparou: Pagamento Wal (3d633d74-840a-4996-82df-9e9f8d474d46)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-04-27T10:00:18-03:00",
-      "event": "Cron disparou: Aspirar Cozinha (555d214e-c8ca-48ef-a091-d41efcba712d)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-04-27T10:00:40-03:00",
-      "event": "Cron disparou: Lixo (Sacos Novos) + Ralos (8e6d54f6-5278-4975-94dc-578d36397408)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-04-27T10:31:19-03:00",
-      "event": "Cron disparou: Rotina da Manhã (Completa) (93c7796d-f82d-4381-a925-f1a0a22bf25b)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-04-27T12:01:12-03:00",
-      "event": "Cron disparou: Ração Almoço (42be764c-f915-4669-8f94-878e23362bf8)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-04-27T13:01:23-03:00",
-      "event": "Cron disparou: Passeio Almoço (96074f1f-0124-4b4c-a944-e71349f91678)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-04-27T17:31:17-03:00",
-      "event": "Cron disparou: Blitz da Ordem (17:30) (a2a10215-b00a-45e4-8ed4-28cb60e442a6)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-04-27T18:01:25-03:00",
-      "event": "Cron disparou: Rotina da Tarde (e3ac374c-a524-4465-a872-f682f01a979d)",
-      "channel": "cron"
-    }
-  ]
+  "recentActivity": []
 }
