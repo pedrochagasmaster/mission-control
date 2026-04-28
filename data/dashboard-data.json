@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-04-28T05:32:53.953071+00:00",
+  "lastUpdated": "2026-04-28T06:01:53.620282+00:00",
   "actionRequired": [
     {
-      "title": "Watchdog - Tracking Despesas (API + Frontend) (18 erros) - cron: job execution timed out",
+      "title": "Watchdog - Tracking Despesas (API + Frontend) (19 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
     },
@@ -10,6 +10,16 @@
       "title": "1 alerta(s) crítico(s) no security audit",
       "url": null,
       "priority": "high"
+    },
+    {
+      "title": "Mission Control - Build+Publish (1 erros)",
+      "url": null,
+      "priority": "medium"
+    },
+    {
+      "title": "Mission Control - Control Runner (1 erros)",
+      "url": null,
+      "priority": "medium"
     },
     {
       "title": "Atualização do Índice de Sistema (1 erros) - ⚠️ Agent couldn't generate a response. Please try again.",
@@ -41,22 +51,17 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-28T05:31:55.677000+00:00"
+      "startedAt": "2026-04-28T06:00:51.684000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
-      "startedAt": "2026-04-28T05:29:22.897000+00:00"
+      "startedAt": "2026-04-28T05:57:01.529000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-28T04:42:53.139000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ebbd066d-2269-48d5-8f80-f89ce7633b81",
-      "model": "free",
-      "startedAt": "2026-04-28T02:59:00.034000+00:00"
+      "startedAt": "2026-04-28T05:43:36.436000+00:00"
     }
   ],
   "products": [
@@ -64,32 +69,32 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-28T05:32:53.953071+00:00"
+      "lastChecked": "2026-04-28T06:01:53.620282+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T05:00:00.009000+00:00",
-      "status": "ok",
-      "errors": 0,
+      "lastRun": "2026-04-28T05:31:01.529000+00:00",
+      "status": "error",
+      "errors": 1,
       "lastError": null
     },
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T05:29:22.889000+00:00",
-      "status": "ok",
-      "errors": 0,
+      "lastRun": "2026-04-28T05:55:00.009000+00:00",
+      "status": "error",
+      "errors": 1,
       "lastError": null
     },
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T04:42:03.376000+00:00",
+      "lastRun": "2026-04-28T05:42:49.755000+00:00",
       "status": "error",
-      "errors": 18,
+      "errors": 19,
       "lastError": "cron: job execution timed out"
     },
     {
