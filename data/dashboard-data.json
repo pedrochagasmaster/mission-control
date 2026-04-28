@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-04-28T03:02:59.917311+00:00",
+  "lastUpdated": "2026-04-28T04:01:46.579208+00:00",
   "actionRequired": [
     {
-      "title": "Mission Control - Control Runner (10 erros) - cron: job execution timed out",
+      "title": "Mission Control - Control Runner (11 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
     },
     {
-      "title": "Watchdog - Tracking Despesas (API + Frontend) (16 erros) - cron: job execution timed out",
+      "title": "Watchdog - Tracking Despesas (API + Frontend) (17 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
     },
@@ -15,6 +15,11 @@
       "title": "1 alerta(s) crítico(s) no security audit",
       "url": null,
       "priority": "high"
+    },
+    {
+      "title": "Mission Control - Build+Publish (2 erros)",
+      "url": null,
+      "priority": "medium"
     },
     {
       "title": "Atualização do Índice de Sistema (1 erros) - ⚠️ Agent couldn't generate a response. Please try again.",
@@ -46,7 +51,17 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-28T03:02:04.278000+00:00"
+      "startedAt": "2026-04-28T04:00:58.435000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-28T03:42:10.404000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "free",
+      "startedAt": "2026-04-28T03:28:01.388000+00:00"
     },
     {
       "task": "agent:main:cron:ebbd066d-2269-48d5-8f80-f89ce7633b81",
@@ -54,34 +69,9 @@
       "startedAt": "2026-04-28T02:59:00.034000+00:00"
     },
     {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-28T02:41:22.025000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "free",
-      "startedAt": "2026-04-28T02:26:02.287000+00:00"
-    },
-    {
       "task": "agent:main:isolated",
       "model": "free",
       "startedAt": "2026-04-28T02:06:12.884000+00:00"
-    },
-    {
-      "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
-      "model": "free",
-      "startedAt": "2026-04-28T01:00:00.038000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
-      "model": "free",
-      "startedAt": "2026-04-28T00:45:00.037000+00:00"
-    },
-    {
-      "task": "agent:main:cron:22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-28T00:32:52.732000+00:00"
     }
   ],
   "products": [
@@ -89,32 +79,32 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-28T03:02:59.917311+00:00"
+      "lastChecked": "2026-04-28T04:01:46.579208+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T02:30:00.025000+00:00",
-      "status": "ok",
-      "errors": 0,
+      "lastRun": "2026-04-28T03:30:00.011000+00:00",
+      "status": "error",
+      "errors": 2,
       "lastError": null
     },
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T02:24:00.796000+00:00",
+      "lastRun": "2026-04-28T03:26:00.856000+00:00",
       "status": "error",
-      "errors": 10,
+      "errors": 11,
       "lastError": "cron: job execution timed out"
     },
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T02:40:32.952000+00:00",
+      "lastRun": "2026-04-28T03:41:18.313000+00:00",
       "status": "error",
-      "errors": 16,
+      "errors": 17,
       "lastError": "cron: job execution timed out"
     },
     {
