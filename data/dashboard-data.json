@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-04-28T04:32:04.601303+00:00",
+  "lastUpdated": "2026-04-28T05:01:32.099806+00:00",
   "actionRequired": [
     {
-      "title": "Watchdog - Tracking Despesas (API + Frontend) (17 erros) - cron: job execution timed out",
+      "title": "Mission Control - Control Runner (12 erros) - ⚠️ 🧩 Exec<|channel|>commentary: `cd ~/.openclaw/workspace && python3 mission-control/scripts/control_queue.py process --max-items 20` failed",
       "url": null,
       "priority": "high"
     },
     {
-      "title": "Mission Control - Control Runner (12 erros) - ⚠️ 🧩 Exec<|channel|>commentary: `cd ~/.openclaw/workspace && python3 mission-control/scripts/control_queue.py process --max-items 20` failed",
+      "title": "Watchdog - Tracking Despesas (API + Frontend) (18 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
     },
@@ -15,6 +15,11 @@
       "title": "1 alerta(s) crítico(s) no security audit",
       "url": null,
       "priority": "high"
+    },
+    {
+      "title": "Mission Control - Build+Publish (1 erros)",
+      "url": null,
+      "priority": "medium"
     },
     {
       "title": "Atualização do Índice de Sistema (1 erros) - ⚠️ Agent couldn't generate a response. Please try again.",
@@ -46,17 +51,17 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-28T04:30:53.436000+00:00"
+      "startedAt": "2026-04-28T05:00:54.994000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-28T04:42:53.139000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
       "startedAt": "2026-04-28T04:29:35.751000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-28T03:42:10.404000+00:00"
     },
     {
       "task": "agent:main:cron:ebbd066d-2269-48d5-8f80-f89ce7633b81",
@@ -74,25 +79,17 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-28T04:32:04.601303+00:00"
+      "lastChecked": "2026-04-28T05:01:32.099806+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T04:00:00.011000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T03:41:18.313000+00:00",
+      "lastRun": "2026-04-28T04:30:00.021000+00:00",
       "status": "error",
-      "errors": 17,
-      "lastError": "cron: job execution timed out"
+      "errors": 1,
+      "lastError": null
     },
     {
       "name": "Mission Control - Control Runner",
@@ -101,6 +98,14 @@
       "status": "error",
       "errors": 12,
       "lastError": "⚠️ 🧩 Exec<|channel|>commentary: `cd ~/.openclaw/workspace && python3 mission-control/scripts/control_queue.py process --max-items 20` failed"
+    },
+    {
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-28T04:42:03.376000+00:00",
+      "status": "error",
+      "errors": 18,
+      "lastError": "cron: job execution timed out"
     },
     {
       "name": "Consolidação Automática de Learnings",
