@@ -1,8 +1,13 @@
 {
-  "lastUpdated": "2026-04-28T08:07:05.214066+00:00",
+  "lastUpdated": "2026-04-28T09:01:31.925028+00:00",
   "actionRequired": [
     {
-      "title": "Watchdog - Tracking Despesas (API + Frontend) (21 erros) - cron: job execution timed out",
+      "title": "Mission Control - Control Runner (4 erros) - cron: job execution timed out",
+      "url": null,
+      "priority": "high"
+    },
+    {
+      "title": "Watchdog - Tracking Despesas (API + Frontend) (22 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
     },
@@ -10,6 +15,11 @@
       "title": "1 alerta(s) crítico(s) no security audit",
       "url": null,
       "priority": "high"
+    },
+    {
+      "title": "Mission Control - Build+Publish (2 erros)",
+      "url": null,
+      "priority": "medium"
     },
     {
       "title": "Atualização do Índice de Sistema (1 erros) - ⚠️ Agent couldn't generate a response. Please try again.",
@@ -35,28 +45,33 @@
       "title": "Lembrete de Captura de Memórias (1 erros) - cron: job execution timed out",
       "url": null,
       "priority": "medium"
+    },
+    {
+      "title": "Instagram Knowledge Ingest (1 erros) - FallbackSummaryError: All models failed (8): github-copilot/gpt-5-mini: ⚠️ quota exceeded (rate_limit) | github-copilot/gpt-5.4: LLM request failed: provider rejected the request schema or tool payload. (format) | openrouter/openrouter/free: Upstream error from OpenInference: unexpected tokens remaining in message header: Some(\"to=...<|end|><|start|>assistant\") (timeout) | openrouter/nvidia/nemotron-nano-12b-v2-vl:free: ⚠️ API rate limit reached. Please try again later. (rate_limit) | openrouter/nvidia/nemotron-3-super-120b-a12b:free: ⚠️ API rate limit reached. Please try again later. (rate_limit) | opencode-go/kimi-k2.5: 401 No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KMYY1VYRG8SVDWKH49VEA8ZV/billing (auth) | opencode-go/glm-5: No available auth profile for opencode-go (all in cooldown or unavailable). (auth) | opencode-go/minimax-m2.5: No available auth profile for opencode-go (all in cooldown or unavailable). (auth)",
+      "url": null,
+      "priority": "medium"
     }
   ],
   "activeNow": [
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-28T08:05:46.533000+00:00"
+      "startedAt": "2026-04-28T09:00:52.951000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "free",
+      "startedAt": "2026-04-28T08:49:00.492000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-28T08:45:55.555000+00:00"
     },
     {
       "task": "agent:main:cron:75b87bc7-016d-49a2-9995-4a0b715a7f23",
       "model": "gpt-5-mini",
       "startedAt": "2026-04-28T08:05:05.741000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "free",
-      "startedAt": "2026-04-28T07:55:00.015000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-28T07:45:20.551000+00:00"
     },
     {
       "task": "agent:main:cron:218f26ef-423f-4f74-aa31-d28879facc28",
@@ -69,41 +84,17 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-28T08:07:05.214066+00:00"
+      "lastChecked": "2026-04-28T09:01:31.925028+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Instagram Knowledge Ingest",
-      "schedule": "0 5 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T08:00:00.019000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T07:30:00.022000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T07:55:00.011000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T07:44:21.359000+00:00",
+      "lastRun": "2026-04-28T08:30:00.010000+00:00",
       "status": "error",
-      "errors": 21,
-      "lastError": "cron: job execution timed out"
+      "errors": 2,
+      "lastError": null
     },
     {
       "name": "Atualização do Índice de Sistema",
@@ -112,6 +103,22 @@
       "status": "error",
       "errors": 1,
       "lastError": "⚠️ Agent couldn't generate a response. Please try again."
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-28T08:47:00.063000+00:00",
+      "status": "error",
+      "errors": 4,
+      "lastError": "cron: job execution timed out"
+    },
+    {
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-28T08:45:06.853000+00:00",
+      "status": "error",
+      "errors": 22,
+      "lastError": "cron: job execution timed out"
     },
     {
       "name": "Diário da Família - Gerador",
@@ -280,6 +287,14 @@
       "status": "ok",
       "errors": 0,
       "lastError": null
+    },
+    {
+      "name": "Instagram Knowledge Ingest",
+      "schedule": "0 5 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-28T08:00:00.022000+00:00",
+      "status": "error",
+      "errors": 1,
+      "lastError": "FallbackSummaryError: All models failed (8): github-copilot/gpt-5-mini: ⚠️ quota exceeded (rate_limit) | github-copilot/gpt-5.4: LLM request failed: provider rejected the request schema or tool payload. (format) | openrouter/openrouter/free: Upstream error from OpenInference: unexpected tokens remaining in message header: Some(\"to=...<|end|><|start|>assistant\") (timeout) | openrouter/nvidia/nemotron-nano-12b-v2-vl:free: ⚠️ API rate limit reached. Please try again later. (rate_limit) | openrouter/nvidia/nemotron-3-super-120b-a12b:free: ⚠️ API rate limit reached. Please try again later. (rate_limit) | opencode-go/kimi-k2.5: 401 No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KMYY1VYRG8SVDWKH49VEA8ZV/billing (auth) | opencode-go/glm-5: No available auth profile for opencode-go (all in cooldown or unavailable). (auth) | opencode-go/minimax-m2.5: No available auth profile for opencode-go (all in cooldown or unavailable). (auth)"
     },
     {
       "name": "Lixo (Colocar Fora)",
