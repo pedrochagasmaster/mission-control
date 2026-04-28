@@ -2,15 +2,25 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-20.1",
-    "generatedAt": "2026-04-28T18:02:09.053335+00:00"
+    "generatedAt": "2026-04-28T18:31:22.966407+00:00"
   },
   "overview": {
     "healthScore": 0,
-    "criticalAlerts": 3,
+    "criticalAlerts": 4,
     "pendingControls": 0,
     "dataFreshnessSec": 0
   },
   "actionRequired": [
+    {
+      "type": "cron-error",
+      "targetId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "title": "Mission Control - Build+Publish (3 erros)",
+      "priority": "high",
+      "actions": [
+        "cron.retry",
+        "cron.pause"
+      ]
+    },
     {
       "type": "cron-error",
       "targetId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -37,16 +47,6 @@
       "title": "1 alerta(s) crítico(s) no security audit",
       "priority": "high",
       "actions": []
-    },
-    {
-      "type": "cron-error",
-      "targetId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "title": "Mission Control - Build+Publish (2 erros)",
-      "priority": "medium",
-      "actions": [
-        "cron.retry",
-        "cron.pause"
-      ]
     },
     {
       "type": "cron-error",
@@ -153,7 +153,7 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-28T18:00:44.625000+00:00",
+      "startedAt": "2026-04-28T18:30:42.697000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -1515,7 +1515,7 @@
           "signals": {
             "eventCount": 4,
             "attemptCount": 2,
-            "lastEvent": "2026-04-28T17:53:15.869000+00:00",
+            "lastEvent": "2026-04-28T18:00:00.011000+00:00",
             "lastAttemptStatus": "healthy"
           },
           "history": {
@@ -1535,49 +1535,6 @@
             ]
           },
           "recentAttempts": [
-            {
-              "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260428T1730",
-              "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-              "jobName": "Mission Control - Build+Publish",
-              "status": "healthy",
-              "confidence": 100,
-              "startedAt": "2026-04-28T17:30:00.012000+00:00",
-              "lastEventAt": "2026-04-28T17:30:00.012000+00:00",
-              "channel": null,
-              "eventTypes": [
-                "triggered",
-                "ran"
-              ],
-              "eventCount": 2,
-              "reasons": [
-                "workflow interno sem requisito de entrega"
-              ],
-              "events": [
-                {
-                  "workflowId": "mission_control",
-                  "workflowName": "Mission Control",
-                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260428T1730",
-                  "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-                  "jobName": "Mission Control - Build+Publish",
-                  "timestamp": "2026-04-28T17:30:00.012000+00:00",
-                  "eventType": "triggered",
-                  "source": "cron-state",
-                  "inferred": true
-                },
-                {
-                  "workflowId": "mission_control",
-                  "workflowName": "Mission Control",
-                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260428T1730",
-                  "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-                  "jobName": "Mission Control - Build+Publish",
-                  "timestamp": "2026-04-28T17:30:00.012000+00:00",
-                  "eventType": "ran",
-                  "source": "cron-state",
-                  "runStatus": "error",
-                  "inferred": true
-                }
-              ]
-            },
             {
               "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260428T1753",
               "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -1614,6 +1571,49 @@
                   "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
                   "jobName": "Mission Control - Control Runner",
                   "timestamp": "2026-04-28T17:53:15.869000+00:00",
+                  "eventType": "ran",
+                  "source": "cron-state",
+                  "runStatus": "error",
+                  "inferred": true
+                }
+              ]
+            },
+            {
+              "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260428T1800",
+              "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+              "jobName": "Mission Control - Build+Publish",
+              "status": "healthy",
+              "confidence": 100,
+              "startedAt": "2026-04-28T18:00:00.011000+00:00",
+              "lastEventAt": "2026-04-28T18:00:00.011000+00:00",
+              "channel": null,
+              "eventTypes": [
+                "triggered",
+                "ran"
+              ],
+              "eventCount": 2,
+              "reasons": [
+                "workflow interno sem requisito de entrega"
+              ],
+              "events": [
+                {
+                  "workflowId": "mission_control",
+                  "workflowName": "Mission Control",
+                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260428T1800",
+                  "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+                  "jobName": "Mission Control - Build+Publish",
+                  "timestamp": "2026-04-28T18:00:00.011000+00:00",
+                  "eventType": "triggered",
+                  "source": "cron-state",
+                  "inferred": true
+                },
+                {
+                  "workflowId": "mission_control",
+                  "workflowName": "Mission Control",
+                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260428T1800",
+                  "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+                  "jobName": "Mission Control - Build+Publish",
+                  "timestamp": "2026-04-28T18:00:00.011000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "error",
@@ -2109,23 +2109,6 @@
         {
           "workflowId": "mission_control",
           "workflowName": "Mission Control",
-          "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260428T1730",
-          "status": "healthy",
-          "startedAt": "2026-04-28T17:30:00.012000+00:00",
-          "lastEventAt": "2026-04-28T17:30:00.012000+00:00",
-          "jobName": "Mission Control - Build+Publish",
-          "channel": null,
-          "eventTypes": [
-            "triggered",
-            "ran"
-          ],
-          "reasons": [
-            "workflow interno sem requisito de entrega"
-          ]
-        },
-        {
-          "workflowId": "mission_control",
-          "workflowName": "Mission Control",
           "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260428T1753",
           "status": "healthy",
           "startedAt": "2026-04-28T17:53:15.869000+00:00",
@@ -2148,6 +2131,23 @@
           "startedAt": "2026-04-28T17:55:18.240000+00:00",
           "lastEventAt": "2026-04-28T17:55:18.240000+00:00",
           "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
+          "channel": null,
+          "eventTypes": [
+            "triggered",
+            "ran"
+          ],
+          "reasons": [
+            "workflow interno sem requisito de entrega"
+          ]
+        },
+        {
+          "workflowId": "mission_control",
+          "workflowName": "Mission Control",
+          "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260428T1800",
+          "status": "healthy",
+          "startedAt": "2026-04-28T18:00:00.011000+00:00",
+          "lastEventAt": "2026-04-28T18:00:00.011000+00:00",
+          "jobName": "Mission Control - Build+Publish",
           "channel": null,
           "eventTypes": [
             "triggered",
@@ -2182,10 +2182,10 @@
           "name": "Mission Control - Build+Publish",
           "status": "error",
           "enabled": true,
-          "errors": 2,
+          "errors": 3,
           "lastError": null,
-          "lastRun": "2026-04-28T17:30:00.012000+00:00",
-          "nextRun": "2026-04-28T18:00:00+00:00",
+          "lastRun": "2026-04-28T18:00:00.011000+00:00",
+          "nextRun": "2026-04-28T18:30:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -3010,7 +3010,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-28T18:02:09.053335+00:00"
+      "lastChecked": "2026-04-28T18:31:22.966407+00:00"
     }
   ],
   "crons": [
@@ -3019,10 +3019,10 @@
       "name": "Mission Control - Build+Publish",
       "status": "error",
       "enabled": true,
-      "errors": 2,
+      "errors": 3,
       "lastError": null,
-      "lastRun": "2026-04-28T17:30:00.012000+00:00",
-      "nextRun": "2026-04-28T18:00:00+00:00",
+      "lastRun": "2026-04-28T18:00:00.011000+00:00",
+      "nextRun": "2026-04-28T18:30:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -3491,5 +3491,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-04-28T18:02:09.053335+00:00"
+  "lastUpdated": "2026-04-28T18:31:22.966407+00:00"
 }

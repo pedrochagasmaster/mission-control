@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-04-28T18:02:09.053335+00:00",
+  "lastUpdated": "2026-04-28T18:31:22.966407+00:00",
   "actionRequired": [
+    {
+      "title": "Mission Control - Build+Publish (3 erros)",
+      "url": null,
+      "priority": "high"
+    },
     {
       "title": "Mission Control - Control Runner (6 erros) - cron: job execution timed out",
       "url": null,
@@ -15,11 +20,6 @@
       "title": "1 alerta(s) crítico(s) no security audit",
       "url": null,
       "priority": "high"
-    },
-    {
-      "title": "Mission Control - Build+Publish (2 erros)",
-      "url": null,
-      "priority": "medium"
     },
     {
       "title": "Rotina da Tarde (1 erros) - ⚠️ 📝 Edit: `in memory/daily_tasks.json` failed",
@@ -76,7 +76,7 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-28T18:00:44.625000+00:00"
+      "startedAt": "2026-04-28T18:30:42.697000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
@@ -104,16 +104,16 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-28T18:02:09.053335+00:00"
+      "lastChecked": "2026-04-28T18:31:22.966407+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T17:30:00.012000+00:00",
+      "lastRun": "2026-04-28T18:00:00.011000+00:00",
       "status": "error",
-      "errors": 2,
+      "errors": 3,
       "lastError": null
     },
     {
