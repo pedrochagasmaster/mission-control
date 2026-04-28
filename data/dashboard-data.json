@@ -1,18 +1,13 @@
 {
-  "lastUpdated": "2026-04-28T09:31:30.696015+00:00",
+  "lastUpdated": "2026-04-28T10:32:02.629727+00:00",
   "actionRequired": [
     {
-      "title": "Mission Control - Build+Publish (3 erros)",
+      "title": "Watchdog - Tracking Despesas (API + Frontend) (23 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
     },
     {
-      "title": "Watchdog - Tracking Despesas (API + Frontend) (22 erros) - cron: job execution timed out",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Mission Control - Control Runner (5 erros) - cron: job execution timed out",
+      "title": "Mission Control - Control Runner (6 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
     },
@@ -20,6 +15,11 @@
       "title": "1 alerta(s) crítico(s) no security audit",
       "url": null,
       "priority": "high"
+    },
+    {
+      "title": "Mission Control - Build+Publish (1 erros)",
+      "url": null,
+      "priority": "medium"
     },
     {
       "title": "Pulso Familiar - Meio-dia (1 erros) - cron: job execution timed out",
@@ -56,12 +56,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-28T09:30:50.006000+00:00"
+      "startedAt": "2026-04-28T10:30:55.194000+00:00"
+    },
+    {
+      "task": "agent:main:cron:06b5aaae-b25a-4005-a78c-badad02f216b",
+      "model": "free",
+      "startedAt": "2026-04-28T10:20:00.017000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
-      "startedAt": "2026-04-28T09:06:05.729000+00:00"
+      "startedAt": "2026-04-28T10:08:58.438000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-28T09:46:52.182000+00:00"
     },
     {
       "task": "agent:main:cron:f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
@@ -69,19 +79,9 @@
       "startedAt": "2026-04-28T09:04:03.058000+00:00"
     },
     {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-28T08:45:55.555000+00:00"
-    },
-    {
       "task": "agent:main:cron:75b87bc7-016d-49a2-9995-4a0b715a7f23",
       "model": "gpt-5-mini",
       "startedAt": "2026-04-28T08:05:05.741000+00:00"
-    },
-    {
-      "task": "agent:main:cron:218f26ef-423f-4f74-aa31-d28879facc28",
-      "model": "free",
-      "startedAt": "2026-04-28T07:04:37.026000+00:00"
     }
   ],
   "products": [
@@ -89,40 +89,16 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-28T09:31:30.696015+00:00"
+      "lastChecked": "2026-04-28T10:32:02.629727+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T09:00:00.019000+00:00",
+      "lastRun": "2026-04-28T10:00:00.020000+00:00",
       "status": "error",
-      "errors": 3,
-      "lastError": null
-    },
-    {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T08:45:06.853000+00:00",
-      "status": "error",
-      "errors": 22,
-      "lastError": "cron: job execution timed out"
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T09:04:04.543000+00:00",
-      "status": "error",
-      "errors": 5,
-      "lastError": "cron: job execution timed out"
-    },
-    {
-      "name": "Diário da Família - Gerador",
-      "schedule": "20 7 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T10:20:00.017000+00:00",
-      "status": "ok",
-      "errors": 0,
+      "errors": 1,
       "lastError": null
     },
     {
@@ -132,6 +108,22 @@
       "status": "ok",
       "errors": 0,
       "lastError": null
+    },
+    {
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-28T09:45:52.187000+00:00",
+      "status": "error",
+      "errors": 23,
+      "lastError": "cron: job execution timed out"
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-28T10:06:04.635000+00:00",
+      "status": "error",
+      "errors": 6,
+      "lastError": "cron: job execution timed out"
     },
     {
       "name": "Diário da Família - Watchdog (retry 08:15)",
@@ -300,6 +292,14 @@
       "status": "error",
       "errors": 2,
       "lastError": "cron: job execution timed out"
+    },
+    {
+      "name": "Diário da Família - Gerador",
+      "schedule": "20 7 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-28T10:20:00.009000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Lixo (Colocar Fora)",
