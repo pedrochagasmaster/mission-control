@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-04-28T14:31:43.537103+00:00",
+  "lastUpdated": "2026-04-28T15:02:17.250356+00:00",
   "actionRequired": [
     {
-      "title": "Watchdog - Tracking Despesas (API + Frontend) (27 erros) - cron: job execution timed out",
+      "title": "Mission Control - Control Runner (6 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
     },
     {
-      "title": "Mission Control - Control Runner (6 erros) - cron: job execution timed out",
+      "title": "Watchdog - Tracking Despesas (API + Frontend) (28 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
     },
@@ -15,11 +15,6 @@
       "title": "1 alerta(s) crítico(s) no security audit",
       "url": null,
       "priority": "high"
-    },
-    {
-      "title": "Pulso Familiar - Meio-dia (1 erros)",
-      "url": null,
-      "priority": "medium"
     },
     {
       "title": "Rotina da Tarde (1 erros) - ⚠️ 📝 Edit: `in memory/daily_tasks.json` failed",
@@ -55,23 +50,38 @@
       "title": "Análise de Conversas - Manhã (1 erros) - cron: job execution timed out",
       "url": null,
       "priority": "medium"
+    },
+    {
+      "title": "Pulso Familiar - Meio-dia (2 erros) - ⚠️ Agent couldn't generate a response. Note: some tool actions may have already been executed — please verify before retrying.",
+      "url": null,
+      "priority": "medium"
     }
   ],
   "activeNow": [
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "model": "gpt-5.4",
+      "startedAt": "2026-04-28T15:01:54.038000+00:00"
+    },
+    {
+      "task": "agent:main:cron:42be764c-f915-4669-8f94-878e23362bf8",
       "model": "free",
-      "startedAt": "2026-04-28T14:30:56.146000+00:00"
+      "startedAt": "2026-04-28T15:00:00.016000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-28T14:50:25.023000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ff7487f2-fad4-40ab-bd83-84219ecec634",
+      "model": "free",
+      "startedAt": "2026-04-28T14:40:37.642000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
       "startedAt": "2026-04-28T14:25:22.117000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-28T13:49:40.100000+00:00"
     },
     {
       "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
@@ -82,21 +92,6 @@
       "task": "agent:main:cron:46646426-11ee-4f2e-90fd-832133ff1e83",
       "model": "free",
       "startedAt": "2026-04-28T13:00:00.047000+00:00"
-    },
-    {
-      "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
-      "model": "free",
-      "startedAt": "2026-04-28T12:01:27.260000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ae7b9fb6-d807-4c23-846c-87f880d130be",
-      "model": "free",
-      "startedAt": "2026-04-28T12:00:00.021000+00:00"
-    },
-    {
-      "task": "agent:main:cron:f1830563-b029-4bb2-80fc-9ffe54108a08",
-      "model": "free",
-      "startedAt": "2026-04-28T11:35:00.659000+00:00"
     }
   ],
   "products": [
@@ -104,38 +99,22 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-28T14:31:43.537103+00:00"
+      "lastChecked": "2026-04-28T15:02:17.250356+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Mission Control - Build+Publish",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T14:00:00.028000+00:00",
+      "name": "Ração Almoço",
+      "schedule": "0 12 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-27T15:00:00.026000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
     },
     {
-      "name": "Pulso Familiar - Meio-dia",
-      "schedule": "30 11 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T14:32:23.694000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": null
-    },
-    {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T13:48:53.013000+00:00",
-      "status": "error",
-      "errors": 27,
-      "lastError": "cron: job execution timed out"
-    },
-    {
-      "name": "Ração Almoço",
-      "schedule": "0 12 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T15:00:00.026000+00:00",
+      "name": "Mission Control - Build+Publish",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-28T14:36:13.893000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -146,6 +125,14 @@
       "lastRun": "2026-04-28T14:23:20.311000+00:00",
       "status": "error",
       "errors": 6,
+      "lastError": "cron: job execution timed out"
+    },
+    {
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-28T14:49:38.032000+00:00",
+      "status": "error",
+      "errors": 28,
       "lastError": "cron: job execution timed out"
     },
     {
@@ -341,6 +328,14 @@
       "lastError": null
     },
     {
+      "name": "Pulso Familiar - Meio-dia",
+      "schedule": "30 11 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-28T14:37:59.433000+00:00",
+      "status": "error",
+      "errors": 2,
+      "lastError": "⚠️ Agent couldn't generate a response. Note: some tool actions may have already been executed — please verify before retrying."
+    },
+    {
       "name": "Check Simparic Mensal",
       "schedule": "0 10 1 * * (America/Sao_Paulo)",
       "lastRun": "2026-04-01T13:00:27.268000+00:00",
@@ -390,6 +385,11 @@
     {
       "time": "2026-04-28T10:31:27-03:00",
       "event": "Cron disparou: Rotina da Manhã (Completa) (93c7796d-f82d-4381-a925-f1a0a22bf25b)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-04-28T12:00:54-03:00",
+      "event": "Cron disparou: Ração Almoço (42be764c-f915-4669-8f94-878e23362bf8)",
       "channel": "cron"
     }
   ]
