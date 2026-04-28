@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-04-28T09:01:31.925028+00:00",
+  "lastUpdated": "2026-04-28T09:31:30.696015+00:00",
   "actionRequired": [
     {
-      "title": "Mission Control - Control Runner (4 erros) - cron: job execution timed out",
+      "title": "Mission Control - Build+Publish (3 erros)",
       "url": null,
       "priority": "high"
     },
@@ -12,19 +12,14 @@
       "priority": "high"
     },
     {
-      "title": "1 alerta(s) crítico(s) no security audit",
+      "title": "Mission Control - Control Runner (5 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
     },
     {
-      "title": "Mission Control - Build+Publish (2 erros)",
+      "title": "1 alerta(s) crítico(s) no security audit",
       "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Atualização do Índice de Sistema (1 erros) - ⚠️ Agent couldn't generate a response. Please try again.",
-      "url": null,
-      "priority": "medium"
+      "priority": "high"
     },
     {
       "title": "Pulso Familiar - Meio-dia (1 erros) - cron: job execution timed out",
@@ -50,18 +45,28 @@
       "title": "Instagram Knowledge Ingest (1 erros) - FallbackSummaryError: All models failed (8): github-copilot/gpt-5-mini: ⚠️ quota exceeded (rate_limit) | github-copilot/gpt-5.4: LLM request failed: provider rejected the request schema or tool payload. (format) | openrouter/openrouter/free: Upstream error from OpenInference: unexpected tokens remaining in message header: Some(\"to=...<|end|><|start|>assistant\") (timeout) | openrouter/nvidia/nemotron-nano-12b-v2-vl:free: ⚠️ API rate limit reached. Please try again later. (rate_limit) | openrouter/nvidia/nemotron-3-super-120b-a12b:free: ⚠️ API rate limit reached. Please try again later. (rate_limit) | opencode-go/kimi-k2.5: 401 No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KMYY1VYRG8SVDWKH49VEA8ZV/billing (auth) | opencode-go/glm-5: No available auth profile for opencode-go (all in cooldown or unavailable). (auth) | opencode-go/minimax-m2.5: No available auth profile for opencode-go (all in cooldown or unavailable). (auth)",
       "url": null,
       "priority": "medium"
+    },
+    {
+      "title": "Atualização do Índice de Sistema (2 erros) - cron: job execution timed out",
+      "url": null,
+      "priority": "medium"
     }
   ],
   "activeNow": [
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-28T09:00:52.951000+00:00"
+      "startedAt": "2026-04-28T09:30:50.006000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
-      "startedAt": "2026-04-28T08:49:00.492000+00:00"
+      "startedAt": "2026-04-28T09:06:05.729000+00:00"
+    },
+    {
+      "task": "agent:main:cron:f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-28T09:04:03.058000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
@@ -84,33 +89,17 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-28T09:01:31.925028+00:00"
+      "lastChecked": "2026-04-28T09:31:30.696015+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T08:30:00.010000+00:00",
+      "lastRun": "2026-04-28T09:00:00.019000+00:00",
       "status": "error",
-      "errors": 2,
+      "errors": 3,
       "lastError": null
-    },
-    {
-      "name": "Atualização do Índice de Sistema",
-      "schedule": "0 6 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T09:05:00.080000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "⚠️ Agent couldn't generate a response. Please try again."
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T08:47:00.063000+00:00",
-      "status": "error",
-      "errors": 4,
-      "lastError": "cron: job execution timed out"
     },
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
@@ -118,6 +107,14 @@
       "lastRun": "2026-04-28T08:45:06.853000+00:00",
       "status": "error",
       "errors": 22,
+      "lastError": "cron: job execution timed out"
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-28T09:04:04.543000+00:00",
+      "status": "error",
+      "errors": 5,
       "lastError": "cron: job execution timed out"
     },
     {
@@ -295,6 +292,14 @@
       "status": "error",
       "errors": 1,
       "lastError": "FallbackSummaryError: All models failed (8): github-copilot/gpt-5-mini: ⚠️ quota exceeded (rate_limit) | github-copilot/gpt-5.4: LLM request failed: provider rejected the request schema or tool payload. (format) | openrouter/openrouter/free: Upstream error from OpenInference: unexpected tokens remaining in message header: Some(\"to=...<|end|><|start|>assistant\") (timeout) | openrouter/nvidia/nemotron-nano-12b-v2-vl:free: ⚠️ API rate limit reached. Please try again later. (rate_limit) | openrouter/nvidia/nemotron-3-super-120b-a12b:free: ⚠️ API rate limit reached. Please try again later. (rate_limit) | opencode-go/kimi-k2.5: 401 No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KMYY1VYRG8SVDWKH49VEA8ZV/billing (auth) | opencode-go/glm-5: No available auth profile for opencode-go (all in cooldown or unavailable). (auth) | opencode-go/minimax-m2.5: No available auth profile for opencode-go (all in cooldown or unavailable). (auth)"
+    },
+    {
+      "name": "Atualização do Índice de Sistema",
+      "schedule": "0 6 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-28T09:03:00.834000+00:00",
+      "status": "error",
+      "errors": 2,
+      "lastError": "cron: job execution timed out"
     },
     {
       "name": "Lixo (Colocar Fora)",
