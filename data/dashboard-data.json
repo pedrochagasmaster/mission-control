@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-04-29T05:01:45.334062+00:00",
+  "lastUpdated": "2026-04-29T07:31:29.524965+00:00",
   "actionRequired": [
     {
-      "title": "Mission Control - Control Runner (4 erros) - cron: job execution timed out",
+      "title": "Mission Control - Control Runner (5 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
     },
     {
-      "title": "Watchdog - Tracking Despesas (API + Frontend) (7 erros) - cron: job execution timed out",
+      "title": "Watchdog - Tracking Despesas (API + Frontend) (9 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
     },
@@ -15,6 +15,11 @@
       "title": "1 alerta(s) crítico(s) no security audit",
       "url": null,
       "priority": "high"
+    },
+    {
+      "title": "Mission Control - Build+Publish (2 erros)",
+      "url": null,
+      "priority": "medium"
     },
     {
       "title": "Instagram Knowledge Ingest (1 erros) - FallbackSummaryError: All models failed (8): github-copilot/gpt-5-mini: ⚠️ quota exceeded (rate_limit) | github-copilot/gpt-5.4: LLM request failed: provider rejected the request schema or tool payload. (format) | openrouter/openrouter/free: Upstream error from OpenInference: unexpected tokens remaining in message header: Some(\"to=...<|end|><|start|>assistant\") (timeout) | openrouter/nvidia/nemotron-nano-12b-v2-vl:free: ⚠️ API rate limit reached. Please try again later. (rate_limit) | openrouter/nvidia/nemotron-3-super-120b-a12b:free: ⚠️ API rate limit reached. Please try again later. (rate_limit) | opencode-go/kimi-k2.5: 401 No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KMYY1VYRG8SVDWKH49VEA8ZV/billing (auth) | opencode-go/glm-5: No available auth profile for opencode-go (all in cooldown or unavailable). (auth) | opencode-go/minimax-m2.5: No available auth profile for opencode-go (all in cooldown or unavailable). (auth)",
@@ -71,22 +76,27 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-29T05:00:45.469000+00:00"
+      "startedAt": "2026-04-29T07:30:44.688000+00:00"
+    },
+    {
+      "task": "agent:main:cron:218f26ef-423f-4f74-aa31-d28879facc28",
+      "model": "free",
+      "startedAt": "2026-04-29T07:02:39.693000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-29T04:51:00.754000+00:00"
+      "startedAt": "2026-04-29T06:53:33.355000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
-      "startedAt": "2026-04-29T04:49:01.626000+00:00"
+      "startedAt": "2026-04-29T06:41:00.527000+00:00"
     },
     {
-      "task": "agent:main:cron:ebbd066d-2269-48d5-8f80-f89ce7633b81",
+      "task": "agent:main:subagent:613a6e11-e352-4179-8fdf-63b86c10860e",
       "model": "free",
-      "startedAt": "2026-04-29T02:59:00.019000+00:00"
+      "startedAt": "2026-04-29T06:05:08.187000+00:00"
     }
   ],
   "products": [
@@ -94,41 +104,33 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-29T05:01:45.334062+00:00"
+      "lastChecked": "2026-04-29T07:31:29.524965+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-29T04:30:00.012000+00:00",
-      "status": "ok",
-      "errors": 0,
+      "lastRun": "2026-04-29T07:00:00.015000+00:00",
+      "status": "error",
+      "errors": 2,
       "lastError": null
     },
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-29T04:47:00.061000+00:00",
+      "lastRun": "2026-04-29T06:39:00.106000+00:00",
       "status": "error",
-      "errors": 4,
+      "errors": 5,
       "lastError": "cron: job execution timed out"
     },
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-29T04:50:15.181000+00:00",
+      "lastRun": "2026-04-29T06:52:47.963000+00:00",
       "status": "error",
-      "errors": 7,
+      "errors": 9,
       "lastError": "cron: job execution timed out"
-    },
-    {
-      "name": "Consolidação Automática de Learnings",
-      "schedule": "0 4 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T07:04:37.023000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
     },
     {
       "name": "Instagram Knowledge Ingest",
@@ -321,6 +323,14 @@
       "status": "error",
       "errors": 1,
       "lastError": "⚠️ Agent couldn't generate a response. Note: some tool actions may have already been executed — please verify before retrying."
+    },
+    {
+      "name": "Consolidação Automática de Learnings",
+      "schedule": "0 4 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-29T07:02:39.690000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Lixo Véspera (22h)",
