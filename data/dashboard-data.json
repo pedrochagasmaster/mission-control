@@ -1,8 +1,13 @@
 {
-  "lastUpdated": "2026-04-29T08:26:15.479832+00:00",
+  "lastUpdated": "2026-04-29T09:31:19.441794+00:00",
   "actionRequired": [
     {
-      "title": "Watchdog - Tracking Despesas (API + Frontend) (10 erros) - cron: job execution timed out",
+      "title": "Watchdog - Tracking Despesas (API + Frontend) (11 erros) - cron: job execution timed out",
+      "url": null,
+      "priority": "high"
+    },
+    {
+      "title": "Atualização do Índice de Sistema (3 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
     },
@@ -12,12 +17,7 @@
       "priority": "high"
     },
     {
-      "title": "Mission Control - Build+Publish (1 erros) - cron: job execution timed out",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Atualização do Índice de Sistema (2 erros) - cron: job execution timed out",
+      "title": "Mission Control - Build+Publish (1 erros)",
       "url": null,
       "priority": "medium"
     },
@@ -64,14 +64,24 @@
   ],
   "activeNow": [
     {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "free",
-      "startedAt": "2026-04-29T08:25:41.944000+00:00"
-    },
-    {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-29T08:18:24.278000+00:00"
+      "startedAt": "2026-04-29T09:30:44.067000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "free",
+      "startedAt": "2026-04-29T09:25:00.020000+00:00"
+    },
+    {
+      "task": "agent:main:cron:f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-29T09:05:51.364000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-29T08:55:03.637000+00:00"
     },
     {
       "task": "agent:main:cron:75b87bc7-016d-49a2-9995-4a0b715a7f23",
@@ -79,19 +89,9 @@
       "startedAt": "2026-04-29T08:00:00.018000+00:00"
     },
     {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-29T07:54:18.641000+00:00"
-    },
-    {
       "task": "agent:main:cron:218f26ef-423f-4f74-aa31-d28879facc28",
       "model": "free",
       "startedAt": "2026-04-29T07:02:39.693000+00:00"
-    },
-    {
-      "task": "agent:main:subagent:613a6e11-e352-4179-8fdf-63b86c10860e",
-      "model": "free",
-      "startedAt": "2026-04-29T06:05:08.187000+00:00"
     }
   ],
   "products": [
@@ -99,40 +99,32 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-29T08:26:15.479832+00:00"
+      "lastChecked": "2026-04-29T09:31:19.441794+00:00"
     }
   ],
   "crons": [
     {
+      "name": "Mission Control - Build+Publish",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-29T09:00:00.039000+00:00",
+      "status": "error",
+      "errors": 1,
+      "lastError": null
+    },
+    {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-29T08:20:00.014000+00:00",
+      "lastRun": "2026-04-29T09:25:00.014000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
     },
     {
-      "name": "Mission Control - Build+Publish",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-29T08:15:23.924000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "cron: job execution timed out"
-    },
-    {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-29T07:53:33.015000+00:00",
+      "lastRun": "2026-04-29T08:54:18.029000+00:00",
       "status": "error",
-      "errors": 10,
-      "lastError": "cron: job execution timed out"
-    },
-    {
-      "name": "Atualização do Índice de Sistema",
-      "schedule": "0 6 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T09:03:00.834000+00:00",
-      "status": "error",
-      "errors": 2,
+      "errors": 11,
       "lastError": "cron: job execution timed out"
     },
     {
@@ -326,6 +318,14 @@
       "status": "ok",
       "errors": 0,
       "lastError": null
+    },
+    {
+      "name": "Atualização do Índice de Sistema",
+      "schedule": "0 6 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-29T09:04:52.216000+00:00",
+      "status": "error",
+      "errors": 3,
+      "lastError": "cron: job execution timed out"
     },
     {
       "name": "Lixo Véspera (22h)",
