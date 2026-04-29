@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-04-29T20:01:17.959639+00:00",
+  "lastUpdated": "2026-04-29T20:32:45.836501+00:00",
   "actionRequired": [
     {
-      "title": "Watchdog - Tracking Despesas (API + Frontend) (21 erros) - cron: job execution timed out",
+      "title": "Watchdog - Tracking Despesas (API + Frontend) (22 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
     },
     {
-      "title": "Mission Control - Control Runner (12 erros) - cron: job execution timed out",
+      "title": "Mission Control - Control Runner (13 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
     },
@@ -25,11 +25,6 @@
       "title": "1 alerta(s) crítico(s) no security audit",
       "url": null,
       "priority": "high"
-    },
-    {
-      "title": "Mission Control - Build+Publish (2 erros)",
-      "url": null,
-      "priority": "medium"
     },
     {
       "title": "Pulso Familiar - Noite (2 erros) - cron: job execution timed out",
@@ -61,17 +56,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-29T20:00:49.763000+00:00"
+      "startedAt": "2026-04-29T20:31:54.244000+00:00"
+    },
+    {
+      "task": "agent:main:cron:a2a10215-b00a-45e4-8ed4-28cb60e442a6",
+      "model": "free",
+      "startedAt": "2026-04-29T20:30:00.024000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
-      "startedAt": "2026-04-29T19:25:43.920000+00:00"
+      "startedAt": "2026-04-29T20:26:04.769000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-29T19:07:38.778000+00:00"
+      "startedAt": "2026-04-29T20:08:24.977000+00:00"
     },
     {
       "task": "agent:main:isolated",
@@ -84,33 +84,17 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-29T20:01:17.959639+00:00"
+      "lastChecked": "2026-04-29T20:32:45.836501+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-29T19:30:00.015000+00:00",
-      "status": "error",
-      "errors": 2,
+      "lastRun": "2026-04-29T20:00:00.010000+00:00",
+      "status": "ok",
+      "errors": 0,
       "lastError": null
-    },
-    {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-29T19:06:50.773000+00:00",
-      "status": "error",
-      "errors": 21,
-      "lastError": "cron: job execution timed out"
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-29T19:23:00.429000+00:00",
-      "status": "error",
-      "errors": 12,
-      "lastError": "cron: job execution timed out"
     },
     {
       "name": "Blitz da Ordem (17:30)",
@@ -127,6 +111,22 @@
       "status": "ok",
       "errors": 0,
       "lastError": null
+    },
+    {
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-29T20:07:36.188000+00:00",
+      "status": "error",
+      "errors": 22,
+      "lastError": "cron: job execution timed out"
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-29T20:25:00.474000+00:00",
+      "status": "error",
+      "errors": 13,
+      "lastError": "cron: job execution timed out"
     },
     {
       "name": "Pulso Familiar - Noite",
@@ -400,6 +400,11 @@
     {
       "time": "2026-04-29T13:31:24-03:00",
       "event": "Cron disparou: Pós-Almoço: Zero Pia (515506a0-6921-4f7d-8368-06fc4e93ee87)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-04-29T17:30:59-03:00",
+      "event": "Cron disparou: Blitz da Ordem (17:30) (a2a10215-b00a-45e4-8ed4-28cb60e442a6)",
       "channel": "cron"
     }
   ]
