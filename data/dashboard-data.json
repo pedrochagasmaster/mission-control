@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-04-29T02:01:23.501734+00:00",
+  "lastUpdated": "2026-04-29T03:36:44.712284+00:00",
   "actionRequired": [
     {
-      "title": "1 alerta(s) crítico(s) no security audit",
+      "title": "Watchdog - Tracking Despesas (API + Frontend) (5 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
     },
     {
-      "title": "Mission Control - Build+Publish (2 erros)",
+      "title": "1 alerta(s) crítico(s) no security audit",
       "url": null,
-      "priority": "medium"
+      "priority": "high"
     },
     {
       "title": "Instagram Knowledge Ingest (1 erros) - FallbackSummaryError: All models failed (8): github-copilot/gpt-5-mini: ⚠️ quota exceeded (rate_limit) | github-copilot/gpt-5.4: LLM request failed: provider rejected the request schema or tool payload. (format) | openrouter/openrouter/free: Upstream error from OpenInference: unexpected tokens remaining in message header: Some(\"to=...<|end|><|start|>assistant\") (timeout) | openrouter/nvidia/nemotron-nano-12b-v2-vl:free: ⚠️ API rate limit reached. Please try again later. (rate_limit) | openrouter/nvidia/nemotron-3-super-120b-a12b:free: ⚠️ API rate limit reached. Please try again later. (rate_limit) | opencode-go/kimi-k2.5: 401 No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KMYY1VYRG8SVDWKH49VEA8ZV/billing (auth) | opencode-go/glm-5: No available auth profile for opencode-go (all in cooldown or unavailable). (auth) | opencode-go/minimax-m2.5: No available auth profile for opencode-go (all in cooldown or unavailable). (auth)",
@@ -55,23 +55,33 @@
       "title": "Lembrete de Captura de Memórias (2 erros) - cron: job execution timed out",
       "url": null,
       "priority": "medium"
+    },
+    {
+      "title": "daily-git-commit (1 erros) - ⚠️ Agent couldn't generate a response. Note: some tool actions may have already been executed — please verify before retrying.",
+      "url": null,
+      "priority": "medium"
     }
   ],
   "activeNow": [
     {
-      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "model": "free",
-      "startedAt": "2026-04-29T02:00:46.940000+00:00"
-    },
-    {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
-      "startedAt": "2026-04-29T01:57:15.302000+00:00"
+      "startedAt": "2026-04-29T03:35:43.337000+00:00"
+    },
+    {
+      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "model": "free",
+      "startedAt": "2026-04-29T03:30:00.021000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ebbd066d-2269-48d5-8f80-f89ce7633b81",
+      "model": "free",
+      "startedAt": "2026-04-29T02:59:00.019000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "free",
-      "startedAt": "2026-04-29T01:57:14.004000+00:00"
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-29T02:49:30.569000+00:00"
     },
     {
       "task": "agent:main:cron:eb796b6f-bb0b-4b92-963c-18696cf45e0d",
@@ -87,11 +97,6 @@
       "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
       "model": "free",
       "startedAt": "2026-04-29T00:45:00.018000+00:00"
-    },
-    {
-      "task": "agent:main:cron:22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-29T00:35:00.583000+00:00"
     }
   ],
   "products": [
@@ -99,38 +104,30 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-29T02:01:23.501734+00:00"
+      "lastChecked": "2026-04-29T03:36:44.712284+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Mission Control - Build+Publish",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-29T01:30:00.015000+00:00",
-      "status": "error",
-      "errors": 2,
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-29T03:32:48.132000+00:00",
+      "status": "ok",
+      "errors": 0,
       "lastError": null
     },
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-29T01:57:14+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
+      "lastRun": "2026-04-29T02:48:45.079000+00:00",
+      "status": "error",
+      "errors": 5,
+      "lastError": "cron: job execution timed out"
     },
     {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-29T01:55:00.016000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "daily-git-commit",
-      "schedule": "59 23 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T02:59:00.024000+00:00",
+      "name": "Mission Control - Build+Publish",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-29T03:30:00.016000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -328,6 +325,14 @@
       "lastError": null
     },
     {
+      "name": "daily-git-commit",
+      "schedule": "59 23 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-29T02:59:00.011000+00:00",
+      "status": "error",
+      "errors": 1,
+      "lastError": "⚠️ Agent couldn't generate a response. Note: some tool actions may have already been executed — please verify before retrying."
+    },
+    {
       "name": "Lixo Véspera (22h)",
       "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
       "lastRun": "2026-04-29T01:01:23.023000+00:00",
@@ -376,46 +381,5 @@
       "lastError": null
     }
   ],
-  "recentActivity": [
-    {
-      "time": "2026-04-28T10:01:03-03:00",
-      "event": "Cron disparou: Dobrar Roupas (46646426-11ee-4f2e-90fd-832133ff1e83)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-04-28T10:31:27-03:00",
-      "event": "Cron disparou: Rotina da Manhã (Completa) (93c7796d-f82d-4381-a925-f1a0a22bf25b)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-04-28T12:00:54-03:00",
-      "event": "Cron disparou: Ração Almoço (42be764c-f915-4669-8f94-878e23362bf8)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-04-28T13:00:52-03:00",
-      "event": "Cron disparou: Passeio Almoço (96074f1f-0124-4b4c-a944-e71349f91678)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-04-28T13:30:51-03:00",
-      "event": "Cron disparou: Pós-Almoço: Zero Pia (515506a0-6921-4f7d-8368-06fc4e93ee87)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-04-28T17:31:05-03:00",
-      "event": "Cron disparou: Blitz da Ordem (17:30) (a2a10215-b00a-45e4-8ed4-28cb60e442a6)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-04-28T18:01:46-03:00",
-      "event": "Cron disparou: Rotina da Tarde (e3ac374c-a524-4465-a872-f682f01a979d)",
-      "channel": "cron"
-    },
-    {
-      "time": "2026-04-28T22:01:09-03:00",
-      "event": "Cron disparou: Rotina da Noite (Completa) (7804497e-ac8d-49c9-bead-08ed6bab21d1)",
-      "channel": "cron"
-    }
-  ]
+  "recentActivity": []
 }
