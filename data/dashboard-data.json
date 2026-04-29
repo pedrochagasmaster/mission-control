@@ -1,23 +1,13 @@
 {
-  "lastUpdated": "2026-04-28T23:31:19.708397+00:00",
+  "lastUpdated": "2026-04-29T02:01:23.501734+00:00",
   "actionRequired": [
-    {
-      "title": "Watchdog - Tracking Despesas (API + Frontend) (7 erros) - cron: job execution timed out",
-      "url": null,
-      "priority": "high"
-    },
     {
       "title": "1 alerta(s) crítico(s) no security audit",
       "url": null,
       "priority": "high"
     },
     {
-      "title": "Mission Control - Build+Publish (1 erros)",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Lembrete de Captura de Memórias (1 erros) - cron: job execution timed out",
+      "title": "Mission Control - Build+Publish (2 erros)",
       "url": null,
       "priority": "medium"
     },
@@ -60,33 +50,48 @@
       "title": "Pulso Familiar - Noite (2 erros) - cron: job execution timed out",
       "url": null,
       "priority": "medium"
+    },
+    {
+      "title": "Lembrete de Captura de Memórias (2 erros) - cron: job execution timed out",
+      "url": null,
+      "priority": "medium"
     }
   ],
   "activeNow": [
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-28T23:30:45.801000+00:00"
+      "startedAt": "2026-04-29T02:00:46.940000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
-      "startedAt": "2026-04-28T23:27:38.424000+00:00"
+      "startedAt": "2026-04-29T01:57:15.302000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "free",
+      "startedAt": "2026-04-29T01:57:14.004000+00:00"
+    },
+    {
+      "task": "agent:main:cron:eb796b6f-bb0b-4b92-963c-18696cf45e0d",
+      "model": "free",
+      "startedAt": "2026-04-29T01:01:23.027000+00:00"
+    },
+    {
+      "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
+      "model": "free",
+      "startedAt": "2026-04-29T01:00:00.019000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
+      "model": "free",
+      "startedAt": "2026-04-29T00:45:00.018000+00:00"
+    },
+    {
+      "task": "agent:main:cron:22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-28T22:54:19.322000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
-      "model": "free",
-      "startedAt": "2026-04-28T22:36:45.099000+00:00"
-    },
-    {
-      "task": "agent:main:cron:e3ac374c-a524-4465-a872-f682f01a979d",
-      "model": "free",
-      "startedAt": "2026-04-28T21:00:00.019000+00:00"
+      "startedAt": "2026-04-29T00:35:00.583000+00:00"
     }
   ],
   "products": [
@@ -94,62 +99,30 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-28T23:31:19.708397+00:00"
+      "lastChecked": "2026-04-29T02:01:23.501734+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T23:00:00.018000+00:00",
+      "lastRun": "2026-04-29T01:30:00.015000+00:00",
       "status": "error",
-      "errors": 1,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T23:25:00.013000+00:00",
-      "status": "ok",
-      "errors": 0,
+      "errors": 2,
       "lastError": null
     },
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T22:53:34.030000+00:00",
-      "status": "error",
-      "errors": 7,
-      "lastError": "cron: job execution timed out"
-    },
-    {
-      "name": "Lembrete de Captura de Memórias",
-      "schedule": "30 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T00:31:51.491000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "cron: job execution timed out"
-    },
-    {
-      "name": "Pluggy Sync - Tracking Despesas",
-      "schedule": "45 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T00:45:00.027000+00:00",
+      "lastRun": "2026-04-29T01:57:14+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
     },
     {
-      "name": "Rotina da Noite (Completa)",
-      "schedule": "0 22 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T01:00:00.027000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Lixo Véspera (22h)",
-      "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
-      "lastRun": "2026-04-27T01:00:22.872000+00:00",
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-29T01:55:00.016000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -331,6 +304,38 @@
       "lastError": "cron: job execution timed out"
     },
     {
+      "name": "Lembrete de Captura de Memórias",
+      "schedule": "30 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-29T00:34:00.268000+00:00",
+      "status": "error",
+      "errors": 2,
+      "lastError": "cron: job execution timed out"
+    },
+    {
+      "name": "Pluggy Sync - Tracking Despesas",
+      "schedule": "45 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-29T00:45:00.015000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Rotina da Noite (Completa)",
+      "schedule": "0 22 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-29T01:00:00.016000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Lixo Véspera (22h)",
+      "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
+      "lastRun": "2026-04-29T01:01:23.023000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Check Simparic Mensal",
       "schedule": "0 10 1 * * (America/Sao_Paulo)",
       "lastRun": "2026-04-01T13:00:27.268000+00:00",
@@ -405,6 +410,11 @@
     {
       "time": "2026-04-28T18:01:46-03:00",
       "event": "Cron disparou: Rotina da Tarde (e3ac374c-a524-4465-a872-f682f01a979d)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-04-28T22:01:09-03:00",
+      "event": "Cron disparou: Rotina da Noite (Completa) (7804497e-ac8d-49c9-bead-08ed6bab21d1)",
       "channel": "cron"
     }
   ]
