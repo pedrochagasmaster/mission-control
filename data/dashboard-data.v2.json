@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-20.1",
-    "generatedAt": "2026-04-29T13:04:13.510359+00:00"
+    "generatedAt": "2026-04-29T13:12:44.346294+00:00"
   },
   "overview": {
     "healthScore": 0,
@@ -14,7 +14,7 @@
     {
       "type": "cron-error",
       "targetId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "title": "Mission Control - Control Runner (5 erros) - cron: job execution timed out",
+      "title": "Mission Control - Control Runner (5 erros)",
       "priority": "high",
       "actions": [
         "cron.retry",
@@ -47,6 +47,16 @@
       "title": "1 alerta(s) crítico(s) no security audit",
       "priority": "high",
       "actions": []
+    },
+    {
+      "type": "cron-error",
+      "targetId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "title": "Mission Control - Build+Publish (1 erros) - cron: job execution timed out",
+      "priority": "medium",
+      "actions": [
+        "cron.retry",
+        "cron.pause"
+      ]
     },
     {
       "type": "cron-error",
@@ -131,9 +141,16 @@
   ],
   "activeNow": [
     {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "free",
+      "startedAt": "2026-04-29T13:12:02.994000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-29T13:02:19.565000+00:00",
+      "startedAt": "2026-04-29T13:06:31.757000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -155,13 +172,6 @@
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
       "startedAt": "2026-04-29T13:00:05.150000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "free",
-      "startedAt": "2026-04-29T12:11:00.941000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -1422,7 +1432,7 @@
           "signals": {
             "eventCount": 4,
             "attemptCount": 2,
-            "lastEvent": "2026-04-29T12:30:00.009000+00:00",
+            "lastEvent": "2026-04-29T13:01:31.202000+00:00",
             "lastAttemptStatus": "healthy"
           },
           "history": {
@@ -1486,13 +1496,13 @@
               ]
             },
             {
-              "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T1230",
+              "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T1301",
               "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
               "jobName": "Mission Control - Build+Publish",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-04-29T12:30:00.009000+00:00",
-              "lastEventAt": "2026-04-29T12:30:00.009000+00:00",
+              "startedAt": "2026-04-29T13:01:31.202000+00:00",
+              "lastEventAt": "2026-04-29T13:01:31.202000+00:00",
               "channel": null,
               "eventTypes": [
                 "triggered",
@@ -1506,10 +1516,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T1230",
+                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T1301",
                   "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
                   "jobName": "Mission Control - Build+Publish",
-                  "timestamp": "2026-04-29T12:30:00.009000+00:00",
+                  "timestamp": "2026-04-29T13:01:31.202000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -1517,13 +1527,13 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T1230",
+                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T1301",
                   "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
                   "jobName": "Mission Control - Build+Publish",
-                  "timestamp": "2026-04-29T12:30:00.009000+00:00",
+                  "timestamp": "2026-04-29T13:01:31.202000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
-                  "runStatus": "ok",
+                  "runStatus": "error",
                   "inferred": true
                 }
               ]
@@ -2031,13 +2041,13 @@
           ]
         },
         {
-          "workflowId": "mission_control",
-          "workflowName": "Mission Control",
-          "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T1230",
+          "workflowId": "tracking_watchdog",
+          "workflowName": "Tracking Watchdog",
+          "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260429T1259",
           "status": "healthy",
-          "startedAt": "2026-04-29T12:30:00.009000+00:00",
-          "lastEventAt": "2026-04-29T12:30:00.009000+00:00",
-          "jobName": "Mission Control - Build+Publish",
+          "startedAt": "2026-04-29T12:59:19.764000+00:00",
+          "lastEventAt": "2026-04-29T12:59:19.764000+00:00",
+          "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
           "channel": null,
           "eventTypes": [
             "triggered",
@@ -2048,13 +2058,13 @@
           ]
         },
         {
-          "workflowId": "tracking_watchdog",
-          "workflowName": "Tracking Watchdog",
-          "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260429T1259",
+          "workflowId": "mission_control",
+          "workflowName": "Mission Control",
+          "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T1301",
           "status": "healthy",
-          "startedAt": "2026-04-29T12:59:19.764000+00:00",
-          "lastEventAt": "2026-04-29T12:59:19.764000+00:00",
-          "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
+          "startedAt": "2026-04-29T13:01:31.202000+00:00",
+          "lastEventAt": "2026-04-29T13:01:31.202000+00:00",
+          "jobName": "Mission Control - Build+Publish",
           "channel": null,
           "eventTypes": [
             "triggered",
@@ -2079,66 +2089,38 @@
       "status": "error",
       "kpis": {
         "total": 34,
-        "errors": 11,
+        "errors": 12,
         "paused": 0,
         "tzMissing": 0
       },
       "jobs": [
-        {
-          "id": "555d214e-c8ca-48ef-a091-d41efcba712d",
-          "name": "Aspirar Cozinha",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-04-27T13:00:00.009000+00:00",
-          "nextRun": "2026-04-29T13:00:00+00:00",
-          "schedule": "0 10 * * 1,3,6 (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
-        },
-        {
-          "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-          "name": "Mission Control - Build+Publish",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-04-29T12:30:00.009000+00:00",
-          "nextRun": "2026-04-29T13:00:00+00:00",
-          "schedule": "*/30 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": null
-        },
-        {
-          "id": "8e6d54f6-5278-4975-94dc-578d36397408",
-          "name": "Lixo (Sacos Novos) + Ralos",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-04-27T13:00:25.057000+00:00",
-          "nextRun": "2026-04-29T13:00:00+00:00",
-          "schedule": "0 10 * * 1,3,5 (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "telegram"
-        },
         {
           "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
           "name": "Mission Control - Control Runner",
           "status": "error",
           "enabled": true,
           "errors": 5,
-          "lastError": "cron: job execution timed out",
+          "lastError": null,
           "lastRun": "2026-04-29T12:09:00.102000+00:00",
           "nextRun": "2026-04-29T13:11:00.132000+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "last"
+        },
+        {
+          "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+          "name": "Mission Control - Build+Publish",
+          "status": "error",
+          "enabled": true,
+          "errors": 1,
+          "lastError": "cron: job execution timed out",
+          "lastRun": "2026-04-29T13:01:31.202000+00:00",
+          "nextRun": "2026-04-29T13:30:00+00:00",
+          "schedule": "*/30 * * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": null
         },
         {
           "id": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
@@ -2491,6 +2473,34 @@
           "channel": "telegram"
         },
         {
+          "id": "8e6d54f6-5278-4975-94dc-578d36397408",
+          "name": "Lixo (Sacos Novos) + Ralos",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-04-29T13:00:32.818000+00:00",
+          "nextRun": "2026-05-01T13:00:00+00:00",
+          "schedule": "0 10 * * 1,3,5 (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
+        },
+        {
+          "id": "555d214e-c8ca-48ef-a091-d41efcba712d",
+          "name": "Aspirar Cozinha",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-04-29T13:00:07.279000+00:00",
+          "nextRun": "2026-05-02T13:00:00+00:00",
+          "schedule": "0 10 * * 1,3,6 (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "telegram"
+        },
+        {
           "id": "df3cabfe-4969-4e49-8af0-4a3aaf7d03b1",
           "name": "Resumo Semanal de Memórias",
           "status": "ok",
@@ -2564,7 +2574,7 @@
       "alerts": [
         {
           "level": "high",
-          "text": "11 cron(s) em erro"
+          "text": "12 cron(s) em erro"
         }
       ],
       "actions": [
@@ -2912,65 +2922,37 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-29T13:04:13.510359+00:00"
+      "lastChecked": "2026-04-29T13:12:44.346294+00:00"
     }
   ],
   "crons": [
-    {
-      "id": "555d214e-c8ca-48ef-a091-d41efcba712d",
-      "name": "Aspirar Cozinha",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-04-27T13:00:00.009000+00:00",
-      "nextRun": "2026-04-29T13:00:00+00:00",
-      "schedule": "0 10 * * 1,3,6 (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
-    },
-    {
-      "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "name": "Mission Control - Build+Publish",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-04-29T12:30:00.009000+00:00",
-      "nextRun": "2026-04-29T13:00:00+00:00",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": null
-    },
-    {
-      "id": "8e6d54f6-5278-4975-94dc-578d36397408",
-      "name": "Lixo (Sacos Novos) + Ralos",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-04-27T13:00:25.057000+00:00",
-      "nextRun": "2026-04-29T13:00:00+00:00",
-      "schedule": "0 10 * * 1,3,5 (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "telegram"
-    },
     {
       "id": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "name": "Mission Control - Control Runner",
       "status": "error",
       "enabled": true,
       "errors": 5,
-      "lastError": "cron: job execution timed out",
+      "lastError": null,
       "lastRun": "2026-04-29T12:09:00.102000+00:00",
       "nextRun": "2026-04-29T13:11:00.132000+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": "last"
+    },
+    {
+      "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "name": "Mission Control - Build+Publish",
+      "status": "error",
+      "enabled": true,
+      "errors": 1,
+      "lastError": "cron: job execution timed out",
+      "lastRun": "2026-04-29T13:01:31.202000+00:00",
+      "nextRun": "2026-04-29T13:30:00+00:00",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": null
     },
     {
       "id": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
@@ -3323,6 +3305,34 @@
       "channel": "telegram"
     },
     {
+      "id": "8e6d54f6-5278-4975-94dc-578d36397408",
+      "name": "Lixo (Sacos Novos) + Ralos",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-04-29T13:00:32.818000+00:00",
+      "nextRun": "2026-05-01T13:00:00+00:00",
+      "schedule": "0 10 * * 1,3,5 (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
+    },
+    {
+      "id": "555d214e-c8ca-48ef-a091-d41efcba712d",
+      "name": "Aspirar Cozinha",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-04-29T13:00:07.279000+00:00",
+      "nextRun": "2026-05-02T13:00:00+00:00",
+      "schedule": "0 10 * * 1,3,6 (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "telegram"
+    },
+    {
       "id": "df3cabfe-4969-4e49-8af0-4a3aaf7d03b1",
       "name": "Resumo Semanal de Memórias",
       "status": "ok",
@@ -3393,5 +3403,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-04-29T13:04:13.510359+00:00"
+  "lastUpdated": "2026-04-29T13:12:44.346294+00:00"
 }
