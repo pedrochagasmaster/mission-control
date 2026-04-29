@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-04-29T23:01:13.254850+00:00",
+  "lastUpdated": "2026-04-29T23:32:25.616541+00:00",
   "actionRequired": [
     {
-      "title": "Watchdog - Tracking Despesas (API + Frontend) (24 erros) - cron: job execution timed out",
+      "title": "Watchdog - Tracking Despesas (API + Frontend) (25 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
     },
     {
-      "title": "Mission Control - Control Runner (5 erros) - cron: job execution timed out",
+      "title": "Mission Control - Control Runner (6 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
     },
@@ -32,6 +32,11 @@
       "priority": "high"
     },
     {
+      "title": "Mission Control - Build+Publish (1 erros)",
+      "url": null,
+      "priority": "medium"
+    },
+    {
       "title": "Lembrete de Captura de Memórias (2 erros) - cron: job execution timed out",
       "url": null,
       "priority": "medium"
@@ -54,24 +59,24 @@
   ],
   "activeNow": [
     {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "free",
+      "startedAt": "2026-04-29T23:32:03.258000+00:00"
+    },
+    {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-29T23:00:46.819000+00:00"
+      "startedAt": "2026-04-29T23:31:55.146000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "gpt-5-mini",
+      "startedAt": "2026-04-29T23:10:39.213000+00:00"
     },
     {
       "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
       "model": "free",
       "startedAt": "2026-04-29T22:34:13.969000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "free",
-      "startedAt": "2026-04-29T22:28:56.666000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "gpt-5-mini",
-      "startedAt": "2026-04-29T22:09:54.778000+00:00"
     },
     {
       "task": "agent:main:whatsapp:group:120363422516892829@g.us",
@@ -82,11 +87,6 @@
       "task": "agent:main:cron:e3ac374c-a524-4465-a872-f682f01a979d",
       "model": "free",
       "startedAt": "2026-04-29T21:00:00.015000+00:00"
-    },
-    {
-      "task": "agent:main:cron:a2a10215-b00a-45e4-8ed4-28cb60e442a6",
-      "model": "free",
-      "startedAt": "2026-04-29T20:30:00.024000+00:00"
     }
   ],
   "products": [
@@ -94,32 +94,24 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-29T23:01:13.254850+00:00"
+      "lastChecked": "2026-04-29T23:32:25.616541+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-29T22:30:00.016000+00:00",
-      "status": "ok",
-      "errors": 0,
+      "lastRun": "2026-04-29T23:00:00.010000+00:00",
+      "status": "error",
+      "errors": 1,
       "lastError": null
     },
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-29T22:09:07.457000+00:00",
+      "lastRun": "2026-04-29T23:09:52.704000+00:00",
       "status": "error",
-      "errors": 24,
-      "lastError": "cron: job execution timed out"
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-29T22:26:56.243000+00:00",
-      "status": "error",
-      "errors": 5,
+      "errors": 25,
       "lastError": "cron: job execution timed out"
     },
     {
@@ -128,6 +120,14 @@
       "lastRun": "2026-04-29T00:34:00.268000+00:00",
       "status": "error",
       "errors": 2,
+      "lastError": "cron: job execution timed out"
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-29T23:28:56.289000+00:00",
+      "status": "error",
+      "errors": 6,
       "lastError": "cron: job execution timed out"
     },
     {
