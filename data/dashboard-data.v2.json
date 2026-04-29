@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-20.1",
-    "generatedAt": "2026-04-29T18:01:39.434751+00:00"
+    "generatedAt": "2026-04-29T19:02:05.729970+00:00"
   },
   "overview": {
     "healthScore": 0,
@@ -14,7 +14,7 @@
     {
       "type": "cron-error",
       "targetId": "b136a878-0ea8-43b1-8b07-e242454fe571",
-      "title": "Watchdog - Tracking Despesas (API + Frontend) (19 erros) - cron: job execution timed out",
+      "title": "Watchdog - Tracking Despesas (API + Frontend) (20 erros) - cron: job execution timed out",
       "priority": "high",
       "actions": [
         "cron.retry",
@@ -24,7 +24,7 @@
     {
       "type": "cron-error",
       "targetId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "title": "Mission Control - Control Runner (10 erros) - cron: job execution timed out",
+      "title": "Mission Control - Control Runner (11 erros) - cron: job execution timed out",
       "priority": "high",
       "actions": [
         "cron.retry",
@@ -57,16 +57,6 @@
       "title": "1 alerta(s) crítico(s) no security audit",
       "priority": "high",
       "actions": []
-    },
-    {
-      "type": "cron-error",
-      "targetId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "title": "Mission Control - Build+Publish (1 erros) - ⚠️ 🧩 Exec<|channel|>commentary: `cd ~/.openclaw/workspace/missionControl && git add ...` failed",
-      "priority": "medium",
-      "actions": [
-        "cron.retry",
-        "cron.pause"
-      ]
     },
     {
       "type": "cron-error",
@@ -123,21 +113,21 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-29T18:01:21.453000+00:00",
+      "startedAt": "2026-04-29T19:00:46.510000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
-      "startedAt": "2026-04-29T17:21:58.208000+00:00",
+      "startedAt": "2026-04-29T18:23:00.865000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "gpt-5-mini",
-      "startedAt": "2026-04-29T17:06:06.373000+00:00",
+      "startedAt": "2026-04-29T18:06:51.141000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -152,13 +142,6 @@
       "task": "agent:main:isolated",
       "model": "free",
       "startedAt": "2026-04-29T16:05:55.981000+00:00",
-      "agentId": "main",
-      "kind": "direct"
-    },
-    {
-      "task": "agent:main:cron:96074f1f-0124-4b4c-a944-e71349f91678",
-      "model": "free",
-      "startedAt": "2026-04-29T16:00:00.019000+00:00",
       "agentId": "main",
       "kind": "direct"
     }
@@ -1313,7 +1296,7 @@
           "signals": {
             "eventCount": 2,
             "attemptCount": 1,
-            "lastEvent": "2026-04-29T17:05:20.662000+00:00",
+            "lastEvent": "2026-04-29T18:06:05.706000+00:00",
             "lastAttemptStatus": "healthy"
           },
           "history": {
@@ -1334,13 +1317,13 @@
           },
           "recentAttempts": [
             {
-              "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260429T1705",
+              "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260429T1806",
               "jobId": "b136a878-0ea8-43b1-8b07-e242454fe571",
               "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-04-29T17:05:20.662000+00:00",
-              "lastEventAt": "2026-04-29T17:05:20.662000+00:00",
+              "startedAt": "2026-04-29T18:06:05.706000+00:00",
+              "lastEventAt": "2026-04-29T18:06:05.706000+00:00",
               "channel": null,
               "eventTypes": [
                 "triggered",
@@ -1354,10 +1337,10 @@
                 {
                   "workflowId": "tracking_watchdog",
                   "workflowName": "Tracking Watchdog",
-                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260429T1705",
+                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260429T1806",
                   "jobId": "b136a878-0ea8-43b1-8b07-e242454fe571",
                   "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
-                  "timestamp": "2026-04-29T17:05:20.662000+00:00",
+                  "timestamp": "2026-04-29T18:06:05.706000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -1365,10 +1348,10 @@
                 {
                   "workflowId": "tracking_watchdog",
                   "workflowName": "Tracking Watchdog",
-                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260429T1705",
+                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260429T1806",
                   "jobId": "b136a878-0ea8-43b1-8b07-e242454fe571",
                   "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
-                  "timestamp": "2026-04-29T17:05:20.662000+00:00",
+                  "timestamp": "2026-04-29T18:06:05.706000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "error",
@@ -1391,7 +1374,7 @@
           "signals": {
             "eventCount": 4,
             "attemptCount": 2,
-            "lastEvent": "2026-04-29T17:30:00.009000+00:00",
+            "lastEvent": "2026-04-29T18:30:00.013000+00:00",
             "lastAttemptStatus": "healthy"
           },
           "history": {
@@ -1412,13 +1395,13 @@
           },
           "recentAttempts": [
             {
-              "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260429T1719",
+              "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260429T1821",
               "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
               "jobName": "Mission Control - Control Runner",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-04-29T17:19:00.334000+00:00",
-              "lastEventAt": "2026-04-29T17:19:00.334000+00:00",
+              "startedAt": "2026-04-29T18:21:00.382000+00:00",
+              "lastEventAt": "2026-04-29T18:21:00.382000+00:00",
               "channel": null,
               "eventTypes": [
                 "triggered",
@@ -1432,10 +1415,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260429T1719",
+                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260429T1821",
                   "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
                   "jobName": "Mission Control - Control Runner",
-                  "timestamp": "2026-04-29T17:19:00.334000+00:00",
+                  "timestamp": "2026-04-29T18:21:00.382000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -1443,10 +1426,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260429T1719",
+                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260429T1821",
                   "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
                   "jobName": "Mission Control - Control Runner",
-                  "timestamp": "2026-04-29T17:19:00.334000+00:00",
+                  "timestamp": "2026-04-29T18:21:00.382000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "error",
@@ -1455,13 +1438,13 @@
               ]
             },
             {
-              "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T1730",
+              "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T1830",
               "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
               "jobName": "Mission Control - Build+Publish",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-04-29T17:30:00.009000+00:00",
-              "lastEventAt": "2026-04-29T17:30:00.009000+00:00",
+              "startedAt": "2026-04-29T18:30:00.013000+00:00",
+              "lastEventAt": "2026-04-29T18:30:00.013000+00:00",
               "channel": null,
               "eventTypes": [
                 "triggered",
@@ -1475,10 +1458,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T1730",
+                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T1830",
                   "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
                   "jobName": "Mission Control - Build+Publish",
-                  "timestamp": "2026-04-29T17:30:00.009000+00:00",
+                  "timestamp": "2026-04-29T18:30:00.013000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -1486,13 +1469,13 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T1730",
+                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T1830",
                   "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
                   "jobName": "Mission Control - Build+Publish",
-                  "timestamp": "2026-04-29T17:30:00.009000+00:00",
+                  "timestamp": "2026-04-29T18:30:00.013000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
-                  "runStatus": "error",
+                  "runStatus": "ok",
                   "inferred": true
                 }
               ]
@@ -1978,10 +1961,10 @@
         {
           "workflowId": "tracking_watchdog",
           "workflowName": "Tracking Watchdog",
-          "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260429T1705",
+          "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260429T1806",
           "status": "healthy",
-          "startedAt": "2026-04-29T17:05:20.662000+00:00",
-          "lastEventAt": "2026-04-29T17:05:20.662000+00:00",
+          "startedAt": "2026-04-29T18:06:05.706000+00:00",
+          "lastEventAt": "2026-04-29T18:06:05.706000+00:00",
           "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
           "channel": null,
           "eventTypes": [
@@ -1995,10 +1978,10 @@
         {
           "workflowId": "mission_control",
           "workflowName": "Mission Control",
-          "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260429T1719",
+          "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260429T1821",
           "status": "healthy",
-          "startedAt": "2026-04-29T17:19:00.334000+00:00",
-          "lastEventAt": "2026-04-29T17:19:00.334000+00:00",
+          "startedAt": "2026-04-29T18:21:00.382000+00:00",
+          "lastEventAt": "2026-04-29T18:21:00.382000+00:00",
           "jobName": "Mission Control - Control Runner",
           "channel": null,
           "eventTypes": [
@@ -2012,10 +1995,10 @@
         {
           "workflowId": "mission_control",
           "workflowName": "Mission Control",
-          "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T1730",
+          "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T1830",
           "status": "healthy",
-          "startedAt": "2026-04-29T17:30:00.009000+00:00",
-          "lastEventAt": "2026-04-29T17:30:00.009000+00:00",
+          "startedAt": "2026-04-29T18:30:00.013000+00:00",
+          "lastEventAt": "2026-04-29T18:30:00.013000+00:00",
           "jobName": "Mission Control - Build+Publish",
           "channel": null,
           "eventTypes": [
@@ -2041,7 +2024,7 @@
       "status": "error",
       "kpis": {
         "total": 34,
-        "errors": 10,
+        "errors": 9,
         "paused": 0,
         "tzMissing": 0
       },
@@ -2049,12 +2032,12 @@
         {
           "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
           "name": "Mission Control - Build+Publish",
-          "status": "error",
+          "status": "ok",
           "enabled": true,
-          "errors": 1,
-          "lastError": "⚠️ 🧩 Exec<|channel|>commentary: `cd ~/.openclaw/workspace/missionControl && git add ...` failed",
-          "lastRun": "2026-04-29T17:30:00.009000+00:00",
-          "nextRun": "2026-04-29T18:00:00+00:00",
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-04-29T18:30:00.013000+00:00",
+          "nextRun": "2026-04-29T19:00:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -2065,10 +2048,10 @@
           "name": "Watchdog - Tracking Despesas (API + Frontend)",
           "status": "error",
           "enabled": true,
-          "errors": 19,
+          "errors": 20,
           "lastError": "cron: job execution timed out",
-          "lastRun": "2026-04-29T17:05:20.662000+00:00",
-          "nextRun": "2026-04-29T18:06:05.691000+00:00",
+          "lastRun": "2026-04-29T18:06:05.706000+00:00",
+          "nextRun": "2026-04-29T19:06:50.751000+00:00",
           "schedule": "*/10 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -2079,10 +2062,10 @@
           "name": "Mission Control - Control Runner",
           "status": "error",
           "enabled": true,
-          "errors": 10,
+          "errors": 11,
           "lastError": "cron: job execution timed out",
-          "lastRun": "2026-04-29T17:19:00.334000+00:00",
-          "nextRun": "2026-04-29T18:21:00.371000+00:00",
+          "lastRun": "2026-04-29T18:21:00.382000+00:00",
+          "nextRun": "2026-04-29T19:23:00.418000+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
@@ -2526,7 +2509,7 @@
       "alerts": [
         {
           "level": "high",
-          "text": "10 cron(s) em erro"
+          "text": "9 cron(s) em erro"
         }
       ],
       "actions": [
@@ -2894,19 +2877,19 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-29T18:01:39.434751+00:00"
+      "lastChecked": "2026-04-29T19:02:05.729970+00:00"
     }
   ],
   "crons": [
     {
       "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "name": "Mission Control - Build+Publish",
-      "status": "error",
+      "status": "ok",
       "enabled": true,
-      "errors": 1,
-      "lastError": "⚠️ 🧩 Exec<|channel|>commentary: `cd ~/.openclaw/workspace/missionControl && git add ...` failed",
-      "lastRun": "2026-04-29T17:30:00.009000+00:00",
-      "nextRun": "2026-04-29T18:00:00+00:00",
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-04-29T18:30:00.013000+00:00",
+      "nextRun": "2026-04-29T19:00:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -2917,10 +2900,10 @@
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "status": "error",
       "enabled": true,
-      "errors": 19,
+      "errors": 20,
       "lastError": "cron: job execution timed out",
-      "lastRun": "2026-04-29T17:05:20.662000+00:00",
-      "nextRun": "2026-04-29T18:06:05.691000+00:00",
+      "lastRun": "2026-04-29T18:06:05.706000+00:00",
+      "nextRun": "2026-04-29T19:06:50.751000+00:00",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -2931,10 +2914,10 @@
       "name": "Mission Control - Control Runner",
       "status": "error",
       "enabled": true,
-      "errors": 10,
+      "errors": 11,
       "lastError": "cron: job execution timed out",
-      "lastRun": "2026-04-29T17:19:00.334000+00:00",
-      "nextRun": "2026-04-29T18:21:00.371000+00:00",
+      "lastRun": "2026-04-29T18:21:00.382000+00:00",
+      "nextRun": "2026-04-29T19:23:00.418000+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
@@ -3375,5 +3358,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-04-29T18:01:39.434751+00:00"
+  "lastUpdated": "2026-04-29T19:02:05.729970+00:00"
 }
