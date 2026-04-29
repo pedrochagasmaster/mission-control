@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-29T22:31:04.458222+00:00",
+  "lastUpdated": "2026-04-29T23:01:13.254850+00:00",
   "actionRequired": [
     {
       "title": "Watchdog - Tracking Despesas (API + Frontend) (24 erros) - cron: job execution timed out",
@@ -22,14 +22,14 @@
       "priority": "high"
     },
     {
-      "title": "1 alerta(s) crítico(s) no security audit",
+      "title": "Pulso Familiar - Noite (3 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
     },
     {
-      "title": "Pulso Familiar - Noite (2 erros)",
+      "title": "1 alerta(s) crítico(s) no security audit",
       "url": null,
-      "priority": "medium"
+      "priority": "high"
     },
     {
       "title": "Lembrete de Captura de Memórias (2 erros) - cron: job execution timed out",
@@ -56,7 +56,12 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-29T22:30:43.283000+00:00"
+      "startedAt": "2026-04-29T23:00:46.819000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
+      "model": "free",
+      "startedAt": "2026-04-29T22:34:13.969000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -89,24 +94,16 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-29T22:31:04.458222+00:00"
+      "lastChecked": "2026-04-29T23:01:13.254850+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-29T22:00:00.011000+00:00",
+      "lastRun": "2026-04-29T22:30:00.016000+00:00",
       "status": "ok",
       "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Pulso Familiar - Noite",
-      "schedule": "30 19 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-28T22:34:03.818000+00:00",
-      "status": "error",
-      "errors": 2,
       "lastError": null
     },
     {
@@ -284,6 +281,14 @@
       "status": "ok",
       "errors": 0,
       "lastError": null
+    },
+    {
+      "name": "Pulso Familiar - Noite",
+      "schedule": "30 19 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-04-29T22:32:43.549000+00:00",
+      "status": "error",
+      "errors": 3,
+      "lastError": "cron: job execution timed out"
     },
     {
       "name": "Lixo Véspera (22h)",

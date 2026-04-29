@@ -2,11 +2,11 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-20.1",
-    "generatedAt": "2026-04-29T22:31:04.458222+00:00"
+    "generatedAt": "2026-04-29T23:01:13.254850+00:00"
   },
   "overview": {
     "healthScore": 0,
-    "criticalAlerts": 5,
+    "criticalAlerts": 6,
     "pendingControls": 0,
     "dataFreshnessSec": 0
   },
@@ -52,21 +52,21 @@
       ]
     },
     {
+      "type": "cron-error",
+      "targetId": "ac63f283-4de6-4a42-bd64-2aa49c34dc70",
+      "title": "Pulso Familiar - Noite (3 erros) - cron: job execution timed out",
+      "priority": "high",
+      "actions": [
+        "cron.retry",
+        "cron.pause"
+      ]
+    },
+    {
       "type": "security",
       "targetId": "security",
       "title": "1 alerta(s) crítico(s) no security audit",
       "priority": "high",
       "actions": []
-    },
-    {
-      "type": "cron-error",
-      "targetId": "ac63f283-4de6-4a42-bd64-2aa49c34dc70",
-      "title": "Pulso Familiar - Noite (2 erros)",
-      "priority": "medium",
-      "actions": [
-        "cron.retry",
-        "cron.pause"
-      ]
     },
     {
       "type": "cron-error",
@@ -113,7 +113,14 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-29T22:30:43.283000+00:00",
+      "startedAt": "2026-04-29T23:00:46.819000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
+      "model": "free",
+      "startedAt": "2026-04-29T22:34:13.969000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -1238,7 +1245,7 @@
           "signals": {
             "eventCount": 4,
             "attemptCount": 2,
-            "lastEvent": "2026-04-29T14:31:26.350000+00:00",
+            "lastEvent": "2026-04-29T22:32:43.549000+00:00",
             "lastAttemptStatus": "degraded"
           },
           "history": {
@@ -1249,65 +1256,15 @@
             "broken": 0,
             "byDay": [
               {
-                "date": "2026-04-28",
-                "healthy": 0,
-                "degraded": 1,
-                "lyingRisk": 0,
-                "broken": 0
-              },
-              {
                 "date": "2026-04-29",
                 "healthy": 0,
-                "degraded": 1,
+                "degraded": 2,
                 "lyingRisk": 0,
                 "broken": 0
               }
             ]
           },
           "recentAttempts": [
-            {
-              "attemptId": "proactive_group:ac63f283-4de6-4a42-bd64-2aa49c34dc70:20260428T2234",
-              "jobId": "ac63f283-4de6-4a42-bd64-2aa49c34dc70",
-              "jobName": "Pulso Familiar - Noite",
-              "status": "degraded",
-              "confidence": 82,
-              "startedAt": "2026-04-28T22:34:03.818000+00:00",
-              "lastEventAt": "2026-04-28T22:34:03.818000+00:00",
-              "channel": null,
-              "eventTypes": [
-                "triggered",
-                "ran"
-              ],
-              "eventCount": 2,
-              "reasons": [
-                "attempt sem evento terminal de entrega"
-              ],
-              "events": [
-                {
-                  "workflowId": "proactive_group",
-                  "workflowName": "Proactive Group",
-                  "attemptId": "proactive_group:ac63f283-4de6-4a42-bd64-2aa49c34dc70:20260428T2234",
-                  "jobId": "ac63f283-4de6-4a42-bd64-2aa49c34dc70",
-                  "jobName": "Pulso Familiar - Noite",
-                  "timestamp": "2026-04-28T22:34:03.818000+00:00",
-                  "eventType": "triggered",
-                  "source": "cron-state",
-                  "inferred": true
-                },
-                {
-                  "workflowId": "proactive_group",
-                  "workflowName": "Proactive Group",
-                  "attemptId": "proactive_group:ac63f283-4de6-4a42-bd64-2aa49c34dc70:20260428T2234",
-                  "jobId": "ac63f283-4de6-4a42-bd64-2aa49c34dc70",
-                  "jobName": "Pulso Familiar - Noite",
-                  "timestamp": "2026-04-28T22:34:03.818000+00:00",
-                  "eventType": "ran",
-                  "source": "cron-state",
-                  "runStatus": "error",
-                  "inferred": true
-                }
-              ]
-            },
             {
               "attemptId": "proactive_group:ff7487f2-fad4-40ab-bd83-84219ecec634:20260429T1431",
               "jobId": "ff7487f2-fad4-40ab-bd83-84219ecec634",
@@ -1344,6 +1301,49 @@
                   "jobId": "ff7487f2-fad4-40ab-bd83-84219ecec634",
                   "jobName": "Pulso Familiar - Meio-dia",
                   "timestamp": "2026-04-29T14:31:26.350000+00:00",
+                  "eventType": "ran",
+                  "source": "cron-state",
+                  "runStatus": "error",
+                  "inferred": true
+                }
+              ]
+            },
+            {
+              "attemptId": "proactive_group:ac63f283-4de6-4a42-bd64-2aa49c34dc70:20260429T2232",
+              "jobId": "ac63f283-4de6-4a42-bd64-2aa49c34dc70",
+              "jobName": "Pulso Familiar - Noite",
+              "status": "degraded",
+              "confidence": 82,
+              "startedAt": "2026-04-29T22:32:43.549000+00:00",
+              "lastEventAt": "2026-04-29T22:32:43.549000+00:00",
+              "channel": null,
+              "eventTypes": [
+                "triggered",
+                "ran"
+              ],
+              "eventCount": 2,
+              "reasons": [
+                "attempt sem evento terminal de entrega"
+              ],
+              "events": [
+                {
+                  "workflowId": "proactive_group",
+                  "workflowName": "Proactive Group",
+                  "attemptId": "proactive_group:ac63f283-4de6-4a42-bd64-2aa49c34dc70:20260429T2232",
+                  "jobId": "ac63f283-4de6-4a42-bd64-2aa49c34dc70",
+                  "jobName": "Pulso Familiar - Noite",
+                  "timestamp": "2026-04-29T22:32:43.549000+00:00",
+                  "eventType": "triggered",
+                  "source": "cron-state",
+                  "inferred": true
+                },
+                {
+                  "workflowId": "proactive_group",
+                  "workflowName": "Proactive Group",
+                  "attemptId": "proactive_group:ac63f283-4de6-4a42-bd64-2aa49c34dc70:20260429T2232",
+                  "jobId": "ac63f283-4de6-4a42-bd64-2aa49c34dc70",
+                  "jobName": "Pulso Familiar - Noite",
+                  "timestamp": "2026-04-29T22:32:43.549000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "error",
@@ -1444,7 +1444,7 @@
           "signals": {
             "eventCount": 4,
             "attemptCount": 2,
-            "lastEvent": "2026-04-29T22:26:56.243000+00:00",
+            "lastEvent": "2026-04-29T22:30:00.016000+00:00",
             "lastAttemptStatus": "healthy"
           },
           "history": {
@@ -1464,49 +1464,6 @@
             ]
           },
           "recentAttempts": [
-            {
-              "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T2200",
-              "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-              "jobName": "Mission Control - Build+Publish",
-              "status": "healthy",
-              "confidence": 100,
-              "startedAt": "2026-04-29T22:00:00.011000+00:00",
-              "lastEventAt": "2026-04-29T22:00:00.011000+00:00",
-              "channel": null,
-              "eventTypes": [
-                "triggered",
-                "ran"
-              ],
-              "eventCount": 2,
-              "reasons": [
-                "workflow interno sem requisito de entrega"
-              ],
-              "events": [
-                {
-                  "workflowId": "mission_control",
-                  "workflowName": "Mission Control",
-                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T2200",
-                  "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-                  "jobName": "Mission Control - Build+Publish",
-                  "timestamp": "2026-04-29T22:00:00.011000+00:00",
-                  "eventType": "triggered",
-                  "source": "cron-state",
-                  "inferred": true
-                },
-                {
-                  "workflowId": "mission_control",
-                  "workflowName": "Mission Control",
-                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T2200",
-                  "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-                  "jobName": "Mission Control - Build+Publish",
-                  "timestamp": "2026-04-29T22:00:00.011000+00:00",
-                  "eventType": "ran",
-                  "source": "cron-state",
-                  "runStatus": "ok",
-                  "inferred": true
-                }
-              ]
-            },
             {
               "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260429T2226",
               "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -1546,6 +1503,49 @@
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "error",
+                  "inferred": true
+                }
+              ]
+            },
+            {
+              "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T2230",
+              "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+              "jobName": "Mission Control - Build+Publish",
+              "status": "healthy",
+              "confidence": 100,
+              "startedAt": "2026-04-29T22:30:00.016000+00:00",
+              "lastEventAt": "2026-04-29T22:30:00.016000+00:00",
+              "channel": null,
+              "eventTypes": [
+                "triggered",
+                "ran"
+              ],
+              "eventCount": 2,
+              "reasons": [
+                "workflow interno sem requisito de entrega"
+              ],
+              "events": [
+                {
+                  "workflowId": "mission_control",
+                  "workflowName": "Mission Control",
+                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T2230",
+                  "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+                  "jobName": "Mission Control - Build+Publish",
+                  "timestamp": "2026-04-29T22:30:00.016000+00:00",
+                  "eventType": "triggered",
+                  "source": "cron-state",
+                  "inferred": true
+                },
+                {
+                  "workflowId": "mission_control",
+                  "workflowName": "Mission Control",
+                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T2230",
+                  "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+                  "jobName": "Mission Control - Build+Publish",
+                  "timestamp": "2026-04-29T22:30:00.016000+00:00",
+                  "eventType": "ran",
+                  "source": "cron-state",
+                  "runStatus": "ok",
                   "inferred": true
                 }
               ]
@@ -1667,23 +1667,6 @@
           "startedAt": "2026-04-28T21:01:46Z",
           "lastEventAt": "2026-04-28T21:01:46Z",
           "jobName": "Rotina da Tarde",
-          "channel": null,
-          "eventTypes": [
-            "triggered",
-            "ran"
-          ],
-          "reasons": [
-            "attempt sem evento terminal de entrega"
-          ]
-        },
-        {
-          "workflowId": "proactive_group",
-          "workflowName": "Proactive Group",
-          "attemptId": "proactive_group:ac63f283-4de6-4a42-bd64-2aa49c34dc70:20260428T2234",
-          "status": "degraded",
-          "startedAt": "2026-04-28T22:34:03.818000+00:00",
-          "lastEventAt": "2026-04-28T22:34:03.818000+00:00",
-          "jobName": "Pulso Familiar - Noite",
           "channel": null,
           "eventTypes": [
             "triggered",
@@ -2033,23 +2016,6 @@
           ]
         },
         {
-          "workflowId": "mission_control",
-          "workflowName": "Mission Control",
-          "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T2200",
-          "status": "healthy",
-          "startedAt": "2026-04-29T22:00:00.011000+00:00",
-          "lastEventAt": "2026-04-29T22:00:00.011000+00:00",
-          "jobName": "Mission Control - Build+Publish",
-          "channel": null,
-          "eventTypes": [
-            "triggered",
-            "ran"
-          ],
-          "reasons": [
-            "workflow interno sem requisito de entrega"
-          ]
-        },
-        {
           "workflowId": "tracking_watchdog",
           "workflowName": "Tracking Watchdog",
           "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260429T2209",
@@ -2082,6 +2048,40 @@
           "reasons": [
             "workflow interno sem requisito de entrega"
           ]
+        },
+        {
+          "workflowId": "mission_control",
+          "workflowName": "Mission Control",
+          "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260429T2230",
+          "status": "healthy",
+          "startedAt": "2026-04-29T22:30:00.016000+00:00",
+          "lastEventAt": "2026-04-29T22:30:00.016000+00:00",
+          "jobName": "Mission Control - Build+Publish",
+          "channel": null,
+          "eventTypes": [
+            "triggered",
+            "ran"
+          ],
+          "reasons": [
+            "workflow interno sem requisito de entrega"
+          ]
+        },
+        {
+          "workflowId": "proactive_group",
+          "workflowName": "Proactive Group",
+          "attemptId": "proactive_group:ac63f283-4de6-4a42-bd64-2aa49c34dc70:20260429T2232",
+          "status": "degraded",
+          "startedAt": "2026-04-29T22:32:43.549000+00:00",
+          "lastEventAt": "2026-04-29T22:32:43.549000+00:00",
+          "jobName": "Pulso Familiar - Noite",
+          "channel": null,
+          "eventTypes": [
+            "triggered",
+            "ran"
+          ],
+          "reasons": [
+            "attempt sem evento terminal de entrega"
+          ]
         }
       ],
       "actions": [],
@@ -2110,26 +2110,12 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-04-29T22:00:00.011000+00:00",
-          "nextRun": "2026-04-29T22:30:00+00:00",
+          "lastRun": "2026-04-29T22:30:00.016000+00:00",
+          "nextRun": "2026-04-29T23:00:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": null
-        },
-        {
-          "id": "ac63f283-4de6-4a42-bd64-2aa49c34dc70",
-          "name": "Pulso Familiar - Noite",
-          "status": "error",
-          "enabled": true,
-          "errors": 2,
-          "lastError": null,
-          "lastRun": "2026-04-28T22:34:03.818000+00:00",
-          "nextRun": "2026-04-29T22:30:00+00:00",
-          "schedule": "30 19 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "github-copilot/gpt-5-mini",
-          "channel": "whatsapp"
         },
         {
           "id": "b136a878-0ea8-43b1-8b07-e242454fe571",
@@ -2438,6 +2424,20 @@
           "tzMissing": false,
           "model": "github-copilot/gpt-5-mini",
           "channel": "telegram"
+        },
+        {
+          "id": "ac63f283-4de6-4a42-bd64-2aa49c34dc70",
+          "name": "Pulso Familiar - Noite",
+          "status": "error",
+          "enabled": true,
+          "errors": 3,
+          "lastError": "cron: job execution timed out",
+          "lastRun": "2026-04-29T22:32:43.549000+00:00",
+          "nextRun": "2026-04-30T22:30:00+00:00",
+          "schedule": "30 19 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "github-copilot/gpt-5-mini",
+          "channel": "whatsapp"
         },
         {
           "id": "eb796b6f-bb0b-4b92-963c-18696cf45e0d",
@@ -2961,7 +2961,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-29T22:31:04.458222+00:00"
+      "lastChecked": "2026-04-29T23:01:13.254850+00:00"
     }
   ],
   "crons": [
@@ -2972,26 +2972,12 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-04-29T22:00:00.011000+00:00",
-      "nextRun": "2026-04-29T22:30:00+00:00",
+      "lastRun": "2026-04-29T22:30:00.016000+00:00",
+      "nextRun": "2026-04-29T23:00:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "github-copilot/gpt-5-mini",
       "channel": null
-    },
-    {
-      "id": "ac63f283-4de6-4a42-bd64-2aa49c34dc70",
-      "name": "Pulso Familiar - Noite",
-      "status": "error",
-      "enabled": true,
-      "errors": 2,
-      "lastError": null,
-      "lastRun": "2026-04-28T22:34:03.818000+00:00",
-      "nextRun": "2026-04-29T22:30:00+00:00",
-      "schedule": "30 19 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "github-copilot/gpt-5-mini",
-      "channel": "whatsapp"
     },
     {
       "id": "b136a878-0ea8-43b1-8b07-e242454fe571",
@@ -3302,6 +3288,20 @@
       "channel": "telegram"
     },
     {
+      "id": "ac63f283-4de6-4a42-bd64-2aa49c34dc70",
+      "name": "Pulso Familiar - Noite",
+      "status": "error",
+      "enabled": true,
+      "errors": 3,
+      "lastError": "cron: job execution timed out",
+      "lastRun": "2026-04-29T22:32:43.549000+00:00",
+      "nextRun": "2026-04-30T22:30:00+00:00",
+      "schedule": "30 19 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "github-copilot/gpt-5-mini",
+      "channel": "whatsapp"
+    },
+    {
       "id": "eb796b6f-bb0b-4b92-963c-18696cf45e0d",
       "name": "Lixo Véspera (22h)",
       "status": "ok",
@@ -3442,5 +3442,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-04-29T22:31:04.458222+00:00"
+  "lastUpdated": "2026-04-29T23:01:13.254850+00:00"
 }
