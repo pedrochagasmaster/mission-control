@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-04-30T08:31:58.842930+00:00",
+  "lastUpdated": "2026-04-30T09:01:58.396084+00:00",
   "actionRequired": [
     {
-      "title": "Atualização do Índice de Sistema (3 erros) - cron: job execution timed out",
+      "title": "Atualização do Índice de Sistema (3 erros)",
       "url": null,
       "priority": "high"
     },
@@ -32,16 +32,6 @@
       "priority": "high"
     },
     {
-      "title": "Mission Control - Build+Publish (2 erros)",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Mission Control - Control Runner (1 erros) - ⚠️ Agent couldn't generate a response. Note: some tool actions may have already been executed — please verify before retrying.",
-      "url": null,
-      "priority": "medium"
-    },
-    {
       "title": "Diário da Família - Enviador (2 erros) - cron: job execution timed out",
       "url": null,
       "priority": "medium"
@@ -56,12 +46,12 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "free",
-      "startedAt": "2026-04-30T08:30:43.637000+00:00"
+      "startedAt": "2026-04-30T09:00:46.962000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "free",
-      "startedAt": "2026-04-30T08:25:00.012000+00:00"
+      "startedAt": "2026-04-30T08:55:00.018000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
@@ -84,25 +74,25 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-04-30T08:31:58.842930+00:00"
+      "lastChecked": "2026-04-30T09:01:58.396084+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-30T08:03:10.465000+00:00",
-      "status": "error",
-      "errors": 2,
+      "lastRun": "2026-04-30T08:30:00.015000+00:00",
+      "status": "ok",
+      "errors": 0,
       "lastError": null
     },
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-30T08:25:00.008000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "⚠️ Agent couldn't generate a response. Note: some tool actions may have already been executed — please verify before retrying."
+      "lastRun": "2026-04-30T08:55:00.012000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Atualização do Índice de Sistema",
@@ -110,7 +100,7 @@
       "lastRun": "2026-04-29T09:04:52.216000+00:00",
       "status": "error",
       "errors": 3,
-      "lastError": "cron: job execution timed out"
+      "lastError": null
     },
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
