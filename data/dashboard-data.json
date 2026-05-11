@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-11T13:01:09.271345+00:00",
+  "lastUpdated": "2026-05-11T13:31:17.286190+00:00",
   "actionRequired": [
     {
       "title": "Pulso Familiar - Meio-dia (1 erros) - ⚠️ Agent couldn't generate a response. Please try again.",
@@ -11,7 +11,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-11T13:00:55.084000+00:00"
+      "startedAt": "2026-05-11T13:30:55.361000+00:00"
+    },
+    {
+      "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-11T13:30:00.024000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-11T13:26:00.291000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-11T13:21:08.171000+00:00"
     },
     {
       "task": "agent:main:cron:8e6d54f6-5278-4975-94dc-578d36397408",
@@ -24,16 +39,6 @@
       "startedAt": "2026-05-11T13:00:01.120000+00:00"
     },
     {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-11T12:56:05.400000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-11T12:50:56.874000+00:00"
-    },
-    {
       "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
       "model": "kimi-k2.5",
       "startedAt": "2026-05-11T12:00:56.357000+00:00"
@@ -42,11 +47,6 @@
       "task": "agent:main:cron:ae7b9fb6-d807-4c23-846c-87f880d130be",
       "model": "kimi-k2.5",
       "startedAt": "2026-05-11T12:00:38.525000+00:00"
-    },
-    {
-      "task": "agent:main:cron:3d633d74-840a-4996-82df-9e9f8d474d46",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-11T12:00:01.045000+00:00"
     }
   ],
   "products": [
@@ -54,46 +54,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-05-11T13:01:09.271345+00:00"
+      "lastChecked": "2026-05-11T13:31:17.286190+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Aspirar Cozinha",
-      "schedule": "0 10 * * 1,3,6 (America/Sao_Paulo)",
-      "lastRun": null,
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-11T12:30:00.016000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Lixo (Sacos Novos) + Ralos",
-      "schedule": "0 10 * * 1,3,5 (America/Sao_Paulo)",
-      "lastRun": null,
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-11T12:50:56.872000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-11T12:55:00.022000+00:00",
+      "lastRun": "2026-05-11T13:00:49.524000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -102,6 +70,22 @@
       "name": "Rotina da Manhã (Completa)",
       "schedule": "30 10 * * * (America/Sao_Paulo)",
       "lastRun": null,
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-11T13:21:08.167000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-11T13:25:00.021000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -299,6 +283,22 @@
       "lastError": null
     },
     {
+      "name": "Aspirar Cozinha",
+      "schedule": "0 10 * * 1,3,6 (America/Sao_Paulo)",
+      "lastRun": "2026-05-11T13:00:00.027000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Lixo (Sacos Novos) + Ralos",
+      "schedule": "0 10 * * 1,3,5 (America/Sao_Paulo)",
+      "lastRun": "2026-05-11T13:00:26.837000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Resumo Semanal de Memórias",
       "schedule": "0 20 * * 0 (America/Sao_Paulo)",
       "lastRun": "2026-05-10T23:01:58.568000+00:00",
@@ -350,6 +350,11 @@
     {
       "time": "2026-05-11T10:00:41-03:00",
       "event": "Cron disparou: Lixo (Sacos Novos) + Ralos (8e6d54f6-5278-4975-94dc-578d36397408)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-05-11T10:30:19-03:00",
+      "event": "Cron disparou: Rotina da Manhã (Completa) (93c7796d-f82d-4381-a925-f1a0a22bf25b)",
       "channel": "cron"
     }
   ]
