@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-20.1",
-    "generatedAt": "2026-05-13T07:30:27.148083+00:00"
+    "generatedAt": "2026-05-13T08:07:08.604170+00:00"
   },
   "overview": {
     "healthScore": 60,
@@ -26,21 +26,28 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-13T07:30:12.404000+00:00",
+      "startedAt": "2026-05-13T08:06:53.288000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
+      "task": "agent:main:cron:75b87bc7-016d-49a2-9995-4a0b715a7f23",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-13T08:00:00.298000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-13T07:25:00.650000+00:00",
+      "startedAt": "2026-05-13T07:55:00.740000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-13T07:21:09.233000+00:00",
+      "startedAt": "2026-05-13T07:51:14.102000+00:00",
       "agentId": "main",
       "kind": "direct"
     },
@@ -1423,7 +1430,7 @@
           "signals": {
             "eventCount": 2,
             "attemptCount": 1,
-            "lastEvent": "2026-05-13T07:21:09.223000+00:00",
+            "lastEvent": "2026-05-13T07:51:14.090000+00:00",
             "lastAttemptStatus": "healthy"
           },
           "history": {
@@ -1444,13 +1451,13 @@
           },
           "recentAttempts": [
             {
-              "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260513T0721",
+              "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260513T0751",
               "jobId": "b136a878-0ea8-43b1-8b07-e242454fe571",
               "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-05-13T07:21:09.223000+00:00",
-              "lastEventAt": "2026-05-13T07:21:09.223000+00:00",
+              "startedAt": "2026-05-13T07:51:14.090000+00:00",
+              "lastEventAt": "2026-05-13T07:51:14.090000+00:00",
               "channel": null,
               "eventTypes": [
                 "triggered",
@@ -1464,10 +1471,10 @@
                 {
                   "workflowId": "tracking_watchdog",
                   "workflowName": "Tracking Watchdog",
-                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260513T0721",
+                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260513T0751",
                   "jobId": "b136a878-0ea8-43b1-8b07-e242454fe571",
                   "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
-                  "timestamp": "2026-05-13T07:21:09.223000+00:00",
+                  "timestamp": "2026-05-13T07:51:14.090000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -1475,10 +1482,10 @@
                 {
                   "workflowId": "tracking_watchdog",
                   "workflowName": "Tracking Watchdog",
-                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260513T0721",
+                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260513T0751",
                   "jobId": "b136a878-0ea8-43b1-8b07-e242454fe571",
                   "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
-                  "timestamp": "2026-05-13T07:21:09.223000+00:00",
+                  "timestamp": "2026-05-13T07:51:14.090000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "ok",
@@ -1501,7 +1508,7 @@
           "signals": {
             "eventCount": 4,
             "attemptCount": 2,
-            "lastEvent": "2026-05-13T07:25:00.453000+00:00",
+            "lastEvent": "2026-05-13T07:55:00.598000+00:00",
             "lastAttemptStatus": "healthy"
           },
           "history": {
@@ -1522,13 +1529,13 @@
           },
           "recentAttempts": [
             {
-              "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260513T0700",
+              "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260513T0730",
               "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
               "jobName": "Mission Control - Build+Publish",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-05-13T07:00:00.254000+00:00",
-              "lastEventAt": "2026-05-13T07:00:00.254000+00:00",
+              "startedAt": "2026-05-13T07:30:00.530000+00:00",
+              "lastEventAt": "2026-05-13T07:30:00.530000+00:00",
               "channel": null,
               "eventTypes": [
                 "triggered",
@@ -1542,10 +1549,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260513T0700",
+                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260513T0730",
                   "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
                   "jobName": "Mission Control - Build+Publish",
-                  "timestamp": "2026-05-13T07:00:00.254000+00:00",
+                  "timestamp": "2026-05-13T07:30:00.530000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -1553,10 +1560,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260513T0700",
+                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260513T0730",
                   "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
                   "jobName": "Mission Control - Build+Publish",
-                  "timestamp": "2026-05-13T07:00:00.254000+00:00",
+                  "timestamp": "2026-05-13T07:30:00.530000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "ok",
@@ -1565,13 +1572,13 @@
               ]
             },
             {
-              "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260513T0725",
+              "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260513T0755",
               "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
               "jobName": "Mission Control - Control Runner",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-05-13T07:25:00.453000+00:00",
-              "lastEventAt": "2026-05-13T07:25:00.453000+00:00",
+              "startedAt": "2026-05-13T07:55:00.598000+00:00",
+              "lastEventAt": "2026-05-13T07:55:00.598000+00:00",
               "channel": null,
               "eventTypes": [
                 "triggered",
@@ -1585,10 +1592,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260513T0725",
+                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260513T0755",
                   "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
                   "jobName": "Mission Control - Control Runner",
-                  "timestamp": "2026-05-13T07:25:00.453000+00:00",
+                  "timestamp": "2026-05-13T07:55:00.598000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -1596,10 +1603,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260513T0725",
+                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260513T0755",
                   "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
                   "jobName": "Mission Control - Control Runner",
-                  "timestamp": "2026-05-13T07:25:00.453000+00:00",
+                  "timestamp": "2026-05-13T07:55:00.598000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "ok",
@@ -2105,10 +2112,10 @@
         {
           "workflowId": "mission_control",
           "workflowName": "Mission Control",
-          "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260513T0700",
+          "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260513T0730",
           "status": "healthy",
-          "startedAt": "2026-05-13T07:00:00.254000+00:00",
-          "lastEventAt": "2026-05-13T07:00:00.254000+00:00",
+          "startedAt": "2026-05-13T07:30:00.530000+00:00",
+          "lastEventAt": "2026-05-13T07:30:00.530000+00:00",
           "jobName": "Mission Control - Build+Publish",
           "channel": null,
           "eventTypes": [
@@ -2122,10 +2129,10 @@
         {
           "workflowId": "tracking_watchdog",
           "workflowName": "Tracking Watchdog",
-          "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260513T0721",
+          "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260513T0751",
           "status": "healthy",
-          "startedAt": "2026-05-13T07:21:09.223000+00:00",
-          "lastEventAt": "2026-05-13T07:21:09.223000+00:00",
+          "startedAt": "2026-05-13T07:51:14.090000+00:00",
+          "lastEventAt": "2026-05-13T07:51:14.090000+00:00",
           "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
           "channel": null,
           "eventTypes": [
@@ -2139,10 +2146,10 @@
         {
           "workflowId": "mission_control",
           "workflowName": "Mission Control",
-          "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260513T0725",
+          "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260513T0755",
           "status": "healthy",
-          "startedAt": "2026-05-13T07:25:00.453000+00:00",
-          "lastEventAt": "2026-05-13T07:25:00.453000+00:00",
+          "startedAt": "2026-05-13T07:55:00.598000+00:00",
+          "lastEventAt": "2026-05-13T07:55:00.598000+00:00",
           "jobName": "Mission Control - Control Runner",
           "channel": null,
           "eventTypes": [
@@ -2174,14 +2181,28 @@
       },
       "jobs": [
         {
+          "id": "75b87bc7-016d-49a2-9995-4a0b715a7f23",
+          "name": "Instagram Knowledge Ingest",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-05-12T08:00:00.018000+00:00",
+          "nextRun": "2026-05-13T08:00:00+00:00",
+          "schedule": "0 5 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "opencode-go/kimi-k2.5",
+          "channel": "last"
+        },
+        {
           "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
           "name": "Mission Control - Build+Publish",
           "status": "ok",
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-05-13T07:00:00.254000+00:00",
-          "nextRun": "2026-05-13T07:30:00+00:00",
+          "lastRun": "2026-05-13T07:30:00.530000+00:00",
+          "nextRun": "2026-05-13T08:00:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "opencode-go/kimi-k2.5",
@@ -2194,8 +2215,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-05-13T07:21:09.223000+00:00",
-          "nextRun": "2026-05-13T07:30:00+00:00",
+          "lastRun": "2026-05-13T07:51:14.090000+00:00",
+          "nextRun": "2026-05-13T08:00:00+00:00",
           "schedule": "*/10 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "opencode-go/kimi-k2.5",
@@ -2208,23 +2229,9 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-05-13T07:25:00.453000+00:00",
-          "nextRun": "2026-05-13T07:30:00+00:00",
-          "schedule": "*/5 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "opencode-go/kimi-k2.5",
-          "channel": "last"
-        },
-        {
-          "id": "75b87bc7-016d-49a2-9995-4a0b715a7f23",
-          "name": "Instagram Knowledge Ingest",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-05-12T08:00:00.018000+00:00",
+          "lastRun": "2026-05-13T07:55:00.598000+00:00",
           "nextRun": "2026-05-13T08:00:00+00:00",
-          "schedule": "0 5 * * * (America/Sao_Paulo)",
+          "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "opencode-go/kimi-k2.5",
           "channel": "last"
@@ -2674,11 +2681,11 @@
       "name": "Knowledge Parental",
       "status": "ok",
       "kpis": {
-        "files": 101,
+        "files": 102,
         "ingestHealthy": true,
         "watcherHealthy": true
       },
-      "lastFile": "ivana__jauregui_20260511.md",
+      "lastFile": "ivana__jauregui_20260513.md",
       "job": {
         "id": "75b87bc7-016d-49a2-9995-4a0b715a7f23",
         "name": "Instagram Knowledge Ingest",
@@ -2699,7 +2706,7 @@
       "source": "/home/pedro/.openclaw/workspace/knowledge",
       "trend7d": {
         "metric": "files",
-        "delta": 3,
+        "delta": 4,
         "direction": "up"
       }
     },
@@ -2980,10 +2987,24 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-05-13T07:30:27.148083+00:00"
+      "lastChecked": "2026-05-13T08:07:08.604170+00:00"
     }
   ],
   "crons": [
+    {
+      "id": "75b87bc7-016d-49a2-9995-4a0b715a7f23",
+      "name": "Instagram Knowledge Ingest",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-05-12T08:00:00.018000+00:00",
+      "nextRun": "2026-05-13T08:00:00+00:00",
+      "schedule": "0 5 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "opencode-go/kimi-k2.5",
+      "channel": "last"
+    },
     {
       "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "name": "Mission Control - Build+Publish",
@@ -2991,8 +3012,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-05-13T07:00:00.254000+00:00",
-      "nextRun": "2026-05-13T07:30:00+00:00",
+      "lastRun": "2026-05-13T07:30:00.530000+00:00",
+      "nextRun": "2026-05-13T08:00:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "opencode-go/kimi-k2.5",
@@ -3005,8 +3026,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-05-13T07:21:09.223000+00:00",
-      "nextRun": "2026-05-13T07:30:00+00:00",
+      "lastRun": "2026-05-13T07:51:14.090000+00:00",
+      "nextRun": "2026-05-13T08:00:00+00:00",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "opencode-go/kimi-k2.5",
@@ -3019,23 +3040,9 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-05-13T07:25:00.453000+00:00",
-      "nextRun": "2026-05-13T07:30:00+00:00",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "opencode-go/kimi-k2.5",
-      "channel": "last"
-    },
-    {
-      "id": "75b87bc7-016d-49a2-9995-4a0b715a7f23",
-      "name": "Instagram Knowledge Ingest",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-05-12T08:00:00.018000+00:00",
+      "lastRun": "2026-05-13T07:55:00.598000+00:00",
       "nextRun": "2026-05-13T08:00:00+00:00",
-      "schedule": "0 5 * * * (America/Sao_Paulo)",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "opencode-go/kimi-k2.5",
       "channel": "last"
@@ -3461,5 +3468,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-05-13T07:30:27.148083+00:00"
+  "lastUpdated": "2026-05-13T08:07:08.604170+00:00"
 }
