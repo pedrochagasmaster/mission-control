@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13T15:30:28.883003+00:00",
+  "lastUpdated": "2026-05-13T16:01:09.583999+00:00",
   "actionRequired": [
     {
       "title": "Diário da Família - Enviador (1 erros) - cron: job execution timed out",
@@ -16,17 +16,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-13T15:30:12.346000+00:00"
+      "startedAt": "2026-05-13T16:00:43.450000+00:00"
+    },
+    {
+      "task": "agent:main:cron:96074f1f-0124-4b4c-a944-e71349f91678",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-13T16:00:00.600000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-13T15:26:32.570000+00:00"
+      "startedAt": "2026-05-13T15:56:31.180000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-13T15:21:15.388000+00:00"
+      "startedAt": "2026-05-13T15:51:20.640000+00:00"
     },
     {
       "task": "agent:main:cron:42be764c-f915-4669-8f94-878e23362bf8",
@@ -42,16 +47,6 @@
       "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
       "model": "kimi-k2.5",
       "startedAt": "2026-05-13T13:30:00.978000+00:00"
-    },
-    {
-      "task": "agent:main:cron:8e6d54f6-5278-4975-94dc-578d36397408",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-13T13:00:32.107000+00:00"
-    },
-    {
-      "task": "agent:main:cron:555d214e-c8ca-48ef-a091-d41efcba712d",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-13T13:00:01.097000+00:00"
     }
   ],
   "products": [
@@ -59,30 +54,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-05-13T15:30:28.883003+00:00"
+      "lastChecked": "2026-05-13T16:01:09.583999+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-13T15:00:37.251000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-13T15:21:15.183000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-13T15:25:00.273000+00:00",
+      "lastRun": "2026-05-13T15:30:00.572000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -91,6 +70,22 @@
       "name": "Passeio Almoço",
       "schedule": "0 13 * * * (America/Sao_Paulo)",
       "lastRun": "2026-05-12T16:00:00.269000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-13T15:51:20.637000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-13T15:55:00.350000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -365,6 +360,11 @@
     {
       "time": "2026-05-13T12:00:21-03:00",
       "event": "Cron disparou: Ração Almoço (42be764c-f915-4669-8f94-878e23362bf8)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-05-13T13:00:18-03:00",
+      "event": "Cron disparou: Passeio Almoço (96074f1f-0124-4b4c-a944-e71349f91678)",
       "channel": "cron"
     }
   ]
