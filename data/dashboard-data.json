@@ -1,8 +1,13 @@
 {
-  "lastUpdated": "2026-05-13T10:30:58.597689+00:00",
+  "lastUpdated": "2026-05-13T11:01:30.819348+00:00",
   "actionRequired": [
     {
       "title": "Análise de Conversas - Manhã (1 erros) - ⚠️ 📖 Read: from ~/.openclaw/workspace/memory/conversation_analysis_latest.json failed",
+      "url": null,
+      "priority": "medium"
+    },
+    {
+      "title": "Diário da Família - Enviador (1 erros) - cron: job execution timed out",
       "url": null,
       "priority": "medium"
     }
@@ -11,22 +16,27 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-13T10:30:46.817000+00:00"
+      "startedAt": "2026-05-13T11:00:12.955000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-13T10:56:19.442000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-13T10:52:00.280000+00:00"
+    },
+    {
+      "task": "agent:main:cron:4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-13T10:42:12.352000+00:00"
     },
     {
       "task": "agent:main:cron:ec212b07-8387-45d0-9606-351509850608",
       "model": "kimi-k2.5",
       "startedAt": "2026-05-13T10:30:00.570000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-13T10:26:32.002000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-13T10:22:16.617000+00:00"
     },
     {
       "task": "agent:main:cron:06b5aaae-b25a-4005-a78c-badad02f216b",
@@ -37,11 +47,6 @@
       "task": "agent:main:cron:f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
       "model": "kimi-k2.5",
       "startedAt": "2026-05-13T09:02:55.866000+00:00"
-    },
-    {
-      "task": "agent:main:cron:75b87bc7-016d-49a2-9995-4a0b715a7f23",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-13T08:00:00.298000+00:00"
     }
   ],
   "products": [
@@ -49,14 +54,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-05-13T10:30:58.597689+00:00"
+      "lastChecked": "2026-05-13T11:01:30.819348+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-13T10:00:00.077000+00:00",
+      "lastRun": "2026-05-13T10:30:35.928000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -64,15 +69,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-13T10:22:16.466000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Lixo (Colocar Fora)",
-      "schedule": "30 7 * * 1,3,5 (America/Sao_Paulo)",
-      "lastRun": "2026-05-11T10:30:00.014000+00:00",
+      "lastRun": "2026-05-13T10:52:00.265000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -80,15 +77,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-13T10:25:00.868000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Diário da Família - Enviador",
-      "schedule": "35 7 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-12T10:35:00.223000+00:00",
+      "lastRun": "2026-05-13T10:55:00.833000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -278,9 +267,25 @@
       "lastError": null
     },
     {
+      "name": "Diário da Família - Enviador",
+      "schedule": "35 7 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-13T10:35:00.255000+00:00",
+      "status": "error",
+      "errors": 1,
+      "lastError": "cron: job execution timed out"
+    },
+    {
       "name": "Lixo Véspera (22h)",
       "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
       "lastRun": "2026-05-13T01:00:29.194000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Lixo (Colocar Fora)",
+      "schedule": "30 7 * * 1,3,5 (America/Sao_Paulo)",
+      "lastRun": "2026-05-13T10:30:00.350000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
