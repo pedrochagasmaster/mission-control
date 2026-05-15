@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-14T23:30:34.980577+00:00",
+  "lastUpdated": "2026-05-15T00:00:47.844035+00:00",
   "actionRequired": [
     {
       "title": "Lembrete de Captura de Memórias (1 erros) - cron: job execution timed out",
@@ -26,27 +26,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-14T23:30:18.709000+00:00"
+      "startedAt": "2026-05-15T00:00:18.948000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "glm-5",
-      "startedAt": "2026-05-14T23:26:39.862000+00:00"
+      "startedAt": "2026-05-14T23:56:37.433000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-14T23:21:24.868000+00:00"
+      "startedAt": "2026-05-14T23:51:22.407000+00:00"
     },
     {
       "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
       "model": "kimi-k2.5",
       "startedAt": "2026-05-14T22:32:05.391000+00:00"
-    },
-    {
-      "task": "agent:main:cron:e3ac374c-a524-4465-a872-f682f01a979d",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-14T21:00:00.520000+00:00"
     }
   ],
   "products": [
@@ -54,14 +49,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-05-14T23:30:34.980577+00:00"
+      "lastChecked": "2026-05-15T00:00:47.844035+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-14T23:00:00.318000+00:00",
+      "lastRun": "2026-05-14T23:30:00.323000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -69,7 +64,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-14T23:21:24.588000+00:00",
+      "lastRun": "2026-05-14T23:51:22.404000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -77,7 +72,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-14T23:25:00.226000+00:00",
+      "lastRun": "2026-05-14T23:55:00.209000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
