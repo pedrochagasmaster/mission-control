@@ -1,16 +1,6 @@
 {
-  "lastUpdated": "2026-05-15T00:30:33.332871+00:00",
+  "lastUpdated": "2026-05-15T01:30:53.286517+00:00",
   "actionRequired": [
-    {
-      "title": "Lembrete de Captura de Memórias (1 erros)",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Pluggy Sync - Tracking Despesas (1 erros) - Error: No active WhatsApp Web listener (account: default). Start the gateway, then link WhatsApp with: openclaw channels login --channel whatsapp --account default.",
-      "url": null,
-      "priority": "medium"
-    },
     {
       "title": "Atualização do Índice de Sistema (1 erros) - cron: job execution timed out",
       "url": null,
@@ -26,17 +16,37 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-15T00:30:18.967000+00:00"
+      "startedAt": "2026-05-15T01:30:18.996000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "glm-5",
-      "startedAt": "2026-05-15T00:26:39.398000+00:00"
+      "startedAt": "2026-05-15T01:26:46.812000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-15T00:21:20.659000+00:00"
+      "startedAt": "2026-05-15T01:21:25.634000+00:00"
+    },
+    {
+      "task": "agent:main:cron:eb796b6f-bb0b-4b92-963c-18696cf45e0d",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-15T01:01:07.239000+00:00"
+    },
+    {
+      "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-15T01:00:00.450000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-15T00:45:00.413000+00:00"
+    },
+    {
+      "task": "agent:main:cron:22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-15T00:32:57.565000+00:00"
     },
     {
       "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
@@ -49,22 +59,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-05-15T00:30:33.332871+00:00"
+      "lastChecked": "2026-05-15T01:30:53.286517+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Lembrete de Captura de Memórias",
-      "schedule": "30 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-14T00:33:37.244000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-15T00:00:00.262000+00:00",
+      "lastRun": "2026-05-15T01:01:46.985000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -72,7 +74,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-15T00:21:20.465000+00:00",
+      "lastRun": "2026-05-15T01:21:25.631000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -80,31 +82,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-15T00:25:00.234000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Pluggy Sync - Tracking Despesas",
-      "schedule": "45 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-14T00:45:00.999000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "Error: No active WhatsApp Web listener (account: default). Start the gateway, then link WhatsApp with: openclaw channels login --channel whatsapp --account default."
-    },
-    {
-      "name": "Rotina da Noite (Completa)",
-      "schedule": "0 22 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-14T01:00:01.144000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Lixo Véspera (22h)",
-      "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
-      "lastRun": "2026-05-13T01:00:29.194000+00:00",
+      "lastRun": "2026-05-15T01:25:00.258000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -270,6 +248,30 @@
       "lastError": null
     },
     {
+      "name": "Lembrete de Captura de Memórias",
+      "schedule": "30 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-15T00:32:57.562000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Pluggy Sync - Tracking Despesas",
+      "schedule": "45 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-15T00:45:00.213000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Rotina da Noite (Completa)",
+      "schedule": "0 22 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-15T01:00:00.253000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Aspirar Cozinha",
       "schedule": "0 10 * * 1,3,6 (America/Sao_Paulo)",
       "lastRun": "2026-05-13T13:00:00.889000+00:00",
@@ -281,6 +283,14 @@
       "name": "Resumo Semanal de Memórias",
       "schedule": "0 20 * * 0 (America/Sao_Paulo)",
       "lastRun": "2026-05-10T23:01:58.568000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Lixo Véspera (22h)",
+      "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
+      "lastRun": "2026-05-15T01:01:07.236000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -355,6 +365,11 @@
     {
       "time": "2026-05-14T18:00:20-03:00",
       "event": "Cron disparou: Rotina da Tarde (e3ac374c-a524-4465-a872-f682f01a979d)",
+      "channel": "cron"
+    },
+    {
+      "time": "2026-05-14T22:00:46-03:00",
+      "event": "Cron disparou: Rotina da Noite (Completa) (7804497e-ac8d-49c9-bead-08ed6bab21d1)",
       "channel": "cron"
     }
   ]
