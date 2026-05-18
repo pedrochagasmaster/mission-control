@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-18T06:00:42.283391+00:00",
+  "lastUpdated": "2026-05-18T06:30:27.397617+00:00",
   "actionRequired": [
     {
       "title": "Consolidação Automática de Learnings (3 erros) - cron: job execution timed out",
@@ -116,17 +116,17 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-18T06:00:06.370000+00:00"
+      "startedAt": "2026-05-18T06:30:05.796000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "glm-5",
-      "startedAt": "2026-05-18T05:55:00.022000+00:00"
+      "startedAt": "2026-05-18T06:25:00.021000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-18T05:50:55.197000+00:00"
+      "startedAt": "2026-05-18T06:20:57.659000+00:00"
     }
   ],
   "products": [
@@ -134,14 +134,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-05-18T06:00:42.283391+00:00"
+      "lastChecked": "2026-05-18T06:30:27.397617+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-18T05:30:00.013000+00:00",
+      "lastRun": "2026-05-18T06:00:00.009000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -149,7 +149,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-18T05:50:55.188000+00:00",
+      "lastRun": "2026-05-18T06:20:57.613000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -157,7 +157,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-18T05:55:00.012000+00:00",
+      "lastRun": "2026-05-18T06:25:00.017000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
