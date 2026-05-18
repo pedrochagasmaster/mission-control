@@ -1,16 +1,6 @@
 {
-  "lastUpdated": "2026-05-18T12:25:38.559943+00:00",
+  "lastUpdated": "2026-05-18T12:30:29.668551+00:00",
   "actionRequired": [
-    {
-      "title": "Deadline Reminder Checker (3 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Resumo Diário da To-Do List (3 erros)",
-      "url": null,
-      "priority": "high"
-    },
     {
       "title": "Rotina da Manhã (Completa) (3 erros) - cron: job execution timed out",
       "url": null,
@@ -57,9 +47,19 @@
       "priority": "high"
     },
     {
+      "title": "Resumo Diário da To-Do List (4 erros) - ⚠️ 📖 Read: `from memory/todo_list.json` failed",
+      "url": null,
+      "priority": "high"
+    },
+    {
       "title": "Pós-Almoço: Zero Pia (3 erros) - cron: job execution timed out",
       "url": null,
       "priority": "high"
+    },
+    {
+      "title": "Mission Control - Build+Publish (1 erros)",
+      "url": null,
+      "priority": "medium"
     },
     {
       "title": "Aspirar Cozinha (1 erros) - cron: job execution timed out",
@@ -124,7 +124,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-05-18T12:25:38.559943+00:00"
+      "lastChecked": "2026-05-18T12:30:29.668551+00:00"
     }
   ],
   "crons": [
@@ -145,35 +145,11 @@
       "lastError": null
     },
     {
-      "name": "Deadline Reminder Checker",
-      "schedule": "0 9 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-17T13:15:02.171000+00:00",
-      "status": "error",
-      "errors": 3,
-      "lastError": null
-    },
-    {
-      "name": "Pagamento Wal",
-      "schedule": "0 9 * * 1 (America/Sao_Paulo)",
-      "lastRun": "2026-05-11T12:00:00.018000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-18T11:46:40.496000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Resumo Diário da To-Do List",
-      "schedule": "0 9 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-17T12:15:02.163000+00:00",
+      "lastRun": "2026-05-18T12:25:12.222000+00:00",
       "status": "error",
-      "errors": 3,
+      "errors": 1,
       "lastError": null
     },
     {
@@ -337,6 +313,22 @@
       "lastError": "cron: job execution timed out"
     },
     {
+      "name": "Deadline Reminder Checker",
+      "schedule": "0 9 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-18T12:24:31.707000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Resumo Diário da To-Do List",
+      "schedule": "0 9 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-18T12:24:13.071000+00:00",
+      "status": "error",
+      "errors": 4,
+      "lastError": "⚠️ 📖 Read: `from memory/todo_list.json` failed"
+    },
+    {
       "name": "Dobrar Roupas",
       "schedule": "0 10 * * 2 (America/Sao_Paulo)",
       "lastRun": "2026-05-12T13:00:00.280000+00:00",
@@ -391,6 +383,14 @@
       "status": "error",
       "errors": 1,
       "lastError": "cron: job execution timed out"
+    },
+    {
+      "name": "Pagamento Wal",
+      "schedule": "0 9 * * 1 (America/Sao_Paulo)",
+      "lastRun": "2026-05-18T12:23:49.279000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Check Simparic Mensal",
