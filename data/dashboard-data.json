@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-18T12:30:29.668551+00:00",
+  "lastUpdated": "2026-05-18T12:45:20.589625+00:00",
   "actionRequired": [
     {
       "title": "Rotina da Manhã (Completa) (3 erros) - cron: job execution timed out",
@@ -57,12 +57,22 @@
       "priority": "high"
     },
     {
-      "title": "Mission Control - Build+Publish (1 erros)",
+      "title": "Mission Control - Control Runner (1 erros)",
+      "url": null,
+      "priority": "medium"
+    },
+    {
+      "title": "Watchdog - Tracking Despesas (API + Frontend) (1 erros) - Error: ENOSPC: no space left on device, write",
       "url": null,
       "priority": "medium"
     },
     {
       "title": "Aspirar Cozinha (1 erros) - cron: job execution timed out",
+      "url": null,
+      "priority": "medium"
+    },
+    {
+      "title": "Mission Control - Build+Publish (2 erros) - Error: ENOSPC: no space left on device, write",
       "url": null,
       "priority": "medium"
     },
@@ -124,33 +134,25 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-05-18T12:30:29.668551+00:00"
+      "lastChecked": "2026-05-18T12:45:20.589625+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-18T10:32:56.107000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-18T10:35:30.138000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Build+Publish",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-18T12:25:12.222000+00:00",
+      "lastRun": "2026-05-18T12:40:03.666000+00:00",
       "status": "error",
       "errors": 1,
       "lastError": null
+    },
+    {
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-18T12:41:20.371000+00:00",
+      "status": "error",
+      "errors": 1,
+      "lastError": "Error: ENOSPC: no space left on device, write"
     },
     {
       "name": "Aspirar Cozinha",
@@ -159,6 +161,14 @@
       "status": "error",
       "errors": 1,
       "lastError": "cron: job execution timed out"
+    },
+    {
+      "name": "Mission Control - Build+Publish",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-18T12:30:02.061000+00:00",
+      "status": "error",
+      "errors": 2,
+      "lastError": "Error: ENOSPC: no space left on device, write"
     },
     {
       "name": "Lixo (Sacos Novos) + Ralos",
