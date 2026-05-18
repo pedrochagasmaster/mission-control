@@ -1,21 +1,6 @@
 {
-  "lastUpdated": "2026-05-18T00:36:24.939874+00:00",
+  "lastUpdated": "2026-05-18T01:30:17.066191+00:00",
   "actionRequired": [
-    {
-      "title": "Mission Control - Build+Publish (41 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Mission Control - Control Runner (43 erros) - cron: job execution timed out",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Watchdog - Tracking Despesas (API + Frontend) (43 erros) - cron: job execution timed out",
-      "url": null,
-      "priority": "high"
-    },
     {
       "title": "Consolidação Automática de Learnings (3 erros) - cron: job execution timed out",
       "url": null,
@@ -107,16 +92,6 @@
       "priority": "high"
     },
     {
-      "title": "Pluggy Sync - Tracking Despesas (2 erros) - cron: job execution timed out",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Rotina da Noite (Completa) (2 erros) - cron: job execution timed out",
-      "url": null,
-      "priority": "medium"
-    },
-    {
       "title": "daily-git-commit (2 erros) - cron: job execution timed out",
       "url": null,
       "priority": "medium"
@@ -146,7 +121,32 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-18T00:36:08.801000+00:00"
+      "startedAt": "2026-05-18T01:30:05.655000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "glm-5",
+      "startedAt": "2026-05-18T01:26:02.706000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-18T01:20:53.309000+00:00"
+    },
+    {
+      "task": "agent:main:cron:eb796b6f-bb0b-4b92-963c-18696cf45e0d",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-18T01:00:50.742000+00:00"
+    },
+    {
+      "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-18T01:00:00.014000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-18T00:45:00.019000+00:00"
     },
     {
       "task": "agent:main:isolated",
@@ -157,26 +157,6 @@
       "task": "agent:main:cron:22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
       "model": "kimi-k2.5",
       "startedAt": "2026-05-18T00:30:01.735000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-17T23:38:07.921000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "glm-5",
-      "startedAt": "2026-05-17T23:36:06.332000+00:00"
-    },
-    {
-      "task": "agent:main:cron:df3cabfe-4969-4e49-8af0-4a3aaf7d03b1",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-17T23:00:01.821000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-17T22:36:18.794000+00:00"
     }
   ],
   "products": [
@@ -184,54 +164,30 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-05-18T00:36:24.939874+00:00"
+      "lastChecked": "2026-05-18T01:30:17.066191+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-17T23:33:02.191000+00:00",
-      "status": "error",
-      "errors": 41,
+      "lastRun": "2026-05-18T01:01:10.906000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-18T01:20:53.306000+00:00",
+      "status": "ok",
+      "errors": 0,
       "lastError": null
     },
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-17T23:36:04.228000+00:00",
-      "status": "error",
-      "errors": 43,
-      "lastError": "cron: job execution timed out"
-    },
-    {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-17T23:38:04.236000+00:00",
-      "status": "error",
-      "errors": 43,
-      "lastError": "cron: job execution timed out"
-    },
-    {
-      "name": "Pluggy Sync - Tracking Despesas",
-      "schedule": "45 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-17T00:45:00.009000+00:00",
-      "status": "error",
-      "errors": 2,
-      "lastError": "cron: job execution timed out"
-    },
-    {
-      "name": "Rotina da Noite (Completa)",
-      "schedule": "0 22 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-17T01:45:02.187000+00:00",
-      "status": "error",
-      "errors": 2,
-      "lastError": "cron: job execution timed out"
-    },
-    {
-      "name": "Lixo Véspera (22h)",
-      "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
-      "lastRun": "2026-05-15T01:01:07.236000+00:00",
+      "lastRun": "2026-05-18T01:25:00.014000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -413,6 +369,22 @@
       "lastError": "cron: job execution timed out"
     },
     {
+      "name": "Pluggy Sync - Tracking Despesas",
+      "schedule": "45 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-18T00:45:00.009000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Rotina da Noite (Completa)",
+      "schedule": "0 22 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-18T01:00:00.006000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Dobrar Roupas",
       "schedule": "0 10 * * 2 (America/Sao_Paulo)",
       "lastRun": "2026-05-12T13:00:00.280000+00:00",
@@ -427,6 +399,14 @@
       "status": "error",
       "errors": 3,
       "lastError": "cron: job execution timed out"
+    },
+    {
+      "name": "Lixo Véspera (22h)",
+      "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
+      "lastRun": "2026-05-18T01:00:50.734000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Pagamento Banho",
@@ -461,5 +441,11 @@
       "lastError": null
     }
   ],
-  "recentActivity": []
+  "recentActivity": [
+    {
+      "time": "2026-05-17T22:00:30-03:00",
+      "event": "Cron disparou: Rotina da Noite (Completa) (7804497e-ac8d-49c9-bead-08ed6bab21d1)",
+      "channel": "cron"
+    }
+  ]
 }
