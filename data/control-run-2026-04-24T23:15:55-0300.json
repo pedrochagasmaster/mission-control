@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-04-24T23:15:55-03:00",
+  "session": "rapid-rook",
+  "exit_code": 0,
+  "processed": 0,
+  "results": [],
+  "files_written": [
+    "mission-control/data/dashboard-data.v3.json",
+    "mission-control/data/dashboard-data.v2.json",
+    "mission-control/data/dashboard-data.json"
+  ],
+  "source": "exec-event",
+  "note": "Snapshot run recorded by assistant"
+}
