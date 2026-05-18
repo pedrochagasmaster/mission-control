@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-05-18T18:02:37.959243+00:00",
+  "lastUpdated": "2026-05-18T21:23:19.434207+00:00",
   "actionRequired": [
     {
-      "title": "Blitz da Ordem (17:30) (3 erros) - cron: job execution timed out",
+      "title": "Blitz da Ordem (17:30) (3 erros)",
       "url": null,
       "priority": "high"
     },
     {
-      "title": "Rotina da Tarde (3 erros) - cron: job execution timed out",
+      "title": "Rotina da Tarde (3 erros)",
       "url": null,
       "priority": "high"
     },
@@ -42,6 +42,11 @@
       "priority": "high"
     },
     {
+      "title": "Mission Control - Build+Publish (1 erros)",
+      "url": null,
+      "priority": "medium"
+    },
+    {
       "title": "Resumo Semanal de Memórias (1 erros) - cron: job execution timed out",
       "url": null,
       "priority": "medium"
@@ -51,42 +56,17 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-18T18:00:07.646000+00:00"
+      "startedAt": "2026-05-18T21:23:10.600000+00:00"
     },
     {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "glm-5",
-      "startedAt": "2026-05-18T17:56:36.506000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "task": "agent:main:cron:a2a10215-b00a-45e4-8ed4-28cb60e442a6",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-18T17:56:19+00:00"
+      "startedAt": "2026-05-18T21:22:46.543000+00:00"
     },
     {
-      "task": "agent:main:cron:42be764c-f915-4669-8f94-878e23362bf8",
+      "task": "agent:main:cron:e3ac374c-a524-4465-a872-f682f01a979d",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-18T17:14:04.081000+00:00"
-    },
-    {
-      "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-18T16:25:49.163000+00:00"
-    },
-    {
-      "task": "agent:main:cron:96074f1f-0124-4b4c-a944-e71349f91678",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-18T16:24:04.004000+00:00"
-    },
-    {
-      "task": "agent:main:cron:8e6d54f6-5278-4975-94dc-578d36397408",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-18T15:45:59.015000+00:00"
-    },
-    {
-      "task": "agent:main:cron:555d214e-c8ca-48ef-a091-d41efcba712d",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-18T15:45:23.762000+00:00"
+      "startedAt": "2026-05-18T21:22:27.755000+00:00"
     }
   ],
   "products": [
@@ -94,30 +74,30 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-05-18T18:02:37.959243+00:00"
+      "lastChecked": "2026-05-18T21:23:19.434207+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Mission Control - Build+Publish",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-18T17:54:33.802000+00:00",
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-18T18:20:00.022000+00:00",
       "status": "ok",
       "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Build+Publish",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-18T18:00:00.007000+00:00",
+      "status": "error",
+      "errors": 1,
       "lastError": null
     },
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-18T17:56:18.991000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-18T17:55:37.262000+00:00",
+      "lastRun": "2026-05-18T18:20:58.939000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -128,7 +108,7 @@
       "lastRun": "2026-05-17T20:30:00.014000+00:00",
       "status": "error",
       "errors": 3,
-      "lastError": "cron: job execution timed out"
+      "lastError": null
     },
     {
       "name": "Rotina da Tarde",
@@ -136,7 +116,7 @@
       "lastRun": "2026-05-17T21:30:02.161000+00:00",
       "status": "error",
       "errors": 3,
-      "lastError": "cron: job execution timed out"
+      "lastError": null
     },
     {
       "name": "Pulso Familiar - Noite",
