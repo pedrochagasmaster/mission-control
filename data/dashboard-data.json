@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-19T03:02:11.012814+00:00",
+  "lastUpdated": "2026-05-19T03:37:11.764209+00:00",
   "actionRequired": [
     {
       "title": "Análise de Conversas - Manhã (5 erros) - cron: job execution timed out",
@@ -22,6 +22,11 @@
       "priority": "high"
     },
     {
+      "title": "Mission Control - Control Runner (1 erros)",
+      "url": null,
+      "priority": "medium"
+    },
+    {
       "title": "Pluggy Sync - Tracking Despesas (1 erros) - Error: No active WhatsApp Web listener (account: default). Start the gateway, then link WhatsApp with: openclaw channels login --channel whatsapp --account default.",
       "url": null,
       "priority": "medium"
@@ -41,22 +46,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-19T03:01:53.647000+00:00"
+      "startedAt": "2026-05-19T03:36:56.170000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "glm-5",
+      "startedAt": "2026-05-19T03:05:07.649000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-19T03:04:16.932000+00:00"
     },
     {
       "task": "agent:main:cron:ebbd066d-2269-48d5-8f80-f89ce7633b81",
       "model": "kimi-k2.5",
       "startedAt": "2026-05-19T02:59:00.071000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "glm-5",
-      "startedAt": "2026-05-19T02:55:00.040000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-19T02:51:01.309000+00:00"
     },
     {
       "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
@@ -67,11 +72,6 @@
       "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
       "model": "kimi-k2.5",
       "startedAt": "2026-05-19T00:48:20.584000+00:00"
-    },
-    {
-      "task": "agent:main:cron:22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-19T00:34:02.389000+00:00"
     }
   ],
   "products": [
@@ -79,22 +79,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-05-19T03:02:11.012814+00:00"
+      "lastChecked": "2026-05-19T03:37:11.764209+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Mission Control - Build+Publish",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-19T02:30:00.023000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-19T02:51:01.298000+00:00",
+      "lastRun": "2026-05-19T03:04:16.792000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -102,7 +94,15 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-19T02:55:00.030000+00:00",
+      "lastRun": "2026-05-19T03:05:00.027000+00:00",
+      "status": "error",
+      "errors": 1,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Build+Publish",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-19T03:01:43.475000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
