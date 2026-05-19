@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-19T08:01:13.702234+00:00",
+  "lastUpdated": "2026-05-19T08:30:15.752860+00:00",
   "actionRequired": [
     {
       "title": "Análise de Conversas - Manhã (5 erros) - cron: job execution timed out",
@@ -22,6 +22,11 @@
       "priority": "high"
     },
     {
+      "title": "Watchdog - Tracking Despesas (API + Frontend) (1 erros)",
+      "url": null,
+      "priority": "medium"
+    },
+    {
       "title": "Pluggy Sync - Tracking Despesas (1 erros) - Error: No active WhatsApp Web listener (account: default). Start the gateway, then link WhatsApp with: openclaw channels login --channel whatsapp --account default.",
       "url": null,
       "priority": "medium"
@@ -41,22 +46,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-19T08:01:00.069000+00:00"
+      "startedAt": "2026-05-19T08:30:06.135000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "glm-5",
+      "startedAt": "2026-05-19T08:25:00.017000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-19T08:21:02.819000+00:00"
     },
     {
       "task": "agent:main:cron:75b87bc7-016d-49a2-9995-4a0b715a7f23",
       "model": "kimi-k2.5",
       "startedAt": "2026-05-19T08:00:00.010000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "glm-5",
-      "startedAt": "2026-05-19T07:55:00.015000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-19T07:50:59.665000+00:00"
     },
     {
       "task": "agent:main:cron:218f26ef-423f-4f74-aa31-d28879facc28",
@@ -69,22 +74,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-05-19T08:01:13.702234+00:00"
+      "lastChecked": "2026-05-19T08:30:15.752860+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Instagram Knowledge Ingest",
-      "schedule": "0 5 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-18T08:00:00.007000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-19T07:30:00.006000+00:00",
+      "lastRun": "2026-05-19T08:00:53.846000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -92,15 +89,15 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-19T07:50:59.655000+00:00",
-      "status": "ok",
-      "errors": 0,
+      "lastRun": "2026-05-19T08:20:56.675000+00:00",
+      "status": "error",
+      "errors": 1,
       "lastError": null
     },
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-19T07:55:00.011000+00:00",
+      "lastRun": "2026-05-19T08:25:00.007000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -277,6 +274,14 @@
       "name": "Consolidação Automática de Learnings",
       "schedule": "0 4 * * * (America/Sao_Paulo)",
       "lastRun": "2026-05-19T07:02:24.065000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Instagram Knowledge Ingest",
+      "schedule": "0 5 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-19T08:00:00.006000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
