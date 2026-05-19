@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-19T01:02:02.868702+00:00",
+  "lastUpdated": "2026-05-19T01:30:17.995325+00:00",
   "actionRequired": [
     {
       "title": "Análise de Conversas - Manhã (5 erros) - cron: job execution timed out",
@@ -36,22 +36,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-19T01:01:39.263000+00:00"
+      "startedAt": "2026-05-19T01:30:07.794000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "glm-5",
+      "startedAt": "2026-05-19T01:26:14.620000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-19T01:21:07.093000+00:00"
     },
     {
       "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
       "model": "kimi-k2.5",
       "startedAt": "2026-05-19T01:00:00.037000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "glm-5",
-      "startedAt": "2026-05-19T00:56:10.566000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-19T00:52:00.140000+00:00"
     },
     {
       "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
@@ -74,22 +74,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-05-19T01:02:02.868702+00:00"
+      "lastChecked": "2026-05-19T01:30:17.995325+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Rotina da Noite (Completa)",
-      "schedule": "0 22 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-18T01:00:00.006000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-19T00:30:00.008000+00:00",
+      "lastRun": "2026-05-19T01:01:32.215000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -97,7 +89,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-19T00:52:00.016000+00:00",
+      "lastRun": "2026-05-19T01:21:07.089000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -105,7 +97,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-19T00:55:00.012000+00:00",
+      "lastRun": "2026-05-19T01:25:00.017000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -277,6 +269,14 @@
       "status": "error",
       "errors": 1,
       "lastError": "Error: No active WhatsApp Web listener (account: default). Start the gateway, then link WhatsApp with: openclaw channels login --channel whatsapp --account default."
+    },
+    {
+      "name": "Rotina da Noite (Completa)",
+      "schedule": "0 22 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-19T01:00:00.026000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Lixo Véspera (22h)",
