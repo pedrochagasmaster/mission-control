@@ -1,0 +1,47 @@
+{
+  "date": "2026-05-20",
+  "tasks": {
+    "rotina_manha": {
+      "id": "rotina_manha",
+      "name": "🌅 Rotina da Manhã",
+      "time": "06:00",
+      "status": "PENDING"
+    },
+    "racao_almoco": {
+      "id": "racao_almoco",
+      "name": "🍲 Ração Almoço",
+      "time": "12:00",
+      "status": "PENDING"
+    },
+    "passeio_almoco": {
+      "id": "passeio_almoco",
+      "name": "🐕 Passeio 2/4",
+      "time": "13:00",
+      "status": "PENDING"
+    },
+    "missao_pos_almoco": {
+      "id": "missao_pos_almoco",
+      "name": "🍽️ Zero Pia",
+      "time": "13:30",
+      "status": "PENDING"
+    },
+    "blitz_ordem": {
+      "id": "blitz_ordem",
+      "name": "🌪️ Blitz da Ordem",
+      "time": "17:30",
+      "status": "PENDING"
+    },
+    "rotina_tarde": {
+      "id": "rotina_tarde",
+      "name": "🌆 Rotina Tarde",
+      "time": "18:00",
+      "status": "PENDING"
+    },
+    "rotina_noite": {
+      "id": "rotina_noite",
+      "name": "🌙 Rotina Noite",
+      "time": "22:00",
+      "status": "PENDING"
+    }
+  }
+}
