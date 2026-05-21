@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-21T13:55:56.191013+00:00",
+  "lastUpdated": "2026-05-21T14:00:26.524306+00:00",
   "actionRequired": [
     {
       "title": "Pluggy Sync - Tracking Despesas (3 erros) - FallbackSummaryError: All models failed (3): opencode-go/kimi-k2.5: LLM request failed: provider rejected the request schema or tool payload. (format) | opencode-go/glm-5: No available auth profile for opencode-go (all in cooldown or unavailable). (format) | opencode-go/minimax-m2.5: No available auth profile for opencode-go (all in cooldown or unavailable). (format)",
@@ -44,19 +44,19 @@
   ],
   "activeNow": [
     {
+      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-21T14:00:05.886000+00:00"
+    },
+    {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "glm-5",
-      "startedAt": "2026-05-21T13:55:06.215000+00:00"
+      "startedAt": "2026-05-21T13:56:54.245000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
       "startedAt": "2026-05-21T13:51:09.157000+00:00"
-    },
-    {
-      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-21T13:32:21.850000+00:00"
     },
     {
       "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
@@ -89,18 +89,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-05-21T13:55:56.191013+00:00"
+      "lastChecked": "2026-05-21T14:00:26.524306+00:00"
     }
   ],
   "crons": [
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-21T13:50:00.006000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
@@ -113,6 +105,14 @@
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
       "lastRun": "2026-05-21T13:51:09.155000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-21T13:55:00.005000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
