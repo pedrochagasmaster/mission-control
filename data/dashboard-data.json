@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-05-20T23:30:50.976246+00:00",
+  "lastUpdated": "2026-05-21T00:30:55.743865+00:00",
   "actionRequired": [
     {
-      "title": "Mission Control - Build+Publish (1 erros)",
+      "title": "Mission Control - Build+Publish (3 erros)",
       "url": null,
-      "priority": "medium"
+      "priority": "high"
     },
     {
-      "title": "Lembrete de Captura de Memórias (1 erros) - cron: job execution timed out",
+      "title": "Lembrete de Captura de Memórias (1 erros)",
       "url": null,
       "priority": "medium"
     },
@@ -51,27 +51,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-20T23:30:17.934000+00:00"
+      "startedAt": "2026-05-21T00:30:20.100000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "glm-5",
-      "startedAt": "2026-05-20T23:26:45.640000+00:00"
+      "startedAt": "2026-05-21T00:26:47.867000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-20T23:21:25.129000+00:00"
+      "startedAt": "2026-05-21T00:21:31.162000+00:00"
     },
     {
       "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
       "model": "kimi-k2.5",
       "startedAt": "2026-05-20T22:33:25.355000+00:00"
-    },
-    {
-      "task": "agent:main:cron:e3ac374c-a524-4465-a872-f682f01a979d",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-20T21:00:47.856000+00:00"
     }
   ],
   "products": [
@@ -79,22 +74,30 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-05-20T23:30:50.976246+00:00"
+      "lastChecked": "2026-05-21T00:30:55.743865+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Mission Control - Build+Publish",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-20T23:00:00.774000+00:00",
+      "name": "Lembrete de Captura de Memórias",
+      "schedule": "30 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-20T00:33:04.987000+00:00",
       "status": "error",
       "errors": 1,
       "lastError": null
     },
     {
+      "name": "Mission Control - Build+Publish",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-21T00:00:01.025000+00:00",
+      "status": "error",
+      "errors": 3,
+      "lastError": null
+    },
+    {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-20T23:21:23.923000+00:00",
+      "lastRun": "2026-05-21T00:21:30.086000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -102,18 +105,10 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-20T23:25:00.775000+00:00",
+      "lastRun": "2026-05-21T00:25:00.915000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
-    },
-    {
-      "name": "Lembrete de Captura de Memórias",
-      "schedule": "30 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-20T00:33:04.987000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "cron: job execution timed out"
     },
     {
       "name": "Pluggy Sync - Tracking Despesas",
