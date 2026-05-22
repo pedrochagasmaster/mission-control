@@ -320,7 +320,12 @@ def build_routines_domain() -> dict[str, Any]:
     now_local = dt.datetime.now().strftime("%H:%M")
 
     rows: list[dict[str, Any]] = []
-    for key, task in (tasks or {}).items():
+    # Handle both dict and list formats for tasks
+    if isinstance(tasks, list):
+        task_iter = [(t.get("id", f"task_{i}"), t) for i, t in enumerate(tasks)]
+    else:
+        task_iter = (tasks or {}).items()
+    for key, task in task_iter:
         status = (task or {}).get("status") or "UNKNOWN"
         label = (task or {}).get("label") or key
         hhmm = (task or {}).get("time")
@@ -339,6 +344,7 @@ def build_routines_domain() -> dict[str, Any]:
                 "status": status,
                 "time": hhmm,
                 "note": (task or {}).get("note", ""),
+                "name": (task or {}).get("name", ""),
             }
         )
 

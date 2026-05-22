@@ -1,0 +1,8 @@
+Timestamp: 2026-04-21T10:51:00-03:00
+Source: async exec (crisp-la)
+Exit code: 0
+Files written:
+- /home/pedro/.openclaw/workspace/mission-control/data/dashboard-data.v3.json
+- /home/pedro/.openclaw/workspace/mission-control/data/dashboard-data.v2.json
+- /home/pedro/.openclaw/workspace/mission-control/data/dashboard-data.json
+Notes: Command completed successfully. History persisted.

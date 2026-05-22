@@ -1,0 +1,1 @@
+{ "timestamp": "2026-04-26T16:51:00Z", "source": "cron ee323868-9e6f-4aa5-aa6a-5c7438cd1a93", "exit_code": 0, "files_written": ["mission-control/data/dashboard-data.v3.json","mission-control/data/dashboard-data.v2.json","mission-control/data/dashboard-data.json"], "note": "Build dashboard snapshot completed. History persisted." }

@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-04-27T10:34:41-03:00",
+  "command": "python3 mission-control/scripts/control_queue.py process --max-items 20 && python3 mission-control/scripts/build_dashboard_snapshot.py",
+  "exit_code": 0,
+  "processed": 0,
+  "results": [],
+  "files_written": [
+    "mission-control/data/dashboard-data.v3.json",
+    "mission-control/data/dashboard-data.v2.json",
+    "mission-control/data/dashboard-data.json"
+  ],
+  "notes": "Async run completed; result logged. No user-facing output was produced per request."
+}
