@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-22T20:00:15.424271+00:00",
+  "lastUpdated": "2026-05-22T20:30:33.313580+00:00",
   "actionRequired": [
     {
       "title": "Lembrete de Captura de Memórias (3 erros) - ⚠️ 📖 Read: first 30 lines of ~/.openclaw/workspace/MEMORY.md failed",
@@ -21,17 +21,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-22T20:00:07.078000+00:00"
+      "startedAt": "2026-05-22T20:30:21.560000+00:00"
+    },
+    {
+      "task": "agent:main:cron:a2a10215-b00a-45e4-8ed4-28cb60e442a6",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-22T20:30:00.024000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "glm-5",
-      "startedAt": "2026-05-22T19:56:05.245000+00:00"
+      "startedAt": "2026-05-22T20:26:09.670000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-22T19:51:01.595000+00:00"
+      "startedAt": "2026-05-22T20:20:57.031000+00:00"
     }
   ],
   "products": [
@@ -39,30 +44,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-05-22T20:00:15.424271+00:00"
+      "lastChecked": "2026-05-22T20:30:33.313580+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-22T19:30:00.020000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-22T19:51:01.370000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-22T19:55:00.020000+00:00",
+      "lastRun": "2026-05-22T20:00:00.017000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -71,6 +60,22 @@
       "name": "Blitz da Ordem (17:30)",
       "schedule": "30 17 * * * (America/Sao_Paulo)",
       "lastRun": "2026-05-21T20:30:00.004000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-22T20:20:56.797000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-22T20:25:00.020000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
