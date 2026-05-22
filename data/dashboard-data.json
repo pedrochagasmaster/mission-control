@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-22T15:30:14.823186+00:00",
+  "lastUpdated": "2026-05-22T16:00:36.443291+00:00",
   "actionRequired": [
     {
       "title": "Lembrete de Captura de Memórias (3 erros) - ⚠️ 📖 Read: first 30 lines of ~/.openclaw/workspace/MEMORY.md failed",
@@ -21,17 +21,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-22T15:30:06.749000+00:00"
+      "startedAt": "2026-05-22T16:00:27.871000+00:00"
+    },
+    {
+      "task": "agent:main:cron:96074f1f-0124-4b4c-a944-e71349f91678",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-22T16:00:00.021000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "glm-5",
-      "startedAt": "2026-05-22T15:26:16.589000+00:00"
+      "startedAt": "2026-05-22T15:56:09.355000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-22T15:20:59.167000+00:00"
+      "startedAt": "2026-05-22T15:51:13.357000+00:00"
     },
     {
       "task": "agent:main:cron:42be764c-f915-4669-8f94-878e23362bf8",
@@ -47,11 +52,6 @@
       "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
       "model": "kimi-k2.5",
       "startedAt": "2026-05-22T13:30:00.019000+00:00"
-    },
-    {
-      "task": "agent:main:cron:8e6d54f6-5278-4975-94dc-578d36397408",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-22T13:00:00.023000+00:00"
     }
   ],
   "products": [
@@ -59,30 +59,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-05-22T15:30:14.823186+00:00"
+      "lastChecked": "2026-05-22T16:00:36.443291+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-22T15:00:27.417000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-22T15:20:59.164000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-22T15:25:00.017000+00:00",
+      "lastRun": "2026-05-22T15:30:00.015000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -91,6 +75,22 @@
       "name": "Passeio Almoço",
       "schedule": "0 13 * * * (America/Sao_Paulo)",
       "lastRun": "2026-05-21T16:00:00.006000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-22T15:51:13.121000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-22T15:55:00.006000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
