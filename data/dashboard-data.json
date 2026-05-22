@@ -1,10 +1,15 @@
 {
-  "lastUpdated": "2026-05-22T03:30:24.344555+00:00",
+  "lastUpdated": "2026-05-22T04:00:16.698057+00:00",
   "actionRequired": [
     {
       "title": "Lembrete de Captura de Memórias (3 erros) - ⚠️ 📖 Read: first 30 lines of ~/.openclaw/workspace/MEMORY.md failed",
       "url": null,
       "priority": "high"
+    },
+    {
+      "title": "Watchdog - Tracking Despesas (API + Frontend) (1 erros) - ⚠️ Agent couldn't generate a response. Please try again.",
+      "url": null,
+      "priority": "medium"
     },
     {
       "title": "Resumo Semanal de Memórias (1 erros) - cron: job execution timed out",
@@ -21,42 +26,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-22T03:30:06.453000+00:00"
+      "startedAt": "2026-05-22T04:00:06.520000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "glm-5",
-      "startedAt": "2026-05-22T03:25:00.019000+00:00"
+      "startedAt": "2026-05-22T03:55:00.016000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-22T03:20:53.032000+00:00"
+      "startedAt": "2026-05-22T03:50:55.006000+00:00"
     },
     {
       "task": "agent:main:cron:ebbd066d-2269-48d5-8f80-f89ce7633b81",
       "model": "kimi-k2.5",
       "startedAt": "2026-05-22T02:59:00.456000+00:00"
-    },
-    {
-      "task": "agent:main:cron:eb796b6f-bb0b-4b92-963c-18696cf45e0d",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-22T01:00:17.130000+00:00"
-    },
-    {
-      "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-22T01:00:00.017000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-22T00:45:00.019000+00:00"
-    },
-    {
-      "task": "agent:main:cron:22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-22T00:31:56.534000+00:00"
     }
   ],
   "products": [
@@ -64,14 +49,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-05-22T03:30:24.344555+00:00"
+      "lastChecked": "2026-05-22T04:00:16.698057+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-22T03:00:00.028000+00:00",
+      "lastRun": "2026-05-22T03:30:00.012000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -79,15 +64,15 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-22T03:20:53.029000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
+      "lastRun": "2026-05-22T03:50:54.999000+00:00",
+      "status": "error",
+      "errors": 1,
+      "lastError": "⚠️ Agent couldn't generate a response. Please try again."
     },
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-22T03:25:00.014000+00:00",
+      "lastRun": "2026-05-22T03:55:00.012000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
