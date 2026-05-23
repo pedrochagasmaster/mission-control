@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-05-23T11:55:15.144961+00:00",
+  "lastUpdated": "2026-05-23T12:30:21.210331+00:00",
   "actionRequired": [
+    {
+      "title": "Deadline Reminder Checker (1 erros) - Error: No active WhatsApp Web listener (account: default). Start the gateway, then link WhatsApp with: openclaw channels login --channel whatsapp --account default.",
+      "url": null,
+      "priority": "medium"
+    },
     {
       "title": "Resumo Semanal de Memórias (1 erros) - cron: job execution timed out",
       "url": null,
@@ -14,24 +19,34 @@
   ],
   "activeNow": [
     {
+      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-23T12:30:07.281000+00:00"
+    },
+    {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "glm-5",
-      "startedAt": "2026-05-23T11:55:07.410000+00:00"
+      "startedAt": "2026-05-23T12:26:08.338000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
-      "startedAt": "2026-05-23T11:50:59.100000+00:00"
+      "startedAt": "2026-05-23T12:21:01.916000+00:00"
+    },
+    {
+      "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-23T12:00:11.650000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ae7b9fb6-d807-4c23-846c-87f880d130be",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-05-23T12:00:00.016000+00:00"
     },
     {
       "task": "agent:main:cron:f1830563-b029-4bb2-80fc-9ffe54108a08",
       "model": "kimi-k2.5",
       "startedAt": "2026-05-23T11:31:59.761000+00:00"
-    },
-    {
-      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-23T11:31:16.816000+00:00"
     },
     {
       "task": "agent:main:cron:0ba1cb64-5259-46bf-beb5-e58c02ec4215",
@@ -42,16 +57,6 @@
       "task": "agent:main:cron:4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
       "model": "kimi-k2.5",
       "startedAt": "2026-05-23T10:35:00.011000+00:00"
-    },
-    {
-      "task": "agent:main:cron:06b5aaae-b25a-4005-a78c-badad02f216b",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-23T10:20:00.016000+00:00"
-    },
-    {
-      "task": "agent:main:cron:f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-05-23T09:01:29.335000+00:00"
     }
   ],
   "products": [
@@ -59,38 +64,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-05-23T11:55:15.144961+00:00"
+      "lastChecked": "2026-05-23T12:30:21.210331+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-23T11:50:00.006000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Deadline Reminder Checker",
-      "schedule": "0 9 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-22T12:00:14.552000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-23T11:30:00.010000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Resumo Diário da To-Do List",
-      "schedule": "0 9 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-22T12:00:02.049000+00:00",
+      "lastRun": "2026-05-23T12:01:00.915000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -98,7 +79,15 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-23T11:50:59.097000+00:00",
+      "lastRun": "2026-05-23T12:21:01.913000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-23T12:25:00.013000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -259,6 +248,22 @@
       "name": "Análise de Conversas - Manhã",
       "schedule": "30 8 * * * (America/Sao_Paulo)",
       "lastRun": "2026-05-23T11:31:59.750000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Deadline Reminder Checker",
+      "schedule": "0 9 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-23T12:00:11.642000+00:00",
+      "status": "error",
+      "errors": 1,
+      "lastError": "Error: No active WhatsApp Web listener (account: default). Start the gateway, then link WhatsApp with: openclaw channels login --channel whatsapp --account default."
+    },
+    {
+      "name": "Resumo Diário da To-Do List",
+      "schedule": "0 9 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-05-23T12:00:00.006000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
