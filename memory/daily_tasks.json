@@ -1,5 +1,5 @@
 {
-  "date": "2026-05-21",
+  "date": "2026-05-22",
   "tasks": {
     "rotina_manha": {
       "id": "rotina_manha",
@@ -29,8 +29,7 @@
       "id": "blitz_ordem",
       "name": "🌪️ Blitz da Ordem",
       "time": "17:30",
-      "status": "PENDING",
-      "last_triggered": "2026-05-21T17:30:00-03:00"
+      "status": "PENDING"
     },
     "rotina_tarde": {
       "id": "rotina_tarde",
@@ -42,8 +41,7 @@
       "id": "rotina_noite",
       "name": "🌙 Rotina Noite",
       "time": "22:00",
-      "status": "PENDING",
-      "last_triggered": "2026-05-21T22:00:00-03:00"
+      "status": "PENDING"
     }
   }
 }

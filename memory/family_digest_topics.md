@@ -5,6 +5,10 @@ Este arquivo rastreia os temas já abordados no Diário da Família para evitar 
 ## 2026
 
 ### Maio
+- **22/05/2026**: Tummy time e as primeiras conquistas motoras da Isabel
+  - Foco: fortalecimento muscular, desenvolvimento motor aos 3 meses, brincadeiras no chão
+  - Dicas mencionadas: fazer quando alerta, usar brinquedos coloridos/espelhos, respeitar sinais de cansaço, começar com poucos minutos
+
 - **21/05/2026**: As primeiras conversas da Isabel: balbucio e comunicação aos 3 meses
   - Foco: desenvolvimento da comunicação, balbucio, troca de turnos e sorriso social
   - Dicas mencionadas: responder aos sons do bebê, narrar o dia a dia, fazer contato visual
