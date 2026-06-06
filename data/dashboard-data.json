@@ -1,163 +1,13 @@
 {
-  "lastUpdated": "2026-06-06T19:31:19.081811+00:00",
+  "lastUpdated": "2026-06-06T20:00:06.811961+00:00",
   "actionRequired": [
     {
-      "title": "Pulso Familiar - Meio-dia (5 erros)",
+      "title": "Lembrete de Captura de Memórias (5 erros) - cron: job execution timed out (last phase: model-call-started)",
       "url": null,
       "priority": "high"
     },
     {
-      "title": "Mission Control - Build+Publish (14 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Watchdog - Tracking Despesas (API + Frontend) (46 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Pulso Familiar - Noite (4 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Lembrete de Captura de Memórias (4 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Atualização do Índice de Sistema (6 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Diário da Família - Enviador (4 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Análise de Conversas - Manhã (4 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Ração Almoço (1 erros) - cron: job interrupted by gateway restart",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Passeio Almoço (1 erros) - cron: job interrupted by gateway restart",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Pós-Almoço: Zero Pia (1 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Blitz da Ordem (17:30) (1 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Rotina da Tarde (1 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Resumo Semanal de Memórias (1 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Pluggy Sync - Tracking Despesas (1 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Rotina da Noite (Completa) (1 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Lixo Véspera (22h) (1 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "daily-git-commit (1 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Consolidação Automática de Learnings (2 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Instagram Knowledge Ingest (2 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Diário da Família - Gerador (2 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Lixo (Colocar Fora) (1 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Diário da Família - Watchdog (retry 08:15) (2 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Pagamento Wal (1 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Resumo Diário da To-Do List (2 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Deadline Reminder Checker (2 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Aspirar Cozinha (1 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Lixo (Sacos Novos) + Ralos (1 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Rotina da Manhã (Completa) (2 erros) - ⚠️ Agent couldn't generate a response. Please try again.",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Dobrar Roupas (1 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Pagamento Banho (1 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Check Simparic Mensal (1 erros) - cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]",
+      "title": "Lixo Véspera (22h) (2 erros) - ⚠️ 🎯 Update Goal: `complete` failed",
       "url": null,
       "priority": "medium"
     },
@@ -169,44 +19,44 @@
   ],
   "activeNow": [
     {
-      "task": "agent:main:telegram:direct:1899641264",
-      "model": "nemotron-nano-12b-v2-vl:free",
-      "startedAt": "2026-06-06T19:31:20.880000+00:00"
-    },
-    {
-      "task": "agent:main:cron:96074f1f-0124-4b4c-a944-e71349f91678",
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-06T19:31:08.100000+00:00"
+      "startedAt": "2026-06-06T20:00:00.446000+00:00"
     },
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-06T19:31:08.079000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ff7487f2-fad4-40ab-bd83-84219ecec634",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-06T19:31:08.064000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-06T19:31:08.047000+00:00"
-    },
-    {
-      "task": "agent:main:cron:42be764c-f915-4669-8f94-878e23362bf8",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-06T19:31:08.019000+00:00"
+      "startedAt": "2026-06-06T20:00:00.423000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-06T19:30:44.407000+00:00"
+      "startedAt": "2026-06-06T20:00:00.403000+00:00"
     },
     {
-      "task": "agent:main:explicit:debug-model-2026-05-10",
-      "model": "gpt-5.4",
-      "startedAt": "2026-06-06T19:27:50.032000+00:00"
+      "task": "agent:main:telegram:direct:1899641264",
+      "model": "nemotron-nano-12b-v2-vl:free",
+      "startedAt": "2026-06-06T19:34:43.232000+00:00"
+    },
+    {
+      "task": "agent:main:whatsapp:direct:+5519997830810",
+      "model": "kimi-k2.6",
+      "startedAt": "2026-06-06T19:34:35.985000+00:00"
+    },
+    {
+      "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-06T19:34:26.917000+00:00"
+    },
+    {
+      "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-06T19:34:20.109000+00:00"
+    },
+    {
+      "task": "agent:main:cron:555d214e-c8ca-48ef-a091-d41efcba712d",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-06T19:34:20.091000+00:00"
     }
   ],
   "products": [
@@ -214,262 +64,270 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-06T19:31:19.081811+00:00"
+      "lastChecked": "2026-06-06T20:00:06.811961+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Pulso Familiar - Meio-dia",
-      "schedule": "30 11 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T03:55:14.818000+00:00",
-      "status": "error",
-      "errors": 5,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T13:30:05.534000+00:00",
-      "status": "error",
-      "errors": 14,
+      "lastRun": "2026-06-06T19:31:07.401000+00:00",
+      "status": "ok",
+      "errors": 0,
       "lastError": null
     },
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T13:56:01.577000+00:00",
+      "lastRun": "2026-06-06T19:50:00.017000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T19:55:00.017000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Blitz da Ordem (17:30)",
+      "schedule": "30 17 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T19:31:42.778000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Rotina da Tarde",
+      "schedule": "0 18 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T19:31:42.777000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Pulso Familiar - Noite",
+      "schedule": "30 19 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T19:31:42.781000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Lembrete de Captura de Memórias",
+      "schedule": "30 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T19:31:42.780000+00:00",
       "status": "error",
-      "errors": 46,
+      "errors": 5,
+      "lastError": "cron: job execution timed out (last phase: model-call-started)"
+    },
+    {
+      "name": "Pluggy Sync - Tracking Despesas",
+      "schedule": "45 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T19:31:42.779000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Rotina da Noite (Completa)",
+      "schedule": "0 22 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T19:32:46.283000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "daily-git-commit",
+      "schedule": "59 23 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T19:32:46.286000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Consolidação Automática de Learnings",
+      "schedule": "0 4 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T19:33:05.429000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Instagram Knowledge Ingest",
+      "schedule": "0 5 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T19:32:46.287000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Atualização do Índice de Sistema",
+      "schedule": "0 6 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T19:33:03.907000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Diário da Família - Gerador",
+      "schedule": "20 7 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T19:32:46.287000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Diário da Família - Enviador",
+      "schedule": "35 7 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T19:32:46.286000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Diário da Família - Watchdog (retry 08:15)",
+      "schedule": "15 8 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T19:32:57.234000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Análise de Conversas - Manhã",
+      "schedule": "30 8 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T19:33:05.881000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Deadline Reminder Checker",
+      "schedule": "0 9 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T19:34:26.761000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Resumo Diário da To-Do List",
+      "schedule": "0 9 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T19:34:19.116000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Rotina da Manhã (Completa)",
+      "schedule": "30 10 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T19:34:19.112000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Pulso Familiar - Meio-dia",
+      "schedule": "30 11 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T19:31:07.402000+00:00",
+      "status": "ok",
+      "errors": 0,
       "lastError": null
     },
     {
       "name": "Ração Almoço",
       "schedule": "0 12 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T03:18:50.338000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "cron: job interrupted by gateway restart"
+      "lastRun": "2026-06-06T19:31:07.399000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Passeio Almoço",
       "schedule": "0 13 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T03:29:33.924000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "cron: job interrupted by gateway restart"
+      "lastRun": "2026-06-06T19:31:07.401000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Pós-Almoço: Zero Pia",
       "schedule": "30 13 * * 2-7 (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T03:53:59.812000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
-    },
-    {
-      "name": "Blitz da Ordem (17:30)",
-      "schedule": "30 17 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T03:54:04.812000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
-    },
-    {
-      "name": "Rotina da Tarde",
-      "schedule": "0 18 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T03:54:09.813000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
-    },
-    {
-      "name": "Pulso Familiar - Noite",
-      "schedule": "30 19 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T03:54:14.814000+00:00",
-      "status": "error",
-      "errors": 4,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
+      "lastRun": "2026-06-06T19:31:42.778000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Resumo Semanal de Memórias",
       "schedule": "0 20 * * 0 (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T03:55:24.814000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
-    },
-    {
-      "name": "Lembrete de Captura de Memórias",
-      "schedule": "30 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T03:54:19.815000+00:00",
-      "status": "error",
-      "errors": 4,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
-    },
-    {
-      "name": "Pluggy Sync - Tracking Despesas",
-      "schedule": "45 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T03:54:24.813000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
-    },
-    {
-      "name": "Rotina da Noite (Completa)",
-      "schedule": "0 22 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T03:54:29.813000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
+      "lastRun": "2026-06-06T19:31:42.780000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Lixo Véspera (22h)",
       "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T03:54:34.828000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
-    },
-    {
-      "name": "daily-git-commit",
-      "schedule": "59 23 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T03:54:39.833000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
-    },
-    {
-      "name": "Consolidação Automática de Learnings",
-      "schedule": "0 4 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T07:00:00.014000+00:00",
+      "lastRun": "2026-06-06T19:32:46.285000+00:00",
       "status": "error",
       "errors": 2,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
-    },
-    {
-      "name": "Instagram Knowledge Ingest",
-      "schedule": "0 5 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T08:00:00.015000+00:00",
-      "status": "error",
-      "errors": 2,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
-    },
-    {
-      "name": "Atualização do Índice de Sistema",
-      "schedule": "0 6 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T09:00:00.005000+00:00",
-      "status": "error",
-      "errors": 6,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
-    },
-    {
-      "name": "Diário da Família - Gerador",
-      "schedule": "20 7 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T10:20:00.017000+00:00",
-      "status": "error",
-      "errors": 2,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
+      "lastError": "⚠️ 🎯 Update Goal: `complete` failed"
     },
     {
       "name": "Lixo (Colocar Fora)",
       "schedule": "30 7 * * 1,3,5 (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T03:54:59.812000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
-    },
-    {
-      "name": "Diário da Família - Enviador",
-      "schedule": "35 7 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T10:35:00.019000+00:00",
-      "status": "error",
-      "errors": 4,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
-    },
-    {
-      "name": "Diário da Família - Watchdog (retry 08:15)",
-      "schedule": "15 8 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T11:15:00.012000+00:00",
-      "status": "error",
-      "errors": 2,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
-    },
-    {
-      "name": "Análise de Conversas - Manhã",
-      "schedule": "30 8 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T11:30:00.244000+00:00",
-      "status": "error",
-      "errors": 4,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
+      "lastRun": "2026-06-06T19:32:46.284000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Pagamento Wal",
       "schedule": "0 9 * * 1 (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T03:55:29.814000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
-    },
-    {
-      "name": "Resumo Diário da To-Do List",
-      "schedule": "0 9 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T12:00:00.011000+00:00",
-      "status": "error",
-      "errors": 2,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
-    },
-    {
-      "name": "Deadline Reminder Checker",
-      "schedule": "0 9 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T12:00:00.027000+00:00",
-      "status": "error",
-      "errors": 2,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
+      "lastRun": "2026-06-06T19:32:46.284000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Aspirar Cozinha",
       "schedule": "0 10 * * 1,3,6 (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T03:55:19.813000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
+      "lastRun": "2026-06-06T19:34:19.114000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Lixo (Sacos Novos) + Ralos",
       "schedule": "0 10 * * 1,3,5 (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T03:55:09.813000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
-    },
-    {
-      "name": "Rotina da Manhã (Completa)",
-      "schedule": "30 10 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T13:30:00.012000+00:00",
-      "status": "error",
-      "errors": 2,
-      "lastError": "⚠️ Agent couldn't generate a response. Please try again."
+      "lastRun": "2026-06-06T19:34:19.115000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Dobrar Roupas",
       "schedule": "0 10 * * 2 (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T03:55:39.816000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
+      "lastRun": "2026-06-06T19:34:19.113000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Pagamento Banho",
       "schedule": "0 9 * * 3 (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T03:55:44.816000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
+      "lastRun": "2026-06-06T19:34:19.112000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Check Estoque Simparic (Mensal)",
       "schedule": "0 9 20 * * (America/Sao_Paulo)",
-      "lastRun": "2026-04-20T12:00:39.699000+00:00",
+      "lastRun": "2026-06-06T19:34:19.115000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -477,15 +335,7 @@
     {
       "name": "Check Simparic Mensal",
       "schedule": "0 10 1 * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-10T03:55:04.815000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": "cron payload.model 'github-copilot/gpt-5-mini' rejected by agents.defaults.models allowlist: github-copilot/gpt-5-mini is not in [google-gemini-cli/gemini-3.1-pro-preview, openai/gpt-5.4, opencode-go/deepseek-v4-pro, opencode-go/glm-5.1, opencode-go/kimi-k2.6, opencode-go/mimo-v2.5-pro, opencode-go/minimax-m2.7, opencode-go/qwen3.6-plus, openrouter/nvidia/nemotron-3-super-120b-a12b:free, openrouter/nvidia/nemotron-nano-12b-v2-vl:free, openrouter/openrouter/free]"
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-06T19:30:42.098000+00:00",
+      "lastRun": "2026-06-06T19:34:19.114000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
