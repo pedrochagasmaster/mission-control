@@ -5,6 +5,10 @@ Este arquivo rastreia os temas já abordados no Diário da Família para evitar 
 ## 2026
 
 ### Maio
+- **23/05/2026**: A descoberta das mãozinhas: coordenação olho-mão e o mundo do toque aos 3 meses
+  - Foco: desenvolvimento motor fino, coordenação olho-mão, descoberta do toque, auto-regulação emocional
+  - Dicas mencionadas: brinquedos leves e colorizos ao alcance da vista, texturas variadas, massagem nas palminhas, permitir levar mão à boca
+
 - **22/05/2026**: Tummy time e as primeiras conquistas motoras da Isabel
   - Foco: fortalecimento muscular, desenvolvimento motor aos 3 meses, brincadeiras no chão
   - Dicas mencionadas: fazer quando alerta, usar brinquedos coloridos/espelhos, respeitar sinais de cansaço, começar com poucos minutos
