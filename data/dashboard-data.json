@@ -1,133 +1,8 @@
 {
-  "lastUpdated": "2026-06-06T18:40:01.943009+00:00",
+  "lastUpdated": "2026-06-06T19:00:13.313548+00:00",
   "actionRequired": [
     {
-      "title": "Pulso Familiar - Meio-dia (3 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Ração Almoço (3 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Mission Control - Build+Publish (38 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Mission Control - Control Runner (41 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Watchdog - Tracking Despesas (API + Frontend) (41 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Passeio Almoço (3 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Consolidação Automática de Learnings (3 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Instagram Knowledge Ingest (3 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Atualização do Índice de Sistema (3 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Diário da Família - Gerador (3 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Diário da Família - Enviador (3 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Pós-Almoço: Zero Pia (3 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Blitz da Ordem (17:30) (4 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Rotina da Tarde (4 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Lembrete de Captura de Memórias (4 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Pluggy Sync - Tracking Despesas (4 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Rotina da Noite (Completa) (4 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "daily-git-commit (4 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Diário da Família - Watchdog (retry 08:15) (4 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Análise de Conversas - Manhã (4 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Deadline Reminder Checker (5 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Resumo Diário da To-Do List (4 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Rotina da Manhã (Completa) (4 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Pulso Familiar - Noite (5 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Aspirar Cozinha (3 erros)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Lixo (Sacos Novos) + Ralos (3 erros)",
+      "title": "Ração Almoço (4 erros) - ⚠️ 📝 Edit: `in ~/.openclaw/workspace/memory/daily_tasks.json` failed",
       "url": null,
       "priority": "high"
     },
@@ -137,19 +12,9 @@
       "priority": "high"
     },
     {
-      "title": "Lixo (Colocar Fora) (1 erros)",
+      "title": "Lixo (Sacos Novos) + Ralos (4 erros) - ⚠️ Agent couldn't generate a response. Note: some tool actions may have already been executed — please verify before retrying.",
       "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Lixo Véspera (22h) (2 erros)",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Pagamento Wal (1 erros)",
-      "url": null,
-      "priority": "medium"
+      "priority": "high"
     },
     {
       "title": "diretório therapy com permissão missing",
@@ -161,42 +26,42 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-06T18:39:41.173000+00:00"
+      "startedAt": "2026-06-06T19:00:06.576000+00:00"
     },
     {
-      "task": "agent:main:cron:0ba1cb64-5259-46bf-beb5-e58c02ec4215",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-06T18:39:10.435000+00:00"
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "glm-5",
+      "startedAt": "2026-06-06T18:56:03.246000+00:00"
     },
     {
-      "task": "agent:main:cron:06b5aaae-b25a-4005-a78c-badad02f216b",
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-06T18:36:37.281000+00:00"
+      "startedAt": "2026-06-06T18:50:54.460000+00:00"
     },
     {
-      "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
+      "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-06T18:34:33.226000+00:00"
+      "startedAt": "2026-06-06T18:44:38.934000+00:00"
     },
     {
-      "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
+      "task": "agent:main:cron:ff7487f2-fad4-40ab-bd83-84219ecec634",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-06T18:34:16.976000+00:00"
+      "startedAt": "2026-06-06T18:44:20.772000+00:00"
     },
     {
-      "task": "agent:main:cron:75b87bc7-016d-49a2-9995-4a0b715a7f23",
+      "task": "agent:main:cron:f1830563-b029-4bb2-80fc-9ffe54108a08",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-06T18:33:48.662000+00:00"
+      "startedAt": "2026-06-06T18:43:47.650000+00:00"
     },
     {
-      "task": "agent:main:cron:ebbd066d-2269-48d5-8f80-f89ce7633b81",
+      "task": "agent:main:cron:22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-06T18:33:06.939000+00:00"
+      "startedAt": "2026-06-06T18:43:19.810000+00:00"
     },
     {
-      "task": "agent:main:cron:4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
+      "task": "agent:main:cron:218f26ef-423f-4f74-aa31-d28879facc28",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-06T18:32:38.998000+00:00"
+      "startedAt": "2026-06-06T18:42:51.075000+00:00"
     }
   ],
   "products": [
@@ -204,248 +69,200 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-06T18:40:01.943009+00:00"
+      "lastChecked": "2026-06-06T19:00:13.313548+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Pulso Familiar - Meio-dia",
-      "schedule": "30 11 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-25T17:53:48.917000+00:00",
-      "status": "error",
-      "errors": 3,
-      "lastError": null
-    },
-    {
-      "name": "Ração Almoço",
-      "schedule": "0 12 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-25T17:55:21.063000+00:00",
-      "status": "error",
-      "errors": 3,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-26T14:15:02.769000+00:00",
-      "status": "error",
-      "errors": 38,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-26T14:18:02.773000+00:00",
-      "status": "error",
-      "errors": 41,
-      "lastError": null
-    },
-    {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-26T14:22:02.780000+00:00",
-      "status": "error",
-      "errors": 41,
-      "lastError": null
-    },
-    {
-      "name": "Passeio Almoço",
-      "schedule": "0 13 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-25T18:55:21.067000+00:00",
-      "status": "error",
-      "errors": 3,
-      "lastError": null
-    },
-    {
-      "name": "Consolidação Automática de Learnings",
-      "schedule": "0 4 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-26T07:00:00.014000+00:00",
-      "status": "error",
-      "errors": 3,
-      "lastError": null
-    },
-    {
-      "name": "Instagram Knowledge Ingest",
-      "schedule": "0 5 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-26T08:00:00.014000+00:00",
-      "status": "error",
-      "errors": 3,
-      "lastError": null
-    },
-    {
-      "name": "Atualização do Índice de Sistema",
-      "schedule": "0 6 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-26T09:00:00.017000+00:00",
-      "status": "error",
-      "errors": 3,
-      "lastError": null
-    },
-    {
-      "name": "Diário da Família - Gerador",
-      "schedule": "20 7 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-26T10:40:32.864000+00:00",
-      "status": "error",
-      "errors": 3,
-      "lastError": null
-    },
-    {
-      "name": "Lixo (Colocar Fora)",
-      "schedule": "30 7 * * 1,3,5 (America/Sao_Paulo)",
-      "lastRun": "2026-05-25T10:30:00.019000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": null
-    },
-    {
-      "name": "Diário da Família - Enviador",
-      "schedule": "35 7 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-26T10:39:02.860000+00:00",
-      "status": "error",
-      "errors": 3,
-      "lastError": null
-    },
-    {
-      "name": "Pós-Almoço: Zero Pia",
-      "schedule": "30 13 * * 2-7 (America/Sao_Paulo)",
-      "lastRun": "2026-05-26T17:44:53.733000+00:00",
-      "status": "error",
-      "errors": 3,
-      "lastError": null
-    },
-    {
-      "name": "Blitz da Ordem (17:30)",
-      "schedule": "30 17 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-27T05:56:56.431000+00:00",
-      "status": "error",
-      "errors": 4,
-      "lastError": null
-    },
-    {
-      "name": "Rotina da Tarde",
-      "schedule": "0 18 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-27T03:56:56.412000+00:00",
-      "status": "error",
-      "errors": 4,
-      "lastError": null
-    },
-    {
-      "name": "Lembrete de Captura de Memórias",
-      "schedule": "30 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-27T08:59:56.468000+00:00",
-      "status": "error",
-      "errors": 4,
-      "lastError": null
-    },
-    {
-      "name": "Pluggy Sync - Tracking Despesas",
-      "schedule": "45 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-27T07:59:56.458000+00:00",
-      "status": "error",
-      "errors": 4,
-      "lastError": null
-    },
-    {
-      "name": "Rotina da Noite (Completa)",
-      "schedule": "0 22 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-27T04:56:56.421000+00:00",
-      "status": "error",
-      "errors": 4,
-      "lastError": null
-    },
-    {
-      "name": "daily-git-commit",
-      "schedule": "59 23 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-27T07:56:56.450000+00:00",
-      "status": "error",
-      "errors": 4,
-      "lastError": null
-    },
-    {
-      "name": "Diário da Família - Watchdog (retry 08:15)",
-      "schedule": "15 8 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-27T20:00:06.178000+00:00",
-      "status": "error",
-      "errors": 4,
-      "lastError": null
-    },
-    {
-      "name": "Análise de Conversas - Manhã",
-      "schedule": "30 8 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-27T21:00:06.182000+00:00",
-      "status": "error",
-      "errors": 4,
-      "lastError": null
-    },
-    {
-      "name": "Deadline Reminder Checker",
-      "schedule": "0 9 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-27T19:00:06.167000+00:00",
-      "status": "error",
-      "errors": 5,
-      "lastError": null
-    },
-    {
-      "name": "Resumo Diário da To-Do List",
-      "schedule": "0 9 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-27T18:00:06.157000+00:00",
-      "status": "error",
-      "errors": 4,
-      "lastError": null
-    },
-    {
-      "name": "Rotina da Manhã (Completa)",
-      "schedule": "30 10 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-27T14:00:06.119000+00:00",
-      "status": "error",
-      "errors": 4,
-      "lastError": null
-    },
-    {
-      "name": "Pulso Familiar - Noite",
-      "schedule": "30 19 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-05-27T22:38:44.653000+00:00",
-      "status": "error",
-      "errors": 5,
-      "lastError": null
-    },
-    {
-      "name": "Lixo Véspera (22h)",
-      "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
-      "lastRun": "2026-05-27T06:56:56.440000+00:00",
-      "status": "error",
-      "errors": 2,
-      "lastError": null
-    },
-    {
-      "name": "Pagamento Wal",
-      "schedule": "0 9 * * 1 (America/Sao_Paulo)",
-      "lastRun": "2026-05-25T19:55:21.070000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": null
-    },
-    {
-      "name": "Check Simparic Mensal",
-      "schedule": "0 10 1 * * (America/Sao_Paulo)",
-      "lastRun": null,
+      "lastRun": "2026-06-06T18:39:34.027000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
     },
     {
-      "name": "Aspirar Cozinha",
-      "schedule": "0 10 * * 1,3,6 (America/Sao_Paulo)",
-      "lastRun": "2026-05-30T14:53:36.993000+00:00",
-      "status": "error",
-      "errors": 3,
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:50:54.457000+00:00",
+      "status": "ok",
+      "errors": 0,
       "lastError": null
     },
     {
-      "name": "Lixo (Sacos Novos) + Ralos",
-      "schedule": "0 10 * * 1,3,5 (America/Sao_Paulo)",
-      "lastRun": "2026-05-30T05:31:47.572000+00:00",
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:55:00.006000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Blitz da Ordem (17:30)",
+      "schedule": "30 17 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:31:00.252000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Rotina da Tarde",
+      "schedule": "0 18 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:29:32.805000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Pulso Familiar - Noite",
+      "schedule": "30 19 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:44:38.924000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Lembrete de Captura de Memórias",
+      "schedule": "30 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:43:19.767000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Pluggy Sync - Tracking Despesas",
+      "schedule": "45 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:34:33.216000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Rotina da Noite (Completa)",
+      "schedule": "0 22 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:29:59.311000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "daily-git-commit",
+      "schedule": "59 23 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:33:06.936000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Consolidação Automática de Learnings",
+      "schedule": "0 4 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:42:51.059000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Instagram Knowledge Ingest",
+      "schedule": "0 5 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:33:48.652000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Atualização do Índice de Sistema",
+      "schedule": "0 6 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:42:28.921000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Diário da Família - Gerador",
+      "schedule": "20 7 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:36:37.272000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Diário da Família - Enviador",
+      "schedule": "35 7 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:32:38.996000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Diário da Família - Watchdog (retry 08:15)",
+      "schedule": "15 8 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:39:10.424000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Análise de Conversas - Manhã",
+      "schedule": "30 8 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:43:47.640000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Deadline Reminder Checker",
+      "schedule": "0 9 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:34:16.966000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Resumo Diário da To-Do List",
+      "schedule": "0 9 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:32:17.782000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Rotina da Manhã (Completa)",
+      "schedule": "30 10 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:28:02.482000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Pulso Familiar - Meio-dia",
+      "schedule": "30 11 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:44:20.673000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Ração Almoço",
+      "schedule": "0 12 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:28:45.978000+00:00",
       "status": "error",
-      "errors": 3,
+      "errors": 4,
+      "lastError": "⚠️ 📝 Edit: `in ~/.openclaw/workspace/memory/daily_tasks.json` failed"
+    },
+    {
+      "name": "Passeio Almoço",
+      "schedule": "0 13 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:29:13.664000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Pós-Almoço: Zero Pia",
+      "schedule": "30 13 * * 2-7 (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:31:28.771000+00:00",
+      "status": "ok",
+      "errors": 0,
       "lastError": null
     },
     {
@@ -455,6 +272,46 @@
       "status": "error",
       "errors": 3,
       "lastError": "cron: job execution timed out"
+    },
+    {
+      "name": "Lixo Véspera (22h)",
+      "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:32:25.240000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Lixo (Colocar Fora)",
+      "schedule": "30 7 * * 1,3,5 (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:31:49.177000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Pagamento Wal",
+      "schedule": "0 9 * * 1 (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:30:20.668000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Aspirar Cozinha",
+      "schedule": "0 10 * * 1,3,6 (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:30:34.197000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Lixo (Sacos Novos) + Ralos",
+      "schedule": "0 10 * * 1,3,5 (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:32:03.988000+00:00",
+      "status": "error",
+      "errors": 4,
+      "lastError": "⚠️ Agent couldn't generate a response. Note: some tool actions may have already been executed — please verify before retrying."
     },
     {
       "name": "Dobrar Roupas",
@@ -476,6 +333,14 @@
       "name": "Check Estoque Simparic (Mensal)",
       "schedule": "0 9 20 * * (America/Sao_Paulo)",
       "lastRun": "2026-05-20T12:00:42.948000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Check Simparic Mensal",
+      "schedule": "0 10 1 * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-06T18:30:46.601000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
