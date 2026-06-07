@@ -1,10 +1,15 @@
 {
-  "lastUpdated": "2026-06-07T00:00:06.586248+00:00",
+  "lastUpdated": "2026-06-07T00:03:33.556856+00:00",
   "actionRequired": [
     {
       "title": "Lembrete de Captura de Memórias (5 erros) - cron: job execution timed out (last phase: model-call-started)",
       "url": null,
       "priority": "high"
+    },
+    {
+      "title": "Mission Control - Build+Publish (1 erros)",
+      "url": null,
+      "priority": "medium"
     },
     {
       "title": "Lixo Véspera (22h) (2 erros) - ⚠️ 🎯 Update Goal: `complete` failed",
@@ -21,7 +26,7 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-07T00:00:00.454000+00:00"
+      "startedAt": "2026-06-07T00:03:31+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
@@ -37,11 +42,6 @@
       "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
       "model": "kimi-k2.5",
       "startedAt": "2026-06-06T22:30:00.558000+00:00"
-    },
-    {
-      "task": "agent:main:telegram:direct:1899641264",
-      "model": "nemotron-nano-12b-v2-vl:free",
-      "startedAt": "2026-06-06T21:00:15.567000+00:00"
     }
   ],
   "products": [
@@ -49,14 +49,22 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-07T00:00:06.586248+00:00"
+      "lastChecked": "2026-06-07T00:03:33.556856+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-06T23:30:00.033000+00:00",
+      "lastRun": "2026-06-07T00:00:00.019000+00:00",
+      "status": "error",
+      "errors": 1,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-07T00:00:00.020000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -64,15 +72,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-06T23:50:00.013000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-06T23:55:00.012000+00:00",
+      "lastRun": "2026-06-07T00:00:00.021000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
