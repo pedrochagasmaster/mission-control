@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-06-07T17:00:11.275764+00:00",
+  "lastUpdated": "2026-06-07T17:03:35.656996+00:00",
   "actionRequired": [
+    {
+      "title": "Mission Control - Build+Publish (1 erros)",
+      "url": null,
+      "priority": "medium"
+    },
     {
       "title": "Lixo Véspera (22h) (2 erros) - ⚠️ 🎯 Update Goal: `complete` failed",
       "url": null,
@@ -14,6 +19,11 @@
   ],
   "activeNow": [
     {
+      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-07T17:03:30.967000+00:00"
+    },
+    {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
       "startedAt": "2026-06-07T17:00:00.606000+00:00"
@@ -22,11 +32,6 @@
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "kimi-k2.5",
       "startedAt": "2026-06-07T17:00:00.579000+00:00"
-    },
-    {
-      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-07T17:00:00.554000+00:00"
     },
     {
       "task": "agent:main:cron:515506a0-6921-4f7d-8368-06fc4e93ee87",
@@ -59,14 +64,22 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-07T17:00:11.275764+00:00"
+      "lastChecked": "2026-06-07T17:03:35.656996+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-07T16:33:31.016000+00:00",
+      "lastRun": "2026-06-07T17:00:00.035000+00:00",
+      "status": "error",
+      "errors": 1,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-07T17:00:00.037000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -74,15 +87,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-07T16:50:00.014000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-07T16:55:00.068000+00:00",
+      "lastRun": "2026-06-07T17:00:00.040000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
