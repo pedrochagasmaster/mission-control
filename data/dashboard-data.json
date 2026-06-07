@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-06-07T06:30:06.304097+00:00",
+  "lastUpdated": "2026-06-07T06:33:36.871660+00:00",
   "actionRequired": [
+    {
+      "title": "Mission Control - Build+Publish (1 erros)",
+      "url": null,
+      "priority": "medium"
+    },
     {
       "title": "Lixo Véspera (22h) (2 erros) - ⚠️ 🎯 Update Goal: `complete` failed",
       "url": null,
@@ -16,7 +21,7 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-07T06:30:00.500000+00:00"
+      "startedAt": "2026-06-07T06:33:31.088000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
@@ -34,14 +39,22 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-07T06:30:06.304097+00:00"
+      "lastChecked": "2026-06-07T06:33:36.871660+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-07T06:00:00.018000+00:00",
+      "lastRun": "2026-06-07T06:30:00.033000+00:00",
+      "status": "error",
+      "errors": 1,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-07T06:30:00.034000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -49,15 +62,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-07T06:20:00.012000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-07T06:25:00.013000+00:00",
+      "lastRun": "2026-06-07T06:30:00.035000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
