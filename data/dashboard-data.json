@@ -1,23 +1,18 @@
 {
-  "lastUpdated": "2026-06-08T09:06:09.233822+00:00",
+  "lastUpdated": "2026-06-08T09:10:12.105178+00:00",
   "actionRequired": [
+    {
+      "title": "Atualização do Índice de Sistema (3 erros) - cron: job execution timed out (last phase: model-call-started)",
+      "url": null,
+      "priority": "high"
+    },
     {
       "title": "Watchdog - Tracking Despesas (API + Frontend) (5 erros) - cron: job execution timed out (last phase: model-call-started)",
       "url": null,
       "priority": "high"
     },
     {
-      "title": "Mission Control - Build+Publish (1 erros)",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Atualização do Índice de Sistema (2 erros)",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Mission Control - Control Runner (2 erros) - cron: job execution timed out (last phase: model-call-started)",
+      "title": "Mission Control - Build+Publish (2 erros)",
       "url": null,
       "priority": "medium"
     },
@@ -34,19 +29,19 @@
   ],
   "activeNow": [
     {
-      "task": "agent:main:cron:f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-08T09:05:05.891000+00:00"
-    },
-    {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-08T09:05:05.864000+00:00"
+      "startedAt": "2026-06-08T09:09:28.511000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-08T09:03:03.232000+00:00"
+      "startedAt": "2026-06-08T09:08:08.362000+00:00"
+    },
+    {
+      "task": "agent:main:cron:f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-08T09:05:05.891000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
@@ -69,22 +64,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-08T09:06:09.233822+00:00"
+      "lastChecked": "2026-06-08T09:10:12.105178+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-08T09:00:00.036000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": null
-    },
-    {
-      "name": "Atualização do Índice de Sistema",
-      "schedule": "0 6 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-08T09:03:02.891000+00:00",
+      "lastRun": "2026-06-08T09:05:05.501000+00:00",
       "status": "error",
       "errors": 2,
       "lastError": null
@@ -92,9 +79,17 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-08T09:03:02.888000+00:00",
+      "lastRun": "2026-06-08T09:08:08.176000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Atualização do Índice de Sistema",
+      "schedule": "0 6 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-08T09:05:05.503000+00:00",
       "status": "error",
-      "errors": 2,
+      "errors": 3,
       "lastError": "cron: job execution timed out (last phase: model-call-started)"
     },
     {
