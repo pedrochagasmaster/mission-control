@@ -54,3 +54,56 @@
 2026-06-06 22:16:41,847 | INFO | ✓ Inbox ingest: +1 novos, 1 atualizados, 0 auto-excluídos
 2026-06-06 22:16:41,847 | INFO | === Sync finalizado: 153 transações enviadas para inbox ===
 2026-06-06 22:16:41,847 | INFO | === Resumo: 276 transações, R$ 47555.29 em despesas, R$ 57114.64 em receitas ===
+2026-06-07 21:45:03,707 | INFO | === Iniciando sync Pluggy -> Inbox (7 dias) ===
+2026-06-07 21:45:03,707 | INFO | Buscando item 1c9212f4...
+2026-06-07 21:45:03,707 | INFO | Autenticando com Pluggy.ai...
+2026-06-07 21:45:03,831 | INFO | ✓ Autenticado com sucesso (expira em 7200s)
+2026-06-07 21:45:03,940 | INFO | Buscando item af0ea47c...
+2026-06-07 21:45:04,058 | INFO | Buscando item bdd1dcbb...
+2026-06-07 21:45:04,172 | INFO | Sincronizando 3 item(s)
+2026-06-07 21:45:04,172 | INFO | Processando: MeuPluggy
+2026-06-07 21:45:04,172 | INFO | Listando contas do item 1c9212f4...
+2026-06-07 21:45:04,289 | INFO | ✓ Encontradas 2 contas
+2026-06-07 21:45:04,289 | INFO |   Conta: Nu Pagamentos S.A. - Instituição de Pagamento (BANK)
+2026-06-07 21:45:04,289 | INFO | Buscando transações de 2026-05-31 até 2026-06-07...
+2026-06-07 21:45:04,415 | INFO | ✓ Encontradas 2 transações
+2026-06-07 21:45:04,585 | INFO | ✓ Inbox ingest: +0 novos, 1 atualizados, 0 auto-excluídos
+2026-06-07 21:45:04,585 | INFO |   Conta: platinum (CREDIT)
+2026-06-07 21:45:04,585 | INFO | Buscando transações de 2026-05-31 até 2026-06-07...
+2026-06-07 21:45:04,700 | INFO | ✓ Encontradas 3 transações
+2026-06-07 21:45:04,872 | INFO | ✓ Inbox ingest: +0 novos, 3 atualizados, 0 auto-excluídos
+2026-06-07 21:45:04,872 | INFO | Processando: MeuPluggy
+2026-06-07 21:45:04,872 | INFO | Listando contas do item af0ea47c...
+2026-06-07 21:45:05,002 | INFO | ✓ Encontradas 2 contas
+2026-06-07 21:45:05,003 | INFO |   Conta: Mercado Pago (BANK)
+2026-06-07 21:45:05,003 | INFO | Buscando transações de 2026-05-31 até 2026-06-07...
+2026-06-07 21:45:05,133 | INFO | ✓ Encontradas 0 transações
+2026-06-07 21:45:05,133 | INFO |   Conta: Mercado Pago (CREDIT)
+2026-06-07 21:45:05,133 | INFO | Buscando transações de 2026-05-31 até 2026-06-07...
+2026-06-07 21:45:05,253 | INFO | ✓ Encontradas 2 transações
+2026-06-07 21:45:05,423 | INFO | ✓ Inbox ingest: +0 novos, 2 atualizados, 0 auto-excluídos
+2026-06-07 21:45:05,423 | INFO | Processando: MeuPluggy
+2026-06-07 21:45:05,423 | INFO | Listando contas do item bdd1dcbb...
+2026-06-07 21:45:05,545 | INFO | ✓ Encontradas 6 contas
+2026-06-07 21:45:05,545 | INFO |   Conta: Banco Bradesco (BANK)
+2026-06-07 21:45:05,545 | INFO | Buscando transações de 2026-05-31 até 2026-06-07...
+2026-06-07 21:45:05,649 | INFO | ✓ Encontradas 0 transações
+2026-06-07 21:45:05,649 | INFO |   Conta: Banco Bradesco (BANK)
+2026-06-07 21:45:05,649 | INFO | Buscando transações de 2026-05-31 até 2026-06-07...
+2026-06-07 21:45:05,771 | INFO | ✓ Encontradas 0 transações
+2026-06-07 21:45:05,771 | INFO |   Conta: Banco Bradesco (BANK)
+2026-06-07 21:45:05,771 | INFO | Buscando transações de 2026-05-31 até 2026-06-07...
+2026-06-07 21:45:05,914 | INFO | ✓ Encontradas 0 transações
+2026-06-07 21:45:05,914 | INFO |   Conta: Banco Bradesco (BANK)
+2026-06-07 21:45:05,914 | INFO | Buscando transações de 2026-05-31 até 2026-06-07...
+2026-06-07 21:45:06,032 | INFO | ✓ Encontradas 4 transações
+2026-06-07 21:45:06,208 | INFO | ✓ Inbox ingest: +0 novos, 2 atualizados, 0 auto-excluídos
+2026-06-07 21:45:06,208 | INFO |   Conta: NEO VISA PLATINUM (CREDIT)
+2026-06-07 21:45:06,208 | INFO | Buscando transações de 2026-05-31 até 2026-06-07...
+2026-06-07 21:45:06,312 | INFO | ✓ Encontradas 5 transações
+2026-06-07 21:45:06,491 | INFO | ✓ Inbox ingest: +0 novos, 5 atualizados, 0 auto-excluídos
+2026-06-07 21:45:06,491 | INFO |   Conta: ELO INTERNACIONAL (CREDIT)
+2026-06-07 21:45:06,491 | INFO | Buscando transações de 2026-05-31 até 2026-06-07...
+2026-06-07 21:45:06,637 | INFO | ✓ Encontradas 0 transações
+2026-06-07 21:45:06,637 | INFO | === Sync finalizado: 13 transações enviadas para inbox ===
+2026-06-07 21:45:06,637 | INFO | === Resumo: 16 transações, R$ 729.86 em despesas, R$ 1040.00 em receitas ===

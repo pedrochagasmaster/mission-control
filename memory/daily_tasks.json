@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-06",
+  "date": "2026-06-07",
   "tasks": {
     "rotina_manha": {
       "id": "rotina_manha",
@@ -35,13 +35,15 @@
       "id": "rotina_tarde",
       "name": "🌆 Rotina Tarde",
       "time": "18:00",
-      "status": "PENDING"
+      "status": "PENDING",
+      "last_triggered": "2026-06-07T18:00:00-03:00"
     },
     "rotina_noite": {
       "id": "rotina_noite",
       "name": "🌙 Rotina Noite",
       "time": "22:00",
-      "status": "PENDING"
+      "status": "PENDING",
+      "last_triggered": "2026-06-07T22:00:00-03:00"
     }
   }
 }
