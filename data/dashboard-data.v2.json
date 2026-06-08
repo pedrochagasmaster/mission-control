@@ -2,10 +2,10 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-20.1",
-    "generatedAt": "2026-06-08T10:03:35.349034+00:00"
+    "generatedAt": "2026-06-08T10:30:12.995327+00:00"
   },
   "overview": {
-    "healthScore": 1,
+    "healthScore": 9,
     "criticalAlerts": 3,
     "pendingControls": 0,
     "dataFreshnessSec": 0
@@ -43,16 +43,6 @@
     },
     {
       "type": "cron-error",
-      "targetId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "title": "Mission Control - Build+Publish (1 erros)",
-      "priority": "medium",
-      "actions": [
-        "cron.retry",
-        "cron.pause"
-      ]
-    },
-    {
-      "type": "cron-error",
       "targetId": "df3cabfe-4969-4e49-8af0-4a3aaf7d03b1",
       "title": "Resumo Semanal de Memórias (1 erros) - ⚠️ Agent couldn't generate a response. Note: some tool actions may have already been executed — please verify before retrying.",
       "priority": "medium",
@@ -71,9 +61,30 @@
   ],
   "activeNow": [
     {
+      "task": "agent:main:telegram:direct:1899641264",
+      "model": "nemotron-nano-12b-v2-vl:free",
+      "startedAt": "2026-06-08T10:30:13.208000+00:00",
+      "agentId": "main",
+      "kind": "direct"
+    },
+    {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-08T10:03:30.592000+00:00",
+      "startedAt": "2026-06-08T10:30:00.487000+00:00",
+      "agentId": "main",
+      "kind": "cron"
+    },
+    {
+      "task": "agent:main:cron:ec212b07-8387-45d0-9606-351509850608",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-08T10:30:00.439000+00:00",
+      "agentId": "main",
+      "kind": "cron"
+    },
+    {
+      "task": "agent:main:cron:06b5aaae-b25a-4005-a78c-badad02f216b",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-08T10:20:00.204000+00:00",
       "agentId": "main",
       "kind": "cron"
     },
@@ -102,13 +113,6 @@
       "task": "agent:main:cron:f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
       "model": "kimi-k2.5",
       "startedAt": "2026-06-08T09:12:28.032000+00:00",
-      "agentId": "main",
-      "kind": "cron"
-    },
-    {
-      "task": "agent:main:cron:75b87bc7-016d-49a2-9995-4a0b715a7f23",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-08T08:00:00.496000+00:00",
       "agentId": "main",
       "kind": "cron"
     }
@@ -241,8 +245,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-06-07T10:20:00.013000+00:00",
-          "nextRun": "2026-06-08T10:20:00+00:00",
+          "lastRun": "2026-06-08T10:20:00.020000+00:00",
+          "nextRun": "2026-06-09T10:20:00+00:00",
           "schedule": "20 7 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "opencode-go/kimi-k2.5",
@@ -278,8 +282,8 @@
         }
       ],
       "draft": {
-        "date": "2026-06-07",
-        "tema": "A virada do mundo: quando o bebê descobre que pode rolar"
+        "date": null,
+        "tema": null
       },
       "alerts": [],
       "actions": [
@@ -315,7 +319,7 @@
           "signals": {
             "eventCount": 6,
             "attemptCount": 3,
-            "lastEvent": "2026-06-07T11:15:00.012000+00:00",
+            "lastEvent": "2026-06-08T10:20:00.020000+00:00",
             "lastAttemptStatus": "degraded"
           },
           "history": {
@@ -328,56 +332,20 @@
               {
                 "date": "2026-06-07",
                 "healthy": 0,
-                "degraded": 3,
+                "degraded": 2,
+                "lyingRisk": 0,
+                "broken": 0
+              },
+              {
+                "date": "2026-06-08",
+                "healthy": 0,
+                "degraded": 1,
                 "lyingRisk": 0,
                 "broken": 0
               }
             ]
           },
           "recentAttempts": [
-            {
-              "attemptId": "digest:06b5aaae-b25a-4005-a78c-badad02f216b:20260607T1020",
-              "jobId": "06b5aaae-b25a-4005-a78c-badad02f216b",
-              "jobName": "Diário da Família - Gerador",
-              "status": "degraded",
-              "confidence": 82,
-              "startedAt": "2026-06-07T10:20:00.013000+00:00",
-              "lastEventAt": "2026-06-07T10:20:00.013000+00:00",
-              "channel": null,
-              "eventTypes": [
-                "triggered",
-                "ran"
-              ],
-              "eventCount": 2,
-              "reasons": [
-                "attempt sem evento terminal de entrega"
-              ],
-              "events": [
-                {
-                  "workflowId": "digest",
-                  "workflowName": "Digest",
-                  "attemptId": "digest:06b5aaae-b25a-4005-a78c-badad02f216b:20260607T1020",
-                  "jobId": "06b5aaae-b25a-4005-a78c-badad02f216b",
-                  "jobName": "Diário da Família - Gerador",
-                  "timestamp": "2026-06-07T10:20:00.013000+00:00",
-                  "eventType": "triggered",
-                  "source": "cron-state",
-                  "inferred": true
-                },
-                {
-                  "workflowId": "digest",
-                  "workflowName": "Digest",
-                  "attemptId": "digest:06b5aaae-b25a-4005-a78c-badad02f216b:20260607T1020",
-                  "jobId": "06b5aaae-b25a-4005-a78c-badad02f216b",
-                  "jobName": "Diário da Família - Gerador",
-                  "timestamp": "2026-06-07T10:20:00.013000+00:00",
-                  "eventType": "ran",
-                  "source": "cron-state",
-                  "runStatus": "ok",
-                  "inferred": true
-                }
-              ]
-            },
             {
               "attemptId": "digest:4fe4f71e-f653-4382-95c4-bceb7f7a2e49:20260607T1035",
               "jobId": "4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
@@ -457,6 +425,49 @@
                   "jobId": "0ba1cb64-5259-46bf-beb5-e58c02ec4215",
                   "jobName": "Diário da Família - Watchdog (retry 08:15)",
                   "timestamp": "2026-06-07T11:15:00.012000+00:00",
+                  "eventType": "ran",
+                  "source": "cron-state",
+                  "runStatus": "ok",
+                  "inferred": true
+                }
+              ]
+            },
+            {
+              "attemptId": "digest:06b5aaae-b25a-4005-a78c-badad02f216b:20260608T1020",
+              "jobId": "06b5aaae-b25a-4005-a78c-badad02f216b",
+              "jobName": "Diário da Família - Gerador",
+              "status": "degraded",
+              "confidence": 82,
+              "startedAt": "2026-06-08T10:20:00.020000+00:00",
+              "lastEventAt": "2026-06-08T10:20:00.020000+00:00",
+              "channel": null,
+              "eventTypes": [
+                "triggered",
+                "ran"
+              ],
+              "eventCount": 2,
+              "reasons": [
+                "attempt sem evento terminal de entrega"
+              ],
+              "events": [
+                {
+                  "workflowId": "digest",
+                  "workflowName": "Digest",
+                  "attemptId": "digest:06b5aaae-b25a-4005-a78c-badad02f216b:20260608T1020",
+                  "jobId": "06b5aaae-b25a-4005-a78c-badad02f216b",
+                  "jobName": "Diário da Família - Gerador",
+                  "timestamp": "2026-06-08T10:20:00.020000+00:00",
+                  "eventType": "triggered",
+                  "source": "cron-state",
+                  "inferred": true
+                },
+                {
+                  "workflowId": "digest",
+                  "workflowName": "Digest",
+                  "attemptId": "digest:06b5aaae-b25a-4005-a78c-badad02f216b:20260608T1020",
+                  "jobId": "06b5aaae-b25a-4005-a78c-badad02f216b",
+                  "jobName": "Diário da Família - Gerador",
+                  "timestamp": "2026-06-08T10:20:00.020000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "ok",
@@ -1303,7 +1314,7 @@
           "signals": {
             "eventCount": 4,
             "attemptCount": 2,
-            "lastEvent": "2026-06-08T10:00:00.014000+00:00",
+            "lastEvent": "2026-06-08T10:03:30.395000+00:00",
             "lastAttemptStatus": "healthy"
           },
           "history": {
@@ -1367,13 +1378,13 @@
               ]
             },
             {
-              "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260608T1000",
+              "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260608T1003",
               "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
               "jobName": "Mission Control - Build+Publish",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-06-08T10:00:00.014000+00:00",
-              "lastEventAt": "2026-06-08T10:00:00.014000+00:00",
+              "startedAt": "2026-06-08T10:03:30.395000+00:00",
+              "lastEventAt": "2026-06-08T10:03:30.395000+00:00",
               "channel": null,
               "eventTypes": [
                 "triggered",
@@ -1387,10 +1398,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260608T1000",
+                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260608T1003",
                   "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
                   "jobName": "Mission Control - Build+Publish",
-                  "timestamp": "2026-06-08T10:00:00.014000+00:00",
+                  "timestamp": "2026-06-08T10:03:30.395000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -1398,13 +1409,13 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260608T1000",
+                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260608T1003",
                   "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
                   "jobName": "Mission Control - Build+Publish",
-                  "timestamp": "2026-06-08T10:00:00.014000+00:00",
+                  "timestamp": "2026-06-08T10:03:30.395000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
-                  "runStatus": "error",
+                  "runStatus": "ok",
                   "inferred": true
                 }
               ]
@@ -1416,23 +1427,6 @@
         }
       ],
       "timeline": [
-        {
-          "workflowId": "digest",
-          "workflowName": "Digest",
-          "attemptId": "digest:06b5aaae-b25a-4005-a78c-badad02f216b:20260607T1020",
-          "status": "degraded",
-          "startedAt": "2026-06-07T10:20:00.013000+00:00",
-          "lastEventAt": "2026-06-07T10:20:00.013000+00:00",
-          "jobName": "Diário da Família - Gerador",
-          "channel": null,
-          "eventTypes": [
-            "triggered",
-            "ran"
-          ],
-          "reasons": [
-            "attempt sem evento terminal de entrega"
-          ]
-        },
         {
           "workflowId": "digest",
           "workflowName": "Digest",
@@ -1718,10 +1712,10 @@
         {
           "workflowId": "mission_control",
           "workflowName": "Mission Control",
-          "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260608T1000",
+          "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260608T1003",
           "status": "healthy",
-          "startedAt": "2026-06-08T10:00:00.014000+00:00",
-          "lastEventAt": "2026-06-08T10:00:00.014000+00:00",
+          "startedAt": "2026-06-08T10:03:30.395000+00:00",
+          "lastEventAt": "2026-06-08T10:03:30.395000+00:00",
           "jobName": "Mission Control - Build+Publish",
           "channel": null,
           "eventTypes": [
@@ -1730,6 +1724,23 @@
           ],
           "reasons": [
             "workflow interno sem requisito de entrega"
+          ]
+        },
+        {
+          "workflowId": "digest",
+          "workflowName": "Digest",
+          "attemptId": "digest:06b5aaae-b25a-4005-a78c-badad02f216b:20260608T1020",
+          "status": "degraded",
+          "startedAt": "2026-06-08T10:20:00.020000+00:00",
+          "lastEventAt": "2026-06-08T10:20:00.020000+00:00",
+          "jobName": "Diário da Família - Gerador",
+          "channel": null,
+          "eventTypes": [
+            "triggered",
+            "ran"
+          ],
+          "reasons": [
+            "attempt sem evento terminal de entrega"
           ]
         }
       ],
@@ -1747,7 +1758,7 @@
       "status": "error",
       "kpis": {
         "total": 34,
-        "errors": 5,
+        "errors": 4,
         "paused": 0,
         "tzMissing": 0
       },
@@ -1755,30 +1766,16 @@
         {
           "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
           "name": "Mission Control - Build+Publish",
-          "status": "error",
-          "enabled": true,
-          "errors": 1,
-          "lastError": null,
-          "lastRun": "2026-06-08T10:00:00.014000+00:00",
-          "nextRun": "2026-06-08T10:03:30.382000+00:00",
-          "schedule": "*/30 * * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "opencode-go/kimi-k2.5",
-          "channel": null
-        },
-        {
-          "id": "06b5aaae-b25a-4005-a78c-badad02f216b",
-          "name": "Diário da Família - Gerador",
           "status": "ok",
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-06-07T10:20:00.013000+00:00",
-          "nextRun": "2026-06-08T10:20:00+00:00",
-          "schedule": "20 7 * * * (America/Sao_Paulo)",
+          "lastRun": "2026-06-08T10:03:30.395000+00:00",
+          "nextRun": "2026-06-08T10:30:00+00:00",
+          "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "opencode-go/kimi-k2.5",
-          "channel": "last"
+          "channel": null
         },
         {
           "id": "ec212b07-8387-45d0-9606-351509850608",
@@ -2131,6 +2128,20 @@
           "channel": "last"
         },
         {
+          "id": "06b5aaae-b25a-4005-a78c-badad02f216b",
+          "name": "Diário da Família - Gerador",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-06-08T10:20:00.020000+00:00",
+          "nextRun": "2026-06-09T10:20:00+00:00",
+          "schedule": "20 7 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "opencode-go/kimi-k2.5",
+          "channel": "last"
+        },
+        {
           "id": "46646426-11ee-4f2e-90fd-832133ff1e83",
           "name": "Dobrar Roupas",
           "status": "ok",
@@ -2232,7 +2243,7 @@
       "alerts": [
         {
           "level": "high",
-          "text": "5 cron(s) em erro"
+          "text": "4 cron(s) em erro"
         }
       ],
       "actions": [
@@ -2549,37 +2560,23 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-08T10:03:35.349034+00:00"
+      "lastChecked": "2026-06-08T10:30:12.995327+00:00"
     }
   ],
   "crons": [
     {
       "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "name": "Mission Control - Build+Publish",
-      "status": "error",
-      "enabled": true,
-      "errors": 1,
-      "lastError": null,
-      "lastRun": "2026-06-08T10:00:00.014000+00:00",
-      "nextRun": "2026-06-08T10:03:30.382000+00:00",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "opencode-go/kimi-k2.5",
-      "channel": null
-    },
-    {
-      "id": "06b5aaae-b25a-4005-a78c-badad02f216b",
-      "name": "Diário da Família - Gerador",
       "status": "ok",
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-06-07T10:20:00.013000+00:00",
-      "nextRun": "2026-06-08T10:20:00+00:00",
-      "schedule": "20 7 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-08T10:03:30.395000+00:00",
+      "nextRun": "2026-06-08T10:30:00+00:00",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "opencode-go/kimi-k2.5",
-      "channel": "last"
+      "channel": null
     },
     {
       "id": "ec212b07-8387-45d0-9606-351509850608",
@@ -2932,6 +2929,20 @@
       "channel": "last"
     },
     {
+      "id": "06b5aaae-b25a-4005-a78c-badad02f216b",
+      "name": "Diário da Família - Gerador",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-06-08T10:20:00.020000+00:00",
+      "nextRun": "2026-06-09T10:20:00+00:00",
+      "schedule": "20 7 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "opencode-go/kimi-k2.5",
+      "channel": "last"
+    },
+    {
       "id": "46646426-11ee-4f2e-90fd-832133ff1e83",
       "name": "Dobrar Roupas",
       "status": "ok",
@@ -3030,5 +3041,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-06-08T10:03:35.349034+00:00"
+  "lastUpdated": "2026-06-08T10:30:12.995327+00:00"
 }
