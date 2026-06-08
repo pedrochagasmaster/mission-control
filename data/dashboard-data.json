@@ -1,10 +1,15 @@
 {
-  "lastUpdated": "2026-06-08T12:00:22.779903+00:00",
+  "lastUpdated": "2026-06-08T12:03:34.925392+00:00",
   "actionRequired": [
     {
       "title": "Atualização do Índice de Sistema (4 erros) - cron: job execution timed out (last phase: model-call-started)",
       "url": null,
       "priority": "high"
+    },
+    {
+      "title": "Mission Control - Build+Publish (1 erros)",
+      "url": null,
+      "priority": "medium"
     },
     {
       "title": "Resumo Semanal de Memórias (1 erros) - ⚠️ Agent couldn't generate a response. Note: some tool actions may have already been executed — please verify before retrying.",
@@ -18,6 +23,11 @@
     }
   ],
   "activeNow": [
+    {
+      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-08T12:03:31.983000+00:00"
+    },
     {
       "task": "agent:main:whatsapp:direct:+5519997830810",
       "model": "kimi-k2.6",
@@ -44,11 +54,6 @@
       "startedAt": "2026-06-08T12:00:01.183000+00:00"
     },
     {
-      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-08T12:00:01.156000+00:00"
-    },
-    {
       "task": "agent:main:cron:ae7b9fb6-d807-4c23-846c-87f880d130be",
       "model": "kimi-k2.5",
       "startedAt": "2026-06-08T12:00:01.130000+00:00"
@@ -64,38 +69,22 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-08T12:00:22.779903+00:00"
+      "lastChecked": "2026-06-08T12:03:34.925392+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Deadline Reminder Checker",
-      "schedule": "0 9 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-07T12:00:00.020000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Pagamento Wal",
-      "schedule": "0 9 * * 1 (America/Sao_Paulo)",
-      "lastRun": "2026-06-06T19:32:46.284000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-08T11:30:00.021000+00:00",
-      "status": "ok",
-      "errors": 0,
+      "lastRun": "2026-06-08T12:00:00.027000+00:00",
+      "status": "error",
+      "errors": 1,
       "lastError": null
     },
     {
-      "name": "Resumo Diário da To-Do List",
-      "schedule": "0 9 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-07T12:00:00.019000+00:00",
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-08T12:00:00.031000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -103,15 +92,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-08T11:50:00.014000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-08T11:55:00.012000+00:00",
+      "lastRun": "2026-06-08T12:00:00.034000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -277,6 +258,22 @@
       "lastError": null
     },
     {
+      "name": "Deadline Reminder Checker",
+      "schedule": "0 9 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-08T12:00:00.025000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Resumo Diário da To-Do List",
+      "schedule": "0 9 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-08T12:00:00.022000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Dobrar Roupas",
       "schedule": "0 10 * * 2 (America/Sao_Paulo)",
       "lastRun": "2026-06-06T19:34:19.113000+00:00",
@@ -323,6 +320,14 @@
       "status": "error",
       "errors": 1,
       "lastError": "⚠️ Agent couldn't generate a response. Note: some tool actions may have already been executed — please verify before retrying."
+    },
+    {
+      "name": "Pagamento Wal",
+      "schedule": "0 9 * * 1 (America/Sao_Paulo)",
+      "lastRun": "2026-06-08T12:00:00.020000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Check Estoque Simparic (Mensal)",
