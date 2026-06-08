@@ -1,10 +1,15 @@
 {
-  "lastUpdated": "2026-06-08T19:30:08.289282+00:00",
+  "lastUpdated": "2026-06-08T19:33:35.896258+00:00",
   "actionRequired": [
     {
       "title": "Atualização do Índice de Sistema (4 erros) - cron: job execution timed out (last phase: model-call-started)",
       "url": null,
       "priority": "high"
+    },
+    {
+      "title": "Mission Control - Build+Publish (1 erros)",
+      "url": null,
+      "priority": "medium"
     },
     {
       "title": "Aspirar Cozinha (1 erros) - LLM request failed.",
@@ -26,7 +31,7 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-08T19:30:00.668000+00:00"
+      "startedAt": "2026-06-08T19:33:31.496000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
@@ -44,14 +49,22 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-08T19:30:08.289282+00:00"
+      "lastChecked": "2026-06-08T19:33:35.896258+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-08T19:00:00.020000+00:00",
+      "lastRun": "2026-06-08T19:30:00.048000+00:00",
+      "status": "error",
+      "errors": 1,
+      "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-08T19:30:00.051000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -59,15 +72,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-08T19:20:00.028000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-08T19:25:00.013000+00:00",
+      "lastRun": "2026-06-08T19:30:00.054000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
