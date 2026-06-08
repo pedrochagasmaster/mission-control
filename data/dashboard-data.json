@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-08T00:30:07.562419+00:00",
+  "lastUpdated": "2026-06-08T01:00:09.617811+00:00",
   "actionRequired": [
     {
       "title": "Lixo Véspera (22h) (2 erros) - ⚠️ 🎯 Update Goal: `complete` failed",
@@ -19,34 +19,44 @@
   ],
   "activeNow": [
     {
-      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-08T00:30:00.819000+00:00"
-    },
-    {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-08T00:30:00.797000+00:00"
+      "startedAt": "2026-06-08T01:00:00.985000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-08T01:00:00.961000+00:00"
+    },
+    {
+      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-08T01:00:00.938000+00:00"
+    },
+    {
+      "task": "agent:main:cron:eb796b6f-bb0b-4b92-963c-18696cf45e0d",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-08T01:00:00.914000+00:00"
+    },
+    {
+      "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-08T01:00:00.890000+00:00"
+    },
+    {
+      "task": "agent:main:whatsapp:direct:+5519997830810",
+      "model": "kimi-k2.6",
+      "startedAt": "2026-06-08T00:45:11.199000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-08T00:45:00.360000+00:00"
     },
     {
       "task": "agent:main:cron:22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
       "model": "kimi-k2.5",
       "startedAt": "2026-06-08T00:30:00.773000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-08T00:30:00.750000+00:00"
-    },
-    {
-      "task": "agent:main:cron:df3cabfe-4969-4e49-8af0-4a3aaf7d03b1",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-07T23:00:00.674000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-07T22:30:00.682000+00:00"
     }
   ],
   "products": [
@@ -54,14 +64,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-08T00:30:07.562419+00:00"
+      "lastChecked": "2026-06-08T01:00:09.617811+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Lembrete de Captura de Memórias",
-      "schedule": "30 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-07T00:30:00.037000+00:00",
+      "name": "Rotina da Noite (Completa)",
+      "schedule": "0 22 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-07T01:00:00.034000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -69,7 +79,7 @@
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-08T00:00:00.037000+00:00",
+      "lastRun": "2026-06-08T00:30:00.034000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -77,31 +87,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-08T00:20:00.015000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-08T00:25:00.017000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Pluggy Sync - Tracking Despesas",
-      "schedule": "45 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-07T00:45:00.013000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Rotina da Noite (Completa)",
-      "schedule": "0 22 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-07T01:00:00.034000+00:00",
+      "lastRun": "2026-06-08T00:50:00.016000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -113,6 +99,14 @@
       "status": "error",
       "errors": 2,
       "lastError": "⚠️ 🎯 Update Goal: `complete` failed"
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-08T00:55:00.013000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "daily-git-commit",
@@ -278,6 +272,22 @@
       "name": "Pulso Familiar - Noite",
       "schedule": "30 19 * * * (America/Sao_Paulo)",
       "lastRun": "2026-06-07T22:30:00.025000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Lembrete de Captura de Memórias",
+      "schedule": "30 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-08T00:30:00.040000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Pluggy Sync - Tracking Despesas",
+      "schedule": "45 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-08T00:45:00.014000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
