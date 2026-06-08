@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-08T10:00:09.596473+00:00",
+  "lastUpdated": "2026-06-08T10:03:35.349034+00:00",
   "actionRequired": [
     {
       "title": "Watchdog - Tracking Despesas (API + Frontend) (6 erros) - cron: job execution timed out (last phase: model-call-started)",
@@ -17,6 +17,11 @@
       "priority": "high"
     },
     {
+      "title": "Mission Control - Build+Publish (1 erros)",
+      "url": null,
+      "priority": "medium"
+    },
+    {
       "title": "Resumo Semanal de Memórias (1 erros) - ⚠️ Agent couldn't generate a response. Note: some tool actions may have already been executed — please verify before retrying.",
       "url": null,
       "priority": "medium"
@@ -31,12 +36,12 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-08T10:00:00.217000+00:00"
+      "startedAt": "2026-06-08T10:03:30.592000+00:00"
     },
     {
       "task": "agent:main:whatsapp:direct:+5519997830810",
       "model": "kimi-k2.6",
-      "startedAt": "2026-06-08T09:59:38.453000+00:00"
+      "startedAt": "2026-06-08T10:01:10.832000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
@@ -64,16 +69,16 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-08T10:00:09.596473+00:00"
+      "lastChecked": "2026-06-08T10:03:35.349034+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-08T09:35:04.888000+00:00",
-      "status": "ok",
-      "errors": 0,
+      "lastRun": "2026-06-08T10:00:00.014000+00:00",
+      "status": "error",
+      "errors": 1,
       "lastError": null
     },
     {
