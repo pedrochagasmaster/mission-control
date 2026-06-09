@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-20.1",
-    "generatedAt": "2026-06-09T13:30:10.472478+00:00"
+    "generatedAt": "2026-06-09T14:00:10.488580+00:00"
   },
   "overview": {
     "healthScore": 42,
@@ -41,25 +41,32 @@
   ],
   "activeNow": [
     {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-09T13:30:01.403000+00:00",
+      "startedAt": "2026-06-09T14:00:01.066000+00:00",
       "agentId": "main",
       "kind": "cron"
     },
     {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-09T13:30:01.357000+00:00",
+      "startedAt": "2026-06-09T14:00:01.019000+00:00",
       "agentId": "main",
       "kind": "cron"
     },
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-09T13:30:01.280000+00:00",
+      "startedAt": "2026-06-09T14:00:00.972000+00:00",
       "agentId": "main",
       "kind": "cron"
+    },
+    {
+      "task": "agent:main:telegram:direct:1899641264",
+      "model": "nemotron-nano-12b-v2-vl:free",
+      "startedAt": "2026-06-09T13:30:31.295000+00:00",
+      "agentId": "main",
+      "kind": "direct"
     },
     {
       "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
@@ -67,13 +74,6 @@
       "startedAt": "2026-06-09T13:30:01.235000+00:00",
       "agentId": "main",
       "kind": "cron"
-    },
-    {
-      "task": "agent:main:telegram:direct:1899641264",
-      "model": "nemotron-nano-12b-v2-vl:free",
-      "startedAt": "2026-06-09T13:00:17.525000+00:00",
-      "agentId": "main",
-      "kind": "direct"
     },
     {
       "task": "agent:main:cron:46646426-11ee-4f2e-90fd-832133ff1e83",
@@ -103,9 +103,9 @@
       "name": "Rotinas da Casa",
       "status": "warning",
       "kpis": {
-        "pending": 6,
+        "pending": 7,
         "done": 0,
-        "skipped": 1,
+        "skipped": 0,
         "overdue": 1
       },
       "tasks": [
@@ -136,9 +136,9 @@
         {
           "key": "missao_pos_almoco",
           "label": "missao_pos_almoco",
-          "status": "SKIPPED",
+          "status": "PENDING",
           "time": "13:30",
-          "note": "Segunda: faxineira vem",
+          "note": "",
           "name": "🍽️ Zero Pia"
         },
         {
@@ -179,8 +179,8 @@
       "source": "/home/pedro/.openclaw/workspace/memory/daily_tasks.json",
       "trend7d": {
         "metric": "pending",
-        "delta": -1,
-        "direction": "down"
+        "delta": 0,
+        "direction": "flat"
       }
     },
     {
@@ -704,7 +704,7 @@
           "signals": {
             "eventCount": 21,
             "attemptCount": 7,
-            "lastEvent": "2026-06-09T01:00:00.036000+00:00",
+            "lastEvent": "2026-06-09T13:30:00.021000+00:00",
             "lastAttemptStatus": "degraded"
           },
           "history": {
@@ -724,77 +724,20 @@
               {
                 "date": "2026-06-08",
                 "healthy": 0,
-                "degraded": 5,
+                "degraded": 4,
                 "lyingRisk": 0,
                 "broken": 0
               },
               {
                 "date": "2026-06-09",
                 "healthy": 0,
-                "degraded": 1,
+                "degraded": 2,
                 "lyingRisk": 0,
                 "broken": 0
               }
             ]
           },
           "recentAttempts": [
-            {
-              "attemptId": "routines:93c7796d-f82d-4381-a925-f1a0a22bf25b:20260608T1330",
-              "jobId": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
-              "jobName": "Rotina da Manhã (Completa)",
-              "status": "degraded",
-              "confidence": 82,
-              "startedAt": "2026-06-08T13:30:00.019000+00:00",
-              "lastEventAt": "2026-06-08T13:30:00.019000+00:00",
-              "channel": "telegram",
-              "eventTypes": [
-                "triggered",
-                "ran",
-                "fallback_used"
-              ],
-              "eventCount": 3,
-              "reasons": [
-                "fallback usado via telegram"
-              ],
-              "events": [
-                {
-                  "workflowId": "routines",
-                  "workflowName": "Rotinas",
-                  "attemptId": "routines:93c7796d-f82d-4381-a925-f1a0a22bf25b:20260608T1330",
-                  "jobId": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
-                  "jobName": "Rotina da Manhã (Completa)",
-                  "timestamp": "2026-06-08T13:30:00.019000+00:00",
-                  "eventType": "triggered",
-                  "source": "cron-state",
-                  "inferred": true
-                },
-                {
-                  "workflowId": "routines",
-                  "workflowName": "Rotinas",
-                  "attemptId": "routines:93c7796d-f82d-4381-a925-f1a0a22bf25b:20260608T1330",
-                  "jobId": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
-                  "jobName": "Rotina da Manhã (Completa)",
-                  "timestamp": "2026-06-08T13:30:00.019000+00:00",
-                  "eventType": "ran",
-                  "source": "cron-state",
-                  "runStatus": "ok",
-                  "inferred": true
-                },
-                {
-                  "workflowId": "routines",
-                  "workflowName": "Rotinas",
-                  "attemptId": "routines:93c7796d-f82d-4381-a925-f1a0a22bf25b:20260608T1330",
-                  "jobId": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
-                  "jobName": "Rotina da Manhã (Completa)",
-                  "timestamp": "2026-06-08T13:30:00.019000+00:00",
-                  "eventType": "fallback_used",
-                  "channel": "telegram",
-                  "canonicalChannel": "whatsapp",
-                  "deliveryStatus": "delivered",
-                  "source": "cron-state"
-                }
-              ]
-            },
             {
               "attemptId": "routines:42be764c-f915-4669-8f94-878e23362bf8:20260608T1500",
               "jobId": "42be764c-f915-4669-8f94-878e23362bf8",
@@ -1079,6 +1022,63 @@
                   "source": "cron-state"
                 }
               ]
+            },
+            {
+              "attemptId": "routines:93c7796d-f82d-4381-a925-f1a0a22bf25b:20260609T1330",
+              "jobId": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
+              "jobName": "Rotina da Manhã (Completa)",
+              "status": "degraded",
+              "confidence": 82,
+              "startedAt": "2026-06-09T13:30:00.021000+00:00",
+              "lastEventAt": "2026-06-09T13:30:00.021000+00:00",
+              "channel": "telegram",
+              "eventTypes": [
+                "triggered",
+                "ran",
+                "fallback_used"
+              ],
+              "eventCount": 3,
+              "reasons": [
+                "fallback usado via telegram"
+              ],
+              "events": [
+                {
+                  "workflowId": "routines",
+                  "workflowName": "Rotinas",
+                  "attemptId": "routines:93c7796d-f82d-4381-a925-f1a0a22bf25b:20260609T1330",
+                  "jobId": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
+                  "jobName": "Rotina da Manhã (Completa)",
+                  "timestamp": "2026-06-09T13:30:00.021000+00:00",
+                  "eventType": "triggered",
+                  "source": "cron-state",
+                  "inferred": true
+                },
+                {
+                  "workflowId": "routines",
+                  "workflowName": "Rotinas",
+                  "attemptId": "routines:93c7796d-f82d-4381-a925-f1a0a22bf25b:20260609T1330",
+                  "jobId": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
+                  "jobName": "Rotina da Manhã (Completa)",
+                  "timestamp": "2026-06-09T13:30:00.021000+00:00",
+                  "eventType": "ran",
+                  "source": "cron-state",
+                  "runStatus": "ok",
+                  "inferred": true
+                },
+                {
+                  "workflowId": "routines",
+                  "workflowName": "Rotinas",
+                  "attemptId": "routines:93c7796d-f82d-4381-a925-f1a0a22bf25b:20260609T1330",
+                  "jobId": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
+                  "jobName": "Rotina da Manhã (Completa)",
+                  "timestamp": "2026-06-09T13:30:00.021000+00:00",
+                  "eventType": "fallback_used",
+                  "channel": "telegram",
+                  "canonicalChannel": "whatsapp",
+                  "deliveryStatus": "delivered",
+                  "source": "cron-state"
+                }
+              ]
             }
           ],
           "reasons": [
@@ -1216,7 +1216,7 @@
           "signals": {
             "eventCount": 2,
             "attemptCount": 1,
-            "lastEvent": "2026-06-09T13:20:00.022000+00:00",
+            "lastEvent": "2026-06-09T13:50:00.022000+00:00",
             "lastAttemptStatus": "healthy"
           },
           "history": {
@@ -1237,13 +1237,13 @@
           },
           "recentAttempts": [
             {
-              "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260609T1320",
+              "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260609T1350",
               "jobId": "b136a878-0ea8-43b1-8b07-e242454fe571",
               "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-06-09T13:20:00.022000+00:00",
-              "lastEventAt": "2026-06-09T13:20:00.022000+00:00",
+              "startedAt": "2026-06-09T13:50:00.022000+00:00",
+              "lastEventAt": "2026-06-09T13:50:00.022000+00:00",
               "channel": null,
               "eventTypes": [
                 "triggered",
@@ -1257,10 +1257,10 @@
                 {
                   "workflowId": "tracking_watchdog",
                   "workflowName": "Tracking Watchdog",
-                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260609T1320",
+                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260609T1350",
                   "jobId": "b136a878-0ea8-43b1-8b07-e242454fe571",
                   "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
-                  "timestamp": "2026-06-09T13:20:00.022000+00:00",
+                  "timestamp": "2026-06-09T13:50:00.022000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -1268,10 +1268,10 @@
                 {
                   "workflowId": "tracking_watchdog",
                   "workflowName": "Tracking Watchdog",
-                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260609T1320",
+                  "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260609T1350",
                   "jobId": "b136a878-0ea8-43b1-8b07-e242454fe571",
                   "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
-                  "timestamp": "2026-06-09T13:20:00.022000+00:00",
+                  "timestamp": "2026-06-09T13:50:00.022000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "ok",
@@ -1294,7 +1294,7 @@
           "signals": {
             "eventCount": 4,
             "attemptCount": 2,
-            "lastEvent": "2026-06-09T13:25:00.024000+00:00",
+            "lastEvent": "2026-06-09T13:55:00.016000+00:00",
             "lastAttemptStatus": "healthy"
           },
           "history": {
@@ -1315,13 +1315,13 @@
           },
           "recentAttempts": [
             {
-              "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260609T1303",
+              "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260609T1330",
               "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
               "jobName": "Mission Control - Build+Publish",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-06-09T13:03:32.180000+00:00",
-              "lastEventAt": "2026-06-09T13:03:32.180000+00:00",
+              "startedAt": "2026-06-09T13:30:00.028000+00:00",
+              "lastEventAt": "2026-06-09T13:30:00.028000+00:00",
               "channel": null,
               "eventTypes": [
                 "triggered",
@@ -1335,10 +1335,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260609T1303",
+                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260609T1330",
                   "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
                   "jobName": "Mission Control - Build+Publish",
-                  "timestamp": "2026-06-09T13:03:32.180000+00:00",
+                  "timestamp": "2026-06-09T13:30:00.028000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -1346,10 +1346,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260609T1303",
+                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260609T1330",
                   "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
                   "jobName": "Mission Control - Build+Publish",
-                  "timestamp": "2026-06-09T13:03:32.180000+00:00",
+                  "timestamp": "2026-06-09T13:30:00.028000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "ok",
@@ -1358,13 +1358,13 @@
               ]
             },
             {
-              "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260609T1325",
+              "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260609T1355",
               "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
               "jobName": "Mission Control - Control Runner",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-06-09T13:25:00.024000+00:00",
-              "lastEventAt": "2026-06-09T13:25:00.024000+00:00",
+              "startedAt": "2026-06-09T13:55:00.016000+00:00",
+              "lastEventAt": "2026-06-09T13:55:00.016000+00:00",
               "channel": null,
               "eventTypes": [
                 "triggered",
@@ -1378,10 +1378,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260609T1325",
+                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260609T1355",
                   "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
                   "jobName": "Mission Control - Control Runner",
-                  "timestamp": "2026-06-09T13:25:00.024000+00:00",
+                  "timestamp": "2026-06-09T13:55:00.016000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -1389,10 +1389,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260609T1325",
+                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260609T1355",
                   "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
                   "jobName": "Mission Control - Control Runner",
-                  "timestamp": "2026-06-09T13:25:00.024000+00:00",
+                  "timestamp": "2026-06-09T13:55:00.016000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "ok",
@@ -1415,24 +1415,6 @@
           "startedAt": "2026-06-07T16:30:00.035000+00:00",
           "lastEventAt": "2026-06-07T16:30:00.035000+00:00",
           "jobName": "Pós-Almoço: Zero Pia",
-          "channel": "telegram",
-          "eventTypes": [
-            "triggered",
-            "ran",
-            "fallback_used"
-          ],
-          "reasons": [
-            "fallback usado via telegram"
-          ]
-        },
-        {
-          "workflowId": "routines",
-          "workflowName": "Rotinas",
-          "attemptId": "routines:93c7796d-f82d-4381-a925-f1a0a22bf25b:20260608T1330",
-          "status": "degraded",
-          "startedAt": "2026-06-08T13:30:00.019000+00:00",
-          "lastEventAt": "2026-06-08T13:30:00.019000+00:00",
-          "jobName": "Rotina da Manhã (Completa)",
           "channel": "telegram",
           "eventTypes": [
             "triggered",
@@ -1673,12 +1655,30 @@
           ]
         },
         {
+          "workflowId": "routines",
+          "workflowName": "Rotinas",
+          "attemptId": "routines:93c7796d-f82d-4381-a925-f1a0a22bf25b:20260609T1330",
+          "status": "degraded",
+          "startedAt": "2026-06-09T13:30:00.021000+00:00",
+          "lastEventAt": "2026-06-09T13:30:00.021000+00:00",
+          "jobName": "Rotina da Manhã (Completa)",
+          "channel": "telegram",
+          "eventTypes": [
+            "triggered",
+            "ran",
+            "fallback_used"
+          ],
+          "reasons": [
+            "fallback usado via telegram"
+          ]
+        },
+        {
           "workflowId": "mission_control",
           "workflowName": "Mission Control",
-          "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260609T1303",
+          "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260609T1330",
           "status": "healthy",
-          "startedAt": "2026-06-09T13:03:32.180000+00:00",
-          "lastEventAt": "2026-06-09T13:03:32.180000+00:00",
+          "startedAt": "2026-06-09T13:30:00.028000+00:00",
+          "lastEventAt": "2026-06-09T13:30:00.028000+00:00",
           "jobName": "Mission Control - Build+Publish",
           "channel": null,
           "eventTypes": [
@@ -1692,10 +1692,10 @@
         {
           "workflowId": "tracking_watchdog",
           "workflowName": "Tracking Watchdog",
-          "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260609T1320",
+          "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260609T1350",
           "status": "healthy",
-          "startedAt": "2026-06-09T13:20:00.022000+00:00",
-          "lastEventAt": "2026-06-09T13:20:00.022000+00:00",
+          "startedAt": "2026-06-09T13:50:00.022000+00:00",
+          "lastEventAt": "2026-06-09T13:50:00.022000+00:00",
           "jobName": "Watchdog - Tracking Despesas (API + Frontend)",
           "channel": null,
           "eventTypes": [
@@ -1709,10 +1709,10 @@
         {
           "workflowId": "mission_control",
           "workflowName": "Mission Control",
-          "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260609T1325",
+          "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260609T1355",
           "status": "healthy",
-          "startedAt": "2026-06-09T13:25:00.024000+00:00",
-          "lastEventAt": "2026-06-09T13:25:00.024000+00:00",
+          "startedAt": "2026-06-09T13:55:00.016000+00:00",
+          "lastEventAt": "2026-06-09T13:55:00.016000+00:00",
           "jobName": "Mission Control - Control Runner",
           "channel": null,
           "eventTypes": [
@@ -1750,26 +1750,12 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-06-09T13:03:32.180000+00:00",
-          "nextRun": "2026-06-09T13:30:00+00:00",
+          "lastRun": "2026-06-09T13:30:00.028000+00:00",
+          "nextRun": "2026-06-09T14:00:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "opencode-go/kimi-k2.5",
           "channel": null
-        },
-        {
-          "id": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
-          "name": "Rotina da Manhã (Completa)",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-06-08T13:30:00.019000+00:00",
-          "nextRun": "2026-06-09T13:30:00+00:00",
-          "schedule": "30 10 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "opencode-go/kimi-k2.5",
-          "channel": "telegram"
         },
         {
           "id": "b136a878-0ea8-43b1-8b07-e242454fe571",
@@ -1778,8 +1764,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-06-09T13:20:00.022000+00:00",
-          "nextRun": "2026-06-09T13:30:00+00:00",
+          "lastRun": "2026-06-09T13:50:00.022000+00:00",
+          "nextRun": "2026-06-09T14:00:00+00:00",
           "schedule": "*/10 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "opencode-go/kimi-k2.5",
@@ -1792,8 +1778,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-06-09T13:25:00.024000+00:00",
-          "nextRun": "2026-06-09T13:30:00+00:00",
+          "lastRun": "2026-06-09T13:55:00.016000+00:00",
+          "nextRun": "2026-06-09T14:00:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "opencode-go/kimi-k2.5",
@@ -2145,6 +2131,20 @@
           "lastRun": "2026-06-08T13:00:00.024000+00:00",
           "nextRun": "2026-06-10T13:00:00+00:00",
           "schedule": "0 10 * * 1,3,5 (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "opencode-go/kimi-k2.5",
+          "channel": "telegram"
+        },
+        {
+          "id": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
+          "name": "Rotina da Manhã (Completa)",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-06-09T13:30:00.021000+00:00",
+          "nextRun": "2026-06-10T13:30:00+00:00",
+          "schedule": "30 10 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "opencode-go/kimi-k2.5",
           "channel": "telegram"
@@ -2540,7 +2540,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-09T13:30:10.472478+00:00"
+      "lastChecked": "2026-06-09T14:00:10.488580+00:00"
     }
   ],
   "crons": [
@@ -2551,26 +2551,12 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-06-09T13:03:32.180000+00:00",
-      "nextRun": "2026-06-09T13:30:00+00:00",
+      "lastRun": "2026-06-09T13:30:00.028000+00:00",
+      "nextRun": "2026-06-09T14:00:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "opencode-go/kimi-k2.5",
       "channel": null
-    },
-    {
-      "id": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
-      "name": "Rotina da Manhã (Completa)",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-06-08T13:30:00.019000+00:00",
-      "nextRun": "2026-06-09T13:30:00+00:00",
-      "schedule": "30 10 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "opencode-go/kimi-k2.5",
-      "channel": "telegram"
     },
     {
       "id": "b136a878-0ea8-43b1-8b07-e242454fe571",
@@ -2579,8 +2565,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-06-09T13:20:00.022000+00:00",
-      "nextRun": "2026-06-09T13:30:00+00:00",
+      "lastRun": "2026-06-09T13:50:00.022000+00:00",
+      "nextRun": "2026-06-09T14:00:00+00:00",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "opencode-go/kimi-k2.5",
@@ -2593,8 +2579,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-06-09T13:25:00.024000+00:00",
-      "nextRun": "2026-06-09T13:30:00+00:00",
+      "lastRun": "2026-06-09T13:55:00.016000+00:00",
+      "nextRun": "2026-06-09T14:00:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "opencode-go/kimi-k2.5",
@@ -2951,6 +2937,20 @@
       "channel": "telegram"
     },
     {
+      "id": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
+      "name": "Rotina da Manhã (Completa)",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-06-09T13:30:00.021000+00:00",
+      "nextRun": "2026-06-10T13:30:00+00:00",
+      "schedule": "30 10 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "opencode-go/kimi-k2.5",
+      "channel": "telegram"
+    },
+    {
       "id": "df3cabfe-4969-4e49-8af0-4a3aaf7d03b1",
       "name": "Resumo Semanal de Memórias",
       "status": "error",
@@ -3021,5 +3021,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-06-09T13:30:10.472478+00:00"
+  "lastUpdated": "2026-06-09T14:00:10.488580+00:00"
 }
