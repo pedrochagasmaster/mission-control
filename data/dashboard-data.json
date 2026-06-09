@@ -1,16 +1,6 @@
 {
-  "lastUpdated": "2026-06-09T08:57:34.304092+00:00",
+  "lastUpdated": "2026-06-09T09:30:12.421661+00:00",
   "actionRequired": [
-    {
-      "title": "Atualização do Índice de Sistema (4 erros) - cron: job execution timed out (last phase: model-call-started)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Mission Control - Control Runner (1 erros)",
-      "url": null,
-      "priority": "medium"
-    },
     {
       "title": "Aspirar Cozinha (1 erros) - LLM request failed.",
       "url": null,
@@ -29,19 +19,24 @@
   ],
   "activeNow": [
     {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-09T08:57:31.005000+00:00"
-    },
-    {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-09T08:50:00.602000+00:00"
+      "startedAt": "2026-06-09T09:30:01.008000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-09T09:30:00.965000+00:00"
     },
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-09T08:30:01.004000+00:00"
+      "startedAt": "2026-06-09T09:30:00.921000+00:00"
+    },
+    {
+      "task": "agent:main:cron:f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-09T09:00:01.342000+00:00"
     },
     {
       "task": "agent:main:cron:75b87bc7-016d-49a2-9995-4a0b715a7f23",
@@ -59,22 +54,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-09T08:57:34.304092+00:00"
+      "lastChecked": "2026-06-09T09:30:12.421661+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-09T08:55:00.016000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-09T08:30:00.021000+00:00",
+      "lastRun": "2026-06-09T09:00:00.021000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -82,18 +69,18 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-09T08:50:00.021000+00:00",
+      "lastRun": "2026-06-09T09:20:00.021000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
     },
     {
-      "name": "Atualização do Índice de Sistema",
-      "schedule": "0 6 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-08T09:12:27.843000+00:00",
-      "status": "error",
-      "errors": 4,
-      "lastError": "cron: job execution timed out (last phase: model-call-started)"
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-09T09:25:00.014000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Diário da Família - Gerador",
@@ -267,6 +254,14 @@
       "name": "Instagram Knowledge Ingest",
       "schedule": "0 5 * * * (America/Sao_Paulo)",
       "lastRun": "2026-06-09T08:00:00.021000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Atualização do Índice de Sistema",
+      "schedule": "0 6 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-09T09:00:00.032000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
