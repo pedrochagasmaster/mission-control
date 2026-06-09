@@ -4,6 +4,11 @@ Este arquivo rastreia os temas já abordados no Diário da Família para evitar 
 
 ## 2026
 
+### Junho
+- **08/06/2026**: O primeiro riso de verdade e a magia das brincadeiras de interação
+  - Foco: desenvolvimento emocional e social aos 4 meses, senso de humor, risada genuína, brincadeiras de interação
+  - Dicas mencionadas: cucu, imitar sons do bebê, espelho, deixar o bebê liderar a brincadeira, responder às iniciativas dela
+
 ### Maio
 - **23/05/2026**: A descoberta das mãozinhas: coordenação olho-mão e o mundo do toque aos 3 meses
   - Foco: desenvolvimento motor fino, coordenação olho-mão, descoberta do toque, auto-regulação emocional
