@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-09T00:00:05.652831+00:00",
+  "lastUpdated": "2026-06-09T00:30:08.586542+00:00",
   "actionRequired": [
     {
       "title": "Atualização do Índice de Sistema (4 erros) - cron: job execution timed out (last phase: model-call-started)",
@@ -24,29 +24,29 @@
   ],
   "activeNow": [
     {
+      "task": "agent:main:cron:22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-09T00:30:00.982000+00:00"
+    },
+    {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-09T00:00:00.749000+00:00"
+      "startedAt": "2026-06-09T00:30:00.949000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-09T00:00:00.689000+00:00"
+      "startedAt": "2026-06-09T00:30:00.917000+00:00"
     },
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-09T00:00:00.634000+00:00"
+      "startedAt": "2026-06-09T00:30:00.885000+00:00"
     },
     {
       "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
       "model": "kimi-k2.5",
       "startedAt": "2026-06-08T22:30:00.923000+00:00"
-    },
-    {
-      "task": "agent:main:telegram:direct:1899641264",
-      "model": "nemotron-nano-12b-v2-vl:free",
-      "startedAt": "2026-06-08T21:00:28.092000+00:00"
     }
   ],
   "products": [
@@ -54,14 +54,22 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-09T00:00:05.652831+00:00"
+      "lastChecked": "2026-06-09T00:30:08.586542+00:00"
     }
   ],
   "crons": [
     {
+      "name": "Lembrete de Captura de Memórias",
+      "schedule": "30 21 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-08T00:30:00.040000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-08T23:33:30.920000+00:00",
+      "lastRun": "2026-06-09T00:00:00.035000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -69,7 +77,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-08T23:50:00.016000+00:00",
+      "lastRun": "2026-06-09T00:20:00.018000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -77,15 +85,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-08T23:55:00.015000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Lembrete de Captura de Memórias",
-      "schedule": "30 21 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-08T00:30:00.040000+00:00",
+      "lastRun": "2026-06-09T00:27:30.481000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
