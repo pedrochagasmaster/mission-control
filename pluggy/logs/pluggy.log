@@ -107,3 +107,56 @@
 2026-06-07 21:45:06,637 | INFO | ✓ Encontradas 0 transações
 2026-06-07 21:45:06,637 | INFO | === Sync finalizado: 13 transações enviadas para inbox ===
 2026-06-07 21:45:06,637 | INFO | === Resumo: 16 transações, R$ 729.86 em despesas, R$ 1040.00 em receitas ===
+2026-06-08 21:45:05,322 | INFO | === Iniciando sync Pluggy -> Inbox (7 dias) ===
+2026-06-08 21:45:05,322 | INFO | Buscando item 1c9212f4...
+2026-06-08 21:45:05,322 | INFO | Autenticando com Pluggy.ai...
+2026-06-08 21:45:05,454 | INFO | ✓ Autenticado com sucesso (expira em 7200s)
+2026-06-08 21:45:05,574 | INFO | Buscando item af0ea47c...
+2026-06-08 21:45:05,695 | INFO | Buscando item bdd1dcbb...
+2026-06-08 21:45:05,804 | INFO | Sincronizando 3 item(s)
+2026-06-08 21:45:05,804 | INFO | Processando: MeuPluggy
+2026-06-08 21:45:05,804 | INFO | Listando contas do item 1c9212f4...
+2026-06-08 21:45:05,916 | INFO | ✓ Encontradas 2 contas
+2026-06-08 21:45:05,916 | INFO |   Conta: Nu Pagamentos S.A. - Instituição de Pagamento (BANK)
+2026-06-08 21:45:05,916 | INFO | Buscando transações de 2026-06-01 até 2026-06-08...
+2026-06-08 21:45:06,043 | INFO | ✓ Encontradas 2 transações
+2026-06-08 21:45:06,222 | INFO | ✓ Inbox ingest: +1 novos, 0 atualizados, 1 auto-excluídos
+2026-06-08 21:45:06,222 | INFO |   Conta: platinum (CREDIT)
+2026-06-08 21:45:06,222 | INFO | Buscando transações de 2026-06-01 até 2026-06-08...
+2026-06-08 21:45:06,333 | INFO | ✓ Encontradas 4 transações
+2026-06-08 21:45:06,507 | INFO | ✓ Inbox ingest: +2 novos, 2 atualizados, 0 auto-excluídos
+2026-06-08 21:45:06,508 | INFO | Processando: MeuPluggy
+2026-06-08 21:45:06,508 | INFO | Listando contas do item af0ea47c...
+2026-06-08 21:45:06,603 | INFO | ✓ Encontradas 2 contas
+2026-06-08 21:45:06,603 | INFO |   Conta: Mercado Pago (BANK)
+2026-06-08 21:45:06,603 | INFO | Buscando transações de 2026-06-01 até 2026-06-08...
+2026-06-08 21:45:06,721 | INFO | ✓ Encontradas 0 transações
+2026-06-08 21:45:06,721 | INFO |   Conta: Mercado Pago (CREDIT)
+2026-06-08 21:45:06,721 | INFO | Buscando transações de 2026-06-01 até 2026-06-08...
+2026-06-08 21:45:06,803 | INFO | ✓ Encontradas 2 transações
+2026-06-08 21:45:06,976 | INFO | ✓ Inbox ingest: +0 novos, 2 atualizados, 0 auto-excluídos
+2026-06-08 21:45:06,976 | INFO | Processando: MeuPluggy
+2026-06-08 21:45:06,976 | INFO | Listando contas do item bdd1dcbb...
+2026-06-08 21:45:07,108 | INFO | ✓ Encontradas 6 contas
+2026-06-08 21:45:07,108 | INFO |   Conta: Banco Bradesco (BANK)
+2026-06-08 21:45:07,108 | INFO | Buscando transações de 2026-06-01 até 2026-06-08...
+2026-06-08 21:45:07,204 | INFO | ✓ Encontradas 0 transações
+2026-06-08 21:45:07,204 | INFO |   Conta: Banco Bradesco (BANK)
+2026-06-08 21:45:07,204 | INFO | Buscando transações de 2026-06-01 até 2026-06-08...
+2026-06-08 21:45:07,290 | INFO | ✓ Encontradas 0 transações
+2026-06-08 21:45:07,290 | INFO |   Conta: Banco Bradesco (BANK)
+2026-06-08 21:45:07,290 | INFO | Buscando transações de 2026-06-01 até 2026-06-08...
+2026-06-08 21:45:07,372 | INFO | ✓ Encontradas 0 transações
+2026-06-08 21:45:07,372 | INFO |   Conta: Banco Bradesco (BANK)
+2026-06-08 21:45:07,372 | INFO | Buscando transações de 2026-06-01 até 2026-06-08...
+2026-06-08 21:45:07,471 | INFO | ✓ Encontradas 4 transações
+2026-06-08 21:45:07,653 | INFO | ✓ Inbox ingest: +0 novos, 2 atualizados, 0 auto-excluídos
+2026-06-08 21:45:07,653 | INFO |   Conta: NEO VISA PLATINUM (CREDIT)
+2026-06-08 21:45:07,653 | INFO | Buscando transações de 2026-06-01 até 2026-06-08...
+2026-06-08 21:45:07,726 | INFO | ✓ Encontradas 4 transações
+2026-06-08 21:45:07,900 | INFO | ✓ Inbox ingest: +0 novos, 4 atualizados, 0 auto-excluídos
+2026-06-08 21:45:07,901 | INFO |   Conta: ELO INTERNACIONAL (CREDIT)
+2026-06-08 21:45:07,901 | INFO | Buscando transações de 2026-06-01 até 2026-06-08...
+2026-06-08 21:45:07,983 | INFO | ✓ Encontradas 0 transações
+2026-06-08 21:45:07,984 | INFO | === Sync finalizado: 13 transações enviadas para inbox ===
+2026-06-08 21:45:07,984 | INFO | === Resumo: 16 transações, R$ 667.48 em despesas, R$ 1083.54 em receitas ===

@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-07",
+  "date": "2026-06-08",
   "tasks": {
     "rotina_manha": {
       "id": "rotina_manha",
@@ -23,7 +23,8 @@
       "id": "missao_pos_almoco",
       "name": "🍽️ Zero Pia",
       "time": "13:30",
-      "status": "PENDING"
+      "status": "SKIPPED",
+      "note": "Segunda: faxineira vem"
     },
     "blitz_ordem": {
       "id": "blitz_ordem",
@@ -35,15 +36,13 @@
       "id": "rotina_tarde",
       "name": "🌆 Rotina Tarde",
       "time": "18:00",
-      "status": "PENDING",
-      "last_triggered": "2026-06-07T18:00:00-03:00"
+      "status": "PENDING"
     },
     "rotina_noite": {
       "id": "rotina_noite",
       "name": "🌙 Rotina Noite",
       "time": "22:00",
-      "status": "PENDING",
-      "last_triggered": "2026-06-07T22:00:00-03:00"
+      "status": "PENDING"
     }
   }
 }
