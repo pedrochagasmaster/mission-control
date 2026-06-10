@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "2.1.0",
     "generatorVersion": "2026-03-20.1",
-    "generatedAt": "2026-06-10T07:00:10.017202+00:00"
+    "generatedAt": "2026-06-10T07:30:06.821003+00:00"
   },
   "overview": {
     "healthScore": 35,
@@ -53,7 +53,14 @@
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-10T07:00:01.140000+00:00",
+      "startedAt": "2026-06-10T07:30:00.760000+00:00",
+      "agentId": "main",
+      "kind": "cron"
+    },
+    {
+      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-10T07:30:00.703000+00:00",
       "agentId": "main",
       "kind": "cron"
     },
@@ -61,13 +68,6 @@
       "task": "agent:main:cron:218f26ef-423f-4f74-aa31-d28879facc28",
       "model": "kimi-k2.5",
       "startedAt": "2026-06-10T07:00:01.087000+00:00",
-      "agentId": "main",
-      "kind": "cron"
-    },
-    {
-      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-10T07:00:01.033000+00:00",
       "agentId": "main",
       "kind": "cron"
     },
@@ -1264,7 +1264,7 @@
           "signals": {
             "eventCount": 4,
             "attemptCount": 2,
-            "lastEvent": "2026-06-10T06:55:00.016000+00:00",
+            "lastEvent": "2026-06-10T07:25:00.018000+00:00",
             "lastAttemptStatus": "healthy"
           },
           "history": {
@@ -1285,13 +1285,13 @@
           },
           "recentAttempts": [
             {
-              "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260610T0630",
+              "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260610T0700",
               "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
               "jobName": "Mission Control - Build+Publish",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-06-10T06:30:00.023000+00:00",
-              "lastEventAt": "2026-06-10T06:30:00.023000+00:00",
+              "startedAt": "2026-06-10T07:00:00.023000+00:00",
+              "lastEventAt": "2026-06-10T07:00:00.023000+00:00",
               "channel": null,
               "eventTypes": [
                 "triggered",
@@ -1305,10 +1305,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260610T0630",
+                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260610T0700",
                   "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
                   "jobName": "Mission Control - Build+Publish",
-                  "timestamp": "2026-06-10T06:30:00.023000+00:00",
+                  "timestamp": "2026-06-10T07:00:00.023000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -1316,10 +1316,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260610T0630",
+                  "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260610T0700",
                   "jobId": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
                   "jobName": "Mission Control - Build+Publish",
-                  "timestamp": "2026-06-10T06:30:00.023000+00:00",
+                  "timestamp": "2026-06-10T07:00:00.023000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "ok",
@@ -1328,13 +1328,13 @@
               ]
             },
             {
-              "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260610T0655",
+              "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260610T0725",
               "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
               "jobName": "Mission Control - Control Runner",
               "status": "healthy",
               "confidence": 100,
-              "startedAt": "2026-06-10T06:55:00.016000+00:00",
-              "lastEventAt": "2026-06-10T06:55:00.016000+00:00",
+              "startedAt": "2026-06-10T07:25:00.018000+00:00",
+              "lastEventAt": "2026-06-10T07:25:00.018000+00:00",
               "channel": null,
               "eventTypes": [
                 "triggered",
@@ -1348,10 +1348,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260610T0655",
+                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260610T0725",
                   "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
                   "jobName": "Mission Control - Control Runner",
-                  "timestamp": "2026-06-10T06:55:00.016000+00:00",
+                  "timestamp": "2026-06-10T07:25:00.018000+00:00",
                   "eventType": "triggered",
                   "source": "cron-state",
                   "inferred": true
@@ -1359,10 +1359,10 @@
                 {
                   "workflowId": "mission_control",
                   "workflowName": "Mission Control",
-                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260610T0655",
+                  "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260610T0725",
                   "jobId": "ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
                   "jobName": "Mission Control - Control Runner",
-                  "timestamp": "2026-06-10T06:55:00.016000+00:00",
+                  "timestamp": "2026-06-10T07:25:00.018000+00:00",
                   "eventType": "ran",
                   "source": "cron-state",
                   "runStatus": "ok",
@@ -1643,23 +1643,6 @@
           ]
         },
         {
-          "workflowId": "mission_control",
-          "workflowName": "Mission Control",
-          "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260610T0630",
-          "status": "healthy",
-          "startedAt": "2026-06-10T06:30:00.023000+00:00",
-          "lastEventAt": "2026-06-10T06:30:00.023000+00:00",
-          "jobName": "Mission Control - Build+Publish",
-          "channel": null,
-          "eventTypes": [
-            "triggered",
-            "ran"
-          ],
-          "reasons": [
-            "workflow interno sem requisito de entrega"
-          ]
-        },
-        {
           "workflowId": "tracking_watchdog",
           "workflowName": "Tracking Watchdog",
           "attemptId": "tracking_watchdog:b136a878-0ea8-43b1-8b07-e242454fe571:20260610T0634",
@@ -1679,10 +1662,27 @@
         {
           "workflowId": "mission_control",
           "workflowName": "Mission Control",
-          "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260610T0655",
+          "attemptId": "mission_control:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2:20260610T0700",
           "status": "healthy",
-          "startedAt": "2026-06-10T06:55:00.016000+00:00",
-          "lastEventAt": "2026-06-10T06:55:00.016000+00:00",
+          "startedAt": "2026-06-10T07:00:00.023000+00:00",
+          "lastEventAt": "2026-06-10T07:00:00.023000+00:00",
+          "jobName": "Mission Control - Build+Publish",
+          "channel": null,
+          "eventTypes": [
+            "triggered",
+            "ran"
+          ],
+          "reasons": [
+            "workflow interno sem requisito de entrega"
+          ]
+        },
+        {
+          "workflowId": "mission_control",
+          "workflowName": "Mission Control",
+          "attemptId": "mission_control:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93:20260610T0725",
+          "status": "healthy",
+          "startedAt": "2026-06-10T07:25:00.018000+00:00",
+          "lastEventAt": "2026-06-10T07:25:00.018000+00:00",
           "jobName": "Mission Control - Control Runner",
           "channel": null,
           "eventTypes": [
@@ -1714,28 +1714,14 @@
       },
       "jobs": [
         {
-          "id": "218f26ef-423f-4f74-aa31-d28879facc28",
-          "name": "Consolidação Automática de Learnings",
-          "status": "ok",
-          "enabled": true,
-          "errors": 0,
-          "lastError": null,
-          "lastRun": "2026-06-09T07:00:00.032000+00:00",
-          "nextRun": "2026-06-10T07:00:00+00:00",
-          "schedule": "0 4 * * * (America/Sao_Paulo)",
-          "tzMissing": false,
-          "model": "opencode-go/kimi-k2.5",
-          "channel": "whatsapp"
-        },
-        {
           "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
           "name": "Mission Control - Build+Publish",
           "status": "ok",
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-06-10T06:30:00.023000+00:00",
-          "nextRun": "2026-06-10T07:00:00+00:00",
+          "lastRun": "2026-06-10T07:00:00.023000+00:00",
+          "nextRun": "2026-06-10T07:30:00+00:00",
           "schedule": "*/30 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "opencode-go/kimi-k2.5",
@@ -1748,8 +1734,8 @@
           "enabled": true,
           "errors": 0,
           "lastError": null,
-          "lastRun": "2026-06-10T06:55:00.016000+00:00",
-          "nextRun": "2026-06-10T07:00:00+00:00",
+          "lastRun": "2026-06-10T07:25:00.018000+00:00",
+          "nextRun": "2026-06-10T07:30:00+00:00",
           "schedule": "*/5 * * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "opencode-go/kimi-k2.5",
@@ -2101,6 +2087,20 @@
           "lastRun": "2026-06-10T03:07:42.850000+00:00",
           "nextRun": "2026-06-11T02:59:00+00:00",
           "schedule": "59 23 * * * (America/Sao_Paulo)",
+          "tzMissing": false,
+          "model": "opencode-go/kimi-k2.5",
+          "channel": "whatsapp"
+        },
+        {
+          "id": "218f26ef-423f-4f74-aa31-d28879facc28",
+          "name": "Consolidação Automática de Learnings",
+          "status": "ok",
+          "enabled": true,
+          "errors": 0,
+          "lastError": null,
+          "lastRun": "2026-06-10T07:00:00.037000+00:00",
+          "nextRun": "2026-06-11T07:00:00+00:00",
+          "schedule": "0 4 * * * (America/Sao_Paulo)",
           "tzMissing": false,
           "model": "opencode-go/kimi-k2.5",
           "channel": "whatsapp"
@@ -2510,24 +2510,10 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-10T07:00:10.017202+00:00"
+      "lastChecked": "2026-06-10T07:30:06.821003+00:00"
     }
   ],
   "crons": [
-    {
-      "id": "218f26ef-423f-4f74-aa31-d28879facc28",
-      "name": "Consolidação Automática de Learnings",
-      "status": "ok",
-      "enabled": true,
-      "errors": 0,
-      "lastError": null,
-      "lastRun": "2026-06-09T07:00:00.032000+00:00",
-      "nextRun": "2026-06-10T07:00:00+00:00",
-      "schedule": "0 4 * * * (America/Sao_Paulo)",
-      "tzMissing": false,
-      "model": "opencode-go/kimi-k2.5",
-      "channel": "whatsapp"
-    },
     {
       "id": "8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "name": "Mission Control - Build+Publish",
@@ -2535,8 +2521,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-06-10T06:30:00.023000+00:00",
-      "nextRun": "2026-06-10T07:00:00+00:00",
+      "lastRun": "2026-06-10T07:00:00.023000+00:00",
+      "nextRun": "2026-06-10T07:30:00+00:00",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "opencode-go/kimi-k2.5",
@@ -2549,8 +2535,8 @@
       "enabled": true,
       "errors": 0,
       "lastError": null,
-      "lastRun": "2026-06-10T06:55:00.016000+00:00",
-      "nextRun": "2026-06-10T07:00:00+00:00",
+      "lastRun": "2026-06-10T07:25:00.018000+00:00",
+      "nextRun": "2026-06-10T07:30:00+00:00",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
       "tzMissing": false,
       "model": "opencode-go/kimi-k2.5",
@@ -2907,6 +2893,20 @@
       "channel": "whatsapp"
     },
     {
+      "id": "218f26ef-423f-4f74-aa31-d28879facc28",
+      "name": "Consolidação Automática de Learnings",
+      "status": "ok",
+      "enabled": true,
+      "errors": 0,
+      "lastError": null,
+      "lastRun": "2026-06-10T07:00:00.037000+00:00",
+      "nextRun": "2026-06-11T07:00:00+00:00",
+      "schedule": "0 4 * * * (America/Sao_Paulo)",
+      "tzMissing": false,
+      "model": "opencode-go/kimi-k2.5",
+      "channel": "whatsapp"
+    },
+    {
       "id": "eb796b6f-bb0b-4b92-963c-18696cf45e0d",
       "name": "Lixo Véspera (22h)",
       "status": "ok",
@@ -2991,5 +2991,5 @@
       "channel": "telegram"
     }
   ],
-  "lastUpdated": "2026-06-10T07:00:10.017202+00:00"
+  "lastUpdated": "2026-06-10T07:30:06.821003+00:00"
 }
