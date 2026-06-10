@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-10T17:02:21.256930+00:00",
+  "lastUpdated": "2026-06-10T17:30:13.456167+00:00",
   "actionRequired": [
     {
       "title": "Resumo Semanal de Memórias (1 erros) - ⚠️ Agent couldn't generate a response. Note: some tool actions may have already been executed — please verify before retrying.",
@@ -14,19 +14,19 @@
   ],
   "activeNow": [
     {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-10T17:00:01.384000+00:00"
-    },
-    {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-10T17:00:01.320000+00:00"
+      "startedAt": "2026-06-10T17:30:01.290000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-10T17:30:01.227000+00:00"
     },
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-10T17:00:01.258000+00:00"
+      "startedAt": "2026-06-10T17:30:01.164000+00:00"
     },
     {
       "task": "agent:main:telegram:direct:1899641264",
@@ -47,11 +47,6 @@
       "task": "agent:main:cron:42be764c-f915-4669-8f94-878e23362bf8",
       "model": "kimi-k2.5",
       "startedAt": "2026-06-10T15:00:01.280000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ff7487f2-fad4-40ab-bd83-84219ecec634",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-10T14:30:01.750000+00:00"
     }
   ],
   "products": [
@@ -59,14 +54,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-10T17:02:21.256930+00:00"
+      "lastChecked": "2026-06-10T17:30:13.456167+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-10T16:30:00.033000+00:00",
+      "lastRun": "2026-06-10T17:00:00.024000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -74,7 +69,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-10T16:50:00.036000+00:00",
+      "lastRun": "2026-06-10T17:20:00.031000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -82,7 +77,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-10T16:55:00.017000+00:00",
+      "lastRun": "2026-06-10T17:27:30.974000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
