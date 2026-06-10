@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-10T12:00:22.172611+00:00",
+  "lastUpdated": "2026-06-10T12:31:12.115570+00:00",
   "actionRequired": [
     {
       "title": "Aspirar Cozinha (1 erros) - LLM request failed.",
@@ -19,29 +19,34 @@
   ],
   "activeNow": [
     {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-10T12:30:01.329000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-10T12:30:01.270000+00:00"
+    },
+    {
+      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-10T12:30:01.209000+00:00"
+    },
+    {
+      "task": "agent:main:telegram:direct:1899641264",
+      "model": "nemotron-nano-12b-v2-vl:free",
+      "startedAt": "2026-06-10T12:00:27.337000+00:00"
+    },
+    {
       "task": "agent:main:whatsapp:direct:+5519997830810",
       "model": "kimi-k2.6",
       "startedAt": "2026-06-10T12:00:24.211000+00:00"
     },
     {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-10T12:00:02.746000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-10T12:00:02.648000+00:00"
-    },
-    {
       "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
       "model": "kimi-k2.5",
       "startedAt": "2026-06-10T12:00:02.568000+00:00"
-    },
-    {
-      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-10T12:00:02.507000+00:00"
     },
     {
       "task": "agent:main:cron:777c622d-db73-4c08-be71-28c968ef21f4",
@@ -52,11 +57,6 @@
       "task": "agent:main:cron:ae7b9fb6-d807-4c23-846c-87f880d130be",
       "model": "kimi-k2.5",
       "startedAt": "2026-06-10T12:00:02.385000+00:00"
-    },
-    {
-      "task": "agent:main:cron:f1830563-b029-4bb2-80fc-9ffe54108a08",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-10T11:30:01.701000+00:00"
     }
   ],
   "products": [
@@ -64,38 +64,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-10T12:00:22.172611+00:00"
+      "lastChecked": "2026-06-10T12:31:12.115570+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Deadline Reminder Checker",
-      "schedule": "0 9 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-09T12:00:00.028000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Pagamento Banho",
-      "schedule": "0 9 * * 3 (America/Sao_Paulo)",
-      "lastRun": "2026-06-06T19:34:19.112000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-10T11:30:00.023000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Resumo Diário da To-Do List",
-      "schedule": "0 9 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-09T12:00:00.022000+00:00",
+      "lastRun": "2026-06-10T12:00:00.048000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -103,7 +79,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-10T11:50:00.026000+00:00",
+      "lastRun": "2026-06-10T12:20:00.027000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -111,7 +87,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-10T11:55:00.018000+00:00",
+      "lastRun": "2026-06-10T12:25:00.019000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -285,6 +261,22 @@
       "lastError": null
     },
     {
+      "name": "Deadline Reminder Checker",
+      "schedule": "0 9 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-10T12:00:00.039000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Resumo Diário da To-Do List",
+      "schedule": "0 9 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-10T12:00:00.031000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Lixo Véspera (22h)",
       "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
       "lastRun": "2026-06-10T01:00:00.029000+00:00",
@@ -320,6 +312,14 @@
       "name": "Dobrar Roupas",
       "schedule": "0 10 * * 2 (America/Sao_Paulo)",
       "lastRun": "2026-06-09T13:00:00.020000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Pagamento Banho",
+      "schedule": "0 9 * * 3 (America/Sao_Paulo)",
+      "lastRun": "2026-06-10T12:00:00.024000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
