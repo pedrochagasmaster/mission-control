@@ -1,10 +1,15 @@
 {
-  "lastUpdated": "2026-06-10T06:00:08.263478+00:00",
+  "lastUpdated": "2026-06-10T06:30:09.730843+00:00",
   "actionRequired": [
     {
-      "title": "Mission Control - Control Runner (2 erros) - cron: job execution timed out (last phase: model-call-started)",
+      "title": "Mission Control - Control Runner (3 erros) - cron: job execution timed out (last phase: model-call-started)",
       "url": null,
-      "priority": "medium"
+      "priority": "high"
+    },
+    {
+      "title": "Watchdog - Tracking Despesas (API + Frontend) (4 erros) - cron: job execution timed out (last phase: model-call-started)",
+      "url": null,
+      "priority": "high"
     },
     {
       "title": "Aspirar Cozinha (1 erros) - LLM request failed.",
@@ -24,29 +29,19 @@
   ],
   "activeNow": [
     {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-10T06:00:00.747000+00:00"
-    },
-    {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-10T06:00:00.692000+00:00"
+      "startedAt": "2026-06-10T06:30:00.374000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-10T05:57:31.120000+00:00"
+      "startedAt": "2026-06-10T06:25:32.114000+00:00"
     },
     {
-      "task": "agent:main:whatsapp:direct:+5519997830810",
-      "model": "kimi-k2.6",
-      "startedAt": "2026-06-10T03:09:44.563000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ebbd066d-2269-48d5-8f80-f89ce7633b81",
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-10T03:07:43.183000+00:00"
+      "startedAt": "2026-06-10T06:19:09.040000+00:00"
     }
   ],
   "products": [
@@ -54,22 +49,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-10T06:00:08.263478+00:00"
+      "lastChecked": "2026-06-10T06:30:09.730843+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-10T05:30:00.017000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-10T05:50:00.023000+00:00",
+      "lastRun": "2026-06-10T06:00:00.016000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -77,9 +64,17 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-10T05:57:30.764000+00:00",
+      "lastRun": "2026-06-10T06:25:31.754000+00:00",
       "status": "error",
-      "errors": 2,
+      "errors": 3,
+      "lastError": "cron: job execution timed out (last phase: model-call-started)"
+    },
+    {
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-10T06:19:08.680000+00:00",
+      "status": "error",
+      "errors": 4,
       "lastError": "cron: job execution timed out (last phase: model-call-started)"
     },
     {
