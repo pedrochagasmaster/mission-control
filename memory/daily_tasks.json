@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-08",
+  "date": "2026-06-09",
   "tasks": {
     "rotina_manha": {
       "id": "rotina_manha",
@@ -23,8 +23,8 @@
       "id": "missao_pos_almoco",
       "name": "🍽️ Zero Pia",
       "time": "13:30",
-      "status": "SKIPPED",
-      "note": "Segunda: faxineira vem"
+      "status": "PENDING",
+      "last_triggered": "2026-06-09T13:30:00-03:00"
     },
     "blitz_ordem": {
       "id": "blitz_ordem",
