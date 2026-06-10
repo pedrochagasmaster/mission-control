@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-06-10T01:00:19.002248+00:00",
+  "lastUpdated": "2026-06-10T01:03:39.065156+00:00",
   "actionRequired": [
+    {
+      "title": "Mission Control - Build+Publish (1 erros)",
+      "url": null,
+      "priority": "medium"
+    },
     {
       "title": "Aspirar Cozinha (1 erros) - LLM request failed.",
       "url": null,
@@ -19,19 +24,19 @@
   ],
   "activeNow": [
     {
+      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-10T01:03:33.647000+00:00"
+    },
+    {
       "task": "agent:main:telegram:direct:1899641264",
       "model": "nemotron-nano-12b-v2-vl:free",
-      "startedAt": "2026-06-10T01:00:18.537000+00:00"
+      "startedAt": "2026-06-10T01:00:26.262000+00:00"
     },
     {
       "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
       "model": "kimi-k2.5",
       "startedAt": "2026-06-10T01:00:01.921000+00:00"
-    },
-    {
-      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-10T01:00:01.871000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
@@ -64,22 +69,22 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-10T01:00:19.002248+00:00"
+      "lastChecked": "2026-06-10T01:03:39.065156+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Rotina da Noite (Completa)",
-      "schedule": "0 22 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-09T01:00:00.036000+00:00",
-      "status": "ok",
-      "errors": 0,
+      "name": "Mission Control - Build+Publish",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-10T01:00:00.036000+00:00",
+      "status": "error",
+      "errors": 1,
       "lastError": null
     },
     {
-      "name": "Mission Control - Build+Publish",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-10T00:30:00.021000+00:00",
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-10T01:00:00.044000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -87,23 +92,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-10T00:50:00.023000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Lixo Véspera (22h)",
-      "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
-      "lastRun": "2026-06-08T01:00:00.022000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-10T00:55:00.017000+00:00",
+      "lastRun": "2026-06-10T01:00:00.049000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -296,6 +285,22 @@
       "name": "Pluggy Sync - Tracking Despesas",
       "schedule": "45 21 * * * (America/Sao_Paulo)",
       "lastRun": "2026-06-10T00:45:00.015000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Rotina da Noite (Completa)",
+      "schedule": "0 22 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-10T01:00:00.021000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Lixo Véspera (22h)",
+      "schedule": "0 22 * * 0,2,4 (America/Sao_Paulo)",
+      "lastRun": "2026-06-10T01:00:00.029000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
