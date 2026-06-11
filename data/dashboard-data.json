@@ -1,11 +1,6 @@
 {
-  "lastUpdated": "2026-06-11T00:55:08.728987+00:00",
+  "lastUpdated": "2026-06-11T01:31:14.768217+00:00",
   "actionRequired": [
-    {
-      "title": "Watchdog - Tracking Despesas (API + Frontend) (4 erros) - cron: job execution timed out (last phase: model-call-started)",
-      "url": null,
-      "priority": "high"
-    },
     {
       "title": "Rotina da Tarde (1 erros) - ⚠️ 📝 Edit: `in ~/.openclaw/workspace/memory/daily_tasks.json` failed",
       "url": null,
@@ -26,7 +21,27 @@
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-11T00:55:00.930000+00:00"
+      "startedAt": "2026-06-11T01:30:02.302000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-11T01:30:02.165000+00:00"
+    },
+    {
+      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-11T01:30:02.010000+00:00"
+    },
+    {
+      "task": "agent:main:telegram:direct:1899641264",
+      "model": "nemotron-nano-12b-v2-vl:free",
+      "startedAt": "2026-06-11T01:00:36.666000+00:00"
+    },
+    {
+      "task": "agent:main:cron:7804497e-ac8d-49c9-bead-08ed6bab21d1",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-11T01:00:02.956000+00:00"
     },
     {
       "task": "agent:main:whatsapp:direct:+5519997830810",
@@ -39,24 +54,9 @@
       "startedAt": "2026-06-11T00:45:01.502000+00:00"
     },
     {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-11T00:41:03.485000+00:00"
-    },
-    {
       "task": "agent:main:cron:22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
       "model": "kimi-k2.5",
       "startedAt": "2026-06-11T00:35:16.098000+00:00"
-    },
-    {
-      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-11T00:30:02.731000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-10T22:30:03.165000+00:00"
     }
   ],
   "products": [
@@ -64,14 +64,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-11T00:55:08.728987+00:00"
+      "lastChecked": "2026-06-11T01:31:14.768217+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-11T00:52:31.776000+00:00",
+      "name": "Mission Control - Build+Publish",
+      "schedule": "*/30 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-11T01:00:00.040000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -79,23 +79,15 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-11T00:41:03.019000+00:00",
-      "status": "error",
-      "errors": 4,
-      "lastError": "cron: job execution timed out (last phase: model-call-started)"
-    },
-    {
-      "name": "Rotina da Noite (Completa)",
-      "schedule": "0 22 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-10T01:00:00.021000+00:00",
+      "lastRun": "2026-06-11T01:20:00.034000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
     },
     {
-      "name": "Mission Control - Build+Publish",
-      "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-11T00:30:00.024000+00:00",
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-11T01:25:00.020000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -256,6 +248,14 @@
       "name": "Pluggy Sync - Tracking Despesas",
       "schedule": "45 21 * * * (America/Sao_Paulo)",
       "lastRun": "2026-06-11T00:45:00.023000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Rotina da Noite (Completa)",
+      "schedule": "0 22 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-11T01:00:00.030000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
