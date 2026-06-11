@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-11T23:35:47.589070+00:00",
+  "lastUpdated": "2026-06-11T23:38:17.676205+00:00",
   "actionRequired": [
     {
       "title": "Mission Control - Control Runner (4 erros) - cron: isolated agent setup timed out before runner start",
@@ -7,7 +7,7 @@
       "priority": "high"
     },
     {
-      "title": "Mission Control - Build+Publish (1 erros)",
+      "title": "Mission Control - Build+Publish (2 erros)",
       "url": null,
       "priority": "medium"
     },
@@ -41,7 +41,7 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-11T23:33:49.028000+00:00"
+      "startedAt": "2026-06-11T23:37:51.176000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
@@ -69,16 +69,16 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-11T23:35:47.589070+00:00"
+      "lastChecked": "2026-06-11T23:38:17.676205+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-11T23:30:12.986000+00:00",
+      "lastRun": "2026-06-11T23:33:48.209000+00:00",
       "status": "error",
-      "errors": 1,
+      "errors": 2,
       "lastError": null
     },
     {
