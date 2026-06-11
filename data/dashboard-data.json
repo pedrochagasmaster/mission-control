@@ -1,11 +1,6 @@
 {
-  "lastUpdated": "2026-06-11T13:33:53.061227+00:00",
+  "lastUpdated": "2026-06-11T14:00:13.710909+00:00",
   "actionRequired": [
-    {
-      "title": "Mission Control - Build+Publish (4 erros)",
-      "url": null,
-      "priority": "high"
-    },
     {
       "title": "Watchdog - Tracking Despesas (API + Frontend) (5 erros) - cron: job execution timed out (last phase: model-call-started)",
       "url": null,
@@ -36,7 +31,7 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-11T13:33:39.921000+00:00"
+      "startedAt": "2026-06-11T14:00:01.809000+00:00"
     },
     {
       "task": "agent:main:telegram:direct:1899641264",
@@ -79,16 +74,16 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-11T13:33:53.061227+00:00"
+      "lastChecked": "2026-06-11T14:00:13.710909+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-11T13:15:37.051000+00:00",
-      "status": "error",
-      "errors": 4,
+      "lastRun": "2026-06-11T13:33:39.142000+00:00",
+      "status": "ok",
+      "errors": 0,
       "lastError": null
     },
     {
