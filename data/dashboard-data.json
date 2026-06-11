@@ -1,18 +1,13 @@
 {
-  "lastUpdated": "2026-06-11T15:04:41.397724+00:00",
+  "lastUpdated": "2026-06-11T15:33:44.688427+00:00",
   "actionRequired": [
     {
-      "title": "Mission Control - Control Runner (6 erros) - cron: job execution timed out (last phase: model-call-started)",
+      "title": "Mission Control - Control Runner (7 erros) - cron: job execution timed out (last phase: model-call-started)",
       "url": null,
       "priority": "high"
     },
     {
       "title": "Mission Control - Build+Publish (1 erros)",
-      "url": null,
-      "priority": "medium"
-    },
-    {
-      "title": "Watchdog - Tracking Despesas (API + Frontend) (2 erros) - cron: job execution timed out (last phase: model-call-started)",
       "url": null,
       "priority": "medium"
     },
@@ -36,12 +31,17 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-11T15:04:10.270000+00:00"
+      "startedAt": "2026-06-11T15:33:35.513000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-11T15:03:20.547000+00:00"
+      "startedAt": "2026-06-11T15:30:02.557000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-11T15:14:47.422000+00:00"
     },
     {
       "task": "agent:main:telegram:direct:1899641264",
@@ -59,11 +59,6 @@
       "startedAt": "2026-06-11T14:35:42.576000+00:00"
     },
     {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-11T14:12:42.714000+00:00"
-    },
-    {
       "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
       "model": "kimi-k2.5",
       "startedAt": "2026-06-11T13:30:01.818000+00:00"
@@ -74,14 +69,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-11T15:04:41.397724+00:00"
+      "lastChecked": "2026-06-11T15:33:44.688427+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-11T15:00:00.067000+00:00",
+      "lastRun": "2026-06-11T15:30:00.030000+00:00",
       "status": "error",
       "errors": 1,
       "lastError": null
@@ -89,18 +84,10 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-11T15:03:19.743000+00:00",
-      "status": "error",
-      "errors": 2,
-      "lastError": "cron: job execution timed out (last phase: model-call-started)"
-    },
-    {
-      "name": "Mission Control - Control Runner",
-      "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-11T14:12:41.861000+00:00",
-      "status": "error",
-      "errors": 6,
-      "lastError": "cron: job execution timed out (last phase: model-call-started)"
+      "lastRun": "2026-06-11T15:30:00.048000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Passeio Almoço",
@@ -109,6 +96,14 @@
       "status": "ok",
       "errors": 0,
       "lastError": null
+    },
+    {
+      "name": "Mission Control - Control Runner",
+      "schedule": "*/5 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-11T15:14:44.011000+00:00",
+      "status": "error",
+      "errors": 7,
+      "lastError": "cron: job execution timed out (last phase: model-call-started)"
     },
     {
       "name": "Pós-Almoço: Zero Pia",
