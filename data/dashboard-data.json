@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-11T07:31:35.299903+00:00",
+  "lastUpdated": "2026-06-11T08:01:27.732621+00:00",
   "actionRequired": [
     {
       "title": "Rotina da Tarde (1 erros) - ⚠️ 📝 Edit: `in ~/.openclaw/workspace/memory/daily_tasks.json` failed",
@@ -19,19 +19,24 @@
   ],
   "activeNow": [
     {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-11T07:30:02.522000+00:00"
-    },
-    {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-11T07:30:02.370000+00:00"
+      "startedAt": "2026-06-11T08:00:03.350000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-11T08:00:03.174000+00:00"
+    },
+    {
+      "task": "agent:main:cron:75b87bc7-016d-49a2-9995-4a0b715a7f23",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-11T08:00:02.990000+00:00"
     },
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-11T07:30:02.200000+00:00"
+      "startedAt": "2026-06-11T08:00:02.810000+00:00"
     },
     {
       "task": "agent:main:cron:218f26ef-423f-4f74-aa31-d28879facc28",
@@ -44,14 +49,22 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-11T07:31:35.299903+00:00"
+      "lastChecked": "2026-06-11T08:01:27.732621+00:00"
     }
   ],
   "crons": [
     {
+      "name": "Instagram Knowledge Ingest",
+      "schedule": "0 5 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-10T08:00:00.023000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-11T07:00:00.038000+00:00",
+      "lastRun": "2026-06-11T07:30:00.028000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -59,7 +72,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-11T07:20:00.041000+00:00",
+      "lastRun": "2026-06-11T07:50:00.033000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -67,15 +80,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-11T07:25:00.054000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Instagram Knowledge Ingest",
-      "schedule": "0 5 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-10T08:00:00.023000+00:00",
+      "lastRun": "2026-06-11T07:57:31.784000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
