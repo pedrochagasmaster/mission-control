@@ -1,16 +1,6 @@
 {
-  "lastUpdated": "2026-06-11T12:05:08.997286+00:00",
+  "lastUpdated": "2026-06-11T12:34:08.195212+00:00",
   "actionRequired": [
-    {
-      "title": "Mission Control - Control Runner (4 erros) - cron: job execution timed out (last phase: model-call-started)",
-      "url": null,
-      "priority": "high"
-    },
-    {
-      "title": "Watchdog - Tracking Despesas (API + Frontend) (1 erros)",
-      "url": null,
-      "priority": "medium"
-    },
     {
       "title": "Mission Control - Build+Publish (1 erros)",
       "url": null,
@@ -34,14 +24,19 @@
   ],
   "activeNow": [
     {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-11T12:04:50.348000+00:00"
-    },
-    {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-11T12:04:50.078000+00:00"
+      "startedAt": "2026-06-11T12:33:37.188000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-11T12:33:09.566000+00:00"
+    },
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-11T12:30:04.074000+00:00"
     },
     {
       "task": "agent:main:whatsapp:direct:+5519997830810",
@@ -59,11 +54,6 @@
       "startedAt": "2026-06-11T12:00:04.283000+00:00"
     },
     {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-11T11:52:40.255000+00:00"
-    },
-    {
       "task": "agent:main:cron:f1830563-b029-4bb2-80fc-9ffe54108a08",
       "model": "kimi-k2.5",
       "startedAt": "2026-06-11T11:30:04.628000+00:00"
@@ -79,22 +69,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-11T12:05:08.997286+00:00"
+      "lastChecked": "2026-06-11T12:34:08.195212+00:00"
     }
   ],
   "crons": [
     {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-11T12:00:00.080000+00:00",
-      "status": "error",
-      "errors": 1,
-      "lastError": null
-    },
-    {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-11T12:00:00.066000+00:00",
+      "lastRun": "2026-06-11T12:30:00.046000+00:00",
       "status": "error",
       "errors": 1,
       "lastError": null
@@ -102,10 +84,18 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-11T11:52:39.495000+00:00",
-      "status": "error",
-      "errors": 4,
-      "lastError": "cron: job execution timed out (last phase: model-call-started)"
+      "lastRun": "2026-06-11T12:33:07.807000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-11T12:30:00.078000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
     },
     {
       "name": "Rotina da Manhã (Completa)",
