@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-12T13:31:03.048365+00:00",
+  "lastUpdated": "2026-06-12T14:01:25.959733+00:00",
   "actionRequired": [
     {
       "title": "diretório therapy com permissão missing",
@@ -7,54 +7,13 @@
       "priority": "medium"
     }
   ],
-  "activeNow": [
-    {
-      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-12T13:30:08.791000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-12T13:30:08.385000+00:00"
-    },
-    {
-      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-12T13:30:07.945000+00:00"
-    },
-    {
-      "task": "agent:main:cron:93c7796d-f82d-4381-a925-f1a0a22bf25b",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-12T13:30:07.552000+00:00"
-    },
-    {
-      "task": "agent:main:telegram:direct:1899641264",
-      "model": "nemotron-nano-12b-v2-vl:free",
-      "startedAt": "2026-06-12T13:02:21.131000+00:00"
-    },
-    {
-      "task": "agent:main:cron:8e6d54f6-5278-4975-94dc-578d36397408",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-12T13:00:04.853000+00:00"
-    },
-    {
-      "task": "agent:main:whatsapp:direct:+5519997830810",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-12T12:01:40.541000+00:00"
-    },
-    {
-      "task": "agent:main:cron:02182f0c-4413-4374-a3fb-1a3f5651b6e7",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-12T12:00:06.431000+00:00"
-    }
-  ],
+  "activeNow": [],
   "products": [
     {
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-12T13:31:03.048365+00:00"
+      "lastChecked": "2026-06-12T14:01:25.959733+00:00"
     }
   ],
   "crons": [],
