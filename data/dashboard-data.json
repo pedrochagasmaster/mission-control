@@ -1,15 +1,20 @@
 {
-  "lastUpdated": "2026-06-12T02:30:18.129407+00:00",
+  "lastUpdated": "2026-06-12T03:05:41.567476+00:00",
   "actionRequired": [
     {
-      "title": "Watchdog - Tracking Despesas (API + Frontend) (5 erros) - cron: job execution timed out (last phase: model-call-started)",
+      "title": "Watchdog - Tracking Despesas (API + Frontend) (6 erros) - cron: job execution timed out (last phase: model-call-started)",
       "url": null,
       "priority": "high"
     },
     {
-      "title": "Mission Control - Control Runner (5 erros) - cron: job execution timed out (last phase: model-call-started)",
+      "title": "Mission Control - Control Runner (2 erros)",
       "url": null,
-      "priority": "high"
+      "priority": "medium"
+    },
+    {
+      "title": "daily-git-commit (1 erros) - cron: job execution timed out (last phase: model-call-started)",
+      "url": null,
+      "priority": "medium"
     },
     {
       "title": "Pós-Almoço: Zero Pia (1 erros) - ⚠️ 📝 Edit: `in ~/.openclaw/workspace/memory/daily_tasks.json` failed",
@@ -41,17 +46,22 @@
     {
       "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-12T02:30:01.834000+00:00"
+      "startedAt": "2026-06-12T03:02:50.036000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-12T01:41:04.902000+00:00"
+      "startedAt": "2026-06-12T03:02:49.720000+00:00"
+    },
+    {
+      "task": "agent:main:cron:ebbd066d-2269-48d5-8f80-f89ce7633b81",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-12T02:59:42.824000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-12T01:33:06.362000+00:00"
+      "startedAt": "2026-06-12T02:33:53.554000+00:00"
     },
     {
       "task": "agent:main:telegram:direct:1899641264",
@@ -72,11 +82,6 @@
       "task": "agent:main:whatsapp:direct:+5519997830810",
       "model": "kimi-k2.5",
       "startedAt": "2026-06-12T00:46:05.845000+00:00"
-    },
-    {
-      "task": "agent:main:cron:ec2938b2-9783-47f9-8945-ffd6388a0e82",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-12T00:45:25.394000+00:00"
     }
   ],
   "products": [
@@ -84,41 +89,41 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-12T02:30:18.129407+00:00"
+      "lastChecked": "2026-06-12T03:05:41.567476+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-12T02:04:04.309000+00:00",
+      "lastRun": "2026-06-12T02:30:00.049000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
-    },
-    {
-      "name": "Watchdog - Tracking Despesas (API + Frontend)",
-      "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-12T01:33:05.373000+00:00",
-      "status": "error",
-      "errors": 5,
-      "lastError": "cron: job execution timed out (last phase: model-call-started)"
     },
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-12T01:41:02.989000+00:00",
+      "lastRun": "2026-06-12T02:57:34.071000+00:00",
       "status": "error",
-      "errors": 5,
-      "lastError": "cron: job execution timed out (last phase: model-call-started)"
+      "errors": 2,
+      "lastError": null
     },
     {
       "name": "daily-git-commit",
       "schedule": "59 23 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-11T02:59:00.025000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
+      "lastRun": "2026-06-12T02:59:40.822000+00:00",
+      "status": "error",
+      "errors": 1,
+      "lastError": "cron: job execution timed out (last phase: model-call-started)"
+    },
+    {
+      "name": "Watchdog - Tracking Despesas (API + Frontend)",
+      "schedule": "*/10 * * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-12T02:33:52.425000+00:00",
+      "status": "error",
+      "errors": 6,
+      "lastError": "cron: job execution timed out (last phase: model-call-started)"
     },
     {
       "name": "Consolidação Automática de Learnings",
