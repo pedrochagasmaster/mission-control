@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-12T14:18:45.436867+00:00",
+  "lastUpdated": "2026-06-12T14:37:22.973848+00:00",
   "actionRequired": [
     {
       "title": "diretório therapy com permissão missing",
@@ -13,7 +13,7 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-12T14:18:45.436867+00:00"
+      "lastChecked": "2026-06-12T14:37:22.973848+00:00"
     }
   ],
   "crons": [],
