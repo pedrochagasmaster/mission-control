@@ -41,6 +41,7 @@ BANK_MONITOR_LOG = ROOT / "logs" / "bank_monitor.log"
 CREDENTIALS_DIR = Path("/home/pedro/.openclaw/credentials")
 
 MISSION_CONTROL_URL = "https://pedrochagasmaster.github.io/mission-control/"
+COMMAND_TIMEOUT_SECONDS = 5
 
 
 WORKFLOW_LEDGER_EXPECTATIONS: dict[str, dict[str, Any]] = {
@@ -175,8 +176,16 @@ def mode_str(path: Path) -> str:
 
 def run_json_command(cmd: list[str]) -> dict[str, Any] | None:
     try:
-        proc = subprocess.run(cmd, check=False, capture_output=True, text=True)
+        proc = subprocess.run(
+            cmd,
+            check=False,
+            capture_output=True,
+            text=True,
+            timeout=COMMAND_TIMEOUT_SECONDS,
+        )
     except FileNotFoundError:
+        return None
+    except subprocess.TimeoutExpired:
         return None
 
     if proc.returncode != 0:
@@ -194,9 +203,17 @@ def run_json_command(cmd: list[str]) -> dict[str, Any] | None:
 
 def run_text_command(cmd: list[str]) -> tuple[bool, str]:
     try:
-        proc = subprocess.run(cmd, check=False, capture_output=True, text=True)
+        proc = subprocess.run(
+            cmd,
+            check=False,
+            capture_output=True,
+            text=True,
+            timeout=COMMAND_TIMEOUT_SECONDS,
+        )
     except FileNotFoundError:
         return False, ""
+    except subprocess.TimeoutExpired as exc:
+        return False, f"command timed out after {exc.timeout} seconds: {' '.join(map(str, cmd))}"
 
     out = (proc.stdout or "") + ("\n" + proc.stderr if proc.stderr else "")
     return proc.returncode == 0, out.strip()
