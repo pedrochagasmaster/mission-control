@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-12T11:01:02.547845+00:00",
+  "lastUpdated": "2026-06-12T11:31:01.938348+00:00",
   "actionRequired": [
     {
       "title": "Pós-Almoço: Zero Pia (1 erros) - ⚠️ 📝 Edit: `in ~/.openclaw/workspace/memory/daily_tasks.json` failed",
@@ -29,19 +29,29 @@
   ],
   "activeNow": [
     {
-      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "task": "agent:main:cron:f1830563-b029-4bb2-80fc-9ffe54108a08",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-12T11:00:05.195000+00:00"
+      "startedAt": "2026-06-12T11:30:06.093000+00:00"
     },
     {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-12T11:00:04.818000+00:00"
+      "startedAt": "2026-06-12T11:30:05.750000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-12T11:00:04.465000+00:00"
+      "startedAt": "2026-06-12T11:30:05.441000+00:00"
+    },
+    {
+      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-12T11:30:05.160000+00:00"
+    },
+    {
+      "task": "agent:main:cron:0ba1cb64-5259-46bf-beb5-e58c02ec4215",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-12T11:15:02.282000+00:00"
     },
     {
       "task": "agent:main:cron:4fe4f71e-f653-4382-95c4-bceb7f7a2e49",
@@ -57,16 +67,6 @@
       "task": "agent:main:cron:ec212b07-8387-45d0-9606-351509850608",
       "model": "kimi-k2.5",
       "startedAt": "2026-06-12T10:30:16.975000+00:00"
-    },
-    {
-      "task": "agent:main:cron:06b5aaae-b25a-4005-a78c-badad02f216b",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-12T10:27:41.958000+00:00"
-    },
-    {
-      "task": "agent:main:cron:f8e2b1a4-3c5d-4e6f-7a8b-9c0d1e2f3a4b",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-12T09:00:03.883000+00:00"
     }
   ],
   "products": [
@@ -74,14 +74,14 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-12T11:01:02.547845+00:00"
+      "lastChecked": "2026-06-12T11:31:01.938348+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-12T10:30:11.144000+00:00",
+      "lastRun": "2026-06-12T11:00:00.071000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -89,7 +89,7 @@
     {
       "name": "Watchdog - Tracking Despesas (API + Frontend)",
       "schedule": "*/10 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-12T10:50:00.054000+00:00",
+      "lastRun": "2026-06-12T11:20:00.050000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -97,15 +97,7 @@
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-12T10:55:00.034000+00:00",
-      "status": "ok",
-      "errors": 0,
-      "lastError": null
-    },
-    {
-      "name": "Diário da Família - Watchdog (retry 08:15)",
-      "schedule": "15 8 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-11T11:15:16.197000+00:00",
+      "lastRun": "2026-06-12T11:25:00.042000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
@@ -274,6 +266,14 @@
       "name": "Diário da Família - Enviador",
       "schedule": "35 7 * * * (America/Sao_Paulo)",
       "lastRun": "2026-06-12T10:35:00.037000+00:00",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Diário da Família - Watchdog (retry 08:15)",
+      "schedule": "15 8 * * * (America/Sao_Paulo)",
+      "lastRun": "2026-06-12T11:15:00.032000+00:00",
       "status": "ok",
       "errors": 0,
       "lastError": null
