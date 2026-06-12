@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-12T03:05:41.567476+00:00",
+  "lastUpdated": "2026-06-12T03:09:29.752296+00:00",
   "actionRequired": [
     {
       "title": "Watchdog - Tracking Despesas (API + Frontend) (6 erros) - cron: job execution timed out (last phase: model-call-started)",
@@ -7,12 +7,17 @@
       "priority": "high"
     },
     {
-      "title": "Mission Control - Control Runner (2 erros)",
+      "title": "Mission Control - Build+Publish (1 erros)",
       "url": null,
       "priority": "medium"
     },
     {
-      "title": "daily-git-commit (1 erros) - cron: job execution timed out (last phase: model-call-started)",
+      "title": "Mission Control - Control Runner (1 erros)",
+      "url": null,
+      "priority": "medium"
+    },
+    {
+      "title": "daily-git-commit (2 erros) - cron: job execution timed out (last phase: model-call-started)",
       "url": null,
       "priority": "medium"
     },
@@ -44,19 +49,19 @@
   ],
   "activeNow": [
     {
-      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
-      "model": "kimi-k2.5",
-      "startedAt": "2026-06-12T03:02:50.036000+00:00"
-    },
-    {
       "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-12T03:02:49.720000+00:00"
+      "startedAt": "2026-06-12T03:09:04.645000+00:00"
+    },
+    {
+      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-12T03:09:04.499000+00:00"
     },
     {
       "task": "agent:main:cron:ebbd066d-2269-48d5-8f80-f89ce7633b81",
       "model": "kimi-k2.5",
-      "startedAt": "2026-06-12T02:59:42.824000+00:00"
+      "startedAt": "2026-06-12T03:05:59.165000+00:00"
     },
     {
       "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
@@ -89,32 +94,32 @@
       "name": "Mission Control",
       "url": "https://pedrochagasmaster.github.io/mission-control/",
       "status": "live",
-      "lastChecked": "2026-06-12T03:05:41.567476+00:00"
+      "lastChecked": "2026-06-12T03:09:29.752296+00:00"
     }
   ],
   "crons": [
     {
       "name": "Mission Control - Build+Publish",
       "schedule": "*/30 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-12T02:30:00.049000+00:00",
-      "status": "ok",
-      "errors": 0,
+      "lastRun": "2026-06-12T03:02:46.664000+00:00",
+      "status": "error",
+      "errors": 1,
       "lastError": null
     },
     {
       "name": "Mission Control - Control Runner",
       "schedule": "*/5 * * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-12T02:57:34.071000+00:00",
+      "lastRun": "2026-06-12T03:05:55.932000+00:00",
       "status": "error",
-      "errors": 2,
+      "errors": 1,
       "lastError": null
     },
     {
       "name": "daily-git-commit",
       "schedule": "59 23 * * * (America/Sao_Paulo)",
-      "lastRun": "2026-06-12T02:59:40.822000+00:00",
+      "lastRun": "2026-06-12T03:05:55.915000+00:00",
       "status": "error",
-      "errors": 1,
+      "errors": 2,
       "lastError": "cron: job execution timed out (last phase: model-call-started)"
     },
     {
