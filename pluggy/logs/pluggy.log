@@ -319,3 +319,56 @@
 2026-06-11 21:45:43,815 | INFO | ✓ Encontradas 0 transações
 2026-06-11 21:45:43,815 | INFO | === Sync finalizado: 20 transações enviadas para inbox ===
 2026-06-11 21:45:43,815 | INFO | === Resumo: 31 transações, R$ 7233.97 em despesas, R$ 2350.52 em receitas ===
+2026-06-21 15:57:11,003 | INFO | === Iniciando sync Pluggy -> Inbox (7 dias) ===
+2026-06-21 15:57:11,004 | INFO | Buscando item 1c9212f4...
+2026-06-21 15:57:11,004 | INFO | Autenticando com Pluggy.ai...
+2026-06-21 15:57:11,098 | INFO | ✓ Autenticado com sucesso (expira em 7200s)
+2026-06-21 15:57:11,214 | INFO | Buscando item af0ea47c...
+2026-06-21 15:57:11,307 | INFO | Buscando item bdd1dcbb...
+2026-06-21 15:57:11,415 | INFO | Sincronizando 3 item(s)
+2026-06-21 15:57:11,415 | INFO | Processando: MeuPluggy
+2026-06-21 15:57:11,415 | INFO | Listando contas do item 1c9212f4...
+2026-06-21 15:57:11,548 | INFO | ✓ Encontradas 2 contas
+2026-06-21 15:57:11,548 | INFO |   Conta: Nu Pagamentos S.A. - Instituição de Pagamento (BANK)
+2026-06-21 15:57:11,548 | INFO | Buscando transações de 2026-06-14 até 2026-06-21...
+2026-06-21 15:57:11,680 | INFO | ✓ Encontradas 5 transações
+2026-06-21 15:57:11,879 | INFO | ✓ Inbox ingest: +5 novos, 0 atualizados, 2 auto-excluídos
+2026-06-21 15:57:11,879 | INFO |   Conta: platinum (CREDIT)
+2026-06-21 15:57:11,880 | INFO | Buscando transações de 2026-06-14 até 2026-06-21...
+2026-06-21 15:57:12,045 | INFO | ✓ Encontradas 3 transações
+2026-06-21 15:57:12,243 | INFO | ✓ Inbox ingest: +3 novos, 0 atualizados, 0 auto-excluídos
+2026-06-21 15:57:12,243 | INFO | Processando: MeuPluggy
+2026-06-21 15:57:12,243 | INFO | Listando contas do item af0ea47c...
+2026-06-21 15:57:12,341 | INFO | ✓ Encontradas 2 contas
+2026-06-21 15:57:12,341 | INFO |   Conta: Mercado Pago (BANK)
+2026-06-21 15:57:12,341 | INFO | Buscando transações de 2026-06-14 até 2026-06-21...
+2026-06-21 15:57:12,446 | INFO | ✓ Encontradas 4 transações
+2026-06-21 15:57:12,645 | INFO | ✓ Inbox ingest: +4 novos, 0 atualizados, 0 auto-excluídos
+2026-06-21 15:57:12,645 | INFO |   Conta: Mercado Pago (CREDIT)
+2026-06-21 15:57:12,645 | INFO | Buscando transações de 2026-06-14 até 2026-06-21...
+2026-06-21 15:57:12,756 | INFO | ✓ Encontradas 0 transações
+2026-06-21 15:57:12,756 | INFO | Processando: MeuPluggy
+2026-06-21 15:57:12,756 | INFO | Listando contas do item bdd1dcbb...
+2026-06-21 15:57:12,873 | INFO | ✓ Encontradas 6 contas
+2026-06-21 15:57:12,873 | INFO |   Conta: Banco Bradesco (BANK)
+2026-06-21 15:57:12,873 | INFO | Buscando transações de 2026-06-14 até 2026-06-21...
+2026-06-21 15:57:13,014 | INFO | ✓ Encontradas 0 transações
+2026-06-21 15:57:13,015 | INFO |   Conta: Banco Bradesco (BANK)
+2026-06-21 15:57:13,015 | INFO | Buscando transações de 2026-06-14 até 2026-06-21...
+2026-06-21 15:57:13,141 | INFO | ✓ Encontradas 0 transações
+2026-06-21 15:57:13,141 | INFO |   Conta: Banco Bradesco (BANK)
+2026-06-21 15:57:13,141 | INFO | Buscando transações de 2026-06-14 até 2026-06-21...
+2026-06-21 15:57:13,238 | INFO | ✓ Encontradas 0 transações
+2026-06-21 15:57:13,238 | INFO |   Conta: Banco Bradesco (BANK)
+2026-06-21 15:57:13,238 | INFO | Buscando transações de 2026-06-14 até 2026-06-21...
+2026-06-21 15:57:13,341 | INFO | ✓ Encontradas 7 transações
+2026-06-21 15:57:13,517 | INFO | ✓ Inbox ingest: +7 novos, 0 atualizados, 4 auto-excluídos
+2026-06-21 15:57:13,517 | INFO |   Conta: ELO INTERNACIONAL (CREDIT)
+2026-06-21 15:57:13,517 | INFO | Buscando transações de 2026-06-14 até 2026-06-21...
+2026-06-21 15:57:13,613 | INFO | ✓ Encontradas 0 transações
+2026-06-21 15:57:13,614 | INFO |   Conta: NEO VISA PLATINUM (CREDIT)
+2026-06-21 15:57:13,614 | INFO | Buscando transações de 2026-06-14 até 2026-06-21...
+2026-06-21 15:57:13,747 | INFO | ✓ Encontradas 13 transações
+2026-06-21 15:57:13,930 | INFO | ✓ Inbox ingest: +13 novos, 0 atualizados, 0 auto-excluídos
+2026-06-21 15:57:13,930 | INFO | === Sync finalizado: 32 transações enviadas para inbox ===
+2026-06-21 15:57:13,930 | INFO | === Resumo: 32 transações, R$ 6663.14 em despesas, R$ 2129.82 em receitas ===
