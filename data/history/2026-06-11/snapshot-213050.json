@@ -1,0 +1,1008 @@
+{
+  "meta": {
+    "schemaVersion": "3.1.0",
+    "generatorVersion": "2026-03-20.1",
+    "generatedAt": "2026-06-12T00:30:39.422251+00:00"
+  },
+  "overview": {
+    "healthScore": 58,
+    "criticalAlerts": 0,
+    "pendingControls": 0,
+    "dataFreshnessSec": 0
+  },
+  "actionRequired": [
+    {
+      "type": "security",
+      "targetId": "security",
+      "title": "diretório therapy com permissão missing",
+      "priority": "medium",
+      "actions": []
+    }
+  ],
+  "activeNow": [
+    {
+      "task": "agent:main:cron:b136a878-0ea8-43b1-8b07-e242454fe571",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-12T00:30:05.779000+00:00",
+      "agentId": "main",
+      "kind": "cron"
+    },
+    {
+      "task": "agent:main:cron:22d2e60f-e4cc-48b7-8e65-5464e522d5b7",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-12T00:30:05.481000+00:00",
+      "agentId": "main",
+      "kind": "cron"
+    },
+    {
+      "task": "agent:main:cron:ee323868-9e6f-4aa5-aa6a-5c7438cd1a93",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-12T00:30:05.047000+00:00",
+      "agentId": "main",
+      "kind": "cron"
+    },
+    {
+      "task": "agent:main:cron:8ae78ed7-30b5-4b9a-9622-e1d568c80eb2",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-12T00:30:04.722000+00:00",
+      "agentId": "main",
+      "kind": "cron"
+    },
+    {
+      "task": "agent:main:cron:ac63f283-4de6-4a42-bd64-2aa49c34dc70",
+      "model": "kimi-k2.5",
+      "startedAt": "2026-06-11T22:30:06.106000+00:00",
+      "agentId": "main",
+      "kind": "cron"
+    }
+  ],
+  "domains": [
+    {
+      "id": "routines",
+      "name": "Rotinas da Casa",
+      "status": "warning",
+      "kpis": {
+        "pending": 7,
+        "done": 0,
+        "skipped": 0,
+        "overdue": 6
+      },
+      "tasks": [
+        {
+          "key": "rotina_manha",
+          "label": "rotina_manha",
+          "status": "PENDING",
+          "time": "06:00",
+          "note": "",
+          "name": "🌅 Rotina da Manhã"
+        },
+        {
+          "key": "racao_almoco",
+          "label": "racao_almoco",
+          "status": "PENDING",
+          "time": "12:00",
+          "note": "",
+          "name": "🍲 Ração Almoço"
+        },
+        {
+          "key": "passeio_almoco",
+          "label": "passeio_almoco",
+          "status": "PENDING",
+          "time": "13:00",
+          "note": "",
+          "name": "🐕 Passeio 2/4"
+        },
+        {
+          "key": "missao_pos_almoco",
+          "label": "missao_pos_almoco",
+          "status": "PENDING",
+          "time": "13:30",
+          "note": "",
+          "name": "🍽️ Zero Pia"
+        },
+        {
+          "key": "blitz_ordem",
+          "label": "blitz_ordem",
+          "status": "PENDING",
+          "time": "17:30",
+          "note": "",
+          "name": "🌪️ Blitz da Ordem"
+        },
+        {
+          "key": "rotina_tarde",
+          "label": "rotina_tarde",
+          "status": "PENDING",
+          "time": "18:00",
+          "note": "",
+          "name": "🌆 Rotina Tarde"
+        },
+        {
+          "key": "rotina_noite",
+          "label": "rotina_noite",
+          "status": "PENDING",
+          "time": "22:00",
+          "note": "",
+          "name": "🌙 Rotina Noite"
+        }
+      ],
+      "alerts": [
+        {
+          "level": "warning",
+          "text": "6 tarefa(s) pendente(s) já no horário"
+        }
+      ],
+      "actions": [
+        "task.mark_done",
+        "task.mark_skipped"
+      ],
+      "source": "/home/pedro/.openclaw/workspace/memory/daily_tasks.json",
+      "trend7d": {
+        "metric": "pending",
+        "delta": 0,
+        "direction": "flat"
+      }
+    },
+    {
+      "id": "todo",
+      "name": "To-Do Geral",
+      "status": "ok",
+      "kpis": {
+        "pending": 0,
+        "done": 0,
+        "overdue": 0,
+        "risk72h": 0,
+        "total": 0
+      },
+      "items": [],
+      "alerts": [],
+      "actions": [
+        "task.mark_done",
+        "todo.set_deadline"
+      ],
+      "source": "/home/pedro/.openclaw/workspace/memory/todo_list.json",
+      "trend7d": {
+        "metric": "pending",
+        "delta": 0,
+        "direction": "flat"
+      }
+    },
+    {
+      "id": "digest",
+      "name": "Diário da Família",
+      "status": "warning",
+      "kpis": {
+        "sentToday": false,
+        "draftReady": true,
+        "errorJobs": 0,
+        "pipelineStages": 0
+      },
+      "pipeline": [],
+      "draft": {
+        "date": "2026-06-11",
+        "tema": "Quatro meses da Isabel: introdução alimentar e os primeiros sabores"
+      },
+      "alerts": [],
+      "actions": [
+        "digest.retry_send",
+        "cron.retry"
+      ],
+      "source": "/home/pedro/.openclaw/workspace/memory/daily_digest_draft.json",
+      "trend7d": {
+        "metric": "sentToday",
+        "delta": 0,
+        "direction": "flat"
+      }
+    },
+    {
+      "id": "workflow_truth",
+      "name": "Delivery Truth",
+      "status": "error",
+      "kpis": {
+        "healthy": 0,
+        "degraded": 0,
+        "lyingRisk": 0,
+        "broken": 7,
+        "timeline": 0
+      },
+      "pipelines": [
+        {
+          "id": "digest",
+          "name": "Digest",
+          "status": "broken",
+          "confidence": 15,
+          "canonicalChannel": "whatsapp",
+          "deliveryRequired": true,
+          "signals": {
+            "eventCount": 0,
+            "attemptCount": 0,
+            "lastEvent": null,
+            "lastAttemptStatus": null
+          },
+          "history": {
+            "attemptsTotal": 0,
+            "healthy": 0,
+            "degraded": 0,
+            "lyingRisk": 0,
+            "broken": 0,
+            "byDay": []
+          },
+          "recentAttempts": [],
+          "reasons": [
+            "sem attempts no ledger ainda"
+          ]
+        },
+        {
+          "id": "pluggy",
+          "name": "Pluggy",
+          "status": "broken",
+          "confidence": 15,
+          "canonicalChannel": "whatsapp",
+          "deliveryRequired": true,
+          "signals": {
+            "eventCount": 0,
+            "attemptCount": 0,
+            "lastEvent": null,
+            "lastAttemptStatus": null
+          },
+          "history": {
+            "attemptsTotal": 0,
+            "healthy": 0,
+            "degraded": 0,
+            "lyingRisk": 0,
+            "broken": 0,
+            "byDay": []
+          },
+          "recentAttempts": [],
+          "reasons": [
+            "sem attempts no ledger ainda"
+          ]
+        },
+        {
+          "id": "reminders",
+          "name": "Reminders",
+          "status": "broken",
+          "confidence": 15,
+          "canonicalChannel": "whatsapp",
+          "deliveryRequired": true,
+          "signals": {
+            "eventCount": 0,
+            "attemptCount": 0,
+            "lastEvent": null,
+            "lastAttemptStatus": null
+          },
+          "history": {
+            "attemptsTotal": 0,
+            "healthy": 0,
+            "degraded": 0,
+            "lyingRisk": 0,
+            "broken": 0,
+            "byDay": []
+          },
+          "recentAttempts": [],
+          "reasons": [
+            "sem attempts no ledger ainda"
+          ]
+        },
+        {
+          "id": "routines",
+          "name": "Rotinas",
+          "status": "broken",
+          "confidence": 15,
+          "canonicalChannel": "whatsapp",
+          "deliveryRequired": true,
+          "signals": {
+            "eventCount": 0,
+            "attemptCount": 0,
+            "lastEvent": null,
+            "lastAttemptStatus": null
+          },
+          "history": {
+            "attemptsTotal": 0,
+            "healthy": 0,
+            "degraded": 0,
+            "lyingRisk": 0,
+            "broken": 0,
+            "byDay": []
+          },
+          "recentAttempts": [],
+          "reasons": [
+            "sem attempts no ledger ainda"
+          ]
+        },
+        {
+          "id": "proactive_group",
+          "name": "Proactive Group",
+          "status": "broken",
+          "confidence": 15,
+          "canonicalChannel": "whatsapp",
+          "deliveryRequired": true,
+          "signals": {
+            "eventCount": 0,
+            "attemptCount": 0,
+            "lastEvent": null,
+            "lastAttemptStatus": null
+          },
+          "history": {
+            "attemptsTotal": 0,
+            "healthy": 0,
+            "degraded": 0,
+            "lyingRisk": 0,
+            "broken": 0,
+            "byDay": []
+          },
+          "recentAttempts": [],
+          "reasons": [
+            "sem attempts no ledger ainda"
+          ]
+        },
+        {
+          "id": "tracking_watchdog",
+          "name": "Tracking Watchdog",
+          "status": "broken",
+          "confidence": 15,
+          "canonicalChannel": null,
+          "deliveryRequired": false,
+          "signals": {
+            "eventCount": 0,
+            "attemptCount": 0,
+            "lastEvent": null,
+            "lastAttemptStatus": null
+          },
+          "history": {
+            "attemptsTotal": 0,
+            "healthy": 0,
+            "degraded": 0,
+            "lyingRisk": 0,
+            "broken": 0,
+            "byDay": []
+          },
+          "recentAttempts": [],
+          "reasons": [
+            "sem attempts no ledger ainda"
+          ]
+        },
+        {
+          "id": "mission_control",
+          "name": "Mission Control",
+          "status": "broken",
+          "confidence": 15,
+          "canonicalChannel": null,
+          "deliveryRequired": false,
+          "signals": {
+            "eventCount": 0,
+            "attemptCount": 0,
+            "lastEvent": null,
+            "lastAttemptStatus": null
+          },
+          "history": {
+            "attemptsTotal": 0,
+            "healthy": 0,
+            "degraded": 0,
+            "lyingRisk": 0,
+            "broken": 0,
+            "byDay": []
+          },
+          "recentAttempts": [],
+          "reasons": [
+            "sem attempts no ledger ainda"
+          ]
+        }
+      ],
+      "timeline": [],
+      "actions": [],
+      "source": "/home/pedro/.openclaw/workspace/mission-control/data/workflow-ledger",
+      "trend7d": {
+        "metric": "healthy",
+        "delta": -4,
+        "direction": "down"
+      }
+    },
+    {
+      "id": "crons",
+      "name": "Cron Jobs",
+      "status": "ok",
+      "kpis": {
+        "total": 0,
+        "errors": 0,
+        "paused": 0,
+        "tzMissing": 0
+      },
+      "jobs": [],
+      "alerts": [],
+      "actions": [
+        "cron.retry",
+        "cron.pause",
+        "cron.resume",
+        "cron.set_timezone"
+      ],
+      "source": "/home/pedro/.openclaw/cron/jobs.json",
+      "trend7d": {
+        "metric": "total",
+        "delta": -34,
+        "direction": "down"
+      }
+    },
+    {
+      "id": "knowledge",
+      "name": "Knowledge Parental",
+      "status": "warning",
+      "kpis": {
+        "files": 0,
+        "ingestHealthy": false,
+        "watcherHealthy": true
+      },
+      "lastFile": null,
+      "job": null,
+      "actions": [
+        "cron.retry"
+      ],
+      "source": "/home/pedro/.openclaw/workspace/knowledge",
+      "trend7d": {
+        "metric": "files",
+        "delta": 0,
+        "direction": "flat"
+      }
+    },
+    {
+      "id": "finance",
+      "name": "Finanças (Saúde + Volume)",
+      "status": "warning",
+      "kpis": {
+        "pluggyTrackedItems": 0,
+        "openbankingConfigs": 0,
+        "bankNotifLog": false
+      },
+      "integrations": {
+        "pluggy": {
+          "status": "warning",
+          "trackedItems": 0,
+          "lastLogAt": "2026-06-11T00:45:41.162419+00:00",
+          "job": null
+        },
+        "openbanking": {
+          "status": "warning",
+          "configFiles": 0,
+          "tokenFiles": 0,
+          "lastSyncAt": null,
+          "job": null
+        },
+        "bank_notifications": {
+          "status": "warning",
+          "logEnabled": false,
+          "lastEventAt": null
+        }
+      },
+      "actions": [
+        "cron.retry"
+      ],
+      "source": "/home/pedro/.openclaw/workspace/pluggy",
+      "trend7d": {
+        "metric": "pluggyTrackedItems",
+        "delta": 0,
+        "direction": "flat"
+      }
+    },
+    {
+      "id": "therapy",
+      "name": "Terapia (Privado)",
+      "status": "ok",
+      "kpis": {
+        "entriesFiles": 0,
+        "latestFile": null,
+        "contentExposed": false,
+        "insecurePerms": 0
+      },
+      "alerts": [],
+      "details": {
+        "permissions": []
+      },
+      "actions": [],
+      "source": "/home/pedro/.openclaw/workspace/memory/therapy",
+      "trend7d": {
+        "metric": "entriesFiles",
+        "delta": 0,
+        "direction": "flat"
+      }
+    },
+    {
+      "id": "security",
+      "name": "Segurança e Hardening",
+      "status": "warning",
+      "kpis": {
+        "critical": 0,
+        "warnings": 0,
+        "credentialsMode": "700",
+        "therapyDirMode": "missing"
+      },
+      "alerts": [
+        {
+          "level": "warning",
+          "text": "diretório therapy com permissão missing"
+        }
+      ],
+      "actions": [],
+      "source": "openclaw status",
+      "trend7d": {
+        "metric": "critical",
+        "delta": 0,
+        "direction": "flat"
+      }
+    },
+    {
+      "id": "ops",
+      "name": "Monitoramento e Auditoria",
+      "status": "warning",
+      "kpis": {
+        "eventsToday": 0,
+        "queuePending": 0,
+        "heartbeatBackup": false,
+        "heartbeatConfigured": true
+      },
+      "job": null,
+      "heartbeat": {
+        "backupProcessFound": false
+      },
+      "actions": [],
+      "source": "/home/pedro/.openclaw/workspace/memory/events",
+      "trend7d": {
+        "metric": "eventsToday",
+        "delta": 0,
+        "direction": "flat"
+      }
+    }
+  ],
+  "integrations": {
+    "pluggy": {
+      "status": "warning",
+      "trackedItems": 0,
+      "lastLogAt": "2026-06-11T00:45:41.162419+00:00",
+      "job": null
+    },
+    "openbanking": {
+      "status": "warning",
+      "configFiles": 0,
+      "tokenFiles": 0,
+      "lastSyncAt": null,
+      "job": null
+    },
+    "bank_notifications": {
+      "status": "warning",
+      "logEnabled": false,
+      "lastEventAt": null
+    },
+    "knowledge_watcher": {
+      "status": "ok",
+      "service": {
+        "service": "knowledge-watcher.service",
+        "active": true,
+        "since": "Sat 2026-05-09 12:18:35 -03",
+        "raw": null
+      },
+      "lastKnowledgeFileAt": null
+    }
+  },
+  "workflowTruth": {
+    "status": "broken",
+    "counts": {
+      "healthy": 0,
+      "degraded": 0,
+      "lying-risk": 0,
+      "broken": 7
+    },
+    "pipelines": [
+      {
+        "id": "digest",
+        "name": "Digest",
+        "status": "broken",
+        "confidence": 15,
+        "canonicalChannel": "whatsapp",
+        "deliveryRequired": true,
+        "signals": {
+          "eventCount": 0,
+          "attemptCount": 0,
+          "lastEvent": null,
+          "lastAttemptStatus": null
+        },
+        "history": {
+          "attemptsTotal": 0,
+          "healthy": 0,
+          "degraded": 0,
+          "lyingRisk": 0,
+          "broken": 0,
+          "byDay": []
+        },
+        "recentAttempts": [],
+        "reasons": [
+          "sem attempts no ledger ainda"
+        ]
+      },
+      {
+        "id": "pluggy",
+        "name": "Pluggy",
+        "status": "broken",
+        "confidence": 15,
+        "canonicalChannel": "whatsapp",
+        "deliveryRequired": true,
+        "signals": {
+          "eventCount": 0,
+          "attemptCount": 0,
+          "lastEvent": null,
+          "lastAttemptStatus": null
+        },
+        "history": {
+          "attemptsTotal": 0,
+          "healthy": 0,
+          "degraded": 0,
+          "lyingRisk": 0,
+          "broken": 0,
+          "byDay": []
+        },
+        "recentAttempts": [],
+        "reasons": [
+          "sem attempts no ledger ainda"
+        ]
+      },
+      {
+        "id": "reminders",
+        "name": "Reminders",
+        "status": "broken",
+        "confidence": 15,
+        "canonicalChannel": "whatsapp",
+        "deliveryRequired": true,
+        "signals": {
+          "eventCount": 0,
+          "attemptCount": 0,
+          "lastEvent": null,
+          "lastAttemptStatus": null
+        },
+        "history": {
+          "attemptsTotal": 0,
+          "healthy": 0,
+          "degraded": 0,
+          "lyingRisk": 0,
+          "broken": 0,
+          "byDay": []
+        },
+        "recentAttempts": [],
+        "reasons": [
+          "sem attempts no ledger ainda"
+        ]
+      },
+      {
+        "id": "routines",
+        "name": "Rotinas",
+        "status": "broken",
+        "confidence": 15,
+        "canonicalChannel": "whatsapp",
+        "deliveryRequired": true,
+        "signals": {
+          "eventCount": 0,
+          "attemptCount": 0,
+          "lastEvent": null,
+          "lastAttemptStatus": null
+        },
+        "history": {
+          "attemptsTotal": 0,
+          "healthy": 0,
+          "degraded": 0,
+          "lyingRisk": 0,
+          "broken": 0,
+          "byDay": []
+        },
+        "recentAttempts": [],
+        "reasons": [
+          "sem attempts no ledger ainda"
+        ]
+      },
+      {
+        "id": "proactive_group",
+        "name": "Proactive Group",
+        "status": "broken",
+        "confidence": 15,
+        "canonicalChannel": "whatsapp",
+        "deliveryRequired": true,
+        "signals": {
+          "eventCount": 0,
+          "attemptCount": 0,
+          "lastEvent": null,
+          "lastAttemptStatus": null
+        },
+        "history": {
+          "attemptsTotal": 0,
+          "healthy": 0,
+          "degraded": 0,
+          "lyingRisk": 0,
+          "broken": 0,
+          "byDay": []
+        },
+        "recentAttempts": [],
+        "reasons": [
+          "sem attempts no ledger ainda"
+        ]
+      },
+      {
+        "id": "tracking_watchdog",
+        "name": "Tracking Watchdog",
+        "status": "broken",
+        "confidence": 15,
+        "canonicalChannel": null,
+        "deliveryRequired": false,
+        "signals": {
+          "eventCount": 0,
+          "attemptCount": 0,
+          "lastEvent": null,
+          "lastAttemptStatus": null
+        },
+        "history": {
+          "attemptsTotal": 0,
+          "healthy": 0,
+          "degraded": 0,
+          "lyingRisk": 0,
+          "broken": 0,
+          "byDay": []
+        },
+        "recentAttempts": [],
+        "reasons": [
+          "sem attempts no ledger ainda"
+        ]
+      },
+      {
+        "id": "mission_control",
+        "name": "Mission Control",
+        "status": "broken",
+        "confidence": 15,
+        "canonicalChannel": null,
+        "deliveryRequired": false,
+        "signals": {
+          "eventCount": 0,
+          "attemptCount": 0,
+          "lastEvent": null,
+          "lastAttemptStatus": null
+        },
+        "history": {
+          "attemptsTotal": 0,
+          "healthy": 0,
+          "degraded": 0,
+          "lyingRisk": 0,
+          "broken": 0,
+          "byDay": []
+        },
+        "recentAttempts": [],
+        "reasons": [
+          "sem attempts no ledger ainda"
+        ]
+      }
+    ],
+    "history": {
+      "timeline": []
+    },
+    "ledger": {
+      "version": "2.0.0",
+      "dir": "/home/pedro/.openclaw/workspace/mission-control/data/workflow-ledger"
+    }
+  },
+  "workflowLedger": {
+    "workflows": {
+      "digest": {
+        "path": "/home/pedro/.openclaw/workspace/mission-control/data/workflow-ledger/digest.jsonl",
+        "events": 0
+      },
+      "pluggy": {
+        "path": "/home/pedro/.openclaw/workspace/mission-control/data/workflow-ledger/pluggy.jsonl",
+        "events": 0
+      },
+      "reminders": {
+        "path": "/home/pedro/.openclaw/workspace/mission-control/data/workflow-ledger/reminders.jsonl",
+        "events": 0
+      },
+      "routines": {
+        "path": "/home/pedro/.openclaw/workspace/mission-control/data/workflow-ledger/routines.jsonl",
+        "events": 0
+      },
+      "proactive_group": {
+        "path": "/home/pedro/.openclaw/workspace/mission-control/data/workflow-ledger/proactive_group.jsonl",
+        "events": 0
+      },
+      "tracking_watchdog": {
+        "path": "/home/pedro/.openclaw/workspace/mission-control/data/workflow-ledger/tracking_watchdog.jsonl",
+        "events": 0
+      },
+      "mission_control": {
+        "path": "/home/pedro/.openclaw/workspace/mission-control/data/workflow-ledger/mission_control.jsonl",
+        "events": 0
+      }
+    }
+  },
+  "security": {
+    "id": "security",
+    "name": "Segurança e Hardening",
+    "status": "warning",
+    "kpis": {
+      "critical": 0,
+      "warnings": 0,
+      "credentialsMode": "700",
+      "therapyDirMode": "missing"
+    },
+    "alerts": [
+      {
+        "level": "warning",
+        "text": "diretório therapy com permissão missing"
+      }
+    ],
+    "actions": [],
+    "source": "openclaw status",
+    "trend7d": {
+      "metric": "critical",
+      "delta": 0,
+      "direction": "flat"
+    }
+  },
+  "slo": {
+    "digest_before_0750": 0.0,
+    "cron_success_rate": 0.0,
+    "control_action_success_rate": 85.71,
+    "windowDays": 7
+  },
+  "controls": [
+    {
+      "action": "cron.retry",
+      "title": "Retry Cron",
+      "payloadSchema": {
+        "jobId": "string"
+      }
+    },
+    {
+      "action": "cron.pause",
+      "title": "Pause Cron",
+      "payloadSchema": {
+        "jobId": "string"
+      }
+    },
+    {
+      "action": "cron.resume",
+      "title": "Resume Cron",
+      "payloadSchema": {
+        "jobId": "string"
+      }
+    },
+    {
+      "action": "cron.set_timezone",
+      "title": "Set Cron Timezone",
+      "payloadSchema": {
+        "jobId": "string",
+        "tz": "string (default America/Sao_Paulo)"
+      }
+    },
+    {
+      "action": "task.mark_done",
+      "title": "Marcar tarefa DONE",
+      "payloadSchema": {
+        "source": "daily|todo",
+        "taskKey": "string"
+      }
+    },
+    {
+      "action": "task.mark_skipped",
+      "title": "Marcar tarefa SKIPPED",
+      "payloadSchema": {
+        "source": "daily|todo",
+        "taskKey": "string"
+      }
+    },
+    {
+      "action": "todo.set_deadline",
+      "title": "Definir deadline do To-Do",
+      "payloadSchema": {
+        "taskKey": "string|id",
+        "deadline": "YYYY-MM-DD"
+      }
+    },
+    {
+      "action": "digest.retry_send",
+      "title": "Retry Digest Send",
+      "payloadSchema": {
+        "jobId": "string (optional)"
+      }
+    }
+  ],
+  "audit": {
+    "queue": [],
+    "recentResults": [
+      {
+        "commandId": "c4c2bd28-4668-4eff-b7b4-6916839d859b",
+        "executedAt": "2026-03-06T19:57:44.102373+00:00",
+        "executor": "mission-control/scripts/control_queue.py",
+        "action": "task.mark_done",
+        "payload": {
+          "source": "daily",
+          "taskKey": "rotina_manha"
+        },
+        "result": "ok",
+        "message": "daily task rotina_manha marked DONE"
+      },
+      {
+        "commandId": "d05b0308-57b1-484c-9f11-2e7543a3e779",
+        "executedAt": "2026-03-06T21:50:34.191308+00:00",
+        "executor": "mission-control/scripts/control_queue.py",
+        "action": "todo.set_deadline",
+        "payload": {
+          "taskKey": "__none__",
+          "deadline": "2026-03-10"
+        },
+        "result": "error",
+        "message": "todo item '__none__' not found"
+      },
+      {
+        "commandId": "3fb7383b-adf3-4a05-87fb-404869fcbb11",
+        "executedAt": "2026-03-06T22:25:08.883462+00:00",
+        "executor": "mission-control/scripts/control_queue.py",
+        "action": "cron.set_timezone",
+        "payload": {
+          "jobId": "ec2938b2-9783-47f9-8945-ffd6388a0e82",
+          "tz": "America/Sao_Paulo"
+        },
+        "result": "ok",
+        "message": "│\n◇  Config warnings ───────────────────────────────────────────────────────╮\n│                                                                         │\n│  - plugins.entries.google-antigravity-auth: plugin removed:             │\n│    google-antigravity-auth (stale config entry ignored; remove it from  │\n│    plugins config)                                                      │\n│                                                                         │\n├─────────────────────────────────────────────────────────────────────────╯\n│\n◇  Doctor warnings ────────────────────────────────────────────────────────╮\n│                                                                          │\n│  - channels.telegram.groupPolicy is \"allowlist\" but groupAllowFrom (and  │\n│    allowFrom) is empty — all group messages will be silently dropped.    │\n│    Add sender IDs to channels.telegram.groupAllowFrom or                 │\n│    channels.telegram.allowFrom, or set groupPolicy to \"open\".            │\n│                                                                          │\n├──────────────────────────────────────────────────────────────────────────╯\n{\n  \"id\": \"ec2938b2-9783-47f9-8945-ffd6388a0e82\",\n  \"name\": \"Pluggy Sync - Tracking Despesas\",\n  \"enabled\": true,\n  \"createdAtMs\": 1772634378355,\n  \"updatedAtMs\": 1772835908845,\n  \"schedule\": {\n    \"kind\": \"cron\",\n    \"expr\": \"0 22 * * *\",\n    \"tz\": \"America/Sao_Paulo\"\n  },\n  \"sessionTarget\": \"isolated\",\n  \"wakeMode\": \"now\",\n  \"payload\": {\n    \"kind\": \"agentTurn\",\n    \"message\": \"Sincronizar transações do Pluggy com tracking de despesas. Executar: cd /home/pedro/.openclaw/workspace/pluggy && python3 pluggy_sync.py --days 1. Enviar resumo das transações sincronizadas (quantidade e valor total) para o usuário via WhatsApp.\",\n    \"model\": \"openai-codex/gpt-5-mini\"\n  },\n  \"delivery\": {\n    \"mode\": \"announce\",\n    \"channel\": \"whatsapp\",\n    \"to\": \"5519997830810\"\n  },\n  \"state\": {\n    \"nextRunAtMs\": 1772845200000,\n    \"lastRunAtMs\": 1772759975751,\n    \"lastRunStatus\": \"ok\",\n    \"lastStatus\": \"ok\",\n    \"lastDurationMs\": 77312,\n    \"lastDelivered\": true,\n    \"lastDeliveryStatus\": \"delivered\",\n    \"consecutiveErrors\": 0\n  }\n}\n\nConfig warnings:\\n- plugins.entries.google-antigravity-auth: plugin removed: google-antigravity-auth (stale config entry ignored; remove it from plugins config)\nConfig warnings:\\n- plugins.entries.google-antigravity-auth: plugin removed: google-antigravity-auth (stale config entry ignored; remove it from plugins config)"
+      },
+      {
+        "commandId": "282b923f-9cda-445d-a52b-4e6df2f4b386",
+        "executedAt": "2026-03-06T22:25:10.768605+00:00",
+        "executor": "mission-control/scripts/control_queue.py",
+        "action": "cron.set_timezone",
+        "payload": {
+          "jobId": "ec2938b2-9783-47f9-8945-ffd6388a0e82",
+          "tz": "America/Sao_Paulo"
+        },
+        "result": "ok",
+        "message": "│\n◇  Config warnings ───────────────────────────────────────────────────────╮\n│                                                                         │\n│  - plugins.entries.google-antigravity-auth: plugin removed:             │\n│    google-antigravity-auth (stale config entry ignored; remove it from  │\n│    plugins config)                                                      │\n│                                                                         │\n├─────────────────────────────────────────────────────────────────────────╯\n│\n◇  Doctor warnings ────────────────────────────────────────────────────────╮\n│                                                                          │\n│  - channels.telegram.groupPolicy is \"allowlist\" but groupAllowFrom (and  │\n│    allowFrom) is empty — all group messages will be silently dropped.    │\n│    Add sender IDs to channels.telegram.groupAllowFrom or                 │\n│    channels.telegram.allowFrom, or set groupPolicy to \"open\".            │\n│                                                                          │\n├──────────────────────────────────────────────────────────────────────────╯\n{\n  \"id\": \"ec2938b2-9783-47f9-8945-ffd6388a0e82\",\n  \"name\": \"Pluggy Sync - Tracking Despesas\",\n  \"enabled\": true,\n  \"createdAtMs\": 1772634378355,\n  \"updatedAtMs\": 1772835910733,\n  \"schedule\": {\n    \"kind\": \"cron\",\n    \"expr\": \"0 22 * * *\",\n    \"tz\": \"America/Sao_Paulo\"\n  },\n  \"sessionTarget\": \"isolated\",\n  \"wakeMode\": \"now\",\n  \"payload\": {\n    \"kind\": \"agentTurn\",\n    \"message\": \"Sincronizar transações do Pluggy com tracking de despesas. Executar: cd /home/pedro/.openclaw/workspace/pluggy && python3 pluggy_sync.py --days 1. Enviar resumo das transações sincronizadas (quantidade e valor total) para o usuário via WhatsApp.\",\n    \"model\": \"openai-codex/gpt-5-mini\"\n  },\n  \"delivery\": {\n    \"mode\": \"announce\",\n    \"channel\": \"whatsapp\",\n    \"to\": \"5519997830810\"\n  },\n  \"state\": {\n    \"nextRunAtMs\": 1772845200000,\n    \"lastRunAtMs\": 1772759975751,\n    \"lastRunStatus\": \"ok\",\n    \"lastStatus\": \"ok\",\n    \"lastDurationMs\": 77312,\n    \"lastDelivered\": true,\n    \"lastDeliveryStatus\": \"delivered\",\n    \"consecutiveErrors\": 0\n  }\n}\n\nConfig warnings:\\n- plugins.entries.google-antigravity-auth: plugin removed: google-antigravity-auth (stale config entry ignored; remove it from plugins config)\nConfig warnings:\\n- plugins.entries.google-antigravity-auth: plugin removed: google-antigravity-auth (stale config entry ignored; remove it from plugins config)"
+      },
+      {
+        "commandId": "a3146d89-9870-4d1f-a061-fc5347969538",
+        "executedAt": "2026-03-06T22:25:12.620951+00:00",
+        "executor": "mission-control/scripts/control_queue.py",
+        "action": "cron.set_timezone",
+        "payload": {
+          "jobId": "ebbd066d-2269-48d5-8f80-f89ce7633b81",
+          "tz": "America/Sao_Paulo"
+        },
+        "result": "ok",
+        "message": "│\n◇  Config warnings ───────────────────────────────────────────────────────╮\n│                                                                         │\n│  - plugins.entries.google-antigravity-auth: plugin removed:             │\n│    google-antigravity-auth (stale config entry ignored; remove it from  │\n│    plugins config)                                                      │\n│                                                                         │\n├─────────────────────────────────────────────────────────────────────────╯\n│\n◇  Doctor warnings ────────────────────────────────────────────────────────╮\n│                                                                          │\n│  - channels.telegram.groupPolicy is \"allowlist\" but groupAllowFrom (and  │\n│    allowFrom) is empty — all group messages will be silently dropped.    │\n│    Add sender IDs to channels.telegram.groupAllowFrom or                 │\n│    channels.telegram.allowFrom, or set groupPolicy to \"open\".            │\n│                                                                          │\n├──────────────────────────────────────────────────────────────────────────╯\n{\n  \"id\": \"ebbd066d-2269-48d5-8f80-f89ce7633b81\",\n  \"name\": \"daily-git-commit\",\n  \"enabled\": true,\n  \"createdAtMs\": 1772249874752,\n  \"updatedAtMs\": 1772835912583,\n  \"schedule\": {\n    \"kind\": \"cron\",\n    \"expr\": \"59 23 * * *\",\n    \"tz\": \"America/Sao_Paulo\"\n  },\n  \"sessionTarget\": \"isolated\",\n  \"wakeMode\": \"now\",\n  \"payload\": {\n    \"kind\": \"agentTurn\",\n    \"message\": \"Run daily git commit for workspace (scripts/daily_git_commit.sh)\",\n    \"timeoutSeconds\": 120\n  },\n  \"delivery\": {\n    \"mode\": \"announce\",\n    \"channel\": \"last\"\n  },\n  \"state\": {\n    \"nextRunAtMs\": 1772852340000,\n    \"lastRunAtMs\": 1772765940006,\n    \"lastRunStatus\": \"ok\",\n    \"lastStatus\": \"ok\",\n    \"lastDurationMs\": 21024,\n    \"lastDelivered\": true,\n    \"lastDeliveryStatus\": \"delivered\",\n    \"consecutiveErrors\": 0\n  }\n}\n\nConfig warnings:\\n- plugins.entries.google-antigravity-auth: plugin removed: google-antigravity-auth (stale config entry ignored; remove it from plugins config)\nConfig warnings:\\n- plugins.entries.google-antigravity-auth: plugin removed: google-antigravity-auth (stale config entry ignored; remove it from plugins config)"
+      },
+      {
+        "commandId": "4d70f4fa-046c-43c8-b1b3-cfafec1218b7",
+        "executedAt": "2026-03-06T22:25:14.363011+00:00",
+        "executor": "mission-control/scripts/control_queue.py",
+        "action": "cron.set_timezone",
+        "payload": {
+          "jobId": "02182f0c-4413-4374-a3fb-1a3f5651b6e7",
+          "tz": "America/Sao_Paulo"
+        },
+        "result": "ok",
+        "message": "│\n◇  Config warnings ───────────────────────────────────────────────────────╮\n│                                                                         │\n│  - plugins.entries.google-antigravity-auth: plugin removed:             │\n│    google-antigravity-auth (stale config entry ignored; remove it from  │\n│    plugins config)                                                      │\n│                                                                         │\n├─────────────────────────────────────────────────────────────────────────╯\n│\n◇  Doctor warnings ────────────────────────────────────────────────────────╮\n│                                                                          │\n│  - channels.telegram.groupPolicy is \"allowlist\" but groupAllowFrom (and  │\n│    allowFrom) is empty — all group messages will be silently dropped.    │\n│    Add sender IDs to channels.telegram.groupAllowFrom or                 │\n│    channels.telegram.allowFrom, or set groupPolicy to \"open\".            │\n│                                                                          │\n├──────────────────────────────────────────────────────────────────────────╯\n{\n  \"id\": \"02182f0c-4413-4374-a3fb-1a3f5651b6e7\",\n  \"name\": \"Deadline Reminder Checker\",\n  \"enabled\": true,\n  \"createdAtMs\": 1772454181777,\n  \"updatedAtMs\": 1772835914323,\n  \"schedule\": {\n    \"kind\": \"cron\",\n    \"expr\": \"0 9 * * *\",\n    \"tz\": \"America/Sao_Paulo\"\n  },\n  \"sessionTarget\": \"isolated\",\n  \"wakeMode\": \"now\",\n  \"payload\": {\n    \"kind\": \"agentTurn\",\n    \"message\": \"Checa /home/pedro/.openclaw/workspace/memory/todo_list.json e, para cada item com deadline, se faltar <=3 dias e status PENDING: enviar lembrete para o Pedro. REGRA ABSOLUTA: NUNCA usar wacli send com --store ~/.wacli-pedro. Para enviar, usar APENAS o message tool (channel=whatsapp, target=5519997830810). Se for dia do prazo: enviar lembrete. Marcar no arquivo se lembrete enviado.\",\n    \"model\": \"github-copilot/gpt-5-mini\"\n  },\n  \"delivery\": {\n    \"mode\": \"announce\",\n    \"channel\": \"whatsapp\",\n    \"to\": \"5519997830810\"\n  },\n  \"state\": {\n    \"nextRunAtMs\": 1772884800000,\n    \"lastRunAtMs\": 1772798431114,\n    \"lastRunStatus\": \"ok\",\n    \"lastStatus\": \"ok\",\n    \"lastDurationMs\": 70397,\n    \"lastDeliveryStatus\": \"not-delivered\",\n    \"consecutiveErrors\": 0,\n    \"lastDelivered\": false,\n    \"lastError\": \"cron announce delivery failed\",\n    \"lastDeliveryError\": \"cron announce delivery failed\"\n  }\n}\n\nConfig warnings:\\n- plugins.entries.google-antigravity-auth: plugin removed: google-antigravity-auth (stale config entry ignored; remove it from plugins config)\nConfig warnings:\\n- plugins.entries.google-antigravity-auth: plugin removed: google-antigravity-auth (stale config entry ignored; remove it from plugins config)"
+      },
+      {
+        "commandId": "74ba75b1-631a-4468-a2b7-47532eec4cea",
+        "executedAt": "2026-03-06T22:25:16.282268+00:00",
+        "executor": "mission-control/scripts/control_queue.py",
+        "action": "cron.set_timezone",
+        "payload": {
+          "jobId": "93c7796d-f82d-4381-a925-f1a0a22bf25b",
+          "tz": "America/Sao_Paulo"
+        },
+        "result": "ok",
+        "message": "│\n◇  Config warnings ───────────────────────────────────────────────────────╮\n│                                                                         │\n│  - plugins.entries.google-antigravity-auth: plugin removed:             │\n│    google-antigravity-auth (stale config entry ignored; remove it from  │\n│    plugins config)                                                      │\n│                                                                         │\n├─────────────────────────────────────────────────────────────────────────╯\n│\n◇  Doctor warnings ────────────────────────────────────────────────────────╮\n│                                                                          │\n│  - channels.telegram.groupPolicy is \"allowlist\" but groupAllowFrom (and  │\n│    allowFrom) is empty — all group messages will be silently dropped.    │\n│    Add sender IDs to channels.telegram.groupAllowFrom or                 │\n│    channels.telegram.allowFrom, or set groupPolicy to \"open\".            │\n│                                                                          │\n├──────────────────────────────────────────────────────────────────────────╯\n{\n  \"id\": \"93c7796d-f82d-4381-a925-f1a0a22bf25b\",\n  \"agentId\": \"main\",\n  \"name\": \"Rotina da Manhã (Completa)\",\n  \"enabled\": true,\n  \"createdAtMs\": 1770489615934,\n  \"updatedAtMs\": 1772835916239,\n  \"schedule\": {\n    \"kind\": \"cron\",\n    \"expr\": \"30 10 * * *\",\n    \"tz\": \"America/Sao_Paulo\"\n  },\n  \"sessionTarget\": \"isolated\",\n  \"wakeMode\": \"next-heartbeat\",\n  \"payload\": {\n    \"kind\": \"agentTurn\",\n    \"message\": \"1. Leia memory/daily_tasks.json. Se o campo 'date' não for hoje, resete: apague todas as tasks e crie novas com status PENDING para: rotina_manha (🌅 Rotina da Manhã, 06:00), racao_almoco (🍲 Ração Almoço, 12:00), passeio_almoco (🐕 Passeio 2/4, 13:00), blitz_ordem (🌪️ Blitz da Ordem, 17:30), rotina_tarde (🌆 Rotina Tarde, 18:00), rotina_noite (🌙 Rotina Noite, 22:00).\\n\\n\\n[MEMORY_LOG_V1] PASSO EXTRA (obrigatório): Execute o comando abaixo para registrar este cron no ledger de memórias.\\n- Comando: python /home/pedro/.openclaw/workspace/scripts/memory_log.py --type cron --channel cron --chat-id cron:93c7796d-f82d-4381-a925-f1a0a22bf25b --text \\\"Cron disparou: Rotina da Manhã (Completa) (93c7796d-f82d-4381-a925-f1a0a22bf25b)\\\" --importance low --tags cron\\nDepois continue o fluxo normal e só então responda ao usuário.\\n   - Sobre missao_pos_almoco (🍽️ Zero Pia, 13:30):\\n     - Se HOJE for SEGUNDA-FEIRA: crie a task missao_pos_almoco com status SKIPPED e note \\\"Segunda: faxineira vem\\\".\\n     - Caso contrário: crie a task missao_pos_almoco com status PENDING.\\n   Salve com date = hoje.\\n2. Marque rotina_manha como PENDING (se ainda não estiver).\\n3. Responda APENAS com esta mensagem (sem nada mais):\\n\\n🌅 Rotina da Manhã:\\n- 🐕 Passeio 1/4\\n- 🥣 Água: Encher garrafas (2 embaixo, 1 Bebel)\\n- 🧹 Ordem: Guardar brinquedos no cesto\\n- 🛏️ Arrumação: Esticar lençol da sala, organizar travesseiros e mantas\\n- 🧸 Quarto Harry: Bancada livre, tudo no lugar\\n- 🚽 Tapetes: Checar/trocar (álcool no chão)\\n- 🐶 Higiene: Pentear cachorros / Olhos / Pirainha\\n- 📅 SEGUNDA: 🍗 Descongelar Frango + 🧺 Lavar Roupa (Vinagre)\\n\\nNÃO use a ferramenta message. Apenas responda com o texto acima.\",\n    \"model\": \"github-copilot/gpt-5-mini\"\n  },\n  \"state\": {\n    \"nextRunAtMs\": 1772890200000,\n    \"lastRunAtMs\": 1772803800006,\n    \"lastStatus\": \"ok\",\n    \"lastDurationMs\": 14784,\n    \"consecutiveErrors\": 0,\n    \"lastRunStatus\": \"ok\",\n    \"lastDelivered\": true,\n    \"lastDeliveryStatus\": \"delivered\"\n  },\n  \"delivery\": {\n    \"mode\": \"announce\",\n    \"channel\": \"telegram\",\n    \"bestEffort\": true,\n    \"to\": \"telegram:1899641264\"\n  }\n}\n\nConfig warnings:\\n- plugins.entries.google-antigravity-auth: plugin removed: google-antigravity-auth (stale config entry ignored; remove it from plugins config)\nConfig warnings:\\n- plugins.entries.google-antigravity-auth: plugin removed: google-antigravity-auth (stale config entry ignored; remove it from plugins config)"
+      }
+    ]
+  },
+  "recentActivity": [],
+  "products": [
+    {
+      "name": "Mission Control",
+      "url": "https://pedrochagasmaster.github.io/mission-control/",
+      "status": "live",
+      "lastChecked": "2026-06-12T00:30:39.422251+00:00"
+    }
+  ],
+  "crons": [],
+  "lastUpdated": "2026-06-12T00:30:39.422251+00:00"
+}
